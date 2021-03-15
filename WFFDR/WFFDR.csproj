@@ -1,0 +1,1425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8C24A153-CA19-472C-B332-02ADEBF56C17}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WFFDR</RootNamespace>
+    <AssemblyName>WFFDR</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>fedora-icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoSproc, Version=1.0.0.3, Culture=neutral, PublicKeyToken=d7e6f270c9407513">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AutoSproc.dll</HintPath>
+    </Reference>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextBox">
+      <HintPath>..\..\..\WFFDR\WFFDR\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="ControlzEx, Version=3.0.2.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ControlzEx.3.0.2.4\lib\net462\ControlzEx.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.DataSet.3.6.0\lib\net35\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="HockeySDK, Version=5.0.7081.36285, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HockeySDK.Xamarin.5.2.0\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\HockeySDK.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro, Version=1.6.5.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.6.5\lib\net47\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\ControlzEx.3.0.2.4\lib\net462\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tulpep.NotificationWindow, Version=1.1.25.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tulpep.NotificationWindow.1.1.25\lib\net40\Tulpep.NotificationWindow.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="Z.Dapper.Plus, Version=3.0.36.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Z.Dapper.Plus.3.0.36\lib\net45\Z.Dapper.Plus.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="External Reports\FgDashboardMonitoring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="External Reports\FgDashboardMonitoring.Designer.cs">
+      <DependentUpon>FgDashboardMonitoring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finished Goods\frmFGIssue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finished Goods\frmFGIssue.Designer.cs">
+      <DependentUpon>frmFGIssue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finished Goods\frmFGReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finished Goods\frmFGReceipt.Designer.cs">
+      <DependentUpon>frmFGReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFGTransformationReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFGTransformationReport.Designer.cs">
+      <DependentUpon>frmFGTransformationReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInactiveRawmaterials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInactiveRawmaterials.Designer.cs">
+      <DependentUpon>frmInactiveRawmaterials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMacroPendingProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMacroPendingProd.Designer.cs">
+      <DependentUpon>frmMacroPendingProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMicroPendingProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMicroPendingProd.Designer.cs">
+      <DependentUpon>frmMicroPendingProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmQAReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmQAReports.Designer.cs">
+      <DependentUpon>frmQAReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frmMonthlyInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmMonthlyInventory.Designer.cs">
+      <DependentUpon>frmMonthlyInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frmMonthlyInventoryMicro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmMonthlyInventoryMicro.Designer.cs">
+      <DependentUpon>frmMonthlyInventoryMicro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="External Reports\frmNearlyExpired.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="External Reports\frmNearlyExpired.Designer.cs">
+      <DependentUpon>frmNearlyExpired.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRawMatsTheoMovementReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRawMatsTheoMovementReports.Designer.cs">
+      <DependentUpon>frmRawMatsTheoMovementReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production\frmProductionAutomation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production\frmProductionAutomation.Designer.cs">
+      <DependentUpon>frmProductionAutomation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\fmApproveQAMacro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\fmApproveQAMacro.Designer.cs">
+      <DependentUpon>fmApproveQAMacro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="External Reports\fmProductionHours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="External Reports\fmProductionHours.Designer.cs">
+      <DependentUpon>fmProductionHours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Gerard\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Gerard\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repacking\frmActiveRepackingMonitoring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Repacking\frmActiveRepackingMonitoring.Designer.cs">
+      <DependentUpon>frmActiveRepackingMonitoring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmAddNewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmAddNewCustomer.Designer.cs">
+      <DependentUpon>frmAddNewCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmAddNewMaterialReceivingMiscellaneous.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmAddNewMaterialReceivingMiscellaneous.Designer.cs">
+      <DependentUpon>frmAddNewMaterialReceivingMiscellaneous.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frmAddnewMoveOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmAddnewMoveOrder.Designer.cs">
+      <DependentUpon>frmAddnewMoveOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frmAddNewTransactionIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmAddNewTransactionIn.Designer.cs">
+      <DependentUpon>frmAddNewTransactionIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmAddNewWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmAddNewWarehouse.Designer.cs">
+      <DependentUpon>frmAddNewWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmAnotherReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmAnotherReports.Designer.cs">
+      <DependentUpon>frmAnotherReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Approver\frmApproverViewRepackMaterials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production Approver\frmApproverViewRepackMaterials.Designer.cs">
+      <DependentUpon>frmApproverViewRepackMaterials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmBufferedInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmBufferedInventory.Designer.cs">
+      <DependentUpon>frmBufferedInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmBulkValueMgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmBulkValueMgmt.Designer.cs">
+      <DependentUpon>frmBulkValueMgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmCombinationCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmCombinationCode.Designer.cs">
+      <DependentUpon>frmCombinationCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmCustomer.Designer.cs">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmDailyProductionReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmDailyProductionReports.Designer.cs">
+      <DependentUpon>frmDailyProductionReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmDailyProductions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmDailyProductions.Designer.cs">
+      <DependentUpon>frmDailyProductions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmEfficiencyofFG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmEfficiencyofFG.Designer.cs">
+      <DependentUpon>frmEfficiencyofFG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finished Goods\frmFeedCodeTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finished Goods\frmFeedCodeTransactions.Designer.cs">
+      <DependentUpon>frmFeedCodeTransactions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmFGDelayed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmFGDelayed.Designer.cs">
+      <DependentUpon>frmFGDelayed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finished Goods\frmFGMainInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finished Goods\frmFGMainInventory.Designer.cs">
+      <DependentUpon>frmFGMainInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frmFGMoveorderPrinting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmFGMoveorderPrinting.Designer.cs">
+      <DependentUpon>frmFGMoveorderPrinting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmFGReceivings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmFGReceivings.Designer.cs">
+      <DependentUpon>frmFGReceivings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmFgReporting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmFgReporting.Designer.cs">
+      <DependentUpon>frmFgReporting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finished Goods\frmFgReportPerFeedCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finished Goods\frmFgReportPerFeedCode.Designer.cs">
+      <DependentUpon>frmFgReportPerFeedCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="External Reports\frmFGReprocessReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="External Reports\frmFGReprocessReports.Designer.cs">
+      <DependentUpon>frmFGReprocessReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmFGView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmFGView.Designer.cs">
+      <DependentUpon>frmFGView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmMaterialUsedOverProductionDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmMaterialUsedOverProductionDate.Designer.cs">
+      <DependentUpon>frmMaterialUsedOverProductionDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frmMiscellaneousOutReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmMiscellaneousOutReport.Designer.cs">
+      <DependentUpon>frmMiscellaneousOutReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frmMiscellaneousReceiving.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmMiscellaneousReceiving.Designer.cs">
+      <DependentUpon>frmMiscellaneousReceiving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frmMiscellaneoustransactionIssueIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmMiscellaneoustransactionIssueIN.Designer.cs">
+      <DependentUpon>frmMiscellaneoustransactionIssueIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frmMiscelleneousReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmMiscelleneousReceipt.Designer.cs">
+      <DependentUpon>frmMiscelleneousReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmMoveOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmMoveOrder.Designer.cs">
+      <DependentUpon>frmMoveOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frmMoveOrderDonePrinted.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmMoveOrderDonePrinted.Designer.cs">
+      <DependentUpon>frmMoveOrderDonePrinted.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmNewMixingCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmNewMixingCode.Designer.cs">
+      <DependentUpon>frmNewMixingCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmProdDatetoFGReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmProdDatetoFGReport.Designer.cs">
+      <DependentUpon>frmProdDatetoFGReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmRawMaterialsDataRepack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmRawMaterialsDataRepack.Designer.cs">
+      <DependentUpon>frmRawMaterialsDataRepack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReceivingReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReceivingReceipt.Designer.cs">
+      <DependentUpon>frmReceivingReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="External Reports\frmRepackingProductionCheckList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="External Reports\frmRepackingProductionCheckList.Designer.cs">
+      <DependentUpon>frmRepackingProductionCheckList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frmShowOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmShowOrder.Designer.cs">
+      <DependentUpon>frmShowOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frmTransactMoveOrderQtyUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmTransactMoveOrderQtyUpdate.Designer.cs">
+      <DependentUpon>frmTransactMoveOrderQtyUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frmUpdateMoveOrderModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmUpdateMoveOrderModal.Designer.cs">
+      <DependentUpon>frmUpdateMoveOrderModal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Gerard\frmUserLognew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Gerard\frmUserLognew.Designer.cs">
+      <DependentUpon>frmUserLognew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production\frmFGReprocessModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production\frmFGReprocessModule.Designer.cs">
+      <DependentUpon>frmFGReprocessModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finished Goods\frmFinishGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finished Goods\frmFinishGoods.Designer.cs">
+      <DependentUpon>frmFinishGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Gerard\frmFormsAvailable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Gerard\frmFormsAvailable.Designer.cs">
+      <DependentUpon>frmFormsAvailable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="External Reports\frmFormula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="External Reports\frmFormula.Designer.cs">
+      <DependentUpon>frmFormula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmProductionLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmProductionLevel.Designer.cs">
+      <DependentUpon>frmProductionLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotUsing\frmCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotUsing\frmCategory.Designer.cs">
+      <DependentUpon>frmCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotUsing\frmClassification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotUsing\frmClassification.Designer.cs">
+      <DependentUpon>frmClassification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotUsing\frmDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotUsing\frmDepartment.Designer.cs">
+      <DependentUpon>frmDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotUsing\frmFeedcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotUsing\frmFeedcode.Designer.cs">
+      <DependentUpon>frmFeedcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Approver\frmFormulationApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production Approver\frmFormulationApproval.Designer.cs">
+      <DependentUpon>frmFormulationApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="External Reports\frmFormulationList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="External Reports\frmFormulationList.Designer.cs">
+      <DependentUpon>frmFormulationList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmFormulationManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmFormulationManagement.Designer.cs">
+      <DependentUpon>frmFormulationManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="External Reports\frmFormulationtoProduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="External Reports\frmFormulationtoProduction.Designer.cs">
+      <DependentUpon>frmFormulationtoProduction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmFullDepreciationReceiving.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmFullDepreciationReceiving.Designer.cs">
+      <DependentUpon>frmFullDepreciationReceiving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Barcode Printing\frmGenerateRepackingBarcodeID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Barcode Printing\frmGenerateRepackingBarcodeID.Designer.cs">
+      <DependentUpon>frmGenerateRepackingBarcodeID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Barcoding Print\frmGenerateRepackingBulkEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Barcoding Print\frmGenerateRepackingBulkEntry.Designer.cs">
+      <DependentUpon>frmGenerateRepackingBulkEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotUsing\frmGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotUsing\frmGroup.Designer.cs">
+      <DependentUpon>frmGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Import Excel\frmImportFormula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Import Excel\frmImportFormula.Designer.cs">
+      <DependentUpon>frmImportFormula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Import Excel\frmImportQC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Import Excel\frmImportQC.Designer.cs">
+      <DependentUpon>frmImportQC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Import Excel\frmImportRawMaterials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Import Excel\frmImportRawMaterials.Designer.cs">
+      <DependentUpon>frmImportRawMaterials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Import Excel\frmImportSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Import Excel\frmImportSupplier.Designer.cs">
+      <DependentUpon>frmImportSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repacking\frmListofApproveRepacking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Repacking\frmListofApproveRepacking.Designer.cs">
+      <DependentUpon>frmListofApproveRepacking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repacking\frmListofMacroRepacking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Repacking\frmListofMacroRepacking.Designer.cs">
+      <DependentUpon>frmListofMacroRepacking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\frmRawMatsSlowMoving.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\frmRawMatsSlowMoving.Designer.cs">
+      <DependentUpon>frmRawMatsSlowMoving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmMacroReceivingEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmMacroReceivingEntry.Designer.cs">
+      <DependentUpon>frmMacroReceivingEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMacroRepacking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMacroRepacking.Designer.cs">
+      <DependentUpon>frmMacroRepacking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmainreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmainreport.Designer.cs">
+      <DependentUpon>frmmainreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasterlistRepacking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasterlistRepacking.Designer.cs">
+      <DependentUpon>frmMasterlistRepacking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Planner\frmMaterialLowInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production Planner\frmMaterialLowInventory.Designer.cs">
+      <DependentUpon>frmMaterialLowInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmMicroMaterialReceivingHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmMicroMaterialReceivingHistory.Designer.cs">
+      <DependentUpon>frmMicroMaterialReceivingHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMicroProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMicroProfile.Designer.cs">
+      <DependentUpon>frmMicroProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmTheoScada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmTheoScada.Designer.cs">
+      <DependentUpon>frmTheoScada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmmicroreceivingentry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmmicroreceivingentry.Designer.cs">
+      <DependentUpon>frmmicroreceivingentry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMicroReceivingInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMicroReceivingInfo.Designer.cs">
+      <DependentUpon>frmMicroReceivingInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmicrowhpreparation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmicrowhpreparation.Designer.cs">
+      <DependentUpon>frmmicrowhpreparation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmmixingcapacity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmmixingcapacity.Designer.cs">
+      <DependentUpon>frmmixingcapacity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basemixed\frmPreparationofMixing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basemixed\frmPreparationofMixing.Designer.cs">
+      <DependentUpon>frmPreparationofMixing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Barcode Printing\frmPrintBasemixedEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Barcode Printing\frmPrintBasemixedEntry.Designer.cs">
+      <DependentUpon>frmPrintBasemixedEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Gerard\frmReprocessAdjustment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Gerard\frmReprocessAdjustment.Designer.cs">
+      <DependentUpon>frmReprocessAdjustment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production\frmProductionEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production\frmProductionEntry.Designer.cs">
+      <DependentUpon>frmProductionEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="External Reports\frmproductionrepackchart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="External Reports\frmproductionrepackchart.Designer.cs">
+      <DependentUpon>frmproductionrepackchart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Planner\frmProductionSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production Planner\frmProductionSchedule.Designer.cs">
+      <DependentUpon>frmProductionSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotUsing\frmProfileMicroPrev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotUsing\frmProfileMicroPrev.Designer.cs">
+      <DependentUpon>frmProfileMicroPrev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmMicroInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmMicroInventory.Designer.cs">
+      <DependentUpon>frmMicroInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQCImportPending.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQCImportPending.Designer.cs">
+      <DependentUpon>frmQCImportPending.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuantity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuantity.Designer.cs">
+      <DependentUpon>frmQuantity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotUsing\frmPositions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotUsing\frmPositions.Designer.cs">
+      <DependentUpon>frmPositions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Barcoding Print\frmReprintFinishedGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Barcoding Print\frmReprintFinishedGoods.Designer.cs">
+      <DependentUpon>frmReprintFinishedGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="External Reports\frmReprintMonitoring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="External Reports\frmReprintMonitoring.Designer.cs">
+      <DependentUpon>frmReprintMonitoring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Gerard\frmsystemupdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Gerard\frmsystemupdate.Designer.cs">
+      <DependentUpon>frmsystemupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Gerard\frmTheoroticalLogSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Gerard\frmTheoroticalLogSheet.Designer.cs">
+      <DependentUpon>frmTheoroticalLogSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Gerard\frmViewApproverCancelProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Gerard\frmViewApproverCancelProd.Designer.cs">
+      <DependentUpon>frmViewApproverCancelProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmrepackingentry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmrepackingentry.Designer.cs">
+      <DependentUpon>frmrepackingentry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotUsing\frmSections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotUsing\frmSections.Designer.cs">
+      <DependentUpon>frmSections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmMacroInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmMacroInventory.Designer.cs">
+      <DependentUpon>frmMacroInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSupplierdf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSupplierdf.Designer.cs">
+      <DependentUpon>frmSupplierdf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmMaterialStatusReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmMaterialStatusReports.Designer.cs">
+      <DependentUpon>frmMaterialStatusReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Gerard\frmSystemLock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Gerard\frmSystemLock.Designer.cs">
+      <DependentUpon>frmSystemLock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmFGMaterialTracking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmFGMaterialTracking.Designer.cs">
+      <DependentUpon>frmFGMaterialTracking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Gerard\frmuserrights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Gerard\frmuserrights.Designer.cs">
+      <DependentUpon>frmuserrights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Gerard\frmusers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Gerard\frmusers.Designer.cs">
+      <DependentUpon>frmusers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmApproveQA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmApproveQA.Designer.cs">
+      <DependentUpon>frmApproveQA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmWarehouseMgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmWarehouseMgmt.Designer.cs">
+      <DependentUpon>frmWarehouseMgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotUsing\frmwhmacropreparation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotUsing\frmwhmacropreparation.Designer.cs">
+      <DependentUpon>frmwhmacropreparation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Hasher.cs" />
+    <Compile Include="hr_bakDataSet.cs">
+      <DependentUpon>hr_bakDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hr_bakDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hr_bakDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="import_po_summary.cs" />
+    <Compile Include="Classes\ISharpUpdatable.cs" />
+    <Compile Include="IStoredProcedures.cs" />
+    <Compile Include="MacroBook.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MacroBook.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.cs">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MicroBook.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MicroBook.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="myclasses.cs" />
+    <Compile Include="myglobal.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RawMatsRepackingTracking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RawMatsRepackingTracking.Designer.cs">
+      <DependentUpon>RawMatsRepackingTracking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmFGReceivingReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmFGReceivingReports.Designer.cs">
+      <DependentUpon>frmFGReceivingReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\SharpUpdateAcceptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\SharpUpdateAcceptForm.Designer.cs">
+      <DependentUpon>SharpUpdateAcceptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\SharpUpdateDownloadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\SharpUpdateDownloadForm.Designer.cs">
+      <DependentUpon>SharpUpdateDownloadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\SharpUpdateInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\SharpUpdateInfoForm.Designer.cs">
+      <DependentUpon>SharpUpdateInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\SharpUpdater.cs" />
+    <Compile Include="Classes\SharpUpdateXml.cs" />
+    <Compile Include="StoredProcedures.cs" />
+    <Compile Include="userinfo.cs" />
+    <Compile Include="user_info.cs" />
+    <EmbeddedResource Include="External Reports\FgDashboardMonitoring.resx">
+      <DependentUpon>FgDashboardMonitoring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finished Goods\frmFGIssue.resx">
+      <DependentUpon>frmFGIssue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finished Goods\frmFGReceipt.resx">
+      <DependentUpon>frmFGReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFGTransformationReport.resx">
+      <DependentUpon>frmFGTransformationReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInactiveRawmaterials.resx">
+      <DependentUpon>frmInactiveRawmaterials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMacroPendingProd.resx">
+      <DependentUpon>frmMacroPendingProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMicroPendingProd.resx">
+      <DependentUpon>frmMicroPendingProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmQAReports.resx">
+      <DependentUpon>frmQAReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frmMonthlyInventory.resx">
+      <DependentUpon>frmMonthlyInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frmMonthlyInventoryMicro.resx">
+      <DependentUpon>frmMonthlyInventoryMicro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="External Reports\frmNearlyExpired.resx">
+      <DependentUpon>frmNearlyExpired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRawMatsTheoMovementReports.resx">
+      <DependentUpon>frmRawMatsTheoMovementReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production\frmProductionAutomation.resx">
+      <DependentUpon>frmProductionAutomation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\fmApproveQAMacro.resx">
+      <DependentUpon>fmApproveQAMacro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="External Reports\fmProductionHours.resx">
+      <DependentUpon>fmProductionHours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Gerard\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repacking\frmActiveRepackingMonitoring.resx">
+      <DependentUpon>frmActiveRepackingMonitoring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmAddNewCustomer.resx">
+      <DependentUpon>frmAddNewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmAddNewMaterialReceivingMiscellaneous.resx">
+      <DependentUpon>frmAddNewMaterialReceivingMiscellaneous.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frmAddnewMoveOrder.resx">
+      <DependentUpon>frmAddnewMoveOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frmAddNewTransactionIn.resx">
+      <DependentUpon>frmAddNewTransactionIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmAddNewWarehouse.resx">
+      <DependentUpon>frmAddNewWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmAnotherReports.resx">
+      <DependentUpon>frmAnotherReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Approver\frmApproverViewRepackMaterials.resx">
+      <DependentUpon>frmApproverViewRepackMaterials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmBufferedInventory.resx">
+      <DependentUpon>frmBufferedInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmBulkValueMgmt.resx">
+      <DependentUpon>frmBulkValueMgmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmCombinationCode.resx">
+      <DependentUpon>frmCombinationCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmCustomer.resx">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmDailyProductionReports.resx">
+      <DependentUpon>frmDailyProductionReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmDailyProductions.resx">
+      <DependentUpon>frmDailyProductions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmEfficiencyofFG.resx">
+      <DependentUpon>frmEfficiencyofFG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finished Goods\frmFeedCodeTransactions.resx">
+      <DependentUpon>frmFeedCodeTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmFGDelayed.resx">
+      <DependentUpon>frmFGDelayed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finished Goods\frmFGMainInventory.resx">
+      <DependentUpon>frmFGMainInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frmFGMoveorderPrinting.resx">
+      <DependentUpon>frmFGMoveorderPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmFGReceivings.resx">
+      <DependentUpon>frmFGReceivings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmFgReporting.resx">
+      <DependentUpon>frmFgReporting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finished Goods\frmFgReportPerFeedCode.resx">
+      <DependentUpon>frmFgReportPerFeedCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="External Reports\frmFGReprocessReports.resx">
+      <DependentUpon>frmFGReprocessReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmFGView.resx">
+      <DependentUpon>frmFGView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmMaterialUsedOverProductionDate.resx">
+      <DependentUpon>frmMaterialUsedOverProductionDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frmMiscellaneousOutReport.resx">
+      <DependentUpon>frmMiscellaneousOutReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frmMiscellaneousReceiving.resx">
+      <DependentUpon>frmMiscellaneousReceiving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frmMiscellaneoustransactionIssueIN.resx">
+      <DependentUpon>frmMiscellaneoustransactionIssueIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frmMiscelleneousReceipt.resx">
+      <DependentUpon>frmMiscelleneousReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmMoveOrder.resx">
+      <DependentUpon>frmMoveOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frmMoveOrderDonePrinted.resx">
+      <DependentUpon>frmMoveOrderDonePrinted.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmNewMixingCode.resx">
+      <DependentUpon>frmNewMixingCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmProdDatetoFGReport.resx">
+      <DependentUpon>frmProdDatetoFGReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmRawMaterialsDataRepack.resx">
+      <DependentUpon>frmRawMaterialsDataRepack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReceivingReceipt.resx">
+      <DependentUpon>frmReceivingReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="External Reports\frmRepackingProductionCheckList.resx">
+      <DependentUpon>frmRepackingProductionCheckList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frmShowOrder.resx">
+      <DependentUpon>frmShowOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frmTransactMoveOrderQtyUpdate.resx">
+      <DependentUpon>frmTransactMoveOrderQtyUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\frmUpdateMoveOrderModal.resx">
+      <DependentUpon>frmUpdateMoveOrderModal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Gerard\frmUserLognew.resx">
+      <DependentUpon>frmUserLognew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production\frmFGReprocessModule.resx">
+      <DependentUpon>frmFGReprocessModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finished Goods\frmFinishGoods.resx">
+      <DependentUpon>frmFinishGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Gerard\frmFormsAvailable.resx">
+      <DependentUpon>frmFormsAvailable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="External Reports\frmFormula.resx">
+      <DependentUpon>frmFormula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmProductionLevel.resx">
+      <DependentUpon>frmProductionLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotUsing\frmCategory.resx">
+      <DependentUpon>frmCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotUsing\frmClassification.resx">
+      <DependentUpon>frmClassification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotUsing\frmDepartment.resx">
+      <DependentUpon>frmDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotUsing\frmFeedcode.resx">
+      <DependentUpon>frmFeedcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Approver\frmFormulationApproval.resx">
+      <DependentUpon>frmFormulationApproval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="External Reports\frmFormulationList.resx">
+      <DependentUpon>frmFormulationList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmFormulationManagement.resx">
+      <DependentUpon>frmFormulationManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="External Reports\frmFormulationtoProduction.resx">
+      <DependentUpon>frmFormulationtoProduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmFullDepreciationReceiving.resx">
+      <DependentUpon>frmFullDepreciationReceiving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Barcode Printing\frmGenerateRepackingBarcodeID.resx">
+      <DependentUpon>frmGenerateRepackingBarcodeID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Barcoding Print\frmGenerateRepackingBulkEntry.resx">
+      <DependentUpon>frmGenerateRepackingBulkEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotUsing\frmGroup.resx">
+      <DependentUpon>frmGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Import Excel\frmImportFormula.resx">
+      <DependentUpon>frmImportFormula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Import Excel\frmImportQC.resx">
+      <DependentUpon>frmImportQC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Import Excel\frmImportRawMaterials.resx">
+      <DependentUpon>frmImportRawMaterials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Import Excel\frmImportSupplier.resx">
+      <DependentUpon>frmImportSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repacking\frmListofApproveRepacking.resx">
+      <DependentUpon>frmListofApproveRepacking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repacking\frmListofMacroRepacking.resx">
+      <DependentUpon>frmListofMacroRepacking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmMacroReceivingEntry.resx">
+      <DependentUpon>frmMacroReceivingEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMacroRepacking.resx">
+      <DependentUpon>frmMacroRepacking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmainreport.resx">
+      <DependentUpon>frmmainreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasterlistRepacking.resx">
+      <DependentUpon>frmMasterlistRepacking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Planner\frmMaterialLowInventory.resx">
+      <DependentUpon>frmMaterialLowInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmMicroMaterialReceivingHistory.resx">
+      <DependentUpon>frmMicroMaterialReceivingHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMicroProfile.resx">
+      <DependentUpon>frmMicroProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmTheoScada.resx">
+      <DependentUpon>frmTheoScada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmmicroreceivingentry.resx">
+      <DependentUpon>frmmicroreceivingentry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMicroReceivingInfo.resx">
+      <DependentUpon>frmMicroReceivingInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmicrowhpreparation.resx">
+      <DependentUpon>frmmicrowhpreparation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmmixingcapacity.resx">
+      <DependentUpon>frmmixingcapacity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basemixed\frmPreparationofMixing.resx">
+      <DependentUpon>frmPreparationofMixing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Barcode Printing\frmPrintBasemixedEntry.resx">
+      <DependentUpon>frmPrintBasemixedEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Gerard\frmReprocessAdjustment.resx">
+      <DependentUpon>frmReprocessAdjustment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production\frmProductionEntry.resx">
+      <DependentUpon>frmProductionEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="External Reports\frmproductionrepackchart.resx">
+      <DependentUpon>frmproductionrepackchart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Planner\frmProductionSchedule.resx">
+      <DependentUpon>frmProductionSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotUsing\frmProfileMicroPrev.resx">
+      <DependentUpon>frmProfileMicroPrev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmMicroInventory.resx">
+      <DependentUpon>frmMicroInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQCImportPending.resx">
+      <DependentUpon>frmQCImportPending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuantity.resx">
+      <DependentUpon>frmQuantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotUsing\frmPositions.resx">
+      <DependentUpon>frmPositions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Barcoding Print\frmReprintFinishedGoods.resx">
+      <DependentUpon>frmReprintFinishedGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="External Reports\frmReprintMonitoring.resx">
+      <DependentUpon>frmReprintMonitoring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Gerard\frmsystemupdate.resx">
+      <DependentUpon>frmsystemupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Gerard\frmTheoroticalLogSheet.resx">
+      <DependentUpon>frmTheoroticalLogSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Gerard\frmViewApproverCancelProd.resx">
+      <DependentUpon>frmViewApproverCancelProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmrepackingentry.resx">
+      <DependentUpon>frmrepackingentry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotUsing\frmSections.resx">
+      <DependentUpon>frmSections.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmMacroInventory.resx">
+      <DependentUpon>frmMacroInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSupplierdf.resx">
+      <DependentUpon>frmSupplierdf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmMaterialStatusReports.resx">
+      <DependentUpon>frmMaterialStatusReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Gerard\frmSystemLock.resx">
+      <DependentUpon>frmSystemLock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmFGMaterialTracking.resx">
+      <DependentUpon>frmFGMaterialTracking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Gerard\frmuserrights.resx">
+      <DependentUpon>frmuserrights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Gerard\frmusers.resx">
+      <DependentUpon>frmusers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmApproveQA.resx">
+      <DependentUpon>frmApproveQA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmWarehouseMgmt.resx">
+      <DependentUpon>frmWarehouseMgmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotUsing\frmwhmacropreparation.resx">
+      <DependentUpon>frmwhmacropreparation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MacroBook.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MacroBook.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MicroBook.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MicroBook.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RawMatsRepackingTracking.resx">
+      <DependentUpon>RawMatsRepackingTracking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmFGReceivingReports.resx">
+      <DependentUpon>frmFGReceivingReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\SharpUpdateAcceptForm.resx">
+      <DependentUpon>SharpUpdateAcceptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\SharpUpdateDownloadForm.resx">
+      <DependentUpon>SharpUpdateDownloadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\SharpUpdateInfoForm.resx">
+      <DependentUpon>SharpUpdateInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="hr_bakDataSet.xsc">
+      <DependentUpon>hr_bakDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="hr_bakDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hr_bakDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hr_bakDataSet.xss">
+      <DependentUpon>hr_bakDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="678078-light-bulb-256.ico" />
+    <Content Include="fedora-icon.ico" />
+    <None Include="Resources\0-02-06-90261bd49d634ced5a021051cb227adcde9959aab2ac88216ecbe5a7d32c35fd_64323017.jpg" />
+    <None Include="Resources\information.png" />
+    <None Include="Resources\RDF Logo1.png" />
+    <None Include="Resources\thumbs_up_100px.png" />
+    <None Include="Resources\create_80px.png" />
+    <None Include="Resources\deleted_message_80px.png" />
+    <None Include="Resources\message_exchange_100px.png" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\unnamed.png" />
+    <None Include="Resources\thQ4G2SMSW.jpg" />
+    <None Include="Resources\th.jpg" />
+    <None Include="Resources\Employee.png" />
+    <None Include="Resources\Buddy.png" />
+    <None Include="Resources\RDF Logo.png" />
+    <None Include="Resources\user_rights_filled_50px.png" />
+    <None Include="Resources\add_user_male_50px.png" />
+    <None Include="Resources\geo-fence_40px.png" />
+    <None Include="Resources\split_horizontal_40px.png" />
+    <None Include="Resources\groups_40px.png" />
+    <None Include="Resources\logout_rounded_up_100px.png" />
+    <None Include="Resources\powerpoint_48px.png" />
+    <None Include="Resources\microsoft_excel_2019_48px.png" />
+    <None Include="Resources\word_48px.png" />
+    <None Include="Resources\office_365_48px.png" />
+    <None Include="Resources\notepad.png" />
+    <None Include="Resources\calculator_40px.png" />
+    <None Include="Resources\light_on_50px.png" />
+    <None Include="Resources\shutdown_64px.png" />
+    <None Include="Resources\key_64px.png" />
+    <None Include="Resources\lock-512.png" />
+    <None Include="Resources\rdflogo.jpg" />
+    <None Include="Resources\unlock_50px.png" />
+    <None Include="Resources\lock_64px.png" />
+    <None Include="Resources\users-man-woman-512.png" />
+    <None Include="Resources\couple_icloud_100px.png" />
+    <None Include="Resources\50230704_2055065151247409_2446561917540499456_n.jpg" />
+    <None Include="Resources\exit_sign_128px.png" />
+    <None Include="Resources\ajax-loader.gif" />
+    <None Include="Resources\exit_sign_80px.png" />
+    <None Include="Resources\exit_100px.png" />
+    <None Include="Resources\logc.png" />
+    <None Include="Resources\739.gif" />
+    <None Include="Resources\viber_image_2019-12-06_15-18-33.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
