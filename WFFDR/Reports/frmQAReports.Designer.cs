@@ -29,7 +29,6 @@ namespace WFFDR
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQAReports));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -37,6 +36,7 @@ namespace WFFDR
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQAReports));
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblrecords = new System.Windows.Forms.Label();
@@ -45,8 +45,6 @@ namespace WFFDR
             this.dtp2 = new System.Windows.Forms.DateTimePicker();
             this.Label6 = new System.Windows.Forms.Label();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
-            this.splitter1 = new System.Windows.Forms.Splitter();
-            this.btnPrint = new System.Windows.Forms.Button();
             this.dgvApproved = new System.Windows.Forms.DataGridView();
             this.po_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.po_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -96,6 +94,9 @@ namespace WFFDR
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phys_5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.drying_method = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.splitter1 = new System.Windows.Forms.Splitter();
+            this.btnPrint = new System.Windows.Forms.Button();
+            this.btnPrinting = new System.Windows.Forms.Button();
             this.GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvApproved)).BeginInit();
             this.SuspendLayout();
@@ -184,30 +185,6 @@ namespace WFFDR
             this.GroupBox1.TabIndex = 579;
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "QA Checklist Reports";
-            // 
-            // splitter1
-            // 
-            this.splitter1.Location = new System.Drawing.Point(0, 0);
-            this.splitter1.Margin = new System.Windows.Forms.Padding(1);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(1, 482);
-            this.splitter1.TabIndex = 577;
-            this.splitter1.TabStop = false;
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.BackColor = System.Drawing.SystemColors.Window;
-            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
-            this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPrint.Location = new System.Drawing.Point(1005, 10);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(75, 28);
-            this.btnPrint.TabIndex = 585;
-            this.btnPrint.Text = "Print";
-            this.btnPrint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPrint.UseVisualStyleBackColor = false;
             // 
             // dgvApproved
             // 
@@ -698,12 +675,53 @@ namespace WFFDR
             this.drying_method.ReadOnly = true;
             this.drying_method.Width = 126;
             // 
+            // splitter1
+            // 
+            this.splitter1.Location = new System.Drawing.Point(0, 0);
+            this.splitter1.Margin = new System.Windows.Forms.Padding(1);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(1, 482);
+            this.splitter1.TabIndex = 577;
+            this.splitter1.TabStop = false;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.BackColor = System.Drawing.SystemColors.Window;
+            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
+            this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrint.Location = new System.Drawing.Point(1005, 10);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(75, 28);
+            this.btnPrint.TabIndex = 585;
+            this.btnPrint.Text = "Print";
+            this.btnPrint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPrint.UseVisualStyleBackColor = false;
+            // 
+            // btnPrinting
+            // 
+            this.btnPrinting.BackColor = System.Drawing.SystemColors.Window;
+            this.btnPrinting.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrinting.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPrinting.Image = ((System.Drawing.Image)(resources.GetObject("btnPrinting.Image")));
+            this.btnPrinting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrinting.Location = new System.Drawing.Point(895, 14);
+            this.btnPrinting.Name = "btnPrinting";
+            this.btnPrinting.Size = new System.Drawing.Size(75, 28);
+            this.btnPrinting.TabIndex = 593;
+            this.btnPrinting.Text = "Print";
+            this.btnPrinting.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPrinting.UseVisualStyleBackColor = false;
+            this.btnPrinting.Click += new System.EventHandler(this.btnPrinting_Click);
+            // 
             // frmQAReports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(992, 482);
+            this.Controls.Add(this.btnPrinting);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.label2);
@@ -790,5 +808,6 @@ namespace WFFDR
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn phys_5;
         private System.Windows.Forms.DataGridViewTextBoxColumn drying_method;
+        internal System.Windows.Forms.Button btnPrinting;
     }
 }

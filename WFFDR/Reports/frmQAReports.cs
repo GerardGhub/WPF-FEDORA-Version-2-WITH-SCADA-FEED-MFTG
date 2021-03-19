@@ -77,5 +77,33 @@ namespace WFFDR
 
 
         }
+
+        private void btnPrinting_Click(object sender, EventArgs e)
+        {
+            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to Print the Data ? ", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            {
+
+
+                myglobal.DATE_REPORT = dtp1.Text;
+                myglobal.DATE_REPORT2 = dtp2.Text;
+
+                myglobal.REPORT_NAME = "QANewPrint";
+
+                frmReport fr = new frmReport();
+
+                fr.WindowState = FormWindowState.Maximized;
+                fr.Show();
+
+
+
+
+            }
+            else
+            {
+                return;
+            }
+
+
+        }
     }
 }
