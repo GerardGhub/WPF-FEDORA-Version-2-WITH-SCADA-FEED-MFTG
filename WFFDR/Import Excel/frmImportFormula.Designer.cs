@@ -95,13 +95,13 @@
             this.txtdatetime = new System.Windows.Forms.TextBox();
             this.txtaddedby = new System.Windows.Forms.TextBox();
             this.dgvRecipeData = new System.Windows.Forms.DataGridView();
+            this.mixing_capacity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qa_corn_code = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.corn_type_formula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtcapacity = new System.Windows.Forms.TextBox();
             this.txtcorntype = new System.Windows.Forms.TextBox();
             this.txtCorn = new System.Windows.Forms.TextBox();
             this.lblMytotalRecords = new System.Windows.Forms.Label();
-            this.mixing_capacity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.qa_corn_code = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.corn_type_formula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnLastCheck = new System.Windows.Forms.Button();
             this.btnLastCheck2 = new System.Windows.Forms.Button();
             this.lblStartValidating = new System.Windows.Forms.Label();
@@ -698,7 +698,7 @@
             this.dgvChecklist.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgvChecklist.EnableHeadersVisualStyles = false;
             this.dgvChecklist.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvChecklist.Location = new System.Drawing.Point(-354, 345);
+            this.dgvChecklist.Location = new System.Drawing.Point(-389, 345);
             this.dgvChecklist.Name = "dgvChecklist";
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
@@ -781,7 +781,7 @@
             this.dgvUpdateMixingCapacity.DefaultCellStyle = dataGridViewCellStyle12;
             this.dgvUpdateMixingCapacity.EnableHeadersVisualStyles = false;
             this.dgvUpdateMixingCapacity.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvUpdateMixingCapacity.Location = new System.Drawing.Point(-354, 419);
+            this.dgvUpdateMixingCapacity.Location = new System.Drawing.Point(-388, 419);
             this.dgvUpdateMixingCapacity.Name = "dgvUpdateMixingCapacity";
             dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
@@ -843,7 +843,7 @@
             this.dgvRecipeData.DefaultCellStyle = dataGridViewCellStyle16;
             this.dgvRecipeData.EnableHeadersVisualStyles = false;
             this.dgvRecipeData.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvRecipeData.Location = new System.Drawing.Point(-354, 272);
+            this.dgvRecipeData.Location = new System.Drawing.Point(-392, 272);
             this.dgvRecipeData.Name = "dgvRecipeData";
             dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
@@ -858,6 +858,24 @@
             this.dgvRecipeData.Size = new System.Drawing.Size(381, 68);
             this.dgvRecipeData.TabIndex = 424;
             this.dgvRecipeData.CurrentCellChanged += new System.EventHandler(this.dgvRecipeData_CurrentCellChanged);
+            // 
+            // mixing_capacity
+            // 
+            this.mixing_capacity.DataPropertyName = "mixing_capacity";
+            this.mixing_capacity.HeaderText = "MIxing";
+            this.mixing_capacity.Name = "mixing_capacity";
+            // 
+            // qa_corn_code
+            // 
+            this.qa_corn_code.DataPropertyName = "qa_corn_code";
+            this.qa_corn_code.HeaderText = "CORN CODE";
+            this.qa_corn_code.Name = "qa_corn_code";
+            // 
+            // corn_type_formula
+            // 
+            this.corn_type_formula.DataPropertyName = "corn_type_formula";
+            this.corn_type_formula.HeaderText = "Corn Type";
+            this.corn_type_formula.Name = "corn_type_formula";
             // 
             // txtcapacity
             // 
@@ -887,29 +905,11 @@
             // 
             this.lblMytotalRecords.AutoSize = true;
             this.lblMytotalRecords.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMytotalRecords.Location = new System.Drawing.Point(340, 128);
+            this.lblMytotalRecords.Location = new System.Drawing.Point(-68, 110);
             this.lblMytotalRecords.Name = "lblMytotalRecords";
             this.lblMytotalRecords.Size = new System.Drawing.Size(33, 15);
             this.lblMytotalRecords.TabIndex = 428;
             this.lblMytotalRecords.Text = "Sum";
-            // 
-            // mixing_capacity
-            // 
-            this.mixing_capacity.DataPropertyName = "mixing_capacity";
-            this.mixing_capacity.HeaderText = "MIxing";
-            this.mixing_capacity.Name = "mixing_capacity";
-            // 
-            // qa_corn_code
-            // 
-            this.qa_corn_code.DataPropertyName = "qa_corn_code";
-            this.qa_corn_code.HeaderText = "CORN CODE";
-            this.qa_corn_code.Name = "qa_corn_code";
-            // 
-            // corn_type_formula
-            // 
-            this.corn_type_formula.DataPropertyName = "corn_type_formula";
-            this.corn_type_formula.HeaderText = "Corn Type";
-            this.corn_type_formula.Name = "corn_type_formula";
             // 
             // btnLastCheck
             // 
@@ -951,7 +951,7 @@
             // 
             this.lblStartValidating.AutoSize = true;
             this.lblStartValidating.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStartValidating.Location = new System.Drawing.Point(388, 128);
+            this.lblStartValidating.Location = new System.Drawing.Point(-20, 110);
             this.lblStartValidating.Name = "lblStartValidating";
             this.lblStartValidating.Size = new System.Drawing.Size(14, 15);
             this.lblStartValidating.TabIndex = 431;

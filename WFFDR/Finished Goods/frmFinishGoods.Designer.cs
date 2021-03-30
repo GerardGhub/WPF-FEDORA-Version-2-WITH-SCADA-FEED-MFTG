@@ -273,6 +273,7 @@
             this.label24 = new System.Windows.Forms.Label();
             this.lblbindata = new System.Windows.Forms.Label();
             this.txt5percent = new System.Windows.Forms.TextBox();
+            this.txtproductions = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCount)).BeginInit();
@@ -1649,7 +1650,6 @@
             this.btnSaveFG.Size = new System.Drawing.Size(163, 41);
             this.btnSaveFG.TabIndex = 589;
             this.btnSaveFG.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSaveFG.Visible = false;
             this.btnSaveFG.Click += new System.EventHandler(this.btnSaveFG_Click);
             // 
             // btnSave
@@ -3166,6 +3166,7 @@
             // 
             // bunifuThinButton212
             // 
+            this.bunifuThinButton212.Controls.Add(this.txtproductions);
             this.bunifuThinButton212.Controls.Add(this.txtbola);
             this.bunifuThinButton212.Controls.Add(this.txtstartoffg);
             this.bunifuThinButton212.Controls.Add(this.txtSumofRepacking);
@@ -3392,6 +3393,18 @@
             this.txt5percent.Size = new System.Drawing.Size(93, 20);
             this.txt5percent.TabIndex = 693;
             this.txt5percent.Visible = false;
+            // 
+            // txtproductions
+            // 
+            this.txtproductions.BackColor = System.Drawing.Color.White;
+            this.txtproductions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtproductions.Enabled = false;
+            this.txtproductions.Location = new System.Drawing.Point(442, 137);
+            this.txtproductions.Margin = new System.Windows.Forms.Padding(1);
+            this.txtproductions.Name = "txtproductions";
+            this.txtproductions.ReadOnly = true;
+            this.txtproductions.Size = new System.Drawing.Size(169, 21);
+            this.txtproductions.TabIndex = 694;
             // 
             // frmFinishGoods
             // 
@@ -3768,5 +3781,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn additional_bin;
         private System.Windows.Forms.TextBox txtbola;
         private System.Windows.Forms.TextBox txt5percent;
+        private System.Windows.Forms.TextBox txtproductions;
     }
 }

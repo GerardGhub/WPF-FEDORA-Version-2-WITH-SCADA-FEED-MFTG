@@ -63,7 +63,7 @@ namespace WFFDR
 
         public void load_Schedules()
         {
-            string mcolumns = "test,transact_number,descripto,qty,TOTAL,date_added";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
+            string mcolumns = "test,transact_number,descripto,qty,TOTAL,date_added,added_by";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
             pointer_module.populateModule(dsetHeader, dgvApproved, mcolumns, "transaction_materials_receipt");
             lblrecords.Text = dgvApproved.RowCount.ToString();
 

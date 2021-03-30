@@ -914,7 +914,7 @@ namespace WFFDR
                        txtcurrentoutright.Text = dataView.CurrentRow.Cells["total_outright_count"].Value.ToString();
 
                         lblbindata.Text = dataView.CurrentRow.Cells["additional_bin"].Value.ToString();
-
+                    txtproductions.Text = dataView.CurrentRow.Cells["finish_production_date"].Value.ToString();
 
                         //txtremainingbatch.Text = dataView.CurrentRow.Cells["remaining_batch"].Value.ToString();
                     }
@@ -6294,6 +6294,16 @@ namespace WFFDR
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click_4(object sender, EventArgs e)
+        {
+            btnSaveFG.Visible = true;
+        }
+
+        private void button2_Click_5(object sender, EventArgs e)
+        {
+            btnSaveFG.Visible = true;
         }
     }
 }

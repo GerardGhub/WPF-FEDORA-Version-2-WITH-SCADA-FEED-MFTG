@@ -131,6 +131,7 @@
             this.dgvApproved.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             this.dgvApproved.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvApproved.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvApproved.BackgroundColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
@@ -313,7 +314,7 @@
             this.transact_number.HeaderText = "TRANSACT NO";
             this.transact_number.Name = "transact_number";
             this.transact_number.ReadOnly = true;
-            this.transact_number.Width = 173;
+            this.transact_number.Width = 109;
             // 
             // descripto
             // 
@@ -323,7 +324,7 @@
             this.descripto.HeaderText = "DESCRIPTION";
             this.descripto.Name = "descripto";
             this.descripto.ReadOnly = true;
-            this.descripto.Width = 174;
+            this.descripto.Width = 105;
             // 
             // qty
             // 
@@ -335,7 +336,7 @@
             this.qty.HeaderText = "QTY";
             this.qty.Name = "qty";
             this.qty.ReadOnly = true;
-            this.qty.Width = 173;
+            this.qty.Width = 54;
             // 
             // TOTAL
             // 
@@ -345,7 +346,7 @@
             this.TOTAL.HeaderText = "TOTAL";
             this.TOTAL.Name = "TOTAL";
             this.TOTAL.ReadOnly = true;
-            this.TOTAL.Width = 174;
+            this.TOTAL.Width = 67;
             // 
             // date_added
             // 
@@ -355,7 +356,7 @@
             this.date_added.HeaderText = "DATE ADDED";
             this.date_added.Name = "date_added";
             this.date_added.ReadOnly = true;
-            this.date_added.Width = 173;
+            this.date_added.Width = 102;
             // 
             // frmMiscelleneousReceipt
             // 
