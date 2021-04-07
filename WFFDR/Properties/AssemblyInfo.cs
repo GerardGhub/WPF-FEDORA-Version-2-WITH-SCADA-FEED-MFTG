@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("RDF Feeds And LiveStocks")]
 [assembly: AssemblyProduct("WFFDR")]
-[assembly: AssemblyCopyright("Copyright ©  2019 Gerard Singian Vincent Canda EpiFanio Tigno")]
+[assembly: AssemblyCopyright("Copyright ©  2019 Gerard Singian Vincent Canda EpiFanio Tigno Jilo Viray")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

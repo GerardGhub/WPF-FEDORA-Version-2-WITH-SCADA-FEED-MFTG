@@ -822,6 +822,10 @@ namespace WFFDR
                     {
                         toolStripMenuItem35.Enabled = true;
                     }
+                    else if(form_name =="ProductionPlanningControllerProduction")
+                    {
+                        productionPlanControllerToolStripMenuItem.Enabled = true;
+                    }
 
                 }
             }
@@ -4092,6 +4096,16 @@ namespace WFFDR
             prep.MdiParent = this;
 
             prep.Show();
+        }
+
+        private void productionPlanControllerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmProductionPlanController prep = new frmProductionPlanController();
+
+            prep.MdiParent = this;
+
+            prep.Show();
+
         }
     }
     

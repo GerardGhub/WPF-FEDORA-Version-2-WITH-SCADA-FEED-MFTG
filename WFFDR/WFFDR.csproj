@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,8 +25,8 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -49,6 +50,24 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>fedora-icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>34F4FECEE4688976B0FAA906F0AA18EC4F596DB5</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WFFDR_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AutoSproc, Version=1.0.0.3, Culture=neutral, PublicKeyToken=d7e6f270c9407513">
@@ -125,8 +144,8 @@
     <Reference Include="UIAutomationProvider" />
     <Reference Include="WindowsBase" />
     <Reference Include="WindowsFormsIntegration" />
-    <Reference Include="Z.Dapper.Plus, Version=3.0.36.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Z.Dapper.Plus.3.0.36\lib\net45\Z.Dapper.Plus.dll</HintPath>
+    <Reference Include="Z.Dapper.Plus, Version=4.0.1.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Z.Dapper.Plus.4.0.1\lib\net45\Z.Dapper.Plus.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -171,6 +190,12 @@
     </Compile>
     <Compile Include="frmMicroPendingProd.Designer.cs">
       <DependentUpon>frmMicroPendingProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductionPlanController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductionPlanController.Designer.cs">
+      <DependentUpon>frmProductionPlanController.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\frmQAReports.cs">
       <SubType>Form</SubType>
@@ -957,6 +982,9 @@
     <EmbeddedResource Include="frmMicroPendingProd.resx">
       <DependentUpon>frmMicroPendingProd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmProductionPlanController.resx">
+      <DependentUpon>frmProductionPlanController.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\frmQAReports.resx">
       <DependentUpon>frmQAReports.cs</DependentUpon>
     </EmbeddedResource>
@@ -1342,6 +1370,7 @@
       <DependentUpon>hr_bakDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -1351,6 +1380,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="WFFDR_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

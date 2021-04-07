@@ -312,6 +312,7 @@
             this.customerManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rawMateriaslDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bulkEntryManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productionPlanControllerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lbluserid = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.lbluserrightsid = new System.Windows.Forms.Label();
@@ -2076,7 +2077,7 @@
             this.toolStripMenuItem38});
             this.tootStripExceltoFedora1.Enabled = false;
             this.tootStripExceltoFedora1.Name = "tootStripExceltoFedora1";
-            this.tootStripExceltoFedora1.Size = new System.Drawing.Size(180, 22);
+            this.tootStripExceltoFedora1.Size = new System.Drawing.Size(152, 22);
             this.tootStripExceltoFedora1.Text = "Import to Fedora";
             this.tootStripExceltoFedora1.Visible = false;
             // 
@@ -2101,7 +2102,7 @@
             this.toolMacroRepacking1});
             this.reportinToolStrip1.Enabled = false;
             this.reportinToolStrip1.Name = "reportinToolStrip1";
-            this.reportinToolStrip1.Size = new System.Drawing.Size(180, 22);
+            this.reportinToolStrip1.Size = new System.Drawing.Size(152, 22);
             this.reportinToolStrip1.Text = "Repacking";
             this.reportinToolStrip1.Visible = false;
             // 
@@ -2127,7 +2128,7 @@
             this.itemCategoryToolStripMenuItem1});
             this.inventoryToolStripMenuItem1.Enabled = false;
             this.inventoryToolStripMenuItem1.Name = "inventoryToolStripMenuItem1";
-            this.inventoryToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.inventoryToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.inventoryToolStripMenuItem1.Text = "Inventory";
             this.inventoryToolStripMenuItem1.Visible = false;
             this.inventoryToolStripMenuItem1.Click += new System.EventHandler(this.inventoryToolStripMenuItem1_Click);
@@ -2172,7 +2173,7 @@
             this.toolStripMenuItem49});
             this.internalReportsToolStripMenuItem.Enabled = false;
             this.internalReportsToolStripMenuItem.Name = "internalReportsToolStripMenuItem";
-            this.internalReportsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.internalReportsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.internalReportsToolStripMenuItem.Text = "Internal Reports";
             this.internalReportsToolStripMenuItem.Click += new System.EventHandler(this.internalReportsToolStripMenuItem_Click);
             // 
@@ -2476,7 +2477,7 @@
             this.dashboardToolStripMenuItem});
             this.externalReportsToolStripMenuItem.Enabled = false;
             this.externalReportsToolStripMenuItem.Name = "externalReportsToolStripMenuItem";
-            this.externalReportsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.externalReportsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.externalReportsToolStripMenuItem.Text = "External Reports";
             this.externalReportsToolStripMenuItem.Click += new System.EventHandler(this.externalReportsToolStripMenuItem_Click);
             // 
@@ -2887,7 +2888,8 @@
             this.warehouseManagementToolStripMenuItem,
             this.customerManagementToolStripMenuItem,
             this.rawMateriaslDataToolStripMenuItem,
-            this.bulkEntryManagementToolStripMenuItem});
+            this.bulkEntryManagementToolStripMenuItem,
+            this.productionPlanControllerToolStripMenuItem});
             this.tsPSetup.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.tsPSetup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.tsPSetup.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -2970,6 +2972,14 @@
             this.bulkEntryManagementToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.bulkEntryManagementToolStripMenuItem.Text = "Bulk Entry Management";
             this.bulkEntryManagementToolStripMenuItem.Click += new System.EventHandler(this.bulkEntryManagementToolStripMenuItem_Click);
+            // 
+            // productionPlanControllerToolStripMenuItem
+            // 
+            this.productionPlanControllerToolStripMenuItem.Enabled = false;
+            this.productionPlanControllerToolStripMenuItem.Name = "productionPlanControllerToolStripMenuItem";
+            this.productionPlanControllerToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.productionPlanControllerToolStripMenuItem.Text = "Production Plan Controller";
+            this.productionPlanControllerToolStripMenuItem.Click += new System.EventHandler(this.productionPlanControllerToolStripMenuItem_Click);
             // 
             // lbluserid
             // 
@@ -4626,6 +4636,7 @@
         private System.Windows.Forms.ToolStripMenuItem microToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem macroToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem49;
+        private System.Windows.Forms.ToolStripMenuItem productionPlanControllerToolStripMenuItem;
     }
 }
 

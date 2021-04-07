@@ -31,12 +31,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMiscelleneousReceipt));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMiscelleneousReceipt));
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dtpprod2 = new System.Windows.Forms.DateTimePicker();
@@ -44,6 +44,11 @@
             this.txtorder = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.dgvApproved = new System.Windows.Forms.DataGridView();
+            this.transact_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TOTAL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.date_added = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblrecords = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -55,11 +60,6 @@
             this.lbldate = new System.Windows.Forms.Label();
             this.btnReprint = new System.Windows.Forms.Button();
             this.btnPrintorder = new System.Windows.Forms.Button();
-            this.transact_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descripto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TOTAL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.date_added = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvApproved)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -90,7 +90,7 @@
             this.dtpprod2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpprod2.Location = new System.Drawing.Point(622, 6);
             this.dtpprod2.Name = "dtpprod2";
-            this.dtpprod2.Size = new System.Drawing.Size(187, 30);
+            this.dtpprod2.Size = new System.Drawing.Size(162, 30);
             this.dtpprod2.TabIndex = 678;
             // 
             // dtpprod1
@@ -165,6 +165,58 @@
             this.dgvApproved.TabIndex = 668;
             this.dgvApproved.CurrentCellChanged += new System.EventHandler(this.dgvApproved_CurrentCellChanged);
             this.dgvApproved.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvApproved_RowPostPaint);
+            // 
+            // transact_number
+            // 
+            this.transact_number.DataPropertyName = "transact_number";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.transact_number.DefaultCellStyle = dataGridViewCellStyle3;
+            this.transact_number.HeaderText = "TRANSACT NO";
+            this.transact_number.Name = "transact_number";
+            this.transact_number.ReadOnly = true;
+            this.transact_number.Width = 109;
+            // 
+            // descripto
+            // 
+            this.descripto.DataPropertyName = "descripto";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.descripto.DefaultCellStyle = dataGridViewCellStyle4;
+            this.descripto.HeaderText = "DESCRIPTION";
+            this.descripto.Name = "descripto";
+            this.descripto.ReadOnly = true;
+            this.descripto.Width = 105;
+            // 
+            // qty
+            // 
+            this.qty.DataPropertyName = "qty";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.Format = "N2";
+            dataGridViewCellStyle5.NullValue = null;
+            this.qty.DefaultCellStyle = dataGridViewCellStyle5;
+            this.qty.HeaderText = "QTY";
+            this.qty.Name = "qty";
+            this.qty.ReadOnly = true;
+            this.qty.Width = 54;
+            // 
+            // TOTAL
+            // 
+            this.TOTAL.DataPropertyName = "TOTAL";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.TOTAL.DefaultCellStyle = dataGridViewCellStyle6;
+            this.TOTAL.HeaderText = "TOTAL";
+            this.TOTAL.Name = "TOTAL";
+            this.TOTAL.ReadOnly = true;
+            this.TOTAL.Width = 67;
+            // 
+            // date_added
+            // 
+            this.date_added.DataPropertyName = "date_added";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.date_added.DefaultCellStyle = dataGridViewCellStyle7;
+            this.date_added.HeaderText = "DATE ADDED";
+            this.date_added.Name = "date_added";
+            this.date_added.ReadOnly = true;
+            this.date_added.Width = 102;
             // 
             // lblrecords
             // 
@@ -283,11 +335,11 @@
             this.btnReprint.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnReprint.Image = ((System.Drawing.Image)(resources.GetObject("btnReprint.Image")));
             this.btnReprint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReprint.Location = new System.Drawing.Point(839, 422);
+            this.btnReprint.Location = new System.Drawing.Point(790, 422);
             this.btnReprint.Name = "btnReprint";
-            this.btnReprint.Size = new System.Drawing.Size(82, 28);
+            this.btnReprint.Size = new System.Drawing.Size(131, 28);
             this.btnReprint.TabIndex = 690;
-            this.btnReprint.Text = "&Print";
+            this.btnReprint.Text = "&Print Selected";
             this.btnReprint.UseVisualStyleBackColor = false;
             this.btnReprint.Click += new System.EventHandler(this.btnReprint_Click);
             // 
@@ -298,65 +350,13 @@
             this.btnPrintorder.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPrintorder.Image = ((System.Drawing.Image)(resources.GetObject("btnPrintorder.Image")));
             this.btnPrintorder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPrintorder.Location = new System.Drawing.Point(838, 8);
+            this.btnPrintorder.Location = new System.Drawing.Point(790, 8);
             this.btnPrintorder.Name = "btnPrintorder";
-            this.btnPrintorder.Size = new System.Drawing.Size(82, 28);
+            this.btnPrintorder.Size = new System.Drawing.Size(130, 28);
             this.btnPrintorder.TabIndex = 691;
-            this.btnPrintorder.Text = "&Print";
+            this.btnPrintorder.Text = "&Sorted Print";
             this.btnPrintorder.UseVisualStyleBackColor = false;
             this.btnPrintorder.Click += new System.EventHandler(this.btnPrintorder_Click);
-            // 
-            // transact_number
-            // 
-            this.transact_number.DataPropertyName = "transact_number";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.transact_number.DefaultCellStyle = dataGridViewCellStyle3;
-            this.transact_number.HeaderText = "TRANSACT NO";
-            this.transact_number.Name = "transact_number";
-            this.transact_number.ReadOnly = true;
-            this.transact_number.Width = 109;
-            // 
-            // descripto
-            // 
-            this.descripto.DataPropertyName = "descripto";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.descripto.DefaultCellStyle = dataGridViewCellStyle4;
-            this.descripto.HeaderText = "DESCRIPTION";
-            this.descripto.Name = "descripto";
-            this.descripto.ReadOnly = true;
-            this.descripto.Width = 105;
-            // 
-            // qty
-            // 
-            this.qty.DataPropertyName = "qty";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.Format = "N2";
-            dataGridViewCellStyle5.NullValue = null;
-            this.qty.DefaultCellStyle = dataGridViewCellStyle5;
-            this.qty.HeaderText = "QTY";
-            this.qty.Name = "qty";
-            this.qty.ReadOnly = true;
-            this.qty.Width = 54;
-            // 
-            // TOTAL
-            // 
-            this.TOTAL.DataPropertyName = "TOTAL";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.TOTAL.DefaultCellStyle = dataGridViewCellStyle6;
-            this.TOTAL.HeaderText = "TOTAL";
-            this.TOTAL.Name = "TOTAL";
-            this.TOTAL.ReadOnly = true;
-            this.TOTAL.Width = 67;
-            // 
-            // date_added
-            // 
-            this.date_added.DataPropertyName = "date_added";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.date_added.DefaultCellStyle = dataGridViewCellStyle7;
-            this.date_added.HeaderText = "DATE ADDED";
-            this.date_added.Name = "date_added";
-            this.date_added.ReadOnly = true;
-            this.date_added.Width = 102;
             // 
             // frmMiscelleneousReceipt
             // 
