@@ -767,7 +767,7 @@ namespace WFFDR
                     }
                     else if (form_name == "TheoScadaReports")
                     {
-                        theoreticalScadaDataToolStripMenuItem.Enabled = true;
+                        scadaReportBasedOnProductionToolStripMenuItem.Enabled = true;
                     }
                     else if (form_name == "DashBoardMenu")
                     {
@@ -825,6 +825,11 @@ namespace WFFDR
                     else if(form_name =="ProductionPlanningControllerProduction")
                     {
                         productionPlanControllerToolStripMenuItem.Enabled = true;
+                    }
+                    else if(form_name =="frmScadaMonitoringPerProdPlan")
+                    {
+
+                        scadaReportBasedOnProdPlanToolStripMenuItem.Enabled = true;
                     }
 
                 }
@@ -4017,9 +4022,9 @@ namespace WFFDR
 
         private void theoreticalScadaDataToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            frmTheoScada Scada = new frmTheoScada();
-            Scada.MdiParent = this;
-            Scada.Show();
+            //frmTheoScada Scada = new frmTheoScada();
+            //Scada.MdiParent = this;
+            //Scada.Show();
         }
 
         private void productionHoursToolStripMenuItem_Click_2(object sender, EventArgs e)
@@ -4080,10 +4085,7 @@ namespace WFFDR
         private void macroToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             myglobal.REPORT_NAME = "MacroInventorys";
-            // rpt.Load(Rpt_Path + "\\MacroInventoryPrint.rpt");
-
             frmReport frmReport = new frmReport();
-            //frmReport.MdiParent = this;
             frmReport.Show();
 
         }
@@ -4092,20 +4094,30 @@ namespace WFFDR
         {
 
            frmQAReports prep = new frmQAReports();
-
             prep.MdiParent = this;
-
             prep.Show();
         }
 
         private void productionPlanControllerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmProductionPlanController prep = new frmProductionPlanController();
-
             prep.MdiParent = this;
-
             prep.Show();
 
+        }
+
+        private void scadaReportBasedOnProdPlanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmScadaMonitoringPerProdPlan proteinShake = new frmScadaMonitoringPerProdPlan();
+            proteinShake.MdiParent = this;
+            proteinShake.Show();
+        }
+
+        private void scadaReportBasedOnProductionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTheoScada Scada = new frmTheoScada();
+            Scada.MdiParent = this;
+            Scada.Show();
         }
     }
     

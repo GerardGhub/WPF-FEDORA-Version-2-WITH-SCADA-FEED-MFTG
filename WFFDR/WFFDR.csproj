@@ -167,10 +167,10 @@
     <Compile Include="Finished Goods\frmFGReceipt.Designer.cs">
       <DependentUpon>frmFGReceipt.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmFGTransformationReport.cs">
+    <Compile Include="External Reports\frmFGTransformationReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmFGTransformationReport.Designer.cs">
+    <Compile Include="External Reports\frmFGTransformationReport.Designer.cs">
       <DependentUpon>frmFGTransformationReport.cs</DependentUpon>
     </Compile>
     <Compile Include="frmInactiveRawmaterials.cs">
@@ -191,10 +191,16 @@
     <Compile Include="frmMicroPendingProd.Designer.cs">
       <DependentUpon>frmMicroPendingProd.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmProductionPlanController.cs">
+    <Compile Include="frmScadaMonitoringPerProdPlan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProductionPlanController.Designer.cs">
+    <Compile Include="frmScadaMonitoringPerProdPlan.Designer.cs">
+      <DependentUpon>frmScadaMonitoringPerProdPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Planner\frmProductionPlanController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production Planner\frmProductionPlanController.Designer.cs">
       <DependentUpon>frmProductionPlanController.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\frmQAReports.cs">
@@ -970,7 +976,7 @@
     <EmbeddedResource Include="Finished Goods\frmFGReceipt.resx">
       <DependentUpon>frmFGReceipt.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmFGTransformationReport.resx">
+    <EmbeddedResource Include="External Reports\frmFGTransformationReport.resx">
       <DependentUpon>frmFGTransformationReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInactiveRawmaterials.resx">
@@ -982,7 +988,10 @@
     <EmbeddedResource Include="frmMicroPendingProd.resx">
       <DependentUpon>frmMicroPendingProd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProductionPlanController.resx">
+    <EmbeddedResource Include="frmScadaMonitoringPerProdPlan.resx">
+      <DependentUpon>frmScadaMonitoringPerProdPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Planner\frmProductionPlanController.resx">
       <DependentUpon>frmProductionPlanController.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\frmQAReports.resx">
