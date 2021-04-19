@@ -439,6 +439,13 @@ namespace WFFDR
 
         void MicroSummaryData()
         {
+            try
+            {
+
+     
+
+
+
             dgvMicroImport[6, dgvMicroImport.Rows.Count - 1].Value = "Total";
             dgvMicroImport.Rows[dgvMicroImport.Rows.Count - 1].Cells[0].Style.BackColor = Color.Green;
             dgvMicroImport.Rows[dgvMicroImport.Rows.Count - 1].Cells[0].Style.ForeColor = Color.Red;
@@ -474,6 +481,13 @@ namespace WFFDR
 
 
             lblgrandotal.Text = tot.ToString();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
 
 

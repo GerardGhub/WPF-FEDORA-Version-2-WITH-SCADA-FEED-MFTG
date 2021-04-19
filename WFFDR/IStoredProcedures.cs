@@ -30,7 +30,7 @@ namespace WFFDR
         DataSet rdf_sp_prod_type(int type_id, string type_name, string mode);
 
         DataSet rdf_sp_supplier(int supplier_id, string supplier, string contact_no, string address, string email_address, string mode);
-        DataSet rdf_sp_prod_schedules(int prod_id, string p_feed_code, string p_bags, string p_nobatch, string proddate, string dateadded,string iscancelreason,string feed_type,string series_num, string bagorbin, string additional_bin, string corn_type, string mode);
+        DataSet rdf_sp_prod_schedules(int prod_id, string p_feed_code, string p_bags, string p_nobatch, string proddate, string dateadded,string iscancelreason,string feed_type,string series_num, string bagorbin, string additional_bin, string corn_type, string planning_by, string mode);
 
         //Move order
 

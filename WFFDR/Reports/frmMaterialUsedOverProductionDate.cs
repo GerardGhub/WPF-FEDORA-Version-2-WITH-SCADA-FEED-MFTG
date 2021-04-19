@@ -162,7 +162,7 @@ namespace WFFDR
         private void btnlessthan_Click(object sender, EventArgs e)
         {
             dSet.Clear();
-            dSet = objStorProc.rdf_sp_prod_schedules(0, "", "", "", "", "", "", "", "","","", "", "formulationbusy");
+            dSet = objStorProc.rdf_sp_prod_schedules(0, "", "", "", "", "", "", "", "","","", "","", "formulationbusy");
 
             if (dSet.Tables[0].Rows.Count > 0)
             {
@@ -215,9 +215,7 @@ namespace WFFDR
 
                 picload.Visible = true;
             }
-            //dset_emp2.Clear();
-            //dset_emp2 = objStorProc.sp_getMajorTables("SearchMaterialNew");
-            //doSearch2();
+
             QuerySearchMaterial2();
             QuerySearchMaterial3();
             //doSearch3();
@@ -239,20 +237,7 @@ namespace WFFDR
             txtsavetotalqty.Text = (float.Parse(txttotalqty.Text) + float.Parse(txttotalqtynew.Text)).ToString("#,0.000");
 
 
-            //txtsavetotalqty.Text = string.Format("{0:0.00}", double.Parse(txtsavetotalqty.Text));
-            //double totalprod;
-            //double answer;
-            //totalprod = double.Parse(txtsavetotalqty.Text);
-            //answer = totalprod * 1;
-
-            //txtsavetotalqty.Text = Math.Round(answer, 2).ToString();
-            //}
-            //else
-            //{
-
-            //    txtsavetotalqty.Text = (float.Parse(txttotalqty.Text) + float.Parse(txttotalqtynew.Text)).ToString();
-            ////lovely    txtsavetotalqty.Text = (float.Parse(txttotalqty.Text) + float.Parse(txttotalqtynew.Text)).ToString("#,##0");
-            //}
+   
 
             txtgrandtotal.Text = (float.Parse(txtsavetotalqty.Text) + float.Parse(txttotalTheo.Text)).ToString("#,0.00"); //lovely
 

@@ -660,7 +660,7 @@ namespace WFFDR
             if (lblnumberbasis.Text == "0")
             {
                 dSet.Clear();
-                dSet = objStorProc.rdf_sp_prod_schedules(0, "", "", "", "", "", "", "", "", "","","", "formulationbusy");
+                dSet = objStorProc.rdf_sp_prod_schedules(0, "", "", "", "", "", "", "", "", "","","","", "formulationbusy");
 
                 if (dSet.Tables[0].Rows.Count > 0)
                 {

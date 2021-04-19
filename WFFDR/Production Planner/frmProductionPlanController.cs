@@ -159,7 +159,7 @@ namespace WFFDR
             if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to Cancel the selected Production Schedule? ", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 dSet.Clear();
-                dSet = objStorProc.rdf_sp_prod_schedules(0, txtProdId.Text, txtRemarks.Text, "", "", "", "", "", "", "", "", "", "cancelProdPlanInProductionArea");
+                dSet = objStorProc.rdf_sp_prod_schedules(0, txtProdId.Text, txtRemarks.Text, "", "", "", "", "", "", "", "", "","", "cancelProdPlanInProductionArea");
 
                 SuccessFullyCancelled();
                 frmProductionPlanController_Load(sender, e);

@@ -178,34 +178,14 @@ namespace WFFDR
 
             //start
             dSet.Clear();
-            dSet = objStorProc.rdf_sp_prod_schedules(0, lblitemcode.Text, "", "", "", "", "", "","","","","", "existsornotformulahollow");
+            dSet = objStorProc.rdf_sp_prod_schedules(0, lblitemcode.Text, "", "", "", "", "", "","","","","","", "existsornotformulahollow");
 
             if (dSet.Tables[0].Rows.Count > 0)
             {
 
-                ////dSet2.Clear();
-                ////dSet2 = objStorProc.rdf_sp_prod_schedules(0, lblitemcode.Text, lblfeedcode.Text, "", "", "", "", "", "", "", "", "", "formula_code");
 
-                ////if (dSet2.Tables[0].Rows.Count > 0)
-                ////{
-
-
-
-                    //valentine
-
-                    //dSet.Clear();
-                    //dSet = objStorProc.rdf_sp_prod_schedules(0, "", "", "", "", "", "", "", "DeleteformulaHollow");
                     btnlessthan_Click(new object(), new System.EventArgs());
-                ////}
-                ////else
-                ////{
 
-                ////    FeedCodeAlreadyExists2();
-                ////    return;
-                ////}
-                //ItemCodeExist();
-
-                //return;
             }
             else
             {
@@ -219,7 +199,7 @@ namespace WFFDR
 
                 //ItemCodeNotExist();
                 dSet.Clear();
-                dSet = objStorProc.rdf_sp_prod_schedules(0, "", "", "", "", "", "", "","","","","", "DeleteformulaHollow");
+                dSet = objStorProc.rdf_sp_prod_schedules(0, "", "", "", "", "", "", "","","","","","", "DeleteformulaHollow");
 
                 //this.dgv_table.CurrentCell = this.dgv_table.Rows[0].Cells[this.dgv_table.CurrentCell.ColumnIndex];
                 return;
@@ -688,46 +668,15 @@ namespace WFFDR
                 //MessageBox.Show("Takala");
                 bunifuUpload_Click(sender, e);
                 dSet.Clear();
-                dSet = objStorProc.rdf_sp_prod_schedules(0, "", "", "", "", "", "","","", "","","", "DeleteformulaHollow");
+                dSet = objStorProc.rdf_sp_prod_schedules(0, "", "", "", "", "", "","","", "","","","", "DeleteformulaHollow");
                 return;
             }
 
             bunifuThinButton24_Click(sender, e);
-            //if (dgv_table.Rows.Count >= 1)
-            //{
 
-
-            //    int i = dgv_table.CurrentRow.Index + 1;
-            //    if (i >= -1 && i < dgv_table.Rows.Count)
-            //    {
-            //        //dgv_table.CurrentCell = dgv_table.Rows[i].Cells[1];
-            //        bunifuThinButton24_Click(sender,e);
-            //        //Proxy();
-            //    }
-
-            //    //btnproxy_Click(sender, e);
-
-            //    //dgvMaster_Click(sender,e);
-            //    else
-            //    {
-            //        //LastLine();
-
-
-            //        bunifuUpload_Click(sender, e);
-            //        dSet.Clear();
-            //        dSet = objStorProc.rdf_sp_prod_schedules(0, "", "", "", "", "", "", "", "DeleteformulaHollow");
-            //        return;
-            //    }
-
-            //}
-            ////btnproxy_Click(sender, e);
 
         }
-        //void Proxy()
-        //{
-        //    btnproxy_Click(new object(), new System.EventArgs());
 
-        //}
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
@@ -743,31 +692,14 @@ namespace WFFDR
 
             //start
             dSet.Clear();
-            dSet = objStorProc.rdf_sp_prod_schedules(0, lblitemcode.Text, "","","", "", "", "", "", "","","", "existsornotformulahollow");
+            dSet = objStorProc.rdf_sp_prod_schedules(0, lblitemcode.Text, "","","", "", "", "", "", "","","","", "existsornotformulahollow");
 
             if (dSet.Tables[0].Rows.Count > 0)
             {
 
 
 
-                //MessageBox.Show("Pwet");
-                //SendKeys.SendWait("{ENTER}"); // How to press enter?
 
-
-
-
-
-
-
-
-
-
-
-
-                    //dSet.Clear();
-                    //dSet = objStorProc.rdf_sp_prod_schedules(0, "", "", "", "", "", "", "", "DeleteformulaHollow");
-                    //btnlessthan_Click(new object(), new System.EventArgs());
-                    //return;
                 }
             else
             {
@@ -778,7 +710,7 @@ namespace WFFDR
                 lblitemcodeerror.Visible = true;
                 //ItemCodeNotExist();
                 dSet.Clear();
-                dSet = objStorProc.rdf_sp_prod_schedules(0, "", "", "","","", "", "", "", "","","", "DeleteformulaHollow");
+                dSet = objStorProc.rdf_sp_prod_schedules(0, "", "", "","","", "", "", "", "","","","", "DeleteformulaHollow");
 
                 //this.dgv_table.CurrentCell = this.dgv_table.Rows[0].Cells[this.dgv_table.CurrentCell.ColumnIndex];
                 return;
@@ -835,14 +767,11 @@ namespace WFFDR
         void AvoidDuplicate()
         {
             dSet.Clear();
-            dSet = objStorProc.rdf_sp_prod_schedules(0, lblfeedcode.Text, "","","", "", "", "", "","","", "", "formulanotexist");
+            dSet = objStorProc.rdf_sp_prod_schedules(0, lblfeedcode.Text, "","","", "", "", "", "","","", "","", "formulanotexist");
 
             if (dSet.Tables[0].Rows.Count > 0)
             {
-                //FeedCodeAlreadyExist();
 
-                //MessageBox.Show("TARAa");
-                ////dgv_table.Refresh();
                 lblnumvalidator.Text = "1";
          
   
@@ -884,22 +813,11 @@ namespace WFFDR
                 //MessageBox.Show("Takala2");
                 bunifuUpload_Click(sender, e);
                 dSet.Clear();
-                dSet = objStorProc.rdf_sp_prod_schedules(0, "", "", "", "", "", "", "","","","","", "DeleteformulaHollow");
+                dSet = objStorProc.rdf_sp_prod_schedules(0, "", "", "", "", "", "", "","","","","","", "DeleteformulaHollow");
                 return;
             }
 
-            ////dSet2.Clear();
-            ////dSet2 = objStorProc.rdf_sp_prod_schedules(0, lblitemcode.Text, lblfeedcode.Text, "", "", "", "", "", "", "", "", "", "formula_code");
 
-            ////if (dSet2.Tables[0].Rows.Count > 0)
-            ////{
-
-            ////}
-            ////else
-            ////{
-            ////    FeedCodeAlreadyExists2();
-            ////    return;
-            ////}
 
 
                 btnlessthan_Click(sender, e);
@@ -908,19 +826,6 @@ namespace WFFDR
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
-
-            //dSet2.Clear();
-            //dSet2 = objStorProc.rdf_sp_prod_schedules(0, lblitemcode.Text, lblfeedcode.Text, "", "", "", "", "", "", "", "", "", "formulacode");
-
-            //if (dSet2.Tables[0].Rows.Count > 0)
-            //{
-            //    MessageBox.Show("b");
-            //}
-            //else
-            //{
-            //    MessageBox.Show("b");
-            //}
-
 
 
             }
@@ -967,41 +872,7 @@ namespace WFFDR
                 IterationAfterInsertTheData();
             }
 
-            //DataRecipeSearch();
 
-            //dgvRecipeData_CurrentCellChanged(new object(), new System.EventArgs());
-            //MessageBox.Show(txtFeedType.Text);
-            //if (lblMytotalRecords.Text == "0")
-            //{
-
-            //}
-
-            //else
-            //{
-            //    txtdatetime.Text = DateTime.Now.ToString();
-
-            //    String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
-
-            //    SqlConnection sql_con = new SqlConnection(connetionString);
-
-
-
-            //    string sqlquery = "UPDATE [dbo].[rdf_recipe] SET mixing_capacity='" + txtcapacity.Text + "', mixing_capacity_timestamp ='" + txtdatetime.Text + "', mixing_capacity_modified_by='" + txtaddedby.Text + "',corn_type_formula='" + txtcorntype.Text + "',qa_corn_code='" + txtCorn.Text + "'  WHERE rp_feed_type = '"+txtFeedType.Text+ "' and not  mixing_capacity IS NOT NULL ";
-
-
-
-            //    sql_con.Open();
-            //    SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
-            //    SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
-            //    DataTable dt = new DataTable();
-            //    sdr.Fill(dt);
-            //    dgvUpdateMixingCapacity.DataSource = dt;
-
-
-
-            //    sql_con.Close();
-            //    MessageBox.Show("Solid");
-            //}
 
 
 

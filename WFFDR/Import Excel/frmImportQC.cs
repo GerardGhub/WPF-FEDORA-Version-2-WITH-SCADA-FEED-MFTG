@@ -187,19 +187,19 @@ DataTableCollection tableCollection;
             //txtFilename.Text = "";
             //start
             dSet.Clear();
-            dSet = objStorProc.rdf_sp_prod_schedules(0, lblitemcode.Text.Trim(), "", "", "","","", "", "","","", "", "existsornotpohollow");
+            dSet = objStorProc.rdf_sp_prod_schedules(0, lblitemcode.Text.Trim(), "", "", "","","", "", "","","", "","", "existsornotpohollow");
 
             if (dSet.Tables[0].Rows.Count > 0)
             {
                 dSet.Clear();
-                dSet = objStorProc.rdf_sp_prod_schedules(0, "", "", "", "", "", "", "","","","","", "DeletepoHollow");
+                dSet = objStorProc.rdf_sp_prod_schedules(0, "", "", "", "", "", "", "","","","","","", "DeletepoHollow");
                 btnlessthan_Click(new object(), new System.EventArgs());
             }
             else
             {
 
                 dSet.Clear();
-                dSet = objStorProc.rdf_sp_prod_schedules(0, "", "", "", "", "", "", "","","","","", "DeletepoHollow");
+                dSet = objStorProc.rdf_sp_prod_schedules(0, "", "", "", "", "", "", "","","","","","", "DeletepoHollow");
 
                 ItemCodeNotExist();
                 return;

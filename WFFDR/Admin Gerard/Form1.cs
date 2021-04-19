@@ -287,7 +287,7 @@ namespace WFFDR
         {
 
             dSet.Clear();
-            dSet = objStorProc.rdf_sp_prod_schedules(0, txtdatenow.Text, "", "", "", "", "", "", "", "", "", "", "extractedrawmats");
+            dSet = objStorProc.rdf_sp_prod_schedules(0, txtdatenow.Text, "", "", "", "", "", "", "", "", "","", "", "extractedrawmats");
 
             if (dSet.Tables[0].Rows.Count > 0)
             {
@@ -302,7 +302,7 @@ namespace WFFDR
 
 
             dSet.Clear();
-            dSet = objStorProc.rdf_sp_prod_schedules(0, txtdatenow.Text, "", "", "", "", "", "", "", "", "", "", "injectedrawmatsinrecipe");
+            dSet = objStorProc.rdf_sp_prod_schedules(0, txtdatenow.Text, "", "", "", "", "", "", "", "", "","", "", "injectedrawmatsinrecipe");
 
             if (dSet.Tables[0].Rows.Count > 0)
             {
@@ -326,7 +326,7 @@ namespace WFFDR
             {
 
                 dSet.Clear();
-                //dSet = objStorProc.rdf_sp_prod_schedules(0, txt1.Text, "", "", "", "", "", "", "existsornot");
+
                 dSet = objStorProc.rdf_sp_new_preparation(0, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "insertrepacking");
 
             }

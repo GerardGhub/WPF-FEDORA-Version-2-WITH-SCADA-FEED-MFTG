@@ -21,7 +21,6 @@ namespace WFFDR
         DataSet dSet_temp = new DataSet();
         string mode = "";
         int p_id = 0;
-        int temp_hid = 0;
         myglobal pointer_module = new myglobal();
         DataSet dsetHeader = new DataSet();
 
@@ -287,7 +286,7 @@ namespace WFFDR
             if (mode == "add")
             {
                 dSet.Clear();
-                dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text, txtbags.Text, "", "", "", "","","","","","", "getbyname");
+                dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text, txtbags.Text, "", "", "", "","","","","","","", "getbyname");
 
                 if (dSet.Tables[0].Rows.Count > 0)
                 {
@@ -298,7 +297,7 @@ namespace WFFDR
                 else
                 {
                     dSet.Clear();
-                    dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(),textBox1.Text.Trim(),"","","","", "add");
+                    dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(),textBox1.Text.Trim(),"","","","","", "add");
 
                     return true;
                 }
@@ -307,12 +306,12 @@ namespace WFFDR
             {
                 dSet.Clear();
                 //dSet = objStorProc.rdf_sp_supplier(0, txtSupplier.Text, txtContactNo.Text, txtAddress.Text, txtEmailAddress.Text, "getbyname"); buje muna
-                dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(),textBox1.Text.Trim(),"","","","", "getbyfeedcode");
+                dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(),textBox1.Text.Trim(),"","","","","", "getbyfeedcode");
                 dSet_temp.Clear();
 
 
                 //dSet_temp = objStorProc.rdf_sp_supplier(p_id, txtSupplier.Text, txtContactNo.Text, txtAddress.Text, txtEmailAddress.Text, "getbyid"); buje muna
-                dSet_temp = objStorProc.rdf_sp_prod_schedules(p_id, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(),textBox1.Text.Trim(),"","","","", "getbyid");
+                dSet_temp = objStorProc.rdf_sp_prod_schedules(p_id, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(),textBox1.Text.Trim(),"","","","","", "getbyid");
                 if (dSet.Tables[0].Rows.Count > 0)
                 {
                     int tmpID = Convert.ToInt32(dSet.Tables[0].Rows[0][7].ToString());
@@ -320,14 +319,14 @@ namespace WFFDR
                     {
                         dSet.Clear();
                         //dSet = objStorProc.rdf_sp_supplier(p_id, txtSupplier.Text.Trim(), txtContactNo.Text.Trim(), txtAddress.Text.Trim(), txtEmailAddress.Text.Trim(), "edit"); buje muna
-                        dSet = objStorProc.rdf_sp_prod_schedules(p_id, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(),textBox1.Text.Trim(),"","","","", "edit");
+                        dSet = objStorProc.rdf_sp_prod_schedules(p_id, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(),textBox1.Text.Trim(),"","","","","", "edit");
 
                         return true;
                     }
                     else
                     {
                         //MessageBox.Show("Offense code is already added.", "Offense", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        dSet = objStorProc.rdf_sp_prod_schedules(p_id, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(),textBox1.Text.Trim(),"","","","", "edit");
+                        dSet = objStorProc.rdf_sp_prod_schedules(p_id, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(),textBox1.Text.Trim(),"","","","","", "edit");
                         //load_Schedules();
                         load_SchedulesCancelByApprover();
                         UpdateOkay();
@@ -346,12 +345,12 @@ namespace WFFDR
             else if (mode == "cancel")
             {
                 dSet.Clear();
-                dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(),textBox1.Text.Trim(),"","","","", "getbyname");
+                dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(),textBox1.Text.Trim(),"","","","","", "getbyname");
                 dSet_temp.Clear();
 
 
 
-                dSet_temp = objStorProc.rdf_sp_prod_schedules(p_id, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(),textBox1.Text.Trim(),"","","","", "getbyid");
+                dSet_temp = objStorProc.rdf_sp_prod_schedules(p_id, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(),textBox1.Text.Trim(),"","","","","", "getbyid");
                 if (dSet.Tables[0].Rows.Count > 0)
                 {
                     int tmpID = Convert.ToInt32(dSet.Tables[0].Rows[0][7].ToString());
@@ -359,7 +358,7 @@ namespace WFFDR
                     {
                         dSet.Clear();
 
-                        dSet = objStorProc.rdf_sp_prod_schedules(p_id, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(),textBox1.Text.Trim(),"","","","", "cancel");
+                        dSet = objStorProc.rdf_sp_prod_schedules(p_id, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(),textBox1.Text.Trim(),"","","","","", "cancel");
 
                         return true;
                     }
@@ -408,11 +407,9 @@ namespace WFFDR
             popup.ImageSize = new Size(70, 80);
             popup.BodyColor = Color.DarkGreen;
             popup.Popup();
-            //popup.AnimationDuration = 1000;
-            //popup.ShowOptionsButton.ToString();
+            popup.AnimationDuration = 1000;
+            popup.ShowOptionsButton.ToString();
             popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            //txtMainInput.Focus();
-            //txtMainInput.Select();
             popup.Delay = 500;
             popup.AnimationInterval = 10;
             popup.AnimationDuration = 1000;
@@ -640,10 +637,9 @@ namespace WFFDR
                 {
 
                     this.dgvImport.CurrentCell = this.dgvImport.Rows[0].Cells[this.dgvImport.CurrentCell.ColumnIndex];
-                    //bunifuThinButton26_Click(sender, e);
-                    //MessageBox.Show("Ready to Save !");
+
                     metroSave_Click(sender, e);
-                    //MessageBox.Show("Nasa last Line knaa");
+  
                     return;
                 }
                 txttotalQty.Text = (float.Parse(txtQuantity.Text) * float.Parse(txtnobatch.Text)).ToString();
@@ -720,9 +716,7 @@ namespace WFFDR
             DataTable dt = new DataTable();
             sdr.Fill(dt);
             dgvMaster2.DataSource = dt;
-            //dgvMaster.Visible = true;
-            ////dgv_table_2nd_sup.Visible = true;
-            //lblmicroview.Visible = true;
+
             sql_con.Close();
         }
 
@@ -781,12 +775,11 @@ namespace WFFDR
 
 
                     dSet.Clear();
-                    dSet = objStorProc.rdf_sp_prod_schedules(0, txtproductionid.Text, "", "", "", "", "", "", "", "", "", "", "exchangeFormulation");
+                    dSet = objStorProc.rdf_sp_prod_schedules(0, txtproductionid.Text, "", "", "", "", "", "", "", "", "", "","", "exchangeFormulation");
 
                     if (dSet.Tables[0].Rows.Count > 0)
                     {
-                        ////MessageBox.Show("NOT RECOGNISE", "Offense", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        ////cboFeedCode.Focus();
+    
                         //MessageBox.Show("A");
                         //return;
                     }
@@ -804,33 +797,6 @@ namespace WFFDR
 
                     load_SchedulesCancelByApprover();
   
-                    ////    if (saveMode())
-                    ////    {
-
-                    ////        string tmode = mode;
-
-                    ////        if (tmode == "edit")
-                    ////        {
-
-                    ////            UpdateOkay();
-
-                    ////            load_SchedulesCancelByApprover();
-                    ////            //MessageBox.Show("Supplier Update Successfully", "Supplier", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ////        }
-                    ////        else
-                    ////        {
-                    ////            dgvApproved.CurrentCell = dgvApproved[0, temp_hid];
-
-                    ////            ;
-                    ////        }
-
-                    ////        //   btnCancel_Click(sender, e);
-
-                    ////    }
-                    ////    else
-                    ////    {
-                    ////        //MessageBox.Show("Failedes");
-                    ////    }
                 }
             }
             else

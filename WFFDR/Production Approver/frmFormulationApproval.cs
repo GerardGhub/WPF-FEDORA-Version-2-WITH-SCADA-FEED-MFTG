@@ -549,7 +549,7 @@ namespace WFFDR
                 UpdateProductionTimes();
 
                 dSet.Clear();
-                dSet = objStorProc.rdf_sp_prod_schedules(0, txtid.Text, "", "", "", "", "", "", "", "", "", "", "exchangeFormulation");
+                dSet = objStorProc.rdf_sp_prod_schedules(0, txtid.Text, "", "", "", "", "", "", "", "", "", "","", "exchangeFormulation");
 
                 if (dSet.Tables[0].Rows.Count > 0)
                 {

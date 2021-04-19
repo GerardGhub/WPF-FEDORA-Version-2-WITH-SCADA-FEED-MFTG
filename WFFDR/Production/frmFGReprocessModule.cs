@@ -1109,12 +1109,12 @@ namespace WFFDR
 
 
                     dSet.Clear();
-                    dSet = objStorProc.rdf_sp_prod_schedules(0, txtfg_id.Text, cboStatus.Text, txtremarks.Text, lbladdedby.Text, cboMixingCombination.Text, cboMixingCombination.Text, lblstatus.Text, lblfinaloutright.Text, lblstatus.Text, "", "", "updatefgstatus");
+                    dSet = objStorProc.rdf_sp_prod_schedules(0, txtfg_id.Text, cboStatus.Text, txtremarks.Text, lbladdedby.Text, cboMixingCombination.Text, cboMixingCombination.Text, lblstatus.Text, lblfinaloutright.Text, lblstatus.Text, "", "","", "updatefgstatus");
 
 
 
                     dSet.Clear();
-                    dSet = objStorProc.rdf_sp_prod_schedules(0, txtproductionid.Text, lblfinalgood.Text, lblfinalreprocess.Text, lblfinalreject.Text, lblfinaloutright.Text, lblfinalreject.Text, lblfinalreprocess.Text, lblfinaloutright.Text, "", "", "", "updateprodplanstatuscount");
+                    dSet = objStorProc.rdf_sp_prod_schedules(0, txtproductionid.Text, lblfinalgood.Text, lblfinalreprocess.Text, lblfinalreject.Text, lblfinaloutright.Text, lblfinalreject.Text, lblfinalreprocess.Text, lblfinaloutright.Text, "", "", "","", "updateprodplanstatuscount");
 
                 }
 

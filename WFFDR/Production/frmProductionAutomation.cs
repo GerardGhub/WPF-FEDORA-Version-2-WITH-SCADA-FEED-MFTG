@@ -3733,87 +3733,10 @@ namespace WFFDR
                 return;
             }
 
-            //dSet.Clear();
-
-            //dSet = objStorProc.rdf_sp_new_production(0, txtmainfeedcode.Text, txtmainfeedcode.Text, "", "", "", "", "", "", "", "", "", "", "", "", "", txtMacro.Text, txtMacro2.Text, txtMacro3.Text, txtMacro4.Text, txtMacro5.Text, txtMacro6.Text, txtMacro7.Text, txtMacro8.Text, txtMacro9.Text, txtMacro10.Text, "", "", "", "", "", "", "exit");
-            //if (dSet.Tables[0].Rows.Count > 0)
-            //{
-            //    //MessageBox.Show("NOT RECOGNISE", "Offense", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //    //cboFeedCode.Focus();
-            //    ProductIDExists();
-            //    txtMacro7.Text = "";
-            //    txtMacro7.Focus();
-            //    return;
-            //}
-            //else
-            //{
-            //    //FeedCodeNotExists();
-
-            //}
-
-            //dSet.Clear();
-
-            //dSet = objStorProc.rdf_sp_new_production(0, txtmainfeedcode.Text, txtmainfeedcode.Text, txtproductionid.Text, "", "", "", "", "", "", "", "", "", "", "", "", txtMacro.Text, txtMacro2.Text, txtMacro3.Text, txtMacro4.Text, txtMacro5.Text, txtMacro6.Text, txtMacro7.Text, txtMacro8.Text, txtMacro9.Text, txtMacro10.Text, "", "", "", "", "", "", "checkrepackingid");
-            //if (dSet.Tables[0].Rows.Count > 0)
-            //{
-
-            //    txtMacroMatic.Text = (float.Parse(txtMacro7.Text) * 1).ToString();
-
-            //}
-            //else
-            //{
-            //    RepackIDExists();
-            //    txtMacro7.Text = "";
-            //    txtMacro7.Focus();
-            //    return;
-            //}
-
-            //if (txtmainfeedcode.Text.Trim() == txtfeedcodechecking.Text.Trim())
-            //{
-
-            //}
-            //else
-            //{
-
-            //    FeedCodeNotMatched();
-            //    txtMacro7.Text = "";
-            //    txtMacro7.Focus();
-            //    return;
-            //}
+            
 
 
 
-            //if (txtitemcodemacro7.Text.Trim() == txtrp_item_code.Text.Trim())
-            //{
-
-            //}
-            //else
-            //{
-            //    ItemCodeNotMatched();
-            //    //txtMacro7.Text = "";
-            //    //txtMacro7.Focus();
-            //    return;
-            //}
-
-            //if (txtquantitymacro7.Text.Trim() == txttotal_repack.Text.Trim())
-            //{
-
-
-            //}
-            //else
-            //{
-
-            //    ItemValueNotMatched();
-            //    txtMacro7.Text = "";
-            //    txtMacro7.Focus();
-            //    return;
-            //}
-
-
-            //if (dataGridView2.Rows.Count >= 1)
-            //{
-            //    int i = dataGridView2.CurrentRow.Index + 1;
-            //    if (i >= -1 && i < dataGridView2.Rows.Count)
 
             if (txtMacro7.Text.Trim() == string.Empty)
             {
@@ -3982,30 +3905,7 @@ namespace WFFDR
         {
 
 
-            //    txtMacroMatic.Text = (float.Parse(txtMacro3.Text) * 1).ToString();
 
-            //}
-            //else
-            //{
-            //    RepackIDExists();
-            //    txtMacro3.Text = "";
-            //    txtMacro3.Focus();
-            //    return;
-            //}
-
-
-            //if (txtmainfeedcode.Text.Trim() == txtfeedcodechecking.Text.Trim())
-            //{
-
-            //}
-            //else
-            //{
-
-            //    FeedCodeNotMatched();
-            //    txtMacro3.Text = "";
-            //    txtMacro3.Focus();
-            //    return;
-            //}
 
 
 
@@ -4044,93 +3944,6 @@ namespace WFFDR
                 return;
             }
 
-            //dSet.Clear();
-
-            //dSet = objStorProc.rdf_sp_new_production(0, txtmainfeedcode.Text, txtmainfeedcode.Text, "", "", "", "", "", "", "", "", "", "", "", "", "", txtMacro.Text, txtMacro2.Text, txtMacro3.Text, txtMacro4.Text, txtMacro5.Text, txtMacro6.Text, txtMacro7.Text, txtMacro8.Text, txtMacro9.Text, txtMacro10.Text, "", "", "", "", "", "", "exit");
-            //if (dSet.Tables[0].Rows.Count > 0)
-            //{
-            //    //MessageBox.Show("NOT RECOGNISE", "Offense", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //    //cboFeedCode.Focus();
-            //    ProductIDExists();
-            //    txtMacro2.Text = "";
-            //    txtMacro2.Focus();
-            //    return;
-            //}
-            //else
-            //{
-            //    //FeedCodeNotExists();
-
-            //}
-
-            //2
-
-
-
-
-            //dSet.Clear();
-
-            //dSet = objStorProc.rdf_sp_new_production(0, txtmainfeedcode.Text, txtmainfeedcode.Text, txtproductionid.Text, "", "", "", "", "", "", "", "", "", "", "", "", txtMacro.Text, txtMacro2.Text, txtMacro3.Text, txtMacro4.Text, txtMacro5.Text, txtMacro6.Text, txtMacro7.Text, txtMacro8.Text, txtMacro9.Text, txtMacro10.Text, "", "", "", "", "", "", "checkrepackingid");
-            //if (dSet.Tables[0].Rows.Count > 0)
-            //{
-
-            //    txtMacroMatic.Text = (float.Parse(txtMacro2.Text) * 1).ToString();
-
-            //}
-            //else
-            //{
-            //    RepackIDExists();
-            //    txtMacro2.Text = "";
-            //    txtMacro2.Focus();
-            //    return;
-            //}
-
-
-            //if (txtmainfeedcode.Text.Trim() == txtfeedcodechecking.Text.Trim())
-            //{
-
-            //}
-            //else
-            //{
-
-            //    FeedCodeNotMatched();
-            //    txtMacro2.Text = "";
-            //    txtMacro2.Focus();
-            //    return;
-            //}
-
-
-            //if (txtitemcodemacro2.Text.Trim() == txtrp_item_code.Text.Trim())
-            //{
-
-            //}
-            //else
-            //{
-            //    ItemCodeNotMatched();
-            //    //txtMacro2.Text = "";
-            //    //txtMacro2.Focus();
-            //    doRepackingEntry();
-            //    return;
-            //}
-
-            //if (txtquantitymacro2.Text.Trim() == txttotal_repack.Text.Trim())
-            //{
-
-
-            //}
-            //else
-            //{
-
-            //    ItemValueNotMatched();
-            //    txtMacro2.Text = "";
-            //    txtMacro2.Focus();
-            //    return;
-            //}
-
-
-            //if (dataGridView2.Rows.Count >= 1)
-            //{
-            //    int i = dataGridView2.CurrentRow.Index + 1;
-            //    if (i >= -1 && i < dataGridView2.Rows.Count)
 
             if (txtMacro2.Text.Trim() == string.Empty)
             {
@@ -4152,32 +3965,6 @@ namespace WFFDR
 
 
 
-                //dataGridView2.CurrentCell = dataGridView2.Rows[i].Cells[0];
-
-                //if (txtMacro3.Text.Trim() == string.Empty)
-                //{
-                //    txtitemcodemacro3.Text = dataGridView2.CurrentRow.Cells["item_code_macro"].Value.ToString();
-                //    txtquantitymacro3.Text = dataGridView2.CurrentRow.Cells["quantity_macro"].Value.ToString();
-                //    txtMacro2.Enabled = false;
-                //    txtMacroMatic.Text = "";
-                //    txtMacro3.Visible = true;
-                //    txtMacro3.Focus();
-
-                //}
-
-
-
-
-                //    }
-
-
-
-                //else
-                //{
-                //    SuccessFullyValidateMacroValidate();
-                //    txtMacro2.Enabled = false;
-                //    txtbmx.Focus();
-                //}
 
             }
         }
@@ -4671,7 +4458,7 @@ namespace WFFDR
 
                     //Start
                     dSet40.Clear();
-                    dSet40 = objStorProc.rdf_sp_prod_schedules(0, txtproductionid.Text, txtbatchremain.Text, "", "", "", "", "", "", "", "", "", "HaveProductionRemainingBatch");
+                    dSet40 = objStorProc.rdf_sp_prod_schedules(0, txtproductionid.Text, txtbatchremain.Text, "", "", "", "", "", "", "", "", "","", "HaveProductionRemainingBatch");
 
                     if (dSet40.Tables[0].Rows.Count > 0)
                     {
@@ -4717,7 +4504,7 @@ namespace WFFDR
                 {
                     //Start
                     dSet40.Clear();
-                    dSet40 = objStorProc.rdf_sp_prod_schedules(0, txtproductionid.Text, txtbatchremain.Text, "", "", "", "", "", "", "", "", "", "HaveProductionRemainingBatch");
+                    dSet40 = objStorProc.rdf_sp_prod_schedules(0, txtproductionid.Text, txtbatchremain.Text, "", "", "", "", "", "", "", "", "","", "HaveProductionRemainingBatch");
 
                     if (dSet40.Tables[0].Rows.Count > 0)
                     {
@@ -4941,7 +4728,7 @@ namespace WFFDR
             {
                 //new update 3/7/2021 Gerard Roques Singian Full Stack Developer @ singian28@gmail.com
                 dSet.Clear();
-                dSet = objStorProc.rdf_sp_prod_schedules(0, txtproductionid.Text, "", "", "", "", "", "", "", "", "", "", "HaveTheoretical");
+                dSet = objStorProc.rdf_sp_prod_schedules(0, txtproductionid.Text, "", "", "", "", "", "", "", "", "", "","", "HaveTheoretical");
 
                 if (dSet.Tables[0].Rows.Count > 0)
                 {
@@ -5296,7 +5083,7 @@ namespace WFFDR
         {
 
             dSet.Clear();
-            dSet = objStorProc.rdf_sp_prod_schedules(0, txtproductionid.Text, "", "", "", "", "", "", "", "", "", "", "HaveTheoretical");
+            dSet = objStorProc.rdf_sp_prod_schedules(0, txtproductionid.Text, "", "", "", "", "", "", "", "", "", "","", "HaveTheoretical");
 
             if (dSet.Tables[0].Rows.Count > 0)
             {
@@ -5317,7 +5104,7 @@ namespace WFFDR
         private void btnDoc_Click(object sender, EventArgs e)
         {
             dSet.Clear();
-            dSet = objStorProc.rdf_sp_prod_schedules(0, txtproductionid.Text, txtbatchremain.Text, "", "", "", "", "", "", "", "", "", "HaveProductionRemainingBatch");
+            dSet = objStorProc.rdf_sp_prod_schedules(0, txtproductionid.Text, txtbatchremain.Text, "", "", "", "", "", "", "", "", "","", "HaveProductionRemainingBatch");
 
             if (dSet.Tables[0].Rows.Count > 0)
             {

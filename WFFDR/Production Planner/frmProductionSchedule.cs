@@ -76,6 +76,13 @@ namespace WFFDR
             load_search();
             loadproductionlevel();
 
+            picload.Visible = false;
+            btnAdd.Visible = false;
+            btnSubmit.Visible = true;
+            btnSubmit.Enabled = true;
+
+
+
             if (lblrecords.Text == "0")
             {
 
@@ -496,11 +503,11 @@ namespace WFFDR
 
         public bool saveMode()
         {
-
+           
             if (mode == "add")
             {
                 dSet.Clear();
-                dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text, txtbags.Text, "", "", "", "", "", "", "", "", "", "getbyname");
+                dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text, txtbags.Text, "", "", "", "", "", "", "", "", "","", "getbyname");
 
                 if (dSet.Tables[0].Rows.Count > 0)
                 {
@@ -511,7 +518,7 @@ namespace WFFDR
                 else
                 {
                     dSet.Clear();
-                    dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(), textBox1.Text.Trim(), txtseries.Text.Trim(), cmbBagandBin.Text.Trim(), txtretailbin.Text.Trim(), txtcorntype.Text.Trim(), "add");
+                    dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(), textBox1.Text.Trim(), txtseries.Text.Trim(), cmbBagandBin.Text.Trim(), txtretailbin.Text.Trim(), txtcorntype.Text.Trim(), txtaddedby.Text.Trim(), "add");
 
                     return true;
                 }
@@ -519,28 +526,27 @@ namespace WFFDR
             else if (mode == "edit")
             {
                 dSet.Clear();
-                //dSet = objStorProc.rdf_sp_supplier(0, txtSupplier.Text, txtContactNo.Text, txtAddress.Text, txtEmailAddress.Text, "getbyname"); buje muna
-                dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(), textBox1.Text.Trim(), txtseries.Text.Trim(), cmbBagandBin.Text.Trim(), txtretailbin.Text.Trim(), txtcorntype.Text.Trim(), "getbyfeedcode");
+               
+                dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(), textBox1.Text.Trim(), txtseries.Text.Trim(), cmbBagandBin.Text.Trim(), txtretailbin.Text.Trim(), txtcorntype.Text.Trim(), txtaddedby.Text.Trim(), "getbyfeedcode");
                 dSet_temp.Clear();
 
 
-                //dSet_temp = objStorProc.rdf_sp_supplier(p_id, txtSupplier.Text, txtContactNo.Text, txtAddress.Text, txtEmailAddress.Text, "getbyid"); buje muna
-                dSet_temp = objStorProc.rdf_sp_prod_schedules(p_id, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(), textBox1.Text.Trim(), txtseries.Text.Trim(), cmbBagandBin.Text.Trim(), txtretailbin.Text.Trim(), txtcorntype.Text.Trim(), "getbyid");
+                dSet_temp = objStorProc.rdf_sp_prod_schedules(p_id, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(), textBox1.Text.Trim(), txtseries.Text.Trim(), cmbBagandBin.Text.Trim(), txtretailbin.Text.Trim(), txtcorntype.Text.Trim(), txtaddedby.Text.Trim(), "getbyid");
                 if (dSet.Tables[0].Rows.Count > 0)
                 {
                     int tmpID = Convert.ToInt32(dSet.Tables[0].Rows[0][7].ToString());
                     if (tmpID == p_id)
                     {
                         dSet.Clear();
-                        //dSet = objStorProc.rdf_sp_supplier(p_id, txtSupplier.Text.Trim(), txtContactNo.Text.Trim(), txtAddress.Text.Trim(), txtEmailAddress.Text.Trim(), "edit"); buje muna
-                        dSet = objStorProc.rdf_sp_prod_schedules(p_id, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(), textBox1.Text.Trim(), txtseries.Text.Trim(), cmbBagandBin.Text.Trim(), txtretailbin.Text.Trim(), txtcorntype.Text.Trim(), "edit");
+
+                        dSet = objStorProc.rdf_sp_prod_schedules(p_id, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(), textBox1.Text.Trim(), txtseries.Text.Trim(), cmbBagandBin.Text.Trim(), txtretailbin.Text.Trim(), txtcorntype.Text.Trim(), txtaddedby.Text.Trim(), "edit");
 
                         return true;
                     }
                     else
                     {
-                        //MessageBox.Show("Offense code is already added.", "Offense", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        dSet = objStorProc.rdf_sp_prod_schedules(p_id, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(), textBox1.Text.Trim(), txtseries.Text.Trim(), cmbBagandBin.Text.Trim(), txtretailbin.Text.Trim(), txtcorntype.Text.Trim(), "edit");
+
+                        dSet = objStorProc.rdf_sp_prod_schedules(p_id, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(), textBox1.Text.Trim(), txtseries.Text.Trim(), cmbBagandBin.Text.Trim(), txtretailbin.Text.Trim(), txtcorntype.Text.Trim(), txtaddedby.Text.Trim(), "edit");
                         load_Schedules();
                         UpdateOkay();
 
@@ -553,7 +559,6 @@ namespace WFFDR
                 else
                 {
                     dSet.Clear();
-                    //dSet = dSet = objStorProc.rdf_sp_supplier(p_id, txtSupplier.Text.Trim(), txtContactNo.Text.Trim(), txtAddress.Text.Trim(), txtEmailAddress.Text.Trim(), "edit"); buje muna
 
 
                     return true;
@@ -567,13 +572,13 @@ namespace WFFDR
                 {
                     dSet.Clear();
 
-                    dSet = objStorProc.rdf_sp_prod_schedules(p_id, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(), textBox1.Text.Trim(), txtseries.Text.Trim(), cmbBagandBin.Text.Trim(), txtretailbin.Text.Trim(), txtcorntype.Text.Trim(), "cancel");
+                    dSet = objStorProc.rdf_sp_prod_schedules(p_id, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(), textBox1.Text.Trim(), txtseries.Text.Trim(), cmbBagandBin.Text.Trim(), txtretailbin.Text.Trim(), txtcorntype.Text.Trim(), txtaddedby.Text.Trim(), "cancel");
 
                     return true;
                 }
                 else
                 {
-                    //MessageBox.Show("Offense code is already added.", "Offense", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                  
                     load_Schedules();
                     return false;
                 }
@@ -869,11 +874,9 @@ namespace WFFDR
             popup.ImageSize = new Size(70, 80);
             popup.BodyColor = Color.Red;
             popup.Popup();
-            //popup.AnimationDuration = 1000;
-            //popup.ShowOptionsButton.ToString();
+            popup.AnimationDuration = 1000;
+            popup.ShowOptionsButton.ToString();
             popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            //txtMainInput.Focus();
-            //txtMainInput.Select();
             popup.Delay = 500;
             popup.AnimationInterval = 10;
             popup.AnimationDuration = 1000;
@@ -901,11 +904,9 @@ namespace WFFDR
             popup.ImageSize = new Size(70, 80);
             popup.BodyColor = Color.Red;
             popup.Popup();
-            //popup.AnimationDuration = 1000;
-            //popup.ShowOptionsButton.ToString();
+            popup.AnimationDuration = 1000;
+            popup.ShowOptionsButton.ToString();
             popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            //txtMainInput.Focus();
-            //txtMainInput.Select();
             popup.Delay = 500;
             popup.AnimationInterval = 10;
             popup.AnimationDuration = 1000;
@@ -933,11 +934,9 @@ namespace WFFDR
             popup.ImageSize = new Size(70, 80);
             popup.BodyColor = Color.Red;
             popup.Popup();
-            //popup.AnimationDuration = 1000;
-            //popup.ShowOptionsButton.ToString();
+            popup.AnimationDuration = 1000;
+            popup.ShowOptionsButton.ToString();
             popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            //txtMainInput.Focus();
-            //txtMainInput.Select();
             popup.Delay = 500;
             popup.AnimationInterval = 10;
             popup.AnimationDuration = 1000;
@@ -965,11 +964,9 @@ namespace WFFDR
             popup.ImageSize = new Size(70, 80);
             popup.BodyColor = Color.Red;
             popup.Popup();
-            //popup.AnimationDuration = 1000;
-            //popup.ShowOptionsButton.ToString();
+            popup.AnimationDuration = 1000;
+            popup.ShowOptionsButton.ToString();
             popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            //txtMainInput.Focus();
-            //txtMainInput.Select();
             popup.Delay = 500;
             popup.AnimationInterval = 10;
             popup.AnimationDuration = 1000;
@@ -996,11 +993,9 @@ namespace WFFDR
             popup.ImageSize = new Size(70, 80);
             popup.BodyColor = Color.Red;
             popup.Popup();
-            //popup.AnimationDuration = 1000;
-            //popup.ShowOptionsButton.ToString();
+            popup.AnimationDuration = 1000;
+            popup.ShowOptionsButton.ToString();
             popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            //txtMainInput.Focus();
-            //txtMainInput.Select();
             popup.Delay = 500;
             popup.AnimationInterval = 10;
             popup.AnimationDuration = 1000;
@@ -1030,11 +1025,9 @@ namespace WFFDR
             popup.ImageSize = new Size(70, 80);
             popup.BodyColor = Color.Red;
             popup.Popup();
-            //popup.AnimationDuration = 1000;
-            //popup.ShowOptionsButton.ToString();
+            popup.AnimationDuration = 1000;
+            popup.ShowOptionsButton.ToString();
             popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            //txtMainInput.Focus();
-            //txtMainInput.Select();
             popup.Delay = 500;
             popup.AnimationInterval = 10;
             popup.AnimationDuration = 1000;
@@ -1062,11 +1055,9 @@ namespace WFFDR
             popup.ImageSize = new Size(70, 80);
             popup.BodyColor = Color.Green;
             popup.Popup();
-            //popup.AnimationDuration = 1000;
-            //popup.ShowOptionsButton.ToString();
+            popup.AnimationDuration = 1000;
+            popup.ShowOptionsButton.ToString();
             popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            //txtMainInput.Focus();
-            //txtMainInput.Select();
             popup.Delay = 500;
             popup.AnimationInterval = 10;
             popup.AnimationDuration = 1000;
@@ -1107,11 +1098,9 @@ namespace WFFDR
             popup.ImageSize = new Size(70, 80);
             popup.BodyColor = Color.Red;
             popup.Popup();
-            //popup.AnimationDuration = 1000;
-            //popup.ShowOptionsButton.ToString();
+            popup.AnimationDuration = 1000;
+            popup.ShowOptionsButton.ToString();
             popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            //txtMainInput.Focus();
-            //txtMainInput.Select();
             popup.Delay = 500;
             popup.AnimationInterval = 10;
             popup.AnimationDuration = 1000;
@@ -1139,11 +1128,9 @@ namespace WFFDR
             popup.ImageSize = new Size(70, 80);
             popup.BodyColor = Color.Red;
             popup.Popup();
-            //popup.AnimationDuration = 1000;
-            //popup.ShowOptionsButton.ToString();
+            popup.AnimationDuration = 1000;
+            popup.ShowOptionsButton.ToString();
             popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            //txtMainInput.Focus();
-            //txtMainInput.Select();
             popup.Delay = 500;
             popup.AnimationInterval = 10;
             popup.AnimationDuration = 1000;
@@ -1170,11 +1157,9 @@ namespace WFFDR
             popup.ImageSize = new Size(70, 80);
             popup.BodyColor = Color.Red;
             popup.Popup();
-            //popup.AnimationDuration = 1000;
-            //popup.ShowOptionsButton.ToString();
+            popup.AnimationDuration = 1000;
+            popup.ShowOptionsButton.ToString();
             popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            //txtMainInput.Focus();
-            //txtMainInput.Select();
             popup.Delay = 500;
             popup.AnimationInterval = 10;
             popup.AnimationDuration = 1000;
@@ -1201,11 +1186,9 @@ namespace WFFDR
             popup.ImageSize = new Size(70, 80);
             popup.BodyColor = Color.Red;
             popup.Popup();
-            //popup.AnimationDuration = 1000;
-            //popup.ShowOptionsButton.ToString();
+            popup.AnimationDuration = 1000;
+            popup.ShowOptionsButton.ToString();
             popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            //txtMainInput.Focus();
-            //txtMainInput.Select();
             popup.Delay = 500;
             popup.AnimationInterval = 10;
             popup.AnimationDuration = 1000;
@@ -1233,11 +1216,9 @@ namespace WFFDR
             popup.ImageSize = new Size(70, 80);
             popup.BodyColor = Color.Red;
             popup.Popup();
-            //popup.AnimationDuration = 1000;
-            //popup.ShowOptionsButton.ToString();
+            popup.AnimationDuration = 1000;
+            popup.ShowOptionsButton.ToString();
             popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            //txtMainInput.Focus();
-            //txtMainInput.Select();
             popup.Delay = 500;
             popup.AnimationInterval = 10;
             popup.AnimationDuration = 1000;
@@ -1265,11 +1246,9 @@ namespace WFFDR
             popup.ImageSize = new Size(70, 80);
             popup.BodyColor = Color.Red;
             popup.Popup();
-            //popup.AnimationDuration = 1000;
-            //popup.ShowOptionsButton.ToString();
+            popup.AnimationDuration = 1000;
+            popup.ShowOptionsButton.ToString();
             popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            //txtMainInput.Focus();
-            //txtMainInput.Select();
             popup.Delay = 500;
             popup.AnimationInterval = 10;
             popup.AnimationDuration = 1000;
@@ -1298,11 +1277,10 @@ namespace WFFDR
             popup.ImageSize = new Size(70, 80);
             popup.BodyColor = Color.Green;
             popup.Popup();
-            //popup.AnimationDuration = 1000;
-            //popup.ShowOptionsButton.ToString();
+            popup.AnimationDuration = 1000;
+            popup.ShowOptionsButton.ToString();
             popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            //txtMainInput.Focus();
-            //txtMainInput.Select();
+
             popup.Delay = 500;
             popup.AnimationInterval = 10;
             popup.AnimationDuration = 1000;
@@ -1414,7 +1392,7 @@ namespace WFFDR
         {
             //kupal
             dSet.Clear();
-            dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text, txtbags.Text, "", "", "", "", "", "", "", "", "", "existsornot");
+            dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text, txtbags.Text, "", "", "", "", "", "", "", "", "","", "existsornot");
 
             if (dSet.Tables[0].Rows.Count > 0)
             {
@@ -1518,53 +1496,12 @@ namespace WFFDR
         {
             if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to save the Production Schedule ? ", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
-                //Mister Buto
-                //mode = "add";
-                //bunifuThinButton29_Click(sender, e); /*//pang details lang eto hide and show*/
-                //btnfinishvalidation_Click(sender, e); ///dito muna ang minus querys
+          
 
                 btnfinishvalidation_Click(sender, e);
 
 
-                //if (txtnobatch.Text.Trim() == string.Empty)
-                //{
-
-                //}
-                //else
-                //{
-                //    if (saveMode())
-                //    {
-
-                //        string tmode = mode;
-
-                //        if (tmode == "add")
-                //        {
-
-
-
-                //            //bunifuThinButton29_Click(sender, e); /*//pang details lang eto hide and show*/
-                //            //btnfinishvalidation_Click(sender, e); ///dito muna ang minus querys
-                //            //AddedSuccess(); // bunifu message popup
-                //            //Clear(); //clear logs
-                //            //load_Schedules_approved(); //call  prod schedules
-                //            //load_Schedules();  // load  my schedules
-
-
-
-                //        }
-                //        else
-                //        {
-                //            dgvMaster.CurrentCell = dgvMaster[0, temp_hid];
-                //        }
-
-                //        /// btnCancel_Click(sender, e);
-
-                //    }
-                //    else
-                //        MessageBox.Show("Failed");
-
-                //}
-
+          
 
 
 
@@ -1582,47 +1519,13 @@ namespace WFFDR
 
         public void SaveProduction()
         {
+            //MessageBox.Show("Mabulok Ka Gerard! Hhahahhaha!");
+            //return;
+
             dSet.Clear();
-            dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(), textBox1.Text.Trim(), txtseries.Text.Trim(), cmbBagandBin.Text.Trim(), txtretailbin.Text.Trim(), txtcorntype.Text.Trim(), "add");
-
-            //if (txtnobatch.Text.Trim() == string.Empty)
-            //{
-
-            //}
-            //else
-            //{
-            //    if (saveMode())
-            //    {
-
-            //        string tmode = mode;
-
-            //        if (tmode == "add")
-            //        {
+            dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(), textBox1.Text.Trim(), txtseries.Text.Trim(), cmbBagandBin.Text.Trim(), txtretailbin.Text.Trim(), txtcorntype.Text.Trim(), txtaddedby.Text.Trim(), "add");
 
 
-
-            //            //bunifuThinButton29_Click(sender, e); /*//pang details lang eto hide and show*/
-            //            //btnfinishvalidation_Click(sender, e); ///dito muna ang minus querys
-            //            //AddedSuccess(); // bunifu message popup
-            //            //Clear(); //clear logs
-            //            //load_Schedules_approved(); //call  prod schedules
-            //            //load_Schedules();  // load  my schedules
-
-
-
-            //        }
-            //        else
-            //        {
-            //            dgvMaster.CurrentCell = dgvMaster[0, temp_hid];
-            //        }
-
-            //        /// btnCancel_Click(sender, e);
-
-            //    }
-            //    else
-            //        MessageBox.Show("Failed");
-
-            //}
         }
 
         void AddedSuccess()
@@ -1658,7 +1561,7 @@ namespace WFFDR
 
             cmbBagandBin.Enabled = false;
             txtretailbin.Enabled = false;
-            //dSet = objStorProc.rdf_sp_new_preparation(0, cboFeedCode.Text, txtaddedby.Text, "3.1 Production Schedule", "Adding a new Production Schedule", txtdatenow2.Text, "", "", "", "", "", "", "", "", "", "", "", "", "addTrailLogs");
+
         }
 
 
@@ -2234,6 +2137,7 @@ namespace WFFDR
 
         private void btnlessthan_Click(object sender, EventArgs e)
         {
+            //one
 
             if (dgvImport.Rows.Count >= 1)
             {
@@ -2256,6 +2160,10 @@ namespace WFFDR
 
 
                 txttotalQty.Text = (float.Parse(txtQuantity.Text) * float.Parse(txtnobatch.Text)).ToString();
+                //JSON FORMAT
+                txtItemCode_TextChanged(sender, e);
+                showRawMatsDataGrid();
+
                 double mainbalance;
                 double selectquantity;
 
@@ -2269,104 +2177,20 @@ namespace WFFDR
                     //this.dgvImport.CurrentCell = this.dgvImport.Rows[0].Cells[this.dgvImport.CurrentCell.ColumnIndex];
                     txtbags.BackColor = Color.Yellow;
                     txtbags.Focus();
+                    ControlBox = true;
+                    frmProductionSchedule_Load(sender, e);
                     return;
                 }
                 else
                 {
 
                     txttotalQty.Text = (float.Parse(txtQuantity.Text) * float.Parse(txtnobatch.Text)).ToString();
+                    //MessageBox.Show("Eto Ang Mensaheng Una " + txtitemdescription.Text + " " + txttotalQty.Text + "");
                     btnStartingValidation_Click(sender, e);
 
                 }
 
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-            //if (dgvImport.Rows.Count >= 1)
-            //{
-            //    int i = dgvImport.CurrentRow.Index + 1;
-            //    if (i >= -1 && i < dgvImport.Rows.Count)
-            //        dgvImport.CurrentCell = dgvImport.Rows[i].Cells[0];
-
-            //    //double mainbalance1;
-            //    //double selectquantity1;
-            //    //mainbalance1 = double.Parse(txtrepackavailable.Text);
-            //    //selectquantity1 = double.Parse(txtQuantity.Text);
-            //    //if (mainbalance1 < selectquantity1)
-            //    //{
-            //    //    NoBalanceNotify();
-            //    //    return;
-            //    //}
-            //    //else
-            //    //{
-            //    //    //InventoryOn();
-
-            //    //    btngreaterthan_Click(sender, e);
-            //    //    double mainbalancexxx;
-            //    //    double selectquantityxxx;
-
-
-            //    //    mainbalancexxx = double.Parse(txtrepackavailable.Text);
-            //    //    selectquantityxxx = double.Parse(txtQuantity.Text);
-            //    //    if (mainbalancexxx < selectquantityxxx)
-            //    //    {
-            //    //        NoBalanceNotify();
-
-            //    //this.dgvImport.CurrentCell = this.dgvImport.Rows[0].Cells[this.dgvImport.CurrentCell.ColumnIndex];
-            //    //        return;
-            //    //    }
-            //    //    else //waith muna
-            //    //    {
-            //    //        bunifuThinButton26_Click(sender, e);
-            //    //        return;
-            //    //    }
-            //    //}
-            //}
-
-            //double mainbalance;
-            //double selectquantity;
-
-
-            //mainbalance = double.Parse(txtrepackavailable.Text);
-            //selectquantity = double.Parse(txtQuantity.Text);
-            //if (mainbalance < selectquantity)
-            //{
-            //    NoBalanceNotify();
-
-            //    this.dgvImport.CurrentCell = this.dgvImport.Rows[0].Cells[this.dgvImport.CurrentCell.ColumnIndex];
-            //    return;
-            //}
-            //else
-            //{
-            //    //WithBalanceNotify();
-            //    btnStartingValidation_Click(sender, e);
-            //    //btnlessthan_Click(sender, e);
-            //    //MessageBox.Show("1");
-
-            //}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         }
@@ -2414,8 +2238,8 @@ namespace WFFDR
             popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
             popup.TitleColor = Color.Black;
             popup.TitlePadding = new Padding(95, 7, 0, 0);
-            //popup.AnimationDuration = 1000;
-            //popup.ShowOptionsButton.ToString();
+            popup.AnimationDuration = 1000;
+            popup.ShowOptionsButton.ToString();
             popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
 
             popup.Delay = 500;
@@ -2439,23 +2263,22 @@ namespace WFFDR
 
         void showImportDataGrid()
         {
-            if (ready == true)
-            {
+            //if (ready == true)
+            //{
                 if (dgvImport.CurrentRow != null)
                 {
                     if (dgvImport.CurrentRow.Cells["recipe_id"].Value != null)
                     {
                         p_id = Convert.ToInt32(dgvImport.CurrentRow.Cells["recipe_id"].Value);
                         txtItemCode.Text = dgvImport.CurrentRow.Cells["item_code"].Value.ToString();
-                        //kupal
+
                         txtQuantity.Text = dgvImport.CurrentRow.Cells["quantity2"].Value.ToString();
                         txtrpcategory.Text = dgvImport.CurrentRow.Cells["rp_category"].Value.ToString();
-                        //textBox2.Text = dgvImport.CurrentRow.Cells["quantity2"].Value.ToString();
                         txtitemdescription.Text = dgvImport.CurrentRow.Cells["rp_description"].Value.ToString();
 
                     }
                 }
-            }
+            //}
         }
 
         private void txtItemCode_TextChanged(object sender, EventArgs e)
@@ -2508,29 +2331,25 @@ namespace WFFDR
 
         private void dgvMaster2_CurrentCellChanged(object sender, EventArgs e)
         {
+  
             showRawMatsDataGrid();
+        }
 
-
-            void showRawMatsDataGrid()
-            {
-                if (ready == true)
+        void showRawMatsDataGrid()
+        {
+            //if (ready == true)
+            //{
+                if (dgvMaster2.CurrentRow != null)
                 {
-                    if (dgvMaster2.CurrentRow != null)
+                    if (dgvMaster2.CurrentRow.Cells["item_id"].Value != null)
                     {
-                        if (dgvMaster2.CurrentRow.Cells["item_id"].Value != null)
-                        {
-                            p_id = Convert.ToInt32(dgvMaster2.CurrentRow.Cells["item_id"].Value);
-                            txtrepackavailable.Text = dgvMaster2.CurrentRow.Cells["RESERVED"].Value.ToString();
+                        p_id = Convert.ToInt32(dgvMaster2.CurrentRow.Cells["item_id"].Value);
+                        txtrepackavailable.Text = dgvMaster2.CurrentRow.Cells["RESERVED"].Value.ToString();
 
 
-                        }
                     }
                 }
-            }
-
-
-
-
+            //}
         }
 
         private void btnStartingValidation_Click(object sender, EventArgs e)
@@ -2539,12 +2358,11 @@ namespace WFFDR
 
             //start
             dSet.Clear();
-            dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text, txtbags.Text, "", "", "", "", "", "", "", "", "", "existsornot");
+            dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text, txtbags.Text, "", "", "", "", "", "", "", "", "","", "existsornot");
 
             if (dSet.Tables[0].Rows.Count > 0)
             {
                 //MessageBox.Show("NOT RECOGNISE", "Offense", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //cboFeedCode.Focus();
 
             }
             else
@@ -2654,58 +2472,6 @@ namespace WFFDR
 
 
 
-            //presentation
-            //if (lblcountprod.Text =="0")
-
-            //{
-            //    double a;
-            //    double b;
-
-            //    a = double.Parse(txtbags.Text);
-            //    b = double.Parse(lbllevelplusone.Text);
-            //    if (a > b)
-            //    {
-            //        //MessageBox.Show("taass");
-            //        LessThanProdLevel();
-            //        txtbags.Text = "";
-            //        //return; ge1
-            //    }
-            //    else
-            //    {
-            //        //MessageBox.Show("baba");
-            //        //return;
-
-            //    }
-
-            //}
-            //else
-            //{
-            //    double ax;
-            //    double bx;
-
-            //    ax = double.Parse(lblrunningqty.Text);
-            //    bx = double.Parse(lblavailablebags.Text);
-            //    if (ax > bx)
-            //    {
-            //        LessThanProdLevel2();
-            //        //MessageBox.Show("b");
-            //        //return; ge1
-            //    }
-            //    else
-            //    {
-            //        //MessageBox.Show("a");
-            //        //return;
-            //    }
-
-
-            //}
-
-
-
-
-
-
-
 
             //end
             //gerard singian
@@ -2718,9 +2484,10 @@ namespace WFFDR
 
 
 
-
-
-
+            //4/20/2021 Debugging Paalam Fedora Hhahaha
+            showImportDataGrid();
+            txtItemCode_TextChanged(sender, e);
+            showRawMatsDataGrid();
 
             double mainbalance;
             double selectquantity;
@@ -2735,6 +2502,8 @@ namespace WFFDR
                 //this.dgvImport.CurrentCell = this.dgvImport.Rows[0].Cells[this.dgvImport.CurrentCell.ColumnIndex];
                 txtbags.BackColor = Color.Yellow;
                 txtbags.Focus();
+                ControlBox = true;
+                frmProductionSchedule_Load(sender, e);
                 return;
             }
             else
@@ -2773,11 +2542,9 @@ namespace WFFDR
             popup.ImageSize = new Size(70, 80);
             popup.BodyColor = Color.Red;
             popup.Popup();
-            //popup.AnimationDuration = 1000;
-            //popup.ShowOptionsButton.ToString();
+            popup.AnimationDuration = 1000;
+            popup.ShowOptionsButton.ToString();
             popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            //txtMainInput.Focus();
-            //txtMainInput.Select();
             popup.Delay = 500;
             popup.AnimationInterval = 10;
             popup.AnimationDuration = 1000;
@@ -2805,11 +2572,9 @@ namespace WFFDR
             popup.ImageSize = new Size(70, 80);
             popup.BodyColor = Color.Red;
             popup.Popup();
-            //popup.AnimationDuration = 1000;
-            //popup.ShowOptionsButton.ToString();
+            popup.AnimationDuration = 1000;
+            popup.ShowOptionsButton.ToString();
             popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            //txtMainInput.Focus();
-            //txtMainInput.Select();
             popup.Delay = 500;
             popup.AnimationInterval = 10;
             popup.AnimationDuration = 1000;
@@ -2867,11 +2632,9 @@ namespace WFFDR
             popup.ImageSize = new Size(70, 80);
             popup.BodyColor = Color.Red;
             popup.Popup();
-            //popup.AnimationDuration = 1000;
-            //popup.ShowOptionsButton.ToString();
+            popup.AnimationDuration = 1000;
+            popup.ShowOptionsButton.ToString();
             popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            //txtMainInput.Focus();
-            //txtMainInput.Select();
             popup.Delay = 500;
             popup.AnimationInterval = 10;
             popup.AnimationDuration = 1000;
@@ -2898,11 +2661,9 @@ namespace WFFDR
             popup.ImageSize = new Size(70, 80);
             popup.BodyColor = Color.Red;
             popup.Popup();
-            //popup.AnimationDuration = 1000;
-            //popup.ShowOptionsButton.ToString();
+            popup.AnimationDuration = 1000;
+            popup.ShowOptionsButton.ToString();
             popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            //txtMainInput.Focus();
-            //txtMainInput.Select();
             popup.Delay = 500;
             popup.AnimationInterval = 10;
             popup.AnimationDuration = 1000;
@@ -3739,7 +3500,7 @@ namespace WFFDR
         private void btnLower_Click(object sender, EventArgs e)
         {
             dSet.Clear();
-            dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text, txtbags.Text, "", "", "", "", "", "", "", "", "", "existsornot");
+            dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text, txtbags.Text, "", "", "", "", "", "", "", "", "","", "existsornot");
 
             if (dSet.Tables[0].Rows.Count > 0)
             {
@@ -3950,48 +3711,6 @@ namespace WFFDR
             //EditMode();
 
 
-            //if (saveMode())
-            //{
-
-            //            string tmode = mode;
-
-            //            if (tmode == "edit")
-            //            {
-            //                //UpdateOkay();
-
-
-            //                dSet = objStorProc.rdf_sp_new_preparation(0, cboFeedCode.Text, txtaddedby.Text, "3.1 Production Schedule", "Updating Prod Schedule", txtdatenow2.Text, mfg_datePicker2.Text, txtbags.Text, "", "", "", "", "", "", "", "", "", "", "addTrailLogs");
-
-
-
-            //                if (txtmode.Text == "0")
-            //                {
-            //                    load_SchedulesCancelByApprover();
-            //                }
-            //                else
-            //                {
-            //                    load_Schedules();
-            //                }
-
-            //                //MessageBox.Show("Supplier Update Successfully", "Supplier", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //            }
-            //            else
-            //            {
-            //                dgvApproved.CurrentCell = dgvApproved[0, temp_hid];
-            //            }
-
-            //            //   btnCancel_Click(sender, e);
-
-            //        }
-            //        else
-            //        {
-            //            //MessageBox.Show("Failedes");
-            //        }
-            //    }
-
-            //    QueryUpdateprodadvance(); //gerardsingian
-
-            //}
             else
             {
                 bunifuUndo_Click(sender, e);
@@ -3999,21 +3718,7 @@ namespace WFFDR
                 return;
             }
             //btnfinishvalidationedit_Click(sender, e); ///dito muna ang minus querys
-            //btnfinislower_Click(sender, e);
 
-
-
-
-
-
-
-
-            //picload.Visible = false;
-            //btnupdatelower.Enabled = true;
-            //btnSubmit.Enabled = true;
-            //bunifuThinButton210.Enabled = true;
-            //ControlBox = true;
-            //frmProductionSchedule_Load(sender, e);
         }
 
 
@@ -4022,7 +3727,7 @@ namespace WFFDR
 
             dSet.Clear();
             //dSet = objStorProc.rdf_sp_supplier(p_id, txtSupplier.Text.Trim(), txtContactNo.Text.Trim(), txtAddress.Text.Trim(), txtEmailAddress.Text.Trim(), "edit"); buje muna
-            dSet = objStorProc.rdf_sp_prod_schedules(p_id, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(), textBox1.Text.Trim(), txtseries.Text.Trim(), cmbBagandBin.Text.Trim(), txtretailbin.Text.Trim(), txtcorntype.Text.Trim(), "edit");
+            dSet = objStorProc.rdf_sp_prod_schedules(p_id, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(), textBox1.Text.Trim(), txtseries.Text.Trim(), cmbBagandBin.Text.Trim(), txtretailbin.Text.Trim(), txtcorntype.Text.Trim(), txtaddedby.Text.Trim(), "edit");
 
             QueryUpdateprodadvance(); //gerardsingian
 
@@ -4094,22 +3799,7 @@ namespace WFFDR
             }
 
 
-            //double mainbalance;
-            //double selectquantity;
 
-
-            //mainbalance = double.Parse(txtrepackavailable.Text);
-            //selectquantity = double.Parse(txttotalhere.Text);
-            //if (mainbalance < selectquantity)
-            //{
-            //    NoBalanceNotifyforEdit();
-            //    return;
-            //}
-            //else
-
-
-            //{
-            //MessageBox.Show("Boy 2");
             txttotalhere.Text = (float.Parse(txtQuantity.Text) * float.Parse(txttotalduplicatebatch.Text)).ToString();
 
             double rp1;
@@ -4186,53 +3876,7 @@ namespace WFFDR
                 bunifuThinButton210.Enabled = false;
                 ControlBox = false;
 
-                //mode = "edit";
-                //if (txtbags.Text.Trim() == string.Empty)
-                //{
-
-                //}
-
-
-                //    else
-                //    {
-
-                //        if (saveMode())
-                //        {
-
-                //            string tmode = mode;
-
-                //            if (tmode == "edit")
-                //            {
-                //                UpdateOkay();
-
-                //                if (txtmode.Text=="0")
-                //                {
-                //                    load_SchedulesCancelByApprover();
-                //                }
-                //                else
-                //                {
-                //                    load_Schedules();
-                //                }
-
-                //                //MessageBox.Show("Supplier Update Successfully", "Supplier", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //            }
-                //            else
-                //            {
-                //                dgvApproved.CurrentCell = dgvApproved[0, temp_hid];
-                //            }
-
-                //            //   btnCancel_Click(sender, e);
-
-                //        }
-                //        else
-                //        {
-                //            //MessageBox.Show("Failedes");
-                //        }
-                //    }
-
-                //}
-
-                //QueryUpdateprodadvance();
+            
 
                 // Laarnie
 
@@ -4241,16 +3885,7 @@ namespace WFFDR
 
                 btnfinishvalidationedit_Click(sender, e); ///dito muna ang minus querys
 
-                //picload.Visible = false;
-                //ControlBox = true;
-                //btnupdatelower.Enabled = true;
-                //btnSubmit.Enabled = true;
-                //bunifuThinButton210.Enabled = true;
-                //ControlBox = true;
 
-                //frmProductionSchedule_Load(sender, e);
-                //load_Schedules();
-                //load_SchedulesCancelByApprover();
             }
             else
             {
@@ -5103,7 +4738,7 @@ namespace WFFDR
 
 
             dSet.Clear();
-            dSet = objStorProc.rdf_sp_prod_schedules(0, txtproduction_id.Text, "", "", "", "", "", "", "", "", "", "", "exchangeFormulation");
+            dSet = objStorProc.rdf_sp_prod_schedules(0, txtproduction_id.Text, "", "", "", "", "", "", "", "", "", "","", "exchangeFormulation");
 
             if (dSet.Tables[0].Rows.Count > 0)
             {
