@@ -684,7 +684,8 @@ namespace WFFDR
                         txtID.Text = dgv_table_2nd_sup.CurrentRow.Cells["received_id2"].Value.ToString();
                         txtRawCode.Text = dgv_table_2nd_sup.CurrentRow.Cells["r_item_code2"].Value.ToString();
                         txttotalofStock.Text = dgv_table_2nd_sup.CurrentRow.Cells["totalnstock2"].Value.ToString();
-                        txtGood.Text = dgv_table_2nd_sup.CurrentRow.Cells["actual_count_good"].Value.ToString();
+                        //txtGood.Text = dgv_table_2nd_sup.CurrentRow.Cells["actual_count_good"].Value.ToString();
+                        txtGood.Text = dgvMaster2.CurrentRow.Cells["qty_repack_available"].Value.ToString();
                         txtItemDescription.Text = dgv_table_2nd_sup.CurrentRow.Cells["r_item_description"].Value.ToString();
                         txtMainSupplier.Text = dgv_table_2nd_sup.CurrentRow.Cells["r_supplier2"].Value.ToString();
 
@@ -1302,29 +1303,7 @@ namespace WFFDR
         private void txtselectweight_TextChanged(object sender, EventArgs e)
         {
 
-            //try semi lockdown at 3/23/2020
-            //{
-
-
-            //    txtrpavailable.Text = (float.Parse(txtfuck.Text) + float.Parse(txtselectweight.Text)).ToString("#,0.000");
-            //}
-            //catch (Exception)
-            //{
-
-
-            //}
-
-
-            //comment muna this march 23
-            //try
-            //{
-            //    txtBalance.Text = (float.Parse(txtActualQty.Text) - float.Parse(txtselectweight.Text)).ToString("#0,000");
-            //}
-            //catch (Exception)
-            //{
-
-
-            //}
+           
         }
 
 
@@ -2588,6 +2567,7 @@ namespace WFFDR
 
                         textBox1.Text = dgvMaster2.CurrentRow.Cells["qty_repack_available"].Value.ToString();
                         txtSOH.Text = dgvMaster2.CurrentRow.Cells["qty_repack_available"].Value.ToString();
+                        txtGood.Text = dgvMaster2.CurrentRow.Cells["qty_repack_available"].Value.ToString(); // aDDITIONAL NA FAKE
                         //wala muna this
 
 
@@ -3231,11 +3211,11 @@ txtdatenowstamp.Text = DateTime.Now.ToString();
             if (ActualQtyP <= SelectedWeight)
             {
 
-                MessageBox.Show("Panget");
+                //MessageBox.Show("Panget");
             }
             else
             {
-                MessageBox.Show("Gwapo");
+                //MessageBox.Show("Gwapo");
             }
 
 
@@ -3243,20 +3223,7 @@ txtdatenowstamp.Text = DateTime.Now.ToString();
 
         private void cboDescription_TextChanged(object sender, EventArgs e)
         {
-            //double ActualQtyP;
-            //double SelectedWeight;
 
-            //ActualQtyP = double.Parse(txtActualQty.Text);
-            //SelectedWeight = double.Parse(txtselectweight.Text);
-            //if (ActualQtyP <= SelectedWeight)
-            //{
-
-            //    MessageBox.Show("Panget");
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Gwapo");
-            //}
 
 
         }
