@@ -32,15 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -55,6 +46,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFGView));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.lblfound = new System.Windows.Forms.Label();
@@ -71,27 +71,6 @@
             this.txtconfirm = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.dataView = new System.Windows.Forms.DataGridView();
-            this.selected = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.bmx_id_string = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prod_adv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Feed_Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BagSack = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Feed_Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Position = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OPTIONS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ActualWeight = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TOTAL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PrintCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TotalPack = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Packby = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProdDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fg_proddate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.printing_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Remark = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.lbltotalbags = new System.Windows.Forms.Label();
             this.lbltotalweight = new System.Windows.Forms.Label();
@@ -151,6 +130,27 @@
             this.lblremarks = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.lblbase = new System.Windows.Forms.Label();
+            this.selected = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.bmx_id_string = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prod_adv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Feed_Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BagSack = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Feed_Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Position = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OPTIONS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ActualWeight = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TOTAL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PrintCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TotalPack = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Packby = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProdDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fg_proddate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.printing_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Remark = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3.SuspendLayout();
             this.grpboxconfirm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).BeginInit();
@@ -425,227 +425,6 @@
             this.dataView.CurrentCellDirtyStateChanged += new System.EventHandler(this.dataView_CurrentCellDirtyStateChanged);
             this.dataView.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dataView_RowPostPaint);
             this.dataView.Scroll += new System.Windows.Forms.ScrollEventHandler(this.dataView_Scroll);
-            // 
-            // selected
-            // 
-            this.selected.DataPropertyName = "selected";
-            this.selected.FalseValue = "FALSE";
-            this.selected.HeaderText = "SELECT";
-            this.selected.MinimumWidth = 6;
-            this.selected.Name = "selected";
-            this.selected.TrueValue = "TRUE";
-            this.selected.Width = 125;
-            // 
-            // bmx_id_string
-            // 
-            this.bmx_id_string.DataPropertyName = "bmx_id_string";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.bmx_id_string.DefaultCellStyle = dataGridViewCellStyle3;
-            this.bmx_id_string.HeaderText = "BARCODE";
-            this.bmx_id_string.MinimumWidth = 6;
-            this.bmx_id_string.Name = "bmx_id_string";
-            this.bmx_id_string.ReadOnly = true;
-            this.bmx_id_string.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.bmx_id_string.Width = 125;
-            // 
-            // prod_adv
-            // 
-            this.prod_adv.DataPropertyName = "prod_adv";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.prod_adv.DefaultCellStyle = dataGridViewCellStyle4;
-            this.prod_adv.HeaderText = "PROD ID";
-            this.prod_adv.MinimumWidth = 6;
-            this.prod_adv.Name = "prod_adv";
-            this.prod_adv.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.prod_adv.Visible = false;
-            this.prod_adv.Width = 125;
-            // 
-            // Feed_Code
-            // 
-            this.Feed_Code.DataPropertyName = "Feed_Code";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Feed_Code.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Feed_Code.HeaderText = "FEED CODE";
-            this.Feed_Code.MinimumWidth = 12;
-            this.Feed_Code.Name = "Feed_Code";
-            this.Feed_Code.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Feed_Code.Visible = false;
-            this.Feed_Code.Width = 150;
-            // 
-            // BagSack
-            // 
-            this.BagSack.DataPropertyName = "BagSack";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.BagSack.DefaultCellStyle = dataGridViewCellStyle6;
-            this.BagSack.HeaderText = "SERIES";
-            this.BagSack.MinimumWidth = 12;
-            this.BagSack.Name = "BagSack";
-            this.BagSack.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.BagSack.Visible = false;
-            this.BagSack.Width = 80;
-            // 
-            // Feed_Type
-            // 
-            this.Feed_Type.DataPropertyName = "Feed_Type";
-            this.Feed_Type.HeaderText = "FEED TYPE";
-            this.Feed_Type.MinimumWidth = 12;
-            this.Feed_Type.Name = "Feed_Type";
-            this.Feed_Type.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Feed_Type.Visible = false;
-            this.Feed_Type.Width = 250;
-            // 
-            // Department
-            // 
-            this.Department.DataPropertyName = "Bags";
-            this.Department.HeaderText = "BAGS";
-            this.Department.MinimumWidth = 12;
-            this.Department.Name = "Department";
-            this.Department.ReadOnly = true;
-            this.Department.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Department.Width = 60;
-            // 
-            // Position
-            // 
-            this.Position.DataPropertyName = "Batch";
-            this.Position.HeaderText = "BATCH";
-            this.Position.MinimumWidth = 12;
-            this.Position.Name = "Position";
-            this.Position.Visible = false;
-            this.Position.Width = 60;
-            // 
-            // OPTIONS
-            // 
-            this.OPTIONS.DataPropertyName = "OPTIONS";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.OPTIONS.DefaultCellStyle = dataGridViewCellStyle7;
-            this.OPTIONS.HeaderText = "CATEGORY";
-            this.OPTIONS.MinimumWidth = 6;
-            this.OPTIONS.Name = "OPTIONS";
-            this.OPTIONS.ReadOnly = true;
-            this.OPTIONS.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.OPTIONS.Width = 125;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "PrintNo";
-            this.Column1.HeaderText = "STATUS";
-            this.Column1.MinimumWidth = 12;
-            this.Column1.Name = "Column1";
-            this.Column1.Visible = false;
-            this.Column1.Width = 250;
-            // 
-            // ActualWeight
-            // 
-            this.ActualWeight.DataPropertyName = "ActualWeight";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ActualWeight.DefaultCellStyle = dataGridViewCellStyle8;
-            this.ActualWeight.HeaderText = "WEIGHT";
-            this.ActualWeight.MinimumWidth = 12;
-            this.ActualWeight.Name = "ActualWeight";
-            this.ActualWeight.ReadOnly = true;
-            this.ActualWeight.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.ActualWeight.Width = 80;
-            // 
-            // TOTAL
-            // 
-            this.TOTAL.DataPropertyName = "TOTAL";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.TOTAL.DefaultCellStyle = dataGridViewCellStyle9;
-            this.TOTAL.HeaderText = "QUANTITY";
-            this.TOTAL.MinimumWidth = 6;
-            this.TOTAL.Name = "TOTAL";
-            this.TOTAL.ReadOnly = true;
-            this.TOTAL.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.TOTAL.Width = 125;
-            // 
-            // PrintCount
-            // 
-            this.PrintCount.DataPropertyName = "PrintCount";
-            this.PrintCount.HeaderText = "PRINT COUNT";
-            this.PrintCount.MinimumWidth = 12;
-            this.PrintCount.Name = "PrintCount";
-            this.PrintCount.Visible = false;
-            this.PrintCount.Width = 90;
-            // 
-            // TotalPack
-            // 
-            this.TotalPack.DataPropertyName = "ProdDate";
-            this.TotalPack.HeaderText = "PROD DATE";
-            this.TotalPack.MinimumWidth = 12;
-            this.TotalPack.Name = "TotalPack";
-            this.TotalPack.Visible = false;
-            this.TotalPack.Width = 250;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "status";
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle10;
-            this.Column2.HeaderText = "STATUS";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Visible = false;
-            this.Column2.Width = 125;
-            // 
-            // Packby
-            // 
-            this.Packby.DataPropertyName = "AddedBy";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Packby.DefaultCellStyle = dataGridViewCellStyle11;
-            this.Packby.HeaderText = "ADDED BY";
-            this.Packby.MinimumWidth = 12;
-            this.Packby.Name = "Packby";
-            this.Packby.ReadOnly = true;
-            this.Packby.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Packby.Width = 160;
-            // 
-            // ID
-            // 
-            this.ID.DataPropertyName = "ID";
-            this.ID.HeaderText = "KEY";
-            this.ID.MinimumWidth = 12;
-            this.ID.Name = "ID";
-            this.ID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ID.Visible = false;
-            this.ID.Width = 50;
-            // 
-            // ProdDate
-            // 
-            this.ProdDate.DataPropertyName = "ProdDate";
-            this.ProdDate.HeaderText = "Proddate";
-            this.ProdDate.MinimumWidth = 6;
-            this.ProdDate.Name = "ProdDate";
-            this.ProdDate.Visible = false;
-            this.ProdDate.Width = 125;
-            // 
-            // fg_proddate
-            // 
-            this.fg_proddate.DataPropertyName = "fg_proddate";
-            this.fg_proddate.HeaderText = "fg_proddates";
-            this.fg_proddate.MinimumWidth = 6;
-            this.fg_proddate.Name = "fg_proddate";
-            this.fg_proddate.Visible = false;
-            this.fg_proddate.Width = 125;
-            // 
-            // printing_date
-            // 
-            this.printing_date.DataPropertyName = "printing_date";
-            this.printing_date.HeaderText = "PRINT DATE";
-            this.printing_date.MinimumWidth = 6;
-            this.printing_date.Name = "printing_date";
-            this.printing_date.Visible = false;
-            this.printing_date.Width = 125;
-            // 
-            // Remark
-            // 
-            this.Remark.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Remark.DataPropertyName = "Remark";
-            this.Remark.HeaderText = "REMARKS";
-            this.Remark.MinimumWidth = 6;
-            this.Remark.Name = "Remark";
-            this.Remark.ReadOnly = true;
-            this.Remark.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.Remark.Width = 99;
             // 
             // txtSearch
             // 
@@ -1389,6 +1168,233 @@
             this.lblbase.Text = "0";
             this.lblbase.Visible = false;
             // 
+            // selected
+            // 
+            this.selected.DataPropertyName = "selected";
+            this.selected.FalseValue = "FALSE";
+            this.selected.HeaderText = "SELECT";
+            this.selected.MinimumWidth = 6;
+            this.selected.Name = "selected";
+            this.selected.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.selected.TrueValue = "TRUE";
+            this.selected.Width = 125;
+            // 
+            // bmx_id_string
+            // 
+            this.bmx_id_string.DataPropertyName = "bmx_id_string";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.bmx_id_string.DefaultCellStyle = dataGridViewCellStyle3;
+            this.bmx_id_string.HeaderText = "BARCODE";
+            this.bmx_id_string.MinimumWidth = 6;
+            this.bmx_id_string.Name = "bmx_id_string";
+            this.bmx_id_string.ReadOnly = true;
+            this.bmx_id_string.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.bmx_id_string.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.bmx_id_string.Width = 125;
+            // 
+            // prod_adv
+            // 
+            this.prod_adv.DataPropertyName = "prod_adv";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.prod_adv.DefaultCellStyle = dataGridViewCellStyle4;
+            this.prod_adv.HeaderText = "PROD ID";
+            this.prod_adv.MinimumWidth = 6;
+            this.prod_adv.Name = "prod_adv";
+            this.prod_adv.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.prod_adv.Visible = false;
+            this.prod_adv.Width = 125;
+            // 
+            // Feed_Code
+            // 
+            this.Feed_Code.DataPropertyName = "Feed_Code";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Feed_Code.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Feed_Code.HeaderText = "FEED CODE";
+            this.Feed_Code.MinimumWidth = 12;
+            this.Feed_Code.Name = "Feed_Code";
+            this.Feed_Code.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Feed_Code.Visible = false;
+            this.Feed_Code.Width = 150;
+            // 
+            // BagSack
+            // 
+            this.BagSack.DataPropertyName = "BagSack";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.BagSack.DefaultCellStyle = dataGridViewCellStyle6;
+            this.BagSack.HeaderText = "SERIES";
+            this.BagSack.MinimumWidth = 12;
+            this.BagSack.Name = "BagSack";
+            this.BagSack.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.BagSack.Visible = false;
+            this.BagSack.Width = 80;
+            // 
+            // Feed_Type
+            // 
+            this.Feed_Type.DataPropertyName = "Feed_Type";
+            this.Feed_Type.HeaderText = "FEED TYPE";
+            this.Feed_Type.MinimumWidth = 12;
+            this.Feed_Type.Name = "Feed_Type";
+            this.Feed_Type.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Feed_Type.Visible = false;
+            this.Feed_Type.Width = 250;
+            // 
+            // Department
+            // 
+            this.Department.DataPropertyName = "Bags";
+            this.Department.HeaderText = "BAGS";
+            this.Department.MinimumWidth = 12;
+            this.Department.Name = "Department";
+            this.Department.ReadOnly = true;
+            this.Department.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Department.Width = 60;
+            // 
+            // Position
+            // 
+            this.Position.DataPropertyName = "Batch";
+            this.Position.HeaderText = "BATCH";
+            this.Position.MinimumWidth = 12;
+            this.Position.Name = "Position";
+            this.Position.Visible = false;
+            this.Position.Width = 60;
+            // 
+            // OPTIONS
+            // 
+            this.OPTIONS.DataPropertyName = "OPTIONS";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.OPTIONS.DefaultCellStyle = dataGridViewCellStyle7;
+            this.OPTIONS.HeaderText = "CATEGORY";
+            this.OPTIONS.MinimumWidth = 6;
+            this.OPTIONS.Name = "OPTIONS";
+            this.OPTIONS.ReadOnly = true;
+            this.OPTIONS.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.OPTIONS.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.OPTIONS.Width = 125;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "PrintNo";
+            this.Column1.HeaderText = "STATUS";
+            this.Column1.MinimumWidth = 12;
+            this.Column1.Name = "Column1";
+            this.Column1.Visible = false;
+            this.Column1.Width = 250;
+            // 
+            // ActualWeight
+            // 
+            this.ActualWeight.DataPropertyName = "ActualWeight";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ActualWeight.DefaultCellStyle = dataGridViewCellStyle8;
+            this.ActualWeight.HeaderText = "WEIGHT";
+            this.ActualWeight.MinimumWidth = 12;
+            this.ActualWeight.Name = "ActualWeight";
+            this.ActualWeight.ReadOnly = true;
+            this.ActualWeight.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ActualWeight.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ActualWeight.Width = 80;
+            // 
+            // TOTAL
+            // 
+            this.TOTAL.DataPropertyName = "TOTAL";
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.TOTAL.DefaultCellStyle = dataGridViewCellStyle9;
+            this.TOTAL.HeaderText = "QUANTITY";
+            this.TOTAL.MinimumWidth = 6;
+            this.TOTAL.Name = "TOTAL";
+            this.TOTAL.ReadOnly = true;
+            this.TOTAL.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.TOTAL.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.TOTAL.Width = 125;
+            // 
+            // PrintCount
+            // 
+            this.PrintCount.DataPropertyName = "PrintCount";
+            this.PrintCount.HeaderText = "PRINT COUNT";
+            this.PrintCount.MinimumWidth = 12;
+            this.PrintCount.Name = "PrintCount";
+            this.PrintCount.Visible = false;
+            this.PrintCount.Width = 90;
+            // 
+            // TotalPack
+            // 
+            this.TotalPack.DataPropertyName = "ProdDate";
+            this.TotalPack.HeaderText = "PROD DATE";
+            this.TotalPack.MinimumWidth = 12;
+            this.TotalPack.Name = "TotalPack";
+            this.TotalPack.Visible = false;
+            this.TotalPack.Width = 250;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "status";
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle10;
+            this.Column2.HeaderText = "STATUS";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Visible = false;
+            this.Column2.Width = 125;
+            // 
+            // Packby
+            // 
+            this.Packby.DataPropertyName = "AddedBy";
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Packby.DefaultCellStyle = dataGridViewCellStyle11;
+            this.Packby.HeaderText = "ADDED BY";
+            this.Packby.MinimumWidth = 12;
+            this.Packby.Name = "Packby";
+            this.Packby.ReadOnly = true;
+            this.Packby.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Packby.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Packby.Width = 160;
+            // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "ID";
+            this.ID.HeaderText = "KEY";
+            this.ID.MinimumWidth = 12;
+            this.ID.Name = "ID";
+            this.ID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ID.Visible = false;
+            this.ID.Width = 50;
+            // 
+            // ProdDate
+            // 
+            this.ProdDate.DataPropertyName = "ProdDate";
+            this.ProdDate.HeaderText = "Proddate";
+            this.ProdDate.MinimumWidth = 6;
+            this.ProdDate.Name = "ProdDate";
+            this.ProdDate.Visible = false;
+            this.ProdDate.Width = 125;
+            // 
+            // fg_proddate
+            // 
+            this.fg_proddate.DataPropertyName = "fg_proddate";
+            this.fg_proddate.HeaderText = "fg_proddates";
+            this.fg_proddate.MinimumWidth = 6;
+            this.fg_proddate.Name = "fg_proddate";
+            this.fg_proddate.Visible = false;
+            this.fg_proddate.Width = 125;
+            // 
+            // printing_date
+            // 
+            this.printing_date.DataPropertyName = "printing_date";
+            this.printing_date.HeaderText = "PRINT DATE";
+            this.printing_date.MinimumWidth = 6;
+            this.printing_date.Name = "printing_date";
+            this.printing_date.Visible = false;
+            this.printing_date.Width = 125;
+            // 
+            // Remark
+            // 
+            this.Remark.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Remark.DataPropertyName = "Remark";
+            this.Remark.HeaderText = "REMARKS";
+            this.Remark.MinimumWidth = 6;
+            this.Remark.Name = "Remark";
+            this.Remark.ReadOnly = true;
+            this.Remark.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.Remark.Width = 99;
+            // 
             // frmFGView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1522,6 +1528,10 @@
         internal System.Windows.Forms.Button btnvariance;
         private System.Windows.Forms.TextBox textBox2;
         internal System.Windows.Forms.Label lblremarks;
+        internal System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox CBpendingremark;
+        private System.Windows.Forms.ComboBox txtremarks;
+        internal System.Windows.Forms.Label lblbase;
         private System.Windows.Forms.DataGridViewCheckBoxColumn selected;
         private System.Windows.Forms.DataGridViewTextBoxColumn bmx_id_string;
         private System.Windows.Forms.DataGridViewTextBoxColumn prod_adv;
@@ -1543,9 +1553,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn fg_proddate;
         private System.Windows.Forms.DataGridViewTextBoxColumn printing_date;
         private System.Windows.Forms.DataGridViewTextBoxColumn Remark;
-        internal System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox CBpendingremark;
-        private System.Windows.Forms.ComboBox txtremarks;
-        internal System.Windows.Forms.Label lblbase;
     }
 }

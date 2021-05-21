@@ -409,7 +409,11 @@ namespace WFFDR
                     load_search();
                     btnSelect.Visible = true;
                     btnsave.Visible = true;
+                    lblbase.Text = "enable";
                     btnpending.Visible = true;
+                    btnpending.Enabled = true;
+                 
+                   
                     btnvariance.Enabled = true;
                     btnvariance.Visible = false;
 

@@ -234,7 +234,6 @@
             this.bags,
             this.platenumber});
             this.dgvshowQTYbag.Cursor = System.Windows.Forms.Cursors.No;
-            this.dgvshowQTYbag.Enabled = false;
             this.dgvshowQTYbag.EnableHeadersVisualStyles = false;
             this.dgvshowQTYbag.GridColor = System.Drawing.Color.Teal;
             this.dgvshowQTYbag.Location = new System.Drawing.Point(13, 27);
