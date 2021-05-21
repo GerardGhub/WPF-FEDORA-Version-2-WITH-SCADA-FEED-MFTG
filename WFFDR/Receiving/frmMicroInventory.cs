@@ -411,7 +411,7 @@ namespace WFFDR
             txtrepackavailable.Text = "";
             txtqtyrepack.Text = "";
         }
-        void Enabled()
+        void Enabledd()
         {
             //txtItemCode.Enabled = true;
 
@@ -434,7 +434,7 @@ namespace WFFDR
             txtCategory.Text = "MICRO";
             Clear();
             loadGroup();
-            Enabled();
+            Enabledd();
             txtItemCode.Focus();
             dgv_table.Enabled = false;
             saveToolStripButton.Visible = true;
@@ -859,7 +859,7 @@ namespace WFFDR
             cboOrdering.Enabled = true;
 
             saveToolStripButton.Visible = false;
-            Enabled();
+            Enabledd();
 
             txtgroup.Enabled = false;
             txtabc.Visible = false;

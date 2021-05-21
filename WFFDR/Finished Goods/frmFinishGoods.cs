@@ -18,10 +18,10 @@ namespace WFFDR
 
     public partial class frmFinishGoods : Form
     {
-        SqlCommand cmd;
-        SqlDataAdapter da;
-        DataTable dt;
-        DataSet ds = new DataSet();
+        //SqlCommand cmd;
+        //SqlDataAdapter da;
+        //DataTable dt;
+        //DataSet ds = new DataSet();
         DataSet dSet_temp = new DataSet();
 
         DataSet dset = new DataSet();
@@ -702,13 +702,18 @@ namespace WFFDR
 
             dset_emp8.Clear();
 
-            dset_emp = objStorProc.sp_getMajorTables("BulkEntrySum");
+            //dset_emp = objStorProc.sp_getMajorTables("BulkEntrySum");
+
+            dset_emp = objStorProc.sp_GetCategory("BulkEntrySum",0, txtprodid.Text,"","");
+
             //dset_emp1 = objStorProc.sp_getMajorTables("BagsEntrySum");
             doSearch();
             //doSearch2();
 
 
-            dset_emp8 = objStorProc.sp_getMajorTables("BaggingEntrySum");
+            //dset_emp8 = objStorProc.sp_getMajorTables("BaggingEntrySum");
+            dset_emp8 = objStorProc.sp_GetCategory("BaggingEntrySum",0, txtprodid.Text,"","");
+
             //dset_emp1 = objStorProc.sp_getMajorTables("BagsEntrySum");
             doSearch8();
 
@@ -721,20 +726,20 @@ namespace WFFDR
                 if (dset_emp.Tables.Count > 0)
                 {
                     DataView dv = new DataView(dset_emp.Tables[0]);
-                    if (myglobal.global_module == "EMPLOYEE")
-                    {
-                        //dv.RowFilter = "firstname like '%" + txtmainsearch.Text + "%' or lastname like '%" + txtsearch.Text + "%' or employee_number like '%" + txtsearch.Text + "%' or employment_status_name like '%" + txtsearch.Text + "%'";
-                    }
-                    else if (myglobal.global_module == "Active")
-                    {
+                    //if (myglobal.global_module == "EMPLOYEE")
+                    //{
+                    //    //dv.RowFilter = "firstname like '%" + txtmainsearch.Text + "%' or lastname like '%" + txtsearch.Text + "%' or employee_number like '%" + txtsearch.Text + "%' or employment_status_name like '%" + txtsearch.Text + "%'";
+                    //}
+                    //else if (myglobal.global_module == "Active")
+                    //{
 
-                        dv.RowFilter = "prod_adv = '" + txtprodid.Text + "'";
+                    //    //dv.RowFilter = "prod_adv = '" + txtprodid.Text + "'";
 
-                    }
-                    else if (myglobal.global_module == "VISITORS")
-                    {
-                        //dv.RowFilter = "visitors_lastname like '%" + txtsearch.Text + "%' or visitors_firstname like '%" + txtsearch.Text + "%'";
-                    }
+                    //}
+                    //else if (myglobal.global_module == "VISITORS")
+                    //{
+                    //    //dv.RowFilter = "visitors_lastname like '%" + txtsearch.Text + "%' or visitors_firstname like '%" + txtsearch.Text + "%'";
+                    //}
                     dgvbulkentry.DataSource = dv;
                     //lblrecords.Text = dgv_table.RowCount.ToString();gerard
                 }
@@ -776,20 +781,20 @@ namespace WFFDR
                 if (dset_emp8.Tables.Count > 0)
                 {
                     DataView dv = new DataView(dset_emp8.Tables[0]);
-                    if (myglobal.global_module == "EMPLOYEE")
-                    {
-                        //dv.RowFilter = "firstname like '%" + txtmainsearch.Text + "%' or lastname like '%" + txtsearch.Text + "%' or employee_number like '%" + txtsearch.Text + "%' or employment_status_name like '%" + txtsearch.Text + "%'";
-                    }
-                    else if (myglobal.global_module == "Active")
-                    {
+                    //if (myglobal.global_module == "EMPLOYEE")
+                    //{
+                    //    //dv.RowFilter = "firstname like '%" + txtmainsearch.Text + "%' or lastname like '%" + txtsearch.Text + "%' or employee_number like '%" + txtsearch.Text + "%' or employment_status_name like '%" + txtsearch.Text + "%'";
+                    //}
+                    //else if (myglobal.global_module == "Active")
+                    //{
 
-                        dv.RowFilter = "prod_adv = '" + txtprodid.Text + "'";
+                    //    dv.RowFilter = "prod_adv = '" + txtprodid.Text + "'";
 
-                    }
-                    else if (myglobal.global_module == "VISITORS")
-                    {
-                        //dv.RowFilter = "visitors_lastname like '%" + txtsearch.Text + "%' or visitors_firstname like '%" + txtsearch.Text + "%'";
-                    }
+                    //}
+                    //else if (myglobal.global_module == "VISITORS")
+                    //{
+                    //    //dv.RowFilter = "visitors_lastname like '%" + txtsearch.Text + "%' or visitors_firstname like '%" + txtsearch.Text + "%'";
+                    //}
                     dgvbagger.DataSource = dv;
                     txt.Text = dgvbagger.RowCount.ToString(); 
                 }
@@ -5427,7 +5432,49 @@ namespace WFFDR
 
 
             txttotalproduce.Text = (float.Parse(txttotalbulkentry.Text) + float.Parse(txt.Text)).ToString();
+            //toshowsavebutton();
+
+
         }
+
+
+        void toshowsavebutton()
+        {
+            Double tenpercent = 0;
+            Double total = 0;
+            
+
+            tenpercent = Convert.ToDouble(txtbags.Text) * 0.9;
+            
+            total = Convert.ToDouble(txttotalproduce.Text);
+         
+
+
+
+            if (total >= tenpercent)
+            {
+               
+                btnSaveFG.Visible = true;
+                return;
+
+            }
+
+           if(Convert.ToDouble(txttotalproduce.Text) >= Convert.ToDouble(txtbags.Text))
+            {
+              
+                btnSaveFG.Visible = true;
+                return;
+
+            }
+            else
+            {
+               
+                btnSaveFG.Visible = false;
+                return;
+
+            }
+        }
+
         private void txttotalbulkentry_TextChanged(object sender, EventArgs e)
         {
 
@@ -6023,15 +6070,15 @@ namespace WFFDR
             forNextPrevious();
             panelCode.Visible = false;
             showValueDailyProduction();
-
+            //dito
             double a;
             double b;
             a = double.Parse(txtbags.Text);
             b = double.Parse(txtbagsprinting.Text);
             if (a > b)
             {
-         
-                btnSaveFG.Visible = false;
+
+                //btnSaveFG.Visible = false;
             }
             else
             {
@@ -6043,7 +6090,7 @@ namespace WFFDR
 
 
             loadSchedulesDuplicate();
-
+            //dito2
             MonitoringSubtractBy();
 
             if (txtbagsmonitoring.Text == "0")
@@ -6054,8 +6101,9 @@ namespace WFFDR
 
             BindDuplicateData();
             ShowRemaingBatchQuery(); // out 
+            //dito ko nilagay
             SumthetotalBulkandBag();
-            NextSave();
+            //NextSave();
 
 
 
@@ -6081,8 +6129,9 @@ namespace WFFDR
             loadCode();
             loadBulk();
             nextHideBIN();
-
-            PercentMasterData();
+            //dito3
+            //PercentMasterData();
+            toshowsavebutton();
 
         }
 
@@ -6168,6 +6217,7 @@ namespace WFFDR
             showValueDailyProduction();
             //MessageBox.Show(txtbags.Text);
             //MessageBox.Show(txtbagsprinting.Text);
+            //dito
             double a;
             double b;
             a = double.Parse(txtbags.Text);
@@ -6238,7 +6288,8 @@ namespace WFFDR
             }
             else
             {
-                PercentMasterData();
+                //PercentMasterData();
+                toshowsavebutton();
             }
         }
 

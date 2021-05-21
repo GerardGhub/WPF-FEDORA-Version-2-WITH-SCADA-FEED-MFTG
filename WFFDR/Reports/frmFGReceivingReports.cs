@@ -21,8 +21,8 @@ namespace WFFDR.Reports
         {
             myglobal.DATE_REPORT = dtpprod1.Text;
             myglobal.DATE_REPORT2 = dtpprod2.Text;
-
-            myglobal.REPORT_NAME = "FGReceivingReports";
+            //myglobal.REPORT_NAME = "DailyProductionSchedule";
+            myglobal.REPORT_NAME = "FGReceivedReports";
 
 
 
@@ -31,6 +31,12 @@ namespace WFFDR.Reports
             fr.Show();
 
 
+        }
+
+        private void frmFGReceivingReports_Load(object sender, EventArgs e)
+        {
+            dtpprod1.MaxDate = DateTime.Now;
+            dtpprod2.MaxDate = DateTime.Now;
         }
     }
 }

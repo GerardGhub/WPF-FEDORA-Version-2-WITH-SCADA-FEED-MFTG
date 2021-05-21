@@ -16,9 +16,9 @@ namespace WFFDR
     {
 
         myclasses xClass = new myclasses();
-        IStoredProcedures objStorProc = null;
+        //IStoredProcedures objStorProc = null;
 
-        int p_id = 0;
+        //int p_id = 0;
         myglobal pointer_module = new myglobal();
         DataSet dsetHeader = new DataSet();
 
@@ -167,7 +167,7 @@ namespace WFFDR
             SqlConnection sql_con = new SqlConnection(connetionString);
 
 
-            string sqlquery = "SELECT fg_id,bmx_id_string,prod_adv,fg_feed_code,fg_feed_type,fg_bags,fg_batch,fg_proddate,fg_micro_prepa,fg_macro_prepa,fg_micro_bmx,fg_finish_production,added_by,actual_weight FROM rdf_repackin_finishgoods WHERE status='Reprocess' and not proc_time_stamp is not null and prod_adv='"+txtprod_id.Text+"'";
+            string sqlquery = "SELECT fg_id,bmx_id_string,prod_adv,fg_feed_code,fg_feed_type,fg_bags,fg_batch,fg_proddate,fg_micro_prepa,fg_macro_prepa,fg_micro_bmx,fg_finish_production,added_by,actual_weight FROM rdf_repackin_finishgoods WHERE status='Reprocess' and not proc_time_stamp is not null and prod_adv='"+txtprod_id.Text+ "' and bmx_id_string !='NO BARCODE'";
 
 
             sql_con.Open();

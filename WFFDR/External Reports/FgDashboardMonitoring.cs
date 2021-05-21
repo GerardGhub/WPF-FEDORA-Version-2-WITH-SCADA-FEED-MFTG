@@ -26,9 +26,7 @@ namespace WFFDR
             objStorProc = xClass.g_objStoredProc.GetCollections();
             myglobal.global_module = "Active";
             load_FGmonitoring();
-            load_search();
 
-            dateTimePicker12_ValueChanged(sender, e);
         }
 
 
@@ -45,52 +43,95 @@ namespace WFFDR
         {
             string mcolumns = "test,prod_id,p_feed_code,feed_type,bags_int,batch_int,proddate,bagorbin,series_num";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
             pointer_module.populateModule(dsetHeader, dataView, mcolumns, "FGmonitoring");
-            // Menu.lblrecords.Text = dgv_table.RowCount.ToString();
-            //lblallmaterials.Text = dgv_po_approve.RowCount.ToString();
-            //poreceived_header();
+
         }
 
         void load_search()
         {
-
+            //dito
             dset_emp1.Clear();
 
-            dset_emp1 = objStorProc.sp_getMajorTables("FGmonitoring");
+            dset_emp1 = objStorProc.sp_GetCategory("FGmonitoring",0, dateTimePicker12.Text.ToString(),"","");
 
             doSearch();
 
 
-            dset_emp2 = objStorProc.sp_getMajorTables("FGReproccess");
+            dset_emp2.Clear();
+            dset_emp2 = objStorProc.sp_GetCategory("FGReproccess", 0, dateTimePicker12.Text.ToString(), txtproductionid.Text,"");
 
             doSearch2();
 
-            dset_emp3 = objStorProc.sp_getMajorTables("FGReproccessDone");
+            dset_emp3.Clear();
+            dset_emp3 = objStorProc.sp_GetCategory("FGReproccessDone", 0, dateTimePicker12.Text.ToString(), txtproductionid.Text,"");
 
             doSearch3();
 
-            dset_emp4 = objStorProc.sp_getMajorTables("FGGood");
+            dset_emp4.Clear();
+            dset_emp4 = objStorProc.sp_GetCategory("FGGood", 0, dateTimePicker12.Text.ToString(), txtproductionid.Text,"");
 
             doSearch4();
 
-
-            dset_emp5 = objStorProc.sp_getMajorTables("FGRejected");
+            dset_emp5.Clear();
+            dset_emp5 = objStorProc.sp_GetCategory("FGRejected", 0, dateTimePicker12.Text.ToString(), txtproductionid.Text,"");
 
             doSearch5();
 
-
-            dset_emp6 = objStorProc.sp_getMajorTables("FGBaggingTotal");
+            dset_emp6.Clear();
+            dset_emp6 = objStorProc.sp_GetCategory("FGBaggingTotal", 0, dateTimePicker12.Text.ToString(), txtproductionid.Text,"");
 
             doSearch6();
 
-            dset_emp7 = objStorProc.sp_getMajorTables("FGBulkTotal");
+            dset_emp7.Clear();
+            dset_emp7 = objStorProc.sp_GetCategory("FGBulkTotal", 0, dateTimePicker12.Text.ToString(), txtproductionid.Text,"");
+
 
             doSearch7();
 
-
-            dset_emp8 = objStorProc.sp_getMajorTables("FGbolang");
+            dset_emp8.Clear();
+            dset_emp8 = objStorProc.sp_GetCategory("FGtabalu", 0, "", txtproductionid.Text,"");
 
             doSearch8();
 
+
+        }
+
+        void loadsearch2()
+        {
+            dset_emp2.Clear();
+           dset_emp2 = objStorProc.sp_GetCategory("FGReproccess", 0, dateTimePicker12.Text.ToString(), txtproductionid.Text,"");
+
+            doSearch2();
+
+            dset_emp3.Clear();
+            dset_emp3 = objStorProc.sp_GetCategory("FGReproccessDone", 0, dateTimePicker12.Text.ToString(), txtproductionid.Text,"");
+
+            doSearch3();
+
+            dset_emp4.Clear();
+            dset_emp4 = objStorProc.sp_GetCategory("FGGood", 0, dateTimePicker12.Text.ToString(), txtproductionid.Text,"");
+
+            doSearch4();
+
+            dset_emp5.Clear();
+            dset_emp5 = objStorProc.sp_GetCategory("FGRejected", 0, dateTimePicker12.Text.ToString(), txtproductionid.Text,"");
+
+            doSearch5();
+
+            dset_emp6.Clear();
+            dset_emp6 = objStorProc.sp_GetCategory("FGBaggingTotal", 0, dateTimePicker12.Text.ToString(), txtproductionid.Text,"");
+
+            doSearch6();
+
+            dset_emp7.Clear();
+            dset_emp7 = objStorProc.sp_GetCategory("FGBulkTotal", 0, dateTimePicker12.Text.ToString(), txtproductionid.Text,"");
+
+
+            doSearch7();
+
+            dset_emp8.Clear();
+            dset_emp8 = objStorProc.sp_GetCategory("FGtabalu", 0, "", txtproductionid.Text,"");
+
+            doSearch8();
 
         }
         DataSet dset_emp1 = new DataSet();
@@ -98,27 +139,11 @@ namespace WFFDR
         {
             try
             {
-                if (dset_emp1.Tables.Count > 0)
-                {
                     DataView dv = new DataView(dset_emp1.Tables[0]);
-                    if (myglobal.global_module == "EMPLOYEE")
-                    {
-                        //dv.RowFilter = "firstname like '%" + txtmainsearch.Text + "%' or lastname like '%" + txtsearch.Text + "%' or employee_number like '%" + txtsearch.Text + "%' or employment_status_name like '%" + txtsearch.Text + "%'";
-                    }
-                    else if (myglobal.global_module == "Active")
-                    {
-
-                        dv.RowFilter = "proddate = '" + dateTimePicker12.Text + "'";
-
-                    }
-                    else if (myglobal.global_module == "VISITORS")
-                    {
-                        //dv.RowFilter = "visitors_lastname like '%" + txtsearch.Text + "%' or visitors_firstname like '%" + txtsearch.Text + "%'";
-                    }
+                if(dset_emp1.Tables != null)
+                { 
                     dataView.DataSource = dv;
                     txtluffy.Text = dataView.RowCount.ToString();
-
-                    //gerard
                 }
             }
             catch (SyntaxErrorException)
@@ -145,28 +170,14 @@ namespace WFFDR
         {
             try
             {
-                if (dset_emp2.Tables.Count > 0)
-                {
+
                     DataView dv = new DataView(dset_emp2.Tables[0]);
-                    if (myglobal.global_module == "EMPLOYEE")
-                    {
-                        //dv.RowFilter = "firstname like '%" + txtmainsearch.Text + "%' or lastname like '%" + txtsearch.Text + "%' or employee_number like '%" + txtsearch.Text + "%' or employment_status_name like '%" + txtsearch.Text + "%'";
-                    }
-                    else if (myglobal.global_module == "Active")
-                    {
-
-                        dv.RowFilter = "fg_proddate = '" + dateTimePicker12.Text + "' AND prod_adv = '"+txtproductionid.Text+"'";
-
-                    }
-                    else if (myglobal.global_module == "VISITORS")
-                    {
-                        //dv.RowFilter = "visitors_lastname like '%" + txtsearch.Text + "%' or visitors_firstname like '%" + txtsearch.Text + "%'";
-                    }
+                if (dset_emp2.Tables != null)
+                {
                     dataView2.DataSource = dv;
                     txtreprocess.Text = dataView2.RowCount.ToString();
-
-                    //gerard
                 }
+
             }
             catch (SyntaxErrorException)
             {
@@ -195,28 +206,14 @@ namespace WFFDR
         {
             try
             {
-                if (dset_emp3.Tables.Count > 0)
-                {
+               
                     DataView dv = new DataView(dset_emp3.Tables[0]);
-                    if (myglobal.global_module == "EMPLOYEE")
-                    {
-                        //dv.RowFilter = "firstname like '%" + txtmainsearch.Text + "%' or lastname like '%" + txtsearch.Text + "%' or employee_number like '%" + txtsearch.Text + "%' or employment_status_name like '%" + txtsearch.Text + "%'";
-                    }
-                    else if (myglobal.global_module == "Active")
-                    {
-
-                        dv.RowFilter = "fg_proddate = '" + dateTimePicker12.Text + "' AND prod_adv = '" + txtproductionid.Text + "'";
-
-                    }
-                    else if (myglobal.global_module == "VISITORS")
-                    {
-                        //dv.RowFilter = "visitors_lastname like '%" + txtsearch.Text + "%' or visitors_firstname like '%" + txtsearch.Text + "%'";
-                    }
+                if (dset_emp3.Tables != null)
+                { 
                     dataView3.DataSource = dv;
                     txtreprocessdone.Text = dataView3.RowCount.ToString();
-
-                    //gerard
                 }
+
             }
             catch (SyntaxErrorException)
             {
@@ -240,28 +237,14 @@ namespace WFFDR
         {
             try
             {
-                if (dset_emp4.Tables.Count > 0)
-                {
+
                     DataView dv = new DataView(dset_emp4.Tables[0]);
-                    if (myglobal.global_module == "EMPLOYEE")
-                    {
-                        //dv.RowFilter = "firstname like '%" + txtmainsearch.Text + "%' or lastname like '%" + txtsearch.Text + "%' or employee_number like '%" + txtsearch.Text + "%' or employment_status_name like '%" + txtsearch.Text + "%'";
-                    }
-                    else if (myglobal.global_module == "Active")
-                    {
-
-                        dv.RowFilter = "fg_proddate = '" + dateTimePicker12.Text + "' AND prod_adv = '" + txtproductionid.Text + "'";
-
-                    }
-                    else if (myglobal.global_module == "VISITORS")
-                    {
-                        //dv.RowFilter = "visitors_lastname like '%" + txtsearch.Text + "%' or visitors_firstname like '%" + txtsearch.Text + "%'";
-                    }
+                if (dset_emp4.Tables != null)
+                { 
                     dataView4.DataSource = dv;
-                    lblgood.Text = dataView4.RowCount.ToString();
-
-                    //gerard
+                    lblgood.Text = dset_emp4.Tables[0].Rows[0][0].ToString();
                 }
+
             }
             catch (SyntaxErrorException)
             {
@@ -286,28 +269,14 @@ namespace WFFDR
         {
             try
             {
-                if (dset_emp5.Tables.Count > 0)
-                {
+
                     DataView dv = new DataView(dset_emp5.Tables[0]);
-                    if (myglobal.global_module == "EMPLOYEE")
-                    {
-                        //dv.RowFilter = "firstname like '%" + txtmainsearch.Text + "%' or lastname like '%" + txtsearch.Text + "%' or employee_number like '%" + txtsearch.Text + "%' or employment_status_name like '%" + txtsearch.Text + "%'";
-                    }
-                    else if (myglobal.global_module == "Active")
-                    {
-
-                        dv.RowFilter = "fg_proddate = '" + dateTimePicker12.Text + "' AND prod_adv = '" + txtproductionid.Text + "'";
-
-                    }
-                    else if (myglobal.global_module == "VISITORS")
-                    {
-                        //dv.RowFilter = "visitors_lastname like '%" + txtsearch.Text + "%' or visitors_firstname like '%" + txtsearch.Text + "%'";
-                    }
+                if (dset_emp5.Tables != null)
+                { 
                     dataView5.DataSource = dv;
                     lblreject.Text = dataView5.RowCount.ToString();
-
-                    //gerard
                 }
+
             }
             catch (SyntaxErrorException)
             {
@@ -333,28 +302,14 @@ namespace WFFDR
         {
             try
             {
-                if (dset_emp6.Tables.Count > 0)
-                {
+
                     DataView dv = new DataView(dset_emp6.Tables[0]);
-                    if (myglobal.global_module == "EMPLOYEE")
-                    {
-                        //dv.RowFilter = "firstname like '%" + txtmainsearch.Text + "%' or lastname like '%" + txtsearch.Text + "%' or employee_number like '%" + txtsearch.Text + "%' or employment_status_name like '%" + txtsearch.Text + "%'";
-                    }
-                    else if (myglobal.global_module == "Active")
-                    {
-
-                        dv.RowFilter = "fg_proddate = '" + dateTimePicker12.Text + "' AND prod_adv = '" + txtproductionid.Text + "'";
-
-                    }
-                    else if (myglobal.global_module == "VISITORS")
-                    {
-                        //dv.RowFilter = "visitors_lastname like '%" + txtsearch.Text + "%' or visitors_firstname like '%" + txtsearch.Text + "%'";
-                    }
+                    if(dset_emp6.Tables != null)
+                { 
                     dataView6.DataSource = dv;
                     lbltotal.Text = dataView6.RowCount.ToString();
-
-                    //gerard
                 }
+
             }
             catch (SyntaxErrorException)
             {
@@ -381,28 +336,15 @@ namespace WFFDR
         {
             try
             {
-                if (dset_emp7.Tables.Count > 0)
-                {
+
                     DataView dv = new DataView(dset_emp7.Tables[0]);
-                    if (myglobal.global_module == "EMPLOYEE")
-                    {
-                        //dv.RowFilter = "firstname like '%" + txtmainsearch.Text + "%' or lastname like '%" + txtsearch.Text + "%' or employee_number like '%" + txtsearch.Text + "%' or employment_status_name like '%" + txtsearch.Text + "%'";
-                    }
-                    else if (myglobal.global_module == "Active")
-                    {
-
-                        dv.RowFilter = "fg_proddate = '" + dateTimePicker12.Text + "' AND prod_adv = '" + txtproductionid.Text + "'";
-
-                    }
-                    else if (myglobal.global_module == "VISITORS")
-                    {
-                        //dv.RowFilter = "visitors_lastname like '%" + txtsearch.Text + "%' or visitors_firstname like '%" + txtsearch.Text + "%'";
-                    }
+                if (dset_emp7.Tables != null)
+                { 
                     dataView7.DataSource = dv;
                     lbltotalbulk.Text = dataView7.RowCount.ToString();
-
-                    //gerard
                 }
+
+
             }
             catch (SyntaxErrorException)
             {
@@ -421,21 +363,32 @@ namespace WFFDR
 
 
 
-            double sum = 0;
-            for (int i = 0; i < dataView7.Rows.Count; ++i)
-            {
-                sum += Convert.ToDouble(dataView7.Rows[i].Cells[21].Value);
-            }
-           lblbulkgrandtotal.Text = sum.ToString();
 
-            if(lblbulkgrandtotal.Text.Trim()== string.Empty)
-            {
 
+
+
+            lblbulkgrandtotal.Text = dset_emp7.Tables[0].Rows[0][0].ToString();
+
+            
+           
+
+            if (lblbulkgrandtotal.Text.Trim()== String.Empty)
+            {
+                lblbulkgrandtotal.Text = "0";
             }
             else
             {
 
-             lblgood.Text = (float.Parse(lblgood.Text) + float.Parse(lblbulkgrandtotal.Text)).ToString();
+                //lblgood.Text = (float.Parse(lblgood.Text) + float.Parse(lblbulkgrandtotal.Text)).ToString();
+
+                //if (lblbulkgrandtotal.Text == "0")
+                //{
+
+                //}
+                //else
+                //{
+                //    //lblgood.Text = (float.Parse(lblgood.Text) - 1).ToString();
+                //}
 
             }
 
@@ -453,23 +406,10 @@ namespace WFFDR
         {
             try
             {
-                if (dset_emp8.Tables.Count > 0)
-                {
+                
                     DataView dv = new DataView(dset_emp8.Tables[0]);
-                    if (myglobal.global_module == "EMPLOYEE")
-                    {
-                        //dv.RowFilter = "firstname like '%" + txtmainsearch.Text + "%' or lastname like '%" + txtsearch.Text + "%' or employee_number like '%" + txtsearch.Text + "%' or employment_status_name like '%" + txtsearch.Text + "%'";
-                    }
-                    else if (myglobal.global_module == "Active")
-                    {
-
-                        dv.RowFilter = "production_id = '"+txtproductionid.Text+"'";
-
-                    }
-                    else if (myglobal.global_module == "VISITORS")
-                    {
-                        //dv.RowFilter = "visitors_lastname like '%" + txtsearch.Text + "%' or visitors_firstname like '%" + txtsearch.Text + "%'";
-                    }
+                   if(dset_emp8.Tables!= null)
+                { 
                     dataView8.DataSource = dv;
                     lblActiveProduction.Text = dataView8.RowCount.ToString();
 
@@ -479,15 +419,14 @@ namespace WFFDR
                     }
                     else
                     {
-             
+                        
                         lblstats.Text = "ALREADY PROCESS";
+                        lblgood.Text = "0";
                     }
-                    //lbltotalbulk.Text = dataView7.RowCount.ToString();
-       
-                    //gerard
                 }
 
-      
+
+
             }
             catch (SyntaxErrorException)
             {
@@ -525,7 +464,7 @@ namespace WFFDR
 
         private void btngreaterthan_Click(object sender, EventArgs e)
         {
-            txtprod_id.Visible = true;
+            txtproductionid.Visible = true;
             lblprod.Visible = true;
             txtFeedCode.Visible = true;
             lblfeedtype.Visible = true;
@@ -535,22 +474,17 @@ namespace WFFDR
 
         private void dateTimePicker12_ValueChanged(object sender, EventArgs e)
         {
-            doSearch();
-            doSearch2();
-            doSearch3();
-            doSearch4();
-            doSearch5();
-            doSearch7();
-            doSearch6();
-            doSearch8();
+           
+            load_search();
+         
             txtproductionid.Visible = true;
             lblprod.Visible = true;
             dataView.Visible = true;
             panel1.Visible = true;
             lblstats.Visible = true;
             groupBox1.Visible = true;
-                label5.Visible = true;
-                txtluffy.Visible = true;
+            label5.Visible = true;
+            txtluffy.Visible = true;
         }
 
         private void dataView_CurrentCellChanged(object sender, EventArgs e)
@@ -562,25 +496,19 @@ namespace WFFDR
                 {
                     if (dataView.CurrentRow.Cells["p_feed_code"].Value != null)
                     {
-                        //p_id = Convert.ToInt32(dgv1stView.CurrentRow.Cells["prod"].Value);
-
+                    
                   txtproductionid.Text = dataView.CurrentRow.Cells["prod_id"].Value.ToString();
 
-
+                       
                     }
 
                 }
             }
 
 
+            loadsearch2();
 
-            doSearch2();
-            doSearch3();
-            doSearch4();
-            doSearch5();
-            doSearch8();
-            doSearch6();
-            doSearch7();
+
         }
     }
 }

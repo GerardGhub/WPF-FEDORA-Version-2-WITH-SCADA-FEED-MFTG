@@ -36,9 +36,10 @@ namespace WFFDR
         bool re = false;
 
         //weighing
+        myclasses myClass = new myclasses();
 
         public myclasses classes = new myclasses();
-        myclasses myClass = new myclasses();
+       
 
 
         public DataSet dset = new DataSet();
@@ -139,7 +140,7 @@ namespace WFFDR
             popup.TitlePadding = new Padding(95, 7, 0, 0);
             popup.TitleFont = new Font("Tahoma", 10);
 
-            popup.ContentText = "Deleted SuccessFully!";
+            popup.ContentText = "In-Active SuccessFully!";
 
             popup.ContentColor = System.Drawing.Color.FromArgb(255, 255, 255);
             popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
@@ -167,7 +168,7 @@ namespace WFFDR
         private void btnDelete_Click(object sender, EventArgs e)
         {
 
-            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to Delete the Customer ?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to In-Active this Customer ?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
 
                 dSet = objStorProc.rdf_sp_customer(0, txtname.Text.Trim(), cboType.Text.Trim(), cboCompany.Text.Trim(), txtmobile.Text.Trim(), txtleadman.Text.Trim(), txtaddress.Text.Trim(), txtid.Text.Trim(), txtdateadded.Text.Trim(), "delete");

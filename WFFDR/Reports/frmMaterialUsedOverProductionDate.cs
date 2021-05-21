@@ -385,7 +385,7 @@ namespace WFFDR
             //load_search();
             QuerySearchMaterial3();
             QuerySearchMaterial();
-            Refresh();
+            Refreshh();
             QuerySearchMaterial2();
 
             //TotalTheo();
@@ -523,7 +523,7 @@ namespace WFFDR
         }
 
 
-        void Refresh()
+        void Refreshh()
         {
             for (int n = 0; n < (dataGridView1.Rows.Count); n++)
             {
@@ -554,7 +554,7 @@ namespace WFFDR
         {
             QuerySearchMaterial3();
             QuerySearchMaterial();
-            Refresh();
+            Refreshh();
             QuerySearchMaterial2();
 
 

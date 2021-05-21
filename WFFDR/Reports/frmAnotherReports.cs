@@ -78,6 +78,8 @@ namespace WFFDR
             //popup.AnimationDuration = 1000;
             //popup.ShowOptionsButton.ToString();
             popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
+            //txtMainInput.Focus();
+            //txtMainInput.Select();
             popup.Delay = 500;
             popup.AnimationInterval = 10;
             popup.AnimationDuration = 1000;
@@ -236,7 +238,35 @@ namespace WFFDR
 
 
 
-   
+        //    if (dgvTheoQuery.Rows.Count >= 1)
+        //    {
+
+        //        //MessageBox.Show("OK");
+
+        //        int i = dgvTheoQuery.CurrentRow.Index + 1;
+        //        if (i >= -1 && i < dgvTheoQuery.Rows.Count)
+        //            dgvTheoQuery.CurrentCell = dgvTheoQuery.Rows[i].Cells[1];
+
+
+
+
+        //        //dgvMaster_Click(sender,e);
+
+        //        else
+        //        {
+
+        //            //this.dgvTheoQuery.CurrentCell = this.dgvTheoQuery.Rows[0].Cells[this.dgvTheoQuery.CurrentCell.ColumnIndex];
+
+        //            lbltheoitemcode.Text = "";
+        //        checkyMyTheorotical();
+
+
+     
+        //        dgvTheoQuery_CurrentCellChanged(sender, e);
+
+        //        //    //return;
+        //    }
+        //}
 
 
 
@@ -1446,7 +1476,8 @@ namespace WFFDR
             //popup.AnimationDuration = 1000;
             //popup.ShowOptionsButton.ToString();
             popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-
+            //txtMainInput.Focus();
+            //txtMainInput.Select();
             popup.Delay = 500;
             popup.AnimationInterval = 10;
             popup.AnimationDuration = 1000;

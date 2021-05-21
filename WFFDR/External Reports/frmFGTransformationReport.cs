@@ -14,7 +14,7 @@ namespace WFFDR
     {
         IStoredProcedures objStorProc = null;
         DataSet dSets = new DataSet();
-        string mode = ""; //mymode
+     /*   string mode = ""; *///mymode
         myclasses xClass = new myclasses();
 
         public frmFGTransformationReport()

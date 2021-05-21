@@ -87,11 +87,14 @@ namespace WFFDR
 
                 lblvalidateTheo.Text = "0";
                 lblvalidatecount.Text = "0";
-
+               
+           
                 txtitemcodemacro1.Text = dataGridView2.CurrentRow.Cells["item_code_macro"].Value.ToString();
                 txtquantitymacro1.Text = dataGridView2.CurrentRow.Cells["quantity_macro"].Value.ToString();
-
+               
             }
+
+         
 
             txtactualweight.Text = "";
             // Timer Tick
@@ -644,7 +647,7 @@ namespace WFFDR
 
             doProdCount();
 
-            //doSearch();
+      
             doSearchValidate();
             doSearchBMX();
             doBMXRepack();
@@ -736,13 +739,13 @@ namespace WFFDR
                         //dv.RowFilter = "feed_code like '%" + txtmainfeedcode.Text + "%' AND production_id like '%" + txtproductionid.Text + "%'";
                         //gerard sira
 
+                        
+
+        
                         dv.RowFilter = "feed_code = '" + txtmainfeedcode.Text + "' AND production_id = '" + txtproductionid.Text + "'";
 
                     }
-                    else if (myglobal.global_module == "VISITORS")
-                    {
-                        //dv.RowFilter = "visitors_lastname like '%" + txtsearch.Text + "%' or visitors_firstname like '%" + txtsearch.Text + "%'";
-                    }
+       
                     dataGridView2.DataSource = dv;
 
                     lblmacrovalidatecount.Text = dataGridView2.RowCount.ToString();

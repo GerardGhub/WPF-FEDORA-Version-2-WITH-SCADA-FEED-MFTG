@@ -35,7 +35,7 @@ namespace WFFDR
         //int sec;
         DataSet dset_section = new DataSet();
         Boolean ready = false;
-        bool re = false;
+        //bool re = false;
         int p_id = 0;
         //int s_id = 0;
         //weighing

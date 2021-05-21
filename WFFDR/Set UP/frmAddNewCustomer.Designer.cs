@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddNewCustomer));
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnsave = new System.Windows.Forms.Button();
             this.txtid = new System.Windows.Forms.TextBox();
             this.txtadd = new System.Windows.Forms.TextBox();
             this.txtleadman = new System.Windows.Forms.TextBox();
@@ -41,7 +42,6 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.btnsave = new System.Windows.Forms.Button();
             this.Label2 = new System.Windows.Forms.Label();
             this.Label4 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
@@ -76,19 +76,40 @@
             this.GroupBox1.Controls.Add(this.txtaddedby);
             this.GroupBox1.Controls.Add(this.txtdateadded);
             this.GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GroupBox1.Location = new System.Drawing.Point(10, 3);
+            this.GroupBox1.Location = new System.Drawing.Point(13, 4);
+            this.GroupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Size = new System.Drawing.Size(635, 323);
+            this.GroupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.GroupBox1.Size = new System.Drawing.Size(847, 398);
             this.GroupBox1.TabIndex = 555;
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "Customer Information";
+            this.GroupBox1.Enter += new System.EventHandler(this.GroupBox1_Enter);
+            // 
+            // btnsave
+            // 
+            this.btnsave.BackColor = System.Drawing.SystemColors.Window;
+            this.btnsave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnsave.Image = ((System.Drawing.Image)(resources.GetObject("btnsave.Image")));
+            this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsave.Location = new System.Drawing.Point(703, 325);
+            this.btnsave.Margin = new System.Windows.Forms.Padding(4);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(100, 34);
+            this.btnsave.TabIndex = 322;
+            this.btnsave.Text = "Save ";
+            this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnsave.UseVisualStyleBackColor = false;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // txtid
             // 
             this.txtid.Enabled = false;
-            this.txtid.Location = new System.Drawing.Point(452, 192);
+            this.txtid.Location = new System.Drawing.Point(603, 236);
+            this.txtid.Margin = new System.Windows.Forms.Padding(4);
             this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(165, 23);
+            this.txtid.Size = new System.Drawing.Size(219, 27);
             this.txtid.TabIndex = 493;
             this.txtid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtid.Visible = false;
@@ -98,9 +119,10 @@
             this.txtadd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtadd.Enabled = false;
             this.txtadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtadd.Location = new System.Drawing.Point(92, 176);
+            this.txtadd.Location = new System.Drawing.Point(123, 217);
+            this.txtadd.Margin = new System.Windows.Forms.Padding(4);
             this.txtadd.Name = "txtadd";
-            this.txtadd.Size = new System.Drawing.Size(290, 20);
+            this.txtadd.Size = new System.Drawing.Size(386, 23);
             this.txtadd.TabIndex = 492;
             this.txtadd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtadd.Visible = false;
@@ -108,18 +130,20 @@
             // txtleadman
             // 
             this.txtleadman.BackColor = System.Drawing.Color.Yellow;
-            this.txtleadman.Location = new System.Drawing.Point(130, 96);
+            this.txtleadman.Location = new System.Drawing.Point(173, 118);
+            this.txtleadman.Margin = new System.Windows.Forms.Padding(4);
             this.txtleadman.Name = "txtleadman";
-            this.txtleadman.Size = new System.Drawing.Size(168, 23);
+            this.txtleadman.Size = new System.Drawing.Size(223, 27);
             this.txtleadman.TabIndex = 355;
             this.txtleadman.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox1
             // 
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(262, 192);
+            this.textBox1.Location = new System.Drawing.Point(349, 236);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(165, 23);
+            this.textBox1.Size = new System.Drawing.Size(219, 27);
             this.textBox1.TabIndex = 354;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox1.Visible = false;
@@ -128,9 +152,10 @@
             // txtmobile
             // 
             this.txtmobile.BackColor = System.Drawing.Color.Yellow;
-            this.txtmobile.Location = new System.Drawing.Point(452, 66);
+            this.txtmobile.Location = new System.Drawing.Point(603, 81);
+            this.txtmobile.Margin = new System.Windows.Forms.Padding(4);
             this.txtmobile.Name = "txtmobile";
-            this.txtmobile.Size = new System.Drawing.Size(165, 23);
+            this.txtmobile.Size = new System.Drawing.Size(219, 27);
             this.txtmobile.TabIndex = 353;
             this.txtmobile.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -139,30 +164,33 @@
             this.cboType.BackColor = System.Drawing.Color.Yellow;
             this.cboType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboType.FormattingEnabled = true;
-            this.cboType.ItemHeight = 15;
+            this.cboType.ItemHeight = 20;
             this.cboType.Items.AddRange(new object[] {
-            "Poltry",
+            "Poultry",
             "Swine"});
-            this.cboType.Location = new System.Drawing.Point(452, 36);
+            this.cboType.Location = new System.Drawing.Point(603, 44);
+            this.cboType.Margin = new System.Windows.Forms.Padding(4);
             this.cboType.Name = "cboType";
-            this.cboType.Size = new System.Drawing.Size(167, 23);
+            this.cboType.Size = new System.Drawing.Size(221, 28);
             this.cboType.TabIndex = 352;
             // 
             // txtname
             // 
             this.txtname.BackColor = System.Drawing.Color.Yellow;
-            this.txtname.Location = new System.Drawing.Point(130, 36);
+            this.txtname.Location = new System.Drawing.Point(173, 44);
+            this.txtname.Margin = new System.Windows.Forms.Padding(4);
             this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(168, 23);
+            this.txtname.Size = new System.Drawing.Size(223, 27);
             this.txtname.TabIndex = 351;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(329, 133);
+            this.label8.Location = new System.Drawing.Point(439, 164);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(83, 13);
+            this.label8.Size = new System.Drawing.Size(102, 17);
             this.label8.TabIndex = 349;
             this.label8.Text = "Date Added :";
             // 
@@ -170,9 +198,10 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(329, 100);
+            this.label22.Location = new System.Drawing.Point(439, 123);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(62, 13);
+            this.label22.Size = new System.Drawing.Size(77, 17);
             this.label22.TabIndex = 348;
             this.label22.Text = "Address :";
             // 
@@ -180,9 +209,10 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(330, 73);
+            this.label21.Location = new System.Drawing.Point(440, 90);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(52, 13);
+            this.label21.Size = new System.Drawing.Size(62, 17);
             this.label21.TabIndex = 347;
             this.label21.Text = "Mobile :";
             // 
@@ -190,36 +220,22 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(330, 44);
+            this.label20.Location = new System.Drawing.Point(440, 54);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(43, 13);
+            this.label20.Size = new System.Drawing.Size(52, 17);
             this.label20.TabIndex = 346;
             this.label20.Text = "Type :";
             this.label20.Click += new System.EventHandler(this.label20_Click);
-            // 
-            // btnsave
-            // 
-            this.btnsave.BackColor = System.Drawing.SystemColors.Window;
-            this.btnsave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnsave.Image = ((System.Drawing.Image)(resources.GetObject("btnsave.Image")));
-            this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsave.Location = new System.Drawing.Point(527, 264);
-            this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(75, 28);
-            this.btnsave.TabIndex = 322;
-            this.btnsave.Text = "Save ";
-            this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnsave.UseVisualStyleBackColor = false;
-            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // Label2
             // 
             this.Label2.AutoSize = true;
             this.Label2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label2.Location = new System.Drawing.Point(17, 102);
+            this.Label2.Location = new System.Drawing.Point(23, 126);
+            this.Label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(70, 13);
+            this.Label2.Size = new System.Drawing.Size(85, 17);
             this.Label2.TabIndex = 4;
             this.Label2.Text = "Lead Man :";
             // 
@@ -227,9 +243,10 @@
             // 
             this.Label4.AutoSize = true;
             this.Label4.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label4.Location = new System.Drawing.Point(17, 131);
+            this.Label4.Location = new System.Drawing.Point(23, 161);
+            this.Label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(70, 13);
+            this.Label4.Size = new System.Drawing.Size(86, 17);
             this.Label4.TabIndex = 4;
             this.Label4.Text = "Added by :";
             // 
@@ -237,9 +254,10 @@
             // 
             this.Label3.AutoSize = true;
             this.Label3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label3.Location = new System.Drawing.Point(17, 74);
+            this.Label3.Location = new System.Drawing.Point(23, 91);
+            this.Label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(71, 13);
+            this.Label3.Size = new System.Drawing.Size(85, 17);
             this.Label3.TabIndex = 4;
             this.Label3.Text = "Company :";
             // 
@@ -247,9 +265,10 @@
             // 
             this.Label6.AutoSize = true;
             this.Label6.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label6.Location = new System.Drawing.Point(38, 44);
+            this.Label6.Location = new System.Drawing.Point(51, 54);
+            this.Label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(49, 13);
+            this.Label6.Size = new System.Drawing.Size(58, 17);
             this.Label6.TabIndex = 3;
             this.Label6.Text = "Name :";
             // 
@@ -258,50 +277,55 @@
             this.cboCompany.BackColor = System.Drawing.Color.Yellow;
             this.cboCompany.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCompany.FormattingEnabled = true;
-            this.cboCompany.ItemHeight = 15;
+            this.cboCompany.ItemHeight = 20;
             this.cboCompany.Items.AddRange(new object[] {
             "Red Dragon Farm",
             "MIS Department"});
-            this.cboCompany.Location = new System.Drawing.Point(130, 66);
+            this.cboCompany.Location = new System.Drawing.Point(173, 81);
+            this.cboCompany.Margin = new System.Windows.Forms.Padding(4);
             this.cboCompany.Name = "cboCompany";
-            this.cboCompany.Size = new System.Drawing.Size(168, 23);
+            this.cboCompany.Size = new System.Drawing.Size(223, 28);
             this.cboCompany.TabIndex = 346;
             // 
             // txtaddress
             // 
             this.txtaddress.BackColor = System.Drawing.Color.Yellow;
-            this.txtaddress.Location = new System.Drawing.Point(452, 96);
+            this.txtaddress.Location = new System.Drawing.Point(603, 118);
+            this.txtaddress.Margin = new System.Windows.Forms.Padding(4);
             this.txtaddress.Name = "txtaddress";
-            this.txtaddress.Size = new System.Drawing.Size(165, 23);
+            this.txtaddress.Size = new System.Drawing.Size(219, 27);
             this.txtaddress.TabIndex = 330;
             this.txtaddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtaddedby
             // 
             this.txtaddedby.Enabled = false;
-            this.txtaddedby.Location = new System.Drawing.Point(130, 126);
+            this.txtaddedby.Location = new System.Drawing.Point(173, 155);
+            this.txtaddedby.Margin = new System.Windows.Forms.Padding(4);
             this.txtaddedby.Name = "txtaddedby";
-            this.txtaddedby.Size = new System.Drawing.Size(168, 23);
+            this.txtaddedby.Size = new System.Drawing.Size(223, 27);
             this.txtaddedby.TabIndex = 336;
             this.txtaddedby.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtdateadded
             // 
             this.txtdateadded.Enabled = false;
-            this.txtdateadded.Location = new System.Drawing.Point(452, 126);
+            this.txtdateadded.Location = new System.Drawing.Point(603, 155);
+            this.txtdateadded.Margin = new System.Windows.Forms.Padding(4);
             this.txtdateadded.Name = "txtdateadded";
-            this.txtdateadded.Size = new System.Drawing.Size(165, 23);
+            this.txtdateadded.Size = new System.Drawing.Size(219, 27);
             this.txtdateadded.TabIndex = 334;
             this.txtdateadded.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // frmAddNewCustomer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(656, 332);
+            this.ClientSize = new System.Drawing.Size(875, 409);
             this.Controls.Add(this.GroupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmAddNewCustomer";

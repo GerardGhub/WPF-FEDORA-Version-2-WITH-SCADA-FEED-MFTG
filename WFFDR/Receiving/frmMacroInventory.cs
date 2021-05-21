@@ -950,7 +950,7 @@ namespace WFFDR
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            Enabled();
+            Enabledd();
 
             txtgroup.Enabled = false;
             txtCategory.Enabled = false;
@@ -972,7 +972,7 @@ namespace WFFDR
             txtrepackavailable.Text = "";
             txtqtyrepack.Text = "";
         }
-        void Enabled()
+        void Enabledd()
         {
             //txtItemCode.Enabled = true;
             txtBufferStocks.Enabled = true;

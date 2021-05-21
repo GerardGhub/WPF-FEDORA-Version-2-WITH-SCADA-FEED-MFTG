@@ -18,40 +18,26 @@ namespace WFFDR
 
  
         myclasses xClass = new myclasses();
+
         IStoredProcedures objStorProc = null;
         DataSet dSets = new DataSet();
 
-        myglobal pointer_module = new myglobal();
-        DataSet dsetHeader = new DataSet();
-        DataSet dSet_temp = new DataSet();
-        DataSet dset_delete = new DataSet();
 
         DataSet dSet = new DataSet();
-        DataSet dset_rights = new DataSet();
-
-
-        private const int BaudRate = 9600;
-        int sec;
-        DataSet dset_section = new DataSet();
+       
         Boolean ready = false;
-        bool re = false;
-        int p_id = 0;
-        int s_id = 0;
-        //weighing
+      
 
         public myclasses classes = new myclasses();
-        myclasses myClass = new myclasses();
+     
 
 
         public DataSet dset = new DataSet();
-        DataSet dset2 = new DataSet();
-        DataSet dset3 = new DataSet();
-
-        string Rpt_Path = "";
-
+       
         frmFGMoveorderPrinting ths;
         public frmShowOrder(string Order_No,string EncodedBy, string Quantity, string Date,frmFGMoveorderPrinting frm)
         {
+            
             InitializeComponent();
             this.Order_no = Order_No;
             this.encoder = EncodedBy;
@@ -68,64 +54,110 @@ namespace WFFDR
  
         private void frmShowOrder_Load(object sender, EventArgs e)
         {
-      
-
+            
+            objStorProc = xClass.g_objStoredProc.GetCollections();
             lblorder.Text = Order_no;
             lblencodedby.Text = encoder;
             lbltotalqty.Text = qty;
             lbldate.Text = date;
-
+        
             showTheData();
+            
+
+            foreach (DataGridViewRow dgvr in this.dgvshowQTYbag.Rows)
+            {
+                dgvr.Cells["binnumber"].Style.Alignment = DataGridViewContentAlignment.MiddleLeft;
+                dgvr.Cells["feed_code"].Style.Alignment = DataGridViewContentAlignment.MiddleLeft;
+                dgvr.Cells["feed_type"].Style.Alignment = DataGridViewContentAlignment.MiddleLeft;
+              
+                dgvr.Cells["sack_bin"].Style.Alignment = DataGridViewContentAlignment.MiddleLeft;
+                dgvr.Cells["order_no"].Style.Alignment = DataGridViewContentAlignment.MiddleLeft;
+                dgvr.Cells["mama"].Style.Alignment = DataGridViewContentAlignment.MiddleLeft;
+                dgvr.Cells["production_date"].Style.Alignment = DataGridViewContentAlignment.MiddleLeft;
+                dgvr.Cells["uom"].Style.Alignment = DataGridViewContentAlignment.MiddleLeft;
+
+
+
+            }
 
             txtdateandtime.Text = DateTime.Now.ToString();
 
-            txtdatenow.Text = (DateTime.Now.ToString("M/d/yyyy"));
+            transactdate.Text = (DateTime.Now.ToString("MM/dd/yyyy"));
 
-            lblcanceldate.Text = (DateTime.Now.ToString("M/d/yyyy"));
+            txtdatenow.Text = (DateTime.Now.ToString("MM/dd/yyyy"));
+
+            lblcanceldate.Text = (DateTime.Now.ToString("MM/dd/yyyy"));
 
             loadCustomer();
             loadWarehouse();
+            Loadplatenumber();
             cboWarehouse_SelectedIndexChanged(sender, e);
 
-            cboCustomer_SelectedIndexChanged(sender, e);
+            if(lblrecords.Text=="0")
+            {
+
+                
+
+            }
+            else
+            {
+                cboCustomer.Text = dgvshowQTYbag.CurrentRow.Cells["customer"].Value.ToString();
+                cbplatenumber.Text = dgvshowQTYbag.CurrentRow.Cells["platenumber"].Value.ToString();
+
+
+            }
+         
+
             txtinput.Text = "";
             txtinput_TextChanged(sender, e);
             textBox1.Text = "";
             this.BringToFront();
             btnTransact.Visible = true;
+            mfg_datePicker2.Text = (DateTime.Now.ToString("MM/dd/yyyy"));
+            mfg_datePicker2.MaxDate = DateTime.Now;
+            mfg_datePicker2.MinDate = DateTime.Now.AddDays(-14);
 
             lblcancelby.Text = userinfo.emp_name.ToUpper();
             if(lblrecords.Text=="0")
             {
-                GrandTotalQty();
+              
                 label1.Visible = false;
                 lblgettotal.Visible = false;
             }
             else
             {
+                GrandTotalQty();
                 label1.Visible = true;
                 lblgettotal.Visible = true;
             }
+
+           
+        }
+
+        public void Loadplatenumber()
+        {
+
+            xClass.fillComboBoxplatenumber(cbplatenumber, "load_comboboxcactive_platenumber", dSet);
+            //cbplatenumber.SelectedIndex = -1;
+
         }
 
         public void GrandTotalQty()
         {
-            decimal tot = 0;
+          
 
-            for (int i = 0; i < dgvshowQTYbag.RowCount - 0; i++)
-            {
-                var value = dgvshowQTYbag.Rows[i].Cells["qty"].Value;
-                if (value != DBNull.Value)
-                {
-                    tot += Convert.ToDecimal(value);
-                }
-            }
-            if (tot == 0)
-            {
 
+            int sum = 0;
+            for (int i = 0; i < dgvshowQTYbag.Rows.Count; ++i)
+            {
+                sum += Convert.ToInt32(dgvshowQTYbag.Rows[i].Cells["mama"].Value);
             }
 
-           lblgettotal.Text = tot.ToString("#,0.00");
+
+
+            lblgettotal.Text = sum.ToString();
+
+            //lblgettotal.Text = tot.ToString("#,0.00");
 
 
 
@@ -136,11 +168,10 @@ namespace WFFDR
         {
             String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
 
-            ////        String connetionString = @"Data Source=192.168.2.9\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=Nescafe3in1;MultipleActiveResultSets=true"
             SqlConnection sql_con = new SqlConnection(connetionString);
 
 
-            string sqlquery = "select a.order_no , a.feed_code, a.feed_type, a.qty, a.uom, a.qty_received, a.sack_bin, a.production_date, a.move_id, a.warehouse, a.customer, a.address, a.account_title, a.production, a.bags from [dbo].[transact_rdf_move_order] a where a.order_no='" + lblorder.Text + "' AND NOT a.is_active IS NOT NULL";
+            string sqlquery = "select a.order_no , a.feed_code, a.feed_type,a.sack_bin,a.qty, a.uom,a.binnumber ,a.qty_received, a.production_date, a.move_id, a.warehouse, a.customer, a.address, a.account_title, a.production, a.bags,a.platenumber from [dbo].[transact_rdf_move_order] a where a.order_no='" + lblorder.Text + "' AND a.is_active='0'";
 
             sql_con.Open();
             SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
@@ -156,15 +187,22 @@ namespace WFFDR
         }
 
 
-        void Update()
+        private void Feedcodetransactupdate()
+        {
+            
+           dSets.Clear();
+           dSets = objStorProc.sp_rdf_fg_feedcodetransaction(0, "", "", "", "", "", "","", transactdate.Text, "", txtorder.Text, "", "transactmoveorder");
+
+        }
+
+       private void Updatemo()
         {
             String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
 
-            ////        String connetionString = @"Data Source=192.168.2.9\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=Nescafe3in1;MultipleActiveResultSets=true"
             SqlConnection sql_con = new SqlConnection(connetionString);
 
 
-            string sqlquery = "UPDATE [dbo].[transact_rdf_move_order]  SET is_active='1', qty_received='"+txtqty.Text+ "', transact_time='"+txtdateandtime.Text+ "', transact_date ='"+txtdatenow.Text+"', delivery_date='"+ mfg_datePicker2.Text + "' where order_no='" + lblorder.Text + "'";
+            string sqlquery = "UPDATE [dbo].[transact_rdf_move_order]  SET is_active='1',transaction_type='MOVEORDER',qty_received='"+txtqty.Text+ "', transact_time='"+txtdateandtime.Text+ "', transact_date ='"+txtdatenow.Text+"', delivery_date='" + mfg_datePicker2.Text + "', customer='" + cboCustomer.Text + "', address='" + lbldata2.Text + "', platenumber='"+ cbplatenumber.Text + "' where order_no='" + lblorder.Text + "'";
 
             sql_con.Open();
             SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
@@ -178,60 +216,10 @@ namespace WFFDR
 
         }
 
-
-        void UpdateData()
-        {
-            String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
-
-            ////        String connetionString = @"Data Source=192.168.2.9\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=Nescafe3in1;MultipleActiveResultSets=true"
-            SqlConnection sql_con = new SqlConnection(connetionString);
-
-
-            string sqlquery = "UPDATE [dbo].[transact_rdf_move_order]  SET qty='"+txtinput.Text+"' where move_id='" + lblid.Text + "'";
-
-            sql_con.Open();
-            SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
-            SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
-            DataTable dt = new DataTable();
-            sdr.Fill(dt);
-            dgvUpdateSource.DataSource = dt;
-
-            sql_con.Close();
-
-
-        }
-
-
-        void UpdateData2()
-        {
-            String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
-
-            ////        String connetionString = @"Data Source=192.168.2.9\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=Nescafe3in1;MultipleActiveResultSets=true"
-            SqlConnection sql_con = new SqlConnection(connetionString);
-
-
-            string sqlquery = "UPDATE [dbo].[rdf_finish_goods]  SET move_order_qty='"+lbltotalmoveorder.Text+ "', last_qty_input='" + txtactualqty.Text + "', actual_available='"+lblsubtract.Text+"' where fg_prod_id='" + lblprodid.Text + "'";
-
-            sql_con.Open();
-            SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
-            SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
-            DataTable dt = new DataTable();
-            sdr.Fill(dt);
-            dgvUpdateSource.DataSource = dt;
-
-            sql_con.Close();
-
-
-        }
-
-
-
-
         void UpdateWH()
         {
             String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
 
-            ////        String connetionString = @"Data Source=192.168.2.9\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=Nescafe3in1;MultipleActiveResultSets=true"
             SqlConnection sql_con = new SqlConnection(connetionString);
 
 
@@ -248,31 +236,6 @@ namespace WFFDR
 
 
         }
-
-
-        void UpdateCustomer()
-        {
-            String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
-
-            ////        String connetionString = @"Data Source=192.168.2.9\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=Nescafe3in1;MultipleActiveResultSets=true"
-            SqlConnection sql_con = new SqlConnection(connetionString);
-
-
-            string sqlquery = "UPDATE [dbo].[transact_rdf_move_order]  SET customer='" + cboCustomer.Text + "', address='" + lbldata2.Text + "' where order_no='" + lblorder.Text + "'";
-
-            sql_con.Open();
-            SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
-            SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
-            DataTable dt = new DataTable();
-            sdr.Fill(dt);
-            dgvUpdateSource.DataSource = dt;
-
-            sql_con.Close();
-
-
-        }
-
-
 
 
 
@@ -309,18 +272,6 @@ namespace WFFDR
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            panel1.Visible = false;
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-                    }
-
-        private void label11_Click(object sender, EventArgs e)
-        {                    }
-
         private void btnTransact_Click(object sender, EventArgs e)
         {
             //if(txtqty.Text.Trim() == string.Empty)
@@ -352,91 +303,6 @@ namespace WFFDR
 
 
         }
-
-        void UpdateDataCancel()
-        {
-            String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
-
-            ////        String connetionString = @"Data Source=192.168.2.9\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=Nescafe3in1;MultipleActiveResultSets=true"
-            SqlConnection sql_con = new SqlConnection(connetionString);
-
-
-            string sqlquery = "UPDATE [dbo].[rdf_production_advance]  SET move_order_qty='" + lblcancel.Text + "', last_qty_input='" + txtactualqty.Text + "', actual_available='" + lblcancel.Text + "' where prod_id='" + lblprodid.Text + "'";
-
-            sql_con.Open();
-            SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
-            SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
-            DataTable dt = new DataTable();
-            sdr.Fill(dt);
-            dgvUpdateSource.DataSource = dt;
-
-            sql_con.Close();
-
-
-        }
-        private void bunifuThinButton21_Click(object sender, EventArgs e)
-        {
-            lblfginventory.Text = dgvshowQTYbag.CurrentRow.Cells["bags"].Value.ToString();
-
-
-            if (txtmoveorder.Text.Trim() == string.Empty)
-            {
-                lblavailable.Text = "";
-              lblavailable.Text = (float.Parse(lblfginventory.Text) - float.Parse(txtactualqty.Text)).ToString();
-
-                lblcancel.Text = (float.Parse(lblavailable.Text) - float.Parse(txtactualqty.Text)).ToString();
-            }
-            else
-            {
-
-
-                lblcancel.Text = (float.Parse(txtmoveorder.Text) - float.Parse(txtactualqty.Text)).ToString();
-            }
-            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to Cancel the Selected Move Order ?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
-            {
-
-                UpdateDataCancel();
-                UpdateDataPerItem();
-                CancelSuccessFull();
-                textBox1.Text = "CANCELLED";
-                frmShowOrder_Load(sender, e);
-
-
-            }
-            else
-            {
-
-                return;
-            }
-
-
-
-
-            }
-
-
-        void UpdateDataPerItem()
-        {
-            String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
-
-            ////        String connetionString = @"Data Source=192.168.2.9\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=Nescafe3in1;MultipleActiveResultSets=true"
-            SqlConnection sql_con = new SqlConnection(connetionString);
-
-
-            string sqlquery = "UPDATE [dbo].[transact_rdf_move_order]  SET is_active='1',cancel_by='" + lblcancelby.Text + "', cancel_date='" + lblcanceldate.Text + "', last_row_count='"+lblrecords.Text+"'  where move_id='" + lblid.Text + "'";
-
-            sql_con.Open();
-            SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
-            SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
-            DataTable dt = new DataTable();
-            sdr.Fill(dt);
-            dgvUpdateSource.DataSource = dt;
-
-            sql_con.Close();
-
-
-        }
-
 
 
         void showProdId()
@@ -476,7 +342,7 @@ namespace WFFDR
 
                     txtactualqty.Text = dgvshowQTYbag.CurrentRow.Cells["mama"].Value.ToString();
 
-              lblfeedcode.Text = dgvshowQTYbag.CurrentRow.Cells["feed_code"].Value.ToString();
+                 lblfeedcode.Text = dgvshowQTYbag.CurrentRow.Cells["feed_code"].Value.ToString();
                     lblproddate.Text = dgvshowQTYbag.CurrentRow.Cells["production_date"].Value.ToString();
                     lblbagorsack.Text = dgvshowQTYbag.CurrentRow.Cells["sack_bin"].Value.ToString();
 
@@ -487,45 +353,13 @@ namespace WFFDR
 
                     cboWarehouse.Text = dgvshowQTYbag.CurrentRow.Cells["warehouse"].Value.ToString();
                     cboCustomer.Text = dgvshowQTYbag.CurrentRow.Cells["customer"].Value.ToString();
+                    cbplatenumber.Text = dgvshowQTYbag.CurrentRow.Cells["platenumber"].Value.ToString();
                 }
             }
             txtinput.Text = "";
             showProdId();
             dgvshowinventory_CurrentCellChanged(sender,e);
             txtinput_TextChanged(sender, e);
-
-        }
-
-        public void FillQTY()
-        {
-            PopupNotifier popup = new PopupNotifier();
-            popup.Image = Properties.Resources.info;
-            popup.TitleText = "Fedora Notifications";
-            popup.TitleColor = Color.White;
-            popup.TitlePadding = new Padding(95, 7, 0, 0);
-            popup.TitleFont = new Font("Tahoma", 10);
-
-            popup.ContentText = "Fill up the required Field";
-
-            popup.ContentColor = System.Drawing.Color.FromArgb(255, 255, 255);
-            popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
-
-            popup.ContentHoverColor = System.Drawing.Color.FromArgb(255, 255, 255);
-            popup.ContentPadding = new Padding(0);
-            popup.Size = new Size(350, 100);
-            popup.ImageSize = new Size(70, 80);
-            popup.BodyColor = Color.Red;
-            popup.Popup();
-
-            popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-
-            popup.Delay = 500;
-            popup.AnimationInterval = 10;
-            popup.AnimationDuration = 1000;
-
-
-            popup.ShowOptionsButton = true;
-
 
         }
 
@@ -563,39 +397,7 @@ namespace WFFDR
 
         }
 
-        public void CancelSuccessFull()
-        {
-            PopupNotifier popup = new PopupNotifier();
-            popup.Image = Properties.Resources.info;
-            popup.TitleText = "Fedora Notifications";
-            popup.TitleColor = Color.White;
-            popup.TitlePadding = new Padding(95, 7, 0, 0);
-            popup.TitleFont = new Font("Tahoma", 10);
-
-            popup.ContentText = "Transaction Successfully Cancelled";
-
-            popup.ContentColor = System.Drawing.Color.FromArgb(255, 255, 255);
-            popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
-
-            popup.ContentHoverColor = System.Drawing.Color.FromArgb(255, 255, 255);
-            popup.ContentPadding = new Padding(0);
-            popup.Size = new Size(350, 100);
-            popup.ImageSize = new Size(70, 80);
-            popup.BodyColor = Color.Green;
-            popup.Popup();
-
-            popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-
-            popup.Delay = 500;
-            popup.AnimationInterval = 10;
-            popup.AnimationDuration = 1000;
-
-
-            popup.ShowOptionsButton = true;
-
-
-        }
-
+      
 
         public void SaveSuccessFullWH()
         {
@@ -630,57 +432,10 @@ namespace WFFDR
 
         }
 
-        public void SaveSuccessFullCustomer()
-        {
-            PopupNotifier popup = new PopupNotifier();
-            popup.Image = Properties.Resources.info;
-            popup.TitleText = "Fedora Notifications";
-            popup.TitleColor = Color.White;
-            popup.TitlePadding = new Padding(95, 7, 0, 0);
-            popup.TitleFont = new Font("Tahoma", 10);
-
-            popup.ContentText = "Customer Information Updated Successfully";
-
-            popup.ContentColor = System.Drawing.Color.FromArgb(255, 255, 255);
-            popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
-
-            popup.ContentHoverColor = System.Drawing.Color.FromArgb(255, 255, 255);
-            popup.ContentPadding = new Padding(0);
-            popup.Size = new Size(350, 100);
-            popup.ImageSize = new Size(70, 80);
-            popup.BodyColor = Color.Green;
-            popup.Popup();
-
-            popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-
-            popup.Delay = 500;
-            popup.AnimationInterval = 10;
-            popup.AnimationDuration = 1000;
-
-
-            popup.ShowOptionsButton = true;
-
-
-        }
-
+       
         private void dgvshowQTYbag_DoubleClick(object sender, EventArgs e)
         {
-            //panel1.BringToFront();
-            //panel1.Visible = true;
-
-            btnTransact.Visible = true;
-            btnCancel.Visible = true;
-
-            showProdId();
-
-        lblavailable.Text = (float.Parse(lblfginventory.Text) - float.Parse(txtmoveorder.Text)).ToString();
-
-      //      frmTransactMoveOrderQtyUpdate shower = new frmTransactMoveOrderQtyUpdate(lblprodid.Text, lblorder.Text, lblencodedby.Text, txtactualqty.Text,txtinput.Text);
-       ///     shower.Show();
-
-
-            new frmTransactMoveOrderQtyUpdate(this, lblprodid.Text, lblorder.Text, lblencodedby.Text, txtactualqty.Text, txtinput.Text, lblfginventory.Text, lblavailable.Text, lblsubtract.Text, txtmoveorder.Text, lblactual.Text, lbladdition.Text, lbltotalmoveorder.Text, lblid.Text).Show();
-
+       
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -688,10 +443,7 @@ namespace WFFDR
 
         }
 
-        private void label11_Click_1(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void btnHIDE_Click(object sender, EventArgs e)
         {
@@ -763,39 +515,6 @@ namespace WFFDR
             lbldata2.Text = cboCustomer.SelectedValue.ToString();
             lbldata2.Visible = true;
 
-            if (lblbase2.Text == "1")
-            {
-
-                if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to Update the Customer Information ?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
-                {
-
-                    UpdateCustomer();
-                    showTheData();
-
-                    SaveSuccessFullCustomer();
-
-                }
-                else
-                {
-
-                    //  return;
-                }
-
-
-
-
-
-
-
-
-
-
-            }
-            else
-            {
-
-
-            }
 
         }
 
@@ -820,14 +539,6 @@ namespace WFFDR
 
                 }
             }
-
-
-
-
-
-
-
-
 
         }
 
@@ -874,125 +585,9 @@ namespace WFFDR
 
         private void bunifuThinButton21_Click_1(object sender, EventArgs e)
         {
-            if(txtinput.Text.Trim() == string.Empty)
-            {
-                InvalidQuantity();
-                txtinput.Text = "";
-                txtinput.Focus();
-                return;
-            }
-
-            if(txtinput.Text=="0")
-            {
-                InvalidQuantity();
-                txtinput.Text = "";
-                txtinput.Focus();
-                return;
-            }
-
-            if (lblsubtract.Text.StartsWith("-"))
-            {
-                //MessageBox.Show("Error");
-                QtyOver();
-                txtinput.BackColor = Color.Yellow;
-               txtinput.Focus();
-                return;
-            }
-
-            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to Upate the Quantity ?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
-            {
-                UpdateData();
-                UpdateData2();
-                    showTheData();
-                showProdId();
-                dgvshowinventory_CurrentCellChanged(sender, e);
-
-                SaveSuccessFull();
-                frmShowOrder_Load(sender, e);
-
-            }
-            else
-            {
-
-                return;
-            }
-
-
-
-
-
-
-
-
-
+           
         }
-        public void QtyOver()
-        {
-            PopupNotifier popup = new PopupNotifier();
-            popup.Image = Properties.Resources.info;
-            popup.TitleText = "Fedora Notifications";
-            popup.TitleColor = Color.White;
-            popup.TitlePadding = new Padding(95, 7, 0, 0);
-            popup.TitleFont = new Font("Tahoma", 10);
-
-            popup.ContentText = "out of stock!";
-
-            popup.ContentColor = System.Drawing.Color.FromArgb(255, 255, 255);
-            popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
-
-            popup.ContentHoverColor = System.Drawing.Color.FromArgb(255, 255, 255);
-            popup.ContentPadding = new Padding(0);
-            popup.Size = new Size(350, 100);
-            popup.ImageSize = new Size(70, 80);
-            popup.BodyColor = Color.Red;
-            popup.Popup();
-
-            popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-
-            popup.Delay = 500;
-            popup.AnimationInterval = 10;
-            popup.AnimationDuration = 1000;
-
-
-            popup.ShowOptionsButton = true;
-
-
-        }
-
-
-        public void InvalidQuantity()
-        {
-            PopupNotifier popup = new PopupNotifier();
-            popup.Image = Properties.Resources.info;
-            popup.TitleText = "Fedora Notifications";
-            popup.TitleColor = Color.White;
-            popup.TitlePadding = new Padding(95, 7, 0, 0);
-            popup.TitleFont = new Font("Tahoma", 10);
-
-            popup.ContentText = "Invalid Quantity!";
-
-            popup.ContentColor = System.Drawing.Color.FromArgb(255, 255, 255);
-            popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
-
-            popup.ContentHoverColor = System.Drawing.Color.FromArgb(255, 255, 255);
-            popup.ContentPadding = new Padding(0);
-            popup.Size = new Size(350, 100);
-            popup.ImageSize = new Size(70, 80);
-            popup.BodyColor = Color.Red;
-            popup.Popup();
-
-            popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-
-            popup.Delay = 500;
-            popup.AnimationInterval = 10;
-            popup.AnimationDuration = 1000;
-
-
-            popup.ShowOptionsButton = true;
-
-
-        }
-
+       
         private void txtdateandtime_TextChanged(object sender, EventArgs e)
         {
 
@@ -1005,57 +600,10 @@ namespace WFFDR
 
         private void txtinput_TextChanged(object sender, EventArgs e)
         {
-            if (lblfginventory.Text.Trim() == string.Empty)
-            {
-            }
-            else
-            {
-                if (txtmoveorder.Text.Trim() == string.Empty)
-                {
-                    lblavailable.Text = (float.Parse(lblfginventory.Text) - float.Parse(txtactualqty.Text)).ToString();
-                    lblsubtract.Text = (float.Parse(txtinput.Text) - float.Parse(lblfginventory.Text)).ToString();
-                }
-                else
-                {
-                    lblavailable.Text = (float.Parse(lblfginventory.Text) - float.Parse(txtmoveorder.Text)).ToString();
-
-
-                    if (txtinput.Text.Trim() == string.Empty)
-                    {
-
-                        lblactual.Text = "0";
-                        lblsubtract.Text = "0";
-                        //lbltotalmoveorder.Text = "0";
-
-                        //show the move order here
-                        dgvshowinventory_CurrentCellChanged(sender, e);
-
-                       // txtmoveorder.Text = dgvshowinventory.CurrentRow.Cells["move_order_qty"].Value.ToString();
-                    }
-                    else
-                    {
-
-
-
-                        lbladdition.Text = (float.Parse(txtactualqty.Text) + float.Parse(lblavailable.Text)).ToString();
-                        lblsubtract.Text = (float.Parse(lbladdition.Text) - float.Parse(txtinput.Text)).ToString();
-                       lblactual.Text = (float.Parse(txtinput.Text) - float.Parse(txtactualqty.Text)).ToString();
-
-                        lbltotalmoveorder.Text = (float.Parse(txtmoveorder.Text) + float.Parse(lblactual.Text)).ToString();
-                    }
-
-
-                }
-
-            }
+         
         }
 
         private void lblsubtract_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblsample_Click(object sender, EventArgs e)
         {
 
         }
@@ -1078,12 +626,12 @@ namespace WFFDR
 
         private void cboWarehouse_Click(object sender, EventArgs e)
         {
-            lblbase.Text = "1";
+           
         }
 
         private void cboCustomer_Click(object sender, EventArgs e)
         {
-            lblbase2.Text = "1";
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -1097,95 +645,18 @@ namespace WFFDR
 
         }
 
-        private void bunifuThinButton21_Click_2(object sender, EventArgs e)
-        {
-
-            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to Transact the selected move Order ?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
-            {
-
-                Update();
-                showTheData();
-
-                textBox1.Text = "DONE";
-                //btnTransact.Visible = false;
-                //panel2.Visible = true;
-                SaveSuccessFull();
-                this.Close();
-            }
-            else
-            {
-
-                btnTransact.Visible = true;
-                panel2.Visible = false;
-            }
-
-        }
-
-        private void mfg_datePicker2_ValueChanged(object sender, EventArgs e)
-        {
-            bunifuThinButton21.Visible = true;
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void lbldate_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            lblfginventory.Text = dgvshowQTYbag.CurrentRow.Cells["bags"].Value.ToString();
-
-
-            if (txtmoveorder.Text.Trim() == string.Empty)
-            {
-                lblavailable.Text = "";
-                lblavailable.Text = (float.Parse(lblfginventory.Text) - float.Parse(txtactualqty.Text)).ToString();
-
-                lblcancel.Text = (float.Parse(lblavailable.Text) - float.Parse(txtactualqty.Text)).ToString();
-            }
-            else
-            {
-
-
-                lblcancel.Text = (float.Parse(txtmoveorder.Text) - float.Parse(txtactualqty.Text)).ToString();
-            }
-            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to Cancel the Selected Move Order ?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
-            {
-
-                UpdateDataCancel();
-                UpdateDataPerItem();
-                CancelSuccessFull();
-                textBox1.Text = "CANCELLED";
-                frmShowOrder_Load(sender, e);
-
-
-            }
-            else
-            {
-
-                return;
-            }
-
+          
 
         }
 
@@ -1194,12 +665,12 @@ namespace WFFDR
             if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to Transact the selected move Order ?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
 
-                Update();
-                showTheData();
+               Feedcodetransactupdate();
+                Updatemo();
+        
 
                 textBox1.Text = "DONE";
-                //btnTransact.Visible = false;
-                //panel2.Visible = true;
+            
                 SaveSuccessFull();
                 this.Close();
             }
@@ -1210,6 +681,35 @@ namespace WFFDR
                 panel2.Visible = false;
             }
 
+        }
+
+        private void GroupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mfg_datePicker2_DropDown(object sender, EventArgs e)
+        {
+            bunifuThinButton21.Visible = true;
+        }
+
+        private void cboCustomer_SelectedValueChanged(object sender, EventArgs e)
+        {
+
+
+            lbldata2.Text = cboCustomer.SelectedValue.ToString();
+            lbldata2.Visible = true;
+           
+        }
+
+        private void lblorder_TextChanged(object sender, EventArgs e)
+        {
+            txtorder.Text = lblorder.Text;
         }
     }
 }

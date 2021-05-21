@@ -58,9 +58,10 @@
             // textBox1
             // 
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(243, 427);
+            this.textBox1.Location = new System.Drawing.Point(324, 526);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(79, 20);
+            this.textBox1.Size = new System.Drawing.Size(104, 22);
             this.textBox1.TabIndex = 645;
             this.textBox1.Text = "0";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -69,9 +70,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(850, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(1133, 5);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 30);
+            this.pictureBox1.Size = new System.Drawing.Size(133, 37);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 644;
             this.pictureBox1.TabStop = false;
@@ -83,9 +85,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(22, 12);
+            this.label2.Location = new System.Drawing.Point(29, 15);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.Size = new System.Drawing.Size(61, 17);
             this.label2.TabIndex = 642;
             this.label2.Text = "Search :";
             // 
@@ -93,9 +96,10 @@
             // 
             this.txtsearchs.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtsearchs.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsearchs.Location = new System.Drawing.Point(89, 11);
+            this.txtsearchs.Location = new System.Drawing.Point(119, 14);
+            this.txtsearchs.Margin = new System.Windows.Forms.Padding(4);
             this.txtsearchs.Name = "txtsearchs";
-            this.txtsearchs.Size = new System.Drawing.Size(160, 13);
+            this.txtsearchs.Size = new System.Drawing.Size(213, 16);
             this.txtsearchs.TabIndex = 641;
             this.txtsearchs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtsearchs.TextChanged += new System.EventHandler(this.txtsearchs_TextChanged);
@@ -119,19 +123,20 @@
             this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.PaleVioletRed;
             this.bunifuThinButton23.IdleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuThinButton23.Location = new System.Drawing.Point(75, -1);
-            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bunifuThinButton23.Location = new System.Drawing.Point(100, -1);
+            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton23.Name = "bunifuThinButton23";
-            this.bunifuThinButton23.Size = new System.Drawing.Size(187, 36);
+            this.bunifuThinButton23.Size = new System.Drawing.Size(249, 44);
             this.bunifuThinButton23.TabIndex = 643;
             this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbldate
             // 
             this.lbldate.AutoSize = true;
-            this.lbldate.Location = new System.Drawing.Point(851, 39);
+            this.lbldate.Location = new System.Drawing.Point(1135, 48);
+            this.lbldate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbldate.Name = "lbldate";
-            this.lbldate.Size = new System.Drawing.Size(70, 13);
+            this.lbldate.Size = new System.Drawing.Size(91, 17);
             this.lbldate.TabIndex = 640;
             this.lbldate.Text = "Encoded by :";
             this.lbldate.Visible = false;
@@ -139,9 +144,10 @@
             // lbltotalqty
             // 
             this.lbltotalqty.AutoSize = true;
-            this.lbltotalqty.Location = new System.Drawing.Point(889, 64);
+            this.lbltotalqty.Location = new System.Drawing.Point(1185, 79);
+            this.lbltotalqty.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltotalqty.Name = "lbltotalqty";
-            this.lbltotalqty.Size = new System.Drawing.Size(70, 13);
+            this.lbltotalqty.Size = new System.Drawing.Size(91, 17);
             this.lbltotalqty.TabIndex = 639;
             this.lbltotalqty.Text = "Encoded by :";
             this.lbltotalqty.Visible = false;
@@ -149,9 +155,10 @@
             // lblencodedby
             // 
             this.lblencodedby.AutoSize = true;
-            this.lblencodedby.Location = new System.Drawing.Point(761, 11);
+            this.lblencodedby.Location = new System.Drawing.Point(1015, 14);
+            this.lblencodedby.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblencodedby.Name = "lblencodedby";
-            this.lblencodedby.Size = new System.Drawing.Size(70, 13);
+            this.lblencodedby.Size = new System.Drawing.Size(91, 17);
             this.lblencodedby.TabIndex = 638;
             this.lblencodedby.Text = "Encoded by :";
             this.lblencodedby.Visible = false;
@@ -174,10 +181,10 @@
             this.bntPrint.IdleFillColor = System.Drawing.Color.CornflowerBlue;
             this.bntPrint.IdleForecolor = System.Drawing.SystemColors.Window;
             this.bntPrint.IdleLineColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.bntPrint.Location = new System.Drawing.Point(830, 418);
-            this.bntPrint.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bntPrint.Location = new System.Drawing.Point(1107, 514);
+            this.bntPrint.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bntPrint.Name = "bntPrint";
-            this.bntPrint.Size = new System.Drawing.Size(92, 34);
+            this.bntPrint.Size = new System.Drawing.Size(123, 42);
             this.bntPrint.TabIndex = 636;
             this.bntPrint.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bntPrint.Click += new System.EventHandler(this.bntPrint_Click);
@@ -186,6 +193,7 @@
             // 
             this.Column2.DataPropertyName = "DONE";
             this.Column2.HeaderText = "CANCEL";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
@@ -193,6 +201,7 @@
             // 
             this.date_added.DataPropertyName = "date_added";
             this.date_added.HeaderText = "DATE ADDED";
+            this.date_added.MinimumWidth = 6;
             this.date_added.Name = "date_added";
             this.date_added.ReadOnly = true;
             // 
@@ -200,6 +209,7 @@
             // 
             this.TotalBags.DataPropertyName = "TotalBags";
             this.TotalBags.HeaderText = "TOTAL BAGS";
+            this.TotalBags.MinimumWidth = 6;
             this.TotalBags.Name = "TotalBags";
             this.TotalBags.ReadOnly = true;
             // 
@@ -207,6 +217,7 @@
             // 
             this.added_by.DataPropertyName = "added_by";
             this.added_by.HeaderText = "ENCODED BY";
+            this.added_by.MinimumWidth = 6;
             this.added_by.Name = "added_by";
             this.added_by.ReadOnly = true;
             // 
@@ -214,6 +225,7 @@
             // 
             this.order_no.DataPropertyName = "order_no";
             this.order_no.HeaderText = "ORDER NO";
+            this.order_no.MinimumWidth = 6;
             this.order_no.Name = "order_no";
             this.order_no.ReadOnly = true;
             // 
@@ -246,17 +258,22 @@
             this.Column2});
             this.dgvApproved.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgvApproved.EnableHeadersVisualStyles = false;
-            this.dgvApproved.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvApproved.Location = new System.Drawing.Point(19, 39);
+            this.dgvApproved.GridColor = System.Drawing.Color.Teal;
+            this.dgvApproved.Location = new System.Drawing.Point(25, 48);
+            this.dgvApproved.Margin = new System.Windows.Forms.Padding(4);
             this.dgvApproved.MultiSelect = false;
             this.dgvApproved.Name = "dgvApproved";
             this.dgvApproved.ReadOnly = true;
             this.dgvApproved.RowHeadersWidth = 50;
             this.dgvApproved.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Cambria", 7.8F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(50)))));
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             this.dgvApproved.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvApproved.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvApproved.Size = new System.Drawing.Size(902, 372);
+            this.dgvApproved.Size = new System.Drawing.Size(1203, 458);
             this.dgvApproved.TabIndex = 637;
             this.dgvApproved.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvApproved_CellContentClick);
             this.dgvApproved.CurrentCellChanged += new System.EventHandler(this.dgvApproved_CurrentCellChanged);
@@ -265,15 +282,17 @@
             // 
             this.Column1.DataPropertyName = "PENDING";
             this.Column1.HeaderText = "TOTAL RECORDS";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             // 
             // txtorder
             // 
             this.txtorder.AutoSize = true;
-            this.txtorder.Location = new System.Drawing.Point(866, 11);
+            this.txtorder.Location = new System.Drawing.Point(1155, 14);
+            this.txtorder.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtorder.Name = "txtorder";
-            this.txtorder.Size = new System.Drawing.Size(70, 13);
+            this.txtorder.Size = new System.Drawing.Size(91, 17);
             this.txtorder.TabIndex = 635;
             this.txtorder.Text = "Encoded by :";
             this.txtorder.Visible = false;
@@ -281,27 +300,29 @@
             // lblrecords
             // 
             this.lblrecords.AutoSize = true;
-            this.lblrecords.Location = new System.Drawing.Point(126, 430);
+            this.lblrecords.Location = new System.Drawing.Point(168, 529);
+            this.lblrecords.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblrecords.Name = "lblrecords";
-            this.lblrecords.Size = new System.Drawing.Size(70, 13);
+            this.lblrecords.Size = new System.Drawing.Size(91, 17);
             this.lblrecords.TabIndex = 633;
             this.lblrecords.Text = "Encoded by :";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(16, 430);
+            this.label20.Location = new System.Drawing.Point(21, 529);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(104, 13);
+            this.label20.Size = new System.Drawing.Size(134, 17);
             this.label20.TabIndex = 634;
             this.label20.Text = "TOTAL RECORDS :";
             // 
             // frmMoveOrderDonePrinted
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(937, 450);
+            this.ClientSize = new System.Drawing.Size(1249, 554);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
@@ -317,6 +338,7 @@
             this.Controls.Add(this.label20);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "frmMoveOrderDonePrinted";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

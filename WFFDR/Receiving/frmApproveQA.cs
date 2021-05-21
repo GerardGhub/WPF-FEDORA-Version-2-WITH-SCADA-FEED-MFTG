@@ -57,7 +57,7 @@ namespace WFFDR
         }
         public void load_posummary_report()
         {
-            string mcolumns = "test,po_number,item_code,item_description,qty_ordered,goodmaterial,stacking_level,qty_total_delivered";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
+            string mcolumns = "test,po_number,item_code,item_description,qty_ordered,goodmaterial,stacking_level,qty_total_delivered,DateChecklistCreated";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
             pointer_module.populateModule(dsetHeader, dgv_po_approve, mcolumns, "qa_po_receiving");
             // Menu.lblrecords.Text = dgv_table.RowCount.ToString();
             lblallmaterials.Text = dgv_po_approve.RowCount.ToString();

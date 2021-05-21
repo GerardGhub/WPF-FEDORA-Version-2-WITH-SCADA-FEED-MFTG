@@ -3166,29 +3166,29 @@ namespace WFFDR
             }
         }
 
-        void Show()
-        {
-            groupBox3.Visible = true;
-            lblfeedcode.Visible = true;
+        //void Show()
+        //{
+        //    groupBox3.Visible = true;
+        //    lblfeedcode.Visible = true;
  
-            cboFeedCode.Visible = true;
-            lblbags.Visible = true;
+        //    cboFeedCode.Visible = true;
+        //    lblbags.Visible = true;
 
-            txtbags.Visible = true;
+        //    txtbags.Visible = true;
 
-            lblproddate.Visible = true;
+        //    lblproddate.Visible = true;
 
-            mfg_datePicker2.Visible = true;
-            lblbatch.Visible = true;
+        //    mfg_datePicker2.Visible = true;
+        //    lblbatch.Visible = true;
 
-            txtnobatch.Visible = true;
-            lblfeedtype.Visible = true;
+        //    txtnobatch.Visible = true;
+        //    lblfeedtype.Visible = true;
 
 
-            lblreason.Visible = true;
+        //    lblreason.Visible = true;
 
-            txtreason.Visible = true;
-        }
+        //    txtreason.Visible = true;
+        //}
 
 
         private void dgvApproved_Click_1(object sender, EventArgs e)

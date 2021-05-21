@@ -22,7 +22,7 @@ namespace WFFDR
         int p_id = 0;
         int menu_id;
         int pkey = 0;
-        int i;
+        //int i;
         Boolean ready = false;
 
         //audit_trails maudit_trails = new audit_trails();

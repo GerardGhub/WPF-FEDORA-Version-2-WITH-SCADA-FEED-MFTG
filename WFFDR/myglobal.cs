@@ -29,6 +29,7 @@ namespace WFFDR
         public static string DATE_REPORT;
         public static string DATE_REPORT2;
         public static string DATE_REPORT3;
+        public static string DATE_REPORT4;
 
 
 
@@ -45,7 +46,7 @@ namespace WFFDR
         public static string REPORT_NAME = "";
         public static string emp_id = "";
         public static string loan_from = "";
-        public static System.Drawing.Color color;
+        //public static System.Drawing.Color color;
         public static int employee_id = 0;
         public static string employee_name = "";
         public static string employee_number = "";
@@ -156,7 +157,76 @@ namespace WFFDR
 
 
 
-    }
+        }
+        public void populateModuleMoveOrder(DataSet dset, DataGridView dgvHeader, string mcolumns, string eTableName,string feed_code,int cid,string category,string fgdate)
+        {
+
+
+
+            objStorProc = xClass.g_objStoredProc.GetCollections();
+
+            try
+            {
+                dset.Clear();
+                dset = objStorProc.sp_GetCategory(eTableName,cid,feed_code,category,null);
+
+
+
+
+
+                if (dset.Tables.Count > 0)
+                {
+                    DataView dv = new DataView(dset.Tables[0]);
+                    dgvHeader.DataSource = dv;
+
+                    for (i = 0; i < dgvHeader.Columns.Count; i++)
+                    {
+                        if (mcolumns.IndexOf(dgvHeader.Columns[i].Name.ToString()) > 0)
+                        {
+                            dgvHeader.Columns[i].Visible = true;
+                        }
+                        else
+                        {
+                            dgvHeader.Columns[i].Visible = false;
+                        }
+
+                    }
+
+                    // dgvHeader.Columns[i-1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+                    for (int x = 0; x < dgvHeader.Columns.Count; x++)
+                    {
+                        if (mcolumns.IndexOf(dgvHeader.Columns[x].DataPropertyName.ToString()) > 0)
+                        {
+                            dgvHeader.Columns[x].Visible = true;
+                        }
+                        else
+                        {
+                            dgvHeader.Columns[x].Visible = false;
+                        }
+                    }
+
+                }
+
+            }
+
+
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
+
+
+
+
+
+
+
+
+        }
+
 
     }
 }

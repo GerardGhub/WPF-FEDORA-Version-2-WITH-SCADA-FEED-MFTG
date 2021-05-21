@@ -27,7 +27,7 @@ namespace WFFDR
         private BinaryReader binaryReader;
         public Byte[] imageByte = null;
 
-        private string id = "";
+        //private string id = "";
 
         DataSet dSet = new DataSet();
         DataSet dSet_temp = new DataSet();
@@ -38,7 +38,7 @@ namespace WFFDR
         string mode = "";
 
         Boolean lodi = false;
-        bool re = false;
+        //bool re = false;
 
 
 

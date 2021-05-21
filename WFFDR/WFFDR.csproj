@@ -52,7 +52,7 @@
     <ApplicationIcon>fedora-icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>34F4FECEE4688976B0FAA906F0AA18EC4F596DB5</ManifestCertificateThumbprint>
@@ -144,8 +144,8 @@
     <Reference Include="UIAutomationProvider" />
     <Reference Include="WindowsBase" />
     <Reference Include="WindowsFormsIntegration" />
-    <Reference Include="Z.Dapper.Plus, Version=4.0.1.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Z.Dapper.Plus.4.0.1\lib\net45\Z.Dapper.Plus.dll</HintPath>
+    <Reference Include="Z.Dapper.Plus, Version=4.0.2.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Z.Dapper.Plus.4.0.2\lib\net45\Z.Dapper.Plus.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -161,6 +161,24 @@
     <Compile Include="Finished Goods\frmFGIssue.Designer.cs">
       <DependentUpon>frmFGIssue.cs</DependentUpon>
     </Compile>
+    <Compile Include="Finished Goods\FrmFGMiscellaneousFinanceIssue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finished Goods\FrmFGMiscellaneousFinanceIssue.Designer.cs">
+      <DependentUpon>FrmFGMiscellaneousFinanceIssue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finished Goods\FrmFGMiscellaneousIssueReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finished Goods\FrmFGMiscellaneousIssueReports.Designer.cs">
+      <DependentUpon>FrmFGMiscellaneousIssueReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finished Goods\FrmFGMiscellaneousReceiptReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finished Goods\FrmFGMiscellaneousReceiptReports.Designer.cs">
+      <DependentUpon>FrmFGMiscellaneousReceiptReports.cs</DependentUpon>
+    </Compile>
     <Compile Include="Finished Goods\frmFGReceipt.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +190,12 @@
     </Compile>
     <Compile Include="External Reports\frmFGTransformationReport.Designer.cs">
       <DependentUpon>frmFGTransformationReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finished Goods\FrmMoveOrderPickSlip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finished Goods\FrmMoveOrderPickSlip.Designer.cs">
+      <DependentUpon>FrmMoveOrderPickSlip.cs</DependentUpon>
     </Compile>
     <Compile Include="frmInactiveRawmaterials.cs">
       <SubType>Form</SubType>
@@ -202,6 +226,30 @@
     </Compile>
     <Compile Include="Production Planner\frmProductionPlanController.Designer.cs">
       <DependentUpon>frmProductionPlanController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FrmFeedcodeTransactionReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FrmFeedcodeTransactionReport.Designer.cs">
+      <DependentUpon>FrmFeedcodeTransactionReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FrmFGInventoryMovementReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FrmFGInventoryMovementReport.Designer.cs">
+      <DependentUpon>FrmFGInventoryMovementReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FrmFGInventoryTransactionReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FrmFGInventoryTransactionReport.Designer.cs">
+      <DependentUpon>FrmFGInventoryTransactionReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FrmfGTransactReceivedReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FrmfGTransactReceivedReport.Designer.cs">
+      <DependentUpon>FrmfGTransactReceivedReport.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\frmQAReports.cs">
       <SubType>Form</SubType>
@@ -263,6 +311,18 @@
     <Compile Include="Repacking\frmActiveRepackingMonitoring.Designer.cs">
       <DependentUpon>frmActiveRepackingMonitoring.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\FrmTransactionVarianceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FrmTransactionVarianceReport.Designer.cs">
+      <DependentUpon>FrmTransactionVarianceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmTransactMoveOrderReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmTransactMoveOrderReports.Designer.cs">
+      <DependentUpon>frmTransactMoveOrderReports.cs</DependentUpon>
+    </Compile>
     <Compile Include="Set UP\frmAddNewCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -286,6 +346,12 @@
     </Compile>
     <Compile Include="Inventory\frmAddNewTransactionIn.Designer.cs">
       <DependentUpon>frmAddNewTransactionIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\Frmaddnewplatenumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\Frmaddnewplatenumber.Designer.cs">
+      <DependentUpon>Frmaddnewplatenumber.cs</DependentUpon>
     </Compile>
     <Compile Include="Set UP\frmAddNewWarehouse.cs">
       <SubType>Form</SubType>
@@ -454,6 +520,12 @@
     </Compile>
     <Compile Include="Reports\frmProdDatetoFGReport.Designer.cs">
       <DependentUpon>frmProdDatetoFGReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\FrmPlatenumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\FrmPlatenumber.Designer.cs">
+      <DependentUpon>FrmPlatenumber.cs</DependentUpon>
     </Compile>
     <Compile Include="Set UP\frmRawMaterialsDataRepack.cs">
       <SubType>Form</SubType>
@@ -973,11 +1045,23 @@
     <EmbeddedResource Include="Finished Goods\frmFGIssue.resx">
       <DependentUpon>frmFGIssue.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Finished Goods\FrmFGMiscellaneousFinanceIssue.resx">
+      <DependentUpon>FrmFGMiscellaneousFinanceIssue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finished Goods\FrmFGMiscellaneousIssueReports.resx">
+      <DependentUpon>FrmFGMiscellaneousIssueReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finished Goods\FrmFGMiscellaneousReceiptReports.resx">
+      <DependentUpon>FrmFGMiscellaneousReceiptReports.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Finished Goods\frmFGReceipt.resx">
       <DependentUpon>frmFGReceipt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="External Reports\frmFGTransformationReport.resx">
       <DependentUpon>frmFGTransformationReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finished Goods\FrmMoveOrderPickSlip.resx">
+      <DependentUpon>FrmMoveOrderPickSlip.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInactiveRawmaterials.resx">
       <DependentUpon>frmInactiveRawmaterials.cs</DependentUpon>
@@ -993,6 +1077,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Production Planner\frmProductionPlanController.resx">
       <DependentUpon>frmProductionPlanController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FrmFeedcodeTransactionReport.resx">
+      <DependentUpon>FrmFeedcodeTransactionReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FrmFGInventoryMovementReport.resx">
+      <DependentUpon>FrmFGInventoryMovementReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FrmFGInventoryTransactionReport.resx">
+      <DependentUpon>FrmFGInventoryTransactionReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FrmfGTransactReceivedReport.resx">
+      <DependentUpon>FrmfGTransactReceivedReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\frmQAReports.resx">
       <DependentUpon>frmQAReports.cs</DependentUpon>
@@ -1024,6 +1120,12 @@
     <EmbeddedResource Include="Repacking\frmActiveRepackingMonitoring.resx">
       <DependentUpon>frmActiveRepackingMonitoring.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FrmTransactionVarianceReport.resx">
+      <DependentUpon>FrmTransactionVarianceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmTransactMoveOrderReports.resx">
+      <DependentUpon>frmTransactMoveOrderReports.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Set UP\frmAddNewCustomer.resx">
       <DependentUpon>frmAddNewCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -1035,6 +1137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory\frmAddNewTransactionIn.resx">
       <DependentUpon>frmAddNewTransactionIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\Frmaddnewplatenumber.resx">
+      <DependentUpon>Frmaddnewplatenumber.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Set UP\frmAddNewWarehouse.resx">
       <DependentUpon>frmAddNewWarehouse.cs</DependentUpon>
@@ -1119,6 +1224,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\frmProdDatetoFGReport.resx">
       <DependentUpon>frmProdDatetoFGReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\FrmPlatenumber.resx">
+      <DependentUpon>FrmPlatenumber.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Set UP\frmRawMaterialsDataRepack.resx">
       <DependentUpon>frmRawMaterialsDataRepack.cs</DependentUpon>
@@ -1397,6 +1505,7 @@
   <ItemGroup>
     <Content Include="678078-light-bulb-256.ico" />
     <Content Include="fedora-icon.ico" />
+    <None Include="Resources\Image1.bmp" />
     <None Include="Resources\0-02-06-90261bd49d634ced5a021051cb227adcde9959aab2ac88216ecbe5a7d32c35fd_64323017.jpg" />
     <None Include="Resources\information.png" />
     <None Include="Resources\RDF Logo1.png" />

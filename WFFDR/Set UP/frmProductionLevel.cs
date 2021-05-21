@@ -15,14 +15,14 @@ namespace WFFDR
     {
         myclasses xClass = new myclasses();
         IStoredProcedures objStorProc = null;
-        Boolean ready = false;
+        //Boolean ready = false;
         DataSet dSet = new DataSet();
 
-        DataSet dSets = new DataSet();
+        //DataSet dSets = new DataSet();
 
-        string mode = "";
-        int p_id = 0;
-        int temp_hid = 0;
+        //string mode = "";
+        //int p_id = 0;
+        //int temp_hid = 0;
         myglobal pointer_module = new myglobal();
         DataSet dsetHeader = new DataSet();
 

@@ -14,14 +14,14 @@ namespace WFFDR
     public partial class frmsystemupdate : Form
     {
         myclasses myClass = new myclasses();
-        IStoredProcedures g_objStoredProcCollection = null;
+        //IStoredProcedures g_objStoredProcCollection = null;
         myglobal pointer_module = new myglobal();
         DataSet dsetHeader = new DataSet();
-        DataSet dSet_temp = new DataSet();
+        //DataSet dSet_temp = new DataSet();
         DataSet dSet = new DataSet();
-        int p_id = 0;
-        int temp_hid = 0;
-        string mode = "";
+        //int p_id = 0;
+        //int temp_hid = 0;
+        //string mode = "";
         Boolean ready = false;
         myclasses xClass = new myclasses();
         IStoredProcedures objStorProc = null;

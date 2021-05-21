@@ -16,8 +16,8 @@ namespace WFFDR
     public partial class frmFormula : Form
     {
         SqlCommand cmd;
-        SqlDataAdapter da;
-        DataTable dt;
+        //SqlDataAdapter da;
+        //DataTable dt;
         DataSet ds = new DataSet();
 
         myclasses xClass = new myclasses();
@@ -29,8 +29,8 @@ namespace WFFDR
 
         string mode = "";
         int p_id = 0; // variable for position id
-        int d_id = 0;
-        int temp_hid = 0;
+        //int d_id = 0;
+        //int temp_hid = 0;
         int s_id = 0;
         int pos_id = 0;
         public string position = "";

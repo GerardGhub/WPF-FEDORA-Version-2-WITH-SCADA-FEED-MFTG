@@ -14,36 +14,36 @@ namespace WFFDR
     public partial class frmWarehouseMgmt : Form
     {
 
-        int i;
+        //int i;
 
         myclasses xClass = new myclasses();
         IStoredProcedures objStorProc = null;
-        DataSet dSets = new DataSet();
+        //DataSet dSets = new DataSet();
 
         myglobal pointer_module = new myglobal();
         DataSet dsetHeader = new DataSet();
-        DataSet dSet_temp = new DataSet();
-        DataSet dset_delete = new DataSet();
+        //DataSet dSet_temp = new DataSet();
+        //DataSet dset_delete = new DataSet();
 
         DataSet dSet = new DataSet();
-        DataSet dset_rights = new DataSet();
+        //DataSet dset_rights = new DataSet();
 
 
-        private const int BaudRate = 9600;
+        //private const int BaudRate = 9600;
 
-        DataSet dset_section = new DataSet();
-        Boolean ready = false;
-        bool re = false;
+        //DataSet dset_section = new DataSet();
+        //Boolean ready = false;
+        //bool re = false;
 
         //weighing
 
         public myclasses classes = new myclasses();
-        myclasses myClass = new myclasses();
+        //myclasses myClass = new myclasses();
 
 
         public DataSet dset = new DataSet();
-        DataSet dset2 = new DataSet();
-        DataSet dset3 = new DataSet();
+        //DataSet dset2 = new DataSet();
+        //DataSet dset3 = new DataSet();
 
         public frmWarehouseMgmt()
         {

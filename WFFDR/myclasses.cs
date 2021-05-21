@@ -216,9 +216,111 @@ namespace WFFDR
             g_objStoredProcFill = null;
         }
 
+        public void fillComboBoxCategory(ComboBox eComboBox, string eTablename,string feed_code,string category,string fgdate, DataSet dSet)
+        {
+            g_objStoredProcFill = g_objStoredProc.GetCollections();
+           
+            dSet.Clear();
+            dSet = g_objStoredProcFill.sp_GetCategory(eTablename, null, feed_code,null,null);
+            DataView dv = new DataView(dSet.Tables[0]);
+            dv.RowFilter = "Qty > 0";
 
 
-        public void fillComboBoxFormulaDescription(ComboBox eComboBox, string eTablename, DataSet dSet)
+          
+            eComboBox.DataSource = dv;/*RowFilter = "Qty > 0";*/
+            eComboBox.DisplayMember = dSet.Tables[0].Columns[0].ToString();
+            eComboBox.ValueMember = dSet.Tables[0].Columns[0].ToString();
+
+
+            g_objStoredProcFill = null;
+        }
+
+        public void fillComboBoxproddate(ComboBox eComboBox, string eTablename, string feed_code,string category,string fgdate, DataSet dSet)
+        {
+            g_objStoredProcFill = g_objStoredProc.GetCollections();
+
+            dSet.Clear();
+            dSet = g_objStoredProcFill.sp_GetCategory(eTablename, null, feed_code,category,null);
+            DataView dv = new DataView(dSet.Tables[0]);
+            dv.RowFilter = "Qty > 0";
+
+
+
+            eComboBox.DataSource = dv;/*RowFilter = "Qty > 0";*/
+            eComboBox.DisplayMember = dSet.Tables[0].Columns[2].ToString();
+            eComboBox.ValueMember = dSet.Tables[0].Columns[2].ToString();
+
+
+            g_objStoredProcFill = null;
+        }
+        public void fillComboBoxFeedcode(ComboBox eComboBox, string eTablename, DataSet dSet)
+        {
+            g_objStoredProcFill = g_objStoredProc.GetCollections();
+            dSet.Clear();
+            dSet = g_objStoredProcFill.sp_getMinorTables(eTablename, null);
+            DataView dv = new DataView(dSet.Tables[0]);
+            dv.RowFilter = "Qty > 0";
+
+            eComboBox.DataSource = dv;
+            eComboBox.DisplayMember = dSet.Tables[0].Columns[0].ToString();
+            eComboBox.ValueMember = dSet.Tables[0].Columns[0].ToString();
+
+            
+
+
+
+            g_objStoredProcFill = null;
+        }
+
+        public void fillComboBoxplatenumber(ComboBox eComboBox, string eTablename, DataSet dSet)
+        {
+            g_objStoredProcFill = g_objStoredProc.GetCollections();
+            dSet.Clear();
+            dSet = g_objStoredProcFill.sp_getMinorTables(eTablename, null);
+
+
+
+            eComboBox.DataSource = dSet.Tables[0].DefaultView;
+            eComboBox.DisplayMember = dSet.Tables[0].Columns[1].ToString();
+            eComboBox.ValueMember = dSet.Tables[0].Columns[1].ToString();
+
+
+            g_objStoredProcFill = null;
+        }
+
+        public void fillComboBoxremark(ComboBox eComboBox, string eTablename, string feed_code, string category,string fgdate, DataSet dSet)
+        {
+            g_objStoredProcFill = g_objStoredProc.GetCollections();
+            dSet.Clear();
+            dSet = g_objStoredProcFill.sp_GetCategory(eTablename, null, feed_code, category,null);
+
+
+
+            eComboBox.DataSource = dSet.Tables[0].DefaultView;
+            eComboBox.DisplayMember = dSet.Tables[0].Columns[0].ToString();
+            eComboBox.ValueMember = dSet.Tables[0].Columns[0].ToString();
+
+
+            g_objStoredProcFill = null;
+        }
+
+        public void fillComboBoxFGMoveorder(ComboBox eComboBox, string eTablename, DataSet dSet)
+        {
+            g_objStoredProcFill = g_objStoredProc.GetCollections();
+            dSet.Clear();
+            dSet = g_objStoredProcFill.sp_getMinorTables(eTablename, null);
+
+
+
+            eComboBox.DataSource = dSet.Tables[0].DefaultView;
+            eComboBox.DisplayMember = dSet.Tables[0].Columns[0].ToString();
+            eComboBox.ValueMember = dSet.Tables[0].Columns[0].ToString();
+
+
+            g_objStoredProcFill = null;
+        }
+
+            public void fillComboBoxFormulaDescription(ComboBox eComboBox, string eTablename, DataSet dSet)
         {
             g_objStoredProcFill = g_objStoredProc.GetCollections();
             dSet.Clear();

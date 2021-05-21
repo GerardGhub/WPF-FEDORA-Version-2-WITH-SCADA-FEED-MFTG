@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmusers));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.txtname = new System.Windows.Forms.TextBox();
@@ -63,13 +63,13 @@
             this.metroButton4 = new MetroFramework.Controls.MetroButton();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnPrint = new System.Windows.Forms.Button();
             this.lbltotalusers = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbLocation = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbNotif = new System.Windows.Forms.ComboBox();
-            this.btnPrint = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_table)).BeginInit();
             this.panel1.SuspendLayout();
@@ -87,10 +87,11 @@
             this.txtname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtname.Enabled = false;
             this.txtname.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtname.Location = new System.Drawing.Point(107, 85);
+            this.txtname.Location = new System.Drawing.Point(143, 105);
+            this.txtname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtname.MaxLength = 100;
             this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(277, 15);
+            this.txtname.Size = new System.Drawing.Size(369, 18);
             this.txtname.TabIndex = 121;
             this.txtname.TextChanged += new System.EventHandler(this.txtname_TextChanged);
             this.txtname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtname_KeyPress);
@@ -101,9 +102,10 @@
             this.lblFname.BackColor = System.Drawing.Color.Transparent;
             this.lblFname.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFname.ForeColor = System.Drawing.Color.Black;
-            this.lblFname.Location = new System.Drawing.Point(42, 87);
+            this.lblFname.Location = new System.Drawing.Point(56, 107);
+            this.lblFname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFname.Name = "lblFname";
-            this.lblFname.Size = new System.Drawing.Size(35, 13);
+            this.lblFname.Size = new System.Drawing.Size(45, 17);
             this.lblFname.TabIndex = 124;
             this.lblFname.Text = "Name";
             // 
@@ -113,9 +115,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(25, 187);
+            this.label3.Location = new System.Drawing.Point(33, 230);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.Size = new System.Drawing.Size(69, 17);
             this.label3.TabIndex = 153;
             this.label3.Text = "Password";
             // 
@@ -124,9 +127,10 @@
             this.cbousertype.Enabled = false;
             this.cbousertype.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbousertype.FormattingEnabled = true;
-            this.cbousertype.Location = new System.Drawing.Point(91, 114);
+            this.cbousertype.Location = new System.Drawing.Point(121, 140);
+            this.cbousertype.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbousertype.Name = "cbousertype";
-            this.cbousertype.Size = new System.Drawing.Size(307, 21);
+            this.cbousertype.Size = new System.Drawing.Size(408, 27);
             this.cbousertype.TabIndex = 168;
             this.cbousertype.SelectedIndexChanged += new System.EventHandler(this.cbousertype_SelectedIndexChanged);
             // 
@@ -136,10 +140,12 @@
             this.txtpassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtpassword.Enabled = false;
             this.txtpassword.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpassword.Location = new System.Drawing.Point(107, 185);
+            this.txtpassword.Location = new System.Drawing.Point(143, 228);
+            this.txtpassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtpassword.MaxLength = 100;
             this.txtpassword.Name = "txtpassword";
-            this.txtpassword.Size = new System.Drawing.Size(276, 15);
+            this.txtpassword.PasswordChar = '*';
+            this.txtpassword.Size = new System.Drawing.Size(368, 18);
             this.txtpassword.TabIndex = 154;
             this.txtpassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtpassword_KeyPress);
             // 
@@ -149,9 +155,10 @@
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(21, 117);
+            this.label19.Location = new System.Drawing.Point(28, 144);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(56, 13);
+            this.label19.Size = new System.Drawing.Size(74, 17);
             this.label19.TabIndex = 167;
             this.label19.Text = "User Type";
             // 
@@ -161,9 +168,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(20, 151);
+            this.label2.Location = new System.Drawing.Point(27, 186);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 13);
+            this.label2.Size = new System.Drawing.Size(75, 17);
             this.label2.TabIndex = 151;
             this.label2.Text = "UserName";
             // 
@@ -173,10 +181,11 @@
             this.txtuser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtuser.Enabled = false;
             this.txtuser.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtuser.Location = new System.Drawing.Point(107, 150);
+            this.txtuser.Location = new System.Drawing.Point(143, 185);
+            this.txtuser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtuser.MaxLength = 100;
             this.txtuser.Name = "txtuser";
-            this.txtuser.Size = new System.Drawing.Size(276, 15);
+            this.txtuser.Size = new System.Drawing.Size(368, 18);
             this.txtuser.TabIndex = 152;
             this.txtuser.TextChanged += new System.EventHandler(this.txtuser_TextChanged);
             this.txtuser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtuser_KeyPress);
@@ -187,10 +196,11 @@
             this.lstUsers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lstUsers.Font = new System.Drawing.Font("Segoe UI", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstUsers.FormattingEnabled = true;
-            this.lstUsers.ItemHeight = 17;
-            this.lstUsers.Location = new System.Drawing.Point(23, 267);
+            this.lstUsers.ItemHeight = 23;
+            this.lstUsers.Location = new System.Drawing.Point(31, 329);
+            this.lstUsers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstUsers.Name = "lstUsers";
-            this.lstUsers.Size = new System.Drawing.Size(415, 221);
+            this.lstUsers.Size = new System.Drawing.Size(553, 253);
             this.lstUsers.TabIndex = 151;
             this.lstUsers.Click += new System.EventHandler(this.lstUsers_Click);
             this.lstUsers.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lstUsers_MouseClick);
@@ -216,10 +226,10 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.SystemColors.Window;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.PaleVioletRed;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(14, 63);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(19, 78);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(426, 186);
+            this.bunifuThinButton21.Size = new System.Drawing.Size(568, 229);
             this.bunifuThinButton21.TabIndex = 388;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Visible = false;
@@ -243,10 +253,10 @@
             this.bunifuThinButton217.IdleFillColor = System.Drawing.SystemColors.Window;
             this.bunifuThinButton217.IdleForecolor = System.Drawing.Color.PaleVioletRed;
             this.bunifuThinButton217.IdleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuThinButton217.Location = new System.Drawing.Point(89, 77);
-            this.bunifuThinButton217.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bunifuThinButton217.Location = new System.Drawing.Point(119, 95);
+            this.bunifuThinButton217.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton217.Name = "bunifuThinButton217";
-            this.bunifuThinButton217.Size = new System.Drawing.Size(309, 29);
+            this.bunifuThinButton217.Size = new System.Drawing.Size(412, 36);
             this.bunifuThinButton217.TabIndex = 389;
             this.bunifuThinButton217.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -269,10 +279,10 @@
             this.bunifuThinButton23.IdleFillColor = System.Drawing.SystemColors.Window;
             this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.PaleVioletRed;
             this.bunifuThinButton23.IdleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuThinButton23.Location = new System.Drawing.Point(89, 142);
-            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bunifuThinButton23.Location = new System.Drawing.Point(119, 175);
+            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton23.Name = "bunifuThinButton23";
-            this.bunifuThinButton23.Size = new System.Drawing.Size(309, 29);
+            this.bunifuThinButton23.Size = new System.Drawing.Size(412, 36);
             this.bunifuThinButton23.TabIndex = 391;
             this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -295,10 +305,10 @@
             this.bunifuThinButton24.IdleFillColor = System.Drawing.SystemColors.Window;
             this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.PaleVioletRed;
             this.bunifuThinButton24.IdleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuThinButton24.Location = new System.Drawing.Point(89, 177);
-            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bunifuThinButton24.Location = new System.Drawing.Point(119, 218);
+            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton24.Name = "bunifuThinButton24";
-            this.bunifuThinButton24.Size = new System.Drawing.Size(309, 29);
+            this.bunifuThinButton24.Size = new System.Drawing.Size(412, 36);
             this.bunifuThinButton24.TabIndex = 392;
             this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -321,10 +331,10 @@
             this.bunifuThinButton25.IdleFillColor = System.Drawing.SystemColors.Window;
             this.bunifuThinButton25.IdleForecolor = System.Drawing.Color.PaleVioletRed;
             this.bunifuThinButton25.IdleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuThinButton25.Location = new System.Drawing.Point(14, 257);
-            this.bunifuThinButton25.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bunifuThinButton25.Location = new System.Drawing.Point(19, 316);
+            this.bunifuThinButton25.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton25.Name = "bunifuThinButton25";
-            this.bunifuThinButton25.Size = new System.Drawing.Size(426, 258);
+            this.bunifuThinButton25.Size = new System.Drawing.Size(568, 318);
             this.bunifuThinButton25.TabIndex = 393;
             this.bunifuThinButton25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -336,9 +346,10 @@
             this.panel2.Controls.Add(this.btnDelete);
             this.panel2.Controls.Add(this.btnClose);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 520);
+            this.panel2.Location = new System.Drawing.Point(0, 640);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(454, 40);
+            this.panel2.Size = new System.Drawing.Size(605, 49);
             this.panel2.TabIndex = 394;
             // 
             // btnAdd
@@ -359,10 +370,10 @@
             this.btnAdd.IdleFillColor = System.Drawing.Color.CornflowerBlue;
             this.btnAdd.IdleForecolor = System.Drawing.SystemColors.Window;
             this.btnAdd.IdleLineColor = System.Drawing.SystemColors.Window;
-            this.btnAdd.Location = new System.Drawing.Point(53, 3);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnAdd.Location = new System.Drawing.Point(71, 4);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(74, 30);
+            this.btnAdd.Size = new System.Drawing.Size(99, 37);
             this.btnAdd.TabIndex = 421;
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click_2);
@@ -385,10 +396,10 @@
             this.button1.IdleFillColor = System.Drawing.Color.CornflowerBlue;
             this.button1.IdleForecolor = System.Drawing.SystemColors.Window;
             this.button1.IdleLineColor = System.Drawing.SystemColors.Window;
-            this.button1.Location = new System.Drawing.Point(135, 4);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Location = new System.Drawing.Point(180, 5);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(74, 30);
+            this.button1.Size = new System.Drawing.Size(99, 37);
             this.button1.TabIndex = 419;
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
@@ -411,10 +422,10 @@
             this.btnDelete.IdleFillColor = System.Drawing.Color.Red;
             this.btnDelete.IdleForecolor = System.Drawing.SystemColors.Window;
             this.btnDelete.IdleLineColor = System.Drawing.SystemColors.Window;
-            this.btnDelete.Location = new System.Drawing.Point(220, 4);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDelete.Location = new System.Drawing.Point(293, 5);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(74, 30);
+            this.btnDelete.Size = new System.Drawing.Size(99, 37);
             this.btnDelete.TabIndex = 418;
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click_1);
@@ -437,10 +448,10 @@
             this.btnClose.IdleFillColor = System.Drawing.Color.Red;
             this.btnClose.IdleForecolor = System.Drawing.SystemColors.Window;
             this.btnClose.IdleLineColor = System.Drawing.SystemColors.Window;
-            this.btnClose.Location = new System.Drawing.Point(303, 4);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnClose.Location = new System.Drawing.Point(404, 5);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(74, 30);
+            this.btnClose.Size = new System.Drawing.Size(99, 37);
             this.btnClose.TabIndex = 417;
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click_1);
@@ -463,10 +474,10 @@
             this.btnUpdate.IdleFillColor = System.Drawing.Color.CornflowerBlue;
             this.btnUpdate.IdleForecolor = System.Drawing.SystemColors.Window;
             this.btnUpdate.IdleLineColor = System.Drawing.SystemColors.Window;
-            this.btnUpdate.Location = new System.Drawing.Point(54, 524);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2, 5, 2, 5);
+            this.btnUpdate.Location = new System.Drawing.Point(72, 645);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(72, 29);
+            this.btnUpdate.Size = new System.Drawing.Size(96, 36);
             this.btnUpdate.TabIndex = 422;
             this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnUpdate.Visible = false;
@@ -490,10 +501,10 @@
             this.btnEdit.IdleFillColor = System.Drawing.Color.CornflowerBlue;
             this.btnEdit.IdleForecolor = System.Drawing.SystemColors.Window;
             this.btnEdit.IdleLineColor = System.Drawing.SystemColors.Window;
-            this.btnEdit.Location = new System.Drawing.Point(135, 523);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnEdit.Location = new System.Drawing.Point(180, 644);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(74, 30);
+            this.btnEdit.Size = new System.Drawing.Size(99, 37);
             this.btnEdit.TabIndex = 420;
             this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click_1);
@@ -503,9 +514,10 @@
             this.btnCancel.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnCancel.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel.Location = new System.Drawing.Point(309, 419);
+            this.btnCancel.Location = new System.Drawing.Point(412, 516);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(100, 28);
             this.btnCancel.TabIndex = 174;
             this.btnCancel.Text = "cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -514,10 +526,10 @@
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(195, 305);
+            this.metroButton1.Location = new System.Drawing.Point(260, 375);
             this.metroButton1.Margin = new System.Windows.Forms.Padding(1);
             this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(68, 20);
+            this.metroButton1.Size = new System.Drawing.Size(91, 25);
             this.metroButton1.TabIndex = 411;
             this.metroButton1.Text = "Add";
             this.metroButton1.UseSelectable = true;
@@ -530,9 +542,10 @@
             this.lblrecords.BackColor = System.Drawing.Color.Transparent;
             this.lblrecords.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblrecords.ForeColor = System.Drawing.Color.Black;
-            this.lblrecords.Location = new System.Drawing.Point(393, 160);
+            this.lblrecords.Location = new System.Drawing.Point(524, 197);
+            this.lblrecords.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblrecords.Name = "lblrecords";
-            this.lblrecords.Size = new System.Drawing.Size(61, 13);
+            this.lblrecords.Size = new System.Drawing.Size(75, 17);
             this.lblrecords.TabIndex = 413;
             this.lblrecords.Text = "Password";
             this.lblrecords.Visible = false;
@@ -543,42 +556,43 @@
             this.dgv_table.AllowUserToDeleteRows = false;
             this.dgv_table.AllowUserToResizeColumns = false;
             this.dgv_table.AllowUserToResizeRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            this.dgv_table.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            this.dgv_table.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_table.BackgroundColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_table.ColumnHeadersHeight = 45;
             this.dgv_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgv_table.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgv_table.EnableHeadersVisualStyles = false;
             this.dgv_table.GridColor = System.Drawing.SystemColors.Control;
-            this.dgv_table.Location = new System.Drawing.Point(532, 90);
+            this.dgv_table.Location = new System.Drawing.Point(709, 111);
+            this.dgv_table.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgv_table.MultiSelect = false;
             this.dgv_table.Name = "dgv_table";
             this.dgv_table.ReadOnly = true;
             this.dgv_table.RowHeadersVisible = false;
             this.dgv_table.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Teal;
-            this.dgv_table.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Teal;
+            this.dgv_table.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_table.Size = new System.Drawing.Size(451, 325);
+            this.dgv_table.Size = new System.Drawing.Size(601, 400);
             this.dgv_table.TabIndex = 414;
             this.dgv_table.CurrentCellChanged += new System.EventHandler(this.dgv_table_CurrentCellChanged);
             // 
             // metroButton4
             // 
-            this.metroButton4.Location = new System.Drawing.Point(459, 52);
+            this.metroButton4.Location = new System.Drawing.Point(612, 64);
             this.metroButton4.Margin = new System.Windows.Forms.Padding(1);
             this.metroButton4.Name = "metroButton4";
-            this.metroButton4.Size = new System.Drawing.Size(68, 20);
+            this.metroButton4.Size = new System.Drawing.Size(91, 25);
             this.metroButton4.TabIndex = 415;
             this.metroButton4.Text = "Update";
             this.metroButton4.UseSelectable = true;
@@ -587,10 +601,10 @@
             // 
             // metroButton2
             // 
-            this.metroButton2.Location = new System.Drawing.Point(459, 246);
+            this.metroButton2.Location = new System.Drawing.Point(612, 303);
             this.metroButton2.Margin = new System.Windows.Forms.Padding(1);
             this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(68, 20);
+            this.metroButton2.Size = new System.Drawing.Size(91, 25);
             this.metroButton2.TabIndex = 416;
             this.metroButton2.Text = "DELETE";
             this.metroButton2.UseSelectable = true;
@@ -604,19 +618,38 @@
             this.panel1.Controls.Add(this.btnPrint);
             this.panel1.Controls.Add(this.lbltotalusers);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Location = new System.Drawing.Point(8, 7);
+            this.panel1.Location = new System.Drawing.Point(11, 9);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(439, 44);
+            this.panel1.Size = new System.Drawing.Size(584, 53);
             this.panel1.TabIndex = 548;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.BackColor = System.Drawing.SystemColors.Window;
+            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
+            this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrint.Location = new System.Drawing.Point(459, 7);
+            this.btnPrint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(112, 34);
+            this.btnPrint.TabIndex = 692;
+            this.btnPrint.Text = "&Print";
+            this.btnPrint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPrint.UseVisualStyleBackColor = false;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // lbltotalusers
             // 
             this.lbltotalusers.AutoSize = true;
             this.lbltotalusers.Font = new System.Drawing.Font("Lucida Bright", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltotalusers.ForeColor = System.Drawing.Color.White;
-            this.lbltotalusers.Location = new System.Drawing.Point(252, 5);
+            this.lbltotalusers.Location = new System.Drawing.Point(336, 6);
+            this.lbltotalusers.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltotalusers.Name = "lbltotalusers";
-            this.lbltotalusers.Size = new System.Drawing.Size(42, 28);
+            this.lbltotalusers.Size = new System.Drawing.Size(51, 34);
             this.lbltotalusers.TabIndex = 2;
             this.lbltotalusers.Text = "00";
             this.lbltotalusers.Visible = false;
@@ -626,9 +659,10 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Lucida Bright", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(1, 4);
+            this.label10.Location = new System.Drawing.Point(1, 5);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(222, 28);
+            this.label10.Size = new System.Drawing.Size(279, 34);
             this.label10.TabIndex = 1;
             this.label10.Text = "User Management";
             // 
@@ -638,9 +672,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(26, 215);
+            this.label1.Location = new System.Drawing.Point(35, 265);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.Size = new System.Drawing.Size(55, 17);
             this.label1.TabIndex = 549;
             this.label1.Text = "Section";
             // 
@@ -653,9 +688,10 @@
             this.cmbLocation.Items.AddRange(new object[] {
             "Office",
             "Production"});
-            this.cmbLocation.Location = new System.Drawing.Point(91, 211);
+            this.cmbLocation.Location = new System.Drawing.Point(121, 260);
+            this.cmbLocation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbLocation.Name = "cmbLocation";
-            this.cmbLocation.Size = new System.Drawing.Size(118, 21);
+            this.cmbLocation.Size = new System.Drawing.Size(156, 27);
             this.cmbLocation.TabIndex = 550;
             // 
             // label4
@@ -664,9 +700,10 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(220, 216);
+            this.label4.Location = new System.Drawing.Point(293, 266);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 13);
+            this.label4.Size = new System.Drawing.Size(136, 17);
             this.label4.TabIndex = 551;
             this.label4.Text = "Receiving Notifiction";
             // 
@@ -677,35 +714,21 @@
             this.cmbNotif.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNotif.FormattingEnabled = true;
             this.cmbNotif.Items.AddRange(new object[] {
-            "On",
+            "FG On",
+            "RM On",
             "Off"});
-            this.cmbNotif.Location = new System.Drawing.Point(329, 211);
+            this.cmbNotif.Location = new System.Drawing.Point(439, 260);
+            this.cmbNotif.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbNotif.Name = "cmbNotif";
-            this.cmbNotif.Size = new System.Drawing.Size(71, 21);
+            this.cmbNotif.Size = new System.Drawing.Size(93, 27);
             this.cmbNotif.TabIndex = 552;
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.BackColor = System.Drawing.SystemColors.Window;
-            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
-            this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPrint.Location = new System.Drawing.Point(344, 6);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(84, 28);
-            this.btnPrint.TabIndex = 692;
-            this.btnPrint.Text = "&Print";
-            this.btnPrint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPrint.UseVisualStyleBackColor = false;
-            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // frmusers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(454, 560);
+            this.ClientSize = new System.Drawing.Size(605, 689);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.cmbNotif);
             this.Controls.Add(this.label4);
@@ -736,6 +759,7 @@
             this.Controls.Add(this.bunifuThinButton25);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "frmusers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

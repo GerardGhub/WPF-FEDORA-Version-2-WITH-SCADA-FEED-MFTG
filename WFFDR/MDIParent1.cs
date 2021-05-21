@@ -13,6 +13,8 @@ using CrystalDecisions.CrystalReports.Engine;
 using System.Diagnostics;
 using Tulpep.NotificationWindow;
 using WFFDR.Reports;
+using WFFDR.Finished_Goods;
+using WFFDR.Set_UP;
 
 namespace WFFDR
 {
@@ -730,9 +732,9 @@ namespace WFFDR
                         automToolStripMenuItem.Enabled = true;
                     }
 
-                    else if (form_name == "FGMiscellaneous")
+                    else if (form_name == "FGMiscellaneousTransactiontoolStripMenuItem30")
                     {
-                        toolStripMenuItem30.Enabled = true;
+                        FGMiscellaneousTransactiontoolStripMenuItem30.Enabled = true;
                     }
                     else if (form_name == "frmFGReceipt")
                     {
@@ -831,11 +833,26 @@ namespace WFFDR
 
                         scadaReportBasedOnProdPlanToolStripMenuItem.Enabled = true;
                     }
+                    else if(form_name== "FrmFGMiscellaneousIssueFinance")
+                    {
 
+                        fGMiscellaneousIssueFinanceToolStripMenuItem.Enabled = true;
+                    }
+                    else if(form_name== "fMMiscellaneiousTransactionReportToolStripMenuItem")
+                    {
+                        fMMiscellaneiousTransactionReportToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "plateNumberManagementToolStripMenuItem")
+                    {
+                        plateNumberManagementToolStripMenuItem.Enabled = true;
+                    }
                 }
+
             }
             load_posummary_report();
+            //load_posummary_reportmacro();
             load_posummary_report_macro();
+            load_fgreceiving();
             myglobal.global_module = "Active";
             load_search();
 
@@ -881,7 +898,7 @@ namespace WFFDR
                 if (lblallmaterials.Text == "0")
                 {
                     timer2.Stop();
-                    return;
+                    //return;
                 }
                 else
                 {
@@ -894,32 +911,76 @@ namespace WFFDR
 
             }
 
-            txtReceivingStatus.Text = userinfo.receiving_status.ToString();
-            if (txtReceivingStatus.Text == "On")
-            {
+          
 
+            txtReceivingStatus.Text = userinfo.receiving_status.ToString();
+            if (txtReceivingStatus.Text == "RM On")
+            {
+               
                 Buffer();
 
-                //if (lbluserrightsid.Text == "1035")
-                //{
+                if (lblmacroreceiving.Text == "0")
+                {
+
+                    //timer2.Stop();
+                    //return;
+
+                }
+
+                else
+                {
+                   
+                    timer2.Enabled = true;
+                    timer2.Start();
+                    timer2_Tick(sender, e);
+                }
 
                 if (lblallmaterials.Text == "0")
                 {
-                    timer2.Stop();
-                    return;
+
+                    //timer2.Stop();
+                    //return;
                 }
                 else
                 {
-
+                  
                     timer2.Enabled = true;
                     timer2.Start();
                     timer2_Tick(sender, e);
 
                 }
 
-            //}
+               
+              
+                
 
-            }//closing tag ofr receiving notifications
+
+
+                //}
+
+            }//closing tag RM receiving notifications
+            if (txtReceivingStatus.Text == "FG On")
+            {
+
+
+                Buffer();
+                if (lblfgreceiving.Text == "0")
+                {
+                    //timer2.Stop();
+                    //return;
+                }
+                else
+                {
+
+                    timer3.Enabled = true;
+                    timer3.Start();
+                    timer3_Tick(sender, e);
+
+                }
+
+            }
+            //Closing of tag FG receiving notifications
+
             txtmysection.Text = userinfo.user_section.ToString();
             txtmysection.Visible = false;
             if(txtmysection.Text=="Office")
@@ -1093,12 +1154,31 @@ namespace WFFDR
             //poreceived_header();
         }
 
+        public void load_fgreceiving()
+        {
+            string mcolumns = "test,ProdID,ProdDate,PrintingDate,FeedCode,FeedType";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
+            pointer_module.populateModule(dsetHeader, dgvfgreceiving, mcolumns, "fg_receivingnotify");
+            // Menu.lblrecords.Text = dgv_table.RowCount.ToString();
+            lblfgreceiving.Text = dgvfgreceiving.RowCount.ToString();
+            //poreceived_header();
+        }
+
+        //public void load_posummary_reportmacro()
+        //{
+        //    string mcolumns = "test,po_number,item_code,item_description,qty_ordered,Password";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
+        //    pointer_module.populateModule(dsetHeader, dgvmacroreceiving, mcolumns, "qa_po_receivingmacro");
+        //    // Menu.lblrecords.Text = dgv_table.RowCount.ToString();
+        //    lblmacroreceiving.Text = dgvmacroreceiving.RowCount.ToString();
+        //    //poreceived_header();
+        //}
+
+
         public void load_posummary_report_macro()
         {
-            string mcolumns = "test,po_number,item_code,item_description,qty_ordered,Password";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
-            pointer_module.populateModule(dsetHeader, dgv_po_approve2, mcolumns, "qa_po_receivingmacro");
+            string mcolumns = "test,po_number,itcode,itdesc,qty_ordered,Password";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
+            pointer_module.populateModule(dsetHeader, dgvmacroreceiving, mcolumns, "qa_po_receivingmacronotify");
 
-            lblallmaterials2.Text = dgv_po_approve2.RowCount.ToString();
+            lblmacroreceiving.Text = dgvmacroreceiving.RowCount.ToString();
 
         }
         void WelcomeUser ()
@@ -1162,6 +1242,68 @@ namespace WFFDR
 
 
         }
+        void NotifyFGReceiving()
+        {
+
+            PopupNotifier popup = new PopupNotifier();
+            popup.Image = Properties.Resources.info;
+            popup.TitleText = "Fedora Notifications";
+            popup.TitleColor = Color.White;
+            popup.TitlePadding = new Padding(95, 7, 0, 0);
+            popup.TitleFont = new Font("Tahoma", 10);
+            popup.ContentText = "YOU HAVE " + lblfgreceiving.Text + " FINISHED GOOD FOR RECEIVING!";
+            popup.ContentColor = Color.White;
+            popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
+            popup.Size = new Size(350, 100);
+            popup.ImageSize = new Size(70, 80);
+            popup.BodyColor = Color.Gray;
+            popup.Popup();
+            //popup.AnimationDuration = 1000;
+            //popup.ShowOptionsButton.ToString();
+            popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
+            //txtMainInput.Focus();
+            //txtMainInput.Select();
+            popup.Delay = 500;
+            popup.AnimationInterval = 10;
+            popup.AnimationDuration = 1000;
+
+
+            popup.ShowOptionsButton = true;
+            //popup.ContentText = "TOTAL QUANTITY OF RAW MATERIALS TO BE RECEIVED IS " + lblallmaterials.Text + " AND THE NEW ITEM " + lblnew.Text + " " + lblTip.Text + " ";
+
+            Buffer();
+        }
+        void NoofReceivedmacro()
+        {
+
+            PopupNotifier popup = new PopupNotifier();
+            popup.Image = Properties.Resources.info;
+            popup.TitleText = "Fedora Notifications";
+            popup.TitleColor = Color.White;
+            popup.TitlePadding = new Padding(95, 7, 0, 0);
+            popup.TitleFont = new Font("Tahoma", 10);
+            popup.ContentText = "YOU HAVE " + lblmacroreceiving.Text + " MACRO TRANSACTION!";
+            popup.ContentColor = Color.White;
+            popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
+            popup.Size = new Size(350, 100);
+            popup.ImageSize = new Size(70, 80);
+            popup.BodyColor = Color.Gray;
+            popup.Popup();
+            //popup.AnimationDuration = 1000;
+            //popup.ShowOptionsButton.ToString();
+            popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
+            //txtMainInput.Focus();
+            //txtMainInput.Select();
+            popup.Delay = 500;
+            popup.AnimationInterval = 10;
+            popup.AnimationDuration = 1000;
+
+
+            popup.ShowOptionsButton = true;
+            //popup.ContentText = "TOTAL QUANTITY OF RAW MATERIALS TO BE RECEIVED IS " + lblallmaterials.Text + " AND THE NEW ITEM " + lblnew.Text + " " + lblTip.Text + " ";
+
+            Buffer();
+        }
         void NoofReceived()
         {
 
@@ -1171,7 +1313,7 @@ namespace WFFDR
             popup.TitleColor = Color.White; 
             popup.TitlePadding = new Padding(95, 7, 0, 0);
             popup.TitleFont = new Font("Tahoma", 10);
-            popup.ContentText = "YOU HAVE "+lblallmaterials.Text+" MICRO TRANSACTION & "+lblallmaterials2.Text+" MACRO TRANSACTION WAITING TO BE RECEIVED "  + lblTip.Text + " ";
+            popup.ContentText = "YOU HAVE "+lblallmaterials.Text+" MICRO TRANSACTION!";
             popup.ContentColor = Color.White;
             popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
             popup.Size = new Size(350, 100);
@@ -2273,6 +2415,7 @@ namespace WFFDR
             timer2.Start();
             load_posummary_report();
             load_posummary_report_macro();
+          
             load_search();
             load_Final_Buffer();
             if(SlowMovingIConCount.Text=="0")
@@ -2296,9 +2439,23 @@ namespace WFFDR
             else
             {
                 NoofReceived();
+
             }
-         
-          
+
+            if(lblmacroreceiving.Text == "0")
+            {
+
+
+            }
+
+            else
+            {
+
+                NoofReceivedmacro();
+            }
+
+           
+
         }
 
         private void toolStripMacroInventory1_Click(object sender, EventArgs e)
@@ -2437,7 +2594,8 @@ namespace WFFDR
         private void toolStripUserManagement1_Click(object sender, EventArgs e)
         {
             frmusers userview = new frmusers();
-            userview.ShowDialog();
+            userview.MdiParent = this;
+            userview.Show();
         }
 
         private void toolStripPrintRepackingEntry1_Click(object sender, EventArgs e)
@@ -3592,9 +3750,9 @@ namespace WFFDR
 
         private void moverOrderToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmMoveOrder moveroder = new frmMoveOrder();
-
-            moveroder.ShowDialog();
+            frmMoveOrder moveorder = new frmMoveOrder();
+            moveorder.MdiParent = this;
+            moveorder.Show();
         }
 
         private void toolStripMenuItem70_Click(object sender, EventArgs e)
@@ -3794,10 +3952,7 @@ namespace WFFDR
 
         private void fGReceivingToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-           frmFGReceivingReports Jreceiving = new frmFGReceivingReports();
-
-            Jreceiving.MdiParent = this;
-            Jreceiving.Show();
+           
         }
 
         private void productionSchedulesListToolStripMenuItem_Click(object sender, EventArgs e)
@@ -4038,11 +4193,7 @@ namespace WFFDR
         private void fGInvetToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
 
-            frmNearlyExpired prep = new frmNearlyExpired();
-
-            prep.MdiParent = this;
-
-            prep.Show();
+           
         }
 
         private void rMNearlyExpiredReportToolStripMenuItem_Click(object sender, EventArgs e)
@@ -4118,6 +4269,153 @@ namespace WFFDR
             frmTheoScada Scada = new frmTheoScada();
             Scada.MdiParent = this;
             Scada.Show();
+        }
+
+        private void fGMiscellaneousIssueFinanceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            FrmFGMiscellaneousFinanceIssue FGMiscellaneousIssueFinance = new FrmFGMiscellaneousFinanceIssue();
+            FGMiscellaneousIssueFinance.MdiParent = this;
+            FGMiscellaneousIssueFinance.Show();
+
+           
+        }
+
+        private void fGReceivedReportTransactionDateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmfGTransactReceivedReport FGTransactReceived = new FrmfGTransactReceivedReport();
+
+            FGTransactReceived.MdiParent = this;
+            FGTransactReceived.Show();
+        }
+
+        private void fGReceivedReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFGReceivingReports Jreceiving = new frmFGReceivingReports();
+
+            Jreceiving.MdiParent = this;
+            Jreceiving.Show();
+        }
+
+        private void fGMoveOrderSlipToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+            
+            FrmMoveOrderPickSlip FGMoveOrderPickSlipPrint = new FrmMoveOrderPickSlip();
+
+            FGMoveOrderPickSlipPrint.MdiParent = this;
+            FGMoveOrderPickSlipPrint.Show();
+        }
+
+        private void fGTransactMoveOrderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTransactMoveOrderReports TransactMoveorder = new frmTransactMoveOrderReports();
+            TransactMoveorder.MdiParent = this;
+            TransactMoveorder.Show();
+            
+        }
+
+        private void rECEIPTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmFGMiscellaneousReceiptReports FrmFGMiscellaneousReceiptReports = new FrmFGMiscellaneousReceiptReports();
+            FrmFGMiscellaneousReceiptReports.MdiParent = this;
+            FrmFGMiscellaneousReceiptReports.Show();
+        }
+
+        private void iSSUEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmFGMiscellaneousIssueReports FGMiscellaneousIssueReports = new FrmFGMiscellaneousIssueReports();
+            FGMiscellaneousIssueReports.MdiParent = this;
+            FGMiscellaneousIssueReports.Show();
+        }
+
+        private void fGInventoryTransactionReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmFGInventoryTransactionReport FGTransactionReport = new FrmFGInventoryTransactionReport();
+            FGTransactionReport.MdiParent = this;
+            FGTransactionReport.Show();
+        }
+
+        private void fGInventoryFeedcodeTransactionReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmFeedcodeTransactionReport FGFeedcodeTransactionReport = new FrmFeedcodeTransactionReport();
+            FGFeedcodeTransactionReport.MdiParent = this;
+            FGFeedcodeTransactionReport.Show();
+        }
+
+        private void fGStockOnHandReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            myglobal.REPORT_NAME = "FGStockonhandReports";
+
+
+
+            frmReport fr = new frmReport();
+            fr.WindowState = FormWindowState.Maximized;
+            fr.Show();
+        }
+
+        private void fGInventoryMovementReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmFGInventoryMovementReport FGInventoryMovementReport = new FrmFGInventoryMovementReport();
+            FGInventoryMovementReport.MdiParent = this;
+            FGInventoryMovementReport.Show();
+        }
+
+        private void plateNumberManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPlatenumber platenumber = new FrmPlatenumber();
+            platenumber.MdiParent = this;
+            platenumber.Show();
+        }
+
+        private void fGVarianceReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            myglobal.REPORT_NAME = "FGVarianceReport";
+
+
+
+            frmReport fr = new frmReport();
+            fr.WindowState = FormWindowState.Maximized;
+            fr.Show();
+        }
+
+        private void fGTransactionVarianceReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmTransactionVarianceReport transactvariancereport = new FrmTransactionVarianceReport();
+            transactvariancereport.MdiParent = this;
+            transactvariancereport.Show();
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            timer3.Start();
+            load_fgreceiving();
+            load_Final_Buffer();
+            if (SlowMovingIConCount.Text == "0")
+            {
+                SlowMovingICon.Visible = false;
+                SlowMovingIConCount.Visible = false;
+
+            }
+            else
+            {
+                SlowMovingICon.Visible = true;
+                //SlowMovingIConCount.Visible = true;
+                NearlyExpired.Visible = true;
+            }
+
+
+            if (lblfgreceiving.Text == "0")
+            {
+                
+
+            }
+
+            else
+            {
+                NotifyFGReceiving();
+
+            }
         }
     }
     

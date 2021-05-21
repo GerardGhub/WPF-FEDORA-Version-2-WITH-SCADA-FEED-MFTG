@@ -26,9 +26,9 @@ namespace WFFDR
         // StoredProcedures trys = new StoredProcedures ();
         DataSet dSet = new DataSet();
         new frmMenu Menu;
-        new MDIParent1 mdiparent;
+      MDIParent1 mdiparent;
         //int p_id = 0;
-      
+
         myglobal pointer_module = new myglobal();
         DataSet dsetHeader = new DataSet();
 

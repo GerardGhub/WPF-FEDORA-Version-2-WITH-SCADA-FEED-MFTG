@@ -40,7 +40,7 @@ namespace WFFDR
             txtprocessBy.Text = userinfo.emp_name.ToUpper();
             lbladdedby.Text = userinfo.emp_name.ToUpper();
 
-            lblid.Text = userinfo.user_id.ToString();
+            lblid.Text = userinfo.user_rights_id.ToString();
             gbMain.Visible = false;
             loadCode();
         }
@@ -618,7 +618,7 @@ namespace WFFDR
                         }
                         else
                         {
-                            if (lblid.Text == "61" || lblid.Text == "2")
+                            if (lblid.Text == "1063" || lblid.Text == "2")
                             {
                                 SearchUpdate();
                                 btnTransForm.Visible = true;
@@ -633,7 +633,7 @@ namespace WFFDR
 
                         if (lblstatus.Text == "Good")
                         {
-                            if (lblid.Text == "61" || lblid.Text == "2")
+                            if (lblid.Text == "1063" || lblid.Text == "2")
                             {
                                 SearchUpdate();
                                 btnTransForm.Visible = true;

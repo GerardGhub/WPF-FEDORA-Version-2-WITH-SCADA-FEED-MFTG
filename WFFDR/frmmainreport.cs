@@ -34,8 +34,8 @@ namespace WFFDR
 
 
         ////public Ini.IniFile ini = new Ini.IniFile(Application.StartupPath + "\\config.ini");
-        ParameterFieldDefinitions pFields;
-        ParameterFieldDefinition pField;
+        //ParameterFieldDefinitions pFields;
+        //ParameterFieldDefinition pField;
         //ParameterFieldDefinition pField2;
 
         ParameterValues pValues = new ParameterValues();

@@ -29,13 +29,13 @@ namespace WFFDR
         DataSet dset_rights = new DataSet();
 
 
-        private const int BaudRate = 9600;
-        int sec;
+        //private const int BaudRate = 9600;
+        //int sec;
         DataSet dset_section = new DataSet();
         Boolean ready = false;
-        bool re = false;
-        int p_id = 0;
-        int s_id = 0;
+        //bool re = false;
+        //int p_id = 0;
+        //int s_id = 0;
         //weighing
 
         public myclasses classes = new myclasses();
@@ -226,7 +226,7 @@ namespace WFFDR
             if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to Mark as in Active ?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
 
-                dSet = objStorProc.rdf_sp_move_order(0, txtcode.Text.Trim(), txtdescription.Text.Trim(), txtremarks.Text.Trim(), txtdateadded.Text.Trim(), txtaddedby.Text.Trim(), "", "", "", "", "", "", "", "", "", "", "", "", "", 0, "insertcode");
+                dSet = objStorProc.rdf_sp_move_order(0, txtcode.Text.Trim(), txtdescription.Text.Trim(), txtremarks.Text.Trim(), txtdateadded.Text.Trim(), txtaddedby.Text.Trim(), "", "", "", "", "", "", "", "", "", "", "", "", "", 0,"","", "", "insertcode");
 
 
 
@@ -289,7 +289,7 @@ namespace WFFDR
             if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to Mark as in Active ?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
 
-                dSet = objStorProc.rdf_sp_move_order(0, txtcode.Text.Trim(), txtdescription.Text.Trim(), txtremarks.Text.Trim(), txtdateadded.Text.Trim(), txtaddedby.Text.Trim(), "", "", "", "", "", "", "", "", "", "", "", "", "", 0, "insertcode");
+                dSet = objStorProc.rdf_sp_move_order(0, txtcode.Text.Trim(), txtdescription.Text.Trim(), txtremarks.Text.Trim(), txtdateadded.Text.Trim(), txtaddedby.Text.Trim(), "", "", "", "", "", "", "", "", "", "", "", "", "", 0,"","", "", "insertcode");
 
 
 
@@ -345,7 +345,7 @@ namespace WFFDR
                 if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to Mark as in Active ?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
 
-                    dSet = objStorProc.rdf_sp_move_order(0, txtcode.Text.Trim(), txtdescription.Text.Trim(), txtremarks.Text.Trim(), txtdateadded.Text.Trim(), txtaddedby.Text.Trim(), "", "", "", "", "", "", "", "", "", "", "", "", "", 0, "insertcode");
+                    dSet = objStorProc.rdf_sp_move_order(0, txtcode.Text.Trim(), txtdescription.Text.Trim(), txtremarks.Text.Trim(), txtdateadded.Text.Trim(), txtaddedby.Text.Trim(), "", "", "", "", "", "", "", "", "", "", "", "", "", 0,"","", "", "insertcode");
 
 
 
@@ -370,7 +370,7 @@ namespace WFFDR
                 if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to Update the Outright Code ?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
 
-                    dSet = objStorProc.rdf_sp_move_order(0, txtcode.Text.Trim(), txtdescription.Text.Trim(), txtremarks.Text.Trim(), lblid2.Text.Trim(), txtaddedby.Text.Trim(), "", "", "", "", "", "", "", "", "", "", "", "", "", 0, "updatecode");
+                    dSet = objStorProc.rdf_sp_move_order(0, txtcode.Text.Trim(), txtdescription.Text.Trim(), txtremarks.Text.Trim(), lblid2.Text.Trim(), txtaddedby.Text.Trim(), "", "", "", "", "", "", "", "", "", "", "", "", "", 0,"","", "", "updatecode");
 
 
 

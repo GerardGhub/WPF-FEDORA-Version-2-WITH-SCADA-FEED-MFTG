@@ -17,7 +17,7 @@ namespace WFFDR
     
         myglobal pointer_module = new myglobal();
         DataSet dsetHeader = new DataSet();
-        DataSet dSet_temp = new DataSet();
+        //DataSet dSet_temp = new DataSet();
         DataSet dSet = new DataSet();
  
 
@@ -25,7 +25,7 @@ namespace WFFDR
         Boolean ready = false;
         myclasses xClass = new myclasses();
         IStoredProcedures objStorProc = null;
-        int s_id = 0;
+        //int s_id = 0;
 
         public frmUserLognew()
         {

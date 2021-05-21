@@ -23,31 +23,31 @@ namespace WFFDR
         IStoredProcedures objStorProc = null;
         //2
         private readonly String defaultImage = Path.GetDirectoryName(Application.ExecutablePath) + @"\Resources\Employee.png";
-        private FileStream fileStream;
-        private BinaryReader binaryReader;
+        //private FileStream fileStream;
+        //private BinaryReader binaryReader;
         public Byte[] imageByte = null;
 
-        private string id = "";
+        //private string id = "";
 
-        DataSet dSet = new DataSet();
-        DataSet dSet_temp = new DataSet();
-        DataSet dset_offense = new DataSet();
+        //DataSet dSet = new DataSet();
+        //DataSet dSet_temp = new DataSet();
+        //DataSet dset_offense = new DataSet();
         DataSet dsImage = new DataSet();
-        Boolean ready = false;
+        //Boolean ready = false;
 
-        string mode = "";
+        //string mode = "";
 
         Boolean lodi = false;
-        bool re = false;
+        //bool re = false;
 
-        int p_id = 0;
-        int d_id = 0;
-        int s_id = 0;
-        int pos_id = 0;
-        int r_id = 0;
-        int details_id = 0;
+        //int p_id = 0;
+        //int d_id = 0;
+        //int s_id = 0;
+        //int pos_id = 0;
+        //int r_id = 0;
+        //int details_id = 0;
 
-        MDIParent1 parents;
+        //MDIParent1 parents;
 
         public int temp_id = 0;
         public string received_id = "";
@@ -71,10 +71,10 @@ namespace WFFDR
         public string expirationdetails;
         public string delivery_details;
         public string per_bag;
-        frmMenu mainMenu;
+        //frmMenu mainMenu;
 
         public String imagePath;
-        private ToolTip toolTipImage = new ToolTip();
+        //private ToolTip toolTipImage = new ToolTip();
 
         myclasses xClass = new myclasses();
         IStoredProcedures g_objStoredProcCollection = null;

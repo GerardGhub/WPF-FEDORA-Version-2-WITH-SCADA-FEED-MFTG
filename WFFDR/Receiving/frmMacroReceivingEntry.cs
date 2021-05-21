@@ -26,10 +26,10 @@ namespace WFFDR
         System.Media.SoundPlayer player = new System.Media.SoundPlayer();
 
         //     private static readonly DailyTimeRecordsRepository DailyTimeRecordsRepository = new DailyTimeRecordsRepository();
-        DataTable dt;
+        //DataTable dt;
         DataSet ds = new DataSet();
 
-        string constr = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\xx\Fedoramain_offline.accdb; Persist Security Info=False;";
+        //string constr = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\xx\Fedoramain_offline.accdb; Persist Security Info=False;";
         OleDbConnection oc = new OleDbConnection();
         String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
         //String connetionString = @"Server=FM-MMERCADO-L;Initial Catalog=Fedoramain;Integrated Security=SSPI";
@@ -39,10 +39,10 @@ namespace WFFDR
         SqlCommand cmd = new SqlCommand();
 
         SqlCommand cmd1 = new SqlCommand();
-        OleDbCommand cmd_off = new OleDbCommand();
-        OleDbDataReader dr_off;
-        SqlDataReader dr; SqlDataReader dr12;
-        bool activateTheme = false; int themeCount = 0;
+        //OleDbCommand cmd_off = new OleDbCommand();
+        //OleDbDataReader dr_off;
+        SqlDataReader dr; /*SqlDataReader dr12;*/
+        //bool activateTheme = false; int themeCount = 0;
         DataTable dtPrev = new DataTable();
         DataRow dRow;
         IStoredProcedures objStorProc = null;
@@ -50,19 +50,19 @@ namespace WFFDR
         DataSet dSet_temp = new DataSet();
         DataSet dset_emp = new DataSet();
         myclasses xClass = new myclasses();
-        DataSet dsImage = new DataSet();
+        //DataSet dsImage = new DataSet();
         public Byte[] imageByte = null;
         Boolean move = false;
         string hld = "", ti = "", lo = "", li = "", to = "";
         int id = 0;
         int p_id = 0;
-        int ctr = 0, ctr2 = 0, roundtrip = 0;
-        string quarter, year, prevId;
+        int ctr = 0;/*, ctr2 = 0, roundtrip = 0;*/
+        string /*quarter, year,*/ prevId;
         string prev1 = "", prev2 = "";
         string empNamexX;
         Boolean hw_on = false;
-        bool hwexist = false;
-        bool onerror = false;
+        //bool hwexist = false;
+        //bool onerror = false;
         TimeSpan start = TimeSpan.Parse("07:00:00"); // 10 PM
                                                      //TimeSpan end = TimeSpan.Parse("07:39:59"); // 2am
         TimeSpan endhw = TimeSpan.Parse("07:20:59"); // 2am
@@ -81,22 +81,22 @@ namespace WFFDR
         string expired2 = "";
         string expired3 = "";
         string expired4 = "";
-        string expired5 = "";
-        string expired6 = "";
-        string expired7 = "";
+        //string expired5 = "";
+        //string expired6 = "";
+        //string expired7 = "";
 
         //end
         int idx = 0;
         int dtr_type = 0;
         string errorempnum;
         string mode = ""; //mymode
-        string bdaylist;
+        //string bdaylist;
         Boolean ready = false;
         DataSet dSet = new DataSet();
         DataSet dSets = new DataSet();
         myglobal pointer_module = new myglobal();
 
-        Boolean lodi = false; //image
+       /* Boolean lodi = false;*/ //image
         DataSet dsetHeader = new DataSet();
 
         frmProfileMicroPrev micropreviews;
@@ -107,10 +107,10 @@ namespace WFFDR
 
         //    DateTime date1 = new DateTime(12, 25, 2019);
         // DateTime date2 = dateTimePicker1.Value as DateTime;
-        IStoredProcedures g_objStoredProcCollection = null; //image
+      /*  IStoredProcedures g_objStoredProcCollection = null;*/ //image
 
-        string msg;
-        private int EmployeeId { get; set; }
+        //string msg;
+        //private int EmployeeId { get; set; }
 
 
         public frmMacroReceivingEntry()
@@ -330,7 +330,7 @@ namespace WFFDR
                     ///    groupBoxinfo.Visible = false;
                     groupBox3.Visible = false;
 
-                    int id1 = 0;
+                    //int id1 = 0;
                     DateTime now = DateTime.Now;
 
 
@@ -415,7 +415,7 @@ namespace WFFDR
                                     //dgCount.Text = dtPrev.Rows.Count.ToString();
                                     //dgCount.Text = dataGridView1.Rows.Count.ToString();
                                 }
-                                catch (Exception ex)
+                                catch (Exception /*ex*/)
                                 {
                                     show_info(id, currentdate);
                               
@@ -462,7 +462,7 @@ namespace WFFDR
                                     //show_info_offline(id, currentdate);5/4/2020
                                     hld = txtMainInput.Text;
                                 }
-                                catch (Exception ex)
+                                catch (Exception /*ex*/)
                                 {
                                     ////show_info_offline(id, currentdate);
                                     hld = txtMainInput.Text;
@@ -680,7 +680,7 @@ namespace WFFDR
 
 
                 CreateLogs(txtMainInput.Text);
-                string q = "";
+                //string q = "";
                 sw = false;
                 id = id1;
 
@@ -767,7 +767,7 @@ namespace WFFDR
 
                                     }
                                 }
-                                catch (Exception ex)
+                                catch (Exception /*ex*/)
                                 {
                                     update_to(id, currentdate, ttime, idx, expired4);
                                     lblMessage.Text = "Success Time Out 4";
@@ -808,7 +808,7 @@ namespace WFFDR
                                     }
 
                                 }
-                                catch (Exception ex)
+                                catch (Exception /*ex*/)
                                 {
 
                                     insert_ti(id, currentdate, ttime, expired1);
@@ -856,7 +856,7 @@ namespace WFFDR
 
                                 }
                             }
-                            catch (Exception ex)
+                            catch (Exception/* ex*/)
                             {
                                 update_li(id, currentdate, ttime, idx, expired3);
                                 lblMessage.Text = "Success Lunch In 2";
@@ -886,7 +886,7 @@ namespace WFFDR
                                     move = false;
                                 }
                             }
-                            catch (Exception ex)
+                            catch (Exception /*ex*/)
                             {
                                 update_to(id, currentdate, ttime, idx, expired4);
                                 lblMessage.Text = "Success Time Out 6";
@@ -920,7 +920,7 @@ namespace WFFDR
                                     move = false;
                                 }
                             }
-                            catch (Exception ex)
+                            catch (Exception /*ex*/)
                             {
                                 insert_ti(id, currentdate, ttime, expired1);
                                 move = true;
@@ -984,7 +984,7 @@ namespace WFFDR
                                         }
 
                                     }
-                                    catch (Exception ex)
+                                    catch (Exception/* ex*/)
                                     {
                                         insert_lo(id, currentdate, ttime, expired2);
                                         move = true;
@@ -1018,7 +1018,7 @@ namespace WFFDR
 
                                         }
                                     }
-                                    catch (Exception ex)
+                                    catch (Exception /*ex*/)
                                     {
                                         insert_li(id, currentdate, ttime, expired3);
                                         move = true;
@@ -1051,7 +1051,7 @@ namespace WFFDR
                                             move = false;
                                         }
                                     }
-                                    catch (Exception ex)
+                                    catch (Exception /*ex*/)
                                     {
                                         insert_to(id, currentdate, ttime, expired4);
                                         move = true;
@@ -1096,7 +1096,7 @@ namespace WFFDR
                                         }
 
                                     }
-                                    catch (Exception ex)
+                                    catch (Exception)
                                     {
                                         insert_to(id, currentdate, ttime, expired4);
                                         move = true;
@@ -1139,7 +1139,7 @@ namespace WFFDR
                                     }
 
                                 }
-                                catch (Exception ex)
+                                catch (Exception/* ex*/)
                                 {
                                     insert_to(id, currentdate, ttime, expired4);
                                     move = true;
@@ -1178,7 +1178,7 @@ namespace WFFDR
                                     move = false;
                                 }
                             }
-                            catch (Exception ex)
+                            catch (Exception /*ex*/)
                             {
                                 insert_ti(id, currentdate, ttime, textBox1.Text);
                                 move = true;
@@ -1218,7 +1218,7 @@ namespace WFFDR
                                 move = false;
                             }
                         }
-                        catch (Exception ex)
+                        catch (Exception /*ex*/)
                         {
                             insert_ti(id, currentdate, ttime, txtxp.Text);
                             move = true;
@@ -1542,7 +1542,7 @@ namespace WFFDR
         }
         private void store_rec()
         {
-            string q;
+            //string q;
 
 
             //q = "select [ID] from DTRecords where [ID] = (SELECT max([ID]) FROM [DTRecords] where Employee_ID = @a and Attendance_Date = @b)";
@@ -1584,7 +1584,7 @@ namespace WFFDR
                     }
 
                 }
-                catch (Exception ex)
+                catch (Exception/* ex*/)
                 {
 
            
@@ -2118,7 +2118,7 @@ namespace WFFDR
                 //    pctboxImage.Image = Image.FromFile("c:\\pics " + @"\" + id.ToString() + ".jpg");
                 pctboxImage.Image = Image.FromFile(@"C:\pics\" + @"\" + id.ToString() + ".jpg");
             }
-            catch (Exception Ex)
+            catch (Exception/* Ex*/)
             {
                 // pctboxImage.Image = Image.FromFile("c:\\pics " + @"\Employee.png");
                 pctboxImage.Image = Image.FromFile(@"C:\pics\" + @"\Employee.png");
@@ -2148,7 +2148,7 @@ namespace WFFDR
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception /*ex*/)
             {
 
 

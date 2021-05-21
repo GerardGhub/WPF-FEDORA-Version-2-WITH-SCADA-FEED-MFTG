@@ -13,25 +13,25 @@ namespace WFFDR
 {
     public partial class frmCombinationCode : Form
     {
-        int rowindex;
-        int i;
-        string mode = ""; //mymode
+        //int rowindex;
+        //int i;
+        //string mode = ""; //mymode
         myclasses xClass = new myclasses();
         IStoredProcedures objStorProc = null;
         DataSet dSets = new DataSet();
 
         myglobal pointer_module = new myglobal();
         DataSet dsetHeader = new DataSet();
-        DataSet dSet_temp = new DataSet();
-        DataSet dset_delete = new DataSet();
+        //DataSet dSet_temp = new DataSet();
+        //DataSet dset_delete = new DataSet();
 
         DataSet dSet = new DataSet();
-        DataSet dset_rights = new DataSet();
+        //DataSet dset_rights = new DataSet();
 
 
-        private const int BaudRate = 9600;
-        int sec;
-        DataSet dset_section = new DataSet();
+        //private const int BaudRate = 9600;
+        //int sec;
+        //DataSet dset_section = new DataSet();
         Boolean ready = false;
         bool re = false;
 
@@ -42,8 +42,8 @@ namespace WFFDR
 
 
         public DataSet dset = new DataSet();
-        DataSet dset2 = new DataSet();
-        DataSet dset3 = new DataSet();
+        //DataSet dset2 = new DataSet();
+        //DataSet dset3 = new DataSet();
 
 
         public frmCombinationCode()
@@ -142,7 +142,7 @@ namespace WFFDR
                 }
 
                 dSet.Clear();
-                dSet = objStorProc.rdf_sp_move_order(0, lblid2.Text.Trim(), "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 0, "activecombicode");
+                dSet = objStorProc.rdf_sp_move_order(0, lblid2.Text.Trim(), "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 0,"","", "", "activecombicode");
 
 
                 frmCombinationCode_Load(sender, e);
@@ -199,7 +199,7 @@ namespace WFFDR
             {
 
                 dSet.Clear();
-                dSet = objStorProc.rdf_sp_move_order(0, lblid.Text.Trim(), "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 0, "inactivecombicode");
+                dSet = objStorProc.rdf_sp_move_order(0, lblid.Text.Trim(), "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 0,"","", "", "inactivecombicode");
 
 
                 frmCombinationCode_Load(sender, e);
@@ -288,7 +288,7 @@ namespace WFFDR
                 }
 
                 dSet.Clear();
-                dSet = objStorProc.rdf_sp_move_order(0, lblid2.Text.Trim(), "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 0, "activecombicode");
+                dSet = objStorProc.rdf_sp_move_order(0, lblid2.Text.Trim(), "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 0,"","", "", "activecombicode");
 
 
                 frmCombinationCode_Load(sender, e);
@@ -308,7 +308,7 @@ namespace WFFDR
             {
 
                 dSet.Clear();
-                dSet = objStorProc.rdf_sp_move_order(0, lblid.Text.Trim(), "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 0, "inactivecombicode");
+                dSet = objStorProc.rdf_sp_move_order(0, lblid.Text.Trim(), "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 0,"","", "", "inactivecombicode");
 
 
                 frmCombinationCode_Load(sender, e);

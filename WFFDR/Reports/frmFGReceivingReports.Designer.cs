@@ -51,9 +51,11 @@ namespace WFFDR.Reports
             this.groupBox5.Controls.Add(this.btndailyprod);
             this.groupBox5.Controls.Add(this.dtpprod2);
             this.groupBox5.Controls.Add(this.dtpprod1);
-            this.groupBox5.Location = new System.Drawing.Point(7, 4);
+            this.groupBox5.Location = new System.Drawing.Point(9, 5);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(471, 269);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox5.Size = new System.Drawing.Size(628, 331);
             this.groupBox5.TabIndex = 543;
             this.groupBox5.TabStop = false;
             // 
@@ -61,9 +63,10 @@ namespace WFFDR.Reports
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Lucida Bright", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(35, 175);
+            this.label14.Location = new System.Drawing.Point(47, 215);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(50, 22);
+            this.label14.Size = new System.Drawing.Size(60, 27);
             this.label14.TabIndex = 530;
             this.label14.Text = "TO :";
             // 
@@ -71,9 +74,10 @@ namespace WFFDR.Reports
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Lucida Bright", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(8, 99);
+            this.label15.Location = new System.Drawing.Point(11, 122);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(79, 22);
+            this.label15.Size = new System.Drawing.Size(99, 27);
             this.label15.TabIndex = 530;
             this.label15.Text = "FROM :";
             // 
@@ -82,9 +86,10 @@ namespace WFFDR.Reports
             this.panel5.BackColor = System.Drawing.SystemColors.Window;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.label16);
-            this.panel5.Location = new System.Drawing.Point(1, 6);
+            this.panel5.Location = new System.Drawing.Point(1, 7);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(464, 66);
+            this.panel5.Size = new System.Drawing.Size(618, 81);
             this.panel5.TabIndex = 544;
             // 
             // label16
@@ -92,11 +97,12 @@ namespace WFFDR.Reports
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Lucida Bright", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(112, 10);
+            this.label16.Location = new System.Drawing.Point(149, 12);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(247, 28);
+            this.label16.Size = new System.Drawing.Size(304, 34);
             this.label16.TabIndex = 1;
-            this.label16.Text = "FG Receiving Report";
+            this.label16.Text = "FG Received Report";
             // 
             // btndailyprod
             // 
@@ -104,9 +110,10 @@ namespace WFFDR.Reports
             this.btndailyprod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndailyprod.Font = new System.Drawing.Font("Lucida Bright", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndailyprod.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.btndailyprod.Location = new System.Drawing.Point(144, 224);
+            this.btndailyprod.Location = new System.Drawing.Point(192, 276);
+            this.btndailyprod.Margin = new System.Windows.Forms.Padding(4);
             this.btndailyprod.Name = "btndailyprod";
-            this.btndailyprod.Size = new System.Drawing.Size(177, 33);
+            this.btndailyprod.Size = new System.Drawing.Size(236, 41);
             this.btndailyprod.TabIndex = 5;
             this.btndailyprod.Text = "GENERATE";
             this.btndailyprod.UseVisualStyleBackColor = false;
@@ -115,38 +122,42 @@ namespace WFFDR.Reports
             // dtpprod2
             // 
             this.dtpprod2.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpprod2.CustomFormat = "M/d/yyyy";
+            this.dtpprod2.CustomFormat = "MM/dd/yyyy";
             this.dtpprod2.Font = new System.Drawing.Font("Lucida Bright", 20.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpprod2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpprod2.Location = new System.Drawing.Point(104, 167);
+            this.dtpprod2.Location = new System.Drawing.Point(139, 206);
+            this.dtpprod2.Margin = new System.Windows.Forms.Padding(4);
             this.dtpprod2.Name = "dtpprod2";
-            this.dtpprod2.Size = new System.Drawing.Size(284, 39);
+            this.dtpprod2.Size = new System.Drawing.Size(377, 47);
             this.dtpprod2.TabIndex = 7;
             // 
             // dtpprod1
             // 
             this.dtpprod1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpprod1.CustomFormat = "M/d/yyyy";
+            this.dtpprod1.CustomFormat = "MM/dd/yyyy";
             this.dtpprod1.Font = new System.Drawing.Font("Lucida Bright", 20.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpprod1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpprod1.Location = new System.Drawing.Point(104, 94);
+            this.dtpprod1.Location = new System.Drawing.Point(139, 116);
+            this.dtpprod1.Margin = new System.Windows.Forms.Padding(4);
             this.dtpprod1.Name = "dtpprod1";
-            this.dtpprod1.Size = new System.Drawing.Size(284, 39);
+            this.dtpprod1.Size = new System.Drawing.Size(377, 47);
             this.dtpprod1.TabIndex = 4;
             // 
             // frmFGReceivingReports
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 276);
+            this.ClientSize = new System.Drawing.Size(645, 340);
             this.Controls.Add(this.groupBox5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmFGReceivingReports";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Finished Goods Receiving Reports";
+            this.Text = "Finished Goods Received Reports";
+            this.Load += new System.EventHandler(this.frmFGReceivingReports_Load);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.panel5.ResumeLayout(false);

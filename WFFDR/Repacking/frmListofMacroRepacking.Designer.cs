@@ -525,11 +525,11 @@
             this.groupBox3.Controls.Add(this.txtexpected);
             this.groupBox3.Controls.Add(this.label52);
             this.groupBox3.Controls.Add(this.txtQAreject);
-            this.groupBox3.Location = new System.Drawing.Point(18, 764);
+            this.groupBox3.Location = new System.Drawing.Point(24, 940);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(1);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(1);
-            this.groupBox3.Size = new System.Drawing.Size(830, 63);
+            this.groupBox3.Size = new System.Drawing.Size(1107, 78);
             this.groupBox3.TabIndex = 319;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Receiving Information";
@@ -539,11 +539,12 @@
             // 
             this.txtwhreceiving.BackColor = System.Drawing.SystemColors.Window;
             this.txtwhreceiving.Font = new System.Drawing.Font("Arial", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtwhreceiving.Location = new System.Drawing.Point(661, 115);
+            this.txtwhreceiving.Location = new System.Drawing.Point(881, 142);
+            this.txtwhreceiving.Margin = new System.Windows.Forms.Padding(4);
             this.txtwhreceiving.MaxLength = 100;
             this.txtwhreceiving.Multiline = true;
             this.txtwhreceiving.Name = "txtwhreceiving";
-            this.txtwhreceiving.Size = new System.Drawing.Size(152, 13);
+            this.txtwhreceiving.Size = new System.Drawing.Size(201, 15);
             this.txtwhreceiving.TabIndex = 312;
             this.txtwhreceiving.Text = " ";
             // 
@@ -553,9 +554,10 @@
             this.label36.BackColor = System.Drawing.Color.Transparent;
             this.label36.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.ForeColor = System.Drawing.Color.Black;
-            this.label36.Location = new System.Drawing.Point(572, 106);
+            this.label36.Location = new System.Drawing.Point(763, 130);
+            this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(76, 15);
+            this.label36.Size = new System.Drawing.Size(96, 20);
             this.label36.TabIndex = 311;
             this.label36.Text = "Received By :";
             // 
@@ -565,9 +567,10 @@
             this.label37.BackColor = System.Drawing.Color.Transparent;
             this.label37.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label37.ForeColor = System.Drawing.Color.Black;
-            this.label37.Location = new System.Drawing.Point(286, 109);
+            this.label37.Location = new System.Drawing.Point(381, 134);
+            this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(95, 15);
+            this.label37.Size = new System.Drawing.Size(119, 20);
             this.label37.TabIndex = 310;
             this.label37.Text = "WH QTY. Reject :";
             // 
@@ -575,41 +578,42 @@
             // 
             this.txtwhreject.BackColor = System.Drawing.SystemColors.Window;
             this.txtwhreject.Font = new System.Drawing.Font("Arial", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtwhreject.Location = new System.Drawing.Point(396, 114);
+            this.txtwhreject.Location = new System.Drawing.Point(528, 140);
+            this.txtwhreject.Margin = new System.Windows.Forms.Padding(4);
             this.txtwhreject.MaxLength = 100;
             this.txtwhreject.Multiline = true;
             this.txtwhreject.Name = "txtwhreject";
-            this.txtwhreject.Size = new System.Drawing.Size(165, 14);
+            this.txtwhreject.Size = new System.Drawing.Size(219, 16);
             this.txtwhreject.TabIndex = 309;
             this.txtwhreject.Text = " ";
             // 
             // lblrecords
             // 
             this.lblrecords.AutoSize = true;
-            this.lblrecords.Location = new System.Drawing.Point(285, 68);
+            this.lblrecords.Location = new System.Drawing.Point(380, 84);
             this.lblrecords.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblrecords.Name = "lblrecords";
-            this.lblrecords.Size = new System.Drawing.Size(68, 13);
+            this.lblrecords.Size = new System.Drawing.Size(83, 19);
             this.lblrecords.TabIndex = 288;
             this.lblrecords.Text = "active mode";
             // 
             // lblactivemodule
             // 
             this.lblactivemodule.AutoSize = true;
-            this.lblactivemodule.Location = new System.Drawing.Point(356, 66);
+            this.lblactivemodule.Location = new System.Drawing.Point(475, 81);
             this.lblactivemodule.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblactivemodule.Name = "lblactivemodule";
-            this.lblactivemodule.Size = new System.Drawing.Size(68, 13);
+            this.lblactivemodule.Size = new System.Drawing.Size(83, 19);
             this.lblactivemodule.TabIndex = 286;
             this.lblactivemodule.Text = "active mode";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(630, 75);
+            this.comboBox1.Location = new System.Drawing.Point(840, 92);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(1);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(48, 21);
+            this.comboBox1.Size = new System.Drawing.Size(63, 27);
             this.comboBox1.TabIndex = 289;
             // 
             // label34
@@ -618,9 +622,10 @@
             this.label34.BackColor = System.Drawing.Color.Transparent;
             this.label34.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.ForeColor = System.Drawing.Color.Black;
-            this.label34.Location = new System.Drawing.Point(6, 73);
+            this.label34.Location = new System.Drawing.Point(8, 90);
+            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(89, 15);
+            this.label34.Size = new System.Drawing.Size(111, 20);
             this.label34.TabIndex = 308;
             this.label34.Text = "QA QTY. Good :";
             // 
@@ -628,12 +633,13 @@
             // 
             this.txtQAgood.BackColor = System.Drawing.SystemColors.Window;
             this.txtQAgood.Font = new System.Drawing.Font("Arial", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQAgood.Location = new System.Drawing.Point(105, 75);
+            this.txtQAgood.Location = new System.Drawing.Point(140, 92);
+            this.txtQAgood.Margin = new System.Windows.Forms.Padding(4);
             this.txtQAgood.MaxLength = 100;
             this.txtQAgood.Multiline = true;
             this.txtQAgood.Name = "txtQAgood";
             this.txtQAgood.ReadOnly = true;
-            this.txtQAgood.Size = new System.Drawing.Size(165, 17);
+            this.txtQAgood.Size = new System.Drawing.Size(219, 20);
             this.txtQAgood.TabIndex = 305;
             this.txtQAgood.Text = " ";
             // 
@@ -641,12 +647,13 @@
             // 
             this.txtwaitingdeliver.BackColor = System.Drawing.SystemColors.Window;
             this.txtwaitingdeliver.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtwaitingdeliver.Location = new System.Drawing.Point(660, 26);
+            this.txtwaitingdeliver.Location = new System.Drawing.Point(880, 32);
+            this.txtwaitingdeliver.Margin = new System.Windows.Forms.Padding(4);
             this.txtwaitingdeliver.MaxLength = 100;
             this.txtwaitingdeliver.Multiline = true;
             this.txtwaitingdeliver.Name = "txtwaitingdeliver";
             this.txtwaitingdeliver.ReadOnly = true;
-            this.txtwaitingdeliver.Size = new System.Drawing.Size(153, 25);
+            this.txtwaitingdeliver.Size = new System.Drawing.Size(203, 30);
             this.txtwaitingdeliver.TabIndex = 302;
             this.txtwaitingdeliver.Text = " ";
             // 
@@ -656,9 +663,10 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(572, 32);
+            this.label7.Location = new System.Drawing.Point(763, 39);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 15);
+            this.label7.Size = new System.Drawing.Size(118, 20);
             this.label7.TabIndex = 307;
             this.label7.Text = "Waiting Deliver :";
             // 
@@ -668,9 +676,10 @@
             this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.Color.Black;
-            this.label31.Location = new System.Drawing.Point(287, 28);
+            this.label31.Location = new System.Drawing.Point(383, 34);
+            this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(90, 15);
+            this.label31.Size = new System.Drawing.Size(117, 20);
             this.label31.TabIndex = 306;
             this.label31.Text = "Total Delivered :";
             // 
@@ -678,12 +687,13 @@
             // 
             this.txtqtytotaldelivered.BackColor = System.Drawing.SystemColors.Window;
             this.txtqtytotaldelivered.Font = new System.Drawing.Font("Arial", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtqtytotaldelivered.Location = new System.Drawing.Point(396, 26);
+            this.txtqtytotaldelivered.Location = new System.Drawing.Point(528, 32);
+            this.txtqtytotaldelivered.Margin = new System.Windows.Forms.Padding(4);
             this.txtqtytotaldelivered.MaxLength = 100;
             this.txtqtytotaldelivered.Multiline = true;
             this.txtqtytotaldelivered.Name = "txtqtytotaldelivered";
             this.txtqtytotaldelivered.ReadOnly = true;
-            this.txtqtytotaldelivered.Size = new System.Drawing.Size(165, 25);
+            this.txtqtytotaldelivered.Size = new System.Drawing.Size(219, 30);
             this.txtqtytotaldelivered.TabIndex = 304;
             this.txtqtytotaldelivered.Text = " ";
             // 
@@ -693,9 +703,10 @@
             this.label32.BackColor = System.Drawing.Color.Transparent;
             this.label32.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.ForeColor = System.Drawing.Color.Black;
-            this.label32.Location = new System.Drawing.Point(4, 25);
+            this.label32.Location = new System.Drawing.Point(5, 31);
+            this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(75, 15);
+            this.label32.Size = new System.Drawing.Size(94, 20);
             this.label32.TabIndex = 305;
             this.label32.Text = "Qty. Ordered";
             // 
@@ -703,12 +714,13 @@
             // 
             this.txtqtyordered.BackColor = System.Drawing.SystemColors.Window;
             this.txtqtyordered.Font = new System.Drawing.Font("Arial", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtqtyordered.Location = new System.Drawing.Point(106, 26);
+            this.txtqtyordered.Location = new System.Drawing.Point(141, 32);
+            this.txtqtyordered.Margin = new System.Windows.Forms.Padding(4);
             this.txtqtyordered.MaxLength = 100;
             this.txtqtyordered.Multiline = true;
             this.txtqtyordered.Name = "txtqtyordered";
             this.txtqtyordered.ReadOnly = true;
-            this.txtqtyordered.Size = new System.Drawing.Size(165, 22);
+            this.txtqtyordered.Size = new System.Drawing.Size(219, 26);
             this.txtqtyordered.TabIndex = 303;
             this.txtqtyordered.Text = " ";
             // 
@@ -716,12 +728,13 @@
             // 
             this.txtqtymissing.BackColor = System.Drawing.SystemColors.Window;
             this.txtqtymissing.Font = new System.Drawing.Font("Arial", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtqtymissing.Location = new System.Drawing.Point(660, 51);
+            this.txtqtymissing.Location = new System.Drawing.Point(880, 63);
+            this.txtqtymissing.Margin = new System.Windows.Forms.Padding(4);
             this.txtqtymissing.MaxLength = 100;
             this.txtqtymissing.Multiline = true;
             this.txtqtymissing.Name = "txtqtymissing";
             this.txtqtymissing.ReadOnly = true;
-            this.txtqtymissing.Size = new System.Drawing.Size(153, 12);
+            this.txtqtymissing.Size = new System.Drawing.Size(203, 14);
             this.txtqtymissing.TabIndex = 291;
             this.txtqtymissing.Text = " ";
             // 
@@ -729,12 +742,13 @@
             // 
             this.txtQAby.BackColor = System.Drawing.SystemColors.Window;
             this.txtQAby.Font = new System.Drawing.Font("Arial", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQAby.Location = new System.Drawing.Point(662, 83);
+            this.txtQAby.Location = new System.Drawing.Point(883, 102);
+            this.txtQAby.Margin = new System.Windows.Forms.Padding(4);
             this.txtQAby.MaxLength = 100;
             this.txtQAby.Multiline = true;
             this.txtQAby.Name = "txtQAby";
             this.txtQAby.ReadOnly = true;
-            this.txtQAby.Size = new System.Drawing.Size(152, 18);
+            this.txtQAby.Size = new System.Drawing.Size(201, 21);
             this.txtQAby.TabIndex = 301;
             this.txtQAby.Text = " ";
             // 
@@ -744,9 +758,10 @@
             this.label45.BackColor = System.Drawing.Color.Transparent;
             this.label45.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label45.ForeColor = System.Drawing.Color.Black;
-            this.label45.Location = new System.Drawing.Point(572, 81);
+            this.label45.Location = new System.Drawing.Point(763, 100);
+            this.label45.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(46, 15);
+            this.label45.Size = new System.Drawing.Size(57, 20);
             this.label45.TabIndex = 300;
             this.label45.Text = "QA By :";
             // 
@@ -756,9 +771,10 @@
             this.label46.BackColor = System.Drawing.Color.Transparent;
             this.label46.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label46.ForeColor = System.Drawing.Color.Black;
-            this.label46.Location = new System.Drawing.Point(572, 53);
+            this.label46.Location = new System.Drawing.Point(763, 65);
+            this.label46.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(54, 15);
+            this.label46.Size = new System.Drawing.Size(66, 20);
             this.label46.TabIndex = 298;
             this.label46.Text = "Missing :";
             // 
@@ -768,9 +784,10 @@
             this.label48.BackColor = System.Drawing.Color.Transparent;
             this.label48.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label48.ForeColor = System.Drawing.Color.Black;
-            this.label48.Location = new System.Drawing.Point(287, 51);
+            this.label48.Location = new System.Drawing.Point(383, 63);
+            this.label48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(99, 15);
+            this.label48.Size = new System.Drawing.Size(126, 20);
             this.label48.TabIndex = 297;
             this.label48.Text = "Actual Delivered :";
             // 
@@ -778,12 +795,13 @@
             // 
             this.txtactualreceived.BackColor = System.Drawing.SystemColors.Window;
             this.txtactualreceived.Font = new System.Drawing.Font("Arial", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtactualreceived.Location = new System.Drawing.Point(397, 48);
+            this.txtactualreceived.Location = new System.Drawing.Point(529, 59);
+            this.txtactualreceived.Margin = new System.Windows.Forms.Padding(4);
             this.txtactualreceived.MaxLength = 100;
             this.txtactualreceived.Multiline = true;
             this.txtactualreceived.Name = "txtactualreceived";
             this.txtactualreceived.ReadOnly = true;
-            this.txtactualreceived.Size = new System.Drawing.Size(165, 20);
+            this.txtactualreceived.Size = new System.Drawing.Size(219, 24);
             this.txtactualreceived.TabIndex = 295;
             this.txtactualreceived.Text = " ";
             // 
@@ -793,9 +811,10 @@
             this.label50.BackColor = System.Drawing.Color.Transparent;
             this.label50.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label50.ForeColor = System.Drawing.Color.Black;
-            this.label50.Location = new System.Drawing.Point(4, 50);
+            this.label50.Location = new System.Drawing.Point(5, 62);
+            this.label50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(106, 15);
+            this.label50.Size = new System.Drawing.Size(135, 20);
             this.label50.TabIndex = 296;
             this.label50.Text = "Expected Delivery :";
             // 
@@ -803,12 +822,13 @@
             // 
             this.txtexpected.BackColor = System.Drawing.SystemColors.Window;
             this.txtexpected.Font = new System.Drawing.Font("Arial", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtexpected.Location = new System.Drawing.Point(106, 51);
+            this.txtexpected.Location = new System.Drawing.Point(141, 63);
+            this.txtexpected.Margin = new System.Windows.Forms.Padding(4);
             this.txtexpected.MaxLength = 100;
             this.txtexpected.Multiline = true;
             this.txtexpected.Name = "txtexpected";
             this.txtexpected.ReadOnly = true;
-            this.txtexpected.Size = new System.Drawing.Size(165, 17);
+            this.txtexpected.Size = new System.Drawing.Size(219, 20);
             this.txtexpected.TabIndex = 294;
             this.txtexpected.Text = " ";
             // 
@@ -818,9 +838,10 @@
             this.label52.BackColor = System.Drawing.Color.Transparent;
             this.label52.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label52.ForeColor = System.Drawing.Color.Black;
-            this.label52.Location = new System.Drawing.Point(286, 81);
+            this.label52.Location = new System.Drawing.Point(381, 100);
+            this.label52.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(92, 15);
+            this.label52.Size = new System.Drawing.Size(115, 20);
             this.label52.TabIndex = 281;
             this.label52.Text = "QA QTY. Reject :";
             // 
@@ -828,21 +849,22 @@
             // 
             this.txtQAreject.BackColor = System.Drawing.SystemColors.Window;
             this.txtQAreject.Font = new System.Drawing.Font("Arial", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQAreject.Location = new System.Drawing.Point(396, 82);
+            this.txtQAreject.Location = new System.Drawing.Point(528, 101);
+            this.txtQAreject.Margin = new System.Windows.Forms.Padding(4);
             this.txtQAreject.MaxLength = 100;
             this.txtQAreject.Multiline = true;
             this.txtQAreject.Name = "txtQAreject";
             this.txtQAreject.ReadOnly = true;
-            this.txtQAreject.Size = new System.Drawing.Size(165, 19);
+            this.txtQAreject.Size = new System.Drawing.Size(219, 22);
             this.txtQAreject.TabIndex = 279;
             this.txtQAreject.Text = " ";
             // 
             // txtstatic
             // 
-            this.txtstatic.Location = new System.Drawing.Point(176, 25);
+            this.txtstatic.Location = new System.Drawing.Point(235, 31);
             this.txtstatic.Margin = new System.Windows.Forms.Padding(1);
             this.txtstatic.Name = "txtstatic";
-            this.txtstatic.Size = new System.Drawing.Size(40, 22);
+            this.txtstatic.Size = new System.Drawing.Size(52, 25);
             this.txtstatic.TabIndex = 320;
             this.txtstatic.Visible = false;
             // 
@@ -850,11 +872,12 @@
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.Window;
             this.textBox2.Font = new System.Drawing.Font("Arial", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(-93, 502);
+            this.textBox2.Location = new System.Drawing.Point(-124, 618);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.MaxLength = 100;
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(165, 28);
+            this.textBox2.Size = new System.Drawing.Size(219, 34);
             this.textBox2.TabIndex = 316;
             this.textBox2.Text = " ";
             this.textBox2.Visible = false;
@@ -863,10 +886,11 @@
             // 
             this.txtillusion.BackColor = System.Drawing.Color.White;
             this.txtillusion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtillusion.Location = new System.Drawing.Point(369, 576);
+            this.txtillusion.Location = new System.Drawing.Point(492, 709);
+            this.txtillusion.Margin = new System.Windows.Forms.Padding(4);
             this.txtillusion.Multiline = true;
             this.txtillusion.Name = "txtillusion";
-            this.txtillusion.Size = new System.Drawing.Size(124, 46);
+            this.txtillusion.Size = new System.Drawing.Size(164, 56);
             this.txtillusion.TabIndex = 315;
             this.txtillusion.Visible = false;
             this.txtillusion.TextChanged += new System.EventHandler(this.txtillusion_TextChanged);
@@ -900,11 +924,11 @@
             this.groupBox2.Controls.Add(this.label23);
             this.groupBox2.Controls.Add(this.lblactiverepack);
             this.groupBox2.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(7, 106);
+            this.groupBox2.Location = new System.Drawing.Point(9, 130);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(1);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(1);
-            this.groupBox2.Size = new System.Drawing.Size(508, 204);
+            this.groupBox2.Size = new System.Drawing.Size(677, 251);
             this.groupBox2.TabIndex = 307;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Material Formulation Information";
@@ -916,9 +940,10 @@
             this.lblcontent.BackColor = System.Drawing.Color.Transparent;
             this.lblcontent.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcontent.ForeColor = System.Drawing.Color.Black;
-            this.lblcontent.Location = new System.Drawing.Point(269, 15);
+            this.lblcontent.Location = new System.Drawing.Point(359, 18);
+            this.lblcontent.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblcontent.Name = "lblcontent";
-            this.lblcontent.Size = new System.Drawing.Size(64, 13);
+            this.lblcontent.Size = new System.Drawing.Size(83, 19);
             this.lblcontent.TabIndex = 490;
             this.lblcontent.Text = "AVAILABLE :";
             // 
@@ -928,10 +953,11 @@
             this.txtSOH.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtSOH.Enabled = false;
             this.txtSOH.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSOH.Location = new System.Drawing.Point(99, 81);
+            this.txtSOH.Location = new System.Drawing.Point(132, 100);
+            this.txtSOH.Margin = new System.Windows.Forms.Padding(4);
             this.txtSOH.Name = "txtSOH";
             this.txtSOH.ReadOnly = true;
-            this.txtSOH.Size = new System.Drawing.Size(139, 23);
+            this.txtSOH.Size = new System.Drawing.Size(184, 27);
             this.txtSOH.TabIndex = 489;
             // 
             // dgvActiveRepack
@@ -966,7 +992,8 @@
             this.dgvActiveRepack.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvActiveRepack.EnableHeadersVisualStyles = false;
             this.dgvActiveRepack.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvActiveRepack.Location = new System.Drawing.Point(78, 113);
+            this.dgvActiveRepack.Location = new System.Drawing.Point(104, 139);
+            this.dgvActiveRepack.Margin = new System.Windows.Forms.Padding(4);
             this.dgvActiveRepack.MultiSelect = false;
             this.dgvActiveRepack.Name = "dgvActiveRepack";
             this.dgvActiveRepack.ReadOnly = true;
@@ -978,7 +1005,7 @@
             this.dgvActiveRepack.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvActiveRepack.RowTemplate.Height = 52;
             this.dgvActiveRepack.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dgvActiveRepack.Size = new System.Drawing.Size(426, 86);
+            this.dgvActiveRepack.Size = new System.Drawing.Size(568, 106);
             this.dgvActiveRepack.TabIndex = 436;
             // 
             // lblexisting
@@ -986,9 +1013,10 @@
             this.lblexisting.AutoSize = true;
             this.lblexisting.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblexisting.ForeColor = System.Drawing.Color.Black;
-            this.lblexisting.Location = new System.Drawing.Point(252, 127);
+            this.lblexisting.Location = new System.Drawing.Point(336, 156);
+            this.lblexisting.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblexisting.Name = "lblexisting";
-            this.lblexisting.Size = new System.Drawing.Size(38, 13);
+            this.lblexisting.Size = new System.Drawing.Size(49, 19);
             this.lblexisting.TabIndex = 488;
             this.lblexisting.Text = "DAYS :";
             this.lblexisting.Visible = false;
@@ -999,9 +1027,10 @@
             this.lbldateplus5.BackColor = System.Drawing.Color.Transparent;
             this.lbldateplus5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldateplus5.ForeColor = System.Drawing.Color.Black;
-            this.lbldateplus5.Location = new System.Drawing.Point(504, 64);
+            this.lbldateplus5.Location = new System.Drawing.Point(672, 79);
+            this.lbldateplus5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbldateplus5.Name = "lbldateplus5";
-            this.lbldateplus5.Size = new System.Drawing.Size(19, 15);
+            this.lbldateplus5.Size = new System.Drawing.Size(25, 20);
             this.lbldateplus5.TabIndex = 487;
             this.lbldateplus5.Text = "12";
             // 
@@ -1032,7 +1061,8 @@
             this.dgvUpdateTimeLampse.DefaultCellStyle = dataGridViewCellStyle7;
             this.dgvUpdateTimeLampse.EnableHeadersVisualStyles = false;
             this.dgvUpdateTimeLampse.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvUpdateTimeLampse.Location = new System.Drawing.Point(514, 113);
+            this.dgvUpdateTimeLampse.Location = new System.Drawing.Point(685, 139);
+            this.dgvUpdateTimeLampse.Margin = new System.Windows.Forms.Padding(4);
             this.dgvUpdateTimeLampse.Name = "dgvUpdateTimeLampse";
             this.dgvUpdateTimeLampse.ReadOnly = true;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -1045,7 +1075,7 @@
             this.dgvUpdateTimeLampse.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvUpdateTimeLampse.RowHeadersWidth = 50;
             this.dgvUpdateTimeLampse.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUpdateTimeLampse.Size = new System.Drawing.Size(91, 47);
+            this.dgvUpdateTimeLampse.Size = new System.Drawing.Size(121, 58);
             this.dgvUpdateTimeLampse.TabIndex = 486;
             this.dgvUpdateTimeLampse.CurrentCellChanged += new System.EventHandler(this.dgvUpdateTimeLampse_CurrentCellChanged);
             // 
@@ -1054,11 +1084,12 @@
             this.txtbatch.BackColor = System.Drawing.SystemColors.Window;
             this.txtbatch.Enabled = false;
             this.txtbatch.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbatch.Location = new System.Drawing.Point(345, 164);
+            this.txtbatch.Location = new System.Drawing.Point(460, 202);
+            this.txtbatch.Margin = new System.Windows.Forms.Padding(4);
             this.txtbatch.MaxLength = 100;
             this.txtbatch.Name = "txtbatch";
             this.txtbatch.ReadOnly = true;
-            this.txtbatch.Size = new System.Drawing.Size(128, 21);
+            this.txtbatch.Size = new System.Drawing.Size(169, 24);
             this.txtbatch.TabIndex = 315;
             this.txtbatch.Text = " ";
             this.txtbatch.Visible = false;
@@ -1069,10 +1100,11 @@
             this.txtGood.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtGood.Enabled = false;
             this.txtGood.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGood.Location = new System.Drawing.Point(345, 9);
+            this.txtGood.Location = new System.Drawing.Point(460, 11);
+            this.txtGood.Margin = new System.Windows.Forms.Padding(4);
             this.txtGood.Name = "txtGood";
             this.txtGood.ReadOnly = true;
-            this.txtGood.Size = new System.Drawing.Size(128, 23);
+            this.txtGood.Size = new System.Drawing.Size(169, 27);
             this.txtGood.TabIndex = 377;
             // 
             // button5
@@ -1084,10 +1116,10 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(301, 78);
+            this.button5.Location = new System.Drawing.Point(401, 96);
             this.button5.Margin = new System.Windows.Forms.Padding(1);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(32, 34);
+            this.button5.Size = new System.Drawing.Size(43, 42);
             this.button5.TabIndex = 382;
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -1097,21 +1129,21 @@
             this.cboDescription.BackColor = System.Drawing.SystemColors.Window;
             this.cboDescription.Enabled = false;
             this.cboDescription.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboDescription.Location = new System.Drawing.Point(100, 37);
+            this.cboDescription.Location = new System.Drawing.Point(133, 46);
             this.cboDescription.Margin = new System.Windows.Forms.Padding(1);
             this.cboDescription.Name = "cboDescription";
             this.cboDescription.ReadOnly = true;
-            this.cboDescription.Size = new System.Drawing.Size(139, 21);
+            this.cboDescription.Size = new System.Drawing.Size(184, 24);
             this.cboDescription.TabIndex = 333;
             // 
             // txtselectweight
             // 
             this.txtselectweight.Enabled = false;
             this.txtselectweight.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtselectweight.Location = new System.Drawing.Point(346, 36);
+            this.txtselectweight.Location = new System.Drawing.Point(461, 44);
             this.txtselectweight.Margin = new System.Windows.Forms.Padding(1);
             this.txtselectweight.Name = "txtselectweight";
-            this.txtselectweight.Size = new System.Drawing.Size(127, 21);
+            this.txtselectweight.Size = new System.Drawing.Size(168, 24);
             this.txtselectweight.TabIndex = 320;
             // 
             // label5
@@ -1120,9 +1152,10 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(259, 41);
+            this.label5.Location = new System.Drawing.Point(345, 50);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 13);
+            this.label5.Size = new System.Drawing.Size(82, 19);
             this.label5.TabIndex = 314;
             this.label5.Text = "QUANTITY :";
             // 
@@ -1132,9 +1165,10 @@
             this.label35.BackColor = System.Drawing.Color.Transparent;
             this.label35.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.ForeColor = System.Drawing.Color.Black;
-            this.label35.Location = new System.Drawing.Point(7, 188);
+            this.label35.Location = new System.Drawing.Point(9, 231);
+            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(75, 13);
+            this.label35.Size = new System.Drawing.Size(93, 17);
             this.label35.TabIndex = 314;
             this.label35.Text = "WH GOOD :";
             this.label35.Visible = false;
@@ -1144,9 +1178,10 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(39, 169);
+            this.label21.Location = new System.Drawing.Point(52, 208);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(42, 13);
+            this.label21.Size = new System.Drawing.Size(52, 19);
             this.label21.TabIndex = 299;
             this.label21.Text = " DATE :";
             this.label21.Visible = false;
@@ -1156,9 +1191,10 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(10, 41);
+            this.label12.Location = new System.Drawing.Point(13, 50);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(72, 13);
+            this.label12.Size = new System.Drawing.Size(88, 19);
             this.label12.TabIndex = 311;
             this.label12.Text = "FEED CODE :";
             // 
@@ -1167,9 +1203,10 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(252, 159);
+            this.label18.Location = new System.Drawing.Point(336, 196);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(38, 13);
+            this.label18.Size = new System.Drawing.Size(49, 19);
             this.label18.TabIndex = 258;
             this.label18.Text = "DAYS :";
             this.label18.Visible = false;
@@ -1179,9 +1216,10 @@
             this.mfg_datePicker.Enabled = false;
             this.mfg_datePicker.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mfg_datePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.mfg_datePicker.Location = new System.Drawing.Point(98, 127);
+            this.mfg_datePicker.Location = new System.Drawing.Point(131, 156);
+            this.mfg_datePicker.Margin = new System.Windows.Forms.Padding(4);
             this.mfg_datePicker.Name = "mfg_datePicker";
-            this.mfg_datePicker.Size = new System.Drawing.Size(141, 21);
+            this.mfg_datePicker.Size = new System.Drawing.Size(187, 24);
             this.mfg_datePicker.TabIndex = 271;
             this.mfg_datePicker.Value = new System.DateTime(2019, 12, 27, 11, 44, 5, 0);
             // 
@@ -1190,9 +1228,10 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(275, 132);
+            this.label17.Location = new System.Drawing.Point(367, 162);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(46, 13);
+            this.label17.Size = new System.Drawing.Size(59, 19);
             this.label17.TabIndex = 257;
             this.label17.Text = "EXPIRY :";
             // 
@@ -1201,9 +1240,10 @@
             this.xpired.Enabled = false;
             this.xpired.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xpired.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.xpired.Location = new System.Drawing.Point(346, 129);
+            this.xpired.Location = new System.Drawing.Point(461, 159);
+            this.xpired.Margin = new System.Windows.Forms.Padding(4);
             this.xpired.Name = "xpired";
-            this.xpired.Size = new System.Drawing.Size(127, 21);
+            this.xpired.Size = new System.Drawing.Size(168, 24);
             this.xpired.TabIndex = 255;
             this.xpired.Value = new System.DateTime(2020, 1, 25, 11, 44, 0, 0);
             // 
@@ -1213,9 +1253,10 @@
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.Black;
-            this.label26.Location = new System.Drawing.Point(20, 86);
+            this.label26.Location = new System.Drawing.Point(27, 106);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(59, 13);
+            this.label26.Size = new System.Drawing.Size(75, 19);
             this.label26.TabIndex = 297;
             this.label26.Text = "BALANCE :";
             // 
@@ -1224,9 +1265,10 @@
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.ForeColor = System.Drawing.Color.Black;
-            this.label33.Location = new System.Drawing.Point(14, 132);
+            this.label33.Location = new System.Drawing.Point(19, 162);
+            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(66, 13);
+            this.label33.Size = new System.Drawing.Size(82, 19);
             this.label33.TabIndex = 247;
             this.label33.Text = "MFG DATE :";
             // 
@@ -1235,9 +1277,10 @@
             this.dtprepackdate.Enabled = false;
             this.dtprepackdate.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtprepackdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtprepackdate.Location = new System.Drawing.Point(98, 165);
+            this.dtprepackdate.Location = new System.Drawing.Point(131, 203);
+            this.dtprepackdate.Margin = new System.Windows.Forms.Padding(4);
             this.dtprepackdate.Name = "dtprepackdate";
-            this.dtprepackdate.Size = new System.Drawing.Size(141, 21);
+            this.dtprepackdate.Size = new System.Drawing.Size(187, 24);
             this.dtprepackdate.TabIndex = 298;
             this.dtprepackdate.Value = new System.DateTime(2020, 1, 25, 11, 44, 0, 0);
             this.dtprepackdate.Visible = false;
@@ -1246,10 +1289,11 @@
             // 
             this.txtweighingscale.BackColor = System.Drawing.Color.Yellow;
             this.txtweighingscale.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtweighingscale.Location = new System.Drawing.Point(346, 78);
+            this.txtweighingscale.Location = new System.Drawing.Point(461, 96);
+            this.txtweighingscale.Margin = new System.Windows.Forms.Padding(4);
             this.txtweighingscale.MaxLength = 100;
             this.txtweighingscale.Name = "txtweighingscale";
-            this.txtweighingscale.Size = new System.Drawing.Size(127, 26);
+            this.txtweighingscale.Size = new System.Drawing.Size(168, 30);
             this.txtweighingscale.TabIndex = 279;
             this.txtweighingscale.Text = " ";
             this.txtweighingscale.Click += new System.EventHandler(this.txtweighingscale_Click);
@@ -1260,9 +1304,10 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(277, 172);
+            this.label19.Location = new System.Drawing.Point(369, 212);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(45, 13);
+            this.label19.Size = new System.Drawing.Size(57, 19);
             this.label19.TabIndex = 292;
             this.label19.Text = "BATCH :";
             this.label19.Visible = false;
@@ -1274,9 +1319,10 @@
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(252, 87);
+            this.label23.Location = new System.Drawing.Point(336, 107);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(58, 13);
+            this.label23.Size = new System.Drawing.Size(71, 19);
             this.label23.TabIndex = 281;
             this.label23.Text = "W.SCALE :";
             // 
@@ -1286,9 +1332,10 @@
             this.lblactiverepack.BackColor = System.Drawing.Color.Transparent;
             this.lblactiverepack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblactiverepack.ForeColor = System.Drawing.Color.Black;
-            this.lblactiverepack.Location = new System.Drawing.Point(150, 9);
+            this.lblactiverepack.Location = new System.Drawing.Point(200, 11);
+            this.lblactiverepack.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblactiverepack.Name = "lblactiverepack";
-            this.lblactiverepack.Size = new System.Drawing.Size(65, 15);
+            this.lblactiverepack.Size = new System.Drawing.Size(83, 20);
             this.lblactiverepack.TabIndex = 431;
             this.lblactiverepack.Text = "Total Item :";
             this.lblactiverepack.Visible = false;
@@ -1298,10 +1345,11 @@
             this.txtxp.BackColor = System.Drawing.Color.White;
             this.txtxp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtxp.Enabled = false;
-            this.txtxp.Location = new System.Drawing.Point(315, 320);
+            this.txtxp.Location = new System.Drawing.Point(420, 394);
+            this.txtxp.Margin = new System.Windows.Forms.Padding(4);
             this.txtxp.Name = "txtxp";
             this.txtxp.ReadOnly = true;
-            this.txtxp.Size = new System.Drawing.Size(170, 15);
+            this.txtxp.Size = new System.Drawing.Size(227, 18);
             this.txtxp.TabIndex = 259;
             this.txtxp.Visible = false;
             // 
@@ -1324,10 +1372,10 @@
             this.bunifuThinButton29.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton29.IdleForecolor = System.Drawing.Color.PaleVioletRed;
             this.bunifuThinButton29.IdleLineColor = System.Drawing.Color.PaleVioletRed;
-            this.bunifuThinButton29.Location = new System.Drawing.Point(117, 356);
-            this.bunifuThinButton29.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bunifuThinButton29.Location = new System.Drawing.Point(156, 438);
+            this.bunifuThinButton29.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton29.Name = "bunifuThinButton29";
-            this.bunifuThinButton29.Size = new System.Drawing.Size(189, 29);
+            this.bunifuThinButton29.Size = new System.Drawing.Size(252, 36);
             this.bunifuThinButton29.TabIndex = 379;
             this.bunifuThinButton29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton29.Visible = false;
@@ -1338,11 +1386,12 @@
             this.txtBalance.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBalance.Enabled = false;
             this.txtBalance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBalance.Location = new System.Drawing.Point(31, 448);
+            this.txtBalance.Location = new System.Drawing.Point(41, 551);
+            this.txtBalance.Margin = new System.Windows.Forms.Padding(4);
             this.txtBalance.MaxLength = 100;
             this.txtBalance.Multiline = true;
             this.txtBalance.Name = "txtBalance";
-            this.txtBalance.Size = new System.Drawing.Size(149, 17);
+            this.txtBalance.Size = new System.Drawing.Size(199, 21);
             this.txtBalance.TabIndex = 295;
             this.txtBalance.Text = " ";
             // 
@@ -1358,29 +1407,32 @@
             // 
             this.txtSubQty.BackColor = System.Drawing.SystemColors.Window;
             this.txtSubQty.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSubQty.Location = new System.Drawing.Point(294, 54);
+            this.txtSubQty.Location = new System.Drawing.Point(392, 66);
+            this.txtSubQty.Margin = new System.Windows.Forms.Padding(4);
             this.txtSubQty.Multiline = true;
             this.txtSubQty.Name = "txtSubQty";
-            this.txtSubQty.Size = new System.Drawing.Size(112, 27);
+            this.txtSubQty.Size = new System.Drawing.Size(148, 32);
             this.txtSubQty.TabIndex = 283;
             // 
             // txtSubActual
             // 
             this.txtSubActual.BackColor = System.Drawing.SystemColors.Window;
             this.txtSubActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSubActual.Location = new System.Drawing.Point(690, 54);
+            this.txtSubActual.Location = new System.Drawing.Point(920, 66);
+            this.txtSubActual.Margin = new System.Windows.Forms.Padding(4);
             this.txtSubActual.Multiline = true;
             this.txtSubActual.Name = "txtSubActual";
-            this.txtSubActual.Size = new System.Drawing.Size(97, 27);
+            this.txtSubActual.Size = new System.Drawing.Size(128, 32);
             this.txtSubActual.TabIndex = 285;
             // 
             // label30
             // 
             this.label30.AutoSize = true;
             this.label30.ForeColor = System.Drawing.Color.Black;
-            this.label30.Location = new System.Drawing.Point(409, 34);
+            this.label30.Location = new System.Drawing.Point(545, 42);
+            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(85, 13);
+            this.label30.Size = new System.Drawing.Size(102, 19);
             this.label30.TabIndex = 292;
             this.label30.Text = "Date Received :";
             // 
@@ -1388,9 +1440,10 @@
             // 
             this.label25.AutoSize = true;
             this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(222, 65);
+            this.label25.Location = new System.Drawing.Point(296, 80);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(58, 13);
+            this.label25.Size = new System.Drawing.Size(72, 19);
             this.label25.TabIndex = 284;
             this.label25.Text = "Total Qty :";
             // 
@@ -1398,9 +1451,10 @@
             // 
             this.label24.AutoSize = true;
             this.label24.ForeColor = System.Drawing.Color.Black;
-            this.label24.Location = new System.Drawing.Point(9, 34);
+            this.label24.Location = new System.Drawing.Point(12, 42);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(88, 13);
+            this.label24.Size = new System.Drawing.Size(105, 19);
             this.label24.TabIndex = 280;
             this.label24.Text = "Supplier Name :";
             // 
@@ -1411,10 +1465,10 @@
             this.bunifuTextbox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuTextbox11.ForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuTextbox11.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox11.Icon")));
-            this.bunifuTextbox11.Location = new System.Drawing.Point(394, 384);
-            this.bunifuTextbox11.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.bunifuTextbox11.Location = new System.Drawing.Point(525, 473);
+            this.bunifuTextbox11.Margin = new System.Windows.Forms.Padding(8, 5, 8, 5);
             this.bunifuTextbox11.Name = "bunifuTextbox11";
-            this.bunifuTextbox11.Size = new System.Drawing.Size(152, 26);
+            this.bunifuTextbox11.Size = new System.Drawing.Size(203, 32);
             this.bunifuTextbox11.TabIndex = 330;
             this.bunifuTextbox11.text = "";
             this.bunifuTextbox11.Visible = false;
@@ -1461,7 +1515,8 @@
             this.dgvStockout.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgvStockout.EnableHeadersVisualStyles = false;
             this.dgvStockout.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvStockout.Location = new System.Drawing.Point(10, 14);
+            this.dgvStockout.Location = new System.Drawing.Point(13, 17);
+            this.dgvStockout.Margin = new System.Windows.Forms.Padding(4);
             this.dgvStockout.MultiSelect = false;
             this.dgvStockout.Name = "dgvStockout";
             this.dgvStockout.ReadOnly = true;
@@ -1479,7 +1534,7 @@
             dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Teal;
             this.dgvStockout.RowsDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvStockout.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvStockout.Size = new System.Drawing.Size(591, 51);
+            this.dgvStockout.Size = new System.Drawing.Size(788, 63);
             this.dgvStockout.TabIndex = 35;
             // 
             // r_item_id
@@ -1545,10 +1600,10 @@
             this.bunifuTextbox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuTextbox8.ForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuTextbox8.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox8.Icon")));
-            this.bunifuTextbox8.Location = new System.Drawing.Point(105, 389);
-            this.bunifuTextbox8.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.bunifuTextbox8.Location = new System.Drawing.Point(140, 479);
+            this.bunifuTextbox8.Margin = new System.Windows.Forms.Padding(7, 4, 7, 4);
             this.bunifuTextbox8.Name = "bunifuTextbox8";
-            this.bunifuTextbox8.Size = new System.Drawing.Size(152, 25);
+            this.bunifuTextbox8.Size = new System.Drawing.Size(203, 31);
             this.bunifuTextbox8.TabIndex = 327;
             this.bunifuTextbox8.text = "";
             this.bunifuTextbox8.Visible = false;
@@ -1557,9 +1612,10 @@
             // 
             this.label29.AutoSize = true;
             this.label29.ForeColor = System.Drawing.Color.Black;
-            this.label29.Location = new System.Drawing.Point(588, 32);
+            this.label29.Location = new System.Drawing.Point(784, 39);
+            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(92, 13);
+            this.label29.Size = new System.Drawing.Size(111, 19);
             this.label29.TabIndex = 288;
             this.label29.Text = "Expired @ Days :";
             // 
@@ -1567,38 +1623,41 @@
             // 
             this.txtSubItemCode.BackColor = System.Drawing.SystemColors.Window;
             this.txtSubItemCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSubItemCode.Location = new System.Drawing.Point(100, 54);
+            this.txtSubItemCode.Location = new System.Drawing.Point(133, 66);
+            this.txtSubItemCode.Margin = new System.Windows.Forms.Padding(4);
             this.txtSubItemCode.Multiline = true;
             this.txtSubItemCode.Name = "txtSubItemCode";
-            this.txtSubItemCode.Size = new System.Drawing.Size(112, 28);
+            this.txtSubItemCode.Size = new System.Drawing.Size(148, 34);
             this.txtSubItemCode.TabIndex = 281;
             // 
             // txtSubQtyShared
             // 
             this.txtSubQtyShared.BackColor = System.Drawing.SystemColors.Window;
             this.txtSubQtyShared.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSubQtyShared.Location = new System.Drawing.Point(500, 54);
+            this.txtSubQtyShared.Location = new System.Drawing.Point(667, 66);
+            this.txtSubQtyShared.Margin = new System.Windows.Forms.Padding(4);
             this.txtSubQtyShared.Multiline = true;
             this.txtSubQtyShared.Name = "txtSubQtyShared";
-            this.txtSubQtyShared.Size = new System.Drawing.Size(80, 27);
+            this.txtSubQtyShared.Size = new System.Drawing.Size(105, 32);
             this.txtSubQtyShared.TabIndex = 290;
             // 
             // txtqtyndeb
             // 
             this.txtqtyndeb.BackColor = System.Drawing.SystemColors.Window;
             this.txtqtyndeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtqtyndeb.Location = new System.Drawing.Point(311, 81);
+            this.txtqtyndeb.Location = new System.Drawing.Point(415, 100);
+            this.txtqtyndeb.Margin = new System.Windows.Forms.Padding(4);
             this.txtqtyndeb.Multiline = true;
             this.txtqtyndeb.Name = "txtqtyndeb";
-            this.txtqtyndeb.Size = new System.Drawing.Size(112, 27);
+            this.txtqtyndeb.Size = new System.Drawing.Size(148, 32);
             this.txtqtyndeb.TabIndex = 346;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(262, 6);
+            this.button3.Location = new System.Drawing.Point(349, 7);
             this.button3.Margin = new System.Windows.Forms.Padding(1);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(28, 20);
+            this.button3.Size = new System.Drawing.Size(37, 25);
             this.button3.TabIndex = 297;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
@@ -1606,10 +1665,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(163, 8);
+            this.button1.Location = new System.Drawing.Point(217, 10);
             this.button1.Margin = new System.Windows.Forms.Padding(1);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(28, 20);
+            this.button1.Size = new System.Drawing.Size(37, 25);
             this.button1.TabIndex = 296;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -1618,20 +1677,20 @@
             // lbldebsupplier
             // 
             this.lbldebsupplier.AutoSize = true;
-            this.lbldebsupplier.Location = new System.Drawing.Point(611, 14);
+            this.lbldebsupplier.Location = new System.Drawing.Point(815, 17);
             this.lbldebsupplier.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lbldebsupplier.Name = "lbldebsupplier";
-            this.lbldebsupplier.Size = new System.Drawing.Size(25, 13);
+            this.lbldebsupplier.Size = new System.Drawing.Size(33, 19);
             this.lbldebsupplier.TabIndex = 295;
             this.lbldebsupplier.Text = "125";
             // 
             // lblsupreceivedid
             // 
             this.lblsupreceivedid.AutoSize = true;
-            this.lblsupreceivedid.Location = new System.Drawing.Point(768, 29);
+            this.lblsupreceivedid.Location = new System.Drawing.Point(1024, 36);
             this.lblsupreceivedid.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblsupreceivedid.Name = "lblsupreceivedid";
-            this.lblsupreceivedid.Size = new System.Drawing.Size(25, 13);
+            this.lblsupreceivedid.Size = new System.Drawing.Size(33, 19);
             this.lblsupreceivedid.TabIndex = 294;
             this.lblsupreceivedid.Text = "125";
             // 
@@ -1639,9 +1698,10 @@
             // 
             this.label27.AutoSize = true;
             this.label27.ForeColor = System.Drawing.Color.Black;
-            this.label27.Location = new System.Drawing.Point(588, 65);
+            this.label27.Location = new System.Drawing.Point(784, 80);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(103, 13);
+            this.label27.Size = new System.Drawing.Size(122, 19);
             this.label27.TabIndex = 286;
             this.label27.Text = "Actual Remaining :";
             // 
@@ -1663,10 +1723,10 @@
             this.bunifuHeaderRaw.IdleFillColor = System.Drawing.Color.White;
             this.bunifuHeaderRaw.IdleForecolor = System.Drawing.Color.PaleVioletRed;
             this.bunifuHeaderRaw.IdleLineColor = System.Drawing.Color.PaleVioletRed;
-            this.bunifuHeaderRaw.Location = new System.Drawing.Point(424, 658);
-            this.bunifuHeaderRaw.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bunifuHeaderRaw.Location = new System.Drawing.Point(565, 810);
+            this.bunifuHeaderRaw.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuHeaderRaw.Name = "bunifuHeaderRaw";
-            this.bunifuHeaderRaw.Size = new System.Drawing.Size(88, 33);
+            this.bunifuHeaderRaw.Size = new System.Drawing.Size(117, 41);
             this.bunifuHeaderRaw.TabIndex = 342;
             this.bunifuHeaderRaw.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuHeaderRaw.Visible = false;
@@ -1689,10 +1749,10 @@
             this.btnSubmit.IdleFillColor = System.Drawing.Color.CornflowerBlue;
             this.btnSubmit.IdleForecolor = System.Drawing.SystemColors.Window;
             this.btnSubmit.IdleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSubmit.Location = new System.Drawing.Point(38, 486);
-            this.btnSubmit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSubmit.Location = new System.Drawing.Point(51, 598);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(447, 71);
+            this.btnSubmit.Size = new System.Drawing.Size(596, 87);
             this.btnSubmit.TabIndex = 322;
             this.btnSubmit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSubmit.Visible = false;
@@ -1702,10 +1762,11 @@
             // 
             this.txtSubDateReceived.BackColor = System.Drawing.SystemColors.Window;
             this.txtSubDateReceived.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSubDateReceived.Location = new System.Drawing.Point(500, 24);
+            this.txtSubDateReceived.Location = new System.Drawing.Point(667, 30);
+            this.txtSubDateReceived.Margin = new System.Windows.Forms.Padding(4);
             this.txtSubDateReceived.Multiline = true;
             this.txtSubDateReceived.Name = "txtSubDateReceived";
-            this.txtSubDateReceived.Size = new System.Drawing.Size(80, 26);
+            this.txtSubDateReceived.Size = new System.Drawing.Size(105, 31);
             this.txtSubDateReceived.TabIndex = 293;
             // 
             // button2
@@ -1726,10 +1787,10 @@
             this.button2.IdleFillColor = System.Drawing.Color.White;
             this.button2.IdleForecolor = System.Drawing.Color.PaleVioletRed;
             this.button2.IdleLineColor = System.Drawing.Color.PaleVioletRed;
-            this.button2.Location = new System.Drawing.Point(129, 535);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button2.Location = new System.Drawing.Point(172, 658);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(88, 33);
+            this.button2.Size = new System.Drawing.Size(117, 41);
             this.button2.TabIndex = 323;
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.button2.Visible = false;
@@ -1760,11 +1821,11 @@
             this.groupBox4.Controls.Add(this.txtRawCode);
             this.groupBox4.Controls.Add(this.label47);
             this.groupBox4.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(5, 6);
+            this.groupBox4.Location = new System.Drawing.Point(7, 7);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(1);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(1);
-            this.groupBox4.Size = new System.Drawing.Size(511, 91);
+            this.groupBox4.Size = new System.Drawing.Size(681, 112);
             this.groupBox4.TabIndex = 306;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Receiving Details";
@@ -1775,10 +1836,10 @@
             this.lblbintype.AutoSize = true;
             this.lblbintype.BackColor = System.Drawing.Color.PeachPuff;
             this.lblbintype.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblbintype.Location = new System.Drawing.Point(229, -2);
+            this.lblbintype.Location = new System.Drawing.Point(305, -2);
             this.lblbintype.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblbintype.Name = "lblbintype";
-            this.lblbintype.Size = new System.Drawing.Size(13, 15);
+            this.lblbintype.Size = new System.Drawing.Size(17, 20);
             this.lblbintype.TabIndex = 488;
             this.lblbintype.Text = "0";
             this.lblbintype.Visible = false;
@@ -1787,10 +1848,10 @@
             // 
             this.lblbin.AutoSize = true;
             this.lblbin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblbin.Location = new System.Drawing.Point(190, -1);
+            this.lblbin.Location = new System.Drawing.Point(253, -1);
             this.lblbin.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblbin.Name = "lblbin";
-            this.lblbin.Size = new System.Drawing.Size(32, 15);
+            this.lblbin.Size = new System.Drawing.Size(40, 20);
             this.lblbin.TabIndex = 487;
             this.lblbin.Text = "BIN :";
             this.lblbin.Visible = false;
@@ -1798,10 +1859,10 @@
             // 
             // txtmainbalance
             // 
-            this.txtmainbalance.Location = new System.Drawing.Point(668, -7);
+            this.txtmainbalance.Location = new System.Drawing.Point(891, -9);
             this.txtmainbalance.Margin = new System.Windows.Forms.Padding(1);
             this.txtmainbalance.Name = "txtmainbalance";
-            this.txtmainbalance.Size = new System.Drawing.Size(84, 21);
+            this.txtmainbalance.Size = new System.Drawing.Size(111, 24);
             this.txtmainbalance.TabIndex = 327;
             this.txtmainbalance.Visible = false;
             // 
@@ -1811,18 +1872,19 @@
             this.cboCategory.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.cboCategory.Enabled = false;
             this.cboCategory.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboCategory.Location = new System.Drawing.Point(376, 55);
+            this.cboCategory.Location = new System.Drawing.Point(501, 68);
+            this.cboCategory.Margin = new System.Windows.Forms.Padding(4);
             this.cboCategory.Name = "cboCategory";
             this.cboCategory.ReadOnly = true;
-            this.cboCategory.Size = new System.Drawing.Size(116, 23);
+            this.cboCategory.Size = new System.Drawing.Size(153, 27);
             this.cboCategory.TabIndex = 326;
             // 
             // txtfuck
             // 
-            this.txtfuck.Location = new System.Drawing.Point(614, -3);
+            this.txtfuck.Location = new System.Drawing.Point(819, -4);
             this.txtfuck.Margin = new System.Windows.Forms.Padding(1);
             this.txtfuck.Name = "txtfuck";
-            this.txtfuck.Size = new System.Drawing.Size(40, 21);
+            this.txtfuck.Size = new System.Drawing.Size(52, 24);
             this.txtfuck.TabIndex = 321;
             this.txtfuck.Visible = false;
             // 
@@ -1830,10 +1892,11 @@
             // 
             this.txtrepackavailable.BackColor = System.Drawing.Color.White;
             this.txtrepackavailable.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtrepackavailable.Location = new System.Drawing.Point(296, -6);
+            this.txtrepackavailable.Location = new System.Drawing.Point(395, -7);
+            this.txtrepackavailable.Margin = new System.Windows.Forms.Padding(4);
             this.txtrepackavailable.Multiline = true;
             this.txtrepackavailable.Name = "txtrepackavailable";
-            this.txtrepackavailable.Size = new System.Drawing.Size(57, 23);
+            this.txtrepackavailable.Size = new System.Drawing.Size(75, 27);
             this.txtrepackavailable.TabIndex = 311;
             this.txtrepackavailable.Visible = false;
             // 
@@ -1841,10 +1904,11 @@
             // 
             this.txtmainstocks.BackColor = System.Drawing.Color.White;
             this.txtmainstocks.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtmainstocks.Location = new System.Drawing.Point(213, -7);
+            this.txtmainstocks.Location = new System.Drawing.Point(284, -9);
+            this.txtmainstocks.Margin = new System.Windows.Forms.Padding(4);
             this.txtmainstocks.Multiline = true;
             this.txtmainstocks.Name = "txtmainstocks";
-            this.txtmainstocks.Size = new System.Drawing.Size(74, 23);
+            this.txtmainstocks.Size = new System.Drawing.Size(97, 27);
             this.txtmainstocks.TabIndex = 310;
             this.txtmainstocks.Visible = false;
             // 
@@ -1853,10 +1917,10 @@
             this.lblbagorbin.AutoSize = true;
             this.lblbagorbin.BackColor = System.Drawing.Color.PeachPuff;
             this.lblbagorbin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblbagorbin.Location = new System.Drawing.Point(158, -2);
+            this.lblbagorbin.Location = new System.Drawing.Point(211, -2);
             this.lblbagorbin.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblbagorbin.Name = "lblbagorbin";
-            this.lblbagorbin.Size = new System.Drawing.Size(13, 15);
+            this.lblbagorbin.Size = new System.Drawing.Size(17, 20);
             this.lblbagorbin.TabIndex = 486;
             this.lblbagorbin.Text = "0";
             this.lblbagorbin.Visible = false;
@@ -1868,9 +1932,10 @@
             this.txtMainSupplier.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtMainSupplier.Enabled = false;
             this.txtMainSupplier.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMainSupplier.Location = new System.Drawing.Point(99, 56);
+            this.txtMainSupplier.Location = new System.Drawing.Point(132, 69);
+            this.txtMainSupplier.Margin = new System.Windows.Forms.Padding(4);
             this.txtMainSupplier.Name = "txtMainSupplier";
-            this.txtMainSupplier.Size = new System.Drawing.Size(176, 23);
+            this.txtMainSupplier.Size = new System.Drawing.Size(233, 27);
             this.txtMainSupplier.TabIndex = 308;
             // 
             // label13
@@ -1879,9 +1944,10 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(30, 61);
+            this.label13.Location = new System.Drawing.Point(40, 75);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(60, 13);
+            this.label13.Size = new System.Drawing.Size(75, 19);
             this.label13.TabIndex = 309;
             this.label13.Text = "SUPPLIER :";
             // 
@@ -1889,10 +1955,11 @@
             // 
             this.txtprimarypo.BackColor = System.Drawing.Color.White;
             this.txtprimarypo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtprimarypo.Location = new System.Drawing.Point(508, -5);
+            this.txtprimarypo.Location = new System.Drawing.Point(677, -6);
+            this.txtprimarypo.Margin = new System.Windows.Forms.Padding(4);
             this.txtprimarypo.Multiline = true;
             this.txtprimarypo.Name = "txtprimarypo";
-            this.txtprimarypo.Size = new System.Drawing.Size(87, 23);
+            this.txtprimarypo.Size = new System.Drawing.Size(115, 27);
             this.txtprimarypo.TabIndex = 307;
             this.txtprimarypo.Visible = false;
             // 
@@ -1900,10 +1967,11 @@
             // 
             this.txtqtyoverall.BackColor = System.Drawing.Color.White;
             this.txtqtyoverall.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtqtyoverall.Location = new System.Drawing.Point(376, -3);
+            this.txtqtyoverall.Location = new System.Drawing.Point(501, -4);
+            this.txtqtyoverall.Margin = new System.Windows.Forms.Padding(4);
             this.txtqtyoverall.Multiline = true;
             this.txtqtyoverall.Name = "txtqtyoverall";
-            this.txtqtyoverall.Size = new System.Drawing.Size(57, 23);
+            this.txtqtyoverall.Size = new System.Drawing.Size(75, 27);
             this.txtqtyoverall.TabIndex = 306;
             this.txtqtyoverall.Visible = false;
             // 
@@ -1911,10 +1979,10 @@
             // 
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(119, -1);
+            this.label40.Location = new System.Drawing.Point(159, -1);
             this.label40.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(36, 15);
+            this.label40.Size = new System.Drawing.Size(45, 20);
             this.label40.TabIndex = 355;
             this.label40.Text = "BAG :";
             this.label40.Visible = false;
@@ -1924,10 +1992,11 @@
             // 
             this.txtrpavailable.BackColor = System.Drawing.Color.White;
             this.txtrpavailable.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtrpavailable.Location = new System.Drawing.Point(444, -5);
+            this.txtrpavailable.Location = new System.Drawing.Point(592, -6);
+            this.txtrpavailable.Margin = new System.Windows.Forms.Padding(4);
             this.txtrpavailable.Multiline = true;
             this.txtrpavailable.Name = "txtrpavailable";
-            this.txtrpavailable.Size = new System.Drawing.Size(57, 23);
+            this.txtrpavailable.Size = new System.Drawing.Size(75, 27);
             this.txtrpavailable.TabIndex = 305;
             this.txtrpavailable.Visible = false;
             // 
@@ -1938,11 +2007,12 @@
             this.txttotalofStock.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txttotalofStock.Enabled = false;
             this.txttotalofStock.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttotalofStock.Location = new System.Drawing.Point(572, 8);
+            this.txttotalofStock.Location = new System.Drawing.Point(763, 10);
+            this.txttotalofStock.Margin = new System.Windows.Forms.Padding(4);
             this.txttotalofStock.Multiline = true;
             this.txttotalofStock.Name = "txttotalofStock";
             this.txttotalofStock.ReadOnly = true;
-            this.txttotalofStock.Size = new System.Drawing.Size(202, 15);
+            this.txttotalofStock.Size = new System.Drawing.Size(269, 18);
             this.txttotalofStock.TabIndex = 304;
             this.txttotalofStock.Visible = false;
             // 
@@ -1951,9 +2021,10 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(287, 26);
+            this.label10.Location = new System.Drawing.Point(383, 32);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(77, 13);
+            this.label10.Size = new System.Drawing.Size(95, 19);
             this.label10.TabIndex = 303;
             this.label10.Text = "RECEIVED ID :";
             // 
@@ -1963,9 +2034,10 @@
             this.txtItemDescription.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtItemDescription.Enabled = false;
             this.txtItemDescription.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtItemDescription.Location = new System.Drawing.Point(99, 22);
+            this.txtItemDescription.Location = new System.Drawing.Point(132, 27);
+            this.txtItemDescription.Margin = new System.Windows.Forms.Padding(4);
             this.txtItemDescription.Name = "txtItemDescription";
-            this.txtItemDescription.Size = new System.Drawing.Size(176, 23);
+            this.txtItemDescription.Size = new System.Drawing.Size(233, 27);
             this.txtItemDescription.TabIndex = 238;
             // 
             // label53
@@ -1974,9 +2046,10 @@
             this.label53.BackColor = System.Drawing.Color.Transparent;
             this.label53.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label53.ForeColor = System.Drawing.Color.Black;
-            this.label53.Location = new System.Drawing.Point(296, 60);
+            this.label53.Location = new System.Drawing.Point(395, 74);
+            this.label53.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(67, 13);
+            this.label53.Size = new System.Drawing.Size(84, 19);
             this.label53.TabIndex = 281;
             this.label53.Text = "CATEGORY :";
             // 
@@ -1985,9 +2058,10 @@
             this.txtID.BackColor = System.Drawing.Color.White;
             this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(375, 21);
+            this.txtID.Location = new System.Drawing.Point(500, 26);
+            this.txtID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(117, 24);
+            this.txtID.Size = new System.Drawing.Size(155, 29);
             this.txtID.TabIndex = 240;
             this.txtID.Text = " ";
             // 
@@ -1997,9 +2071,10 @@
             this.label43.BackColor = System.Drawing.Color.Transparent;
             this.label43.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label43.ForeColor = System.Drawing.Color.Black;
-            this.label43.Location = new System.Drawing.Point(9, 26);
+            this.label43.Location = new System.Drawing.Point(12, 32);
+            this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(82, 13);
+            this.label43.Size = new System.Drawing.Size(101, 19);
             this.label43.TabIndex = 296;
             this.label43.Text = "DESCRIPTION :";
             // 
@@ -2007,10 +2082,11 @@
             // 
             this.txtRawCode.BackColor = System.Drawing.Color.White;
             this.txtRawCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRawCode.Location = new System.Drawing.Point(369, 70);
+            this.txtRawCode.Location = new System.Drawing.Point(492, 86);
+            this.txtRawCode.Margin = new System.Windows.Forms.Padding(4);
             this.txtRawCode.Multiline = true;
             this.txtRawCode.Name = "txtRawCode";
-            this.txtRawCode.Size = new System.Drawing.Size(122, 17);
+            this.txtRawCode.Size = new System.Drawing.Size(161, 20);
             this.txtRawCode.TabIndex = 239;
             this.txtRawCode.Visible = false;
             this.txtRawCode.TextChanged += new System.EventHandler(this.txtRawCode_TextChanged);
@@ -2021,9 +2097,10 @@
             this.label47.BackColor = System.Drawing.Color.Transparent;
             this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label47.ForeColor = System.Drawing.Color.Black;
-            this.label47.Location = new System.Drawing.Point(282, 73);
+            this.label47.Location = new System.Drawing.Point(376, 90);
+            this.label47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(61, 13);
+            this.label47.Size = new System.Drawing.Size(79, 17);
             this.label47.TabIndex = 280;
             this.label47.Text = "Item Code :";
             this.label47.Visible = false;
@@ -2044,11 +2121,12 @@
             this.txtActualFormula.BackColor = System.Drawing.SystemColors.Window;
             this.txtActualFormula.Enabled = false;
             this.txtActualFormula.Font = new System.Drawing.Font("Arial", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtActualFormula.Location = new System.Drawing.Point(28, 440);
+            this.txtActualFormula.Location = new System.Drawing.Point(37, 542);
+            this.txtActualFormula.Margin = new System.Windows.Forms.Padding(4);
             this.txtActualFormula.MaxLength = 100;
             this.txtActualFormula.Multiline = true;
             this.txtActualFormula.Name = "txtActualFormula";
-            this.txtActualFormula.Size = new System.Drawing.Size(165, 25);
+            this.txtActualFormula.Size = new System.Drawing.Size(219, 30);
             this.txtActualFormula.TabIndex = 313;
             this.txtActualFormula.Text = " ";
             this.txtActualFormula.Visible = false;
@@ -2057,11 +2135,12 @@
             // 
             this.txtuom.BackColor = System.Drawing.SystemColors.Window;
             this.txtuom.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtuom.Location = new System.Drawing.Point(576, 127);
+            this.txtuom.Location = new System.Drawing.Point(768, 156);
+            this.txtuom.Margin = new System.Windows.Forms.Padding(4);
             this.txtuom.MaxLength = 100;
             this.txtuom.Multiline = true;
             this.txtuom.Name = "txtuom";
-            this.txtuom.Size = new System.Drawing.Size(145, 19);
+            this.txtuom.Size = new System.Drawing.Size(192, 22);
             this.txtuom.TabIndex = 274;
             this.txtuom.Text = " ";
             this.txtuom.Visible = false;
@@ -2085,10 +2164,10 @@
             this.bunifuThinButton219.IdleFillColor = System.Drawing.SystemColors.Control;
             this.bunifuThinButton219.IdleForecolor = System.Drawing.Color.PaleVioletRed;
             this.bunifuThinButton219.IdleLineColor = System.Drawing.Color.PaleVioletRed;
-            this.bunifuThinButton219.Location = new System.Drawing.Point(12, 307);
-            this.bunifuThinButton219.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bunifuThinButton219.Location = new System.Drawing.Point(16, 378);
+            this.bunifuThinButton219.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton219.Name = "bunifuThinButton219";
-            this.bunifuThinButton219.Size = new System.Drawing.Size(458, 23);
+            this.bunifuThinButton219.Size = new System.Drawing.Size(611, 28);
             this.bunifuThinButton219.TabIndex = 361;
             this.bunifuThinButton219.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton219.Visible = false;
@@ -2111,10 +2190,10 @@
             this.bunifuRepackingProcess.IdleFillColor = System.Drawing.Color.White;
             this.bunifuRepackingProcess.IdleForecolor = System.Drawing.Color.PaleVioletRed;
             this.bunifuRepackingProcess.IdleLineColor = System.Drawing.Color.PaleVioletRed;
-            this.bunifuRepackingProcess.Location = new System.Drawing.Point(128, 566);
-            this.bunifuRepackingProcess.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bunifuRepackingProcess.Location = new System.Drawing.Point(171, 697);
+            this.bunifuRepackingProcess.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuRepackingProcess.Name = "bunifuRepackingProcess";
-            this.bunifuRepackingProcess.Size = new System.Drawing.Size(88, 33);
+            this.bunifuRepackingProcess.Size = new System.Drawing.Size(117, 41);
             this.bunifuRepackingProcess.TabIndex = 341;
             this.bunifuRepackingProcess.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuRepackingProcess.Visible = false;
@@ -2126,9 +2205,10 @@
             this.label51.BackColor = System.Drawing.Color.Transparent;
             this.label51.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label51.ForeColor = System.Drawing.Color.Black;
-            this.label51.Location = new System.Drawing.Point(518, 126);
+            this.label51.Location = new System.Drawing.Point(691, 155);
+            this.label51.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(41, 15);
+            this.label51.Size = new System.Drawing.Size(50, 20);
             this.label51.TabIndex = 280;
             this.label51.Text = "UOM :";
             this.label51.Visible = false;
@@ -2139,9 +2219,10 @@
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(-340, 486);
+            this.label20.Location = new System.Drawing.Point(-453, 598);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(78, 15);
+            this.label20.Size = new System.Drawing.Size(96, 20);
             this.label20.TabIndex = 303;
             this.label20.Text = "Formulation :";
             this.label20.Visible = false;
@@ -2150,9 +2231,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(117, 467);
+            this.label6.Location = new System.Drawing.Point(156, 575);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 13);
+            this.label6.Size = new System.Drawing.Size(89, 19);
             this.label6.TabIndex = 312;
             this.label6.Text = "Select Batch :";
             this.label6.Visible = false;
@@ -2161,11 +2243,12 @@
             // 
             this.txtfinalrepackdeb.BackColor = System.Drawing.SystemColors.Window;
             this.txtfinalrepackdeb.Font = new System.Drawing.Font("Arial", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfinalrepackdeb.Location = new System.Drawing.Point(636, 512);
+            this.txtfinalrepackdeb.Location = new System.Drawing.Point(848, 630);
+            this.txtfinalrepackdeb.Margin = new System.Windows.Forms.Padding(4);
             this.txtfinalrepackdeb.MaxLength = 100;
             this.txtfinalrepackdeb.Multiline = true;
             this.txtfinalrepackdeb.Name = "txtfinalrepackdeb";
-            this.txtfinalrepackdeb.Size = new System.Drawing.Size(152, 25);
+            this.txtfinalrepackdeb.Size = new System.Drawing.Size(201, 30);
             this.txtfinalrepackdeb.TabIndex = 309;
             this.txtfinalrepackdeb.Text = " ";
             this.txtfinalrepackdeb.Visible = false;
@@ -2176,9 +2259,10 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(251, 437);
+            this.label14.Location = new System.Drawing.Point(335, 538);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(79, 15);
+            this.label14.Size = new System.Drawing.Size(99, 20);
             this.label14.TabIndex = 308;
             this.label14.Text = "Final Repack :";
             this.label14.Visible = false;
@@ -2189,9 +2273,10 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(-343, 515);
+            this.label15.Location = new System.Drawing.Point(-457, 634);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(74, 15);
+            this.label15.Size = new System.Drawing.Size(92, 20);
             this.label15.TabIndex = 306;
             this.label15.Text = "Qty. Shared :";
             this.label15.Visible = false;
@@ -2200,11 +2285,12 @@
             // 
             this.txtshareddeb.BackColor = System.Drawing.SystemColors.Window;
             this.txtshareddeb.Font = new System.Drawing.Font("Arial", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtshareddeb.Location = new System.Drawing.Point(26, 469);
+            this.txtshareddeb.Location = new System.Drawing.Point(35, 577);
+            this.txtshareddeb.Margin = new System.Windows.Forms.Padding(4);
             this.txtshareddeb.MaxLength = 100;
             this.txtshareddeb.Multiline = true;
             this.txtshareddeb.Name = "txtshareddeb";
-            this.txtshareddeb.Size = new System.Drawing.Size(165, 25);
+            this.txtshareddeb.Size = new System.Drawing.Size(219, 30);
             this.txtshareddeb.TabIndex = 304;
             this.txtshareddeb.Text = " ";
             this.txtshareddeb.Visible = false;
@@ -2213,11 +2299,12 @@
             // 
             this.txtactualqtydeb.BackColor = System.Drawing.SystemColors.Window;
             this.txtactualqtydeb.Font = new System.Drawing.Font("Arial", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtactualqtydeb.Location = new System.Drawing.Point(18, 493);
+            this.txtactualqtydeb.Location = new System.Drawing.Point(24, 607);
+            this.txtactualqtydeb.Margin = new System.Windows.Forms.Padding(4);
             this.txtactualqtydeb.MaxLength = 100;
             this.txtactualqtydeb.Multiline = true;
             this.txtactualqtydeb.Name = "txtactualqtydeb";
-            this.txtactualqtydeb.Size = new System.Drawing.Size(165, 27);
+            this.txtactualqtydeb.Size = new System.Drawing.Size(219, 32);
             this.txtactualqtydeb.TabIndex = 305;
             this.txtactualqtydeb.Text = " ";
             this.txtactualqtydeb.Visible = false;
@@ -2228,9 +2315,10 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(46, 477);
+            this.label16.Location = new System.Drawing.Point(61, 587);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(71, 15);
+            this.label16.Size = new System.Drawing.Size(88, 20);
             this.label16.TabIndex = 307;
             this.label16.Text = "Actual QTY :";
             this.label16.Visible = false;
@@ -2240,11 +2328,12 @@
             this.txtneededqty.BackColor = System.Drawing.SystemColors.Window;
             this.txtneededqty.Enabled = false;
             this.txtneededqty.Font = new System.Drawing.Font("Arial", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtneededqty.Location = new System.Drawing.Point(637, 483);
+            this.txtneededqty.Location = new System.Drawing.Point(849, 594);
+            this.txtneededqty.Margin = new System.Windows.Forms.Padding(4);
             this.txtneededqty.MaxLength = 100;
             this.txtneededqty.Multiline = true;
             this.txtneededqty.Name = "txtneededqty";
-            this.txtneededqty.Size = new System.Drawing.Size(152, 25);
+            this.txtneededqty.Size = new System.Drawing.Size(201, 30);
             this.txtneededqty.TabIndex = 299;
             this.txtneededqty.Text = " ";
             this.txtneededqty.Visible = false;
@@ -2255,9 +2344,10 @@
             this.label42.BackColor = System.Drawing.Color.Transparent;
             this.label42.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label42.ForeColor = System.Drawing.Color.Black;
-            this.label42.Location = new System.Drawing.Point(354, 466);
+            this.label42.Location = new System.Drawing.Point(472, 574);
+            this.label42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(81, 15);
+            this.label42.Size = new System.Drawing.Size(102, 20);
             this.label42.TabIndex = 298;
             this.label42.Text = "QTY. Needed :";
             this.label42.Visible = false;
@@ -2271,10 +2361,11 @@
             // 
             this.cboStandardWeight.BackColor = System.Drawing.SystemColors.Control;
             this.cboStandardWeight.FormattingEnabled = true;
-            this.cboStandardWeight.ItemHeight = 13;
-            this.cboStandardWeight.Location = new System.Drawing.Point(25, 469);
+            this.cboStandardWeight.ItemHeight = 19;
+            this.cboStandardWeight.Location = new System.Drawing.Point(33, 577);
+            this.cboStandardWeight.Margin = new System.Windows.Forms.Padding(4);
             this.cboStandardWeight.Name = "cboStandardWeight";
-            this.cboStandardWeight.Size = new System.Drawing.Size(151, 21);
+            this.cboStandardWeight.Size = new System.Drawing.Size(200, 27);
             this.cboStandardWeight.TabIndex = 290;
             this.cboStandardWeight.Visible = false;
             // 
@@ -2289,17 +2380,18 @@
             this.panel2.Controls.Add(this.label49);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(514, 19);
+            this.panel2.Size = new System.Drawing.Size(686, 23);
             this.panel2.TabIndex = 40;
             this.panel2.Visible = false;
             // 
             // txtsearchreceiving
             // 
-            this.txtsearchreceiving.Location = new System.Drawing.Point(456, 4);
+            this.txtsearchreceiving.Location = new System.Drawing.Point(608, 5);
             this.txtsearchreceiving.Margin = new System.Windows.Forms.Padding(1);
             this.txtsearchreceiving.Name = "txtsearchreceiving";
-            this.txtsearchreceiving.Size = new System.Drawing.Size(97, 22);
+            this.txtsearchreceiving.Size = new System.Drawing.Size(128, 25);
             this.txtsearchreceiving.TabIndex = 5;
             this.txtsearchreceiving.Text = "searchreceiveing";
             this.txtsearchreceiving.Visible = false;
@@ -2307,10 +2399,10 @@
             // 
             // txtitemcode
             // 
-            this.txtitemcode.Location = new System.Drawing.Point(342, 5);
+            this.txtitemcode.Location = new System.Drawing.Point(456, 6);
             this.txtitemcode.Margin = new System.Windows.Forms.Padding(1);
             this.txtitemcode.Name = "txtitemcode";
-            this.txtitemcode.Size = new System.Drawing.Size(97, 22);
+            this.txtitemcode.Size = new System.Drawing.Size(128, 25);
             this.txtitemcode.TabIndex = 4;
             this.txtitemcode.Visible = false;
             this.txtitemcode.TextChanged += new System.EventHandler(this.txtitemcode_TextChanged);
@@ -2318,10 +2410,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(677, 6);
+            this.label2.Location = new System.Drawing.Point(903, 7);
             this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.Size = new System.Drawing.Size(45, 19);
             this.label2.TabIndex = 3;
             this.label2.Text = "label2";
             this.label2.Visible = false;
@@ -2329,9 +2421,10 @@
             // txtAllFeed
             // 
             this.txtAllFeed.BackColor = System.Drawing.SystemColors.Control;
-            this.txtAllFeed.Location = new System.Drawing.Point(-1, 5);
+            this.txtAllFeed.Location = new System.Drawing.Point(-1, 6);
+            this.txtAllFeed.Margin = new System.Windows.Forms.Padding(4);
             this.txtAllFeed.Name = "txtAllFeed";
-            this.txtAllFeed.Size = new System.Drawing.Size(250, 22);
+            this.txtAllFeed.Size = new System.Drawing.Size(332, 25);
             this.txtAllFeed.TabIndex = 1;
             this.txtAllFeed.Visible = false;
             // 
@@ -2339,9 +2432,10 @@
             // 
             this.label49.AutoSize = true;
             this.label49.ForeColor = System.Drawing.Color.Black;
-            this.label49.Location = new System.Drawing.Point(252, 5);
+            this.label49.Location = new System.Drawing.Point(336, 6);
+            this.label49.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(99, 13);
+            this.label49.Size = new System.Drawing.Size(118, 19);
             this.label49.TabIndex = 274;
             this.label49.Text = "Date of Received :";
             this.label49.Visible = false;
@@ -2351,10 +2445,11 @@
             this.txtSubSupplier.BackColor = System.Drawing.SystemColors.Window;
             this.txtSubSupplier.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtSubSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSubSupplier.Location = new System.Drawing.Point(100, 26);
+            this.txtSubSupplier.Location = new System.Drawing.Point(133, 32);
+            this.txtSubSupplier.Margin = new System.Windows.Forms.Padding(4);
             this.txtSubSupplier.Multiline = true;
             this.txtSubSupplier.Name = "txtSubSupplier";
-            this.txtSubSupplier.Size = new System.Drawing.Size(305, 24);
+            this.txtSubSupplier.Size = new System.Drawing.Size(405, 29);
             this.txtSubSupplier.TabIndex = 279;
             // 
             // actual_count_reject
@@ -2365,7 +2460,7 @@
             this.actual_count_reject.Name = "actual_count_reject";
             this.actual_count_reject.ReadOnly = true;
             this.actual_count_reject.Visible = false;
-            this.actual_count_reject.Width = 98;
+            this.actual_count_reject.Width = 121;
             // 
             // selected_uom2
             // 
@@ -2374,7 +2469,7 @@
             this.selected_uom2.MinimumWidth = 12;
             this.selected_uom2.Name = "selected_uom2";
             this.selected_uom2.ReadOnly = true;
-            this.selected_uom2.Width = 60;
+            this.selected_uom2.Width = 72;
             // 
             // r_item_description
             // 
@@ -2384,7 +2479,7 @@
             this.r_item_description.Name = "r_item_description";
             this.r_item_description.ReadOnly = true;
             this.r_item_description.Visible = false;
-            this.r_item_description.Width = 92;
+            this.r_item_description.Width = 114;
             // 
             // QA_reject
             // 
@@ -2393,7 +2488,7 @@
             this.QA_reject.MinimumWidth = 12;
             this.QA_reject.Name = "QA_reject";
             this.QA_reject.ReadOnly = true;
-            this.QA_reject.Width = 83;
+            this.QA_reject.Width = 102;
             // 
             // r_QA_by
             // 
@@ -2402,7 +2497,7 @@
             this.r_QA_by.MinimumWidth = 12;
             this.r_QA_by.Name = "r_QA_by";
             this.r_QA_by.ReadOnly = true;
-            this.r_QA_by.Width = 62;
+            this.r_QA_by.Width = 75;
             // 
             // r_receiving_by
             // 
@@ -2411,7 +2506,7 @@
             this.r_receiving_by.MinimumWidth = 12;
             this.r_receiving_by.Name = "r_receiving_by";
             this.r_receiving_by.ReadOnly = true;
-            this.r_receiving_by.Width = 92;
+            this.r_receiving_by.Width = 114;
             // 
             // r_total_delivered
             // 
@@ -2420,7 +2515,7 @@
             this.r_total_delivered.MinimumWidth = 12;
             this.r_total_delivered.Name = "r_total_delivered";
             this.r_total_delivered.ReadOnly = true;
-            this.r_total_delivered.Width = 106;
+            this.r_total_delivered.Width = 135;
             // 
             // r_waiting_delivered
             // 
@@ -2429,7 +2524,7 @@
             this.r_waiting_delivered.MinimumWidth = 12;
             this.r_waiting_delivered.Name = "r_waiting_delivered";
             this.r_waiting_delivered.ReadOnly = true;
-            this.r_waiting_delivered.Width = 73;
+            this.r_waiting_delivered.Width = 89;
             // 
             // r_primary_key
             // 
@@ -2438,16 +2533,16 @@
             this.r_primary_key.MinimumWidth = 12;
             this.r_primary_key.Name = "r_primary_key";
             this.r_primary_key.ReadOnly = true;
-            this.r_primary_key.Width = 66;
+            this.r_primary_key.Width = 79;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(9, 408);
+            this.label11.Location = new System.Drawing.Point(12, 502);
             this.label11.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(218, 15);
+            this.label11.Size = new System.Drawing.Size(274, 20);
             this.label11.TabIndex = 353;
             this.label11.Text = "Production Scheduled Ready for Repack";
             this.label11.Visible = false;
@@ -2455,27 +2550,29 @@
             // dtpreceivingdate
             // 
             this.dtpreceivingdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpreceivingdate.Location = new System.Drawing.Point(264, 421);
+            this.dtpreceivingdate.Location = new System.Drawing.Point(352, 518);
+            this.dtpreceivingdate.Margin = new System.Windows.Forms.Padding(4);
             this.dtpreceivingdate.Name = "dtpreceivingdate";
-            this.dtpreceivingdate.Size = new System.Drawing.Size(91, 23);
+            this.dtpreceivingdate.Size = new System.Drawing.Size(120, 27);
             this.dtpreceivingdate.TabIndex = 256;
             this.dtpreceivingdate.Value = new System.DateTime(2019, 12, 27, 11, 44, 5, 0);
             // 
             // txtSearchx
             // 
-            this.txtSearchx.Location = new System.Drawing.Point(465, 767);
+            this.txtSearchx.Location = new System.Drawing.Point(620, 944);
+            this.txtSearchx.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearchx.Name = "txtSearchx";
-            this.txtSearchx.Size = new System.Drawing.Size(122, 23);
+            this.txtSearchx.Size = new System.Drawing.Size(161, 27);
             this.txtSearchx.TabIndex = 334;
             this.txtSearchx.Text = "searchbarcode";
             this.txtSearchx.Visible = false;
             // 
             // btnOutMaterial
             // 
-            this.btnOutMaterial.Location = new System.Drawing.Point(348, 627);
+            this.btnOutMaterial.Location = new System.Drawing.Point(464, 772);
             this.btnOutMaterial.Margin = new System.Windows.Forms.Padding(1);
             this.btnOutMaterial.Name = "btnOutMaterial";
-            this.btnOutMaterial.Size = new System.Drawing.Size(64, 17);
+            this.btnOutMaterial.Size = new System.Drawing.Size(85, 21);
             this.btnOutMaterial.TabIndex = 357;
             this.btnOutMaterial.Text = "outmaterial";
             this.btnOutMaterial.UseVisualStyleBackColor = true;
@@ -2525,7 +2622,8 @@
             this.dgvMaster2.Enabled = false;
             this.dgvMaster2.EnableHeadersVisualStyles = false;
             this.dgvMaster2.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvMaster2.Location = new System.Drawing.Point(7, 16);
+            this.dgvMaster2.Location = new System.Drawing.Point(9, 20);
+            this.dgvMaster2.Margin = new System.Windows.Forms.Padding(4);
             this.dgvMaster2.MultiSelect = false;
             this.dgvMaster2.Name = "dgvMaster2";
             this.dgvMaster2.ReadOnly = true;
@@ -2535,7 +2633,7 @@
             dataGridViewCellStyle39.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvMaster2.RowsDefaultCellStyle = dataGridViewCellStyle39;
             this.dgvMaster2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMaster2.Size = new System.Drawing.Size(438, 51);
+            this.dgvMaster2.Size = new System.Drawing.Size(584, 63);
             this.dgvMaster2.TabIndex = 317;
             this.dgvMaster2.Visible = false;
             this.dgvMaster2.CurrentCellChanged += new System.EventHandler(this.dgvMaster2_CurrentCellChanged);
@@ -2602,6 +2700,7 @@
             // 
             this.Column1.DataPropertyName = "a";
             this.Column1.HeaderText = "a";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             this.Column1.Visible = false;
@@ -2610,6 +2709,7 @@
             // 
             this.Column2.DataPropertyName = "b";
             this.Column2.HeaderText = "b";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             this.Column2.Visible = false;
@@ -2655,7 +2755,8 @@
             this.dgvAllFeedCode.DefaultCellStyle = dataGridViewCellStyle24;
             this.dgvAllFeedCode.EnableHeadersVisualStyles = false;
             this.dgvAllFeedCode.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvAllFeedCode.Location = new System.Drawing.Point(7, 20);
+            this.dgvAllFeedCode.Location = new System.Drawing.Point(9, 25);
+            this.dgvAllFeedCode.Margin = new System.Windows.Forms.Padding(4);
             this.dgvAllFeedCode.MultiSelect = false;
             this.dgvAllFeedCode.Name = "dgvAllFeedCode";
             this.dgvAllFeedCode.ReadOnly = true;
@@ -2666,7 +2767,7 @@
             this.dgvAllFeedCode.RowsDefaultCellStyle = dataGridViewCellStyle25;
             this.dgvAllFeedCode.RowTemplate.Height = 25;
             this.dgvAllFeedCode.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAllFeedCode.Size = new System.Drawing.Size(440, 367);
+            this.dgvAllFeedCode.Size = new System.Drawing.Size(587, 452);
             this.dgvAllFeedCode.TabIndex = 53;
             this.dgvAllFeedCode.Visible = false;
             this.dgvAllFeedCode.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAllFeedCode_CellContentClick);
@@ -2754,10 +2855,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(14, 167);
+            this.label3.Location = new System.Drawing.Point(19, 206);
             this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 15);
+            this.label3.Size = new System.Drawing.Size(148, 20);
             this.label3.TabIndex = 355;
             this.label3.Text = "Macro Raw Materials";
             this.label3.Visible = false;
@@ -2767,9 +2868,10 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(337, 203);
+            this.label8.Location = new System.Drawing.Point(449, 250);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(14, 13);
+            this.label8.Size = new System.Drawing.Size(17, 17);
             this.label8.TabIndex = 45;
             this.label8.Text = "0";
             this.label8.Visible = false;
@@ -2778,9 +2880,10 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(109, 192);
+            this.label9.Location = new System.Drawing.Point(145, 236);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(67, 13);
+            this.label9.Size = new System.Drawing.Size(85, 17);
             this.label9.TabIndex = 44;
             this.label9.Text = "List counter:";
             this.label9.Visible = false;
@@ -2791,9 +2894,10 @@
             this.lblitemcount.BackColor = System.Drawing.Color.Transparent;
             this.lblitemcount.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblitemcount.ForeColor = System.Drawing.Color.Black;
-            this.lblitemcount.Location = new System.Drawing.Point(359, 169);
+            this.lblitemcount.Location = new System.Drawing.Point(479, 208);
+            this.lblitemcount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblitemcount.Name = "lblitemcount";
-            this.lblitemcount.Size = new System.Drawing.Size(70, 15);
+            this.lblitemcount.Size = new System.Drawing.Size(85, 20);
             this.lblitemcount.TabIndex = 351;
             this.lblitemcount.Text = "Item Count:";
             this.lblitemcount.Visible = false;
@@ -2805,7 +2909,7 @@
             this.r_item_category.MinimumWidth = 12;
             this.r_item_category.Name = "r_item_category";
             this.r_item_category.ReadOnly = true;
-            this.r_item_category.Width = 80;
+            this.r_item_category.Width = 98;
             // 
             // lblmainCount
             // 
@@ -2813,9 +2917,10 @@
             this.lblmainCount.BackColor = System.Drawing.Color.Transparent;
             this.lblmainCount.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblmainCount.ForeColor = System.Drawing.Color.Black;
-            this.lblmainCount.Location = new System.Drawing.Point(429, 169);
+            this.lblmainCount.Location = new System.Drawing.Point(572, 208);
+            this.lblmainCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblmainCount.Name = "lblmainCount";
-            this.lblmainCount.Size = new System.Drawing.Size(19, 15);
+            this.lblmainCount.Size = new System.Drawing.Size(25, 20);
             this.lblmainCount.TabIndex = 349;
             this.lblmainCount.Text = "12";
             this.lblmainCount.Visible = false;
@@ -2828,7 +2933,7 @@
             this.r_supplier2.MinimumWidth = 12;
             this.r_supplier2.Name = "r_supplier2";
             this.r_supplier2.ReadOnly = true;
-            this.r_supplier2.Width = 69;
+            this.r_supplier2.Width = 85;
             // 
             // splitContainer1
             // 
@@ -2983,19 +3088,19 @@
             this.splitContainer1.Panel2.Controls.Add(this.groupBox2);
             this.splitContainer1.Panel2.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
-            this.splitContainer1.Size = new System.Drawing.Size(990, 629);
-            this.splitContainer1.SplitterDistance = 472;
-            this.splitContainer1.SplitterWidth = 2;
+            this.splitContainer1.Size = new System.Drawing.Size(1320, 774);
+            this.splitContainer1.SplitterDistance = 629;
+            this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 1;
             // 
             // txtoptions
             // 
             this.txtoptions.AutoSize = true;
             this.txtoptions.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtoptions.Location = new System.Drawing.Point(232, 13);
+            this.txtoptions.Location = new System.Drawing.Point(309, 16);
             this.txtoptions.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.txtoptions.Name = "txtoptions";
-            this.txtoptions.Size = new System.Drawing.Size(19, 15);
+            this.txtoptions.Size = new System.Drawing.Size(25, 20);
             this.txtoptions.TabIndex = 582;
             this.txtoptions.Text = "12";
             this.txtoptions.Visible = false;
@@ -3004,10 +3109,10 @@
             // 
             this.lbluserid.AutoSize = true;
             this.lbluserid.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbluserid.Location = new System.Drawing.Point(211, 16);
+            this.lbluserid.Location = new System.Drawing.Point(281, 20);
             this.lbluserid.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lbluserid.Name = "lbluserid";
-            this.lbluserid.Size = new System.Drawing.Size(19, 15);
+            this.lbluserid.Size = new System.Drawing.Size(25, 20);
             this.lbluserid.TabIndex = 581;
             this.lbluserid.Text = "12";
             this.lbluserid.Visible = false;
@@ -3044,7 +3149,8 @@
             this.dgvStarChecking.DefaultCellStyle = dataGridViewCellStyle16;
             this.dgvStarChecking.EnableHeadersVisualStyles = false;
             this.dgvStarChecking.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvStarChecking.Location = new System.Drawing.Point(38, 447);
+            this.dgvStarChecking.Location = new System.Drawing.Point(51, 550);
+            this.dgvStarChecking.Margin = new System.Windows.Forms.Padding(4);
             this.dgvStarChecking.MultiSelect = false;
             this.dgvStarChecking.Name = "dgvStarChecking";
             this.dgvStarChecking.ReadOnly = true;
@@ -3056,7 +3162,7 @@
             this.dgvStarChecking.RowsDefaultCellStyle = dataGridViewCellStyle17;
             this.dgvStarChecking.RowTemplate.Height = 52;
             this.dgvStarChecking.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dgvStarChecking.Size = new System.Drawing.Size(370, 30);
+            this.dgvStarChecking.Size = new System.Drawing.Size(493, 37);
             this.dgvStarChecking.TabIndex = 366;
             this.dgvStarChecking.Visible = false;
             // 
@@ -3068,9 +3174,11 @@
             this.bunifuThinButton215.Controls.Add(this.dgvAllFeedCode);
             this.bunifuThinButton215.Controls.Add(this.dgvrawmatsout);
             this.bunifuThinButton215.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton215.Location = new System.Drawing.Point(9, 185);
+            this.bunifuThinButton215.Location = new System.Drawing.Point(12, 228);
+            this.bunifuThinButton215.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuThinButton215.Name = "bunifuThinButton215";
-            this.bunifuThinButton215.Size = new System.Drawing.Size(453, 393);
+            this.bunifuThinButton215.Padding = new System.Windows.Forms.Padding(4);
+            this.bunifuThinButton215.Size = new System.Drawing.Size(604, 484);
             this.bunifuThinButton215.TabIndex = 580;
             this.bunifuThinButton215.TabStop = false;
             this.bunifuThinButton215.Text = "Raw Materials";
@@ -3083,9 +3191,10 @@
             this.lblcountMacroplus.BackColor = System.Drawing.Color.Transparent;
             this.lblcountMacroplus.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcountMacroplus.ForeColor = System.Drawing.Color.Black;
-            this.lblcountMacroplus.Location = new System.Drawing.Point(252, 216);
+            this.lblcountMacroplus.Location = new System.Drawing.Point(336, 266);
+            this.lblcountMacroplus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblcountMacroplus.Name = "lblcountMacroplus";
-            this.lblcountMacroplus.Size = new System.Drawing.Size(13, 15);
+            this.lblcountMacroplus.Size = new System.Drawing.Size(17, 20);
             this.lblcountMacroplus.TabIndex = 582;
             this.lblcountMacroplus.Text = "0";
             this.lblcountMacroplus.Visible = false;
@@ -3096,9 +3205,10 @@
             this.lblcountMacro.BackColor = System.Drawing.Color.Transparent;
             this.lblcountMacro.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcountMacro.ForeColor = System.Drawing.Color.Black;
-            this.lblcountMacro.Location = new System.Drawing.Point(210, 214);
+            this.lblcountMacro.Location = new System.Drawing.Point(280, 263);
+            this.lblcountMacro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblcountMacro.Name = "lblcountMacro";
-            this.lblcountMacro.Size = new System.Drawing.Size(13, 15);
+            this.lblcountMacro.Size = new System.Drawing.Size(17, 20);
             this.lblcountMacro.TabIndex = 581;
             this.lblcountMacro.Text = "0";
             this.lblcountMacro.Visible = false;
@@ -3135,7 +3245,8 @@
             this.dgvCountMacro.DefaultCellStyle = dataGridViewCellStyle20;
             this.dgvCountMacro.EnableHeadersVisualStyles = false;
             this.dgvCountMacro.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvCountMacro.Location = new System.Drawing.Point(36, 204);
+            this.dgvCountMacro.Location = new System.Drawing.Point(48, 251);
+            this.dgvCountMacro.Margin = new System.Windows.Forms.Padding(4);
             this.dgvCountMacro.MultiSelect = false;
             this.dgvCountMacro.Name = "dgvCountMacro";
             this.dgvCountMacro.ReadOnly = true;
@@ -3147,7 +3258,7 @@
             this.dgvCountMacro.RowsDefaultCellStyle = dataGridViewCellStyle21;
             this.dgvCountMacro.RowTemplate.Height = 52;
             this.dgvCountMacro.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dgvCountMacro.Size = new System.Drawing.Size(370, 30);
+            this.dgvCountMacro.Size = new System.Drawing.Size(493, 37);
             this.dgvCountMacro.TabIndex = 581;
             this.dgvCountMacro.Visible = false;
             // 
@@ -3191,7 +3302,8 @@
             this.dgvrawmatsout.DefaultCellStyle = dataGridViewCellStyle28;
             this.dgvrawmatsout.EnableHeadersVisualStyles = false;
             this.dgvrawmatsout.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvrawmatsout.Location = new System.Drawing.Point(7, 20);
+            this.dgvrawmatsout.Location = new System.Drawing.Point(9, 25);
+            this.dgvrawmatsout.Margin = new System.Windows.Forms.Padding(4);
             this.dgvrawmatsout.MultiSelect = false;
             this.dgvrawmatsout.Name = "dgvrawmatsout";
             this.dgvrawmatsout.ReadOnly = true;
@@ -3202,7 +3314,7 @@
             this.dgvrawmatsout.RowsDefaultCellStyle = dataGridViewCellStyle29;
             this.dgvrawmatsout.RowTemplate.Height = 25;
             this.dgvrawmatsout.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvrawmatsout.Size = new System.Drawing.Size(440, 367);
+            this.dgvrawmatsout.Size = new System.Drawing.Size(587, 452);
             this.dgvrawmatsout.TabIndex = 440;
             this.dgvrawmatsout.Visible = false;
             this.dgvrawmatsout.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvrawmatsout_CellContentClick);
@@ -3270,6 +3382,7 @@
             // 
             this.rp_description.DataPropertyName = "rp_description";
             this.rp_description.HeaderText = "ITEM";
+            this.rp_description.MinimumWidth = 6;
             this.rp_description.Name = "rp_description";
             this.rp_description.ReadOnly = true;
             // 
@@ -3280,9 +3393,10 @@
             this.btnHideProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHideProd.Image = ((System.Drawing.Image)(resources.GetObject("btnHideProd.Image")));
             this.btnHideProd.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnHideProd.Location = new System.Drawing.Point(11, 587);
+            this.btnHideProd.Location = new System.Drawing.Point(15, 722);
+            this.btnHideProd.Margin = new System.Windows.Forms.Padding(4);
             this.btnHideProd.Name = "btnHideProd";
-            this.btnHideProd.Size = new System.Drawing.Size(126, 28);
+            this.btnHideProd.Size = new System.Drawing.Size(168, 34);
             this.btnHideProd.TabIndex = 579;
             this.btnHideProd.Text = "&Hide Production";
             this.btnHideProd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3297,9 +3411,10 @@
             this.btnProdShow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProdShow.Image = ((System.Drawing.Image)(resources.GetObject("btnProdShow.Image")));
             this.btnProdShow.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnProdShow.Location = new System.Drawing.Point(11, 587);
+            this.btnProdShow.Location = new System.Drawing.Point(15, 722);
+            this.btnProdShow.Margin = new System.Windows.Forms.Padding(4);
             this.btnProdShow.Name = "btnProdShow";
-            this.btnProdShow.Size = new System.Drawing.Size(126, 28);
+            this.btnProdShow.Size = new System.Drawing.Size(168, 34);
             this.btnProdShow.TabIndex = 578;
             this.btnProdShow.Text = "&View Production";
             this.btnProdShow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3346,7 +3461,8 @@
             this.dgv1stView.DefaultCellStyle = dataGridViewCellStyle32;
             this.dgv1stView.EnableHeadersVisualStyles = false;
             this.dgv1stView.GridColor = System.Drawing.SystemColors.Control;
-            this.dgv1stView.Location = new System.Drawing.Point(10, 40);
+            this.dgv1stView.Location = new System.Drawing.Point(13, 49);
+            this.dgv1stView.Margin = new System.Windows.Forms.Padding(4);
             this.dgv1stView.MultiSelect = false;
             this.dgv1stView.Name = "dgv1stView";
             this.dgv1stView.ReadOnly = true;
@@ -3360,7 +3476,7 @@
             this.dgv1stView.RowTemplate.Height = 40;
             this.dgv1stView.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.dgv1stView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv1stView.Size = new System.Drawing.Size(451, 51);
+            this.dgv1stView.Size = new System.Drawing.Size(601, 63);
             this.dgv1stView.TabIndex = 439;
             this.dgv1stView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgv1stView_CellFormatting);
             this.dgv1stView.CurrentCellChanged += new System.EventHandler(this.dgv1stView_CurrentCellChanged_1);
@@ -3406,6 +3522,7 @@
             // 
             this.bagorbin.DataPropertyName = "bagorbin";
             this.bagorbin.HeaderText = "Bagorbin";
+            this.bagorbin.MinimumWidth = 6;
             this.bagorbin.Name = "bagorbin";
             this.bagorbin.ReadOnly = true;
             this.bagorbin.Visible = false;
@@ -3414,6 +3531,7 @@
             // 
             this.plannerdate.DataPropertyName = "plannerdate";
             this.plannerdate.HeaderText = "plan date";
+            this.plannerdate.MinimumWidth = 6;
             this.plannerdate.Name = "plannerdate";
             this.plannerdate.ReadOnly = true;
             this.plannerdate.Visible = false;
@@ -3422,6 +3540,7 @@
             // 
             this.additional_bin.DataPropertyName = "additional_bin";
             this.additional_bin.HeaderText = "addional bin";
+            this.additional_bin.MinimumWidth = 6;
             this.additional_bin.Name = "additional_bin";
             this.additional_bin.ReadOnly = true;
             this.additional_bin.Visible = false;
@@ -3430,6 +3549,7 @@
             // 
             this.mainid.DataPropertyName = "mainid";
             this.mainid.HeaderText = "mainid";
+            this.mainid.MinimumWidth = 6;
             this.mainid.Name = "mainid";
             this.mainid.ReadOnly = true;
             this.mainid.Visible = false;
@@ -3438,9 +3558,11 @@
             // 
             this.bunifuStartImport.Controls.Add(this.dgvMaster2);
             this.bunifuStartImport.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuStartImport.Location = new System.Drawing.Point(9, 93);
+            this.bunifuStartImport.Location = new System.Drawing.Point(12, 114);
+            this.bunifuStartImport.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuStartImport.Name = "bunifuStartImport";
-            this.bunifuStartImport.Size = new System.Drawing.Size(453, 71);
+            this.bunifuStartImport.Padding = new System.Windows.Forms.Padding(4);
+            this.bunifuStartImport.Size = new System.Drawing.Size(604, 87);
             this.bunifuStartImport.TabIndex = 577;
             this.bunifuStartImport.TabStop = false;
             this.bunifuStartImport.Text = "Material Formulation Information";
@@ -3453,9 +3575,10 @@
             this.bunifuStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bunifuStart.Image = ((System.Drawing.Image)(resources.GetObject("bunifuStart.Image")));
             this.bunifuStart.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bunifuStart.Location = new System.Drawing.Point(4, 3);
+            this.bunifuStart.Location = new System.Drawing.Point(5, 4);
+            this.bunifuStart.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuStart.Name = "bunifuStart";
-            this.bunifuStart.Size = new System.Drawing.Size(144, 28);
+            this.bunifuStart.Size = new System.Drawing.Size(192, 34);
             this.bunifuStart.TabIndex = 576;
             this.bunifuStart.Text = "&Advanced Repacking";
             this.bunifuStart.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3470,9 +3593,10 @@
             this.btngreaterthan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btngreaterthan.Image = ((System.Drawing.Image)(resources.GetObject("btngreaterthan.Image")));
             this.btngreaterthan.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btngreaterthan.Location = new System.Drawing.Point(291, 6);
+            this.btngreaterthan.Location = new System.Drawing.Point(388, 7);
+            this.btngreaterthan.Margin = new System.Windows.Forms.Padding(4);
             this.btngreaterthan.Name = "btngreaterthan";
-            this.btngreaterthan.Size = new System.Drawing.Size(88, 28);
+            this.btngreaterthan.Size = new System.Drawing.Size(117, 34);
             this.btngreaterthan.TabIndex = 492;
             this.btngreaterthan.Text = "&Previous";
             this.btngreaterthan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3488,9 +3612,10 @@
             this.btnlessthan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnlessthan.Image = ((System.Drawing.Image)(resources.GetObject("btnlessthan.Image")));
             this.btnlessthan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnlessthan.Location = new System.Drawing.Point(383, 6);
+            this.btnlessthan.Location = new System.Drawing.Point(511, 7);
+            this.btnlessthan.Margin = new System.Windows.Forms.Padding(4);
             this.btnlessthan.Name = "btnlessthan";
-            this.btnlessthan.Size = new System.Drawing.Size(75, 28);
+            this.btnlessthan.Size = new System.Drawing.Size(100, 34);
             this.btnlessthan.TabIndex = 491;
             this.btnlessthan.Text = "&Next";
             this.btnlessthan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -3503,11 +3628,11 @@
             this.txtstartmacrorepacking.BackColor = System.Drawing.SystemColors.Window;
             this.txtstartmacrorepacking.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtstartmacrorepacking.Enabled = false;
-            this.txtstartmacrorepacking.Location = new System.Drawing.Point(132, 317);
+            this.txtstartmacrorepacking.Location = new System.Drawing.Point(176, 390);
             this.txtstartmacrorepacking.Margin = new System.Windows.Forms.Padding(1);
             this.txtstartmacrorepacking.Name = "txtstartmacrorepacking";
             this.txtstartmacrorepacking.ReadOnly = true;
-            this.txtstartmacrorepacking.Size = new System.Drawing.Size(162, 23);
+            this.txtstartmacrorepacking.Size = new System.Drawing.Size(215, 27);
             this.txtstartmacrorepacking.TabIndex = 485;
             this.txtstartmacrorepacking.Visible = false;
             // 
@@ -3516,11 +3641,11 @@
             this.txtSumofRepacking.BackColor = System.Drawing.SystemColors.Window;
             this.txtSumofRepacking.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSumofRepacking.Enabled = false;
-            this.txtSumofRepacking.Location = new System.Drawing.Point(169, 348);
+            this.txtSumofRepacking.Location = new System.Drawing.Point(225, 428);
             this.txtSumofRepacking.Margin = new System.Windows.Forms.Padding(1);
             this.txtSumofRepacking.Name = "txtSumofRepacking";
             this.txtSumofRepacking.ReadOnly = true;
-            this.txtSumofRepacking.Size = new System.Drawing.Size(162, 23);
+            this.txtSumofRepacking.Size = new System.Drawing.Size(215, 27);
             this.txtSumofRepacking.TabIndex = 484;
             this.txtSumofRepacking.Visible = false;
             // 
@@ -3531,11 +3656,12 @@
             this.txtSecondReceivingCount.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtSecondReceivingCount.Enabled = false;
             this.txtSecondReceivingCount.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSecondReceivingCount.Location = new System.Drawing.Point(114, 636);
+            this.txtSecondReceivingCount.Location = new System.Drawing.Point(152, 783);
+            this.txtSecondReceivingCount.Margin = new System.Windows.Forms.Padding(4);
             this.txtSecondReceivingCount.Multiline = true;
             this.txtSecondReceivingCount.Name = "txtSecondReceivingCount";
             this.txtSecondReceivingCount.ReadOnly = true;
-            this.txtSecondReceivingCount.Size = new System.Drawing.Size(101, 15);
+            this.txtSecondReceivingCount.Size = new System.Drawing.Size(135, 18);
             this.txtSecondReceivingCount.TabIndex = 453;
             // 
             // txtSecondReceivedId
@@ -3545,11 +3671,12 @@
             this.txtSecondReceivedId.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtSecondReceivedId.Enabled = false;
             this.txtSecondReceivedId.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSecondReceivedId.Location = new System.Drawing.Point(110, 636);
+            this.txtSecondReceivedId.Location = new System.Drawing.Point(147, 783);
+            this.txtSecondReceivedId.Margin = new System.Windows.Forms.Padding(4);
             this.txtSecondReceivedId.Multiline = true;
             this.txtSecondReceivedId.Name = "txtSecondReceivedId";
             this.txtSecondReceivedId.ReadOnly = true;
-            this.txtSecondReceivedId.Size = new System.Drawing.Size(101, 15);
+            this.txtSecondReceivedId.Size = new System.Drawing.Size(135, 18);
             this.txtSecondReceivedId.TabIndex = 452;
             // 
             // dgvReceiving
@@ -3577,7 +3704,8 @@
             this.dgvReceiving.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgvReceiving.EnableHeadersVisualStyles = false;
             this.dgvReceiving.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvReceiving.Location = new System.Drawing.Point(123, 636);
+            this.dgvReceiving.Location = new System.Drawing.Point(164, 783);
+            this.dgvReceiving.Margin = new System.Windows.Forms.Padding(4);
             this.dgvReceiving.MultiSelect = false;
             this.dgvReceiving.Name = "dgvReceiving";
             this.dgvReceiving.ReadOnly = true;
@@ -3590,7 +3718,7 @@
             this.dgvReceiving.RowsDefaultCellStyle = dataGridViewCellStyle42;
             this.dgvReceiving.RowTemplate.Height = 70;
             this.dgvReceiving.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvReceiving.Size = new System.Drawing.Size(152, 69);
+            this.dgvReceiving.Size = new System.Drawing.Size(203, 85);
             this.dgvReceiving.TabIndex = 451;
             // 
             // dataGridViewTextBoxColumn20
@@ -3615,19 +3743,20 @@
             this.lblremaining2.BackColor = System.Drawing.Color.Transparent;
             this.lblremaining2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblremaining2.ForeColor = System.Drawing.Color.Black;
-            this.lblremaining2.Location = new System.Drawing.Point(328, 168);
+            this.lblremaining2.Location = new System.Drawing.Point(437, 207);
+            this.lblremaining2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblremaining2.Name = "lblremaining2";
-            this.lblremaining2.Size = new System.Drawing.Size(13, 15);
+            this.lblremaining2.Size = new System.Drawing.Size(17, 20);
             this.lblremaining2.TabIndex = 450;
             this.lblremaining2.Text = "0";
             this.lblremaining2.Visible = false;
             // 
             // metroReprint
             // 
-            this.metroReprint.Location = new System.Drawing.Point(374, 247);
+            this.metroReprint.Location = new System.Drawing.Point(499, 304);
             this.metroReprint.Margin = new System.Windows.Forms.Padding(1);
             this.metroReprint.Name = "metroReprint";
-            this.metroReprint.Size = new System.Drawing.Size(74, 16);
+            this.metroReprint.Size = new System.Drawing.Size(99, 20);
             this.metroReprint.TabIndex = 448;
             this.metroReprint.Text = "Reprint";
             this.metroReprint.UseSelectable = true;
@@ -3659,7 +3788,8 @@
             this.dgvPreparation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgvPreparation.EnableHeadersVisualStyles = false;
             this.dgvPreparation.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvPreparation.Location = new System.Drawing.Point(159, 483);
+            this.dgvPreparation.Location = new System.Drawing.Point(212, 594);
+            this.dgvPreparation.Margin = new System.Windows.Forms.Padding(4);
             this.dgvPreparation.MultiSelect = false;
             this.dgvPreparation.Name = "dgvPreparation";
             this.dgvPreparation.ReadOnly = true;
@@ -3672,7 +3802,7 @@
             this.dgvPreparation.RowsDefaultCellStyle = dataGridViewCellStyle45;
             this.dgvPreparation.RowTemplate.Height = 70;
             this.dgvPreparation.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPreparation.Size = new System.Drawing.Size(284, 69);
+            this.dgvPreparation.Size = new System.Drawing.Size(379, 85);
             this.dgvPreparation.TabIndex = 447;
             this.dgvPreparation.Visible = false;
             // 
@@ -3697,20 +3827,20 @@
             this.lblproddate.AutoSize = true;
             this.lblproddate.BackColor = System.Drawing.Color.PeachPuff;
             this.lblproddate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblproddate.Location = new System.Drawing.Point(223, 645);
+            this.lblproddate.Location = new System.Drawing.Point(297, 794);
             this.lblproddate.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblproddate.Name = "lblproddate";
-            this.lblproddate.Size = new System.Drawing.Size(19, 15);
+            this.lblproddate.Size = new System.Drawing.Size(25, 20);
             this.lblproddate.TabIndex = 446;
             this.lblproddate.Text = "12";
             // 
             // lblmyrecipe
             // 
             this.lblmyrecipe.AutoSize = true;
-            this.lblmyrecipe.Location = new System.Drawing.Point(198, 636);
+            this.lblmyrecipe.Location = new System.Drawing.Point(264, 783);
             this.lblmyrecipe.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblmyrecipe.Name = "lblmyrecipe";
-            this.lblmyrecipe.Size = new System.Drawing.Size(68, 15);
+            this.lblmyrecipe.Size = new System.Drawing.Size(87, 20);
             this.lblmyrecipe.TabIndex = 445;
             this.lblmyrecipe.Text = "3 days prod";
             // 
@@ -3739,7 +3869,8 @@
             this.dgvOutMacro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgvOutMacro.EnableHeadersVisualStyles = false;
             this.dgvOutMacro.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvOutMacro.Location = new System.Drawing.Point(92, 389);
+            this.dgvOutMacro.Location = new System.Drawing.Point(123, 479);
+            this.dgvOutMacro.Margin = new System.Windows.Forms.Padding(4);
             this.dgvOutMacro.MultiSelect = false;
             this.dgvOutMacro.Name = "dgvOutMacro";
             this.dgvOutMacro.ReadOnly = true;
@@ -3752,7 +3883,7 @@
             this.dgvOutMacro.RowsDefaultCellStyle = dataGridViewCellStyle48;
             this.dgvOutMacro.RowTemplate.Height = 70;
             this.dgvOutMacro.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvOutMacro.Size = new System.Drawing.Size(284, 69);
+            this.dgvOutMacro.Size = new System.Drawing.Size(379, 85);
             this.dgvOutMacro.TabIndex = 444;
             this.dgvOutMacro.Visible = false;
             // 
@@ -3777,36 +3908,38 @@
             this.lblfeedtype.AutoSize = true;
             this.lblfeedtype.BackColor = System.Drawing.Color.PeachPuff;
             this.lblfeedtype.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblfeedtype.Location = new System.Drawing.Point(18, 5);
+            this.lblfeedtype.Location = new System.Drawing.Point(24, 6);
             this.lblfeedtype.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblfeedtype.Name = "lblfeedtype";
-            this.lblfeedtype.Size = new System.Drawing.Size(13, 15);
+            this.lblfeedtype.Size = new System.Drawing.Size(17, 20);
             this.lblfeedtype.TabIndex = 443;
             this.lblfeedtype.Text = "0";
             this.lblfeedtype.Visible = false;
             // 
             // txtplusthree
             // 
-            this.txtplusthree.Location = new System.Drawing.Point(192, 680);
+            this.txtplusthree.Location = new System.Drawing.Point(256, 837);
+            this.txtplusthree.Margin = new System.Windows.Forms.Padding(4);
             this.txtplusthree.Name = "txtplusthree";
-            this.txtplusthree.Size = new System.Drawing.Size(122, 23);
+            this.txtplusthree.Size = new System.Drawing.Size(161, 27);
             this.txtplusthree.TabIndex = 442;
             // 
             // txtplustwo
             // 
-            this.txtplustwo.Location = new System.Drawing.Point(189, 646);
+            this.txtplustwo.Location = new System.Drawing.Point(252, 795);
+            this.txtplustwo.Margin = new System.Windows.Forms.Padding(4);
             this.txtplustwo.Name = "txtplustwo";
-            this.txtplustwo.Size = new System.Drawing.Size(122, 23);
+            this.txtplustwo.Size = new System.Drawing.Size(161, 27);
             this.txtplustwo.TabIndex = 441;
             // 
             // lblitemcode
             // 
             this.lblitemcode.AutoSize = true;
             this.lblitemcode.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblitemcode.Location = new System.Drawing.Point(378, 674);
+            this.lblitemcode.Location = new System.Drawing.Point(504, 830);
             this.lblitemcode.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblitemcode.Name = "lblitemcode";
-            this.lblitemcode.Size = new System.Drawing.Size(19, 15);
+            this.lblitemcode.Size = new System.Drawing.Size(25, 20);
             this.lblitemcode.TabIndex = 438;
             this.lblitemcode.Text = "12";
             // 
@@ -3814,10 +3947,10 @@
             // 
             this.lblprodid.AutoSize = true;
             this.lblprodid.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblprodid.Location = new System.Drawing.Point(339, 676);
+            this.lblprodid.Location = new System.Drawing.Point(452, 832);
             this.lblprodid.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblprodid.Name = "lblprodid";
-            this.lblprodid.Size = new System.Drawing.Size(19, 15);
+            this.lblprodid.Size = new System.Drawing.Size(25, 20);
             this.lblprodid.TabIndex = 437;
             this.lblprodid.Text = "12";
             // 
@@ -3827,18 +3960,19 @@
             this.lblbatchmonitoring.BackColor = System.Drawing.Color.Transparent;
             this.lblbatchmonitoring.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblbatchmonitoring.ForeColor = System.Drawing.Color.Black;
-            this.lblbatchmonitoring.Location = new System.Drawing.Point(377, 447);
+            this.lblbatchmonitoring.Location = new System.Drawing.Point(503, 550);
+            this.lblbatchmonitoring.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblbatchmonitoring.Name = "lblbatchmonitoring";
-            this.lblbatchmonitoring.Size = new System.Drawing.Size(14, 13);
+            this.lblbatchmonitoring.Size = new System.Drawing.Size(17, 17);
             this.lblbatchmonitoring.TabIndex = 435;
             this.lblbatchmonitoring.Text = "1";
             // 
             // btnCheckactivebatch
             // 
-            this.btnCheckactivebatch.Location = new System.Drawing.Point(402, 436);
+            this.btnCheckactivebatch.Location = new System.Drawing.Point(536, 537);
             this.btnCheckactivebatch.Margin = new System.Windows.Forms.Padding(1);
             this.btnCheckactivebatch.Name = "btnCheckactivebatch";
-            this.btnCheckactivebatch.Size = new System.Drawing.Size(41, 24);
+            this.btnCheckactivebatch.Size = new System.Drawing.Size(55, 30);
             this.btnCheckactivebatch.TabIndex = 434;
             this.btnCheckactivebatch.Text = "button1";
             this.btnCheckactivebatch.UseVisualStyleBackColor = true;
@@ -3870,7 +4004,8 @@
             this.dgvoutofbatch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgvoutofbatch.EnableHeadersVisualStyles = false;
             this.dgvoutofbatch.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvoutofbatch.Location = new System.Drawing.Point(270, 628);
+            this.dgvoutofbatch.Location = new System.Drawing.Point(360, 773);
+            this.dgvoutofbatch.Margin = new System.Windows.Forms.Padding(4);
             this.dgvoutofbatch.MultiSelect = false;
             this.dgvoutofbatch.Name = "dgvoutofbatch";
             this.dgvoutofbatch.ReadOnly = true;
@@ -3883,7 +4018,7 @@
             this.dgvoutofbatch.RowsDefaultCellStyle = dataGridViewCellStyle51;
             this.dgvoutofbatch.RowTemplate.Height = 70;
             this.dgvoutofbatch.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvoutofbatch.Size = new System.Drawing.Size(284, 69);
+            this.dgvoutofbatch.Size = new System.Drawing.Size(379, 85);
             this.dgvoutofbatch.TabIndex = 433;
             this.dgvoutofbatch.Visible = false;
             // 
@@ -3909,9 +4044,10 @@
             this.lblbatchno.BackColor = System.Drawing.Color.Transparent;
             this.lblbatchno.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblbatchno.ForeColor = System.Drawing.Color.Black;
-            this.lblbatchno.Location = new System.Drawing.Point(198, 169);
+            this.lblbatchno.Location = new System.Drawing.Point(264, 208);
+            this.lblbatchno.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblbatchno.Name = "lblbatchno";
-            this.lblbatchno.Size = new System.Drawing.Size(13, 15);
+            this.lblbatchno.Size = new System.Drawing.Size(17, 20);
             this.lblbatchno.TabIndex = 432;
             this.lblbatchno.Text = "0";
             this.lblbatchno.Visible = false;
@@ -3922,9 +4058,10 @@
             this.label54.BackColor = System.Drawing.Color.Transparent;
             this.label54.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label54.ForeColor = System.Drawing.Color.Black;
-            this.label54.Location = new System.Drawing.Point(382, 398);
+            this.label54.Location = new System.Drawing.Point(509, 490);
+            this.label54.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(14, 13);
+            this.label54.Size = new System.Drawing.Size(17, 17);
             this.label54.TabIndex = 431;
             this.label54.Text = "0";
             this.label54.Visible = false;
@@ -3935,9 +4072,10 @@
             this.lblbatch.BackColor = System.Drawing.Color.Transparent;
             this.lblbatch.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblbatch.ForeColor = System.Drawing.Color.Black;
-            this.lblbatch.Location = new System.Drawing.Point(156, 168);
+            this.lblbatch.Location = new System.Drawing.Point(208, 207);
+            this.lblbatch.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblbatch.Name = "lblbatch";
-            this.lblbatch.Size = new System.Drawing.Size(43, 15);
+            this.lblbatch.Size = new System.Drawing.Size(53, 20);
             this.lblbatch.TabIndex = 430;
             this.lblbatch.Text = "Batch :";
             this.lblbatch.Visible = false;
@@ -3948,19 +4086,20 @@
             this.lblrecipeid.BackColor = System.Drawing.Color.Transparent;
             this.lblrecipeid.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblrecipeid.ForeColor = System.Drawing.Color.Black;
-            this.lblrecipeid.Location = new System.Drawing.Point(316, 447);
+            this.lblrecipeid.Location = new System.Drawing.Point(421, 550);
+            this.lblrecipeid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblrecipeid.Name = "lblrecipeid";
-            this.lblrecipeid.Size = new System.Drawing.Size(14, 13);
+            this.lblrecipeid.Size = new System.Drawing.Size(17, 17);
             this.lblrecipeid.TabIndex = 429;
             this.lblrecipeid.Text = "0";
             this.lblrecipeid.Visible = false;
             // 
             // buttonwhatever
             // 
-            this.buttonwhatever.Location = new System.Drawing.Point(579, 617);
+            this.buttonwhatever.Location = new System.Drawing.Point(772, 759);
             this.buttonwhatever.Margin = new System.Windows.Forms.Padding(1);
             this.buttonwhatever.Name = "buttonwhatever";
-            this.buttonwhatever.Size = new System.Drawing.Size(28, 17);
+            this.buttonwhatever.Size = new System.Drawing.Size(37, 21);
             this.buttonwhatever.TabIndex = 428;
             this.buttonwhatever.Text = "button1";
             this.buttonwhatever.UseVisualStyleBackColor = true;
@@ -3970,19 +4109,20 @@
             // txt3rdsearchpogi
             // 
             this.txt3rdsearchpogi.BackColor = System.Drawing.SystemColors.Control;
-            this.txt3rdsearchpogi.Location = new System.Drawing.Point(318, 347);
+            this.txt3rdsearchpogi.Location = new System.Drawing.Point(424, 427);
+            this.txt3rdsearchpogi.Margin = new System.Windows.Forms.Padding(4);
             this.txt3rdsearchpogi.Name = "txt3rdsearchpogi";
-            this.txt3rdsearchpogi.Size = new System.Drawing.Size(97, 23);
+            this.txt3rdsearchpogi.Size = new System.Drawing.Size(128, 27);
             this.txt3rdsearchpogi.TabIndex = 427;
             this.txt3rdsearchpogi.Visible = false;
             this.txt3rdsearchpogi.TextChanged += new System.EventHandler(this.txt3rdsearchpogi_TextChanged);
             // 
             // btnbalance
             // 
-            this.btnbalance.Location = new System.Drawing.Point(579, 644);
+            this.btnbalance.Location = new System.Drawing.Point(772, 793);
             this.btnbalance.Margin = new System.Windows.Forms.Padding(1);
             this.btnbalance.Name = "btnbalance";
-            this.btnbalance.Size = new System.Drawing.Size(82, 17);
+            this.btnbalance.Size = new System.Drawing.Size(109, 21);
             this.btnbalance.TabIndex = 426;
             this.btnbalance.Text = "check balance";
             this.btnbalance.UseVisualStyleBackColor = true;
@@ -4012,7 +4152,8 @@
             this.datalastpack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.datalastpack.EnableHeadersVisualStyles = false;
             this.datalastpack.GridColor = System.Drawing.SystemColors.Control;
-            this.datalastpack.Location = new System.Drawing.Point(520, 622);
+            this.datalastpack.Location = new System.Drawing.Point(693, 766);
+            this.datalastpack.Margin = new System.Windows.Forms.Padding(4);
             this.datalastpack.MultiSelect = false;
             this.datalastpack.Name = "datalastpack";
             this.datalastpack.ReadOnly = true;
@@ -4021,7 +4162,7 @@
             dataGridViewCellStyle54.SelectionBackColor = System.Drawing.Color.Teal;
             this.datalastpack.RowsDefaultCellStyle = dataGridViewCellStyle54;
             this.datalastpack.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datalastpack.Size = new System.Drawing.Size(40, 64);
+            this.datalastpack.Size = new System.Drawing.Size(53, 79);
             this.datalastpack.TabIndex = 331;
             this.datalastpack.Visible = false;
             this.datalastpack.CurrentCellChanged += new System.EventHandler(this.datalastpack_CurrentCellChanged);
@@ -4030,39 +4171,41 @@
             // 
             this.txtproductionid.BackColor = System.Drawing.SystemColors.Window;
             this.txtproductionid.Font = new System.Drawing.Font("Arial", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtproductionid.Location = new System.Drawing.Point(227, 373);
+            this.txtproductionid.Location = new System.Drawing.Point(303, 459);
+            this.txtproductionid.Margin = new System.Windows.Forms.Padding(4);
             this.txtproductionid.MaxLength = 100;
             this.txtproductionid.Multiline = true;
             this.txtproductionid.Name = "txtproductionid";
-            this.txtproductionid.Size = new System.Drawing.Size(165, 25);
+            this.txtproductionid.Size = new System.Drawing.Size(219, 30);
             this.txtproductionid.TabIndex = 424;
             this.txtproductionid.Text = " ";
             // 
             // txtfinalstring
             // 
             this.txtfinalstring.BackColor = System.Drawing.SystemColors.Control;
-            this.txtfinalstring.Location = new System.Drawing.Point(546, 723);
+            this.txtfinalstring.Location = new System.Drawing.Point(728, 890);
+            this.txtfinalstring.Margin = new System.Windows.Forms.Padding(4);
             this.txtfinalstring.Name = "txtfinalstring";
-            this.txtfinalstring.Size = new System.Drawing.Size(97, 23);
+            this.txtfinalstring.Size = new System.Drawing.Size(128, 27);
             this.txtfinalstring.TabIndex = 337;
             this.txtfinalstring.Visible = false;
             // 
             // txtdateofoutminus2
             // 
-            this.txtdateofoutminus2.Location = new System.Drawing.Point(227, 723);
+            this.txtdateofoutminus2.Location = new System.Drawing.Point(303, 890);
             this.txtdateofoutminus2.Margin = new System.Windows.Forms.Padding(1);
             this.txtdateofoutminus2.Name = "txtdateofoutminus2";
-            this.txtdateofoutminus2.Size = new System.Drawing.Size(98, 23);
+            this.txtdateofoutminus2.Size = new System.Drawing.Size(129, 27);
             this.txtdateofoutminus2.TabIndex = 423;
             this.txtdateofoutminus2.Text = "txtdateofoutminus2";
             this.txtdateofoutminus2.Visible = false;
             // 
             // txtdesviewone
             // 
-            this.txtdesviewone.Location = new System.Drawing.Point(174, 635);
+            this.txtdesviewone.Location = new System.Drawing.Point(232, 782);
             this.txtdesviewone.Margin = new System.Windows.Forms.Padding(1);
             this.txtdesviewone.Name = "txtdesviewone";
-            this.txtdesviewone.Size = new System.Drawing.Size(94, 23);
+            this.txtdesviewone.Size = new System.Drawing.Size(124, 27);
             this.txtdesviewone.TabIndex = 422;
             this.txtdesviewone.Visible = false;
             // 
@@ -4070,10 +4213,10 @@
             // 
             this.lblcountprod3.AutoSize = true;
             this.lblcountprod3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcountprod3.Location = new System.Drawing.Point(168, 597);
+            this.lblcountprod3.Location = new System.Drawing.Point(224, 735);
             this.lblcountprod3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblcountprod3.Name = "lblcountprod3";
-            this.lblcountprod3.Size = new System.Drawing.Size(70, 15);
+            this.lblcountprod3.Size = new System.Drawing.Size(85, 18);
             this.lblcountprod3.TabIndex = 421;
             this.lblcountprod3.Text = "3 days prod";
             this.lblcountprod3.Visible = false;
@@ -4082,11 +4225,11 @@
             // 
             this.txtdateminus1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtdateminus1.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdateminus1.Location = new System.Drawing.Point(287, 765);
+            this.txtdateminus1.Location = new System.Drawing.Point(383, 942);
             this.txtdateminus1.Margin = new System.Windows.Forms.Padding(1);
             this.txtdateminus1.Multiline = true;
             this.txtdateminus1.Name = "txtdateminus1";
-            this.txtdateminus1.Size = new System.Drawing.Size(68, 16);
+            this.txtdateminus1.Size = new System.Drawing.Size(91, 20);
             this.txtdateminus1.TabIndex = 420;
             this.txtdateminus1.Text = "dateminus1";
             this.txtdateminus1.Visible = false;
@@ -4094,19 +4237,20 @@
             // txtbind
             // 
             this.txtbind.BackColor = System.Drawing.SystemColors.Control;
-            this.txtbind.Location = new System.Drawing.Point(541, 741);
+            this.txtbind.Location = new System.Drawing.Point(721, 912);
+            this.txtbind.Margin = new System.Windows.Forms.Padding(4);
             this.txtbind.Name = "txtbind";
-            this.txtbind.Size = new System.Drawing.Size(97, 23);
+            this.txtbind.Size = new System.Drawing.Size(128, 27);
             this.txtbind.TabIndex = 329;
             this.txtbind.Visible = false;
             this.txtbind.TextChanged += new System.EventHandler(this.txtbind_TextChanged);
             // 
             // metroButton2
             // 
-            this.metroButton2.Location = new System.Drawing.Point(31, 718);
+            this.metroButton2.Location = new System.Drawing.Point(41, 884);
             this.metroButton2.Margin = new System.Windows.Forms.Padding(1);
             this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(102, 12);
+            this.metroButton2.Size = new System.Drawing.Size(136, 15);
             this.metroButton2.TabIndex = 344;
             this.metroButton2.Text = "metroDebYerorNowarning";
             this.metroButton2.UseSelectable = true;
@@ -4115,10 +4259,10 @@
             // 
             // metroButton3
             // 
-            this.metroButton3.Location = new System.Drawing.Point(111, 658);
+            this.metroButton3.Location = new System.Drawing.Point(148, 810);
             this.metroButton3.Margin = new System.Windows.Forms.Padding(1);
             this.metroButton3.Name = "metroButton3";
-            this.metroButton3.Size = new System.Drawing.Size(70, 32);
+            this.metroButton3.Size = new System.Drawing.Size(93, 39);
             this.metroButton3.TabIndex = 417;
             this.metroButton3.Text = "Query update all recipe";
             this.metroButton3.UseSelectable = true;
@@ -4128,20 +4272,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 21);
+            this.label1.Location = new System.Drawing.Point(21, 26);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 15);
+            this.label1.Size = new System.Drawing.Size(106, 20);
             this.label1.TabIndex = 354;
             this.label1.Text = "Total Records :";
             this.label1.Visible = false;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(291, 652);
+            this.button4.Location = new System.Drawing.Point(388, 802);
             this.button4.Margin = new System.Windows.Forms.Padding(1);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(99, 21);
+            this.button4.Size = new System.Drawing.Size(132, 26);
             this.button4.TabIndex = 364;
             this.button4.Text = "NoReceiving";
             this.button4.UseVisualStyleBackColor = true;
@@ -4149,19 +4293,20 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(68, 636);
+            this.textBox1.Location = new System.Drawing.Point(91, 783);
             this.textBox1.Margin = new System.Windows.Forms.Padding(1);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(61, 23);
+            this.textBox1.Size = new System.Drawing.Size(80, 27);
             this.textBox1.TabIndex = 363;
             this.textBox1.Visible = false;
             // 
             // txtlastpack
             // 
             this.txtlastpack.BackColor = System.Drawing.SystemColors.Control;
-            this.txtlastpack.Location = new System.Drawing.Point(348, 418);
+            this.txtlastpack.Location = new System.Drawing.Point(464, 514);
+            this.txtlastpack.Margin = new System.Windows.Forms.Padding(4);
             this.txtlastpack.Name = "txtlastpack";
-            this.txtlastpack.Size = new System.Drawing.Size(97, 23);
+            this.txtlastpack.Size = new System.Drawing.Size(128, 27);
             this.txtlastpack.TabIndex = 330;
             this.txtlastpack.Visible = false;
             this.txtlastpack.TextChanged += new System.EventHandler(this.txtlastpack_TextChanged);
@@ -4225,7 +4370,8 @@
             this.dgv_table_2nd_sup.Enabled = false;
             this.dgv_table_2nd_sup.EnableHeadersVisualStyles = false;
             this.dgv_table_2nd_sup.GridColor = System.Drawing.SystemColors.Control;
-            this.dgv_table_2nd_sup.Location = new System.Drawing.Point(36, 486);
+            this.dgv_table_2nd_sup.Location = new System.Drawing.Point(48, 598);
+            this.dgv_table_2nd_sup.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_table_2nd_sup.MultiSelect = false;
             this.dgv_table_2nd_sup.Name = "dgv_table_2nd_sup";
             this.dgv_table_2nd_sup.ReadOnly = true;
@@ -4236,7 +4382,7 @@
             dataGridViewCellStyle58.SelectionForeColor = System.Drawing.Color.White;
             this.dgv_table_2nd_sup.RowsDefaultCellStyle = dataGridViewCellStyle58;
             this.dgv_table_2nd_sup.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_table_2nd_sup.Size = new System.Drawing.Size(376, 71);
+            this.dgv_table_2nd_sup.Size = new System.Drawing.Size(501, 87);
             this.dgv_table_2nd_sup.TabIndex = 308;
             this.dgv_table_2nd_sup.Visible = false;
             this.dgv_table_2nd_sup.CurrentCellChanged += new System.EventHandler(this.dgv_table_2nd_sup_CurrentCellChanged);
@@ -4250,7 +4396,7 @@
             this.r_item_id2.Name = "r_item_id2";
             this.r_item_id2.ReadOnly = true;
             this.r_item_id2.Visible = false;
-            this.r_item_id2.Width = 65;
+            this.r_item_id2.Width = 87;
             // 
             // received_id2
             // 
@@ -4260,7 +4406,7 @@
             this.received_id2.MinimumWidth = 12;
             this.received_id2.Name = "received_id2";
             this.received_id2.ReadOnly = true;
-            this.received_id2.Width = 43;
+            this.received_id2.Width = 53;
             // 
             // r_item_code2
             // 
@@ -4270,7 +4416,7 @@
             this.r_item_code2.MinimumWidth = 12;
             this.r_item_code2.Name = "r_item_code2";
             this.r_item_code2.ReadOnly = true;
-            this.r_item_code2.Width = 85;
+            this.r_item_code2.Width = 114;
             // 
             // totalnstock2
             // 
@@ -4280,7 +4426,7 @@
             this.totalnstock2.MinimumWidth = 12;
             this.totalnstock2.Name = "totalnstock2";
             this.totalnstock2.ReadOnly = true;
-            this.totalnstock2.Width = 73;
+            this.totalnstock2.Width = 90;
             // 
             // r_qty_ordered
             // 
@@ -4289,7 +4435,7 @@
             this.r_qty_ordered.MinimumWidth = 12;
             this.r_qty_ordered.Name = "r_qty_ordered";
             this.r_qty_ordered.ReadOnly = true;
-            this.r_qty_ordered.Width = 83;
+            this.r_qty_ordered.Width = 105;
             // 
             // actual_count_good
             // 
@@ -4298,7 +4444,7 @@
             this.actual_count_good.MinimumWidth = 12;
             this.actual_count_good.Name = "actual_count_good";
             this.actual_count_good.ReadOnly = true;
-            this.actual_count_good.Width = 141;
+            this.actual_count_good.Width = 175;
             // 
             // r_expected
             // 
@@ -4308,7 +4454,7 @@
             this.r_expected.MinimumWidth = 12;
             this.r_expected.Name = "r_expected";
             this.r_expected.ReadOnly = true;
-            this.r_expected.Width = 127;
+            this.r_expected.Width = 175;
             // 
             // r_actual_receiving
             // 
@@ -4318,7 +4464,7 @@
             this.r_actual_receiving.MinimumWidth = 12;
             this.r_actual_receiving.Name = "r_actual_receiving";
             this.r_actual_receiving.ReadOnly = true;
-            this.r_actual_receiving.Width = 119;
+            this.r_actual_receiving.Width = 162;
             // 
             // r_mfg_date
             // 
@@ -4328,7 +4474,7 @@
             this.r_mfg_date.MinimumWidth = 12;
             this.r_mfg_date.Name = "r_mfg_date";
             this.r_mfg_date.ReadOnly = true;
-            this.r_mfg_date.Width = 56;
+            this.r_mfg_date.Width = 78;
             // 
             // r_expiry_date
             // 
@@ -4338,7 +4484,7 @@
             this.r_expiry_date.MinimumWidth = 12;
             this.r_expiry_date.Name = "r_expiry_date";
             this.r_expiry_date.ReadOnly = true;
-            this.r_expiry_date.Width = 71;
+            this.r_expiry_date.Width = 101;
             // 
             // r_missing
             // 
@@ -4347,7 +4493,7 @@
             this.r_missing.MinimumWidth = 12;
             this.r_missing.Name = "r_missing";
             this.r_missing.ReadOnly = true;
-            this.r_missing.Width = 73;
+            this.r_missing.Width = 88;
             // 
             // days_to_expired2
             // 
@@ -4357,7 +4503,7 @@
             this.days_to_expired2.MinimumWidth = 12;
             this.days_to_expired2.Name = "days_to_expired2";
             this.days_to_expired2.ReadOnly = true;
-            this.days_to_expired2.Width = 57;
+            this.days_to_expired2.Width = 70;
             // 
             // r_qty_delivered2
             // 
@@ -4366,7 +4512,7 @@
             this.r_qty_delivered2.MinimumWidth = 12;
             this.r_qty_delivered2.Name = "r_qty_delivered2";
             this.r_qty_delivered2.ReadOnly = true;
-            this.r_qty_delivered2.Width = 82;
+            this.r_qty_delivered2.Width = 99;
             // 
             // QA_rgood
             // 
@@ -4375,7 +4521,7 @@
             this.QA_rgood.MinimumWidth = 12;
             this.QA_rgood.Name = "QA_rgood";
             this.QA_rgood.ReadOnly = true;
-            this.QA_rgood.Width = 83;
+            this.QA_rgood.Width = 102;
             // 
             // lbltotalitem
             // 
@@ -4383,9 +4529,10 @@
             this.lbltotalitem.BackColor = System.Drawing.Color.Transparent;
             this.lbltotalitem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltotalitem.ForeColor = System.Drawing.Color.Black;
-            this.lbltotalitem.Location = new System.Drawing.Point(223, 168);
+            this.lbltotalitem.Location = new System.Drawing.Point(297, 207);
+            this.lbltotalitem.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltotalitem.Name = "lbltotalitem";
-            this.lbltotalitem.Size = new System.Drawing.Size(98, 15);
+            this.lbltotalitem.Size = new System.Drawing.Size(124, 20);
             this.lbltotalitem.TabIndex = 350;
             this.lbltotalitem.Text = "Total Remaining :";
             this.lbltotalitem.Visible = false;
@@ -4393,9 +4540,10 @@
             // txt3rdsearch
             // 
             this.txt3rdsearch.BackColor = System.Drawing.SystemColors.Control;
-            this.txt3rdsearch.Location = new System.Drawing.Point(214, 342);
+            this.txt3rdsearch.Location = new System.Drawing.Point(285, 421);
+            this.txt3rdsearch.Margin = new System.Windows.Forms.Padding(4);
             this.txt3rdsearch.Name = "txt3rdsearch";
-            this.txt3rdsearch.Size = new System.Drawing.Size(80, 23);
+            this.txt3rdsearch.Size = new System.Drawing.Size(105, 27);
             this.txt3rdsearch.TabIndex = 2;
             this.txt3rdsearch.Visible = false;
             this.txt3rdsearch.TextChanged += new System.EventHandler(this.txt3rdsearch_TextChanged);
@@ -4406,9 +4554,10 @@
             this.lblcountFcode.BackColor = System.Drawing.Color.Transparent;
             this.lblcountFcode.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcountFcode.ForeColor = System.Drawing.Color.Black;
-            this.lblcountFcode.Location = new System.Drawing.Point(325, 167);
+            this.lblcountFcode.Location = new System.Drawing.Point(433, 206);
+            this.lblcountFcode.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblcountFcode.Name = "lblcountFcode";
-            this.lblcountFcode.Size = new System.Drawing.Size(13, 15);
+            this.lblcountFcode.Size = new System.Drawing.Size(17, 20);
             this.lblcountFcode.TabIndex = 348;
             this.lblcountFcode.Text = "0";
             this.lblcountFcode.Visible = false;
@@ -4416,9 +4565,10 @@
             // txtmainsearch
             // 
             this.txtmainsearch.BackColor = System.Drawing.SystemColors.Control;
-            this.txtmainsearch.Location = new System.Drawing.Point(264, 198);
+            this.txtmainsearch.Location = new System.Drawing.Point(352, 244);
+            this.txtmainsearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtmainsearch.Name = "txtmainsearch";
-            this.txtmainsearch.Size = new System.Drawing.Size(62, 23);
+            this.txtmainsearch.Size = new System.Drawing.Size(81, 27);
             this.txtmainsearch.TabIndex = 1;
             this.txtmainsearch.Visible = false;
             this.txtmainsearch.TextChanged += new System.EventHandler(this.txtmainsearch_TextChanged);
@@ -4427,11 +4577,11 @@
             // 
             this.txtdateplusone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtdateplusone.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdateplusone.Location = new System.Drawing.Point(280, 741);
+            this.txtdateplusone.Location = new System.Drawing.Point(373, 912);
             this.txtdateplusone.Margin = new System.Windows.Forms.Padding(1);
             this.txtdateplusone.Multiline = true;
             this.txtdateplusone.Name = "txtdateplusone";
-            this.txtdateplusone.Size = new System.Drawing.Size(74, 16);
+            this.txtdateplusone.Size = new System.Drawing.Size(99, 20);
             this.txtdateplusone.TabIndex = 334;
             this.txtdateplusone.Text = "dateplusone";
             this.txtdateplusone.Visible = false;
@@ -4440,20 +4590,20 @@
             // 
             this.lblFooterQTy.AutoSize = true;
             this.lblFooterQTy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFooterQTy.Location = new System.Drawing.Point(263, 597);
+            this.lblFooterQTy.Location = new System.Drawing.Point(351, 735);
             this.lblFooterQTy.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblFooterQTy.Name = "lblFooterQTy";
-            this.lblFooterQTy.Size = new System.Drawing.Size(122, 15);
+            this.lblFooterQTy.Size = new System.Drawing.Size(153, 18);
             this.lblFooterQTy.TabIndex = 324;
             this.lblFooterQTy.Text = "Total Qty for Repack :";
             this.lblFooterQTy.Visible = false;
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(380, 697);
+            this.metroButton1.Location = new System.Drawing.Point(507, 858);
             this.metroButton1.Margin = new System.Windows.Forms.Padding(1);
             this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(28, 10);
+            this.metroButton1.Size = new System.Drawing.Size(37, 12);
             this.metroButton1.TabIndex = 321;
             this.metroButton1.Text = "metroButton1";
             this.metroButton1.UseSelectable = true;
@@ -4463,10 +4613,10 @@
             // label200
             // 
             this.label200.AutoSize = true;
-            this.label200.Location = new System.Drawing.Point(219, 749);
+            this.label200.Location = new System.Drawing.Point(292, 922);
             this.label200.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label200.Name = "label200";
-            this.label200.Size = new System.Drawing.Size(38, 15);
+            this.label200.Size = new System.Drawing.Size(50, 20);
             this.label200.TabIndex = 311;
             this.label200.Text = "label5";
             this.label200.Visible = false;
@@ -4475,10 +4625,10 @@
             // 
             this.lblCountss200.AutoSize = true;
             this.lblCountss200.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountss200.Location = new System.Drawing.Point(392, 598);
+            this.lblCountss200.Location = new System.Drawing.Point(523, 736);
             this.lblCountss200.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblCountss200.Name = "lblCountss200";
-            this.lblCountss200.Size = new System.Drawing.Size(39, 15);
+            this.lblCountss200.Size = new System.Drawing.Size(48, 18);
             this.lblCountss200.TabIndex = 310;
             this.lblCountss200.Text = "Count";
             this.lblCountss200.Visible = false;
@@ -4486,10 +4636,10 @@
             // lblreceived
             // 
             this.lblreceived.AutoSize = true;
-            this.lblreceived.Location = new System.Drawing.Point(378, 749);
+            this.lblreceived.Location = new System.Drawing.Point(504, 922);
             this.lblreceived.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblreceived.Name = "lblreceived";
-            this.lblreceived.Size = new System.Drawing.Size(38, 15);
+            this.lblreceived.Size = new System.Drawing.Size(50, 20);
             this.lblreceived.TabIndex = 309;
             this.lblreceived.Text = "label5";
             this.lblreceived.Visible = false;
@@ -4497,19 +4647,20 @@
             // lblrepack
             // 
             this.lblrepack.AutoSize = true;
-            this.lblrepack.Location = new System.Drawing.Point(62, 198);
+            this.lblrepack.Location = new System.Drawing.Point(83, 244);
             this.lblrepack.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblrepack.Name = "lblrepack";
-            this.lblrepack.Size = new System.Drawing.Size(38, 15);
+            this.lblrepack.Size = new System.Drawing.Size(50, 20);
             this.lblrepack.TabIndex = 54;
             this.lblrepack.Text = "label5";
             // 
             // txtSearch
             // 
             this.txtSearch.BackColor = System.Drawing.SystemColors.Control;
-            this.txtSearch.Location = new System.Drawing.Point(470, 703);
+            this.txtSearch.Location = new System.Drawing.Point(627, 865);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(98, 23);
+            this.txtSearch.Size = new System.Drawing.Size(129, 27);
             this.txtSearch.TabIndex = 56;
             this.txtSearch.Visible = false;
             // 
@@ -4517,10 +4668,10 @@
             // 
             this.lblraws.AutoSize = true;
             this.lblraws.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblraws.Location = new System.Drawing.Point(97, 22);
+            this.lblraws.Location = new System.Drawing.Point(129, 27);
             this.lblraws.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblraws.Name = "lblraws";
-            this.lblraws.Size = new System.Drawing.Size(19, 15);
+            this.lblraws.Size = new System.Drawing.Size(25, 20);
             this.lblraws.TabIndex = 52;
             this.lblraws.Text = "12";
             this.lblraws.Visible = false;
@@ -4528,9 +4679,10 @@
             // txtsearchitems
             // 
             this.txtsearchitems.BackColor = System.Drawing.SystemColors.Control;
-            this.txtsearchitems.Location = new System.Drawing.Point(380, 398);
+            this.txtsearchitems.Location = new System.Drawing.Point(507, 490);
+            this.txtsearchitems.Margin = new System.Windows.Forms.Padding(4);
             this.txtsearchitems.Name = "txtsearchitems";
-            this.txtsearchitems.Size = new System.Drawing.Size(79, 23);
+            this.txtsearchitems.Size = new System.Drawing.Size(104, 27);
             this.txtsearchitems.TabIndex = 50;
             this.txtsearchitems.Visible = false;
             this.txtsearchitems.TextChanged += new System.EventHandler(this.txtsearchitems_TextChanged);
@@ -4542,9 +4694,10 @@
             this.btnProdList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProdList.Image = ((System.Drawing.Image)(resources.GetObject("btnProdList.Image")));
             this.btnProdList.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnProdList.Location = new System.Drawing.Point(241, 648);
+            this.btnProdList.Location = new System.Drawing.Point(321, 798);
+            this.btnProdList.Margin = new System.Windows.Forms.Padding(4);
             this.btnProdList.Name = "btnProdList";
-            this.btnProdList.Size = new System.Drawing.Size(126, 28);
+            this.btnProdList.Size = new System.Drawing.Size(168, 34);
             this.btnProdList.TabIndex = 580;
             this.btnProdList.Text = "&Production List";
             this.btnProdList.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -4559,9 +4712,10 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.Location = new System.Drawing.Point(377, 584);
+            this.button6.Location = new System.Drawing.Point(503, 719);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(109, 28);
+            this.button6.Size = new System.Drawing.Size(145, 34);
             this.button6.TabIndex = 577;
             this.button6.Text = "&Stop Repacking";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -4572,10 +4726,10 @@
             // 
             this.lblprodname.AutoSize = true;
             this.lblprodname.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblprodname.Location = new System.Drawing.Point(315, 4);
+            this.lblprodname.Location = new System.Drawing.Point(420, 5);
             this.lblprodname.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblprodname.Name = "lblprodname";
-            this.lblprodname.Size = new System.Drawing.Size(86, 15);
+            this.lblprodname.Size = new System.Drawing.Size(107, 20);
             this.lblprodname.TabIndex = 574;
             this.lblprodname.Text = "Production ID :";
             this.lblprodname.Visible = false;
@@ -4585,10 +4739,10 @@
             this.lblproductionid.AutoSize = true;
             this.lblproductionid.BackColor = System.Drawing.Color.PeachPuff;
             this.lblproductionid.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblproductionid.Location = new System.Drawing.Point(408, 5);
+            this.lblproductionid.Location = new System.Drawing.Point(544, 6);
             this.lblproductionid.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblproductionid.Name = "lblproductionid";
-            this.lblproductionid.Size = new System.Drawing.Size(14, 15);
+            this.lblproductionid.Size = new System.Drawing.Size(17, 20);
             this.lblproductionid.TabIndex = 487;
             this.lblproductionid.Text = "0";
             this.lblproductionid.Visible = false;
@@ -4599,9 +4753,10 @@
             this.panelCode.Controls.Add(this.txtControlNumber);
             this.panelCode.Controls.Add(this.label4);
             this.panelCode.Controls.Add(this.label44);
-            this.panelCode.Location = new System.Drawing.Point(7, 439);
+            this.panelCode.Location = new System.Drawing.Point(9, 540);
+            this.panelCode.Margin = new System.Windows.Forms.Padding(4);
             this.panelCode.Name = "panelCode";
-            this.panelCode.Size = new System.Drawing.Size(316, 148);
+            this.panelCode.Size = new System.Drawing.Size(421, 182);
             this.panelCode.TabIndex = 573;
             this.panelCode.Visible = false;
             this.panelCode.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCode_Paint);
@@ -4624,10 +4779,10 @@
             this.btnValidate.IdleFillColor = System.Drawing.Color.CornflowerBlue;
             this.btnValidate.IdleForecolor = System.Drawing.SystemColors.Window;
             this.btnValidate.IdleLineColor = System.Drawing.SystemColors.Window;
-            this.btnValidate.Location = new System.Drawing.Point(78, 88);
-            this.btnValidate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnValidate.Location = new System.Drawing.Point(104, 108);
+            this.btnValidate.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnValidate.Name = "btnValidate";
-            this.btnValidate.Size = new System.Drawing.Size(156, 51);
+            this.btnValidate.Size = new System.Drawing.Size(208, 63);
             this.btnValidate.TabIndex = 557;
             this.btnValidate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnValidate.Click += new System.EventHandler(this.btnValidate_Click);
@@ -4635,11 +4790,11 @@
             // txtControlNumber
             // 
             this.txtControlNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtControlNumber.Location = new System.Drawing.Point(52, 47);
+            this.txtControlNumber.Location = new System.Drawing.Point(69, 58);
             this.txtControlNumber.Margin = new System.Windows.Forms.Padding(1);
             this.txtControlNumber.Name = "txtControlNumber";
             this.txtControlNumber.PasswordChar = '?';
-            this.txtControlNumber.Size = new System.Drawing.Size(220, 40);
+            this.txtControlNumber.Size = new System.Drawing.Size(292, 49);
             this.txtControlNumber.TabIndex = 556;
             this.txtControlNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtControlNumber.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtControlNumber_KeyDown);
@@ -4648,9 +4803,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(39, 27);
+            this.label4.Location = new System.Drawing.Point(52, 33);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(247, 16);
+            this.label4.Size = new System.Drawing.Size(318, 20);
             this.label4.TabIndex = 1;
             this.label4.Text = "Enter the Control Number first to proceed";
             // 
@@ -4658,9 +4814,10 @@
             // 
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(73, 8);
+            this.label44.Location = new System.Drawing.Point(97, 10);
+            this.label44.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(174, 16);
+            this.label44.Size = new System.Drawing.Size(217, 20);
             this.label44.TabIndex = 0;
             this.label44.Text = "Request Barcode to Reprint";
             // 
@@ -4682,10 +4839,10 @@
             this.btnReprint.IdleFillColor = System.Drawing.Color.CornflowerBlue;
             this.btnReprint.IdleForecolor = System.Drawing.SystemColors.Window;
             this.btnReprint.IdleLineColor = System.Drawing.SystemColors.Window;
-            this.btnReprint.Location = new System.Drawing.Point(372, 449);
-            this.btnReprint.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnReprint.Location = new System.Drawing.Point(496, 553);
+            this.btnReprint.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnReprint.Name = "btnReprint";
-            this.btnReprint.Size = new System.Drawing.Size(135, 52);
+            this.btnReprint.Size = new System.Drawing.Size(180, 64);
             this.btnReprint.TabIndex = 431;
             this.btnReprint.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnReprint.Visible = false;
@@ -4697,9 +4854,10 @@
             this.lblalreadyrepack.BackColor = System.Drawing.Color.Transparent;
             this.lblalreadyrepack.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblalreadyrepack.ForeColor = System.Drawing.Color.Black;
-            this.lblalreadyrepack.Location = new System.Drawing.Point(518, 126);
+            this.lblalreadyrepack.Location = new System.Drawing.Point(691, 155);
+            this.lblalreadyrepack.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblalreadyrepack.Name = "lblalreadyrepack";
-            this.lblalreadyrepack.Size = new System.Drawing.Size(13, 15);
+            this.lblalreadyrepack.Size = new System.Drawing.Size(17, 20);
             this.lblalreadyrepack.TabIndex = 430;
             this.lblalreadyrepack.Text = "0";
             this.lblalreadyrepack.Visible = false;
@@ -4729,7 +4887,8 @@
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.Location = new System.Drawing.Point(150, 469);
+            this.dataGridView1.Location = new System.Drawing.Point(200, 577);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -4742,7 +4901,7 @@
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle61;
             this.dataGridView1.RowTemplate.Height = 70;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(105, 47);
+            this.dataGridView1.Size = new System.Drawing.Size(140, 58);
             this.dataGridView1.TabIndex = 358;
             this.dataGridView1.Visible = false;
             // 
@@ -4764,10 +4923,10 @@
             // 
             // btnTryOut
             // 
-            this.btnTryOut.Location = new System.Drawing.Point(-334, 556);
+            this.btnTryOut.Location = new System.Drawing.Point(-445, 684);
             this.btnTryOut.Margin = new System.Windows.Forms.Padding(1);
             this.btnTryOut.Name = "btnTryOut";
-            this.btnTryOut.Size = new System.Drawing.Size(60, 26);
+            this.btnTryOut.Size = new System.Drawing.Size(80, 32);
             this.btnTryOut.TabIndex = 343;
             this.btnTryOut.Text = "Tryout";
             this.btnTryOut.UseVisualStyleBackColor = true;
@@ -4780,21 +4939,22 @@
             this.txtwhgood.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtwhgood.Enabled = false;
             this.txtwhgood.Font = new System.Drawing.Font("Arial", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtwhgood.Location = new System.Drawing.Point(146, 393);
+            this.txtwhgood.Location = new System.Drawing.Point(195, 484);
+            this.txtwhgood.Margin = new System.Windows.Forms.Padding(4);
             this.txtwhgood.MaxLength = 100;
             this.txtwhgood.Multiline = true;
             this.txtwhgood.Name = "txtwhgood";
-            this.txtwhgood.Size = new System.Drawing.Size(78, 20);
+            this.txtwhgood.Size = new System.Drawing.Size(104, 25);
             this.txtwhgood.TabIndex = 313;
             this.txtwhgood.Text = " ";
             this.txtwhgood.Visible = false;
             // 
             // txtrawitemcode
             // 
-            this.txtrawitemcode.Location = new System.Drawing.Point(510, 140);
+            this.txtrawitemcode.Location = new System.Drawing.Point(680, 172);
             this.txtrawitemcode.Margin = new System.Windows.Forms.Padding(1);
             this.txtrawitemcode.Name = "txtrawitemcode";
-            this.txtrawitemcode.Size = new System.Drawing.Size(97, 22);
+            this.txtrawitemcode.Size = new System.Drawing.Size(128, 25);
             this.txtrawitemcode.TabIndex = 6;
             this.txtrawitemcode.Visible = false;
             this.txtrawitemcode.TextChanged += new System.EventHandler(this.txtrawitemcode_TextChanged);
@@ -4805,11 +4965,12 @@
             this.txtrepackby.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtrepackby.Enabled = false;
             this.txtrepackby.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtrepackby.Location = new System.Drawing.Point(566, 363);
+            this.txtrepackby.Location = new System.Drawing.Point(755, 447);
+            this.txtrepackby.Margin = new System.Windows.Forms.Padding(4);
             this.txtrepackby.MaxLength = 100;
             this.txtrepackby.Multiline = true;
             this.txtrepackby.Name = "txtrepackby";
-            this.txtrepackby.Size = new System.Drawing.Size(149, 23);
+            this.txtrepackby.Size = new System.Drawing.Size(199, 28);
             this.txtrepackby.TabIndex = 301;
             this.txtrepackby.Text = " ";
             this.txtrepackby.Visible = false;
@@ -4820,11 +4981,11 @@
             this.groupBox7.Controls.Add(this.txtdatenowstamp);
             this.groupBox7.Controls.Add(this.btnyesorno);
             this.groupBox7.Controls.Add(this.dataView);
-            this.groupBox7.Location = new System.Drawing.Point(9, 321);
+            this.groupBox7.Location = new System.Drawing.Point(12, 395);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(1);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(1);
-            this.groupBox7.Size = new System.Drawing.Size(506, 89);
+            this.groupBox7.Size = new System.Drawing.Size(675, 110);
             this.groupBox7.TabIndex = 340;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Previos Actual Repacking Logs";
@@ -4833,29 +4994,29 @@
             // txtMyLastID
             // 
             this.txtMyLastID.Enabled = false;
-            this.txtMyLastID.Location = new System.Drawing.Point(236, 10);
+            this.txtMyLastID.Location = new System.Drawing.Point(315, 12);
             this.txtMyLastID.Margin = new System.Windows.Forms.Padding(1);
             this.txtMyLastID.Multiline = true;
             this.txtMyLastID.Name = "txtMyLastID";
-            this.txtMyLastID.Size = new System.Drawing.Size(91, 19);
+            this.txtMyLastID.Size = new System.Drawing.Size(120, 22);
             this.txtMyLastID.TabIndex = 450;
             // 
             // txtdatenowstamp
             // 
             this.txtdatenowstamp.Enabled = false;
-            this.txtdatenowstamp.Location = new System.Drawing.Point(332, 10);
+            this.txtdatenowstamp.Location = new System.Drawing.Point(443, 12);
             this.txtdatenowstamp.Margin = new System.Windows.Forms.Padding(1);
             this.txtdatenowstamp.Multiline = true;
             this.txtdatenowstamp.Name = "txtdatenowstamp";
-            this.txtdatenowstamp.Size = new System.Drawing.Size(166, 19);
+            this.txtdatenowstamp.Size = new System.Drawing.Size(220, 22);
             this.txtdatenowstamp.TabIndex = 449;
             // 
             // btnyesorno
             // 
-            this.btnyesorno.Location = new System.Drawing.Point(268, -14);
+            this.btnyesorno.Location = new System.Drawing.Point(357, -17);
             this.btnyesorno.Margin = new System.Windows.Forms.Padding(1);
             this.btnyesorno.Name = "btnyesorno";
-            this.btnyesorno.Size = new System.Drawing.Size(28, 20);
+            this.btnyesorno.Size = new System.Drawing.Size(37, 25);
             this.btnyesorno.TabIndex = 345;
             this.btnyesorno.Text = "Yerornow Warning";
             this.btnyesorno.UseVisualStyleBackColor = true;
@@ -4902,7 +5063,8 @@
             this.dataView.DefaultCellStyle = dataGridViewCellStyle64;
             this.dataView.EnableHeadersVisualStyles = false;
             this.dataView.GridColor = System.Drawing.SystemColors.Control;
-            this.dataView.Location = new System.Drawing.Point(4, 30);
+            this.dataView.Location = new System.Drawing.Point(5, 37);
+            this.dataView.Margin = new System.Windows.Forms.Padding(4);
             this.dataView.Name = "dataView";
             this.dataView.ReadOnly = true;
             dataGridViewCellStyle65.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -4915,7 +5077,7 @@
             this.dataView.RowHeadersDefaultCellStyle = dataGridViewCellStyle65;
             this.dataView.RowHeadersVisible = false;
             this.dataView.RowHeadersWidth = 102;
-            this.dataView.Size = new System.Drawing.Size(494, 55);
+            this.dataView.Size = new System.Drawing.Size(659, 68);
             this.dataView.TabIndex = 308;
             this.dataView.CurrentCellChanged += new System.EventHandler(this.dataView_CurrentCellChanged);
             // 
@@ -4927,7 +5089,7 @@
             this.IDD.Name = "IDD";
             this.IDD.ReadOnly = true;
             this.IDD.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.IDD.Width = 51;
+            this.IDD.Width = 62;
             // 
             // selected
             // 
@@ -4938,7 +5100,7 @@
             this.selected.ReadOnly = true;
             this.selected.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.selected.TrueValue = "TRUE";
-            this.selected.Width = 56;
+            this.selected.Width = 65;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -4947,7 +5109,7 @@
             this.dataGridViewTextBoxColumn2.MinimumWidth = 12;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 90;
+            this.dataGridViewTextBoxColumn2.Width = 110;
             // 
             // Emp_Name
             // 
@@ -4956,7 +5118,7 @@
             this.Emp_Name.MinimumWidth = 12;
             this.Emp_Name.Name = "Emp_Name";
             this.Emp_Name.ReadOnly = true;
-            this.Emp_Name.Width = 101;
+            this.Emp_Name.Width = 123;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -4965,7 +5127,7 @@
             this.dataGridViewTextBoxColumn3.MinimumWidth = 12;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 85;
+            this.dataGridViewTextBoxColumn3.Width = 104;
             // 
             // Position
             // 
@@ -4974,7 +5136,7 @@
             this.Position.MinimumWidth = 12;
             this.Position.Name = "Position";
             this.Position.ReadOnly = true;
-            this.Position.Width = 94;
+            this.Position.Width = 117;
             // 
             // Status
             // 
@@ -4983,7 +5145,7 @@
             this.Status.MinimumWidth = 12;
             this.Status.Name = "Status";
             this.Status.ReadOnly = true;
-            this.Status.Width = 57;
+            this.Status.Width = 71;
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -4992,7 +5154,7 @@
             this.dataGridViewTextBoxColumn4.MinimumWidth = 12;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 91;
+            this.dataGridViewTextBoxColumn4.Width = 113;
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -5001,25 +5163,26 @@
             this.dataGridViewTextBoxColumn5.MinimumWidth = 12;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 84;
+            this.dataGridViewTextBoxColumn5.Width = 106;
             // 
             // lbltotalreceived
             // 
             this.lbltotalreceived.AutoSize = true;
             this.lbltotalreceived.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltotalreceived.Location = new System.Drawing.Point(197, -14);
+            this.lbltotalreceived.Location = new System.Drawing.Point(263, -17);
             this.lbltotalreceived.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lbltotalreceived.Name = "lbltotalreceived";
-            this.lbltotalreceived.Size = new System.Drawing.Size(13, 15);
+            this.lbltotalreceived.Size = new System.Drawing.Size(17, 20);
             this.lbltotalreceived.TabIndex = 425;
             this.lbltotalreceived.Text = "0";
             this.lbltotalreceived.Visible = false;
             // 
             // txtsearchcode
             // 
-            this.txtsearchcode.Location = new System.Drawing.Point(-32, 521);
+            this.txtsearchcode.Location = new System.Drawing.Point(-43, 641);
+            this.txtsearchcode.Margin = new System.Windows.Forms.Padding(4);
             this.txtsearchcode.Name = "txtsearchcode";
-            this.txtsearchcode.Size = new System.Drawing.Size(122, 22);
+            this.txtsearchcode.Size = new System.Drawing.Size(161, 25);
             this.txtsearchcode.TabIndex = 339;
             this.txtsearchcode.Text = "repacksearch";
             this.txtsearchcode.Visible = false;
@@ -5029,9 +5192,10 @@
             this.chkAll.AutoSize = true;
             this.chkAll.BackColor = System.Drawing.Color.Transparent;
             this.chkAll.ForeColor = System.Drawing.Color.Black;
-            this.chkAll.Location = new System.Drawing.Point(38, 466);
+            this.chkAll.Location = new System.Drawing.Point(51, 574);
+            this.chkAll.Margin = new System.Windows.Forms.Padding(4);
             this.chkAll.Name = "chkAll";
-            this.chkAll.Size = new System.Drawing.Size(15, 14);
+            this.chkAll.Size = new System.Drawing.Size(18, 17);
             this.chkAll.TabIndex = 338;
             this.chkAll.UseVisualStyleBackColor = false;
             this.chkAll.Visible = false;
@@ -5041,20 +5205,20 @@
             this.crV1.ActiveViewIndex = -1;
             this.crV1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crV1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crV1.Location = new System.Drawing.Point(529, 476);
+            this.crV1.Location = new System.Drawing.Point(705, 586);
             this.crV1.Margin = new System.Windows.Forms.Padding(1);
             this.crV1.Name = "crV1";
-            this.crV1.Size = new System.Drawing.Size(12, 15);
+            this.crV1.Size = new System.Drawing.Size(15, 18);
             this.crV1.TabIndex = 296;
-            this.crV1.ToolPanelWidth = 75;
+            this.crV1.ToolPanelWidth = 100;
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(-316, 464);
+            this.radioButton2.Location = new System.Drawing.Point(-421, 571);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(1);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(93, 17);
+            this.radioButton2.Size = new System.Drawing.Size(111, 23);
             this.radioButton2.TabIndex = 336;
             this.radioButton2.Text = "radioButton2";
             this.radioButton2.UseVisualStyleBackColor = true;
@@ -5066,9 +5230,10 @@
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(585, 342);
+            this.label22.Location = new System.Drawing.Point(780, 421);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(67, 13);
+            this.label22.Size = new System.Drawing.Size(81, 17);
             this.label22.TabIndex = 300;
             this.label22.Text = "PACK BY :";
             this.label22.Visible = false;
@@ -5077,10 +5242,10 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(-308, 464);
+            this.radioButton1.Location = new System.Drawing.Point(-411, 571);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(1);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(93, 17);
+            this.radioButton1.Size = new System.Drawing.Size(111, 23);
             this.radioButton1.TabIndex = 335;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "radioButton1";
@@ -5091,11 +5256,12 @@
             // 
             this.txtAllowance.BackColor = System.Drawing.SystemColors.Window;
             this.txtAllowance.Font = new System.Drawing.Font("Arial", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAllowance.Location = new System.Drawing.Point(155, 499);
+            this.txtAllowance.Location = new System.Drawing.Point(207, 614);
+            this.txtAllowance.Margin = new System.Windows.Forms.Padding(4);
             this.txtAllowance.MaxLength = 100;
             this.txtAllowance.Multiline = true;
             this.txtAllowance.Name = "txtAllowance";
-            this.txtAllowance.Size = new System.Drawing.Size(42, 25);
+            this.txtAllowance.Size = new System.Drawing.Size(55, 30);
             this.txtAllowance.TabIndex = 333;
             this.txtAllowance.Text = " ";
             this.txtAllowance.Visible = false;
@@ -5106,9 +5272,10 @@
             this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(306, 396);
+            this.label28.Location = new System.Drawing.Point(408, 487);
+            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(89, 13);
+            this.label28.Size = new System.Drawing.Size(110, 17);
             this.label28.TabIndex = 296;
             this.label28.Text = "ACTUAL QTY :";
             this.label28.Visible = false;
@@ -5116,9 +5283,10 @@
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox3.Location = new System.Drawing.Point(360, 439);
+            this.textBox3.Location = new System.Drawing.Point(480, 540);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(239, 22);
+            this.textBox3.Size = new System.Drawing.Size(317, 25);
             this.textBox3.TabIndex = 328;
             this.textBox3.Visible = false;
             // 
@@ -5127,20 +5295,22 @@
             this.txtActualQty.BackColor = System.Drawing.SystemColors.Window;
             this.txtActualQty.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtActualQty.Font = new System.Drawing.Font("Arial", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtActualQty.Location = new System.Drawing.Point(434, 390);
+            this.txtActualQty.Location = new System.Drawing.Point(579, 480);
+            this.txtActualQty.Margin = new System.Windows.Forms.Padding(4);
             this.txtActualQty.MaxLength = 100;
             this.txtActualQty.Multiline = true;
             this.txtActualQty.Name = "txtActualQty";
-            this.txtActualQty.Size = new System.Drawing.Size(82, 18);
+            this.txtActualQty.Size = new System.Drawing.Size(109, 22);
             this.txtActualQty.TabIndex = 294;
             this.txtActualQty.Text = " ";
             // 
             // txtsearchpa
             // 
             this.txtsearchpa.BackColor = System.Drawing.SystemColors.Control;
-            this.txtsearchpa.Location = new System.Drawing.Point(86, 442);
+            this.txtsearchpa.Location = new System.Drawing.Point(115, 544);
+            this.txtsearchpa.Margin = new System.Windows.Forms.Padding(4);
             this.txtsearchpa.Name = "txtsearchpa";
-            this.txtsearchpa.Size = new System.Drawing.Size(97, 22);
+            this.txtsearchpa.Size = new System.Drawing.Size(128, 25);
             this.txtsearchpa.TabIndex = 327;
             this.txtsearchpa.Visible = false;
             this.txtsearchpa.TextChanged += new System.EventHandler(this.txtsearchpa_TextChanged);
@@ -5166,11 +5336,11 @@
             this.groupBox1.Controls.Add(this.txtSubexpired);
             this.groupBox1.Controls.Add(this.label38);
             this.groupBox1.Controls.Add(this.label39);
-            this.groupBox1.Location = new System.Drawing.Point(7, 644);
+            this.groupBox1.Location = new System.Drawing.Point(9, 793);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(1);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(1);
-            this.groupBox1.Size = new System.Drawing.Size(821, 70);
+            this.groupBox1.Size = new System.Drawing.Size(1095, 86);
             this.groupBox1.TabIndex = 326;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sub Supplier Information";
@@ -5180,19 +5350,21 @@
             // 
             this.txtSubexpired.BackColor = System.Drawing.SystemColors.Window;
             this.txtSubexpired.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSubexpired.Location = new System.Drawing.Point(690, 21);
+            this.txtSubexpired.Location = new System.Drawing.Point(920, 26);
+            this.txtSubexpired.Margin = new System.Windows.Forms.Padding(4);
             this.txtSubexpired.Multiline = true;
             this.txtSubexpired.Name = "txtSubexpired";
-            this.txtSubexpired.Size = new System.Drawing.Size(76, 27);
+            this.txtSubexpired.Size = new System.Drawing.Size(100, 32);
             this.txtSubexpired.TabIndex = 287;
             // 
             // label38
             // 
             this.label38.AutoSize = true;
             this.label38.ForeColor = System.Drawing.Color.Black;
-            this.label38.Location = new System.Drawing.Point(409, 65);
+            this.label38.Location = new System.Drawing.Point(545, 80);
+            this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(96, 13);
+            this.label38.Size = new System.Drawing.Size(116, 19);
             this.label38.TabIndex = 291;
             this.label38.Text = "Quantity Shared :";
             // 
@@ -5200,18 +5372,20 @@
             // 
             this.label39.AutoSize = true;
             this.label39.ForeColor = System.Drawing.Color.Black;
-            this.label39.Location = new System.Drawing.Point(19, 65);
+            this.label39.Location = new System.Drawing.Point(25, 80);
+            this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(65, 13);
+            this.label39.Size = new System.Drawing.Size(80, 19);
             this.label39.TabIndex = 282;
             this.label39.Text = "Item Code :";
             // 
             // txtrecommendedsearch
             // 
             this.txtrecommendedsearch.BackColor = System.Drawing.SystemColors.Control;
-            this.txtrecommendedsearch.Location = new System.Drawing.Point(-8, 542);
+            this.txtrecommendedsearch.Location = new System.Drawing.Point(-11, 667);
+            this.txtrecommendedsearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtrecommendedsearch.Name = "txtrecommendedsearch";
-            this.txtrecommendedsearch.Size = new System.Drawing.Size(123, 22);
+            this.txtrecommendedsearch.Size = new System.Drawing.Size(163, 25);
             this.txtrecommendedsearch.TabIndex = 325;
             this.txtrecommendedsearch.Text = "stockoutsearch";
             this.txtrecommendedsearch.Visible = false;
@@ -5221,10 +5395,10 @@
             // 
             this.label55.AutoSize = true;
             this.label55.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(35, 605);
+            this.label55.Location = new System.Drawing.Point(47, 745);
             this.label55.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(202, 15);
+            this.label55.Size = new System.Drawing.Size(254, 20);
             this.label55.TabIndex = 362;
             this.label55.Text = "Raw Material Macro Receiving Entry :";
             this.label55.Visible = false;
@@ -5232,11 +5406,11 @@
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.dgvStockout);
-            this.groupBox5.Location = new System.Drawing.Point(20, 717);
+            this.groupBox5.Location = new System.Drawing.Point(27, 882);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(1);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(1);
-            this.groupBox5.Size = new System.Drawing.Size(614, 68);
+            this.groupBox5.Size = new System.Drawing.Size(819, 84);
             this.groupBox5.TabIndex = 324;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Recomended Raw Materials Item";
@@ -5282,7 +5456,8 @@
             this.dgvProdToday.DefaultCellStyle = dataGridViewCellStyle68;
             this.dgvProdToday.EnableHeadersVisualStyles = false;
             this.dgvProdToday.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvProdToday.Location = new System.Drawing.Point(11, 430);
+            this.dgvProdToday.Location = new System.Drawing.Point(15, 529);
+            this.dgvProdToday.Margin = new System.Windows.Forms.Padding(4);
             this.dgvProdToday.MultiSelect = false;
             this.dgvProdToday.Name = "dgvProdToday";
             this.dgvProdToday.ReadOnly = true;
@@ -5294,7 +5469,7 @@
             this.dgvProdToday.RowsDefaultCellStyle = dataGridViewCellStyle69;
             this.dgvProdToday.RowTemplate.Height = 25;
             this.dgvProdToday.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dgvProdToday.Size = new System.Drawing.Size(500, 136);
+            this.dgvProdToday.Size = new System.Drawing.Size(667, 167);
             this.dgvProdToday.TabIndex = 335;
             this.dgvProdToday.Visible = false;
             this.dgvProdToday.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvProdToday_CellFormatting);
@@ -5362,15 +5537,16 @@
             // 
             // frmListofMacroRepacking
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(990, 629);
+            this.ClientSize = new System.Drawing.Size(1320, 774);
             this.Controls.Add(this.splitContainer1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(1);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmListofMacroRepacking";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "   Macro Raw Materials Repacking";

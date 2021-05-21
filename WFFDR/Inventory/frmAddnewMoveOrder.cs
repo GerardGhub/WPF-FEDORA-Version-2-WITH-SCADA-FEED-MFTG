@@ -19,33 +19,33 @@ namespace WFFDR
         string mode = ""; //mymode
         myclasses xClass = new myclasses();
         IStoredProcedures objStorProc = null;
-        DataSet dSets = new DataSet();
+        //DataSet dSets = new DataSet();
 
         myglobal pointer_module = new myglobal();
         DataSet dsetHeader = new DataSet();
-        DataSet dSet_temp = new DataSet();
-        DataSet dset_delete = new DataSet();
+        //DataSet dSet_temp = new DataSet();
+        //DataSet dset_delete = new DataSet();
 
         DataSet dSet = new DataSet();
-        DataSet dset_rights = new DataSet();
+        //DataSet dset_rights = new DataSet();
 
 
         private const int BaudRate = 9600;
         //int sec;
-        DataSet dset_section = new DataSet();
+        //DataSet dset_section = new DataSet();
         Boolean ready = false;
- 
-        int p_id = 0;
+
+        //int p_id = 0;
  
         //weighing
 
         public myclasses classes = new myclasses();
-        myclasses myClass = new myclasses();
+        //myclasses myClass = new myclasses();
 
 
         public DataSet dset = new DataSet();
-        DataSet dset2 = new DataSet();
-        DataSet dset3 = new DataSet();
+        //DataSet dset2 = new DataSet();
+        //DataSet dset3 = new DataSet();
 
 
 
@@ -121,7 +121,7 @@ namespace WFFDR
             ready = false;
 
             xClass.fillComboBoxWH(cboFeedCode, "feed_code_productionschedule3", dSet);
-            //displayData(Convert.ToInt32(cboStandardWeight.SelectedValue.ToString()));
+           
 
             ready = true;
 
@@ -164,24 +164,7 @@ namespace WFFDR
             con.Open();
             string strCmd = "select a.received_date,SUM(case when a.fg_options = 'Bagging' and a.status='Good' then 1 else 0 end) AS BagsCount, SUM(c.bulkentry_total) as BulkCount from rdf_repackin_finishgoods a  LEFT JOIN rdf_finish_goods c ON a.prod_adv=c.fg_prod_id LEFT JOIN rdf_production_advance main ON a.prod_adv=main.prod_id    WHERE a.fg_feed_code ='"+cboFeedCode.Text+"' AND a.fg_options='"+cmbBagorSack.Text+ "' AND a.printing_date IS NOT NULL AND a.received_date IS NOT NULL AND NOT a.received_date='' GROUP BY a.received_date ORDER BY a.received_date DESC";
 
-          //  string strCmd = "select a.printing_date,SUM(case when a.fg_options = 'Bagging' and a.status='Good' then 1 else 0 end) AS BagsCount, SUM(c.bulkentry_total) as BulkCount from rdf_repackin_finishgoods a  LEFT JOIN rdf_finish_goods c ON a.prod_adv=c.fg_prod_id LEFT JOIN rdf_production_advance main ON a.prod_adv=main.prod_id    WHERE a.fg_feed_code ='" + cboFeedCode.Text + "' AND a.fg_options='" + cmbBagorSack.Text + "' AND a.printing_date IS NOT NULL GROUP BY a.printing_date ORDER BY a.printing_date DESC";
-
-
-            //string strCmd = "select a.printing_date,SUM(case when a.fg_options = 'Bagging' and a.status='Good' then 1 else 0 end) AS BagsCount, SUM(c.bulkentry_total) as BulkCount from rdf_repackin_finishgoods a  LEFT JOIN rdf_finish_goods c ON a.prod_adv=c.fg_prod_id LEFT JOIN rdf_production_advance main ON a.prod_adv=main.prod_id    WHERE a.fg_feed_code ='" + cboFeedCode.Text + "' AND a.fg_options='" + cmbBagorSack.Text + "' AND a.printing_date IS NOT NULL  AND main.fg_date_finish IS NOT NULL AND NOT c.move_status IS NOT NULL GROUP BY a.printing_date ORDER BY a.printing_date DESC";
-
-
-
-
-            //string strCmd = "select a.fg_proddate,SUM(case when a.fg_options = 'Bagging' and a.status='Good' then 1 else 0 end) AS BagsCount, SUM(c.bulkentry_total) as BulkCount from rdf_repackin_finishgoods a  LEFT JOIN rdf_finish_goods c ON a.prod_adv=c.fg_prod_id LEFT JOIN rdf_production_advance main ON a.prod_adv=main.prod_id    WHERE a.fg_feed_code ='" + cboFeedCode.Text + "' AND a.fg_options='" + cmbBagorSack.Text + "'  AND main.fg_date_finish IS NOT NULL AND NOT c.move_status IS NOT NULL GROUP BY a.fg_proddate ORDER BY a.fg_proddate DESC";
-
-
-
-            //string strCmd = " select a.fg_proddate,SUM(case when a.fg_options = 'Bagging' then 1 else 0 end) AS BagsCount, SUM(a.actual_weight) as BulkCount from rdf_repackin_finishgoods a WHERE fg_feed_code ='" + cboFeedCode.Text + "' GROUP BY a.fg_proddate";
-
-
-
-            //string strCmd = "select a.proddate,SUM(case when b.fg_options = 'Bagging' then 1 else 0 end) AS BagsCount from rdf_production_advance a LEFT JOIN rdf_repackin_finishgoods b ON a.p_feed_code=b.fg_feed_code WHERE p_feed_code ='" + cboFeedCode.Text + "'  AND a.is_selected='1'  AND NOT a.canceltheapprove IS NOT NULL GROUP BY a.proddate";
-
+        
             SqlCommand cmd = new SqlCommand(strCmd, con);
             SqlDataAdapter da = new SqlDataAdapter(strCmd, con);
             DataSet ds = new DataSet();
@@ -189,13 +172,10 @@ namespace WFFDR
             cboProddate.DataSource = ds.Tables[0];
             cboProddate.DisplayMember = "received_date";
             cboProddate.ValueMember = "BagsCount";
-            //      cboProddate.Enabled = true;
-            // this.cboProddate.SelectedIndex = -1;
             cmd.ExecuteNonQuery();
             con.Close();
             showProdId();
-            //lblprodid.Text = cboProddate.SelectedValue.ToString();
-            //BagandBulBindData();
+
         }
 
         
@@ -226,18 +206,8 @@ namespace WFFDR
         {
 
             String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
-
-            ////        String connetionString = @"Data Source=192.168.2.9\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=Nescafe3in1;MultipleActiveResultSets=true"
             SqlConnection sql_con = new SqlConnection(connetionString);
-
-            //string sqlquery = "select b.fg_feed_code,prod_adv,SUM(case when b.fg_options = 'Bagging' then 1 else 0 end) AS BagsCount, SUM(b.actual_weight) AS BulkCount from rdf_repackin_finishgoods b where fg_feed_code = '" + cboFeedCode.Text + "' AND b.fg_proddate = '" + cboProddate.Text + "' AND b.fg_options='" + cmbBagorSack.Text + "' GROUP BY b.fg_feed_code,b.prod_adv";
-
             string sqlquery = "select b.fg_feed_code,b.prod_adv,x.move_order_qty,SUM(case when b.fg_options = 'Bagging' and b.status = 'Good' then 1 else 0 end) AS BagsCount, SUM(b.fg_actual_print_count) AS BulkCount, b.fg_bags,b.printing_date from rdf_repackin_finishgoods b LEFT JOIN rdf_production_advance x ON b.prod_adv = x.prod_id where b.fg_feed_code = '"+cboFeedCode.Text+"' AND b.received_date = '"+cboProddate.Text+"' AND b.fg_options = '"+cmbBagorSack.Text+ "' AND b.printing_date IS NOT NULL AND b.received_date IS NOT NULL GROUP BY b.fg_feed_code,b.prod_adv,x.move_order_qty,b.fg_bags,b.printing_date";
-
-
-           // string sqlquery = "select b.fg_feed_code,b.prod_adv,x.move_order_qty,SUM(case when b.fg_options = 'Bagging' and b.status = 'Good' then 1 else 0 end) AS BagsCount, SUM(b.fg_actual_print_count) AS BulkCount, b.fg_bags,b.printing_date from rdf_repackin_finishgoods b LEFT JOIN rdf_production_advance x ON b.prod_adv = x.prod_id where b.fg_feed_code = '" + cboFeedCode.Text + "' AND b.printing_date = '" + cboProddate.Text + "' AND b.fg_options = '" + cmbBagorSack.Text + "' AND b.printing_date IS NOT NULL GROUP BY b.fg_feed_code,b.prod_adv,x.move_order_qty,b.fg_bags,b.printing_date";
-
-
 
             sql_con.Open();
             SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
@@ -249,27 +219,6 @@ namespace WFFDR
             sql_con.Close();
 
 
-    //        if (cmbBagorSack.Text == "Bagging")
-    //        {
-    //            int sum = 0;
-    //            for (int i = 0; i < dgvshowQTYbag.Rows.Count; ++i)
-    //            {
-    //                sum += Convert.ToInt32(dgvshowQTYbag.Rows[i].Cells[3].Value);
-    //            }
-    //            txtstock.Text = sum.ToString();
-    //    }
-
-    //        else
-    //        {
-    //            int sum = 0;
-    //            for (int i = 0; i<dgvshowQTYbag.Rows.Count; ++i)
-    //            {
-    //                sum += Convert.ToInt32(dgvshowQTYbag.Rows[i].Cells[4].Value);
-    //            }
-    //txtstock.Text = sum.ToString();
-
-
-    //        }
 
 
         }
@@ -281,12 +230,7 @@ namespace WFFDR
             showProdId();
 
 
-            //if (cmbBagorSack.Text.Trim() == string.Empty)
-            //{
-
-            //}
-            //else
-            //{
+         
                 if (cmbBagorSack.Text == "Bagging")
                 {
                     int sum = 0;
@@ -309,8 +253,7 @@ namespace WFFDR
 
                 }
                 
-            //}
-
+         
 
 
 
@@ -490,22 +433,6 @@ namespace WFFDR
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         private void btnsave_Click(object sender, EventArgs e)
         {
             if (txtqty.Text == "0")
@@ -548,22 +475,7 @@ namespace WFFDR
                 return;
             }
 
-            //if (lbldata1.Text=="")
-            //{
-
-            //    FillFeedType();
-            //    lbldata1.Focus();
-            //    return;
-            //}
-
-            //if (lbldata2.Text=="")
-            //{
-
-            //    FillFeedType();
-            //    lbldata2.Focus();
-            //    return;
-            //}
-
+         
             if (cboUOM.Text.Trim() == string.Empty)
             {
 
@@ -673,40 +585,7 @@ namespace WFFDR
 
 
 
-
-
-
-
             //    frmMoveOrder_Load(sender, e);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -716,40 +595,40 @@ namespace WFFDR
         public bool saveMode()
         {
 
-            if (mode == "add")
-            {
-                dSet.Clear();
-                dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text, cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim(), lbldata2.Text.Trim(), lblfeed_code.Text.Trim(), lblFeedType.Text.Trim(), cmbBagorSack.Text.Trim(), cboProddate.Text.Trim(), txtqty.Text.Trim(), cboUOM.Text.Trim(), txtqtyreceived.Text.Trim(), txtstockonhand.Text.Trim(), txtstock.Text.Trim(), lblproductionid.Text.Trim(), lbluseractive.Text.Trim(), txtdatenow.Text, Convert.ToInt32(lblbags.Text), "add");
+            //if (mode == "add")
+            //{
+            //    dSet.Clear();
+            //    dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text, cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim(), lbldata2.Text.Trim(), lblfeed_code.Text.Trim(), lblFeedType.Text.Trim(), cmbBagorSack.Text.Trim(), cboProddate.Text.Trim(), txtqty.Text.Trim(), cboUOM.Text.Trim(), txtqtyreceived.Text.Trim(), txtstockonhand.Text.Trim(), txtstock.Text.Trim(), lblproductionid.Text.Trim(), lbluseractive.Text.Trim(), txtdatenow.Text,Convert.ToInt32(lblbags.Text),"","", "add");
 
 
-                //dSet.Clear();
-                //dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text, lbldata1.Text, "", "", "", "", "", "", "", "getbyname");
+            //    //dSet.Clear();
+            //    //dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text, lbldata1.Text, "", "", "", "", "", "", "", "getbyname");
 
-                //if (dSet.Tables[0].Rows.Count > 0)
-                //{
-                //    MessageBox.Show("Duplicate Entry", "Offense", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //    cboFeedCode.Focus();
-                //    return false;
-                //}
-                //else
-                //{
-                //    //tae
-                //    dSet.Clear();
-                //    dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text, cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim(), lbldata2.Text.Trim(), lblfeed_code.Text.Trim(), lblFeedType.Text.Trim(), cmbBagorSack.Text.Trim(), cboProddate.Text.Trim(), txtqty.Text.Trim(), cboUOM.Text.Trim(), txtqtyreceived.Text.Trim(), txtstockonhand.Text.Trim(), txtstock.Text.Trim(), lblprodid.Text.Trim(), lbluseractive.Text.Trim(), txtdatenow.Text, "add");
+            //    //if (dSet.Tables[0].Rows.Count > 0)
+            //    //{
+            //    //    MessageBox.Show("Duplicate Entry", "Offense", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    //    cboFeedCode.Focus();
+            //    //    return false;
+            //    //}
+            //    //else
+            //    //{
+            //    //    //tae
+            //    //    dSet.Clear();
+            //    //    dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text, cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim(), lbldata2.Text.Trim(), lblfeed_code.Text.Trim(), lblFeedType.Text.Trim(), cmbBagorSack.Text.Trim(), cboProddate.Text.Trim(), txtqty.Text.Trim(), cboUOM.Text.Trim(), txtqtyreceived.Text.Trim(), txtstockonhand.Text.Trim(), txtstock.Text.Trim(), lblprodid.Text.Trim(), lbluseractive.Text.Trim(), txtdatenow.Text, "add");
 
-                //    return true;
-                //}
-            }
-            else if (mode == "delete")
-            {
-                dSet.Clear();
-                dSet = objStorProc.rdf_sp_supplier(p_id, "", "", "", "", "delete");
+            //    //    return true;
+            //    //}
+            //}
+            //else if (mode == "delete")
+            //{
+            //    dSet.Clear();
+            //    dSet = objStorProc.rdf_sp_supplier(p_id, "", "", "", "", "delete");
 
-                //dSet_temp.Clear();
-                //dSet_temp = objStorProc.sp_positions(p_id,0,"","delete");
+            //    //dSet_temp.Clear();
+            //    //dSet_temp = objStorProc.sp_positions(p_id,0,"","delete");
 
-                return true;
-            }
+            //    return true;
+            //}
             return false;
         }
 

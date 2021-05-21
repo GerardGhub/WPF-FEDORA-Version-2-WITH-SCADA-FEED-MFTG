@@ -45,6 +45,8 @@
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.dgv_po_approve = new System.Windows.Forms.DataGridView();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.item_code = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.item_description = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,8 +54,7 @@
             this.stacking_level = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.qty_total_delivered = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.goodmaterial = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.DateChecklistCreated = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel_title.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_po_approve)).BeginInit();
             this.SuspendLayout();
@@ -71,18 +72,19 @@
             this.panel_title.Controls.Add(this.bunifuThinButton21);
             this.panel_title.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_title.Location = new System.Drawing.Point(0, 0);
+            this.panel_title.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_title.Name = "panel_title";
-            this.panel_title.Size = new System.Drawing.Size(656, 31);
+            this.panel_title.Size = new System.Drawing.Size(875, 38);
             this.panel_title.TabIndex = 38;
             this.panel_title.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_title_Paint);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 10);
+            this.label2.Location = new System.Drawing.Point(20, 12);
             this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 13);
+            this.label2.Size = new System.Drawing.Size(72, 17);
             this.label2.TabIndex = 406;
             this.label2.Text = "SEARCH :";
             this.label2.Visible = false;
@@ -96,10 +98,10 @@
             this.btngreaterthan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btngreaterthan.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btngreaterthan.ForeColor = System.Drawing.SystemColors.Window;
-            this.btngreaterthan.Location = new System.Drawing.Point(458, 3);
+            this.btngreaterthan.Location = new System.Drawing.Point(611, 4);
             this.btngreaterthan.Margin = new System.Windows.Forms.Padding(1);
             this.btngreaterthan.Name = "btngreaterthan";
-            this.btngreaterthan.Size = new System.Drawing.Size(45, 24);
+            this.btngreaterthan.Size = new System.Drawing.Size(60, 30);
             this.btngreaterthan.TabIndex = 405;
             this.btngreaterthan.UseVisualStyleBackColor = false;
             this.btngreaterthan.Visible = false;
@@ -108,10 +110,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(525, 9);
+            this.label1.Location = new System.Drawing.Point(700, 11);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 13);
+            this.label1.Size = new System.Drawing.Size(134, 17);
             this.label1.TabIndex = 377;
             this.label1.Text = "TOTAL RECORDS :";
             this.label1.Visible = false;
@@ -134,10 +136,10 @@
             this.bunifuSearch.IdleFillColor = System.Drawing.Color.CornflowerBlue;
             this.bunifuSearch.IdleForecolor = System.Drawing.SystemColors.Window;
             this.bunifuSearch.IdleLineColor = System.Drawing.SystemColors.Window;
-            this.bunifuSearch.Location = new System.Drawing.Point(390, -8);
-            this.bunifuSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bunifuSearch.Location = new System.Drawing.Point(520, -10);
+            this.bunifuSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuSearch.Name = "bunifuSearch";
-            this.bunifuSearch.Size = new System.Drawing.Size(129, 26);
+            this.bunifuSearch.Size = new System.Drawing.Size(172, 32);
             this.bunifuSearch.TabIndex = 344;
             this.bunifuSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuSearch.Visible = false;
@@ -146,10 +148,10 @@
             // lblallmaterials
             // 
             this.lblallmaterials.AutoSize = true;
-            this.lblallmaterials.Location = new System.Drawing.Point(626, 10);
+            this.lblallmaterials.Location = new System.Drawing.Point(835, 12);
             this.lblallmaterials.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblallmaterials.Name = "lblallmaterials";
-            this.lblallmaterials.Size = new System.Drawing.Size(13, 13);
+            this.lblallmaterials.Size = new System.Drawing.Size(16, 17);
             this.lblallmaterials.TabIndex = 2;
             this.lblallmaterials.Text = "0";
             this.lblallmaterials.Visible = false;
@@ -158,9 +160,10 @@
             // 
             this.txtmainsearch.BackColor = System.Drawing.SystemColors.Window;
             this.txtmainsearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtmainsearch.Location = new System.Drawing.Point(84, 10);
+            this.txtmainsearch.Location = new System.Drawing.Point(112, 12);
+            this.txtmainsearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtmainsearch.Name = "txtmainsearch";
-            this.txtmainsearch.Size = new System.Drawing.Size(248, 13);
+            this.txtmainsearch.Size = new System.Drawing.Size(331, 15);
             this.txtmainsearch.TabIndex = 1;
             this.txtmainsearch.Visible = false;
             this.txtmainsearch.TextChanged += new System.EventHandler(this.txtmainsearch_TextChanged);
@@ -184,20 +187,20 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.PaleVioletRed;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.PaleVioletRed;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(73, 4);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(97, 5);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(276, 25);
+            this.bunifuThinButton21.Size = new System.Drawing.Size(368, 31);
             this.bunifuThinButton21.TabIndex = 375;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Visible = false;
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(390, 127);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(520, 156);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(1);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(3, 3);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(4, 4);
             this.flowLayoutPanel1.TabIndex = 196;
             // 
             // dgv_po_approve
@@ -228,7 +231,8 @@
             this.qty_ordered,
             this.stacking_level,
             this.qty_total_delivered,
-            this.goodmaterial});
+            this.goodmaterial,
+            this.DateChecklistCreated});
             this.dgv_po_approve.Cursor = System.Windows.Forms.Cursors.Hand;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
@@ -241,7 +245,8 @@
             this.dgv_po_approve.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_po_approve.EnableHeadersVisualStyles = false;
             this.dgv_po_approve.GridColor = System.Drawing.Color.DarkGray;
-            this.dgv_po_approve.Location = new System.Drawing.Point(0, 31);
+            this.dgv_po_approve.Location = new System.Drawing.Point(0, 38);
+            this.dgv_po_approve.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgv_po_approve.MultiSelect = false;
             this.dgv_po_approve.Name = "dgv_po_approve";
             this.dgv_po_approve.ReadOnly = true;
@@ -251,10 +256,26 @@
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Teal;
             this.dgv_po_approve.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_po_approve.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_po_approve.Size = new System.Drawing.Size(656, 626);
+            this.dgv_po_approve.Size = new System.Drawing.Size(875, 771);
             this.dgv_po_approve.TabIndex = 201;
             this.dgv_po_approve.Visible = false;
             this.dgv_po_approve.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgv_po_approve_CellFormatting);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 400;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(311, 470);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(265, 22);
+            this.dateTimePicker1.TabIndex = 202;
             // 
             // Column1
             // 
@@ -315,27 +336,22 @@
             this.goodmaterial.Name = "goodmaterial";
             this.goodmaterial.ReadOnly = true;
             // 
-            // timer1
+            // DateChecklistCreated
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 400;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(233, 382);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 202;
+            this.DateChecklistCreated.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.DateChecklistCreated.DataPropertyName = "DateChecklistCreated";
+            this.DateChecklistCreated.HeaderText = "Date Checklist Created";
+            this.DateChecklistCreated.MinimumWidth = 6;
+            this.DateChecklistCreated.Name = "DateChecklistCreated";
+            this.DateChecklistCreated.ReadOnly = true;
+            this.DateChecklistCreated.Width = 177;
             // 
             // frmApproveQA
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(656, 657);
+            this.ClientSize = new System.Drawing.Size(875, 809);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dgv_po_approve);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -376,5 +392,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn stacking_level;
         private System.Windows.Forms.DataGridViewTextBoxColumn qty_total_delivered;
         private System.Windows.Forms.DataGridViewTextBoxColumn goodmaterial;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DateChecklistCreated;
     }
 }

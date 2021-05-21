@@ -30,9 +30,9 @@ namespace WFFDR
                 if (cboStatus.Text == "MICRO")
                 {
 
-                    myglobal.DATE_REPORT = dtp1.Text;
-                    myglobal.DATE_REPORT2 = dtp2.Text;
-                    myglobal.DATE_REPORT3 = dtpDayadd1.Text;
+                    myglobal.DATE_REPORT = dtp1.Text; //@ddate
+                    myglobal.DATE_REPORT2 = dtp2.Text; //@ddate2
+                    myglobal.DATE_REPORT3 = dtpDayadd1.Text; //@ddate3
 
                     myglobal.REPORT_NAME = "MicroInventoryMovementPrint";
 

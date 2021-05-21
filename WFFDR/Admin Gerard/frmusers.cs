@@ -26,7 +26,7 @@ namespace WFFDR
 
         string mode = "";
         int temp_id = 0;
-        int emp_id = 0;
+        //int emp_id = 0;
 
         public frmusers()
         {

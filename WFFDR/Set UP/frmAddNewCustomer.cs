@@ -16,33 +16,9 @@ namespace WFFDR
 
         myclasses xClass = new myclasses();
         IStoredProcedures objStorProc = null;
-        DataSet dSets = new DataSet();
-
-        myglobal pointer_module = new myglobal();
-        DataSet dsetHeader = new DataSet();
-        DataSet dSet_temp = new DataSet();
-        DataSet dset_delete = new DataSet();
-
         DataSet dSet = new DataSet();
-        DataSet dset_rights = new DataSet();
-
-
-        private const int BaudRate = 9600;
-        //int sec;
-        DataSet dset_section = new DataSet();
-        Boolean ready = false;
-        bool re = false;
-        //int p_id = 0;
-        //int s_id = 0;
-        //weighing
-
         public myclasses classes = new myclasses();
-        myclasses myClass = new myclasses();
-
-
         public DataSet dset = new DataSet();
-        DataSet dset2 = new DataSet();
-        DataSet dset3 = new DataSet();
 
         frmCustomer ths;
         public frmAddNewCustomer(frmCustomer frm, string add,string name, string type, string company, string mobile, string lead_man, string address, string added_by, string date_added,string key)
@@ -324,6 +300,11 @@ namespace WFFDR
         private void frmAddNewCustomer_FormClosing(object sender, FormClosingEventArgs e)
         {
             textBox1.Text = "Closing";
+        }
+
+        private void GroupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

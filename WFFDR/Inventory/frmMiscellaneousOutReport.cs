@@ -45,11 +45,11 @@ namespace WFFDR
         DataSet dset2 = new DataSet();
         DataSet dset3 = new DataSet();
 
-        string Rpt_Path = "";
+        //string Rpt_Path = "";
 
         //user rights class
-        int rights_id = 0;
-        int emp_flag = 0;
+        //int rights_id = 0;
+        //int emp_flag = 0;
         public frmMiscellaneousOutReport()
         {
             InitializeComponent();

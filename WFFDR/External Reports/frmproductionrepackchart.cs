@@ -393,7 +393,7 @@ namespace WFFDR
 
 
                 //double s1 = Convert.ToDouble(dgvAllFeedCode.Rows[n].Cells[7].Value);
-                double tak = 2;
+                //double tak = 2;
                 DateTime s1 = Convert.ToDateTime(dgvPP.Rows[n].Cells[15].Value);
                 DateTime s2 = Convert.ToDateTime(dgvPP.Rows[n].Cells[25].Value);
                 DateTime b = DateTime.Parse(lbldatenow.Text);
@@ -402,7 +402,7 @@ namespace WFFDR
                 //double s13 = s * 2;
                 //double s15 = s1 * 2;
                 //double s18 = s7 * s15;
-                double sample = 4 + 4;
+                //double sample = 4 + 4;
                 //takla
                 //dataGridView1.Rows[n].Cells[1].Value = s15.ToString();
                 TimeSpan t = s1 - b;

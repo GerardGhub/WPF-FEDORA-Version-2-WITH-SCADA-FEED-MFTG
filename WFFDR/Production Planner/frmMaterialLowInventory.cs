@@ -450,7 +450,7 @@ namespace WFFDR
             dgvMicroImport.Rows[dgvMicroImport.Rows.Count - 1].Cells[0].Style.BackColor = Color.Green;
             dgvMicroImport.Rows[dgvMicroImport.Rows.Count - 1].Cells[0].Style.ForeColor = Color.Red;
             decimal tot = 0;
-            decimal tot2 = 0;
+            //decimal tot2 = 0;
             decimal batching;
             batching = decimal.Parse(txtnobatch.Text);
 
@@ -937,7 +937,7 @@ namespace WFFDR
             //dgvImport.Rows[dgvImport.Rows.Count - 1].Cells[0].Style.BackColor = Color.Green;
             //dgvImport.Rows[dgvImport.Rows.Count - 1].Cells[0].Style.ForeColor = Color.Red;
             decimal tot = 0;
-            decimal tot2 = 0;
+            //decimal tot2 = 0;
             decimal batching;
             batching = decimal.Parse(txtnobatch.Text);
 

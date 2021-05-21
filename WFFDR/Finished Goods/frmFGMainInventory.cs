@@ -20,7 +20,7 @@ namespace WFFDR
         DataSet dSet_temp = new DataSet();
         DataSet dset_rights = new DataSet();
         DataSet dSet = new DataSet();
-  
+
 
 
         Boolean ready = false;
@@ -171,12 +171,12 @@ namespace WFFDR
 
         public void load_fg_inventory()
         {
-            string mcolumns = "test,FeedCode,FeedType,BagsCount,BulkCount,GrandTotal,MoveOrder,RECEIVED,INVENTORY,BAG_RECEIPT,BULK_RECEIPT,BAG_ISSUE,BULK_ISSUE,RECEIPT,ISSUE";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
-            pointer_module.populateModule(dsetHeader, dgv_table, mcolumns, "fg_inventory");
+            string mcolumns = "test,FeedCode,FeedType,BAGS_COUNT,BULK_COUNT,TOTAL_COUNT,BAG_RECEIPT,BULK_RECEIPT,TOTAL_RECEIPT,BAG_ISSUE,BULK_ISSUE,TOTAL_ISSUE,BAG_MOVEORDER,BULK_MOVEORDER,TOTAL_MOVEORDER,GRAND_TOTAL,TotalIssueMoveorder,TOTAL_INVENTORY,BAG_INVENTORY,BULK_INVENTORY";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
+            pointer_module.populateModule(dsetHeader, dgv_table, mcolumns, "fg_inventory_overall");
             lblrecords.Text = dgv_table.RowCount.ToString();
             lbltotalrecords.Text = dgv_table.RowCount.ToString();
-        lblgrandtotal.Text = dgv_table.RowCount.ToString();
-      
+            lblgrandtotal.Text = dgv_table.RowCount.ToString();
+
         }
 
         private void dgv_table_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
@@ -276,7 +276,7 @@ namespace WFFDR
         private void dgv_table_CurrentCellChanged(object sender, EventArgs e)
         {
 
-            if(panel6.Visible==true)
+            if (panel6.Visible == true)
             {
                 dgv_table.Enabled = false;
             }
@@ -344,10 +344,23 @@ namespace WFFDR
 
         }
 
+         private  void Hide1()
+        {
+
+            dgv_table.Enabled = false;
+            bunifuSearch.Visible = false;
+            txtsearchs.Visible = false;
+            label7.Visible = false;
+            printPreviewToolStripButton.Enabled = false;
+            btnFeedCode.Visible = false;
+            btnmyProddate.Visible = false;
+
+        }
         private void btnmyProddate_Click(object sender, EventArgs e)
         {
 
-            frmFgReporting shower = new frmFgReporting(dtpprod1.Text,dtpprod2.Text);
+            Hide1();
+            frmFgReporting shower = new frmFgReporting(dtpprod1.Text, dtpprod2.Text, this);
             shower.Show();
 
 
@@ -356,8 +369,9 @@ namespace WFFDR
 
         private void btnFeedCode_Click(object sender, EventArgs e)
         {
-            dgv_table.Enabled = false;
-            frmFgReportPerFeedCode shower = new frmFgReportPerFeedCode(lblfcode.Text,this);
+
+            Hide1();
+            frmFgReportPerFeedCode shower = new frmFgReportPerFeedCode(lblfcode.Text, this);
             shower.Show();
 
 
@@ -380,22 +394,22 @@ namespace WFFDR
             //if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to Execute the transaction at Crystal Report Viewer ?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             //{
 
-                myglobal.DATE_REPORT3 = lblmyfeedcode.Text;
-                //myglobal.REPORT_NAME = "DailyProductionSchedule";
-                myglobal.REPORT_NAME = "FGInventorySearchFeedCodeOverAll";
+            myglobal.DATE_REPORT3 = lblmyfeedcode.Text;
+            //myglobal.REPORT_NAME = "DailyProductionSchedule";
+            myglobal.REPORT_NAME = "FGInventorySearchFeedCodeOverAll";
 
 
 
-                frmReport fr = new frmReport();
+            frmReport fr = new frmReport();
 
-                fr.WindowState = FormWindowState.Maximized;
-                fr.Show();
+            fr.WindowState = FormWindowState.Maximized;
+            fr.Show();
 
             //}
             //else
             //{
 
-                panel6.Visible = false;
+            panel6.Visible = false;
             //}
         }
 
@@ -430,14 +444,7 @@ namespace WFFDR
         private void dgv_table_Click(object sender, EventArgs e)
         {
 
-            if (panel6.Visible == true)
-            {
-                dgv_table.Enabled = false;
-            }
-            else
-            {
-                dgv_table.Enabled = true;
-            }
+           
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -447,13 +454,62 @@ namespace WFFDR
 
 
         }
+        private void Unhide()
+        {
+            dgv_table.Enabled = true;
+            printPreviewToolStripButton.Enabled = true;
+            btnFeedCode.Visible = true;
+            btnmyProddate.Visible = true;
+
+        }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
-            dgv_table.Enabled = true;
+            
             textBox40.Text = "";
-            frmFGMainInventory_Load(sender, e);
+            Unhide();
+            load_fg_inventory();
+            //  frmFGMainInventory_Load(sender, e);
+        }
+
+        private void dgv_table_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        private void txtc_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void toolStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void dgv_table_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
+        }
+
+        private void dgv_table_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (panel6.Visible == true)
+            {
+                dgv_table.Enabled = false;
+            }
+            else
+            {
+                dgv_table.Enabled = true;
+            }
         }
     }
 }

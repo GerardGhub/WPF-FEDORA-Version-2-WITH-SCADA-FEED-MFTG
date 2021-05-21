@@ -27,6 +27,8 @@ namespace WFFDR
         {
             lblfcode.Text = feed_code;
             btnFeedCodeSearch.Visible = true;
+            f1.MaxDate = DateTime.Now;
+            f2.MaxDate = DateTime.Now;
         }
 
         private void btnFeedCodeSearch_Click(object sender, EventArgs e)
@@ -63,6 +65,16 @@ namespace WFFDR
         {
             textBox4.Text = "DONE";
             this.Close();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmFgReportPerFeedCode_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            textBox4.Text = "DONE";
         }
     }
 }

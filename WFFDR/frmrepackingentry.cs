@@ -641,15 +641,15 @@ namespace WFFDR
                     textBox1.Focus();
                     textBox1_Click(sender, e);
                     return;
-                    if (textBox1.Text.Trim() == string.Empty)
-                    {
-                        textBox1.Select();
-                        textBox1.Focus();
-                        textBox1_Click(sender, e);
-                        timer2_Tick(sender, e);
-                        textBox1.Select();
-                        textBox1.Focus();
-                    }
+                    //if (textBox1.Text.Trim() == string.Empty)
+                    //{
+                    //    textBox1.Select();
+                    //    textBox1.Focus();
+                    //    textBox1_Click(sender, e);
+                    //    timer2_Tick(sender, e);
+                    //    textBox1.Select();
+                    //    textBox1.Focus();
+                    //}
 
                    
                 }
@@ -1010,7 +1010,7 @@ namespace WFFDR
 
 
 
-                return;
+                //return;
             }
 
 

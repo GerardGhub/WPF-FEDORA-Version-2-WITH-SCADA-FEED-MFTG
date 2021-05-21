@@ -19,7 +19,7 @@ namespace WFFDR
         DataSet dSet = new DataSet();
         DataSet dset_offense = new DataSet();
 
-        string mode = "";
+        //string mode = "";
  
 
 

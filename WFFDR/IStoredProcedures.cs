@@ -21,6 +21,7 @@ namespace WFFDR
         DataSet sp_getMinorTables(string eTableName, int? pkId);
         DataSet sp_getFilterTables(string eTableName, string eDescription, int ePk);
 
+        DataSet sp_GetCategory(string eTableName, int? cid,string feed_code,string category,string fgdate);
 
         //store proc for getting table data - with joins
         DataSet sp_getMajorTables(string eTableName);
@@ -34,8 +35,11 @@ namespace WFFDR
 
         //Move order
 
-        DataSet rdf_sp_move_order(int move_id, string order_no, string date_time, string warehouse, string account_title, string customer, string address, string feed_code, string feed_type, string sack_bin, string production_date, string qty, string uom, string qty_received, string available, string grand_total, string production, string added_by, string date_added,int bags, string mode);
+        DataSet rdf_sp_move_order(int move_id, string order_no, string date_time, string warehouse, string account_title, string customer, string address, string feed_code, string feed_type, string sack_bin, string production_date, string qty, string uom, string qty_received, string available, string grand_total, string production, string added_by, string date_added, int bags, string cancel_by, string cancel_date, string myfg_id, string mode);
 
+        DataSet rdf_sp_transact_rdf_move_order(int move_id, string order_no, string date_time, string warehouse, string account_title, string customer, string address, string feed_code, string feed_type, string sack_bin, string production_date, float qty, string uom, string qty_received, float available, float grand_total, string production, string added_by, string date_added, int is_active, float bags,string platenumber, string mode);
+
+       
         DataSet sp_transaction_in(int transact_id, string item_code, string item_description, string category, string supplier, string qty, string time_stamp, string mfg_date, string expiry_date, string remarks, string date_added, string added_by, string expiry_days, string transact_number, string material_id, string mode);
 
         DataSet sp_transaction_out(int transact_id, string item_code, string item_description, string category, string supplier, string qty, string time_stamp, string mfg_date, string expiry_date, string remarks, string date_added, string added_by, string expiry_days, string transact_number, string material_id,string counter_map, string last_stock, string warehouse, string account_title, string customer, string address, string reason, string descripto, string mode);
@@ -286,5 +290,11 @@ namespace WFFDR
 
         DataSet sp_emp_manager(int employee_id, DateTime date_resigned, string mode);
 
+        DataSet sp_rdf_fg_feedcodetransaction(int fg_id, string prod_adv, string fg_feed_code, string fg_feed_type, string fg_options, string actual_weight, string printing_date,string proddate, string transaction_date, string transaction_type, string remarks, string added_by, string mode);
+
+
+        DataSet rdf_sp_platenumber(int pnid,string to_vehicle,string platenumber,string added_by,string date_added,string inactive_by,string date_inactive,string activated_by,string date_activated,string edit_by,string date_edit,string mode);
+
+        
     }
 }

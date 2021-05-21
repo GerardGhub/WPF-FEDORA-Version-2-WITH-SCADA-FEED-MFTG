@@ -20,17 +20,17 @@ namespace WFFDR
         IStoredProcedures g_objStoredProcCollection = null;
         public DataSet dset = new DataSet();
         DataSet dset2 = new DataSet();
-        DataSet dset3 = new DataSet();
-        string mode;
+        //DataSet dset3 = new DataSet();
+        //string mode;
         string Rpt_Path = "";
         IStoredProcedures objStorProc = null;
-        int temp_hid = 0;
-        int p_id = 0;
-        myglobal pointer_module = new myglobal();
-        DataSet dsetHeader = new DataSet();
+        //int temp_hid = 0;
+        //int p_id = 0;
+        //myglobal pointer_module = new myglobal();
+        //DataSet dsetHeader = new DataSet();
         Boolean ready = false;
-        DataSet dSet = new DataSet();
-        DataSet dSet_temp = new DataSet();
+        //DataSet dSet = new DataSet();
+        //DataSet dSet_temp = new DataSet();
         public frmScadaMonitoringPerProdPlan()
         {
             InitializeComponent();

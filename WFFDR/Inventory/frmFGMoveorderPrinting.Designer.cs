@@ -51,6 +51,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.btnPrint = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvApproved)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.GroupBox1.SuspendLayout();
@@ -60,9 +61,10 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(238, 428);
+            this.label20.Location = new System.Drawing.Point(317, 527);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(114, 13);
+            this.label20.Size = new System.Drawing.Size(141, 17);
             this.label20.TabIndex = 430;
             this.label20.Text = "TOTAL RECORDS :";
             // 
@@ -70,18 +72,20 @@
             // 
             this.lblrecords.AutoSize = true;
             this.lblrecords.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblrecords.Location = new System.Drawing.Point(348, 428);
+            this.lblrecords.Location = new System.Drawing.Point(464, 527);
+            this.lblrecords.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblrecords.Name = "lblrecords";
-            this.lblrecords.Size = new System.Drawing.Size(82, 13);
+            this.lblrecords.Size = new System.Drawing.Size(17, 17);
             this.lblrecords.TabIndex = 429;
-            this.lblrecords.Text = "Encoded by :";
+            this.lblrecords.Text = "0";
             // 
             // txtorder
             // 
             this.txtorder.AutoSize = true;
-            this.txtorder.Location = new System.Drawing.Point(864, 9);
+            this.txtorder.Location = new System.Drawing.Point(1152, 11);
+            this.txtorder.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtorder.Name = "txtorder";
-            this.txtorder.Size = new System.Drawing.Size(70, 13);
+            this.txtorder.Size = new System.Drawing.Size(91, 17);
             this.txtorder.TabIndex = 431;
             this.txtorder.Text = "Encoded by :";
             this.txtorder.Visible = false;
@@ -116,18 +120,23 @@
             this.Column2});
             this.dgvApproved.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgvApproved.EnableHeadersVisualStyles = false;
-            this.dgvApproved.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvApproved.Location = new System.Drawing.Point(7, 17);
+            this.dgvApproved.GridColor = System.Drawing.Color.Teal;
+            this.dgvApproved.Location = new System.Drawing.Point(9, 21);
+            this.dgvApproved.Margin = new System.Windows.Forms.Padding(4);
             this.dgvApproved.MultiSelect = false;
             this.dgvApproved.Name = "dgvApproved";
             this.dgvApproved.ReadOnly = true;
             this.dgvApproved.RowHeadersWidth = 50;
             this.dgvApproved.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Cambria", 7.8F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(50)))));
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             this.dgvApproved.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvApproved.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvApproved.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvApproved.Size = new System.Drawing.Size(902, 388);
+            this.dgvApproved.Size = new System.Drawing.Size(1203, 478);
             this.dgvApproved.TabIndex = 433;
             this.dgvApproved.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvApproved_CellClick);
             this.dgvApproved.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvApproved_CellContentClick);
@@ -139,6 +148,7 @@
             // 
             this.order_no.DataPropertyName = "order_no";
             this.order_no.HeaderText = "ORDER NO";
+            this.order_no.MinimumWidth = 6;
             this.order_no.Name = "order_no";
             this.order_no.ReadOnly = true;
             // 
@@ -146,6 +156,7 @@
             // 
             this.added_by.DataPropertyName = "added_by";
             this.added_by.HeaderText = "ENCODED BY";
+            this.added_by.MinimumWidth = 6;
             this.added_by.Name = "added_by";
             this.added_by.ReadOnly = true;
             // 
@@ -153,6 +164,7 @@
             // 
             this.TotalBags.DataPropertyName = "TotalBags";
             this.TotalBags.HeaderText = "TOTAL BAGS";
+            this.TotalBags.MinimumWidth = 6;
             this.TotalBags.Name = "TotalBags";
             this.TotalBags.ReadOnly = true;
             // 
@@ -160,6 +172,7 @@
             // 
             this.date_added.DataPropertyName = "date_added";
             this.date_added.HeaderText = "DATE ADDED";
+            this.date_added.MinimumWidth = 6;
             this.date_added.Name = "date_added";
             this.date_added.ReadOnly = true;
             // 
@@ -167,6 +180,7 @@
             // 
             this.Column1.DataPropertyName = "PENDING";
             this.Column1.HeaderText = "TOTAL RECORDS";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             // 
@@ -174,6 +188,7 @@
             // 
             this.Column2.DataPropertyName = "DONE";
             this.Column2.HeaderText = "CANCEL";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             this.Column2.Visible = false;
@@ -181,9 +196,10 @@
             // lblencodedby
             // 
             this.lblencodedby.AutoSize = true;
-            this.lblencodedby.Location = new System.Drawing.Point(759, 9);
+            this.lblencodedby.Location = new System.Drawing.Point(1012, 11);
+            this.lblencodedby.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblencodedby.Name = "lblencodedby";
-            this.lblencodedby.Size = new System.Drawing.Size(70, 13);
+            this.lblencodedby.Size = new System.Drawing.Size(91, 17);
             this.lblencodedby.TabIndex = 434;
             this.lblencodedby.Text = "Encoded by :";
             this.lblencodedby.Visible = false;
@@ -191,9 +207,10 @@
             // lbltotalqty
             // 
             this.lbltotalqty.AutoSize = true;
-            this.lbltotalqty.Location = new System.Drawing.Point(887, 62);
+            this.lbltotalqty.Location = new System.Drawing.Point(1183, 76);
+            this.lbltotalqty.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltotalqty.Name = "lbltotalqty";
-            this.lbltotalqty.Size = new System.Drawing.Size(70, 13);
+            this.lbltotalqty.Size = new System.Drawing.Size(91, 17);
             this.lbltotalqty.TabIndex = 435;
             this.lbltotalqty.Text = "Encoded by :";
             this.lbltotalqty.Visible = false;
@@ -201,9 +218,10 @@
             // lbldate
             // 
             this.lbldate.AutoSize = true;
-            this.lbldate.Location = new System.Drawing.Point(849, 37);
+            this.lbldate.Location = new System.Drawing.Point(1132, 46);
+            this.lbldate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbldate.Name = "lbldate";
-            this.lbldate.Size = new System.Drawing.Size(70, 13);
+            this.lbldate.Size = new System.Drawing.Size(91, 17);
             this.lbldate.TabIndex = 436;
             this.lbldate.Text = "Encoded by :";
             this.lbldate.Visible = false;
@@ -215,9 +233,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(8, 429);
+            this.label2.Location = new System.Drawing.Point(11, 528);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.Size = new System.Drawing.Size(67, 17);
             this.label2.TabIndex = 438;
             this.label2.Text = "Search :";
             // 
@@ -225,9 +244,10 @@
             // 
             this.txtsearchs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtsearchs.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsearchs.Location = new System.Drawing.Point(68, 424);
+            this.txtsearchs.Location = new System.Drawing.Point(91, 522);
+            this.txtsearchs.Margin = new System.Windows.Forms.Padding(4);
             this.txtsearchs.Name = "txtsearchs";
-            this.txtsearchs.Size = new System.Drawing.Size(160, 20);
+            this.txtsearchs.Size = new System.Drawing.Size(213, 23);
             this.txtsearchs.TabIndex = 437;
             this.txtsearchs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtsearchs.TextChanged += new System.EventHandler(this.txtusername_TextChanged);
@@ -235,9 +255,10 @@
             // textBox1
             // 
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(676, 421);
+            this.textBox1.Location = new System.Drawing.Point(901, 518);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(79, 20);
+            this.textBox1.Size = new System.Drawing.Size(104, 22);
             this.textBox1.TabIndex = 632;
             this.textBox1.Text = "0";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -247,9 +268,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(848, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(1131, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 30);
+            this.pictureBox1.Size = new System.Drawing.Size(133, 37);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 602;
             this.pictureBox1.TabStop = false;
@@ -260,12 +282,15 @@
             // 
             this.GroupBox1.Controls.Add(this.dgvApproved);
             this.GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GroupBox1.Location = new System.Drawing.Point(7, 3);
+            this.GroupBox1.Location = new System.Drawing.Point(9, 4);
+            this.GroupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Size = new System.Drawing.Size(922, 411);
+            this.GroupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.GroupBox1.Size = new System.Drawing.Size(1229, 506);
             this.GroupBox1.TabIndex = 633;
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "Move Order Printing Slip";
+            this.GroupBox1.Enter += new System.EventHandler(this.GroupBox1_Enter);
             // 
             // btnPrint
             // 
@@ -274,21 +299,40 @@
             this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
             this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPrint.Location = new System.Drawing.Point(854, 418);
+            this.btnPrint.Location = new System.Drawing.Point(1139, 514);
+            this.btnPrint.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(75, 28);
+            this.btnPrint.Size = new System.Drawing.Size(100, 34);
             this.btnPrint.TabIndex = 483;
             this.btnPrint.Text = "Print";
             this.btnPrint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPrint.UseVisualStyleBackColor = false;
             this.btnPrint.Click += new System.EventHandler(this.btnNew_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Window;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(1281, 218);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 34);
+            this.button1.TabIndex = 634;
+            this.button1.Text = "Print";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmFGMoveorderPrinting
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(937, 450);
+            this.ClientSize = new System.Drawing.Size(1241, 554);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.GroupBox1);
             this.Controls.Add(this.textBox1);
@@ -302,9 +346,12 @@
             this.Controls.Add(this.label20);
             this.Controls.Add(this.lblrecords);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "frmFGMoveorderPrinting";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmFGMoveorderPrinting_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmFGMoveorderPrinting_FormClosed);
             this.Load += new System.EventHandler(this.frmFGMoveorderPrinting_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvApproved)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -334,5 +381,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         internal System.Windows.Forms.GroupBox GroupBox1;
         internal System.Windows.Forms.Button btnPrint;
+        internal System.Windows.Forms.Button button1;
     }
 }

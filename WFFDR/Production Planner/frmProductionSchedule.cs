@@ -248,9 +248,9 @@ namespace WFFDR
                     dataGridView4.DataSource = dv;
                     lblcountprod.Text = dataGridView4.RowCount.ToString();
                     //txtseries.Text = dataGridView4.RowCount.ToString();
-                    double count1;
+                    //double count1;
 
-                    double seriescount;
+                    //double seriescount;
 
                     //count1 = double.Parse(txtseries.Text);
                     //rp2 = double.Parse(txtnobatch.Text);
@@ -312,26 +312,34 @@ namespace WFFDR
 
         void times2query()
         {
-            for (int n = 0; n < (dgvImport.Rows.Count); n++)
-            {
-                //double s = Convert.ToDouble(dgvImport.Rows[n].Cells[4].Value);
-
-
-                //double s1 = Convert.ToDouble(dgvAllFeedCode.Rows[n].Cells[7].Value);
+            //try
+            //{
+                for (int n = 0; n < (dgvImport.Rows.Count); n++)
+                {
+                //Pekpek
+                //MessageBox.Show(txtJilo.Text);
+                //MessageBox.Show(txtitemdescription.Text);
+                //MessageBox.Show(txtQuantity.Text);
+       
 
                 double s1 = Convert.ToDouble(dgvImport.Rows[n].Cells[7].Value);
 
-                //int s1 = Convert.ToInt32(dgv1stView.Rows[n].Cells[1].Value);
-                //double s13 = s * 2;
-                double s15 = s1 * 2;
 
-                //dgvImport.Rows[n].Cells[7].Value = s15.ToString("#,0.000");
-                dgvImport.Rows[n].Cells[7].Value = s15.ToString();
+                    double s15 = s1 * 2;
+
+                    //dgvImport.Rows[n].Cells[7].Value = s15.ToString("#,0.000");
+                    dgvImport.Rows[n].Cells[7].Value = s15.ToString();
 
 
-                //dgvAllFeedCode.Rows[n].Cells[4].Value = s13.ToString("#,0.000");
-                //dgvAllFeedCode.Rows[n].Cells[7].Value = s15.ToString("#,0.000");
-            }
+
+                }
+            //}
+            //catch (Exception ex)
+            //{
+
+            //    MessageBox.Show(ex.Message);
+            //}
+  
 
 
         }
@@ -2276,7 +2284,9 @@ namespace WFFDR
                         txtrpcategory.Text = dgvImport.CurrentRow.Cells["rp_category"].Value.ToString();
                         txtitemdescription.Text = dgvImport.CurrentRow.Cells["rp_description"].Value.ToString();
 
-                    }
+                   
+
+                }
                 }
             //}
         }
@@ -3605,8 +3615,8 @@ namespace WFFDR
                     return;
                 }
                 txttotalhere.Text = (float.Parse(txtQuantity.Text) * float.Parse(txttotalduplicatebatch.Text)).ToString();
-                double mainbalance;
-                double selectquantity;
+                //double mainbalance;
+                //double selectquantity;
 
 
                 //mainbalance = double.Parse(txtrepackavailable.Text);
@@ -6234,21 +6244,31 @@ namespace WFFDR
             DataTable dt = new DataTable();
             sdr.Fill(dt);
             dgvRunningRecipe.DataSource = dt;
-            //dgvMaster.Visible = true;
-            ////dgv_table_2nd_sup.Visible = true;
-            //lblmicroview.Visible = true;
+
             sql_con.Close();
 
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
+            //deploy
+            SqlConnection sql_con = new SqlConnection(connetionString);
 
 
 
+            //string sqlquery = "INSERT [dbo].[rdf_recipe_to_production] (item_code, quantity, feed_code,repacking_status,production_id,is_active,rp_type,rp_feed_type,rp_description,rp_category,rp_group) SELECT item_code, quantity, feed_code, repacking_status,'" + txtid.Text + "',is_active,rp_type,rp_feed_type,rp_description,rp_category,rp_group FROM rdf_recipe WHERE feed_code= '" + cboFeedCode.Text + "' AND rp_category='MICRO'"AND rp_group='Validate';
+            string sqlquery = "INSERT [dbo].[rdf_recipe_to_production] (item_code, quantity, feed_code,repacking_status,production_id,is_active,rp_type,rp_feed_type,rp_description,rp_category,rp_group,total_prod,total_qty,proddate) SELECT item_code, quantity, feed_code, '0','167781261',is_active,rp_type,rp_feed_type,rp_description,rp_category,rp_group,'0','0','5/17/2021' FROM rdf_recipe WHERE feed_code= 'FMP400AC' AND rp_category='MACRO'";
 
 
+            sql_con.Open();
+            SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
+            SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
+            DataTable dt = new DataTable();
+            sdr.Fill(dt);
+            dgvRunningRecipe.DataSource = dt;
 
-
-
-
+            sql_con.Close();
+        }
     }
 }

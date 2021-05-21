@@ -20,8 +20,8 @@ namespace WFFDR
 
 
         SqlCommand cmd;
-        SqlDataAdapter da;
-        DataTable dt;
+        //SqlDataAdapter da;
+        //DataTable dt;
         DataSet ds = new DataSet();
 
         myclasses xClass = new myclasses();
@@ -44,7 +44,7 @@ namespace WFFDR
 
         public DataSet dset = new DataSet();
         DataSet dset2 = new DataSet();
-        DataSet dset3 = new DataSet();
+        //DataSet dset3 = new DataSet();
         int i;
 
         ReportDocument rpt = new ReportDocument();
@@ -5143,6 +5143,11 @@ namespace WFFDR
             popup.ShowOptionsButton = true;
 
             txtBarcode.Enabled = false;
+
+            //keni
+            dSet.Clear();
+            dSet = objStorProc.rdf_sp_new_micro_bmx(0, txtmainfeedcode.Text, "", "", "", "", "", "", "", "", "", "", "", "", "", "startbasemixed");
+
 
 
             actualTextboxColorYellow();

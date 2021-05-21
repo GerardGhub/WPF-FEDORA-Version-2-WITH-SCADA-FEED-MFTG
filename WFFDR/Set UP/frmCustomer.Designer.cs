@@ -63,11 +63,6 @@
             this.txtdateadded = new System.Windows.Forms.TextBox();
             this.GroupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dgvApproved = new System.Windows.Forms.DataGridView();
-            this.warehouser = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.account_titler = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addded_byr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.date_addedr = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.company = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,6 +70,11 @@
             this.lead_man = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.added_by = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvApproved = new System.Windows.Forms.DataGridView();
+            this.warehouser = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.account_titler = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addded_byr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.date_addedr = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GroupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvApproved)).BeginInit();
@@ -85,9 +85,10 @@
             this.txtid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtid.Enabled = false;
             this.txtid.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtid.Location = new System.Drawing.Point(187, 277);
+            this.txtid.Location = new System.Drawing.Point(249, 341);
+            this.txtid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(290, 20);
+            this.txtid.Size = new System.Drawing.Size(386, 23);
             this.txtid.TabIndex = 493;
             this.txtid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtid.Visible = false;
@@ -97,9 +98,10 @@
             this.txtedit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtedit.Enabled = false;
             this.txtedit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtedit.Location = new System.Drawing.Point(201, 367);
+            this.txtedit.Location = new System.Drawing.Point(268, 452);
+            this.txtedit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtedit.Name = "txtedit";
-            this.txtedit.Size = new System.Drawing.Size(133, 20);
+            this.txtedit.Size = new System.Drawing.Size(177, 23);
             this.txtedit.TabIndex = 492;
             this.txtedit.Text = "edit";
             this.txtedit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -110,9 +112,10 @@
             this.txtadd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtadd.Enabled = false;
             this.txtadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtadd.Location = new System.Drawing.Point(187, 303);
+            this.txtadd.Location = new System.Drawing.Point(249, 373);
+            this.txtadd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtadd.Name = "txtadd";
-            this.txtadd.Size = new System.Drawing.Size(290, 20);
+            this.txtadd.Size = new System.Drawing.Size(386, 23);
             this.txtadd.TabIndex = 491;
             this.txtadd.Text = "add";
             this.txtadd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -123,9 +126,10 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(346, 414);
+            this.textBox1.Location = new System.Drawing.Point(461, 510);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(145, 20);
+            this.textBox1.Size = new System.Drawing.Size(193, 23);
             this.textBox1.TabIndex = 485;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox1.Visible = false;
@@ -135,9 +139,10 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(810, 423);
+            this.label20.Location = new System.Drawing.Point(1080, 521);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(114, 13);
+            this.label20.Size = new System.Drawing.Size(141, 17);
             this.label20.TabIndex = 484;
             this.label20.Text = "TOTAL RECORDS :";
             // 
@@ -145,9 +150,10 @@
             // 
             this.lblrecords.AutoSize = true;
             this.lblrecords.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblrecords.Location = new System.Drawing.Point(924, 423);
+            this.lblrecords.Location = new System.Drawing.Point(1232, 521);
+            this.lblrecords.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblrecords.Name = "lblrecords";
-            this.lblrecords.Size = new System.Drawing.Size(14, 13);
+            this.lblrecords.Size = new System.Drawing.Size(17, 17);
             this.lblrecords.TabIndex = 483;
             this.lblrecords.Text = "0";
             // 
@@ -158,11 +164,12 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
             this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDelete.Location = new System.Drawing.Point(179, 413);
+            this.btnDelete.Location = new System.Drawing.Point(239, 508);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 28);
+            this.btnDelete.Size = new System.Drawing.Size(100, 34);
             this.btnDelete.TabIndex = 494;
-            this.btnDelete.Text = "&Delete";
+            this.btnDelete.Text = "&In-Active";
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -174,9 +181,10 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdate.Location = new System.Drawing.Point(95, 413);
+            this.btnUpdate.Location = new System.Drawing.Point(127, 508);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 28);
+            this.btnUpdate.Size = new System.Drawing.Size(100, 34);
             this.btnUpdate.TabIndex = 490;
             this.btnUpdate.Text = "&Edit";
             this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -190,9 +198,10 @@
             this.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnNew.Image = ((System.Drawing.Image)(resources.GetObject("btnNew.Image")));
             this.btnNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNew.Location = new System.Drawing.Point(11, 413);
+            this.btnNew.Location = new System.Drawing.Point(15, 508);
+            this.btnNew.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(75, 28);
+            this.btnNew.Size = new System.Drawing.Size(100, 34);
             this.btnNew.TabIndex = 482;
             this.btnNew.Text = "New  ";
             this.btnNew.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -201,18 +210,20 @@
             // 
             // txtleadman
             // 
-            this.txtleadman.Location = new System.Drawing.Point(141, 182);
+            this.txtleadman.Location = new System.Drawing.Point(188, 224);
+            this.txtleadman.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtleadman.Name = "txtleadman";
-            this.txtleadman.Size = new System.Drawing.Size(168, 20);
+            this.txtleadman.Size = new System.Drawing.Size(223, 22);
             this.txtleadman.TabIndex = 510;
             this.txtleadman.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtleadman.Visible = false;
             // 
             // txtmobile
             // 
-            this.txtmobile.Location = new System.Drawing.Point(463, 152);
+            this.txtmobile.Location = new System.Drawing.Point(617, 187);
+            this.txtmobile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtmobile.Name = "txtmobile";
-            this.txtmobile.Size = new System.Drawing.Size(165, 20);
+            this.txtmobile.Size = new System.Drawing.Size(219, 22);
             this.txtmobile.TabIndex = 509;
             this.txtmobile.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtmobile.Visible = false;
@@ -222,21 +233,23 @@
             this.cboType.BackColor = System.Drawing.SystemColors.Window;
             this.cboType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboType.FormattingEnabled = true;
-            this.cboType.ItemHeight = 13;
+            this.cboType.ItemHeight = 16;
             this.cboType.Items.AddRange(new object[] {
             "Poltry",
             "Swine"});
-            this.cboType.Location = new System.Drawing.Point(463, 122);
+            this.cboType.Location = new System.Drawing.Point(617, 150);
+            this.cboType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboType.Name = "cboType";
-            this.cboType.Size = new System.Drawing.Size(167, 21);
+            this.cboType.Size = new System.Drawing.Size(221, 24);
             this.cboType.TabIndex = 508;
             this.cboType.Visible = false;
             // 
             // txtname
             // 
-            this.txtname.Location = new System.Drawing.Point(141, 122);
+            this.txtname.Location = new System.Drawing.Point(188, 150);
+            this.txtname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(168, 20);
+            this.txtname.Size = new System.Drawing.Size(223, 22);
             this.txtname.TabIndex = 507;
             this.txtname.Visible = false;
             // 
@@ -244,9 +257,10 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(340, 219);
+            this.label8.Location = new System.Drawing.Point(453, 270);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(83, 13);
+            this.label8.Size = new System.Drawing.Size(102, 17);
             this.label8.TabIndex = 506;
             this.label8.Text = "Date Added :";
             this.label8.Visible = false;
@@ -255,9 +269,10 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(340, 186);
+            this.label22.Location = new System.Drawing.Point(453, 229);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(62, 13);
+            this.label22.Size = new System.Drawing.Size(77, 17);
             this.label22.TabIndex = 505;
             this.label22.Text = "Address :";
             this.label22.Visible = false;
@@ -266,9 +281,10 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(341, 159);
+            this.label21.Location = new System.Drawing.Point(455, 196);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(52, 13);
+            this.label21.Size = new System.Drawing.Size(62, 17);
             this.label21.TabIndex = 504;
             this.label21.Text = "Mobile :";
             this.label21.Visible = false;
@@ -277,9 +293,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(341, 130);
+            this.label1.Location = new System.Drawing.Point(455, 160);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.Size = new System.Drawing.Size(52, 17);
             this.label1.TabIndex = 502;
             this.label1.Text = "Type :";
             this.label1.Visible = false;
@@ -288,9 +305,10 @@
             // 
             this.Label2.AutoSize = true;
             this.Label2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label2.Location = new System.Drawing.Point(28, 188);
+            this.Label2.Location = new System.Drawing.Point(37, 231);
+            this.Label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(70, 13);
+            this.Label2.Size = new System.Drawing.Size(85, 17);
             this.Label2.TabIndex = 496;
             this.Label2.Text = "Lead Man :";
             this.Label2.Visible = false;
@@ -299,9 +317,10 @@
             // 
             this.Label4.AutoSize = true;
             this.Label4.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label4.Location = new System.Drawing.Point(28, 217);
+            this.Label4.Location = new System.Drawing.Point(37, 267);
+            this.Label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(70, 13);
+            this.Label4.Size = new System.Drawing.Size(86, 17);
             this.Label4.TabIndex = 497;
             this.Label4.Text = "Added by :";
             this.Label4.Visible = false;
@@ -310,9 +329,10 @@
             // 
             this.Label3.AutoSize = true;
             this.Label3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label3.Location = new System.Drawing.Point(28, 160);
+            this.Label3.Location = new System.Drawing.Point(37, 197);
+            this.Label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(71, 13);
+            this.Label3.Size = new System.Drawing.Size(85, 17);
             this.Label3.TabIndex = 498;
             this.Label3.Text = "Company :";
             this.Label3.Visible = false;
@@ -321,9 +341,10 @@
             // 
             this.Label6.AutoSize = true;
             this.Label6.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label6.Location = new System.Drawing.Point(49, 130);
+            this.Label6.Location = new System.Drawing.Point(65, 160);
+            this.Label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(49, 13);
+            this.Label6.Size = new System.Drawing.Size(58, 17);
             this.Label6.TabIndex = 495;
             this.Label6.Text = "Name :";
             this.Label6.Visible = false;
@@ -333,21 +354,23 @@
             this.cboCompany.BackColor = System.Drawing.SystemColors.Window;
             this.cboCompany.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCompany.FormattingEnabled = true;
-            this.cboCompany.ItemHeight = 13;
+            this.cboCompany.ItemHeight = 16;
             this.cboCompany.Items.AddRange(new object[] {
             "Red Dragon Farm",
             "MIS Department"});
-            this.cboCompany.Location = new System.Drawing.Point(141, 152);
+            this.cboCompany.Location = new System.Drawing.Point(188, 187);
+            this.cboCompany.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboCompany.Name = "cboCompany";
-            this.cboCompany.Size = new System.Drawing.Size(168, 21);
+            this.cboCompany.Size = new System.Drawing.Size(223, 24);
             this.cboCompany.TabIndex = 503;
             this.cboCompany.Visible = false;
             // 
             // txtaddress
             // 
-            this.txtaddress.Location = new System.Drawing.Point(463, 182);
+            this.txtaddress.Location = new System.Drawing.Point(617, 224);
+            this.txtaddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtaddress.Name = "txtaddress";
-            this.txtaddress.Size = new System.Drawing.Size(165, 20);
+            this.txtaddress.Size = new System.Drawing.Size(219, 22);
             this.txtaddress.TabIndex = 499;
             this.txtaddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtaddress.Visible = false;
@@ -355,9 +378,10 @@
             // txtaddedby
             // 
             this.txtaddedby.Enabled = false;
-            this.txtaddedby.Location = new System.Drawing.Point(141, 212);
+            this.txtaddedby.Location = new System.Drawing.Point(188, 261);
+            this.txtaddedby.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtaddedby.Name = "txtaddedby";
-            this.txtaddedby.Size = new System.Drawing.Size(168, 20);
+            this.txtaddedby.Size = new System.Drawing.Size(223, 22);
             this.txtaddedby.TabIndex = 501;
             this.txtaddedby.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtaddedby.Visible = false;
@@ -365,9 +389,10 @@
             // txtdateadded
             // 
             this.txtdateadded.Enabled = false;
-            this.txtdateadded.Location = new System.Drawing.Point(463, 212);
+            this.txtdateadded.Location = new System.Drawing.Point(617, 261);
+            this.txtdateadded.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtdateadded.Name = "txtdateadded";
-            this.txtdateadded.Size = new System.Drawing.Size(165, 20);
+            this.txtdateadded.Size = new System.Drawing.Size(219, 22);
             this.txtdateadded.TabIndex = 500;
             this.txtdateadded.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtdateadded.Visible = false;
@@ -376,9 +401,11 @@
             // 
             this.GroupBox3.Controls.Add(this.dataGridView1);
             this.GroupBox3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GroupBox3.Location = new System.Drawing.Point(9, 0);
+            this.GroupBox3.Location = new System.Drawing.Point(12, 0);
+            this.GroupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GroupBox3.Name = "GroupBox3";
-            this.GroupBox3.Size = new System.Drawing.Size(937, 409);
+            this.GroupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox3.Size = new System.Drawing.Size(1249, 503);
             this.GroupBox3.TabIndex = 511;
             this.GroupBox3.TabStop = false;
             this.GroupBox3.Text = "Customer Management";
@@ -415,7 +442,8 @@
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 18);
+            this.dataGridView1.Location = new System.Drawing.Point(5, 22);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -424,10 +452,66 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Teal;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(927, 385);
+            this.dataGridView1.Size = new System.Drawing.Size(1236, 474);
             this.dataGridView1.TabIndex = 435;
             this.dataGridView1.CurrentCellChanged += new System.EventHandler(this.dataGridView1_CurrentCellChanged);
             this.dataGridView1.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dataGridView1_RowPostPaint);
+            // 
+            // name
+            // 
+            this.name.DataPropertyName = "name";
+            this.name.HeaderText = "NAME";
+            this.name.MinimumWidth = 6;
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            // 
+            // type
+            // 
+            this.type.DataPropertyName = "type";
+            this.type.HeaderText = "TYPE";
+            this.type.MinimumWidth = 6;
+            this.type.Name = "type";
+            this.type.ReadOnly = true;
+            // 
+            // company
+            // 
+            this.company.DataPropertyName = "company";
+            this.company.HeaderText = "COMPANY";
+            this.company.MinimumWidth = 6;
+            this.company.Name = "company";
+            this.company.ReadOnly = true;
+            // 
+            // mobile
+            // 
+            this.mobile.DataPropertyName = "mobile";
+            this.mobile.HeaderText = "MOBILE";
+            this.mobile.MinimumWidth = 6;
+            this.mobile.Name = "mobile";
+            this.mobile.ReadOnly = true;
+            // 
+            // lead_man
+            // 
+            this.lead_man.DataPropertyName = "lead_man";
+            this.lead_man.HeaderText = "LEAD MAN";
+            this.lead_man.MinimumWidth = 6;
+            this.lead_man.Name = "lead_man";
+            this.lead_man.ReadOnly = true;
+            // 
+            // address
+            // 
+            this.address.DataPropertyName = "address";
+            this.address.HeaderText = "ADDRESS";
+            this.address.MinimumWidth = 6;
+            this.address.Name = "address";
+            this.address.ReadOnly = true;
+            // 
+            // added_by
+            // 
+            this.added_by.DataPropertyName = "added_by";
+            this.added_by.HeaderText = "ADDED BY";
+            this.added_by.MinimumWidth = 6;
+            this.added_by.Name = "added_by";
+            this.added_by.ReadOnly = true;
             // 
             // dgvApproved
             // 
@@ -465,7 +549,8 @@
             this.dgvApproved.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvApproved.EnableHeadersVisualStyles = false;
             this.dgvApproved.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvApproved.Location = new System.Drawing.Point(975, 251);
+            this.dgvApproved.Location = new System.Drawing.Point(1300, 309);
+            this.dgvApproved.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvApproved.MultiSelect = false;
             this.dgvApproved.Name = "dgvApproved";
             this.dgvApproved.ReadOnly = true;
@@ -474,7 +559,7 @@
             dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Teal;
             this.dgvApproved.RowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvApproved.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvApproved.Size = new System.Drawing.Size(645, 46);
+            this.dgvApproved.Size = new System.Drawing.Size(860, 57);
             this.dgvApproved.TabIndex = 481;
             this.dgvApproved.CurrentCellChanged += new System.EventHandler(this.dgvApproved_CurrentCellChanged);
             this.dgvApproved.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvApproved_RowPostPaint);
@@ -483,6 +568,7 @@
             // 
             this.warehouser.DataPropertyName = "warehouse";
             this.warehouser.HeaderText = "WAREHOUSE";
+            this.warehouser.MinimumWidth = 6;
             this.warehouser.Name = "warehouser";
             this.warehouser.ReadOnly = true;
             // 
@@ -490,6 +576,7 @@
             // 
             this.account_titler.DataPropertyName = "account_title";
             this.account_titler.HeaderText = "ACCOUNT TITLE";
+            this.account_titler.MinimumWidth = 6;
             this.account_titler.Name = "account_titler";
             this.account_titler.ReadOnly = true;
             // 
@@ -497,6 +584,7 @@
             // 
             this.addded_byr.DataPropertyName = "addded_by";
             this.addded_byr.HeaderText = "ADDED BY";
+            this.addded_byr.MinimumWidth = 6;
             this.addded_byr.Name = "addded_byr";
             this.addded_byr.ReadOnly = true;
             // 
@@ -504,64 +592,16 @@
             // 
             this.date_addedr.DataPropertyName = "date_added";
             this.date_addedr.HeaderText = "DATE ADDED";
+            this.date_addedr.MinimumWidth = 6;
             this.date_addedr.Name = "date_addedr";
             this.date_addedr.ReadOnly = true;
             // 
-            // name
-            // 
-            this.name.DataPropertyName = "name";
-            this.name.HeaderText = "NAME";
-            this.name.Name = "name";
-            this.name.ReadOnly = true;
-            // 
-            // type
-            // 
-            this.type.DataPropertyName = "type";
-            this.type.HeaderText = "TYPE";
-            this.type.Name = "type";
-            this.type.ReadOnly = true;
-            // 
-            // company
-            // 
-            this.company.DataPropertyName = "company";
-            this.company.HeaderText = "COMPANY";
-            this.company.Name = "company";
-            this.company.ReadOnly = true;
-            // 
-            // mobile
-            // 
-            this.mobile.DataPropertyName = "mobile";
-            this.mobile.HeaderText = "MOBILE";
-            this.mobile.Name = "mobile";
-            this.mobile.ReadOnly = true;
-            // 
-            // lead_man
-            // 
-            this.lead_man.DataPropertyName = "lead_man";
-            this.lead_man.HeaderText = "LEAD MAN";
-            this.lead_man.Name = "lead_man";
-            this.lead_man.ReadOnly = true;
-            // 
-            // address
-            // 
-            this.address.DataPropertyName = "address";
-            this.address.HeaderText = "ADDRESS";
-            this.address.Name = "address";
-            this.address.ReadOnly = true;
-            // 
-            // added_by
-            // 
-            this.added_by.DataPropertyName = "added_by";
-            this.added_by.HeaderText = "ADDED BY";
-            this.added_by.Name = "added_by";
-            this.added_by.ReadOnly = true;
-            // 
             // frmCustomer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(958, 447);
+            this.ClientSize = new System.Drawing.Size(1277, 550);
             this.Controls.Add(this.GroupBox3);
             this.Controls.Add(this.txtleadman);
             this.Controls.Add(this.txtmobile);
@@ -590,6 +630,7 @@
             this.Controls.Add(this.btnNew);
             this.Controls.Add(this.dgvApproved);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "frmCustomer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -18,7 +18,7 @@ namespace WFFDR
         public static string firstname;
         public static string lastname;
 
-        public static int count_notifications;
+        //public static int count_notifications;
         //public static int material_list_id;
     }
 
