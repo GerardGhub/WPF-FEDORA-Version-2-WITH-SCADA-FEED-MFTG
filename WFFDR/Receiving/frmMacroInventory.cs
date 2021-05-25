@@ -104,18 +104,18 @@ namespace WFFDR
                 lbltotalrecords.Text = dgv_table.RowCount.ToString();
             }
             else
-            { 
+            {
                 string mcolumns = "test,item_code,item_description,Category,item_group,RESERVED,ONHAND,buffer_of_stocks,price,REPACK,RECEIVING,SCADA,ISSUE,OUTING,LAST_USED,report,QA_RECEIVING";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
             pointer_module.populateModule(dsetHeader, dgv_table, mcolumns, "macro_raw_materials");
             lblrecords.Text = dgv_table.RowCount.ToString();
             lbltotalrecords.Text = dgv_table.RowCount.ToString();
-             }
+            }
 
 
 
 
 
- 
+
 
         }
 
