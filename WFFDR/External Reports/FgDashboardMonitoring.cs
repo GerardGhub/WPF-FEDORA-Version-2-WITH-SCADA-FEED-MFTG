@@ -420,8 +420,13 @@ namespace WFFDR
                     else
                     {
                         
-                        lblstats.Text = "ALREADY PROCESS";
-                        lblgood.Text = "0";
+                        lblstats.Text = "IN PROGRESS";
+                        if(lblgood.Text==String.Empty)
+                        {
+
+                            lblgood.Text = "0";
+                        }
+
                     }
                 }
 
@@ -485,6 +490,33 @@ namespace WFFDR
             groupBox1.Visible = true;
             label5.Visible = true;
             txtluffy.Visible = true;
+
+            if (txtluffy.Text == "0")
+
+            {
+                label5.Visible = false;
+                txtluffy.Visible = false;
+                lblprod.Visible = false;
+                txtproductionid.Visible = false;
+                groupBox1.Visible = false;
+                panel1.Visible = false;
+                dataView.Visible = false;
+                lblstats.Visible = false;
+            }
+            else
+            {
+                txtproductionid.Visible = true;
+                lblprod.Visible = true;
+                dataView.Visible = true;
+                panel1.Visible = true;
+                lblstats.Visible = true;
+                groupBox1.Visible = true;
+                label5.Visible = true;
+                txtluffy.Visible = true;
+
+
+            }
+
         }
 
         private void dataView_CurrentCellChanged(object sender, EventArgs e)

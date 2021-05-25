@@ -146,38 +146,47 @@ namespace WFFDR
             sql_con.Close();
         }
 
-
-        void QueryActiveProdutionBeforeInactive()
+        public void QueryActiveProdutionBeforeInactive()
         {
+            string mcolumns = "test,order_no,FeedCode,Bags,Batch,Proddate,Status,ProdID";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
+            pointer_module.populateModuleMoveOrder(dsetHeader, dgvProduction, mcolumns, "QueryActiveProdutionBeforeInactive", txtfeedcode1.Text, 0, "", "");
 
-
-            String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
-
-
-            SqlConnection sql_con = new SqlConnection(connetionString);
-
-
-
-
-            string sqlquery = "SELECT emp.p_feed_code AS FeedCode,emp.bags_int AS Bags,emp.batch_int AS Batch,emp.proddate AS Proddate,emp.bagorbin AS Status,emp.prod_id AS ProdID FROM rdf_production_advance emp WHERE NOT emp.canceltheapprove IS NOT NULL AND emp.p_feed_code='"+ txtfeedcode1.Text + "' AND emp.end_macro_repacking IS NULL AND NOT repacking_status='NULL'  ORDER BY emp.prod_id ASC";
-
-
-
-
-
-
-            sql_con.Open();
-            SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
-            SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
-            DataTable dt = new DataTable();
-            sdr.Fill(dt);
-            dgvProduction.DataSource = dt;
+       
             lblcountprod.Text = dgvProduction.RowCount.ToString();
 
-            sql_con.Close();
-
-
         }
+      
+        //void QueryActiveProdutionBeforeInactive()
+        //{
+
+
+        //    String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
+
+
+        //    SqlConnection sql_con = new SqlConnection(connetionString);
+
+
+        //    String sqlquery = "SELECT emp.p_feed_code AS FeedCode,emp.bags_int AS Bags,emp.batch_int AS Batch,emp.proddate AS Proddate,emp.bagorbin AS Status,emp.prod_id AS ProdID FROM rdf_production_advance emp WHERE NOT emp.canceltheapprove IS NOT NULL AND emp.p_feed_code = '" + txtfeedcode1.Text + "' AND emp.end_macro_repacking IS NULL ORDER BY emp.prod_id ASC";
+
+        //    //string sqlquery = "SELECT emp.p_feed_code AS FeedCode,emp.bags_int AS Bags,emp.batch_int AS Batch,emp.proddate AS Proddate,emp.bagorbin AS Status,emp.prod_id AS ProdID FROM rdf_production_advance emp WHERE NOT emp.canceltheapprove IS NOT NULL AND emp.p_feed_code='"+ txtfeedcode1.Text + "' AND emp.end_macro_repacking IS NULL AND NOT repacking_status='NULL'  ORDER BY emp.prod_id ASC";
+
+
+
+
+
+
+        //    sql_con.Open();
+        //    SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
+        //    SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
+        //    DataTable dt = new DataTable();
+        //    sdr.Fill(dt);
+        //    dgvProduction.DataSource = dt;
+        //    lblcountprod.Text = dgvProduction.RowCount.ToString();
+
+        //    sql_con.Close();
+
+
+        //}
 
 
         void CheckMicroRepacking()
