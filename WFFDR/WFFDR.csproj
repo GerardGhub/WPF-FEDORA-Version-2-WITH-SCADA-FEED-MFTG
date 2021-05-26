@@ -49,7 +49,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>fedora-icon.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>false</SignManifests>
@@ -149,6 +150,74 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmFormsAvailable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmFormsAvailable.Designer.cs">
+      <DependentUpon>frmFormsAvailable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmReprocessAdjustment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmReprocessAdjustment.Designer.cs">
+      <DependentUpon>frmReprocessAdjustment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmSystemLock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmSystemLock.Designer.cs">
+      <DependentUpon>frmSystemLock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmsystemupdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmsystemupdate.Designer.cs">
+      <DependentUpon>frmsystemupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmTheoroticalLogSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmTheoroticalLogSheet.Designer.cs">
+      <DependentUpon>frmTheoroticalLogSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmUserLognew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmUserLognew.Designer.cs">
+      <DependentUpon>frmUserLognew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmuserrights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmuserrights.Designer.cs">
+      <DependentUpon>frmuserrights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmusers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmusers.Designer.cs">
+      <DependentUpon>frmusers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmViewApproverCancelProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmViewApproverCancelProd.Designer.cs">
+      <DependentUpon>frmViewApproverCancelProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\import_po_summary.cs" />
+    <Compile Include="Classes\IStoredProcedures.cs" />
+    <Compile Include="Classes\myclasses.cs" />
+    <Compile Include="Classes\myglobal.cs" />
+    <Compile Include="Classes\Program.cs" />
+    <Compile Include="Classes\StoredProcedures.cs" />
+    <Compile Include="Classes\userinfo.cs" />
+    <Compile Include="Classes\user_info.cs" />
     <Compile Include="External Reports\FgDashboardMonitoring.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,35 +266,197 @@
     <Compile Include="Finished Goods\FrmMoveOrderPickSlip.Designer.cs">
       <DependentUpon>FrmMoveOrderPickSlip.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmInactiveRawmaterials.cs">
+    <Compile Include="Inventory\FrmFGMiscellaneousIssueReports.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmInactiveRawmaterials.Designer.cs">
-      <DependentUpon>frmInactiveRawmaterials.cs</DependentUpon>
+    <Compile Include="Inventory\FrmFGMiscellaneousIssueReports.Designer.cs">
+      <DependentUpon>FrmFGMiscellaneousIssueReports.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMacroPendingProd.cs">
+    <Compile Include="Menu\frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMacroPendingProd.Designer.cs">
-      <DependentUpon>frmMacroPendingProd.cs</DependentUpon>
+    <Compile Include="Menu\frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMicroPendingProd.cs">
+    <Compile Include="Menu\frmMicroProfile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMicroPendingProd.Designer.cs">
-      <DependentUpon>frmMicroPendingProd.cs</DependentUpon>
+    <Compile Include="Menu\frmMicroProfile.Designer.cs">
+      <DependentUpon>frmMicroProfile.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmScadaMonitoringPerProdPlan.cs">
+    <Compile Include="Menu\MacroBook.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\MacroBook1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MacroBook.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\MDIParent1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmScadaMonitoringPerProdPlan.Designer.cs">
-      <DependentUpon>frmScadaMonitoringPerProdPlan.cs</DependentUpon>
+    <Compile Include="Menu\MDIParent1.Designer.cs">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MicroBook.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\MicroBook1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MicroBook.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Preparation\frmmicrowhpreparation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preparation\frmmicrowhpreparation.Designer.cs">
+      <DependentUpon>frmmicrowhpreparation.cs</DependentUpon>
     </Compile>
     <Compile Include="Production Planner\frmProductionPlanController.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Production Planner\frmProductionPlanController.Designer.cs">
       <DependentUpon>frmProductionPlanController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production Planner\frmScadaMonitoringPerProdPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production Planner\frmScadaMonitoringPerProdPlan.Designer.cs">
+      <DependentUpon>frmScadaMonitoringPerProdPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\fmApproveQAMacro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\fmApproveQAMacro.Designer.cs">
+      <DependentUpon>fmApproveQAMacro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\FormReceivingConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\FormReceivingConfirmation.Designer.cs">
+      <DependentUpon>FormReceivingConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmAddNewMaterialReceivingMiscellaneous.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmAddNewMaterialReceivingMiscellaneous.Designer.cs">
+      <DependentUpon>frmAddNewMaterialReceivingMiscellaneous.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmApproveQA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmApproveQA.Designer.cs">
+      <DependentUpon>frmApproveQA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmBufferedInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmBufferedInventory.Designer.cs">
+      <DependentUpon>frmBufferedInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmFGReceivings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmFGReceivings.Designer.cs">
+      <DependentUpon>frmFGReceivings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmFGView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmFGView.Designer.cs">
+      <DependentUpon>frmFGView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmMacroInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmMacroInventory.Designer.cs">
+      <DependentUpon>frmMacroInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmMacroReceivingEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmMacroReceivingEntry.Designer.cs">
+      <DependentUpon>frmMacroReceivingEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmMicroInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmMicroInventory.Designer.cs">
+      <DependentUpon>frmMicroInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmMicroMaterialReceivingHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmMicroMaterialReceivingHistory.Designer.cs">
+      <DependentUpon>frmMicroMaterialReceivingHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmmicroreceivingentry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmmicroreceivingentry.Designer.cs">
+      <DependentUpon>frmmicroreceivingentry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmMicroReceivingInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmMicroReceivingInfo.Designer.cs">
+      <DependentUpon>frmMicroReceivingInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmMoveOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmMoveOrder.Designer.cs">
+      <DependentUpon>frmMoveOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving\frmReceivingReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving\frmReceivingReceipt.Designer.cs">
+      <DependentUpon>frmReceivingReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repacking\frmActiveRepackingMonitoring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Repacking\frmActiveRepackingMonitoring.Designer.cs">
+      <DependentUpon>frmActiveRepackingMonitoring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repacking\frmListofApproveRepacking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Repacking\frmListofApproveRepacking.Designer.cs">
+      <DependentUpon>frmListofApproveRepacking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repacking\frmListofMacroRepacking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Repacking\frmListofMacroRepacking.Designer.cs">
+      <DependentUpon>frmListofMacroRepacking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repacking\frmMacroRepacking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Repacking\frmMacroRepacking.Designer.cs">
+      <DependentUpon>frmMacroRepacking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repacking\frmMasterlistRepacking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Repacking\frmMasterlistRepacking.Designer.cs">
+      <DependentUpon>frmMasterlistRepacking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repacking\frmrepackingentry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Repacking\frmrepackingentry.Designer.cs">
+      <DependentUpon>frmrepackingentry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repacking\RawMatsRepackingTracking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Repacking\RawMatsRepackingTracking.Designer.cs">
+      <DependentUpon>RawMatsRepackingTracking.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\FrmFeedcodeTransactionReport.cs">
       <SubType>Form</SubType>
@@ -287,29 +518,11 @@
     <Compile Include="Production\frmProductionAutomation.Designer.cs">
       <DependentUpon>frmProductionAutomation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Receiving\fmApproveQAMacro.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Receiving\fmApproveQAMacro.Designer.cs">
-      <DependentUpon>fmApproveQAMacro.cs</DependentUpon>
-    </Compile>
     <Compile Include="External Reports\fmProductionHours.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="External Reports\fmProductionHours.Designer.cs">
       <DependentUpon>fmProductionHours.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Admin Gerard\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin Gerard\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Repacking\frmActiveRepackingMonitoring.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Repacking\frmActiveRepackingMonitoring.Designer.cs">
-      <DependentUpon>frmActiveRepackingMonitoring.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\frmreprocessreport.cs">
       <SubType>Form</SubType>
@@ -329,18 +542,6 @@
     <Compile Include="Reports\frmTransactMoveOrderReports.Designer.cs">
       <DependentUpon>frmTransactMoveOrderReports.cs</DependentUpon>
     </Compile>
-    <Compile Include="Set UP\frmAddNewCustomer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Set UP\frmAddNewCustomer.Designer.cs">
-      <DependentUpon>frmAddNewCustomer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Receiving\frmAddNewMaterialReceivingMiscellaneous.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Receiving\frmAddNewMaterialReceivingMiscellaneous.Designer.cs">
-      <DependentUpon>frmAddNewMaterialReceivingMiscellaneous.cs</DependentUpon>
-    </Compile>
     <Compile Include="Inventory\frmAddnewMoveOrder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -353,18 +554,6 @@
     <Compile Include="Inventory\frmAddNewTransactionIn.Designer.cs">
       <DependentUpon>frmAddNewTransactionIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Set UP\Frmaddnewplatenumber.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Set UP\Frmaddnewplatenumber.Designer.cs">
-      <DependentUpon>Frmaddnewplatenumber.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Set UP\frmAddNewWarehouse.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Set UP\frmAddNewWarehouse.Designer.cs">
-      <DependentUpon>frmAddNewWarehouse.cs</DependentUpon>
-    </Compile>
     <Compile Include="Reports\frmAnotherReports.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -376,30 +565,6 @@
     </Compile>
     <Compile Include="Production Approver\frmApproverViewRepackMaterials.Designer.cs">
       <DependentUpon>frmApproverViewRepackMaterials.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Receiving\frmBufferedInventory.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Receiving\frmBufferedInventory.Designer.cs">
-      <DependentUpon>frmBufferedInventory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Set UP\frmBulkValueMgmt.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Set UP\frmBulkValueMgmt.Designer.cs">
-      <DependentUpon>frmBulkValueMgmt.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Set UP\frmCombinationCode.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Set UP\frmCombinationCode.Designer.cs">
-      <DependentUpon>frmCombinationCode.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Set UP\frmCustomer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Set UP\frmCustomer.Designer.cs">
-      <DependentUpon>frmCustomer.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\frmDailyProductionReports.cs">
       <SubType>Form</SubType>
@@ -443,12 +608,6 @@
     <Compile Include="Inventory\frmFGMoveorderPrinting.Designer.cs">
       <DependentUpon>frmFGMoveorderPrinting.cs</DependentUpon>
     </Compile>
-    <Compile Include="Receiving\frmFGReceivings.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Receiving\frmFGReceivings.Designer.cs">
-      <DependentUpon>frmFGReceivings.cs</DependentUpon>
-    </Compile>
     <Compile Include="Reports\frmFgReporting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -466,12 +625,6 @@
     </Compile>
     <Compile Include="External Reports\frmFGReprocessReports.Designer.cs">
       <DependentUpon>frmFGReprocessReports.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Receiving\frmFGView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Receiving\frmFGView.Designer.cs">
-      <DependentUpon>frmFGView.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\frmMaterialUsedOverProductionDate.cs">
       <SubType>Form</SubType>
@@ -503,47 +656,17 @@
     <Compile Include="Inventory\frmMiscelleneousReceipt.Designer.cs">
       <DependentUpon>frmMiscelleneousReceipt.cs</DependentUpon>
     </Compile>
-    <Compile Include="Receiving\frmMoveOrder.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Receiving\frmMoveOrder.Designer.cs">
-      <DependentUpon>frmMoveOrder.cs</DependentUpon>
-    </Compile>
     <Compile Include="Inventory\frmMoveOrderDonePrinted.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Inventory\frmMoveOrderDonePrinted.Designer.cs">
       <DependentUpon>frmMoveOrderDonePrinted.cs</DependentUpon>
     </Compile>
-    <Compile Include="Set UP\frmNewMixingCode.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Set UP\frmNewMixingCode.Designer.cs">
-      <DependentUpon>frmNewMixingCode.cs</DependentUpon>
-    </Compile>
     <Compile Include="Reports\frmProdDatetoFGReport.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reports\frmProdDatetoFGReport.Designer.cs">
       <DependentUpon>frmProdDatetoFGReport.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Set UP\FrmPlatenumber.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Set UP\FrmPlatenumber.Designer.cs">
-      <DependentUpon>FrmPlatenumber.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Set UP\frmRawMaterialsDataRepack.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Set UP\frmRawMaterialsDataRepack.Designer.cs">
-      <DependentUpon>frmRawMaterialsDataRepack.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmReceivingReceipt.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmReceivingReceipt.Designer.cs">
-      <DependentUpon>frmReceivingReceipt.cs</DependentUpon>
     </Compile>
     <Compile Include="External Reports\frmRepackingProductionCheckList.cs">
       <SubType>Form</SubType>
@@ -569,12 +692,6 @@
     <Compile Include="Inventory\frmUpdateMoveOrderModal.Designer.cs">
       <DependentUpon>frmUpdateMoveOrderModal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin Gerard\frmUserLognew.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin Gerard\frmUserLognew.Designer.cs">
-      <DependentUpon>frmUserLognew.cs</DependentUpon>
-    </Compile>
     <Compile Include="Production\frmFGReprocessModule.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -587,23 +704,11 @@
     <Compile Include="Finished Goods\frmFinishGoods.Designer.cs">
       <DependentUpon>frmFinishGoods.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin Gerard\frmFormsAvailable.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin Gerard\frmFormsAvailable.Designer.cs">
-      <DependentUpon>frmFormsAvailable.cs</DependentUpon>
-    </Compile>
     <Compile Include="External Reports\frmFormula.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="External Reports\frmFormula.Designer.cs">
       <DependentUpon>frmFormula.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Set UP\frmProductionLevel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Set UP\frmProductionLevel.Designer.cs">
-      <DependentUpon>frmProductionLevel.cs</DependentUpon>
     </Compile>
     <Compile Include="NotUsing\frmCategory.cs">
       <SubType>Form</SubType>
@@ -641,23 +746,11 @@
     <Compile Include="External Reports\frmFormulationList.Designer.cs">
       <DependentUpon>frmFormulationList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Set UP\frmFormulationManagement.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Set UP\frmFormulationManagement.Designer.cs">
-      <DependentUpon>frmFormulationManagement.cs</DependentUpon>
-    </Compile>
     <Compile Include="External Reports\frmFormulationtoProduction.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="External Reports\frmFormulationtoProduction.Designer.cs">
       <DependentUpon>frmFormulationtoProduction.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Set UP\frmFullDepreciationReceiving.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Set UP\frmFullDepreciationReceiving.Designer.cs">
-      <DependentUpon>frmFullDepreciationReceiving.cs</DependentUpon>
     </Compile>
     <Compile Include="Barcode Printing\frmGenerateRepackingBarcodeID.cs">
       <SubType>Form</SubType>
@@ -701,47 +794,11 @@
     <Compile Include="Import Excel\frmImportSupplier.Designer.cs">
       <DependentUpon>frmImportSupplier.cs</DependentUpon>
     </Compile>
-    <Compile Include="Repacking\frmListofApproveRepacking.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Repacking\frmListofApproveRepacking.Designer.cs">
-      <DependentUpon>frmListofApproveRepacking.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Repacking\frmListofMacroRepacking.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Repacking\frmListofMacroRepacking.Designer.cs">
-      <DependentUpon>frmListofMacroRepacking.cs</DependentUpon>
-    </Compile>
     <Compile Include="Inventory\frmRawMatsSlowMoving.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Inventory\frmRawMatsSlowMoving.Designer.cs">
       <DependentUpon>frmRawMatsSlowMoving.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Receiving\frmMacroReceivingEntry.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Receiving\frmMacroReceivingEntry.Designer.cs">
-      <DependentUpon>frmMacroReceivingEntry.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmMacroRepacking.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMacroRepacking.Designer.cs">
-      <DependentUpon>frmMacroRepacking.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmmainreport.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmmainreport.Designer.cs">
-      <DependentUpon>frmmainreport.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmMasterlistRepacking.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMasterlistRepacking.Designer.cs">
-      <DependentUpon>frmMasterlistRepacking.cs</DependentUpon>
     </Compile>
     <Compile Include="Production Planner\frmMaterialLowInventory.cs">
       <SubType>Form</SubType>
@@ -749,47 +806,11 @@
     <Compile Include="Production Planner\frmMaterialLowInventory.Designer.cs">
       <DependentUpon>frmMaterialLowInventory.cs</DependentUpon>
     </Compile>
-    <Compile Include="Receiving\frmMicroMaterialReceivingHistory.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Receiving\frmMicroMaterialReceivingHistory.Designer.cs">
-      <DependentUpon>frmMicroMaterialReceivingHistory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmMicroProfile.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMicroProfile.Designer.cs">
-      <DependentUpon>frmMicroProfile.cs</DependentUpon>
-    </Compile>
     <Compile Include="Reports\frmTheoScada.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reports\frmTheoScada.Designer.cs">
       <DependentUpon>frmTheoScada.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Receiving\frmmicroreceivingentry.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Receiving\frmmicroreceivingentry.Designer.cs">
-      <DependentUpon>frmmicroreceivingentry.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmMicroReceivingInfo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMicroReceivingInfo.Designer.cs">
-      <DependentUpon>frmMicroReceivingInfo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmmicrowhpreparation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmmicrowhpreparation.Designer.cs">
-      <DependentUpon>frmmicrowhpreparation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Set UP\frmmixingcapacity.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Set UP\frmmixingcapacity.Designer.cs">
-      <DependentUpon>frmmixingcapacity.cs</DependentUpon>
     </Compile>
     <Compile Include="Basemixed\frmPreparationofMixing.cs">
       <SubType>Form</SubType>
@@ -802,12 +823,6 @@
     </Compile>
     <Compile Include="Barcode Printing\frmPrintBasemixedEntry.Designer.cs">
       <DependentUpon>frmPrintBasemixedEntry.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Admin Gerard\frmReprocessAdjustment.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin Gerard\frmReprocessAdjustment.Designer.cs">
-      <DependentUpon>frmReprocessAdjustment.cs</DependentUpon>
     </Compile>
     <Compile Include="Production\frmProductionEntry.cs">
       <SubType>Form</SubType>
@@ -833,30 +848,6 @@
     <Compile Include="NotUsing\frmProfileMicroPrev.Designer.cs">
       <DependentUpon>frmProfileMicroPrev.cs</DependentUpon>
     </Compile>
-    <Compile Include="Receiving\frmMicroInventory.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Receiving\frmMicroInventory.Designer.cs">
-      <DependentUpon>frmMicroInventory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmQCImportPending.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmQCImportPending.Designer.cs">
-      <DependentUpon>frmQCImportPending.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmQuantity.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmQuantity.Designer.cs">
-      <DependentUpon>frmQuantity.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMenu.Designer.cs">
-      <DependentUpon>frmMenu.cs</DependentUpon>
-    </Compile>
     <Compile Include="NotUsing\frmPositions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -875,30 +866,6 @@
     <Compile Include="External Reports\frmReprintMonitoring.Designer.cs">
       <DependentUpon>frmReprintMonitoring.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin Gerard\frmsystemupdate.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin Gerard\frmsystemupdate.Designer.cs">
-      <DependentUpon>frmsystemupdate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Admin Gerard\frmTheoroticalLogSheet.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin Gerard\frmTheoroticalLogSheet.Designer.cs">
-      <DependentUpon>frmTheoroticalLogSheet.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Admin Gerard\frmViewApproverCancelProd.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin Gerard\frmViewApproverCancelProd.Designer.cs">
-      <DependentUpon>frmViewApproverCancelProd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmrepackingentry.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmrepackingentry.Designer.cs">
-      <DependentUpon>frmrepackingentry.cs</DependentUpon>
-    </Compile>
     <Compile Include="Reports\frmReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -911,29 +878,11 @@
     <Compile Include="NotUsing\frmSections.Designer.cs">
       <DependentUpon>frmSections.cs</DependentUpon>
     </Compile>
-    <Compile Include="Receiving\frmMacroInventory.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Receiving\frmMacroInventory.Designer.cs">
-      <DependentUpon>frmMacroInventory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmSupplierdf.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSupplierdf.Designer.cs">
-      <DependentUpon>frmSupplierdf.cs</DependentUpon>
-    </Compile>
     <Compile Include="Reports\frmMaterialStatusReports.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reports\frmMaterialStatusReports.Designer.cs">
       <DependentUpon>frmMaterialStatusReports.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Admin Gerard\frmSystemLock.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin Gerard\frmSystemLock.Designer.cs">
-      <DependentUpon>frmSystemLock.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\frmFGMaterialTracking.cs">
       <SubType>Form</SubType>
@@ -941,80 +890,17 @@
     <Compile Include="Reports\frmFGMaterialTracking.Designer.cs">
       <DependentUpon>frmFGMaterialTracking.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin Gerard\frmuserrights.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin Gerard\frmuserrights.Designer.cs">
-      <DependentUpon>frmuserrights.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Admin Gerard\frmusers.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin Gerard\frmusers.Designer.cs">
-      <DependentUpon>frmusers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Receiving\frmApproveQA.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Receiving\frmApproveQA.Designer.cs">
-      <DependentUpon>frmApproveQA.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Set UP\frmWarehouseMgmt.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Set UP\frmWarehouseMgmt.Designer.cs">
-      <DependentUpon>frmWarehouseMgmt.cs</DependentUpon>
-    </Compile>
     <Compile Include="NotUsing\frmwhmacropreparation.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NotUsing\frmwhmacropreparation.Designer.cs">
       <DependentUpon>frmwhmacropreparation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Classes\Hasher.cs" />
-    <Compile Include="hr_bakDataSet.cs">
-      <DependentUpon>hr_bakDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="hr_bakDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>hr_bakDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="import_po_summary.cs" />
-    <Compile Include="Classes\ISharpUpdatable.cs" />
-    <Compile Include="IStoredProcedures.cs" />
-    <Compile Include="MacroBook.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MacroBook.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="MDIParent1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MDIParent1.Designer.cs">
-      <DependentUpon>MDIParent1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MicroBook.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MicroBook.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="myclasses.cs" />
-    <Compile Include="myglobal.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="RawMatsRepackingTracking.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RawMatsRepackingTracking.Designer.cs">
-      <DependentUpon>RawMatsRepackingTracking.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\frmFGReceivingReports.cs">
       <SubType>Form</SubType>
@@ -1022,23 +908,214 @@
     <Compile Include="Reports\frmFGReceivingReports.Designer.cs">
       <DependentUpon>frmFGReceivingReports.cs</DependentUpon>
     </Compile>
-    <Compile Include="Classes\SharpUpdateAcceptForm.cs" />
-    <Compile Include="Classes\SharpUpdateAcceptForm.Designer.cs">
+    <Compile Include="Set UP\frmAddNewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmAddNewCustomer.Designer.cs">
+      <DependentUpon>frmAddNewCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\Frmaddnewplatenumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\Frmaddnewplatenumber.Designer.cs">
+      <DependentUpon>Frmaddnewplatenumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmAddNewWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmAddNewWarehouse.Designer.cs">
+      <DependentUpon>frmAddNewWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmBulkValueMgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmBulkValueMgmt.Designer.cs">
+      <DependentUpon>frmBulkValueMgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmCombinationCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmCombinationCode.Designer.cs">
+      <DependentUpon>frmCombinationCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmCustomer.Designer.cs">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmFormulationManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmFormulationManagement.Designer.cs">
+      <DependentUpon>frmFormulationManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmFullDepreciationReceiving.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmFullDepreciationReceiving.Designer.cs">
+      <DependentUpon>frmFullDepreciationReceiving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmmixingcapacity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmmixingcapacity.Designer.cs">
+      <DependentUpon>frmmixingcapacity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmNewMixingCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmNewMixingCode.Designer.cs">
+      <DependentUpon>frmNewMixingCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\FrmPlatenumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\FrmPlatenumber.Designer.cs">
+      <DependentUpon>FrmPlatenumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmProductionLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmProductionLevel.Designer.cs">
+      <DependentUpon>frmProductionLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmRawMaterialsDataRepack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmRawMaterialsDataRepack.Designer.cs">
+      <DependentUpon>frmRawMaterialsDataRepack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmSupplierdf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmSupplierdf.Designer.cs">
+      <DependentUpon>frmSupplierdf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set UP\frmWarehouseMgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set UP\frmWarehouseMgmt.Designer.cs">
+      <DependentUpon>frmWarehouseMgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SharpUpdate\Hasher.cs" />
+    <Compile Include="SharpUpdate\ISharpUpdatable.cs" />
+    <Compile Include="SharpUpdate\SharpUpdateAcceptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SharpUpdate\SharpUpdateAcceptForm.Designer.cs">
       <DependentUpon>SharpUpdateAcceptForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Classes\SharpUpdateDownloadForm.cs" />
-    <Compile Include="Classes\SharpUpdateDownloadForm.Designer.cs">
+    <Compile Include="SharpUpdate\SharpUpdateDownloadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SharpUpdate\SharpUpdateDownloadForm.Designer.cs">
       <DependentUpon>SharpUpdateDownloadForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Classes\SharpUpdateInfoForm.cs" />
-    <Compile Include="Classes\SharpUpdateInfoForm.Designer.cs">
+    <Compile Include="SharpUpdate\SharpUpdateInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SharpUpdate\SharpUpdateInfoForm.Designer.cs">
       <DependentUpon>SharpUpdateInfoForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Classes\SharpUpdater.cs" />
-    <Compile Include="Classes\SharpUpdateXml.cs" />
-    <Compile Include="StoredProcedures.cs" />
-    <Compile Include="userinfo.cs" />
-    <Compile Include="user_info.cs" />
+    <Compile Include="SharpUpdate\SharpUpdater.cs" />
+    <Compile Include="SharpUpdate\SharpUpdateXml.cs" />
+    <Compile Include="temporary\frmapproveQASummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="temporary\frmapproveQASummary.Designer.cs">
+      <DependentUpon>frmapproveQASummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="temporary\frmCustomerMgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="temporary\frmCustomerMgmt.Designer.cs">
+      <DependentUpon>frmCustomerMgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="temporary\frmFGReceiving.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="temporary\frmFGReceiving.Designer.cs">
+      <DependentUpon>frmFGReceiving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="temporary\frmInactiveRawmaterials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="temporary\frmInactiveRawmaterials.Designer.cs">
+      <DependentUpon>frmInactiveRawmaterials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="temporary\frmInventoryMovementReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="temporary\frmInventoryMovementReports.Designer.cs">
+      <DependentUpon>frmInventoryMovementReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="temporary\frmMacroPendingProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="temporary\frmMacroPendingProd.Designer.cs">
+      <DependentUpon>frmMacroPendingProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="temporary\frmmainreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="temporary\frmmainreport.Designer.cs">
+      <DependentUpon>frmmainreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="temporary\frmMicroPendingProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="temporary\frmMicroPendingProd.Designer.cs">
+      <DependentUpon>frmMicroPendingProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="temporary\frmQCImportPending.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="temporary\frmQCImportPending.Designer.cs">
+      <DependentUpon>frmQCImportPending.cs</DependentUpon>
+    </Compile>
+    <Compile Include="temporary\frmQuantity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="temporary\frmQuantity.Designer.cs">
+      <DependentUpon>frmQuantity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="temporary\hr_bakDataSet.cs">
+      <DependentUpon>hr_bakDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="temporary\hr_bakDataSet.Designer.cs">
+      <DependentUpon>hr_bakDataSet.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmFormsAvailable.resx">
+      <DependentUpon>frmFormsAvailable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmReprocessAdjustment.resx">
+      <DependentUpon>frmReprocessAdjustment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmSystemLock.resx">
+      <DependentUpon>frmSystemLock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmsystemupdate.resx">
+      <DependentUpon>frmsystemupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmTheoroticalLogSheet.resx">
+      <DependentUpon>frmTheoroticalLogSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmUserLognew.resx">
+      <DependentUpon>frmUserLognew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmuserrights.resx">
+      <DependentUpon>frmuserrights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmusers.resx">
+      <DependentUpon>frmusers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmViewApproverCancelProd.resx">
+      <DependentUpon>frmViewApproverCancelProd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="External Reports\FgDashboardMonitoring.resx">
       <DependentUpon>FgDashboardMonitoring.cs</DependentUpon>
     </EmbeddedResource>
@@ -1063,20 +1140,97 @@
     <EmbeddedResource Include="Finished Goods\FrmMoveOrderPickSlip.resx">
       <DependentUpon>FrmMoveOrderPickSlip.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmInactiveRawmaterials.resx">
-      <DependentUpon>frmInactiveRawmaterials.cs</DependentUpon>
+    <EmbeddedResource Include="Menu\frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMacroPendingProd.resx">
-      <DependentUpon>frmMacroPendingProd.cs</DependentUpon>
+    <EmbeddedResource Include="Menu\frmMicroProfile.resx">
+      <DependentUpon>frmMicroProfile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMicroPendingProd.resx">
-      <DependentUpon>frmMicroPendingProd.cs</DependentUpon>
+    <EmbeddedResource Include="Menu\MacroBook.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MacroBook1.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmScadaMonitoringPerProdPlan.resx">
-      <DependentUpon>frmScadaMonitoringPerProdPlan.cs</DependentUpon>
+    <EmbeddedResource Include="Menu\MDIParent1.resx">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\MicroBook.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MicroBook1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preparation\frmmicrowhpreparation.resx">
+      <DependentUpon>frmmicrowhpreparation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Production Planner\frmProductionPlanController.resx">
       <DependentUpon>frmProductionPlanController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production Planner\frmScadaMonitoringPerProdPlan.resx">
+      <DependentUpon>frmScadaMonitoringPerProdPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\fmApproveQAMacro.resx">
+      <DependentUpon>fmApproveQAMacro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\FormReceivingConfirmation.resx">
+      <DependentUpon>FormReceivingConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmAddNewMaterialReceivingMiscellaneous.resx">
+      <DependentUpon>frmAddNewMaterialReceivingMiscellaneous.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmApproveQA.resx">
+      <DependentUpon>frmApproveQA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmBufferedInventory.resx">
+      <DependentUpon>frmBufferedInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmFGReceivings.resx">
+      <DependentUpon>frmFGReceivings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmFGView.resx">
+      <DependentUpon>frmFGView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmMacroInventory.resx">
+      <DependentUpon>frmMacroInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmMacroReceivingEntry.resx">
+      <DependentUpon>frmMacroReceivingEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmMicroInventory.resx">
+      <DependentUpon>frmMicroInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmMicroMaterialReceivingHistory.resx">
+      <DependentUpon>frmMicroMaterialReceivingHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmmicroreceivingentry.resx">
+      <DependentUpon>frmmicroreceivingentry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmMicroReceivingInfo.resx">
+      <DependentUpon>frmMicroReceivingInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmMoveOrder.resx">
+      <DependentUpon>frmMoveOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving\frmReceivingReceipt.resx">
+      <DependentUpon>frmReceivingReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repacking\frmActiveRepackingMonitoring.resx">
+      <DependentUpon>frmActiveRepackingMonitoring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repacking\frmListofApproveRepacking.resx">
+      <DependentUpon>frmListofApproveRepacking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repacking\frmListofMacroRepacking.resx">
+      <DependentUpon>frmListofMacroRepacking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repacking\frmMacroRepacking.resx">
+      <DependentUpon>frmMacroRepacking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repacking\frmMasterlistRepacking.resx">
+      <DependentUpon>frmMasterlistRepacking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repacking\frmrepackingentry.resx">
+      <DependentUpon>frmrepackingentry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repacking\RawMatsRepackingTracking.resx">
+      <DependentUpon>RawMatsRepackingTracking.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\FrmFeedcodeTransactionReport.resx">
       <DependentUpon>FrmFeedcodeTransactionReport.cs</DependentUpon>
@@ -1108,17 +1262,8 @@
     <EmbeddedResource Include="Production\frmProductionAutomation.resx">
       <DependentUpon>frmProductionAutomation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Receiving\fmApproveQAMacro.resx">
-      <DependentUpon>fmApproveQAMacro.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="External Reports\fmProductionHours.resx">
       <DependentUpon>fmProductionHours.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin Gerard\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Repacking\frmActiveRepackingMonitoring.resx">
-      <DependentUpon>frmActiveRepackingMonitoring.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\frmreprocessreport.resx">
       <DependentUpon>frmreprocessreport.cs</DependentUpon>
@@ -1129,41 +1274,17 @@
     <EmbeddedResource Include="Reports\frmTransactMoveOrderReports.resx">
       <DependentUpon>frmTransactMoveOrderReports.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Set UP\frmAddNewCustomer.resx">
-      <DependentUpon>frmAddNewCustomer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Receiving\frmAddNewMaterialReceivingMiscellaneous.resx">
-      <DependentUpon>frmAddNewMaterialReceivingMiscellaneous.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Inventory\frmAddnewMoveOrder.resx">
       <DependentUpon>frmAddnewMoveOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory\frmAddNewTransactionIn.resx">
       <DependentUpon>frmAddNewTransactionIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Set UP\Frmaddnewplatenumber.resx">
-      <DependentUpon>Frmaddnewplatenumber.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Set UP\frmAddNewWarehouse.resx">
-      <DependentUpon>frmAddNewWarehouse.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Reports\frmAnotherReports.resx">
       <DependentUpon>frmAnotherReports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Production Approver\frmApproverViewRepackMaterials.resx">
       <DependentUpon>frmApproverViewRepackMaterials.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Receiving\frmBufferedInventory.resx">
-      <DependentUpon>frmBufferedInventory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Set UP\frmBulkValueMgmt.resx">
-      <DependentUpon>frmBulkValueMgmt.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Set UP\frmCombinationCode.resx">
-      <DependentUpon>frmCombinationCode.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Set UP\frmCustomer.resx">
-      <DependentUpon>frmCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\frmDailyProductionReports.resx">
       <DependentUpon>frmDailyProductionReports.cs</DependentUpon>
@@ -1186,9 +1307,6 @@
     <EmbeddedResource Include="Inventory\frmFGMoveorderPrinting.resx">
       <DependentUpon>frmFGMoveorderPrinting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Receiving\frmFGReceivings.resx">
-      <DependentUpon>frmFGReceivings.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Reports\frmFgReporting.resx">
       <DependentUpon>frmFgReporting.cs</DependentUpon>
     </EmbeddedResource>
@@ -1197,9 +1315,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="External Reports\frmFGReprocessReports.resx">
       <DependentUpon>frmFGReprocessReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Receiving\frmFGView.resx">
-      <DependentUpon>frmFGView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\frmMaterialUsedOverProductionDate.resx">
       <DependentUpon>frmMaterialUsedOverProductionDate.cs</DependentUpon>
@@ -1216,26 +1331,11 @@
     <EmbeddedResource Include="Inventory\frmMiscelleneousReceipt.resx">
       <DependentUpon>frmMiscelleneousReceipt.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Receiving\frmMoveOrder.resx">
-      <DependentUpon>frmMoveOrder.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Inventory\frmMoveOrderDonePrinted.resx">
       <DependentUpon>frmMoveOrderDonePrinted.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Set UP\frmNewMixingCode.resx">
-      <DependentUpon>frmNewMixingCode.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Reports\frmProdDatetoFGReport.resx">
       <DependentUpon>frmProdDatetoFGReport.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Set UP\FrmPlatenumber.resx">
-      <DependentUpon>FrmPlatenumber.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Set UP\frmRawMaterialsDataRepack.resx">
-      <DependentUpon>frmRawMaterialsDataRepack.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmReceivingReceipt.resx">
-      <DependentUpon>frmReceivingReceipt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="External Reports\frmRepackingProductionCheckList.resx">
       <DependentUpon>frmRepackingProductionCheckList.cs</DependentUpon>
@@ -1249,23 +1349,14 @@
     <EmbeddedResource Include="Inventory\frmUpdateMoveOrderModal.resx">
       <DependentUpon>frmUpdateMoveOrderModal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin Gerard\frmUserLognew.resx">
-      <DependentUpon>frmUserLognew.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Production\frmFGReprocessModule.resx">
       <DependentUpon>frmFGReprocessModule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Finished Goods\frmFinishGoods.resx">
       <DependentUpon>frmFinishGoods.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin Gerard\frmFormsAvailable.resx">
-      <DependentUpon>frmFormsAvailable.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="External Reports\frmFormula.resx">
       <DependentUpon>frmFormula.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Set UP\frmProductionLevel.resx">
-      <DependentUpon>frmProductionLevel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NotUsing\frmCategory.resx">
       <DependentUpon>frmCategory.cs</DependentUpon>
@@ -1285,14 +1376,8 @@
     <EmbeddedResource Include="External Reports\frmFormulationList.resx">
       <DependentUpon>frmFormulationList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Set UP\frmFormulationManagement.resx">
-      <DependentUpon>frmFormulationManagement.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="External Reports\frmFormulationtoProduction.resx">
       <DependentUpon>frmFormulationtoProduction.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Set UP\frmFullDepreciationReceiving.resx">
-      <DependentUpon>frmFullDepreciationReceiving.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Barcode Printing\frmGenerateRepackingBarcodeID.resx">
       <DependentUpon>frmGenerateRepackingBarcodeID.cs</DependentUpon>
@@ -1315,56 +1400,17 @@
     <EmbeddedResource Include="Import Excel\frmImportSupplier.resx">
       <DependentUpon>frmImportSupplier.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Repacking\frmListofApproveRepacking.resx">
-      <DependentUpon>frmListofApproveRepacking.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Repacking\frmListofMacroRepacking.resx">
-      <DependentUpon>frmListofMacroRepacking.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Receiving\frmMacroReceivingEntry.resx">
-      <DependentUpon>frmMacroReceivingEntry.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMacroRepacking.resx">
-      <DependentUpon>frmMacroRepacking.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmmainreport.resx">
-      <DependentUpon>frmmainreport.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMasterlistRepacking.resx">
-      <DependentUpon>frmMasterlistRepacking.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Production Planner\frmMaterialLowInventory.resx">
       <DependentUpon>frmMaterialLowInventory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Receiving\frmMicroMaterialReceivingHistory.resx">
-      <DependentUpon>frmMicroMaterialReceivingHistory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMicroProfile.resx">
-      <DependentUpon>frmMicroProfile.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Reports\frmTheoScada.resx">
       <DependentUpon>frmTheoScada.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Receiving\frmmicroreceivingentry.resx">
-      <DependentUpon>frmmicroreceivingentry.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMicroReceivingInfo.resx">
-      <DependentUpon>frmMicroReceivingInfo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmmicrowhpreparation.resx">
-      <DependentUpon>frmmicrowhpreparation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Set UP\frmmixingcapacity.resx">
-      <DependentUpon>frmmixingcapacity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Basemixed\frmPreparationofMixing.resx">
       <DependentUpon>frmPreparationofMixing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Barcode Printing\frmPrintBasemixedEntry.resx">
       <DependentUpon>frmPrintBasemixedEntry.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin Gerard\frmReprocessAdjustment.resx">
-      <DependentUpon>frmReprocessAdjustment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Production\frmProductionEntry.resx">
       <DependentUpon>frmProductionEntry.cs</DependentUpon>
@@ -1378,18 +1424,6 @@
     <EmbeddedResource Include="NotUsing\frmProfileMicroPrev.resx">
       <DependentUpon>frmProfileMicroPrev.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Receiving\frmMicroInventory.resx">
-      <DependentUpon>frmMicroInventory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmQCImportPending.resx">
-      <DependentUpon>frmQCImportPending.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmQuantity.resx">
-      <DependentUpon>frmQuantity.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMenu.resx">
-      <DependentUpon>frmMenu.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="NotUsing\frmPositions.resx">
       <DependentUpon>frmPositions.cs</DependentUpon>
     </EmbeddedResource>
@@ -1399,97 +1433,116 @@
     <EmbeddedResource Include="External Reports\frmReprintMonitoring.resx">
       <DependentUpon>frmReprintMonitoring.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin Gerard\frmsystemupdate.resx">
-      <DependentUpon>frmsystemupdate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin Gerard\frmTheoroticalLogSheet.resx">
-      <DependentUpon>frmTheoroticalLogSheet.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin Gerard\frmViewApproverCancelProd.resx">
-      <DependentUpon>frmViewApproverCancelProd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmrepackingentry.resx">
-      <DependentUpon>frmrepackingentry.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Reports\frmReport.resx">
       <DependentUpon>frmReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NotUsing\frmSections.resx">
       <DependentUpon>frmSections.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Receiving\frmMacroInventory.resx">
-      <DependentUpon>frmMacroInventory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSupplierdf.resx">
-      <DependentUpon>frmSupplierdf.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Reports\frmMaterialStatusReports.resx">
       <DependentUpon>frmMaterialStatusReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin Gerard\frmSystemLock.resx">
-      <DependentUpon>frmSystemLock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\frmFGMaterialTracking.resx">
       <DependentUpon>frmFGMaterialTracking.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin Gerard\frmuserrights.resx">
-      <DependentUpon>frmuserrights.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin Gerard\frmusers.resx">
-      <DependentUpon>frmusers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Receiving\frmApproveQA.resx">
-      <DependentUpon>frmApproveQA.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Set UP\frmWarehouseMgmt.resx">
-      <DependentUpon>frmWarehouseMgmt.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="NotUsing\frmwhmacropreparation.resx">
       <DependentUpon>frmwhmacropreparation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MacroBook.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>MacroBook.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MDIParent1.resx">
-      <DependentUpon>MDIParent1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MicroBook.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>MicroBook.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="RawMatsRepackingTracking.resx">
-      <DependentUpon>RawMatsRepackingTracking.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Reports\frmFGReceivingReports.resx">
       <DependentUpon>frmFGReceivingReports.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Classes\SharpUpdateAcceptForm.resx">
+    <EmbeddedResource Include="Set UP\frmAddNewCustomer.resx">
+      <DependentUpon>frmAddNewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\Frmaddnewplatenumber.resx">
+      <DependentUpon>Frmaddnewplatenumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmAddNewWarehouse.resx">
+      <DependentUpon>frmAddNewWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmBulkValueMgmt.resx">
+      <DependentUpon>frmBulkValueMgmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmCombinationCode.resx">
+      <DependentUpon>frmCombinationCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmCustomer.resx">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmFormulationManagement.resx">
+      <DependentUpon>frmFormulationManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmFullDepreciationReceiving.resx">
+      <DependentUpon>frmFullDepreciationReceiving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmmixingcapacity.resx">
+      <DependentUpon>frmmixingcapacity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmNewMixingCode.resx">
+      <DependentUpon>frmNewMixingCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\FrmPlatenumber.resx">
+      <DependentUpon>FrmPlatenumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmProductionLevel.resx">
+      <DependentUpon>frmProductionLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmRawMaterialsDataRepack.resx">
+      <DependentUpon>frmRawMaterialsDataRepack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmSupplierdf.resx">
+      <DependentUpon>frmSupplierdf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set UP\frmWarehouseMgmt.resx">
+      <DependentUpon>frmWarehouseMgmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SharpUpdate\SharpUpdateAcceptForm.resx">
       <DependentUpon>SharpUpdateAcceptForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Classes\SharpUpdateDownloadForm.resx">
+    <EmbeddedResource Include="SharpUpdate\SharpUpdateDownloadForm.resx">
       <DependentUpon>SharpUpdateDownloadForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Classes\SharpUpdateInfoForm.resx">
+    <EmbeddedResource Include="SharpUpdate\SharpUpdateInfoForm.resx">
       <DependentUpon>SharpUpdateInfoForm.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="hr_bakDataSet.xsc">
-      <DependentUpon>hr_bakDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="hr_bakDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>hr_bakDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="hr_bakDataSet.xss">
-      <DependentUpon>hr_bakDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="packages.config" />
+    <EmbeddedResource Include="temporary\frmapproveQASummary.resx">
+      <DependentUpon>frmapproveQASummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="temporary\frmCustomerMgmt.resx">
+      <DependentUpon>frmCustomerMgmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="temporary\frmFGReceiving.resx">
+      <DependentUpon>frmFGReceiving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="temporary\frmInactiveRawmaterials.resx">
+      <DependentUpon>frmInactiveRawmaterials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="temporary\frmInventoryMovementReports.resx">
+      <DependentUpon>frmInventoryMovementReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="temporary\frmMacroPendingProd.resx">
+      <DependentUpon>frmMacroPendingProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="temporary\frmmainreport.resx">
+      <DependentUpon>frmmainreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="temporary\frmMicroPendingProd.resx">
+      <DependentUpon>frmMicroPendingProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="temporary\frmQCImportPending.resx">
+      <DependentUpon>frmQCImportPending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="temporary\frmQuantity.resx">
+      <DependentUpon>frmQuantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="temporary\MiscellaneoustransactionIssueOut.resx" />
+    <None Include="bin\Debug\WFFDR.exe.config" />
+    <None Include="bin\Release\WFFDR.exe.config" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -1500,58 +1553,60 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="WFFDR_TemporaryKey.pfx" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="678078-light-bulb-256.ico" />
-    <Content Include="fedora-icon.ico" />
-    <None Include="Resources\Image1.bmp" />
     <None Include="Resources\0-02-06-90261bd49d634ced5a021051cb227adcde9959aab2ac88216ecbe5a7d32c35fd_64323017.jpg" />
-    <None Include="Resources\information.png" />
-    <None Include="Resources\RDF Logo1.png" />
-    <None Include="Resources\thumbs_up_100px.png" />
+    <None Include="Resources\50230704_2055065151247409_2446561917540499456_n.jpg" />
+    <None Include="Resources\739.gif" />
+    <None Include="Resources\add_user_male_50px.png" />
+    <None Include="Resources\ajax-loader.gif" />
+    <None Include="Resources\Buddy.png" />
+    <None Include="Resources\calculator_40px.png" />
+    <None Include="Resources\couple_icloud_100px.png" />
     <None Include="Resources\create_80px.png" />
     <None Include="Resources\deleted_message_80px.png" />
-    <None Include="Resources\message_exchange_100px.png" />
-    <None Include="Resources\info.png" />
-    <None Include="Resources\unnamed.png" />
-    <None Include="Resources\thQ4G2SMSW.jpg" />
-    <None Include="Resources\th.jpg" />
     <None Include="Resources\Employee.png" />
-    <None Include="Resources\Buddy.png" />
-    <None Include="Resources\RDF Logo.png" />
-    <None Include="Resources\user_rights_filled_50px.png" />
-    <None Include="Resources\add_user_male_50px.png" />
-    <None Include="Resources\geo-fence_40px.png" />
-    <None Include="Resources\split_horizontal_40px.png" />
-    <None Include="Resources\groups_40px.png" />
-    <None Include="Resources\logout_rounded_up_100px.png" />
-    <None Include="Resources\powerpoint_48px.png" />
-    <None Include="Resources\microsoft_excel_2019_48px.png" />
-    <None Include="Resources\word_48px.png" />
-    <None Include="Resources\office_365_48px.png" />
-    <None Include="Resources\notepad.png" />
-    <None Include="Resources\calculator_40px.png" />
-    <None Include="Resources\light_on_50px.png" />
-    <None Include="Resources\shutdown_64px.png" />
-    <None Include="Resources\key_64px.png" />
-    <None Include="Resources\lock-512.png" />
-    <None Include="Resources\rdflogo.jpg" />
-    <None Include="Resources\unlock_50px.png" />
-    <None Include="Resources\lock_64px.png" />
-    <None Include="Resources\users-man-woman-512.png" />
-    <None Include="Resources\couple_icloud_100px.png" />
-    <None Include="Resources\50230704_2055065151247409_2446561917540499456_n.jpg" />
-    <None Include="Resources\exit_sign_128px.png" />
-    <None Include="Resources\ajax-loader.gif" />
-    <None Include="Resources\exit_sign_80px.png" />
     <None Include="Resources\exit_100px.png" />
+    <None Include="Resources\exit_sign_128px.png" />
+    <None Include="Resources\exit_sign_80px.png" />
+    <None Include="Resources\geo-fence_40px.png" />
+    <None Include="Resources\groups_40px.png" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\information.png" />
+    <None Include="Resources\key_64px.png" />
+    <None Include="Resources\light_on_50px.png" />
+    <None Include="Resources\lock-512.png" />
+    <None Include="Resources\lock_64px.png" />
     <None Include="Resources\logc.png" />
-    <None Include="Resources\739.gif" />
+    <None Include="Resources\logout_rounded_up_100px.png" />
+    <None Include="Resources\message_exchange_100px.png" />
+    <None Include="Resources\microsoft_excel_2019_48px.png" />
+    <None Include="Resources\notepad.png" />
+    <None Include="Resources\office_365_48px.png" />
+    <None Include="Resources\powerpoint_48px.png" />
+    <None Include="Resources\RDF Logo.png" />
+    <None Include="Resources\RDF Logo1.png" />
+    <None Include="Resources\rdflogo.jpg" />
+    <None Include="Resources\shutdown_64px.png" />
+    <None Include="Resources\split_horizontal_40px.png" />
+    <None Include="Resources\th.jpg" />
+    <None Include="Resources\thQ4G2SMSW.jpg" />
+    <None Include="Resources\thumbs_up_100px.png" />
+    <None Include="Resources\unlock_50px.png" />
+    <None Include="Resources\unnamed.png" />
+    <None Include="Resources\users-man-woman-512.png" />
+    <None Include="Resources\user_rights_filled_50px.png" />
     <None Include="Resources\viber_image_2019-12-06_15-18-33.jpg" />
+    <None Include="Resources\word_48px.png" />
+    <None Include="temporary\hr_bakDataSet.xsc">
+      <DependentUpon>hr_bakDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="temporary\hr_bakDataSet.xsd" />
+    <None Include="temporary\hr_bakDataSet.xss">
+      <DependentUpon>hr_bakDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WFFDR_TemporaryKey.pfx" />
+    <None Include="xml\App.config" />
+    <None Include="xml\packages.config" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
@@ -1571,8 +1626,82 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="SharpUpdate\" />
+    <Content Include="bin\Debug\WFFDR.exe" />
+    <Content Include="bin\Debug\WFFDR.pdb" />
+    <Content Include="bin\Release\AutoSproc.dll" />
+    <Content Include="bin\Release\AxShockwaveFlashObjects.dll" />
+    <Content Include="bin\Release\Bunifu.UI.WinForms.BunifuTextBox.dll" />
+    <Content Include="bin\Release\Bunifu_UI_v1.5.3.dll" />
+    <Content Include="bin\Release\ControlzEx.dll" />
+    <Content Include="bin\Release\ControlzEx.pdb" />
+    <Content Include="bin\Release\CrystalDecisions.CrystalReports.Engine.dll" />
+    <Content Include="bin\Release\CrystalDecisions.ReportAppServer.ClientDoc.dll" />
+    <Content Include="bin\Release\CrystalDecisions.ReportAppServer.CommLayer.dll" />
+    <Content Include="bin\Release\CrystalDecisions.ReportAppServer.CommonControls.dll" />
+    <Content Include="bin\Release\CrystalDecisions.ReportAppServer.CommonObjectModel.dll" />
+    <Content Include="bin\Release\CrystalDecisions.ReportAppServer.Controllers.dll" />
+    <Content Include="bin\Release\CrystalDecisions.ReportAppServer.CubeDefModel.dll" />
+    <Content Include="bin\Release\CrystalDecisions.ReportAppServer.DataDefModel.dll" />
+    <Content Include="bin\Release\CrystalDecisions.ReportAppServer.DataSetConversion.dll" />
+    <Content Include="bin\Release\CrystalDecisions.ReportAppServer.ObjectFactory.dll" />
+    <Content Include="bin\Release\CrystalDecisions.ReportAppServer.Prompting.dll" />
+    <Content Include="bin\Release\CrystalDecisions.ReportAppServer.ReportDefModel.dll" />
+    <Content Include="bin\Release\CrystalDecisions.ReportAppServer.XmlSerialize.dll" />
+    <Content Include="bin\Release\CrystalDecisions.ReportSource.dll" />
+    <Content Include="bin\Release\CrystalDecisions.Shared.dll" />
+    <Content Include="bin\Release\CrystalDecisions.Windows.Forms.dll" />
+    <Content Include="bin\Release\Dapper.dll" />
+    <Content Include="bin\Release\ExcelDataReader.DataSet.dll" />
+    <Content Include="bin\Release\ExcelDataReader.DataSet.pdb" />
+    <Content Include="bin\Release\ExcelDataReader.DataSet.xml" />
+    <Content Include="bin\Release\ExcelDataReader.dll" />
+    <Content Include="bin\Release\ExcelDataReader.pdb" />
+    <Content Include="bin\Release\ExcelDataReader.xml" />
+    <Content Include="bin\Release\HockeySDK.dll" />
+    <Content Include="bin\Release\MahApps.Metro.dll" />
+    <Content Include="bin\Release\MahApps.Metro.pdb" />
+    <Content Include="bin\Release\MahApps.Metro.xml" />
+    <Content Include="bin\Release\MetroFramework.Design.dll" />
+    <Content Include="bin\Release\MetroFramework.dll" />
+    <Content Include="bin\Release\MetroFramework.Fonts.dll" />
+    <Content Include="bin\Release\ShockwaveFlashObjects.dll" />
+    <Content Include="bin\Release\stdole.dll" />
+    <Content Include="bin\Release\System.Windows.Interactivity.dll" />
+    <Content Include="bin\Release\Tulpep.NotificationWindow.dll" />
+    <Content Include="bin\Release\WFFDR.exe" />
+    <Content Include="bin\Release\WFFDR.pdb" />
+    <Content Include="bin\Release\Z.Dapper.Plus.dll" />
+    <Content Include="bin\Release\Z.Dapper.Plus.xml" />
+    <Content Include="Resources\678078-light-bulb-256.ico" />
+    <Content Include="Resources\checked.png" />
+    <Content Include="Resources\conflict_16px.png" />
+    <Content Include="Resources\conflict_48px.png" />
+    <Content Include="Resources\data_pending_16px.png" />
+    <Content Include="Resources\data_pending_48px.png" />
+    <Content Include="Resources\discrepancy_16px.png" />
+    <Content Include="Resources\fedora-icon.ico" />
+    <Content Include="Resources\fedora-logo.png" />
+    <Content Include="Resources\future_64px.png" />
+    <Content Include="Resources\iconfinder_1_Twitter3_colored_svg_5296516.png" />
+    <Content Include="Resources\iconfinder_Asset_85_3298601.png" />
+    <Content Include="Resources\iconfinder_Cancel_728918.png" />
+    <Content Include="Resources\iconfinder_Colored_Facebook3_svg_5365678.png" />
+    <Content Include="Resources\iconfinder_file_delete_48762.png" />
+    <Content Include="Resources\iconfinder_floppy_285657.png" />
+    <Content Include="Resources\iconfinder_General_Office_09_2530835.png" />
+    <Content Include="Resources\iconfinder_social_media_applications_3-instagram_4102579.png" />
+    <Content Include="Resources\icons8_cancel_16px.png" />
+    <Content Include="Resources\messagebox.png" />
+    <Content Include="Resources\open_16px.png" />
+    <Content Include="Resources\receive_cash_100px.png" />
+    <Content Include="Resources\receive_cash_16px.png" />
+    <Content Include="Resources\receive_cash_16px2.png" />
+    <Content Include="Resources\sack_of_flour_16px.png" />
+    <Content Include="Resources\synchronize_64px.png" />
+    <Content Include="Resources\uncheck.png" />
+    <Content Include="Resources\WFFDR.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
