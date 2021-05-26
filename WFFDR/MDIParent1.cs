@@ -4417,6 +4417,13 @@ namespace WFFDR
 
             }
         }
+
+        private void reprocessreportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmreprocessreport reprocess = new frmreprocessreport();
+            reprocess.MdiParent = this;
+            reprocess.Show();
+        }
     }
     
 }

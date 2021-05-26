@@ -281,6 +281,7 @@
             this.fGInventoryFeedcodeTransactionReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fGStockOnHandReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fGInventoryMovementReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reprocessreportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.externalReportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pRINTINGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.barcodeReceiptToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -2211,6 +2212,7 @@
             // 
             this.internalReportsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fGReprocessToolStripMenuItem1,
+            this.reprocessreportToolStripMenuItem,
             this.microMacroMaterialUsedToolStripMenuItem,
             this.microMacroMaterialUsedRepackingDateToolStripMenuItem,
             this.tsTProdDateMaterials,
@@ -2667,6 +2669,13 @@
             this.fGInventoryMovementReportToolStripMenuItem.Size = new System.Drawing.Size(364, 26);
             this.fGInventoryMovementReportToolStripMenuItem.Text = "FG Inventory Movement Report";
             this.fGInventoryMovementReportToolStripMenuItem.Click += new System.EventHandler(this.fGInventoryMovementReportToolStripMenuItem_Click);
+            // 
+            // reprocessreportToolStripMenuItem
+            // 
+            this.reprocessreportToolStripMenuItem.Name = "reprocessreportToolStripMenuItem";
+            this.reprocessreportToolStripMenuItem.Size = new System.Drawing.Size(399, 26);
+            this.reprocessreportToolStripMenuItem.Text = "Reprocess Report";
+            this.reprocessreportToolStripMenuItem.Click += new System.EventHandler(this.reprocessreportToolStripMenuItem_Click);
             // 
             // externalReportsToolStripMenuItem
             // 
@@ -5053,6 +5062,7 @@
         private System.Windows.Forms.DataGridView dgvfgreceiving;
         private System.Windows.Forms.Label lblfgreceiving;
         private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.ToolStripMenuItem reprocessreportToolStripMenuItem;
     }
 }
 
