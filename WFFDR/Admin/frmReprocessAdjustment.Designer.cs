@@ -90,9 +90,11 @@
             this.groupBox1.Controls.Add(this.dataView);
             this.groupBox1.Controls.Add(this.lbltotaldata);
             this.groupBox1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(4, 106);
+            this.groupBox1.Location = new System.Drawing.Point(5, 130);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(953, 310);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(1271, 382);
             this.groupBox1.TabIndex = 676;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "List of Reprocess";
@@ -136,7 +138,8 @@
             this.dataView.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataView.EnableHeadersVisualStyles = false;
             this.dataView.GridColor = System.Drawing.SystemColors.Control;
-            this.dataView.Location = new System.Drawing.Point(7, 20);
+            this.dataView.Location = new System.Drawing.Point(9, 25);
+            this.dataView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataView.Name = "dataView";
             this.dataView.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -149,7 +152,7 @@
             this.dataView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataView.RowHeadersWidth = 60;
             this.dataView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataView.Size = new System.Drawing.Size(940, 281);
+            this.dataView.Size = new System.Drawing.Size(1253, 346);
             this.dataView.TabIndex = 550;
             this.dataView.CurrentCellChanged += new System.EventHandler(this.dataView_CurrentCellChanged);
             this.dataView.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dataView_RowPostPaint);
@@ -170,66 +173,83 @@
             // 
             this.fg_id.DataPropertyName = "fg_id";
             this.fg_id.HeaderText = "FG ID";
+            this.fg_id.MinimumWidth = 6;
             this.fg_id.Name = "fg_id";
             this.fg_id.ReadOnly = true;
+            this.fg_id.Width = 125;
             // 
             // bmx_id_string
             // 
             this.bmx_id_string.DataPropertyName = "bmx_id_string";
             this.bmx_id_string.HeaderText = "BARCODE";
+            this.bmx_id_string.MinimumWidth = 6;
             this.bmx_id_string.Name = "bmx_id_string";
             this.bmx_id_string.ReadOnly = true;
+            this.bmx_id_string.Width = 125;
             // 
             // prod_adv
             // 
             this.prod_adv.DataPropertyName = "prod_adv";
             this.prod_adv.HeaderText = "PROD ID";
+            this.prod_adv.MinimumWidth = 6;
             this.prod_adv.Name = "prod_adv";
             this.prod_adv.ReadOnly = true;
+            this.prod_adv.Width = 125;
             // 
             // fg_feed_code
             // 
             this.fg_feed_code.DataPropertyName = "fg_feed_code";
             this.fg_feed_code.HeaderText = "FEED CODE";
+            this.fg_feed_code.MinimumWidth = 6;
             this.fg_feed_code.Name = "fg_feed_code";
             this.fg_feed_code.ReadOnly = true;
+            this.fg_feed_code.Width = 125;
             // 
             // fg_bags
             // 
             this.fg_bags.DataPropertyName = "fg_bags";
             this.fg_bags.HeaderText = "BAGS";
+            this.fg_bags.MinimumWidth = 6;
             this.fg_bags.Name = "fg_bags";
             this.fg_bags.ReadOnly = true;
+            this.fg_bags.Width = 125;
             // 
             // fg_proddate
             // 
             this.fg_proddate.DataPropertyName = "fg_proddate";
             this.fg_proddate.HeaderText = "PRODPLAN";
+            this.fg_proddate.MinimumWidth = 6;
             this.fg_proddate.Name = "fg_proddate";
             this.fg_proddate.ReadOnly = true;
+            this.fg_proddate.Width = 125;
             // 
             // fg_options
             // 
             this.fg_options.DataPropertyName = "fg_options";
             this.fg_options.HeaderText = "OPTIONS";
+            this.fg_options.MinimumWidth = 6;
             this.fg_options.Name = "fg_options";
             this.fg_options.ReadOnly = true;
+            this.fg_options.Width = 125;
             // 
             // status
             // 
             this.status.DataPropertyName = "status";
             this.status.HeaderText = "STATUS";
+            this.status.MinimumWidth = 6;
             this.status.Name = "status";
             this.status.ReadOnly = true;
+            this.status.Width = 125;
             // 
             // lbltotaldata
             // 
             this.lbltotaldata.AutoSize = true;
             this.lbltotaldata.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.lbltotaldata.ForeColor = System.Drawing.Color.Black;
-            this.lbltotaldata.Location = new System.Drawing.Point(111, 1);
+            this.lbltotaldata.Location = new System.Drawing.Point(148, 1);
+            this.lbltotaldata.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltotaldata.Name = "lbltotaldata";
-            this.lbltotaldata.Size = new System.Drawing.Size(42, 13);
+            this.lbltotaldata.Size = new System.Drawing.Size(54, 17);
             this.lbltotaldata.TabIndex = 656;
             this.lbltotaldata.Text = "BAGS :";
             // 
@@ -249,9 +269,11 @@
             this.GroupBox3.Controls.Add(this.txtproductionid);
             this.GroupBox3.Controls.Add(this.txtfeedcode);
             this.GroupBox3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GroupBox3.Location = new System.Drawing.Point(28, 9);
+            this.GroupBox3.Location = new System.Drawing.Point(37, 11);
+            this.GroupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GroupBox3.Name = "GroupBox3";
-            this.GroupBox3.Size = new System.Drawing.Size(837, 89);
+            this.GroupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox3.Size = new System.Drawing.Size(1116, 110);
             this.GroupBox3.TabIndex = 677;
             this.GroupBox3.TabStop = false;
             this.GroupBox3.Text = "Information Ledger";
@@ -261,10 +283,11 @@
             this.txtaddedby.BackColor = System.Drawing.SystemColors.Window;
             this.txtaddedby.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtaddedby.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtaddedby.Location = new System.Drawing.Point(270, 0);
+            this.txtaddedby.Location = new System.Drawing.Point(360, 0);
+            this.txtaddedby.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtaddedby.Name = "txtaddedby";
             this.txtaddedby.ReadOnly = true;
-            this.txtaddedby.Size = new System.Drawing.Size(157, 22);
+            this.txtaddedby.Size = new System.Drawing.Size(209, 26);
             this.txtaddedby.TabIndex = 490;
             this.txtaddedby.Visible = false;
             // 
@@ -273,18 +296,20 @@
             this.txtprodplan.BackColor = System.Drawing.Color.White;
             this.txtprodplan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtprodplan.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtprodplan.Location = new System.Drawing.Point(431, 25);
+            this.txtprodplan.Location = new System.Drawing.Point(575, 31);
+            this.txtprodplan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtprodplan.Name = "txtprodplan";
             this.txtprodplan.ReadOnly = true;
-            this.txtprodplan.Size = new System.Drawing.Size(124, 22);
+            this.txtprodplan.Size = new System.Drawing.Size(165, 25);
             this.txtprodplan.TabIndex = 489;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(610, 61);
+            this.label16.Location = new System.Drawing.Point(813, 75);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(48, 13);
+            this.label16.Size = new System.Drawing.Size(61, 17);
             this.label16.TabIndex = 488;
             this.label16.Text = "Status:";
             // 
@@ -293,18 +318,20 @@
             this.txtstatus.BackColor = System.Drawing.Color.White;
             this.txtstatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtstatus.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtstatus.Location = new System.Drawing.Point(664, 56);
+            this.txtstatus.Location = new System.Drawing.Point(885, 69);
+            this.txtstatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtstatus.Name = "txtstatus";
             this.txtstatus.ReadOnly = true;
-            this.txtstatus.Size = new System.Drawing.Size(156, 22);
+            this.txtstatus.Size = new System.Drawing.Size(207, 25);
             this.txtstatus.TabIndex = 405;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(614, 30);
+            this.label15.Location = new System.Drawing.Point(819, 37);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(44, 13);
+            this.label15.Size = new System.Drawing.Size(54, 17);
             this.label15.TabIndex = 487;
             this.label15.Text = "Bags :";
             // 
@@ -313,18 +340,20 @@
             this.txtbags.BackColor = System.Drawing.SystemColors.Window;
             this.txtbags.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbags.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbags.Location = new System.Drawing.Point(664, 25);
+            this.txtbags.Location = new System.Drawing.Point(885, 31);
+            this.txtbags.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtbags.Name = "txtbags";
             this.txtbags.ReadOnly = true;
-            this.txtbags.Size = new System.Drawing.Size(157, 22);
+            this.txtbags.Size = new System.Drawing.Size(209, 26);
             this.txtbags.TabIndex = 426;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(307, 60);
+            this.label13.Location = new System.Drawing.Point(409, 74);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(120, 13);
+            this.label13.Size = new System.Drawing.Size(148, 17);
             this.label13.TabIndex = 422;
             this.label13.Text = "Finished Goods ID :";
             // 
@@ -333,36 +362,40 @@
             this.txtfg_id.BackColor = System.Drawing.Color.White;
             this.txtfg_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtfg_id.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfg_id.Location = new System.Drawing.Point(431, 55);
+            this.txtfg_id.Location = new System.Drawing.Point(575, 68);
+            this.txtfg_id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtfg_id.Name = "txtfg_id";
             this.txtfg_id.ReadOnly = true;
-            this.txtfg_id.Size = new System.Drawing.Size(124, 22);
+            this.txtfg_id.Size = new System.Drawing.Size(165, 25);
             this.txtfg_id.TabIndex = 486;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(323, 30);
+            this.label11.Location = new System.Drawing.Point(431, 37);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(104, 13);
+            this.label11.Size = new System.Drawing.Size(127, 17);
             this.label11.TabIndex = 421;
             this.label11.Text = "Production Plan :";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(10, 29);
+            this.label12.Location = new System.Drawing.Point(13, 36);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(94, 13);
+            this.label12.Size = new System.Drawing.Size(115, 17);
             this.label12.TabIndex = 3;
             this.label12.Text = "Production ID :";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(26, 59);
+            this.label14.Location = new System.Drawing.Point(35, 73);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(77, 13);
+            this.label14.Size = new System.Drawing.Size(93, 17);
             this.label14.TabIndex = 0;
             this.label14.Text = "Feed Code :";
             // 
@@ -371,10 +404,11 @@
             this.txtproductionid.BackColor = System.Drawing.SystemColors.Window;
             this.txtproductionid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtproductionid.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtproductionid.Location = new System.Drawing.Point(110, 24);
+            this.txtproductionid.Location = new System.Drawing.Point(147, 30);
+            this.txtproductionid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtproductionid.Name = "txtproductionid";
             this.txtproductionid.ReadOnly = true;
-            this.txtproductionid.Size = new System.Drawing.Size(157, 22);
+            this.txtproductionid.Size = new System.Drawing.Size(209, 26);
             this.txtproductionid.TabIndex = 420;
             // 
             // txtfeedcode
@@ -382,10 +416,11 @@
             this.txtfeedcode.BackColor = System.Drawing.SystemColors.Window;
             this.txtfeedcode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtfeedcode.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfeedcode.Location = new System.Drawing.Point(110, 54);
+            this.txtfeedcode.Location = new System.Drawing.Point(147, 66);
+            this.txtfeedcode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtfeedcode.Name = "txtfeedcode";
             this.txtfeedcode.ReadOnly = true;
-            this.txtfeedcode.Size = new System.Drawing.Size(157, 22);
+            this.txtfeedcode.Size = new System.Drawing.Size(209, 26);
             this.txtfeedcode.TabIndex = 391;
             // 
             // btnAdjustment
@@ -395,9 +430,10 @@
             this.btnAdjustment.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAdjustment.Image = ((System.Drawing.Image)(resources.GetObject("btnAdjustment.Image")));
             this.btnAdjustment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdjustment.Location = new System.Drawing.Point(874, 70);
+            this.btnAdjustment.Location = new System.Drawing.Point(1165, 86);
+            this.btnAdjustment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAdjustment.Name = "btnAdjustment";
-            this.btnAdjustment.Size = new System.Drawing.Size(82, 28);
+            this.btnAdjustment.Size = new System.Drawing.Size(109, 34);
             this.btnAdjustment.TabIndex = 691;
             this.btnAdjustment.Text = "&Adjust";
             this.btnAdjustment.UseVisualStyleBackColor = false;
@@ -410,9 +446,11 @@
             this.groupBox2.Controls.Add(this.txtprod_id);
             this.groupBox2.Controls.Add(this.lbltotalcount);
             this.groupBox2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(6, 423);
+            this.groupBox2.Location = new System.Drawing.Point(8, 521);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(953, 190);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(1271, 234);
             this.groupBox2.TabIndex = 692;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Result List of Reprocess";
@@ -420,9 +458,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 23);
+            this.label2.Location = new System.Drawing.Point(15, 28);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 13);
+            this.label2.Size = new System.Drawing.Size(115, 17);
             this.label2.TabIndex = 491;
             this.label2.Text = "Production ID :";
             // 
@@ -465,7 +504,8 @@
             this.dgv_fg_repack.DefaultCellStyle = dataGridViewCellStyle7;
             this.dgv_fg_repack.EnableHeadersVisualStyles = false;
             this.dgv_fg_repack.GridColor = System.Drawing.SystemColors.Control;
-            this.dgv_fg_repack.Location = new System.Drawing.Point(6, 45);
+            this.dgv_fg_repack.Location = new System.Drawing.Point(8, 55);
+            this.dgv_fg_repack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgv_fg_repack.Name = "dgv_fg_repack";
             this.dgv_fg_repack.ReadOnly = true;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -478,8 +518,9 @@
             this.dgv_fg_repack.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgv_fg_repack.RowHeadersWidth = 60;
             this.dgv_fg_repack.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_fg_repack.Size = new System.Drawing.Size(940, 133);
+            this.dgv_fg_repack.Size = new System.Drawing.Size(1253, 164);
             this.dgv_fg_repack.TabIndex = 550;
+            this.dgv_fg_repack.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgv_fg_repack_RowPostPaint);
             // 
             // dataGridViewCheckBoxColumn1
             // 
@@ -497,66 +538,83 @@
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "fg_id";
             this.dataGridViewTextBoxColumn1.HeaderText = "FG ID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 125;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "bmx_id_string";
             this.dataGridViewTextBoxColumn2.HeaderText = "BARCODE";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 125;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "prod_adv";
             this.dataGridViewTextBoxColumn3.HeaderText = "PROD ID";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 125;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "fg_feed_code";
             this.dataGridViewTextBoxColumn4.HeaderText = "FEED CODE";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 125;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "fg_bags";
             this.dataGridViewTextBoxColumn5.HeaderText = "BAGS";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 125;
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.DataPropertyName = "fg_proddate";
             this.dataGridViewTextBoxColumn6.HeaderText = "PRODPLAN";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Width = 125;
             // 
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.DataPropertyName = "fg_options";
             this.dataGridViewTextBoxColumn7.HeaderText = "OPTIONS";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Width = 125;
             // 
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.DataPropertyName = "status";
             this.dataGridViewTextBoxColumn8.HeaderText = "STATUS";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.Width = 125;
             // 
             // txtprod_id
             // 
             this.txtprod_id.BackColor = System.Drawing.SystemColors.Window;
             this.txtprod_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtprod_id.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtprod_id.Location = new System.Drawing.Point(106, 17);
+            this.txtprod_id.Location = new System.Drawing.Point(141, 21);
+            this.txtprod_id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtprod_id.Name = "txtprod_id";
-            this.txtprod_id.Size = new System.Drawing.Size(157, 22);
+            this.txtprod_id.Size = new System.Drawing.Size(209, 26);
             this.txtprod_id.TabIndex = 492;
             this.txtprod_id.TextChanged += new System.EventHandler(this.txtprod_id_TextChanged);
             // 
@@ -565,18 +623,19 @@
             this.lbltotalcount.AutoSize = true;
             this.lbltotalcount.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.lbltotalcount.ForeColor = System.Drawing.Color.Black;
-            this.lbltotalcount.Location = new System.Drawing.Point(154, 1);
+            this.lbltotalcount.Location = new System.Drawing.Point(205, 1);
+            this.lbltotalcount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltotalcount.Name = "lbltotalcount";
-            this.lbltotalcount.Size = new System.Drawing.Size(42, 13);
+            this.lbltotalcount.Size = new System.Drawing.Size(54, 17);
             this.lbltotalcount.TabIndex = 656;
             this.lbltotalcount.Text = "BAGS :";
             // 
             // frmReprocessAdjustment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(969, 625);
+            this.ClientSize = new System.Drawing.Size(1292, 769);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnAdjustment);
             this.Controls.Add(this.GroupBox3);

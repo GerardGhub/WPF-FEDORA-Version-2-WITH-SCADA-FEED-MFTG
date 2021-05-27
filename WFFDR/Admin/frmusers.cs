@@ -764,14 +764,14 @@ namespace WFFDR
 
         private void lstUsers_MouseClick(object sender, MouseEventArgs e)
         {
-            doSearch();
-            showvalue();
+            //doSearch();
+            //showvalue();
         }
 
         private void lstUsers_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //doSearch();
-            //showvalue();
+            doSearch();
+            showvalue();
         }
 
         private void btnPrint_Click(object sender, EventArgs e)
@@ -784,6 +784,12 @@ namespace WFFDR
             frmReport.Show();
 
 
+        }
+
+        private void lstUsers_SelectedValueChanged(object sender, EventArgs e)
+        {
+            doSearch();
+            showvalue();
         }
     }
 }
