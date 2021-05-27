@@ -1183,6 +1183,7 @@
             this.Cbbagbulk.TabIndex = 346;
             this.Cbbagbulk.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.Cbbagbulk_DrawItem);
             this.Cbbagbulk.SelectionChangeCommitted += new System.EventHandler(this.Cbbagbulk_SelectionChangeCommitted);
+            this.Cbbagbulk.DropDownClosed += new System.EventHandler(this.Cbbagbulk_DropDownClosed);
             this.Cbbagbulk.BackColorChanged += new System.EventHandler(this.Cbbagbulk_BackColorChanged);
             this.Cbbagbulk.Click += new System.EventHandler(this.Cbbagbulk_Click);
             this.Cbbagbulk.Validated += new System.EventHandler(this.Cbbagbulk_Validated);

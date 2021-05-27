@@ -684,8 +684,8 @@ namespace WFFDR
                         txtID.Text = dgv_table_2nd_sup.CurrentRow.Cells["received_id2"].Value.ToString();
                         txtRawCode.Text = dgv_table_2nd_sup.CurrentRow.Cells["r_item_code2"].Value.ToString();
                         txttotalofStock.Text = dgv_table_2nd_sup.CurrentRow.Cells["totalnstock2"].Value.ToString();
-                        //txtGood.Text = dgv_table_2nd_sup.CurrentRow.Cells["actual_count_good"].Value.ToString();
-                        txtGood.Text = dgvMaster2.CurrentRow.Cells["qty_repack_available"].Value.ToString();
+                        txtGood.Text = dgv_table_2nd_sup.CurrentRow.Cells["actual_count_good"].Value.ToString();
+                        //txtGood.Text = dgvMaster2.CurrentRow.Cells["qty_repack_available"].Value.ToString();
                         txtItemDescription.Text = dgv_table_2nd_sup.CurrentRow.Cells["r_item_description"].Value.ToString();
                         txtMainSupplier.Text = dgv_table_2nd_sup.CurrentRow.Cells["r_supplier2"].Value.ToString();
 
@@ -1365,43 +1365,53 @@ namespace WFFDR
             if (txtSecondReceivingCount.Text == "0")
             {
 
-                MessageBox.Show("No Data for Receiving");
-                return;
+                //MessageBox.Show("No Data for Receiving 544545");
+                //return;
+                NoreceivingBindingSource();
+                if (txtSecondReceivingCount.Text == "0")
+                {
+
+
+
+                }
+                else
+                {
+
+                    MessageBox.Show("No Data for Receiving");
+                    return;
+                }
             }
 
 
 
+            //bagong Puke
 
+           
 
-            txtSecondReceivedId.Text = dgvReceiving.CurrentRow.Cells["received_id"].Value.ToString();
-
-
-
-
-
-            //gerard singian
-            //String connetionString = @"Server=FM-MMERCADO-L;Initial Catalog=Fedoramain;Integrated Security=SSPI";
-            String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
-            //deploy
-            txtdatenowstamp.Text = DateTime.Now.ToString();
-
-            SqlConnection sql_con = new SqlConnection(connetionString);
-
-
-
-            string sqlquery = "UPDATE [dbo].[rdf_microreceiving_entry] SET receiving_status = '0',production_id_last_used='" + lblprodid.Text + "',target_weight='" + txtselectweight.Text + "',last_receiving_id='" + txtSecondReceivedId.Text + "',time_stamp_out='" + txtdatenowstamp.Text + "'  WHERE received_id = '" + txtID.Text + "'";
-
-            sql_con.Open();
-            SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
-            SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
-            DataTable dt = new DataTable();
-            sdr.Fill(dt);
-            dgvStockout.DataSource = dt;
+                txtSecondReceivedId.Text = dgvReceiving.CurrentRow.Cells["received_id"].Value.ToString();
 
 
 
 
+              
+                //gerard singian
+                //String connetionString = @"Server=FM-MMERCADO-L;Initial Catalog=Fedoramain;Integrated Security=SSPI";
+                String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
+                //deploy
+                txtdatenowstamp.Text = DateTime.Now.ToString();
 
+                SqlConnection sql_con = new SqlConnection(connetionString);
+
+
+
+                string sqlquery = "UPDATE [dbo].[rdf_microreceiving_entry] SET receiving_status = '0',production_id_last_used='" + lblprodid.Text + "',target_weight='" + txtselectweight.Text + "',last_receiving_id='" + txtSecondReceivedId.Text + "',time_stamp_out='" + txtdatenowstamp.Text + "'  WHERE received_id = '" + txtID.Text + "'";
+
+                sql_con.Open();
+                SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
+                SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
+                DataTable dt = new DataTable();
+                sdr.Fill(dt);
+                dgvStockout.DataSource = dt;
 
 
 
@@ -1410,29 +1420,36 @@ namespace WFFDR
 
 
 
-            sql_con.Close();
 
 
-            ////
 
 
-            ////bags computation
-            double bag1;
-            double bag2;
-            double baganswer;
 
-            bag1 = double.Parse(txtselectweight.Text);
-            bag2 = double.Parse(txtActualQty.Text);
-            //bag2 = double.Parse(txtBalance.Text);
-            ////baganswer = bag1 * 20;
-            baganswer = bag1 - bag2;
-            //baganswer = Math.Round(baganswer);
-            //baganswer = Math.Round(baganswer);
-            txtSubQtyShared.Text = Convert.ToString(baganswer);
-            //
-            txtrecommendedsearch_TextChanged(new object(), new System.EventArgs());
+                sql_con.Close();
 
-            //end
+
+                ////
+
+
+                ////bags computation
+                double bag1;
+                double bag2;
+                double baganswer;
+
+                bag1 = double.Parse(txtselectweight.Text);
+                bag2 = double.Parse(txtActualQty.Text);
+                //bag2 = double.Parse(txtBalance.Text);
+                ////baganswer = bag1 * 20;
+                baganswer = bag1 - bag2;
+                //baganswer = Math.Round(baganswer);
+                //baganswer = Math.Round(baganswer);
+                txtSubQtyShared.Text = Convert.ToString(baganswer);
+                //
+                txtrecommendedsearch_TextChanged(new object(), new System.EventArgs());
+
+                //end
+
+            
 
         }
         public void MacroIfExist()
@@ -1481,20 +1498,21 @@ namespace WFFDR
 
 
                 btnSubmit.Visible = false;
-                //if (lblexisting.Text == "0")
-                //{
-
-                //}
-                //else
-                //{
-                //    return;
-                //}
-
-
-                forStockoutReceiving();
 
 
 
+                ///Pussy fucker 
+
+                if (txtGood.Text.Trim() == txtweighingscale.Text.Trim())
+                {
+
+                }
+                else
+                {
+                    forStockoutReceiving();
+                }
+                
+ 
                 double mainbalance;
                 double selectquantity;
 
@@ -1504,11 +1522,11 @@ namespace WFFDR
                 if (mainbalance < selectquantity)
                 {
                     NoBalanceNotify();
-                    //return; remove return at 4/11/2020 1023PM
+          
                 }
                 else
                 {
-                    //MessageBox.Show("1");
+
                 }
 
 
@@ -2568,6 +2586,8 @@ namespace WFFDR
                         textBox1.Text = dgvMaster2.CurrentRow.Cells["qty_repack_available"].Value.ToString();
                         txtSOH.Text = dgvMaster2.CurrentRow.Cells["qty_repack_available"].Value.ToString();
                         txtGood.Text = dgvMaster2.CurrentRow.Cells["qty_repack_available"].Value.ToString(); // aDDITIONAL NA FAKE
+
+
                         //wala muna this
 
 
@@ -3315,6 +3335,26 @@ txtdatenowstamp.Text = DateTime.Now.ToString();
 
         }
 
+        public void NoreceivingBindingSource()
+        {
+            String connetionString2 = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
+            //deploy
+
+            SqlConnection sql_con2 = new SqlConnection(connetionString2);
+
+
+            string sqlquery2 = "select TOP 2 r_item_id,received_id,r_item_code,r_supplier,totalnstock,selected_uom,uniquedate,r_qty_delivered,days_to_expired,actual_count_good AS WHGood from [dbo].[rdf_microreceiving_entry] WHERE r_item_code= '" + txtrecommendedsearch.Text + "' AND r_item_category='MICRO' AND NOT received_id='" + txtID.Text + "' ORDER BY days_to_expired ASC";
+            sql_con2.Open();
+            SqlCommand sql_cmd2 = new SqlCommand(sqlquery2, sql_con2);
+            SqlDataAdapter sdr2 = new SqlDataAdapter(sql_cmd2);
+            DataTable dt2 = new DataTable();
+            sdr2.Fill(dt2);
+            dgvReceiving.DataSource = dt2;
+            sql_con2.Close();
+            txtSecondReceivingCount.Text = dgvReceiving.RowCount.ToString();
+
+        }
+
 
         private void metroButton2_Click(object sender, EventArgs e)
         {
@@ -3337,10 +3377,24 @@ txtdatenowstamp.Text = DateTime.Now.ToString();
 
 
                 if (txtSecondReceivingCount.Text == "0")
+
+                {
+
+                NoreceivingBindingSource();
+                if (txtSecondReceivingCount.Text == "0")
+                {
+
+
+
+                }
+                else
                 {
 
                     MessageBox.Show("No Data for Receiving");
                     return;
+                }
+
+
                 }
 
 
@@ -3352,9 +3406,6 @@ txtdatenowstamp.Text = DateTime.Now.ToString();
 
 
 
-
-                //gerard singian
-                //String connetionString = @"Server=FM-MMERCADO-L;Initial Catalog=Fedoramain;Integrated Security=SSPI";
                 String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
                 //deploy
                 txtdatenowstamp.Text = DateTime.Now.ToString();

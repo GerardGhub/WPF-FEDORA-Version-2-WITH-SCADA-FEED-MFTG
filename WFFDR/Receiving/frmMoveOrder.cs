@@ -1328,6 +1328,7 @@ namespace WFFDR
                 dgvprodd.ClearSelection();
                 dgvfgdate.ClearSelection();
                 Txtbxfeedtype.Text = String.Empty;
+              
                 return;
             }
 
@@ -1337,12 +1338,41 @@ namespace WFFDR
                 dgvprodd.ClearSelection();
                 dgvfgdate.ClearSelection();
                 Txtbxfeedtype.Text = String.Empty;
+
                 return;
             }
             else
             {
+
+                
+
                
-                if (Cbbagbulk.Text == "BAGGING")
+                if (Cbbagbulk.Text == "BULK ENTRY")
+                {
+                    myglobal.global_module = "fg_inventory_bulk";
+                    load_fgdatebulk();
+                    //load_search2();
+                    load_search3();
+                    load_search4();
+
+                    Enablequantity();
+
+                    int sum = 0;
+                    for (int i = 0; i < dgvfgdate.Rows.Count; ++i)
+                    {
+                        sum += Convert.ToInt32(dgvfgdate.Rows[i].Cells["Total_"].Value);
+                    }
+                    txtbxavailable.Text = sum.ToString();
+
+                    Cbbin.Visible = true;
+                    //Cbbin.SelectedIndex = -1;
+                    lblbin.Visible = true;
+                   
+                }
+
+
+
+                else if(Cbbagbulk.Text== "BAGGING")
                 {
                     myglobal.global_module = "fg_inventory_bag";
                     load_fgdate();
@@ -1362,29 +1392,13 @@ namespace WFFDR
                     Cbbin.Visible = false;
                     Cbbin.SelectedIndex = -1;
                     lblbin.Visible = false;
+
                 }
 
                 else
                 {
-                    
-                    myglobal.global_module = "fg_inventory_bulk";
-                    load_fgdatebulk();
-                    //load_search2();
-                    load_search3();
-                    load_search4();
-
-                    Enablequantity();
-
-                    int sum = 0;
-                    for (int i = 0; i < dgvfgdate.Rows.Count; ++i)
-                    {
-                        sum += Convert.ToInt32(dgvfgdate.Rows[i].Cells["Total_"].Value);
-                    }
-                    txtbxavailable.Text = sum.ToString();
-
-                    Cbbin.Visible = true;
-                    Cbbin.SelectedIndex = -1;
-                    lblbin.Visible = true;
+                   
+                  
                 }
 
             }
@@ -1417,9 +1431,10 @@ namespace WFFDR
 
         private void tsaddlinebtn_Click(object sender, EventArgs e)
         {
-            if(cbplatenumber.Text == String.Empty)
+            if(cbplatenumber.SelectedIndex == -1)
             {
                 EmptyFieldNotify();
+                cbplatenumber.Select();
                 cbplatenumber.Focus();
                 return;
             }
@@ -1432,14 +1447,14 @@ namespace WFFDR
                 return;
             }
 
-            if (Cbfeedcode.Text.Trim() == String.Empty)
+            if (Cbfeedcode.SelectedIndex == -1)
             {
                 EmptyFieldNotify();
                 Cbfeedcode.Focus();
                 return;
             }
 
-            if (Cbbagbulk.Text.Trim() == String.Empty)
+            if (Cbbagbulk.SelectedIndex == -1)
             {
                 EmptyFieldNotify();
                 Cbbagbulk.Focus();
@@ -1455,7 +1470,7 @@ namespace WFFDR
                 return;
             }
 
-            if(Cbbagbulk.Text=="BULK ENTRY" &&  Cbbin.Text== String.Empty)
+            if(Cbbagbulk.Text=="BULK ENTRY" &&  Cbbin.SelectedIndex == -1)
             {
 
                 EmptyFieldNotify();
@@ -1464,7 +1479,7 @@ namespace WFFDR
 
             }
 
-            if(cboCustomer.Text==String.Empty)
+            if(cboCustomer.SelectedIndex == -1)
             {
                 EmptyFieldNotify();
                 cboCustomer.Focus();
@@ -1505,7 +1520,7 @@ namespace WFFDR
                         }
                         txtbxavailable.Text = sum.ToString();
                         Cbbin.Visible = false;
-                        //Cbbin.SelectedIndex = -1;
+                        Cbbin.SelectedIndex = -1;
                         lblbin.Visible = false;
 
                         if (Convert.ToInt32(Txtbxquantity.Text) > Convert.ToInt32(txtbxavailable.Text))
@@ -1567,6 +1582,7 @@ namespace WFFDR
 
 
                     Refreshmo();
+
                     Clear();
                     LoadFeedcodeDropdown();
                     load_FGCategory();
@@ -2408,7 +2424,7 @@ namespace WFFDR
                                 //int q = dgvfgdate.CurrentRow.Index + 1;
                                 //dgvfgdate.CurrentCell = dgvfgdate.Rows[q].Cells["ProductionID"];
                                 dSet.Clear();
-                                dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), txtfgtotal.Text.Trim(), txtuom.Text.Trim(), txtqtyreceived.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
+                                dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), txtfgtotal.Text.Trim(), txtuom.Text.Trim(), Cbbin.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
                                 load_Moveorder();
 
 
@@ -2433,7 +2449,7 @@ namespace WFFDR
                               //  MessageBox.Show("kanan ,e");
 
                                 dSet.Clear();
-                                dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), txtrow2.Text.Trim(), txtuom.Text.Trim(), txtqtyreceived.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
+                                dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), txtrow2.Text.Trim(), txtuom.Text.Trim(), Cbbin.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
                                 if (Convert.ToInt32(txtrow2.Text) == Convert.ToInt32(row2.Text))
                                 {
                                     //MessageBox.Show("takla");
@@ -2451,7 +2467,7 @@ namespace WFFDR
                                 
 
                                 dSet.Clear();
-                                dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), row2.Text.Trim(), txtuom.Text.Trim(), txtqtyreceived.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
+                                dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), row2.Text.Trim(), txtuom.Text.Trim(), Cbbin.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
                                 
 
                                 if (Convert.ToInt32(Txtbxquantity.Text) <= Convert.ToInt32(row1torow3.Text))
@@ -2461,7 +2477,7 @@ namespace WFFDR
                                     
                                 
                                     dSet.Clear();
-                                    dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), txtrow3.Text.Trim(), txtuom.Text.Trim(), txtqtyreceived.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
+                                    dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), txtrow3.Text.Trim(), txtuom.Text.Trim(), Cbbin.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
 
                                  
 
@@ -2475,7 +2491,7 @@ namespace WFFDR
                             {
 
                                 dSet.Clear();
-                                dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), row2.Text.Trim(), txtuom.Text.Trim(), txtqtyreceived.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
+                                dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), row2.Text.Trim(), txtuom.Text.Trim(), Cbbin.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
                                 load_Moveorder();
                                 Queryshowmoveorderbulk();
 
@@ -2485,7 +2501,7 @@ namespace WFFDR
                                     int v = dgvfgdate.CurrentRow.Index + 1;
                                     dgvfgdate.CurrentCell = dgvfgdate.Rows[v].Cells["ProductionID"];
                                     dSet.Clear();
-                                    dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), row3.Text.Trim(), txtuom.Text.Trim(), txtqtyreceived.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
+                                    dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), row3.Text.Trim(), txtuom.Text.Trim(), Cbbin.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
                                     load_Moveorder();
                                   
                                     if (Convert.ToInt32(Txtbxquantity.Text) <= Convert.ToInt32(row1torow4.Text))
@@ -2494,7 +2510,7 @@ namespace WFFDR
                                         int j = dgvfgdate.CurrentRow.Index + 1;
                                         dgvfgdate.CurrentCell = dgvfgdate.Rows[j].Cells["ProductionID"];
                                         dSet.Clear();
-                                        dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), txtrow4.Text.Trim(), txtuom.Text.Trim(), txtqtyreceived.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
+                                        dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), txtrow4.Text.Trim(), txtuom.Text.Trim(), Cbbin.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
                                         load_Moveorder();
                                       
                                     
@@ -2510,7 +2526,7 @@ namespace WFFDR
                             {
 
                                 dSet.Clear();
-                                dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), row2.Text.Trim(), txtuom.Text.Trim(), txtqtyreceived.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
+                                dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), row2.Text.Trim(), txtuom.Text.Trim(), Cbbin.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
                                 load_Moveorder();
                              
                                 Queryshowmoveorderbulk();
@@ -2520,7 +2536,7 @@ namespace WFFDR
                                     int v = dgvfgdate.CurrentRow.Index + 1;
                                     dgvfgdate.CurrentCell = dgvfgdate.Rows[v].Cells["ProductionID"];
                                     dSet.Clear();
-                                    dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), row3.Text.Trim(), txtuom.Text.Trim(), txtqtyreceived.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
+                                    dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), row3.Text.Trim(), txtuom.Text.Trim(), Cbbin.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
                                     load_Moveorder();
                                     
                                     Queryshowmoveorderbulk();
@@ -2530,7 +2546,7 @@ namespace WFFDR
                                         int r = dgvfgdate.CurrentRow.Index + 1;
                                         dgvfgdate.CurrentCell = dgvfgdate.Rows[r].Cells["ProductionID"];
                                         dSet.Clear();
-                                        dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), row4.Text.Trim(), txtuom.Text.Trim(), txtqtyreceived.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
+                                        dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), row4.Text.Trim(), txtuom.Text.Trim(), Cbbin.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
                                         load_Moveorder();
                                         
                                         
@@ -2539,7 +2555,7 @@ namespace WFFDR
                                             int a = dgvfgdate.CurrentRow.Index + 1;
                                             dgvfgdate.CurrentCell = dgvfgdate.Rows[a].Cells["ProductionID"];
                                             dSet.Clear();
-                                            dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), txtrow5.Text.Trim(), txtuom.Text.Trim(), txtqtyreceived.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
+                                            dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), txtrow5.Text.Trim(), txtuom.Text.Trim(), Cbbin.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
                                             load_Moveorder();
                                             
                                          //   Queryshowmoveorderbulk();
@@ -2558,7 +2574,7 @@ namespace WFFDR
                             {
 
                                 dSet.Clear();
-                                dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), row2.Text.Trim(), txtuom.Text.Trim(), txtqtyreceived.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
+                                dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), row2.Text.Trim(), txtuom.Text.Trim(), Cbbin.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
                                 load_Moveorder();
                                
                                 Queryshowmoveorderbulk();
@@ -2567,7 +2583,7 @@ namespace WFFDR
                                     int v = dgvfgdate.CurrentRow.Index + 1;
                                     dgvfgdate.CurrentCell = dgvfgdate.Rows[v].Cells["ProductionID"];
                                     dSet.Clear();
-                                    dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), row3.Text.Trim(), txtuom.Text.Trim(), txtqtyreceived.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
+                                    dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), row3.Text.Trim(), txtuom.Text.Trim(), Cbbin.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
                                     load_Moveorder();
                                  
                                     Queryshowmoveorderbulk();
@@ -2576,7 +2592,7 @@ namespace WFFDR
                                         int r = dgvfgdate.CurrentRow.Index + 1;
                                         dgvfgdate.CurrentCell = dgvfgdate.Rows[r].Cells["ProductionID"];
                                         dSet.Clear();
-                                        dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), row4.Text.Trim(), txtuom.Text.Trim(), txtqtyreceived.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
+                                        dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), row4.Text.Trim(), txtuom.Text.Trim(), Cbbin.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
                                         load_Moveorder();
                                      
                                         Queryshowmoveorderbulk();
@@ -2585,7 +2601,7 @@ namespace WFFDR
                                             int a = dgvfgdate.CurrentRow.Index + 1;
                                             dgvfgdate.CurrentCell = dgvfgdate.Rows[a].Cells["ProductionID"];
                                             dSet.Clear();
-                                            dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), row5.Text.Trim(), txtuom.Text.Trim(), txtqtyreceived.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
+                                            dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), row5.Text.Trim(), txtuom.Text.Trim(), Cbbin.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
                                             load_Moveorder();
 
                                        
@@ -2594,7 +2610,7 @@ namespace WFFDR
                                                 int y = dgvfgdate.CurrentRow.Index + 1;
                                                 dgvfgdate.CurrentCell = dgvfgdate.Rows[y].Cells["ProductionID"];
                                                 dSet.Clear();
-                                                dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), txtrow6.Text.Trim(), txtuom.Text.Trim(), txtqtyreceived.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
+                                                dSet = objStorProc.rdf_sp_move_order(0, txtorder.Text.Trim(), lbldateandtime.Text.Trim(), cboWarehouse.Text.Trim(), lbldata1.Text.Trim(), cboCustomer.Text.Trim().ToString(), lbldata2.Text.Trim().ToString(), Cbfeedcode.Text.Trim(), Txtbxfeedtype.Text.Trim(), Cbbagbulk.Text.Trim(), txtfgdatetotal.Text.Trim(), txtrow6.Text.Trim(), txtuom.Text.Trim(), Cbbin.Text.Trim(), txtbxavailable.Text.Trim(), txtbxavailable.Text.Trim(), txtboxprodid.Text.Trim().ToString(), lblsasa.Text.Trim(), lbldateandtime.Text.Trim(), 0, "", "", fgidbulk.Text.Trim(), "addmoveorder");
                                                 load_Moveorder();
 
                                              
@@ -3650,10 +3666,31 @@ namespace WFFDR
         {
             load_FGCategory();
             Cbbagbulk.SelectedIndex = -1;
+           
+        }
+
+        private void Cbbagbulk_DropDownClosed(object sender, EventArgs e)
+        {
+            if (Cbbagbulk.Text == "BULK ENTRY")
+            {
+
+            }        
+            else
+            {
+                Cbbin.Visible = false;
+                Cbbin.SelectedIndex = -1;
+                lblbin.Visible = false;
+
+
+            }
+
+
+
         }
     }
+}
         
-    }
+ 
 
     
 
