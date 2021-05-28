@@ -31,69 +31,61 @@ namespace WFFDR.Admin
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRepackingAdjustment));
             this.grp1 = new System.Windows.Forms.GroupBox();
             this.dgvrawmats = new System.Windows.Forms.DataGridView();
-            this.selected = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.fg_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bmx_id_string = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prod_adv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fg_feed_code = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fg_bags = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fg_proddate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fg_options = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.cbrawmats = new System.Windows.Forms.ComboBox();
             this.grp2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvrepackreceived = new System.Windows.Forms.DataGridView();
             this.grp3 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtitemcode = new System.Windows.Forms.TextBox();
+            this.rawmatscount = new System.Windows.Forms.Label();
+            this.lblstatus = new System.Windows.Forms.Label();
+            this.item_code = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.item_description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ONHAND = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RESERVED = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblrepackreceived = new System.Windows.Forms.Label();
+            this.itemcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemdescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ActualReceived = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TotalRepack = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Balance = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grp1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvrawmats)).BeginInit();
             this.grp2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvrepackreceived)).BeginInit();
             this.grp3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // grp1
             // 
+            this.grp1.Controls.Add(this.rawmatscount);
             this.grp1.Controls.Add(this.dgvrawmats);
             this.grp1.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grp1.Location = new System.Drawing.Point(13, 36);
             this.grp1.Margin = new System.Windows.Forms.Padding(4);
             this.grp1.Name = "grp1";
             this.grp1.Padding = new System.Windows.Forms.Padding(4);
-            this.grp1.Size = new System.Drawing.Size(517, 382);
+            this.grp1.Size = new System.Drawing.Size(593, 382);
             this.grp1.TabIndex = 677;
             this.grp1.TabStop = false;
             this.grp1.Text = "List of Raw Mats";
@@ -119,126 +111,38 @@ namespace WFFDR.Admin
             this.dgvrawmats.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvrawmats.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvrawmats.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.selected,
-            this.fg_id,
-            this.bmx_id_string,
-            this.prod_adv,
-            this.fg_feed_code,
-            this.fg_bags,
-            this.fg_proddate,
-            this.fg_options,
-            this.status});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvrawmats.DefaultCellStyle = dataGridViewCellStyle3;
+            this.item_code,
+            this.item_description,
+            this.ONHAND,
+            this.RESERVED});
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvrawmats.DefaultCellStyle = dataGridViewCellStyle5;
             this.dgvrawmats.EnableHeadersVisualStyles = false;
             this.dgvrawmats.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvrawmats.Location = new System.Drawing.Point(9, 25);
+            this.dgvrawmats.Location = new System.Drawing.Point(3, 25);
             this.dgvrawmats.Margin = new System.Windows.Forms.Padding(4);
             this.dgvrawmats.Name = "dgvrawmats";
             this.dgvrawmats.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvrawmats.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvrawmats.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvrawmats.RowHeadersWidth = 60;
             this.dgvrawmats.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvrawmats.Size = new System.Drawing.Size(500, 346);
+            this.dgvrawmats.Size = new System.Drawing.Size(585, 346);
             this.dgvrawmats.TabIndex = 550;
+            this.dgvrawmats.CurrentCellChanged += new System.EventHandler(this.dgvrawmats_CurrentCellChanged);
             this.dgvrawmats.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dataView_RowPostPaint);
-            // 
-            // selected
-            // 
-            this.selected.FalseValue = "FALSE";
-            this.selected.HeaderText = "Selected";
-            this.selected.MinimumWidth = 12;
-            this.selected.Name = "selected";
-            this.selected.ReadOnly = true;
-            this.selected.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.selected.TrueValue = "TRUE";
-            this.selected.Visible = false;
-            this.selected.Width = 125;
-            // 
-            // fg_id
-            // 
-            this.fg_id.DataPropertyName = "fg_id";
-            this.fg_id.HeaderText = "FG ID";
-            this.fg_id.MinimumWidth = 6;
-            this.fg_id.Name = "fg_id";
-            this.fg_id.ReadOnly = true;
-            this.fg_id.Width = 125;
-            // 
-            // bmx_id_string
-            // 
-            this.bmx_id_string.DataPropertyName = "bmx_id_string";
-            this.bmx_id_string.HeaderText = "BARCODE";
-            this.bmx_id_string.MinimumWidth = 6;
-            this.bmx_id_string.Name = "bmx_id_string";
-            this.bmx_id_string.ReadOnly = true;
-            this.bmx_id_string.Width = 125;
-            // 
-            // prod_adv
-            // 
-            this.prod_adv.DataPropertyName = "prod_adv";
-            this.prod_adv.HeaderText = "PROD ID";
-            this.prod_adv.MinimumWidth = 6;
-            this.prod_adv.Name = "prod_adv";
-            this.prod_adv.ReadOnly = true;
-            this.prod_adv.Width = 125;
-            // 
-            // fg_feed_code
-            // 
-            this.fg_feed_code.DataPropertyName = "fg_feed_code";
-            this.fg_feed_code.HeaderText = "FEED CODE";
-            this.fg_feed_code.MinimumWidth = 6;
-            this.fg_feed_code.Name = "fg_feed_code";
-            this.fg_feed_code.ReadOnly = true;
-            this.fg_feed_code.Width = 125;
-            // 
-            // fg_bags
-            // 
-            this.fg_bags.DataPropertyName = "fg_bags";
-            this.fg_bags.HeaderText = "BAGS";
-            this.fg_bags.MinimumWidth = 6;
-            this.fg_bags.Name = "fg_bags";
-            this.fg_bags.ReadOnly = true;
-            this.fg_bags.Width = 125;
-            // 
-            // fg_proddate
-            // 
-            this.fg_proddate.DataPropertyName = "fg_proddate";
-            this.fg_proddate.HeaderText = "PRODPLAN";
-            this.fg_proddate.MinimumWidth = 6;
-            this.fg_proddate.Name = "fg_proddate";
-            this.fg_proddate.ReadOnly = true;
-            this.fg_proddate.Width = 125;
-            // 
-            // fg_options
-            // 
-            this.fg_options.DataPropertyName = "fg_options";
-            this.fg_options.HeaderText = "OPTIONS";
-            this.fg_options.MinimumWidth = 6;
-            this.fg_options.Name = "fg_options";
-            this.fg_options.ReadOnly = true;
-            this.fg_options.Width = 125;
-            // 
-            // status
-            // 
-            this.status.DataPropertyName = "status";
-            this.status.HeaderText = "STATUS";
-            this.status.MinimumWidth = 6;
-            this.status.Name = "status";
-            this.status.ReadOnly = true;
-            this.status.Width = 125;
             // 
             // label1
             // 
@@ -258,7 +162,6 @@ namespace WFFDR.Admin
             this.cbrawmats.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbrawmats.FormattingEnabled = true;
             this.cbrawmats.Items.AddRange(new object[] {
-            "NONE",
             "MICRO",
             "MACRO"});
             this.cbrawmats.Location = new System.Drawing.Point(185, 9);
@@ -266,12 +169,13 @@ namespace WFFDR.Admin
             this.cbrawmats.Size = new System.Drawing.Size(121, 23);
             this.cbrawmats.TabIndex = 695;
             this.cbrawmats.DropDownClosed += new System.EventHandler(this.cbrawmats_DropDownClosed);
+            this.cbrawmats.Click += new System.EventHandler(this.cbrawmats_Click);
             // 
             // grp2
             // 
-            this.grp2.Controls.Add(this.dataGridView1);
+            this.grp2.Controls.Add(this.dgvrepackreceived);
             this.grp2.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grp2.Location = new System.Drawing.Point(538, 36);
+            this.grp2.Location = new System.Drawing.Point(614, 36);
             this.grp2.Margin = new System.Windows.Forms.Padding(4);
             this.grp2.Name = "grp2";
             this.grp2.Padding = new System.Windows.Forms.Padding(4);
@@ -281,146 +185,58 @@ namespace WFFDR.Admin
             this.grp2.Text = "List of Raw Mats";
             this.grp2.Visible = false;
             // 
-            // dataGridView1
+            // dgvrepackreceived
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewCheckBoxColumn1,
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle7;
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 25);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
+            this.dgvrepackreceived.AllowUserToAddRows = false;
+            this.dgvrepackreceived.AllowUserToDeleteRows = false;
+            this.dgvrepackreceived.AllowUserToResizeColumns = false;
+            this.dgvrepackreceived.AllowUserToResizeRows = false;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            this.dgvrepackreceived.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.dgvrepackreceived.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvrepackreceived.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridView1.RowHeadersWidth = 60;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(573, 346);
-            this.dataGridView1.TabIndex = 550;
-            this.dataGridView1.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dataGridView1_RowPostPaint);
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.FalseValue = "FALSE";
-            this.dataGridViewCheckBoxColumn1.HeaderText = "Selected";
-            this.dataGridViewCheckBoxColumn1.MinimumWidth = 12;
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            this.dataGridViewCheckBoxColumn1.ReadOnly = true;
-            this.dataGridViewCheckBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewCheckBoxColumn1.TrueValue = "TRUE";
-            this.dataGridViewCheckBoxColumn1.Visible = false;
-            this.dataGridViewCheckBoxColumn1.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "fg_id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "FG ID";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "bmx_id_string";
-            this.dataGridViewTextBoxColumn2.HeaderText = "BARCODE";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "prod_adv";
-            this.dataGridViewTextBoxColumn3.HeaderText = "PROD ID";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "fg_feed_code";
-            this.dataGridViewTextBoxColumn4.HeaderText = "FEED CODE";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "fg_bags";
-            this.dataGridViewTextBoxColumn5.HeaderText = "BAGS";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "fg_proddate";
-            this.dataGridViewTextBoxColumn6.HeaderText = "PRODPLAN";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "fg_options";
-            this.dataGridViewTextBoxColumn7.HeaderText = "OPTIONS";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "status";
-            this.dataGridViewTextBoxColumn8.HeaderText = "STATUS";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            this.dataGridViewTextBoxColumn8.Width = 125;
+            this.dgvrepackreceived.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.dgvrepackreceived.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvrepackreceived.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.itemcode,
+            this.itemdescription,
+            this.ActualReceived,
+            this.TotalRepack,
+            this.Balance});
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvrepackreceived.DefaultCellStyle = dataGridViewCellStyle12;
+            this.dgvrepackreceived.EnableHeadersVisualStyles = false;
+            this.dgvrepackreceived.GridColor = System.Drawing.SystemColors.Control;
+            this.dgvrepackreceived.Location = new System.Drawing.Point(12, 25);
+            this.dgvrepackreceived.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvrepackreceived.Name = "dgvrepackreceived";
+            this.dgvrepackreceived.ReadOnly = true;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvrepackreceived.RowHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            this.dgvrepackreceived.RowHeadersWidth = 60;
+            this.dgvrepackreceived.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvrepackreceived.Size = new System.Drawing.Size(573, 346);
+            this.dgvrepackreceived.TabIndex = 550;
+            this.dgvrepackreceived.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvrepackreceived_RowPostPaint);
             // 
             // grp3
             // 
@@ -442,147 +258,188 @@ namespace WFFDR.Admin
             this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.AllowUserToResizeColumns = false;
             this.dataGridView2.AllowUserToResizeRows = false;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
-            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
+            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle14;
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewCheckBoxColumn2,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewTextBoxColumn14,
-            this.dataGridViewTextBoxColumn15,
-            this.dataGridViewTextBoxColumn16});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridView2.EnableHeadersVisualStyles = false;
             this.dataGridView2.GridColor = System.Drawing.SystemColors.Control;
             this.dataGridView2.Location = new System.Drawing.Point(8, 24);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dataGridView2.RowHeadersWidth = 60;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView2.Size = new System.Drawing.Size(1102, 175);
             this.dataGridView2.TabIndex = 550;
             this.dataGridView2.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dataGridView2_RowPostPaint);
             // 
-            // dataGridViewCheckBoxColumn2
+            // txtitemcode
             // 
-            this.dataGridViewCheckBoxColumn2.FalseValue = "FALSE";
-            this.dataGridViewCheckBoxColumn2.HeaderText = "Selected";
-            this.dataGridViewCheckBoxColumn2.MinimumWidth = 12;
-            this.dataGridViewCheckBoxColumn2.Name = "dataGridViewCheckBoxColumn2";
-            this.dataGridViewCheckBoxColumn2.ReadOnly = true;
-            this.dataGridViewCheckBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewCheckBoxColumn2.TrueValue = "TRUE";
-            this.dataGridViewCheckBoxColumn2.Visible = false;
-            this.dataGridViewCheckBoxColumn2.Width = 125;
+            this.txtitemcode.Location = new System.Drawing.Point(498, 10);
+            this.txtitemcode.Name = "txtitemcode";
+            this.txtitemcode.ReadOnly = true;
+            this.txtitemcode.Size = new System.Drawing.Size(100, 22);
+            this.txtitemcode.TabIndex = 696;
             // 
-            // dataGridViewTextBoxColumn9
+            // rawmatscount
             // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "fg_id";
-            this.dataGridViewTextBoxColumn9.HeaderText = "FG ID";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            this.dataGridViewTextBoxColumn9.Width = 125;
+            this.rawmatscount.AutoSize = true;
+            this.rawmatscount.Location = new System.Drawing.Point(111, 0);
+            this.rawmatscount.Name = "rawmatscount";
+            this.rawmatscount.Size = new System.Drawing.Size(16, 16);
+            this.rawmatscount.TabIndex = 697;
+            this.rawmatscount.Text = "0";
+            this.rawmatscount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // dataGridViewTextBoxColumn10
+            // lblstatus
             // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "bmx_id_string";
-            this.dataGridViewTextBoxColumn10.HeaderText = "BARCODE";
-            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            this.dataGridViewTextBoxColumn10.Width = 125;
+            this.lblstatus.AutoSize = true;
+            this.lblstatus.Location = new System.Drawing.Point(648, 14);
+            this.lblstatus.Name = "lblstatus";
+            this.lblstatus.Size = new System.Drawing.Size(0, 17);
+            this.lblstatus.TabIndex = 697;
             // 
-            // dataGridViewTextBoxColumn11
+            // item_code
             // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "prod_adv";
-            this.dataGridViewTextBoxColumn11.HeaderText = "PROD ID";
-            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            this.dataGridViewTextBoxColumn11.Width = 125;
+            this.item_code.DataPropertyName = "item_code";
+            this.item_code.HeaderText = "ITEM CODE";
+            this.item_code.MinimumWidth = 6;
+            this.item_code.Name = "item_code";
+            this.item_code.ReadOnly = true;
+            this.item_code.Width = 125;
             // 
-            // dataGridViewTextBoxColumn12
+            // item_description
             // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "fg_feed_code";
-            this.dataGridViewTextBoxColumn12.HeaderText = "FEED CODE";
-            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
-            this.dataGridViewTextBoxColumn12.Width = 125;
+            this.item_description.DataPropertyName = "item_description";
+            this.item_description.HeaderText = "ITEM DESCRIPTION";
+            this.item_description.MinimumWidth = 6;
+            this.item_description.Name = "item_description";
+            this.item_description.ReadOnly = true;
+            this.item_description.Width = 125;
             // 
-            // dataGridViewTextBoxColumn13
+            // ONHAND
             // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "fg_bags";
-            this.dataGridViewTextBoxColumn13.HeaderText = "BAGS";
-            this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.ReadOnly = true;
-            this.dataGridViewTextBoxColumn13.Width = 125;
+            this.ONHAND.DataPropertyName = "ONHAND";
+            dataGridViewCellStyle3.Format = "N2";
+            dataGridViewCellStyle3.NullValue = null;
+            this.ONHAND.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ONHAND.HeaderText = "ONHAND";
+            this.ONHAND.MinimumWidth = 6;
+            this.ONHAND.Name = "ONHAND";
+            this.ONHAND.ReadOnly = true;
+            this.ONHAND.Width = 125;
             // 
-            // dataGridViewTextBoxColumn14
+            // RESERVED
             // 
-            this.dataGridViewTextBoxColumn14.DataPropertyName = "fg_proddate";
-            this.dataGridViewTextBoxColumn14.HeaderText = "PRODPLAN";
-            this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.ReadOnly = true;
-            this.dataGridViewTextBoxColumn14.Width = 125;
+            this.RESERVED.DataPropertyName = "RESERVED";
+            dataGridViewCellStyle4.Format = "N2";
+            dataGridViewCellStyle4.NullValue = null;
+            this.RESERVED.DefaultCellStyle = dataGridViewCellStyle4;
+            this.RESERVED.HeaderText = "RESERVED";
+            this.RESERVED.MinimumWidth = 6;
+            this.RESERVED.Name = "RESERVED";
+            this.RESERVED.ReadOnly = true;
+            this.RESERVED.Width = 125;
             // 
-            // dataGridViewTextBoxColumn15
+            // lblrepackreceived
             // 
-            this.dataGridViewTextBoxColumn15.DataPropertyName = "fg_options";
-            this.dataGridViewTextBoxColumn15.HeaderText = "OPTIONS";
-            this.dataGridViewTextBoxColumn15.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.ReadOnly = true;
-            this.dataGridViewTextBoxColumn15.Width = 125;
+            this.lblrepackreceived.AutoSize = true;
+            this.lblrepackreceived.Location = new System.Drawing.Point(725, 36);
+            this.lblrepackreceived.Name = "lblrepackreceived";
+            this.lblrepackreceived.Size = new System.Drawing.Size(16, 17);
+            this.lblrepackreceived.TabIndex = 698;
+            this.lblrepackreceived.Text = "0";
+            this.lblrepackreceived.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // dataGridViewTextBoxColumn16
+            // itemcode
             // 
-            this.dataGridViewTextBoxColumn16.DataPropertyName = "status";
-            this.dataGridViewTextBoxColumn16.HeaderText = "STATUS";
-            this.dataGridViewTextBoxColumn16.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.ReadOnly = true;
-            this.dataGridViewTextBoxColumn16.Width = 125;
+            this.itemcode.DataPropertyName = "itemcode";
+            this.itemcode.HeaderText = "ITEM CODE";
+            this.itemcode.MinimumWidth = 6;
+            this.itemcode.Name = "itemcode";
+            this.itemcode.ReadOnly = true;
+            this.itemcode.Width = 125;
+            // 
+            // itemdescription
+            // 
+            this.itemdescription.DataPropertyName = "itemdescription";
+            this.itemdescription.HeaderText = "ITEM DESCRIPTION";
+            this.itemdescription.MinimumWidth = 6;
+            this.itemdescription.Name = "itemdescription";
+            this.itemdescription.ReadOnly = true;
+            this.itemdescription.Width = 125;
+            // 
+            // ActualReceived
+            // 
+            this.ActualReceived.DataPropertyName = "ActualReceived";
+            dataGridViewCellStyle9.Format = "N2";
+            dataGridViewCellStyle9.NullValue = null;
+            this.ActualReceived.DefaultCellStyle = dataGridViewCellStyle9;
+            this.ActualReceived.HeaderText = "ACTUAL RECEIVED";
+            this.ActualReceived.MinimumWidth = 6;
+            this.ActualReceived.Name = "ActualReceived";
+            this.ActualReceived.ReadOnly = true;
+            this.ActualReceived.Width = 125;
+            // 
+            // TotalRepack
+            // 
+            this.TotalRepack.DataPropertyName = "TotalRepack";
+            dataGridViewCellStyle10.Format = "N2";
+            dataGridViewCellStyle10.NullValue = null;
+            this.TotalRepack.DefaultCellStyle = dataGridViewCellStyle10;
+            this.TotalRepack.HeaderText = "TOTAL REPACK";
+            this.TotalRepack.MinimumWidth = 6;
+            this.TotalRepack.Name = "TotalRepack";
+            this.TotalRepack.ReadOnly = true;
+            this.TotalRepack.Width = 125;
+            // 
+            // Balance
+            // 
+            this.Balance.DataPropertyName = "Balance";
+            dataGridViewCellStyle11.Format = "N2";
+            dataGridViewCellStyle11.NullValue = null;
+            this.Balance.DefaultCellStyle = dataGridViewCellStyle11;
+            this.Balance.HeaderText = "BALANCE";
+            this.Balance.MinimumWidth = 6;
+            this.Balance.Name = "Balance";
+            this.Balance.ReadOnly = true;
+            this.Balance.Width = 125;
             // 
             // FrmRepackingAdjustment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1144, 653);
+            this.ClientSize = new System.Drawing.Size(1220, 653);
+            this.Controls.Add(this.lblrepackreceived);
+            this.Controls.Add(this.lblstatus);
+            this.Controls.Add(this.txtitemcode);
             this.Controls.Add(this.grp3);
             this.Controls.Add(this.grp2);
             this.Controls.Add(this.cbrawmats);
@@ -597,9 +454,10 @@ namespace WFFDR.Admin
             this.Text = "Repacking Adjustment";
             this.Load += new System.EventHandler(this.FrmRepackingAdjustment_Load);
             this.grp1.ResumeLayout(false);
+            this.grp1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvrawmats)).EndInit();
             this.grp2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvrepackreceived)).EndInit();
             this.grp3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
@@ -611,38 +469,24 @@ namespace WFFDR.Admin
 
         internal System.Windows.Forms.GroupBox grp1;
         private System.Windows.Forms.DataGridView dgvrawmats;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn selected;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fg_id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bmx_id_string;
-        private System.Windows.Forms.DataGridViewTextBoxColumn prod_adv;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fg_feed_code;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fg_bags;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fg_proddate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fg_options;
-        private System.Windows.Forms.DataGridViewTextBoxColumn status;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbrawmats;
         internal System.Windows.Forms.GroupBox grp2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridView dgvrepackreceived;
         internal System.Windows.Forms.GroupBox grp3;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.TextBox txtitemcode;
+        private System.Windows.Forms.Label rawmatscount;
+        private System.Windows.Forms.Label lblstatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn item_code;
+        private System.Windows.Forms.DataGridViewTextBoxColumn item_description;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ONHAND;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RESERVED;
+        private System.Windows.Forms.Label lblrepackreceived;
+        private System.Windows.Forms.DataGridViewTextBoxColumn itemcode;
+        private System.Windows.Forms.DataGridViewTextBoxColumn itemdescription;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ActualReceived;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TotalRepack;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Balance;
     }
 }
