@@ -162,6 +162,12 @@
     <Compile Include="Admin\frmFormsAvailable.Designer.cs">
       <DependentUpon>frmFormsAvailable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\FrmRepackingAdjustment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FrmRepackingAdjustment.Designer.cs">
+      <DependentUpon>FrmRepackingAdjustment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\frmReprocessAdjustment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1091,6 +1097,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\frmFormsAvailable.resx">
       <DependentUpon>frmFormsAvailable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FrmRepackingAdjustment.resx">
+      <DependentUpon>FrmRepackingAdjustment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\frmReprocessAdjustment.resx">
       <DependentUpon>frmReprocessAdjustment.cs</DependentUpon>

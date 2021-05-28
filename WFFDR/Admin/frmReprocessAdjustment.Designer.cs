@@ -90,10 +90,10 @@
             this.groupBox1.Controls.Add(this.dataView);
             this.groupBox1.Controls.Add(this.lbltotaldata);
             this.groupBox1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(5, 130);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(3, 131);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1271, 382);
             this.groupBox1.TabIndex = 676;
             this.groupBox1.TabStop = false;
@@ -139,7 +139,7 @@
             this.dataView.EnableHeadersVisualStyles = false;
             this.dataView.GridColor = System.Drawing.SystemColors.Control;
             this.dataView.Location = new System.Drawing.Point(9, 25);
-            this.dataView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataView.Margin = new System.Windows.Forms.Padding(4);
             this.dataView.Name = "dataView";
             this.dataView.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -270,9 +270,9 @@
             this.GroupBox3.Controls.Add(this.txtfeedcode);
             this.GroupBox3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupBox3.Location = new System.Drawing.Point(37, 11);
-            this.GroupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.GroupBox3.Name = "GroupBox3";
-            this.GroupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.GroupBox3.Size = new System.Drawing.Size(1116, 110);
             this.GroupBox3.TabIndex = 677;
             this.GroupBox3.TabStop = false;
@@ -284,7 +284,7 @@
             this.txtaddedby.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtaddedby.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtaddedby.Location = new System.Drawing.Point(360, 0);
-            this.txtaddedby.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtaddedby.Margin = new System.Windows.Forms.Padding(4);
             this.txtaddedby.Name = "txtaddedby";
             this.txtaddedby.ReadOnly = true;
             this.txtaddedby.Size = new System.Drawing.Size(209, 26);
@@ -297,7 +297,7 @@
             this.txtprodplan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtprodplan.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtprodplan.Location = new System.Drawing.Point(575, 31);
-            this.txtprodplan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtprodplan.Margin = new System.Windows.Forms.Padding(4);
             this.txtprodplan.Name = "txtprodplan";
             this.txtprodplan.ReadOnly = true;
             this.txtprodplan.Size = new System.Drawing.Size(165, 25);
@@ -319,7 +319,7 @@
             this.txtstatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtstatus.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtstatus.Location = new System.Drawing.Point(885, 69);
-            this.txtstatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtstatus.Margin = new System.Windows.Forms.Padding(4);
             this.txtstatus.Name = "txtstatus";
             this.txtstatus.ReadOnly = true;
             this.txtstatus.Size = new System.Drawing.Size(207, 25);
@@ -341,7 +341,7 @@
             this.txtbags.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbags.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbags.Location = new System.Drawing.Point(885, 31);
-            this.txtbags.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbags.Margin = new System.Windows.Forms.Padding(4);
             this.txtbags.Name = "txtbags";
             this.txtbags.ReadOnly = true;
             this.txtbags.Size = new System.Drawing.Size(209, 26);
@@ -363,7 +363,7 @@
             this.txtfg_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtfg_id.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtfg_id.Location = new System.Drawing.Point(575, 68);
-            this.txtfg_id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtfg_id.Margin = new System.Windows.Forms.Padding(4);
             this.txtfg_id.Name = "txtfg_id";
             this.txtfg_id.ReadOnly = true;
             this.txtfg_id.Size = new System.Drawing.Size(165, 25);
@@ -405,7 +405,7 @@
             this.txtproductionid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtproductionid.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtproductionid.Location = new System.Drawing.Point(147, 30);
-            this.txtproductionid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtproductionid.Margin = new System.Windows.Forms.Padding(4);
             this.txtproductionid.Name = "txtproductionid";
             this.txtproductionid.ReadOnly = true;
             this.txtproductionid.Size = new System.Drawing.Size(209, 26);
@@ -417,7 +417,7 @@
             this.txtfeedcode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtfeedcode.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtfeedcode.Location = new System.Drawing.Point(147, 66);
-            this.txtfeedcode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtfeedcode.Margin = new System.Windows.Forms.Padding(4);
             this.txtfeedcode.Name = "txtfeedcode";
             this.txtfeedcode.ReadOnly = true;
             this.txtfeedcode.Size = new System.Drawing.Size(209, 26);
@@ -431,7 +431,7 @@
             this.btnAdjustment.Image = ((System.Drawing.Image)(resources.GetObject("btnAdjustment.Image")));
             this.btnAdjustment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAdjustment.Location = new System.Drawing.Point(1165, 86);
-            this.btnAdjustment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdjustment.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdjustment.Name = "btnAdjustment";
             this.btnAdjustment.Size = new System.Drawing.Size(109, 34);
             this.btnAdjustment.TabIndex = 691;
@@ -447,9 +447,9 @@
             this.groupBox2.Controls.Add(this.lbltotalcount);
             this.groupBox2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(8, 521);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(1271, 234);
             this.groupBox2.TabIndex = 692;
             this.groupBox2.TabStop = false;
@@ -505,7 +505,7 @@
             this.dgv_fg_repack.EnableHeadersVisualStyles = false;
             this.dgv_fg_repack.GridColor = System.Drawing.SystemColors.Control;
             this.dgv_fg_repack.Location = new System.Drawing.Point(8, 55);
-            this.dgv_fg_repack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_fg_repack.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_fg_repack.Name = "dgv_fg_repack";
             this.dgv_fg_repack.ReadOnly = true;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -612,7 +612,7 @@
             this.txtprod_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtprod_id.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtprod_id.Location = new System.Drawing.Point(141, 21);
-            this.txtprod_id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtprod_id.Margin = new System.Windows.Forms.Padding(4);
             this.txtprod_id.Name = "txtprod_id";
             this.txtprod_id.Size = new System.Drawing.Size(209, 26);
             this.txtprod_id.TabIndex = 492;

@@ -496,7 +496,7 @@ namespace WFFDR
             dgv1stView.Columns[0].Width = 160;// The id column 
             dgv1stView.Columns[2].Width = 135;// The id column 
 
-
+          
 
 
 
@@ -581,29 +581,7 @@ namespace WFFDR
 
 
 
-        void checkingToday()
-
-        {
-            //String connetionString = @"Server=FM-MMERCADO-L;Initial Catalog=Fedoramain;Integrated Security=SSPI";
-            String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
-            //deploy
-
-            //        String connetionString = @"Data Source=192.168.2.9\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=Nescafe3in1;MultipleActiveResultSets=true"
-            SqlConnection sql_con = new SqlConnection(connetionString);
-
-
-            string sqlquery = "select distinct rpa.item_code AS CODE,rpa.rp_description AS DESCRIPTION from [dbo].[rdf_recipe_to_production] rpa LEFT JOIN rdf_production_advance ax ON rpa.feed_code=ax.p_feed_code WHERE rpa.rp_category='MICRO' AND ax.repacking_status='ready' AND rpa.is_active=1 AND NOT rpa.repacking_status='1'  AND ax.proddate='" + dtpreceivingdate.Text + "' AND NOT ax.canceltheapprove IS NOT NULL AND NOT ax.is_active='1'";
-            sql_con.Open();
-            SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
-            SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
-            DataTable dt = new DataTable();
-            sdr.Fill(dt);
-            dgvStarChecking.DataSource = dt;
-
-
-            sql_con.Close();
-
-        }
+    
 
         void dataGridEmpty()
         {
@@ -634,12 +612,7 @@ namespace WFFDR
             }
 
         }
-        public void load_RawNMaster()
-        {
-            string mcolumns = "test,item_id,item_code,item_description,total_quantity_raw,qty_repack,qty_repack_available";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
-            pointer_module.populateModule(dsetHeader, dgvMaster2, mcolumns, "raw_material_receiving_repacking");
-    
-        }
+      
 
         private void txtsearchreceiving_TextChanged(object sender, EventArgs e)
         {
@@ -719,92 +692,7 @@ namespace WFFDR
             }
 
         }
-        void Sum()
-        {
-            double subjectquantity;
-            double sagot;
-
-            subjectquantity = double.Parse(txtselectweight.Text);
-            sagot = subjectquantity * 2;
-            txtselectweight.Text = Convert.ToString(sagot + (".000"));
-        }
-        private void bunifuStart_Click(object sender, EventArgs e)
-        {
-            lblfeedtype.Visible = true;
-
-            dtprepackdate.Visible = true;
-            label21.Visible = true;
-            label19.Visible = true;
-
-            txtbatch.Visible = true;
-            lblprodname.Visible = true;
-            lblalreadyrepack.Visible = true;
-            //metroButton3_Click(sender,e);
-            lbltotalreceived.Visible = true;
-            label1.Visible = true;
-            btnProdShow.Visible = true;
-            //Updaterdfrecipe();
-            timer1.Start();
-            btngreaterthan.Visible = true;
-            btnlessthan.Visible = true;
-            lblbagorbin.Visible = true;
-            lblproductionid.Visible = true;
-            //panel1.Visible = true;
-
-            StartRepackNotif();
-            dgvAllFeedCode_CurrentCellChanged(sender, e);
-
-            groupBox4.Visible = true;
-            groupBox2.Visible = true;
-
-
-            bunifuStart.Visible = false;
-            bunifuStopRepacking.Visible = true;
-
-            txtillusion.Visible = true;
-            //btnSubmit.Visible = true;
-            lblraws.Visible = true;
-            label55.Visible = true;
-
-            //dgv_table_2nd_sup.Visible = true;
-            //bunifuThinButton219.Visible = true;
-            txtweighingscale.Focus();
-            txtweighingscale_Click(sender, e);
-            //dgvMaster.Enabled = false;
-            //Sum();
-
-            lblCountss200.Visible = true;
-            lblFooterQTy.Visible = true;
-
-            show3Fomula();
-
-
-
-
-            bunifuThinButton215.Visible = true;
-  
-            dgvAllFeedCode.Visible = true;
-            lbltotalitem.Visible = true;
-            lblcountFcode.Visible = true;
-            lblmainCount.Visible = true;
-            lblitemcount.Visible = true;
-            bunifuStartImport.Visible = true;
-            dgv1stView.Visible = true;
-            //dgvAllFeedCode.Enabled = false;
-
-  
-
-            dgvMaster2.Visible = true;
-
-        }
-
-        private void bunifuStopRepacking_Click(object sender, EventArgs e)
-        {
-
-            metroButton1_Click(sender, e);
-
-
-        }
+      
 
 
         void WarningNoInventory()
@@ -1052,35 +940,7 @@ namespace WFFDR
         }
 
 
-        void MatchedRepackNotif()
-        {
-
-            //PopupNotifier popup = new PopupNotifier();
-            //popup.Image = Properties.Resources.info;
-            //popup.TitleText = "Fedora Notifications";
-            //popup.ContentText = "MATCH QUANTITY FOUND . . . . .";
-            //popup.Size = new Size(920, 270);
-            //popup.ImageSize = new Size(175, 220);
-            //popup.BodyColor = Color.Green;
-            //popup.Popup();
-
-            //popup.ContentColor = Color.White;
-            //popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
-            //popup.TitleColor = Color.White;
-            //popup.TitlePadding = new Padding(95, 7, 0, 0);
-            ////popup.AnimationDuration = 1000;
-            ////popup.ShowOptionsButton.ToString();
-            //popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-
-            //popup.Delay = 500;
-            //popup.AnimationInterval = 10;
-            //popup.AnimationDuration = 1000;
-
-
-            //popup.ShowOptionsButton = true;
-
-
-        }
+        
 
         private void dgvAllFeedCode_CurrentCellChanged(object sender, EventArgs e)
         {
@@ -1101,24 +961,11 @@ namespace WFFDR
                         cboDescription.Text = dgvAllFeedCode.CurrentRow.Cells["Feed_Code"].Value.ToString();
                         txtbatch.Text = dgvAllFeedCode.CurrentRow.Cells["Batch"].Value.ToString();
                         txtproductionid.Text = dgvAllFeedCode.CurrentRow.Cells["PRODID"].Value.ToString();
-
-
                         lblitemcode.Text = dgvAllFeedCode.CurrentRow.Cells["item_code1"].Value.ToString();
                         txtrawitemcode.Text = dgvAllFeedCode.CurrentRow.Cells["item_code1"].Value.ToString();
                         txtsearchreceiving.Text = dgvAllFeedCode.CurrentRow.Cells["item_code1"].Value.ToString();
-
-
                         txtdesviewone.Text = dgvAllFeedCode.CurrentRow.Cells["item_code1"].Value.ToString();
-
                         txtrecommendedsearch.Text = dgvAllFeedCode.CurrentRow.Cells["item_code1"].Value.ToString();
-
-
-
-
-
-
-
-
                     }
 
                 }
@@ -1126,12 +973,6 @@ namespace WFFDR
 
         }
 
-
-
-        private void dgvMaster_CurrentCellChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void txtActualQty_TextChanged(object sender, EventArgs e)
         {
@@ -1452,33 +1293,6 @@ namespace WFFDR
             
 
         }
-        public void MacroIfExist()
-        {
-            //for setting the repacking status at to 1
-            String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
-
-            SqlConnection sql_con = new SqlConnection(connetionString);
-
-
-
-            string sqlquery = "Select * from rdf_repackin_entry where prod_id_repack='" + txtproductionid.Text + "' AND rp_item_code='" + txtRawCode.Text + "' ";
-
-            sql_con.Open();
-            SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
-            SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
-            DataTable dt = new DataTable();
-            sdr.Fill(dt);
-            dgvOutMicro.DataSource = dt;
-            lblexisting.Text = dgvOutMicro.RowCount.ToString();
-
-            sql_con.Close();
-
-
-
-
-
-        }
-
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -2310,11 +2124,6 @@ namespace WFFDR
 
         void ReprintingMethod()
         {
-
-
-
-
-
             //proceess of repack kupra
 
             for (int i = 0; i <= dataView.RowCount - 1; i++)
@@ -2372,31 +2181,6 @@ namespace WFFDR
             rpt.PrintToPrinter(printDialog.PrinterSettings.Copies, printDialog.PrinterSettings.Collate, printDialog.PrinterSettings.ToPage, printDialog.PrinterSettings.ToPage);
 
             timer1_Tick(new object(), new System.EventArgs());
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
 
 
@@ -2637,10 +2421,6 @@ namespace WFFDR
             }
         }
 
-        private void dataViews_CurrentCellChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void txtfuck_TextChanged(object sender, EventArgs e)
         {
@@ -3705,110 +3485,7 @@ txtdatenowstamp.Text = DateTime.Now.ToString();
 
         }
 
-        private void bunifuThinButton218_Click(object sender, EventArgs e)
-        {
-
-
-
-
-
-
-        }
-
-        private void btnlessthan_Click(object sender, EventArgs e)
-        {
-
-            txtitemcode_TextChanged(sender, e);
-            lblmainCount.Text = "0";
-
-            if (lblraws.Text == "0")
-            {
-                RepackIDtoRepack();
-                return;
-            }
-
-            if (dgv1stView.Rows.Count >= 1)
-            {
-                int i = dgv1stView.CurrentRow.Index + 1;
-                if (i >= -1 && i < dgv1stView.Rows.Count)
-                    dgv1stView.CurrentCell = dgv1stView.Rows[i].Cells[0];
-                else
-                {
-                    LastLine();
-                    txtselectweight.Text = dgvAllFeedCode.CurrentRow.Cells["Quantity"].Value.ToString();
-                    timer1_Tick(sender, e);
-                    txtweighingscale.Focus();
-                    return;
-                }
-            }
-
-
-            //checkReceivingBalance();
-            txt3rdsearch_TextChanged(sender, e);
-
-            btnbalance_Click(sender, e);
-            load_search();
-            doSearch();
-            lblprodid.Text = dgv1stView.CurrentRow.Cells["prod_id"].Value.ToString();
-            txtitemcode_TextChanged(sender, e);
-            show3Fomula();
-            txtweighingscale.Focus();
-
-        }
-
-        public void checkReceivingBalance()
-        {
-
-
-        }
-
-
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-            lblmainCount.Text = "0";
-            //if (dgv1stView.Rows.Count >= 1)
-            //{
-            //int i = dgv1stView.CurrentRow.Index - 1;
-            //if (i >= -1 && i < dgv1stView.Rows.Count)
-            //dgv1stView.CurrentCell = dgv1stView.Rows[i].Cells[0];
-
-            //}
-            if (lblraws.Text == "0")
-            {
-                RepackIDtoRepack();
-                return;
-            }
-            int prev = this.dgv1stView.CurrentRow.Index - 1;
-            if (prev >= 0)
-            {
-
-                this.dgv1stView.CurrentCell = this.dgv1stView.Rows[prev].Cells[this.dgv1stView.CurrentCell.ColumnIndex];
-            }
-            else
-            {
-                FirstLine();
-                txtselectweight.Text = dgvAllFeedCode.CurrentRow.Cells["Quantity"].Value.ToString();
-            }
-            txt3rdsearch_TextChanged(sender, e);
-            //checkReceivingBalance();
-            btnbalance_Click(sender, e);
-            load_search();
-            doSearch();
-            lblprodid.Text = dgv1stView.CurrentRow.Cells["prod_id"].Value.ToString();
-            txtitemcode_TextChanged(sender, e);
-            show3Fomula();
-            txtweighingscale.Focus();
-        }
-
-        private void bunifuStartImport_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-
+    
 
         private void metroButton3_Click(object sender, EventArgs e)
         {
@@ -3879,136 +3556,6 @@ txtdatenowstamp.Text = DateTime.Now.ToString();
         }
 
 
-        void Updaterdfrecipe()
-        {
-
-            //String connetionString = @"Server=FM-MMERCADO-L;Initial Catalog=Fedoramain;Integrated Security=SSPI";
-
-            String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
-            //deploy
-            SqlConnection sql_con = new SqlConnection(connetionString);
-
-
-
-            string sqlquery = "UPDATE [dbo].[rdf_recipe_to_production] SET repacking_status='0'"; //not using
-            sql_con.Open();
-            SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
-            SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
-            DataTable dt = new DataTable();
-            sdr.Fill(dt);
-            dgvStarChecking.DataSource = dt;
-
-            sql_con.Close();
-
-
-            String connetionString22 = @"Server=FM-MMERCADO-L;Initial Catalog=Fedoramain;Integrated Security=SSPI";
-
-
-            SqlConnection sql_con22 = new SqlConnection(connetionString22);
-
-
-
-            string sqlquery22 = "UPDATE [dbo].[rdf_production_advance] SET is_active='0' WHERE proddate='" + dtpreceivingdate.Text + "' ";
-            sql_con22.Open();
-            SqlCommand sql_cmd22 = new SqlCommand(sqlquery22, sql_con22);
-            SqlDataAdapter sdr22 = new SqlDataAdapter(sql_cmd22);
-            DataTable dt22 = new DataTable();
-            sdr.Fill(dt22);
-            dgvStarChecking.DataSource = dt22;
-
-            sql_con22.Close();
-        }
-
-        private void btnProdShow_Click(object sender, EventArgs e)
-        {
-            if (btnSubmit.Visible == true)
-            {
-                return;
-            }
-            else
-            {
-
-            }
-
-            dgvProdToday.Visible = true;
-            btnHideProd.Visible = true;
-
-            label11.Visible = true;
-            btnProdShow.Visible = false;
-            lblcountprod3.Visible = true;
-
-
-            dgvAllFeedCode.Visible = false;
-
-            dgvRawMats.Visible = true;
-
-
-
-            String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
-
-            SqlConnection sql_con = new SqlConnection(connetionString);
-
-            string sqlquery = "select rpa.feed_code AS Feed_Code,rpa.rp_feed_type AS Feed_Type,ax.p_nobatch AS Batch,rpa.rp_group AS Groups,rpa.quantity AS Quantity,rpa.production_id AS PRODID,rpa.rp_description,rpa.item_code from [dbo].[rdf_recipe_to_production] rpa LEFT JOIN rdf_production_advance ax ON rpa.production_id=ax.prod_id WHERE rpa.rp_category='MICRO' AND rpa.production_id ='" + lblprodid.Text + "' AND rpa.is_active=0 AND ax.is_selected='1' AND ax.is_active=1 AND NOT ax.canceltheapprove IS NOT NULL  AND (ax.proddate='" + txtdateplusone.Text + "' OR ax.proddate='" + dtpreceivingdate.Text + "' OR ax.proddate='" + txtdateminus1.Text + "' OR ax.proddate='" + txtdateofoutminus2.Text + "' OR ax.proddate='" + txtplustwo.Text + "' OR ax.proddate='" + txtplusthree.Text + "' OR ax.proddate='"+lbldateplus5.Text+"') ORDER BY ax.prod_id ASC";
-
-
-
-
-            sql_con.Open();
-            SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
-            SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
-            DataTable dt = new DataTable();
-            sdr.Fill(dt);
-            dgvRawMats.DataSource = dt;
-
-
-            sql_con.Close();
-
-
-            for (int n = 0; n < (dgvRawMats.Rows.Count); n++)
-            {
-                double s = Convert.ToDouble(dgvRawMats.Rows[n].Cells[4].Value);
-
-
-                //double s1 = Convert.ToDouble(dgvAllFeedCode.Rows[n].Cells[7].Value);
-
-                double s1 = Convert.ToDouble(dgvRawMats.Rows[n].Cells[2].Value);
-
-                //int s1 = Convert.ToInt32(dgv1stView.Rows[n].Cells[1].Value);
-                double s13 = s * 2;
-                double s15 = s13 * s1;
-
-                //original computation 5/4/2020  double s15 = s13 * s1;
-
-
-                dgvRawMats.Rows[n].Cells[4].Value = s15.ToString("#,0.000");
-                //dgvAllFeedCode.Rows[n].Cells[4].Value = s13.ToString("#,0.000");
-                //dgvAllFeedCode.Rows[n].Cells[7].Value = s15.ToString("#,0.000");
-            }
-
-
-
-
-
-
-
-
-
-
-        }
-
-        private void btnHideProd_Click(object sender, EventArgs e)
-        {
-            dgvProdToday.Visible = false;
-            btnProdShow.Visible = true;
-
-            label11.Visible = false;
-            btnHideProd.Visible = false;
-            lblcountprod3.Visible = false;
-
-            dgvAllFeedCode.Visible = true;
-
-            dgvRawMats.Visible = false;
-        }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
@@ -4086,11 +3633,6 @@ txtdatenowstamp.Text = DateTime.Now.ToString();
             e.Graphics.DrawString(rowNumber, dg.Font, b, e.RowBounds.Location.X + 15, e.RowBounds.Location.Y + ((e.RowBounds.Height - size.Height) / 2));
         }
 
-        private void bunifuThinButton220_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button5_Click_1(object sender, EventArgs e)
         {
             txtweighingscale.Enabled = true;
@@ -4103,20 +3645,6 @@ txtdatenowstamp.Text = DateTime.Now.ToString();
 
         }
 
-        private void bunifuThinButton212_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuThinButton217_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuThinButton23_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void xpired_ValueChanged(object sender, EventArgs e)
         {
@@ -4783,55 +4311,5 @@ txtdatenowstamp.Text = DateTime.Now.ToString();
 
         }
 
-        public void ForApproval()
-        {
-
-
-            if (myClass.g_objStoredProc.getConnected() == true)
-            {
-                g_objStoredProcCollection = myClass.g_objStoredProc.GetCollections();
-
-                dset = g_objStoredProcCollection.sp_IDGenerator(0, "SelectHR", "", "", 1);
-                dset2 = g_objStoredProcCollection.sp_IDGenerator(1, "SelectCompany", "", "", 1);
-
-                Rpt_Path = WFFDR.Properties.Settings.Default.fdg;
-
-                //Rpt_Path = ini.IniReadValue("PATH", "Report_Path");
-
-                xClass.ActivitiesLogs(userinfo.emp_name + " Generated " + myglobal.REPORT_NAME + " Report");
-            }
-            else
-            {
-                MessageBox.Show("Unable to connect in sql server", "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.Close();
-            }
-
-
-            int number_of_rows = dset2.Tables[0].Rows.Count - 1;
-
-
-
-
-            dset = g_objStoredProcCollection.sp_IDGenerator(1, "Searchforreadyrepack", "All", txtSearch.Text, 1);
-
-
-
-        }
-
-
-        public void load_Schedules()
-        {
-
-
-        }
-
-
-        private void con_on()
-        {
-            con.Close();
-            con = new SqlConnection();
-            con.ConnectionString = connetionString;
-            con.Open();
-        }
     }
 }

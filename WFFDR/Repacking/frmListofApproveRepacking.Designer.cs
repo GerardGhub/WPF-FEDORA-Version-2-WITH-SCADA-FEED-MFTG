@@ -582,7 +582,7 @@
             this.splitContainer1.Panel2.Controls.Add(this.dgvStarChecking);
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
             this.splitContainer1.Size = new System.Drawing.Size(1307, 784);
-            this.splitContainer1.SplitterDistance = 596;
+            this.splitContainer1.SplitterDistance = 597;
             this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -4454,7 +4454,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(706, 12);
+            this.panel2.Size = new System.Drawing.Size(705, 12);
             this.panel2.TabIndex = 40;
             this.panel2.Visible = false;
             // 

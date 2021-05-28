@@ -15,6 +15,7 @@ using Tulpep.NotificationWindow;
 using WFFDR.Reports;
 using WFFDR.Finished_Goods;
 using WFFDR.Set_UP;
+using WFFDR.Admin;
 
 namespace WFFDR
 {
@@ -2526,7 +2527,9 @@ namespace WFFDR
         private void toolStripRepacking1_Click(object sender, EventArgs e)
         {
             frmListofApproveRepacking prep = new frmListofApproveRepacking();
+         
             prep.MdiParent = this;
+            prep.FormBorderStyle = FormBorderStyle.FixedSingle;
             prep.Show();
         }
 
@@ -2534,6 +2537,7 @@ namespace WFFDR
         {
             frmListofMacroRepacking RAW = new frmListofMacroRepacking();
             RAW.MdiParent = this;
+            RAW.FormBorderStyle = FormBorderStyle.FixedSingle;
             RAW.Show();
         }
 
@@ -4423,6 +4427,14 @@ namespace WFFDR
             frmreprocessreport reprocess = new frmreprocessreport();
             reprocess.MdiParent = this;
             reprocess.Show();
+        }
+
+        private void repackingAdjustmentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmRepackingAdjustment repacking = new FrmRepackingAdjustment();
+            repacking.MdiParent = this;
+            repacking.Show();
+            
         }
     }
     
