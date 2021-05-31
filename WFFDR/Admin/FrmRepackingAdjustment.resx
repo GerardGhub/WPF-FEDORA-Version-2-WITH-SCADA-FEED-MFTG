@@ -129,6 +129,9 @@
   <metadata name="RESERVED.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="ReceivedID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="itemcode.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -144,7 +147,35 @@
   <metadata name="Balance.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="repack_id.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="rp_item_id.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="rp_item_code.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="rp_item_description.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="total_repack.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnsave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAGZSURBVDhPlZHNK0RhFMbf8bFEiSSDhZ2VP4DMFJbD5jYfd2bULG7McsqooUxRohQzFhYWU0hR
+        tvIRigVrxcI/YUFZqPE7M0dzG8bHU0/nfZ77nHPed8b8hEgk4sABlX9DNputC4VC3YlEosm27ZNoNJqx
+        LKs9HA53aOR7EB4jnIf7bF1AH8Jn9BN1A65y3qVuQa+2VcDWAFtSKk08Hu+i4ZXwvVrGcZxG9CYLetWq
+        gHCAD7ZKI09Aj+OPqlUC3jpep8oKmFyQK6o08m68Fxoe1ZJMM7yEabXK4Lo9mCuE56n9asu2U/FUyoAp
+        lgxR95CesgswM9IIvXBZ7S8D9IYevGl+r8Gyi+G+OgN2fD5fg5zdA3TBnJx5Xgt+Xs7yIY3YhpYQnYvF
+        Ykt8kk2lAWxrg0cw6cqdU/0yIAeLVSzI8M8B+vc9VGXeGTghOQ8iyTOuqTfUFFesdw+QM14r32XZLTzG
+        HxH/RxC6Iryo8n/gJjM0F6lvDPKr/Tt41zANszRfwDsh+kAGBoPBPo3VBuE1ms5qcFJjCmM+AG3B08x2
+        A5m/AAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAAAAAAEAIAC7UAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAEAAAABAAgGAAAAXHKoZgAAUIJJ

@@ -423,39 +423,7 @@ namespace WFFDR
         }
 
 
-        public void Success()
-        {
-            PopupNotifier popup = new PopupNotifier();
-            popup.Image = Properties.Resources.info;
-            popup.TitleText = "Fedora Notifications";
-            popup.TitleColor = Color.White;
-            popup.TitlePadding = new Padding(95, 7, 0, 0);
-            popup.TitleFont = new Font("Tahoma", 10);
-
-            popup.ContentText = "Successfully added Move Order!";
-
-            popup.ContentColor = System.Drawing.Color.FromArgb(255, 255, 255);
-            popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
-
-            popup.ContentHoverColor = System.Drawing.Color.FromArgb(255, 255, 255);
-            popup.ContentPadding = new Padding(0);
-            popup.Size = new Size(350, 100);
-            popup.ImageSize = new Size(70, 80);
-            popup.BodyColor = Color.Green;
-            popup.Popup();
-
-            popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-
-            popup.Delay = 500;
-            popup.AnimationInterval = 10;
-            popup.AnimationDuration = 1000;
-
-
-            popup.ShowOptionsButton = true;
-
-
-        }
-
+       
 
 
         public void SaveSuccess()
