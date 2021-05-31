@@ -3682,11 +3682,24 @@ namespace WFFDR.Finished_Goods
 
         private void FrmFGMiscellaneousFinanceIssue_FormClosing(object sender, FormClosingEventArgs e)
         {
-            dSet.Clear();
-            dSet = objStorProc.rdf_sp_move_order(0, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", lblsasa.Text, "", 0, "", "", "", "formissuebulk");
 
-            dSet.Clear();
-            dSet = objStorProc.rdf_sp_move_order(0, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", lblsasa.Text, "", 0, "", "", "", "formissue");
-        }
+            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to close this form? The transaction will be reset.", "WARNING", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                dSet.Clear();
+                dSet = objStorProc.rdf_sp_move_order(0, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", lblsasa.Text, "", 0, "", "", "", "formissuebulk");
+
+                dSet.Clear();
+                dSet = objStorProc.rdf_sp_move_order(0, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", lblsasa.Text, "", 0, "", "", "", "formissue");
+
+            }
+
+
+            else
+            {
+                e.Cancel = true;
+                return;
+            }
+
+            }
     }
 }

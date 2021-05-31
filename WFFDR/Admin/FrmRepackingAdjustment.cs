@@ -381,10 +381,54 @@ namespace WFFDR.Admin
             }
 
         }
+        public void EmptyFieldNotify()
+        {
+            PopupNotifier popup = new PopupNotifier();
+            popup.Image = Properties.Resources.info;
+            popup.TitleText = "Fedora Notifications";
+            popup.TitleColor = Color.White;
+            popup.TitlePadding = new Padding(95, 7, 0, 0);
+            popup.TitleFont = new Font("Tahoma", 10);
+
+            popup.ContentText = "Please fill in the required Field!";
+
+            popup.ContentColor = System.Drawing.Color.FromArgb(255, 255, 255);
+            popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
+
+            popup.ContentHoverColor = System.Drawing.Color.FromArgb(255, 255, 255);
+            popup.ContentPadding = new Padding(0);
+            popup.Size = new Size(350, 100);
+            popup.ImageSize = new Size(70, 80);
+            popup.BodyColor = Color.Red;
+            popup.Popup();
+
+            popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
+
+            popup.Delay = 500;
+            popup.AnimationInterval = 10;
+            popup.AnimationDuration = 1000;
+
+
+            popup.ShowOptionsButton = true;
+
+
+        }
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to update this '" + txtitemcode.Text + "' item code ? ", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+           if(cbreceivedid.SelectedIndex == -1)
+            {
+                EmptyFieldNotify();
+                cbreceivedid.Select();
+                return;
+
+            }
+            else
+            {
+
+          
+            
+           if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to update this '" + txtitemcode.Text + "' item code ? ", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
                 dset.Clear();
                 dset = objStorProc.sp_rdf_fg_feedcodetransaction(0, repackid.Text, cbreceivedid.Text, "", "", "", "", "", "", "", "", "", "updateactive");
@@ -398,6 +442,7 @@ namespace WFFDR.Admin
             {
                 return;
 
+            }
             }
         }
 

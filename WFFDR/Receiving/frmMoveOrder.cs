@@ -594,12 +594,25 @@ namespace WFFDR
 
         private void frmMoveOrder_FormClosing(object sender, FormClosingEventArgs e)
         {
-            dSet.Clear();
-            dSet = objStorProc.rdf_sp_move_order(0, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", lblsasa.Text, "", 0, "", "", "", "formmoveorderbulk");
 
-            dSet.Clear();
-            dSet = objStorProc.rdf_sp_move_order(0, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", lblsasa.Text, "", 0, "", "", "", "formmoveorder");
-        }
+            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to close this form? The transaction will be reset.", "WARNING", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                dSet.Clear();
+                dSet = objStorProc.rdf_sp_move_order(0, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", lblsasa.Text, "", 0, "", "", "", "formmoveorderbulk");
+
+                dSet.Clear();
+                dSet = objStorProc.rdf_sp_move_order(0, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", lblsasa.Text, "", 0, "", "", "", "formmoveorder");
+
+            }
+
+
+            else
+            {
+             e.Cancel = true;
+             return;
+                }
+
+                }
 
         private void tsneworderbtn_Click(object sender, EventArgs e)
         {
