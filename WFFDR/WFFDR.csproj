@@ -1004,28 +1004,6 @@
     <Compile Include="Set UP\frmWarehouseMgmt.Designer.cs">
       <DependentUpon>frmWarehouseMgmt.cs</DependentUpon>
     </Compile>
-    <Compile Include="SharpUpdate\Hasher.cs" />
-    <Compile Include="SharpUpdate\ISharpUpdatable.cs" />
-    <Compile Include="SharpUpdate\SharpUpdateAcceptForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SharpUpdate\SharpUpdateAcceptForm.Designer.cs">
-      <DependentUpon>SharpUpdateAcceptForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SharpUpdate\SharpUpdateDownloadForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SharpUpdate\SharpUpdateDownloadForm.Designer.cs">
-      <DependentUpon>SharpUpdateDownloadForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SharpUpdate\SharpUpdateInfoForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SharpUpdate\SharpUpdateInfoForm.Designer.cs">
-      <DependentUpon>SharpUpdateInfoForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SharpUpdate\SharpUpdater.cs" />
-    <Compile Include="SharpUpdate\SharpUpdateXml.cs" />
     <Compile Include="temporary\frmapproveQASummary.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1510,15 +1488,6 @@
     <EmbeddedResource Include="Set UP\frmWarehouseMgmt.resx">
       <DependentUpon>frmWarehouseMgmt.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SharpUpdate\SharpUpdateAcceptForm.resx">
-      <DependentUpon>SharpUpdateAcceptForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SharpUpdate\SharpUpdateDownloadForm.resx">
-      <DependentUpon>SharpUpdateDownloadForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SharpUpdate\SharpUpdateInfoForm.resx">
-      <DependentUpon>SharpUpdateInfoForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="temporary\frmapproveQASummary.resx">
       <DependentUpon>frmapproveQASummary.cs</DependentUpon>
     </EmbeddedResource>
@@ -1636,7 +1605,12 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\SharpUpdate\SharpUpdate.csproj">
+      <Project>{e16f27f4-6922-4a81-b06e-412732f734ac}</Project>
+      <Name>SharpUpdate</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\WFFDR.exe" />
     <Content Include="bin\Debug\WFFDR.pdb" />
