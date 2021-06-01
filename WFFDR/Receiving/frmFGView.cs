@@ -81,7 +81,7 @@ namespace WFFDR
             }
             Enable();
             btnDeSelect.Visible = false;
-            textBox2.Text = "sarap";
+            textBox2.Text = "open";
             btnpending.Visible = false;
             
             lblbase.Text = "disable";
@@ -100,7 +100,7 @@ namespace WFFDR
             popup.TitlePadding = new Padding(95, 7, 0, 0);
             popup.TitleFont = new Font("Tahoma", 10);
 
-            popup.ContentText = "The Production ID you chose is already received by other user, Kindly choose another Production ID Thankyou!";
+            popup.ContentText = "The Selected Production ID is already received by other user, Kindly choose another Production ID Thankyou!";
 
             popup.ContentColor = System.Drawing.Color.FromArgb(255, 255, 255);
             popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);

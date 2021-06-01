@@ -1400,36 +1400,6 @@ namespace WFFDR.Finished_Goods
 
         private void tsaddlinebtn_Click(object sender, EventArgs e)
         {
-            if (Txtbxquantity.Text.Trim() == String.Empty)
-            {
-                EmptyFieldNotify();
-                Txtbxquantity.Focus();
-                return;
-            }
-
-            if (Cbfeedcode.Text.Trim() == String.Empty)
-            {
-                EmptyFieldNotify();
-                Cbfeedcode.Focus();
-                return;
-            }
-
-            if (Cbbagbulk.Text.Trim() == String.Empty)
-            {
-                EmptyFieldNotify();
-                Cbbagbulk.Focus();
-                return;
-            }
-
-
-            if (Txtbxfeedtype.Text.Trim() == String.Empty)
-            {
-
-                EmptyFieldNotify();
-                Txtbxfeedtype.Focus();
-                return;
-            }
-
             if (txtremarks.Text == String.Empty)
 
             {
@@ -1440,18 +1410,56 @@ namespace WFFDR.Finished_Goods
 
             }
 
-            if (Cbfgdate.Text == String.Empty)
+            if (Cbfeedcode.SelectedIndex == -1)
+            {
+                EmptyFieldNotify();
+                Cbfeedcode.Select();
+                Cbfeedcode.Focus();
+                return;
+            }
+
+
+            if (Cbbagbulk.SelectedIndex == -1)
+            {
+                EmptyFieldNotify();
+                Cbbagbulk.Select();
+                Cbbagbulk.Focus();
+                return;
+            }
+
+
+            if (Cbfgdate.SelectedIndex == -1)
             {
 
                 EmptyFieldNotify();
+                Cbfgdate.Select(); 
                 Cbfgdate.Focus();
                 return;
             }
+            
+            
+            if (Txtbxquantity.Text == String.Empty)
+            {
+                EmptyFieldNotify();
+                Txtbxquantity.Focus();
+                return;
+            }
+
 
             if (Convert.ToInt32(Txtbxquantity.Text) > Convert.ToInt32(txtbxavailable.Text))
             {
                 InvalidQTY();
+                Txtbxquantity.Focus();
                 return; //3/22/2021
+            }
+
+
+            if (Txtbxfeedtype.Text == String.Empty)
+            {
+
+                EmptyFieldNotify();
+                Txtbxfeedtype.Focus();
+                return;
             }
 
             if (Cbbagbulk.Text == "BULK ENTRY")

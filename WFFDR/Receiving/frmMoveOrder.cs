@@ -1429,24 +1429,31 @@ namespace WFFDR
                 return;
             }
 
-          
-            if (Txtbxquantity.Text.Trim() == String.Empty)
+
+            if (cboCustomer.SelectedIndex == -1)
             {
                 EmptyFieldNotify();
-                Txtbxquantity.Focus();
+                cboCustomer.Select();
+                cboCustomer.Focus();
+              
                 return;
+
             }
+
 
             if (Cbfeedcode.SelectedIndex == -1)
             {
                 EmptyFieldNotify();
+                Cbfeedcode.Select();
                 Cbfeedcode.Focus();
+               
                 return;
             }
 
             if (Cbbagbulk.SelectedIndex == -1)
             {
                 EmptyFieldNotify();
+                Cbbagbulk.Select();
                 Cbbagbulk.Focus();
                 return;
             }
@@ -1464,17 +1471,19 @@ namespace WFFDR
             {
 
                 EmptyFieldNotify();
+                Cbbin.Select();
                 Cbbin.Focus();
                 return;
 
             }
 
-            if(cboCustomer.SelectedIndex == -1)
+
+            if (Txtbxquantity.Text == String.Empty)
             {
                 EmptyFieldNotify();
-                cboCustomer.Focus();
+             
+                Txtbxquantity.Focus();
                 return;
-
             }
 
             if (Convert.ToInt32(Txtbxquantity.Text) > Convert.ToInt32(txtbxavailable.Text))

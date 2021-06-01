@@ -94,6 +94,16 @@ namespace WFFDR.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_list_24px {
+            get {
+                object obj = ResourceManager.GetObject("add_list_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add_user_male_50px {
             get {
                 object obj = ResourceManager.GetObject("add_user_male_50px", resourceCulture);
@@ -127,6 +137,26 @@ namespace WFFDR.Properties {
         internal static System.Drawing.Bitmap calculator_40px {
             get {
                 object obj = ResourceManager.GetObject("calculator_40px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cancel_24px {
+            get {
+                object obj = ResourceManager.GetObject("cancel_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cancel_24px2 {
+            get {
+                object obj = ResourceManager.GetObject("cancel_24px2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -95,6 +95,7 @@ namespace WFFDR
 
 
             xClass.fillComboBoxFGReceipt(cboFeedCode, "feed_code_fg_receipt_inactive", dSet);
+            cboFeedCode.SelectedIndex = -1;
 
         }
 
@@ -194,30 +195,24 @@ namespace WFFDR
       
         private void btnsave_Click(object sender, EventArgs e)
         {
-            if (cboFeedCode.Text.Trim() == String.Empty)
+            if (cboFeedCode.SelectedIndex == -1)
             {
                 EmptyFieldNotify();
+                cboFeedCode.Select();
                 cboFeedCode.Focus();
                 return;
             }
 
-            if (cboOptions.Text.Trim() == String.Empty)
+            if (cboOptions.SelectedIndex == -1)
             {
                 EmptyFieldNotify();
+                cboOptions.Select();
                cboOptions.Focus();
                 return;
             }
 
 
-            if (txtFeedType.Text.Trim() == String.Empty)
-            {
-
-                EmptyFieldNotify();
-                txtFeedType.Focus();
-                return;
-            }
-
-            if (txtbags.Text.Trim() == String.Empty)
+             if(txtbags.Text == String.Empty)
             {
 
                 EmptyFieldNotify();
@@ -233,13 +228,33 @@ namespace WFFDR
             //    //txtbags.Focus();
             //    //return;
             //}
-            if (txtremarks.Text.Trim() == String.Empty)
+            if (txtremarks.Text == String.Empty)
             {
                 EmptyFieldNotify();
                 txtremarks.Focus();
                 return;
             }
-            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure that you want to save the Transaction " + txtaddedby.Text + "", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            if (txtFeedType.Text.Trim() == String.Empty)
+            {
+
+                EmptyFieldNotify();
+                txtFeedType.Focus();
+                return;
+            }
+            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure of this " + mfg_datePicker.Text + " production date?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+               
+
+            }
+            else
+            {
+                mfg_datePicker.Select();
+                mfg_datePicker.Focus();
+
+                return;
+            }
+
+            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to Miscellaneous Receipt this " + cboFeedCode.Text + " feedcode?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
                 //Do something bad
   
@@ -675,7 +690,7 @@ namespace WFFDR
             }
 
             
-            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure that you want to Cancelled the Transaction " + txtaddedby.Text + "", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to Cancel this feedcode " + fcmain.Text + " ?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
 
                 dSet.Clear();
@@ -731,7 +746,7 @@ namespace WFFDR
             //}
 
 
-            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure that you want to save all the Transaction " + txtaddedby.Text + "", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to save all the Transaction " + txtaddedby.Text + " ?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
 
 

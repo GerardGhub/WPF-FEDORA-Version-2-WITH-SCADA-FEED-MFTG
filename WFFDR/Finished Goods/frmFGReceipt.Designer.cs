@@ -29,16 +29,16 @@ namespace WFFDR
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFGReceipt));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.bagweight = new System.Windows.Forms.TextBox();
             this.bag = new System.Windows.Forms.TextBox();
@@ -49,7 +49,6 @@ namespace WFFDR
             this.txttimes50 = new System.Windows.Forms.TextBox();
             this.mfg_datePicker = new System.Windows.Forms.DateTimePicker();
             this.cboFeedCode = new System.Windows.Forms.ComboBox();
-            this.btnsave = new System.Windows.Forms.Button();
             this.txtFeedType = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -65,8 +64,6 @@ namespace WFFDR
             this.txtorderno = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.transdatenow = new System.Windows.Forms.DateTimePicker();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.btnInsert = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvFG = new System.Windows.Forms.DataGridView();
             this.prod_adv = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,12 +78,6 @@ namespace WFFDR
             this.dgvCountISSUE = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.lblrecords = new System.Windows.Forms.Label();
-            this.btnTransact = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnlessthan = new System.Windows.Forms.Button();
-            this.btnNext = new System.Windows.Forms.Button();
-            this.btnLoop = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.fcmain = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -97,7 +88,6 @@ namespace WFFDR
             this.label9 = new System.Windows.Forms.Label();
             this.qkmain = new System.Windows.Forms.TextBox();
             this.pmain = new System.Windows.Forms.DateTimePicker();
-            this.button3 = new System.Windows.Forms.Button();
             this.ftmain = new System.Windows.Forms.TextBox();
             this.onmain = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -114,6 +104,16 @@ namespace WFFDR
             this.rmain = new System.Windows.Forms.TextBox();
             this.txtorderstable = new System.Windows.Forms.TextBox();
             this.txtordervalidation = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.btnLoop = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnInsert = new System.Windows.Forms.Button();
+            this.btnlessthan = new System.Windows.Forms.Button();
+            this.btnTransact = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnsave = new System.Windows.Forms.Button();
             this.GroupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFG)).BeginInit();
@@ -266,24 +266,6 @@ namespace WFFDR
             this.cboFeedCode.TabIndex = 356;
             this.cboFeedCode.SelectedIndexChanged += new System.EventHandler(this.cboFeedCode_SelectedIndexChanged);
             this.cboFeedCode.SelectionChangeCommitted += new System.EventHandler(this.cboFeedCode_SelectionChangeCommitted);
-            // 
-            // btnsave
-            // 
-            this.btnsave.BackColor = System.Drawing.SystemColors.Window;
-            this.btnsave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnsave.Image = ((System.Drawing.Image)(resources.GetObject("btnsave.Image")));
-            this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsave.Location = new System.Drawing.Point(12, 202);
-            this.btnsave.Margin = new System.Windows.Forms.Padding(4);
-            this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(100, 34);
-            this.btnsave.TabIndex = 322;
-            this.btnsave.Text = "Add ";
-            this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnsave.UseVisualStyleBackColor = false;
-            this.btnsave.Visible = false;
-            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // txtFeedType
             // 
@@ -455,41 +437,6 @@ namespace WFFDR
             this.transdatenow.TabIndex = 649;
             this.transdatenow.Value = new System.DateTime(2020, 3, 28, 0, 0, 0, 0);
             // 
-            // btnCancel
-            // 
-            this.btnCancel.BackColor = System.Drawing.SystemColors.Window;
-            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
-            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancel.Location = new System.Drawing.Point(448, 289);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(100, 34);
-            this.btnCancel.TabIndex = 645;
-            this.btnCancel.Text = "&Undo";
-            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancel.UseVisualStyleBackColor = false;
-            this.btnCancel.Visible = false;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // btnInsert
-            // 
-            this.btnInsert.BackColor = System.Drawing.SystemColors.Window;
-            this.btnInsert.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnInsert.Image = ((System.Drawing.Image)(resources.GetObject("btnInsert.Image")));
-            this.btnInsert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInsert.Location = new System.Drawing.Point(30, 268);
-            this.btnInsert.Margin = new System.Windows.Forms.Padding(4);
-            this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(100, 34);
-            this.btnInsert.TabIndex = 644;
-            this.btnInsert.Text = "New  ";
-            this.btnInsert.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnInsert.UseVisualStyleBackColor = false;
-            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dgvFG);
@@ -509,19 +456,19 @@ namespace WFFDR
             this.dgvFG.AllowUserToDeleteRows = false;
             this.dgvFG.AllowUserToResizeColumns = false;
             this.dgvFG.AllowUserToResizeRows = false;
-            dataGridViewCellStyle46.BackColor = System.Drawing.SystemColors.Control;
-            this.dgvFG.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle46;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            this.dgvFG.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvFG.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvFG.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvFG.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle47.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle47.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFG.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle47;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFG.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvFG.ColumnHeadersHeight = 30;
             this.dgvFG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvFG.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -543,8 +490,8 @@ namespace WFFDR
             this.dgvFG.ReadOnly = true;
             this.dgvFG.RowHeadersWidth = 50;
             this.dgvFG.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.Color.Teal;
-            this.dgvFG.RowsDefaultCellStyle = dataGridViewCellStyle48;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Teal;
+            this.dgvFG.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvFG.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvFG.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvFG.Size = new System.Drawing.Size(1200, 335);
@@ -623,17 +570,17 @@ namespace WFFDR
             this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.AllowUserToResizeColumns = false;
             this.dataGridView2.AllowUserToResizeRows = false;
-            dataGridViewCellStyle49.BackColor = System.Drawing.SystemColors.Control;
-            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle49;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle50.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle50.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle50.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle50.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle50.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle50.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle50;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView2.ColumnHeadersHeight = 45;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView2.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -646,8 +593,8 @@ namespace WFFDR
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle51.SelectionBackColor = System.Drawing.Color.Teal;
-            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle51;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Teal;
+            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView2.Size = new System.Drawing.Size(64, 319);
             this.dataGridView2.TabIndex = 452;
@@ -659,17 +606,17 @@ namespace WFFDR
             this.dgvCountISSUE.AllowUserToDeleteRows = false;
             this.dgvCountISSUE.AllowUserToResizeColumns = false;
             this.dgvCountISSUE.AllowUserToResizeRows = false;
-            dataGridViewCellStyle52.BackColor = System.Drawing.SystemColors.Control;
-            this.dgvCountISSUE.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle52;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            this.dgvCountISSUE.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvCountISSUE.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle53.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle53.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle53.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle53.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle53.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle53.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCountISSUE.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle53;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCountISSUE.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvCountISSUE.ColumnHeadersHeight = 45;
             this.dgvCountISSUE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvCountISSUE.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -682,8 +629,8 @@ namespace WFFDR
             this.dgvCountISSUE.ReadOnly = true;
             this.dgvCountISSUE.RowHeadersVisible = false;
             this.dgvCountISSUE.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle54.SelectionBackColor = System.Drawing.Color.Teal;
-            this.dgvCountISSUE.RowsDefaultCellStyle = dataGridViewCellStyle54;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Teal;
+            this.dgvCountISSUE.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvCountISSUE.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCountISSUE.Size = new System.Drawing.Size(39, 21);
             this.dgvCountISSUE.TabIndex = 641;
@@ -710,113 +657,6 @@ namespace WFFDR
             this.lblrecords.TabIndex = 642;
             this.lblrecords.Text = "0";
             this.lblrecords.Click += new System.EventHandler(this.lblrecords_Click);
-            // 
-            // btnTransact
-            // 
-            this.btnTransact.BackColor = System.Drawing.SystemColors.Window;
-            this.btnTransact.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTransact.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnTransact.Image = ((System.Drawing.Image)(resources.GetObject("btnTransact.Image")));
-            this.btnTransact.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTransact.Location = new System.Drawing.Point(1015, 700);
-            this.btnTransact.Margin = new System.Windows.Forms.Padding(4);
-            this.btnTransact.Name = "btnTransact";
-            this.btnTransact.Size = new System.Drawing.Size(109, 34);
-            this.btnTransact.TabIndex = 645;
-            this.btnTransact.Text = "Transact";
-            this.btnTransact.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTransact.UseVisualStyleBackColor = false;
-            this.btnTransact.Visible = false;
-            this.btnTransact.Click += new System.EventHandler(this.btnTransact_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.Window;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(1133, 700);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 34);
-            this.button1.TabIndex = 644;
-            this.button1.Text = "Cancel";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.Control;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.Window;
-            this.button2.Location = new System.Drawing.Point(759, 289);
-            this.button2.Margin = new System.Windows.Forms.Padding(1);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(59, 31);
-            this.button2.TabIndex = 647;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Visible = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnlessthan
-            // 
-            this.btnlessthan.BackColor = System.Drawing.SystemColors.Control;
-            this.btnlessthan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnlessthan.BackgroundImage")));
-            this.btnlessthan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnlessthan.FlatAppearance.BorderSize = 0;
-            this.btnlessthan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnlessthan.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnlessthan.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnlessthan.Location = new System.Drawing.Point(648, 289);
-            this.btnlessthan.Margin = new System.Windows.Forms.Padding(1);
-            this.btnlessthan.Name = "btnlessthan";
-            this.btnlessthan.Size = new System.Drawing.Size(59, 31);
-            this.btnlessthan.TabIndex = 646;
-            this.btnlessthan.UseVisualStyleBackColor = false;
-            this.btnlessthan.Visible = false;
-            this.btnlessthan.Click += new System.EventHandler(this.btnlessthan_Click);
-            // 
-            // btnNext
-            // 
-            this.btnNext.BackColor = System.Drawing.SystemColors.Window;
-            this.btnNext.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnNext.Image = ((System.Drawing.Image)(resources.GetObject("btnNext.Image")));
-            this.btnNext.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNext.Location = new System.Drawing.Point(929, 267);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(4);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(100, 34);
-            this.btnNext.TabIndex = 648;
-            this.btnNext.Text = "Next";
-            this.btnNext.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnNext.UseVisualStyleBackColor = false;
-            this.btnNext.Visible = false;
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            // 
-            // btnLoop
-            // 
-            this.btnLoop.BackColor = System.Drawing.SystemColors.Window;
-            this.btnLoop.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLoop.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLoop.Image = ((System.Drawing.Image)(resources.GetObject("btnLoop.Image")));
-            this.btnLoop.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLoop.Location = new System.Drawing.Point(1051, 267);
-            this.btnLoop.Margin = new System.Windows.Forms.Padding(4);
-            this.btnLoop.Name = "btnLoop";
-            this.btnLoop.Size = new System.Drawing.Size(100, 34);
-            this.btnLoop.TabIndex = 649;
-            this.btnLoop.Text = "Loop";
-            this.btnLoop.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLoop.UseVisualStyleBackColor = false;
-            this.btnLoop.Visible = false;
-            this.btnLoop.Click += new System.EventHandler(this.btnLoop_Click);
             // 
             // groupBox3
             // 
@@ -957,23 +797,6 @@ namespace WFFDR
             this.pmain.Size = new System.Drawing.Size(219, 27);
             this.pmain.TabIndex = 357;
             this.pmain.Value = new System.DateTime(2020, 3, 28, 0, 0, 0, 0);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.Window;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(353, 202);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 34);
-            this.button3.TabIndex = 322;
-            this.button3.Text = "Add ";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Visible = false;
             // 
             // ftmain
             // 
@@ -1151,6 +974,184 @@ namespace WFFDR
             this.txtordervalidation.Size = new System.Drawing.Size(219, 22);
             this.txtordervalidation.TabIndex = 650;
             this.txtordervalidation.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.Window;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(353, 202);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(100, 34);
+            this.button3.TabIndex = 322;
+            this.button3.Text = "Add ";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Visible = false;
+            // 
+            // btnLoop
+            // 
+            this.btnLoop.BackColor = System.Drawing.SystemColors.Window;
+            this.btnLoop.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLoop.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLoop.Image = ((System.Drawing.Image)(resources.GetObject("btnLoop.Image")));
+            this.btnLoop.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLoop.Location = new System.Drawing.Point(1051, 267);
+            this.btnLoop.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLoop.Name = "btnLoop";
+            this.btnLoop.Size = new System.Drawing.Size(100, 34);
+            this.btnLoop.TabIndex = 649;
+            this.btnLoop.Text = "Loop";
+            this.btnLoop.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLoop.UseVisualStyleBackColor = false;
+            this.btnLoop.Visible = false;
+            this.btnLoop.Click += new System.EventHandler(this.btnLoop_Click);
+            // 
+            // btnNext
+            // 
+            this.btnNext.BackColor = System.Drawing.SystemColors.Window;
+            this.btnNext.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnNext.Image = ((System.Drawing.Image)(resources.GetObject("btnNext.Image")));
+            this.btnNext.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNext.Location = new System.Drawing.Point(929, 267);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(4);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(100, 34);
+            this.btnNext.TabIndex = 648;
+            this.btnNext.Text = "Next";
+            this.btnNext.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNext.UseVisualStyleBackColor = false;
+            this.btnNext.Visible = false;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.Control;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.Window;
+            this.button2.Location = new System.Drawing.Point(759, 289);
+            this.button2.Margin = new System.Windows.Forms.Padding(1);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(59, 31);
+            this.button2.TabIndex = 647;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Visible = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.SystemColors.Window;
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
+            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancel.Location = new System.Drawing.Point(448, 289);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(100, 34);
+            this.btnCancel.TabIndex = 645;
+            this.btnCancel.Text = "&Undo";
+            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Visible = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // btnInsert
+            // 
+            this.btnInsert.BackColor = System.Drawing.SystemColors.Window;
+            this.btnInsert.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnInsert.Image = ((System.Drawing.Image)(resources.GetObject("btnInsert.Image")));
+            this.btnInsert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInsert.Location = new System.Drawing.Point(30, 268);
+            this.btnInsert.Margin = new System.Windows.Forms.Padding(4);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(100, 34);
+            this.btnInsert.TabIndex = 644;
+            this.btnInsert.Text = "New  ";
+            this.btnInsert.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnInsert.UseVisualStyleBackColor = false;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
+            // 
+            // btnlessthan
+            // 
+            this.btnlessthan.BackColor = System.Drawing.SystemColors.Control;
+            this.btnlessthan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnlessthan.BackgroundImage")));
+            this.btnlessthan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnlessthan.FlatAppearance.BorderSize = 0;
+            this.btnlessthan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnlessthan.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlessthan.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnlessthan.Location = new System.Drawing.Point(648, 289);
+            this.btnlessthan.Margin = new System.Windows.Forms.Padding(1);
+            this.btnlessthan.Name = "btnlessthan";
+            this.btnlessthan.Size = new System.Drawing.Size(59, 31);
+            this.btnlessthan.TabIndex = 646;
+            this.btnlessthan.UseVisualStyleBackColor = false;
+            this.btnlessthan.Visible = false;
+            this.btnlessthan.Click += new System.EventHandler(this.btnlessthan_Click);
+            // 
+            // btnTransact
+            // 
+            this.btnTransact.BackColor = System.Drawing.Color.Teal;
+            this.btnTransact.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTransact.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTransact.ForeColor = System.Drawing.Color.White;
+            this.btnTransact.Image = ((System.Drawing.Image)(resources.GetObject("btnTransact.Image")));
+            this.btnTransact.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTransact.Location = new System.Drawing.Point(1015, 700);
+            this.btnTransact.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTransact.Name = "btnTransact";
+            this.btnTransact.Size = new System.Drawing.Size(109, 34);
+            this.btnTransact.TabIndex = 645;
+            this.btnTransact.Text = "&Save";
+            this.btnTransact.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTransact.UseVisualStyleBackColor = false;
+            this.btnTransact.Visible = false;
+            this.btnTransact.Click += new System.EventHandler(this.btnTransact_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Window;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Image = global::WFFDR.Properties.Resources.cancel_24px2;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(1133, 700);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 34);
+            this.button1.TabIndex = 644;
+            this.button1.Text = "Cancel";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnsave
+            // 
+            this.btnsave.BackColor = System.Drawing.SystemColors.Window;
+            this.btnsave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnsave.Image = global::WFFDR.Properties.Resources.add_list_24px;
+            this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsave.Location = new System.Drawing.Point(12, 202);
+            this.btnsave.Margin = new System.Windows.Forms.Padding(4);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(100, 34);
+            this.btnsave.TabIndex = 322;
+            this.btnsave.Text = "Add ";
+            this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnsave.UseVisualStyleBackColor = false;
+            this.btnsave.Visible = false;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // frmFGReceipt
             // 
