@@ -29,6 +29,7 @@ namespace WFFDR
 
             load_PlanningActive();
             GenerateBaseDControll();
+            txtaddedby.Text = userinfo.emp_name.ToUpper();
 
         }
         public void GenerateBaseDControll()
@@ -76,21 +77,51 @@ namespace WFFDR
                 }
             }
         }
+
+        void ValidationofProdid()
+        {
+
+            PopupNotifier popup = new PopupNotifier();
+            popup.Image = Properties.Resources.info;
+            popup.TitleText = "Fedora Notifications";
+            popup.ContentText = "The Production ID that you inputted is not match, Kindly verify the Production ID Thank You!";
+            popup.Size = new Size(350, 100);
+            popup.ImageSize = new Size(70, 80);
+            popup.BodyColor = Color.Red;
+            popup.Popup();
+
+            popup.ContentColor = Color.White;
+            popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
+            popup.TitleColor = Color.White;
+            popup.TitlePadding = new Padding(95, 7, 0, 0);
+            popup.AnimationDuration = 1000;
+            popup.ShowOptionsButton.ToString();
+            popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
+
+            popup.Delay = 500;
+            popup.AnimationInterval = 10;
+            popup.AnimationDuration = 1000;
+
+
+            popup.ShowOptionsButton = true;
+
+
+        }
         void InputRemarks()
         {
 
             PopupNotifier popup = new PopupNotifier();
             popup.Image = Properties.Resources.info;
             popup.TitleText = "Fedora Notifications";
-            popup.ContentText = "Input The Remark First!";
+            popup.ContentText = "Please fill the required field!";
             popup.Size = new Size(350, 100);
             popup.ImageSize = new Size(70, 80);
-            popup.BodyColor = Color.LightBlue;
+            popup.BodyColor = Color.Red;
             popup.Popup();
 
-            popup.ContentColor = Color.Black;
+            popup.ContentColor = Color.White;
             popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
-            popup.TitleColor = Color.Black;
+            popup.TitleColor = Color.White;
             popup.TitlePadding = new Padding(95, 7, 0, 0);
             popup.AnimationDuration = 1000;
             popup.ShowOptionsButton.ToString();
@@ -140,40 +171,75 @@ namespace WFFDR
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            if(lblrecords.Text =="0")
+            grpboxconfirm.Visible = true;
+        }
+
+        private void dgv_table_DoubleClick(object sender, EventArgs e)
+        {
+            //txtRemarks.Enabled = true;
+        }
+
+        private void txtconfirm_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+            (e.KeyChar != '.'))
             {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void btnpendingremarks_Click(object sender, EventArgs e)
+        {
+            if (txtconfirm.Text == String.Empty)
+            {
+                InputRemarks();
+                txtconfirm.Focus();
                 return;
             }
 
-            if (txtRemarks.Text.Trim() == string.Empty)
+            if (txtRemarks.Text== String.Empty)
             {
                 InputRemarks();
                 txtRemarks.Focus();
                 return;
             }
-            else
-            {
 
-            }
-
-            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to Cancel the selected Production Schedule? ", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            if(txtconfirm.Text != txtProdId.Text)
             {
-                dSet.Clear();
-                dSet = objStorProc.rdf_sp_prod_schedules(0, txtProdId.Text, txtRemarks.Text, "", "", "", "", "", "", "", "", "","", "cancelProdPlanInProductionArea");
-
-                SuccessFullyCancelled();
-                frmProductionPlanController_Load(sender, e);
-            }
-            else
-            {
+                ValidationofProdid();
+                txtconfirm.Focus();
                 return;
             }
+            else
+            {
 
+
+
+                if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to Cancel the selected Production Schedule? ", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    dSet.Clear();
+                    dSet = objStorProc.rdf_sp_prod_schedules(0, txtProdId.Text, txtRemarks.Text, "", "", "", "", "", "", "", "", "", txtaddedby.Text, "cancelProdPlanInProductionArea");
+
+                    SuccessFullyCancelled();
+                    frmProductionPlanController_Load(sender, e);
+                }
+                else
+                {
+                    return;
+                }
             }
+        }
 
-        private void dgv_table_DoubleClick(object sender, EventArgs e)
+        private void Cancelbtn_Click(object sender, EventArgs e)
         {
-            txtRemarks.Enabled = true;
+            grpboxconfirm.Visible = false;
+            txtconfirm.Text = String.Empty;
         }
     }
 }
