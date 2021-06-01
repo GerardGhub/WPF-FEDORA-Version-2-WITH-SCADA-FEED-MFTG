@@ -85,7 +85,7 @@ namespace WFFDR
             btnpending.Visible = false;
             
             lblbase.Text = "disable";
-
+            btnSelect.Visible = true;
 
 
 
@@ -223,18 +223,21 @@ namespace WFFDR
         private void frmFGView_FormClosing(object sender, FormClosingEventArgs e)
         {
 
+            if (lblbase.Text == "epimanyaman")
+            {
+                textBox1.Text = "clearexit";
+            }
+
+
             if (lblbase.Text == "disable")
             {
                 fgreceivedresetview();
-                textBox1.Text = "Sarapkotakla";
+                textBox1.Text = "viewexit";
                
 
             }
-
-            if (lblbase.Text == "epimanyaman")
-            {
-               
-            }
+            else
+            { 
 
             if (lblbase.Text == "enable")
             { 
@@ -244,7 +247,7 @@ namespace WFFDR
 
             {
                 resetfgreceived();
-                textBox1.Text = "Sarapko";
+                textBox1.Text = "warningexit";
             }
 
             else 
@@ -255,8 +258,9 @@ namespace WFFDR
             }
 
             }
-         
-           
+            }
+
+
 
         }
 

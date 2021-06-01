@@ -595,6 +595,14 @@ namespace WFFDR
         private void frmMoveOrder_FormClosing(object sender, FormClosingEventArgs e)
         {
 
+
+            if(Lblrecordss.Text=="0")
+            {
+
+            }
+
+            else
+            { 
             if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to close this form? The transaction will be reset.", "WARNING", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 dSet.Clear();
@@ -610,9 +618,10 @@ namespace WFFDR
             {
              e.Cancel = true;
              return;
-                }
+            }
+            }
 
-                }
+        }
 
         private void tsneworderbtn_Click(object sender, EventArgs e)
         {

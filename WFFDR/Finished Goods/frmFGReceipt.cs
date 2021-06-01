@@ -776,6 +776,13 @@ namespace WFFDR
 
         private void frmFGReceipt_FormClosing(object sender, FormClosingEventArgs e)
         {
+           if(lblrecords.Text=="0")
+            {
+
+            }
+            else
+            { 
+            
             if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to close this form? The transaction will be reset.", "WARNING", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 FormClosingClearCache();
@@ -787,8 +794,8 @@ namespace WFFDR
                 e.Cancel = true;
                 return;
             }
+            }
 
-           
         }
 
         private void button2_Click(object sender, EventArgs e)
