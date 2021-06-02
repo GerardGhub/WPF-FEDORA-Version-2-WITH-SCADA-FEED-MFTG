@@ -1,4 +1,4 @@
-﻿namespace WFFDR
+﻿namespace SharpUpdate
 {
     partial class SharpUpdateDownloadForm
     {

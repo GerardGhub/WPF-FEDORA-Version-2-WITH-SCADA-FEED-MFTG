@@ -7,7 +7,7 @@ using System.IO;
 using System.Net;
 
 
-namespace WFFDR
+namespace SharpUpdate
 {
     internal partial class SharpUpdateDownloadForm : Form
     {

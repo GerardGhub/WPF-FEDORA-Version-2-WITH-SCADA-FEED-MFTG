@@ -223,7 +223,7 @@ namespace WFFDR
             dSet.Clear();
             dSet = g_objStoredProcFill.sp_GetCategory(eTablename, null, feed_code, null, null);
             DataView dv = new DataView(dSet.Tables[0]);
-            dv.RowFilter = "Balance <= -0";
+            dv.RowFilter = "Balance >= -0";
 
 
 

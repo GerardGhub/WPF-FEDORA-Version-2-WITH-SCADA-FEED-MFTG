@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Reflection;
 using System.Windows.Forms;
 
-namespace WFFDR
+namespace SharpUpdate
 {
     public interface ISharpUpdatable
     {

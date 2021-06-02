@@ -3,7 +3,7 @@ using System.Text;
 using System.Security.Cryptography;
 
 
-namespace WFFDR
+namespace SharpUpdate
 {
     internal enum MashType
     {

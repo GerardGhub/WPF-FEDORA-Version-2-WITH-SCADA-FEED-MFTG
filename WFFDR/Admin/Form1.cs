@@ -12,14 +12,16 @@ using WFFDR;
 using System.Reflection;
 using System.Net.NetworkInformation;
 using System.Data.SqlClient;
+using SharpUpdate;
 
 
 
 
 namespace WFFDR
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form, ISharpUpdatable
     {
+        private SharpUpdater updater;
 
         public Uri xmlLocation;
 
@@ -40,8 +42,8 @@ namespace WFFDR
         {
             InitializeComponent();
             this.lbl1.Text = this.ApplicationAssembly.GetName().Version.ToString();
-            //updater = new SharpUpdater(this);
-            this.xmlLocation = new Uri("http://fedora:8068/update.xml");
+            updater = new SharpUpdater(this);
+            //this.xmlLocation = new Uri("http://fedora:8068/Debug/update.xml");
         }
 
         private void Button2_Click(object sender, EventArgs e)
@@ -104,6 +106,7 @@ namespace WFFDR
             //updater.DoUpdate();
             load_materials();
 
+            this.lbl1.Text = this.ApplicationAssembly.GetName().Version.ToString();
 
 
 
@@ -130,7 +133,7 @@ namespace WFFDR
                 lblrecords.Text = dgvMaterials.RowCount.ToString();
     
         }
-
+        #region SharpUpdate
         public string ApplicationName
         {
             get { return "WFFDR"; }
@@ -155,7 +158,7 @@ namespace WFFDR
 
         public Uri UpdateXmlLocation
         {
-            get { return new Uri("http://fedora:8068/update.xml"); }
+            get { return new Uri("http://fedora:8068/Debug/update.xml"); }
 
         }
 
@@ -164,7 +167,7 @@ namespace WFFDR
             get { return this; }
 
         }
-
+        #endregion
 
 
 
@@ -1022,6 +1025,11 @@ namespace WFFDR
         {
  
 
+        }
+
+        private void btncheckupdate_Click(object sender, EventArgs e)
+        {
+            updater.DoUpdate();
         }
     }
 }

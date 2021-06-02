@@ -14,6 +14,8 @@ namespace WFFDR
 {
     public partial class frmFGReprocessReports : Form
     {
+        myglobal pointer_module = new myglobal();
+        DataSet dsetHeader = new DataSet();
         public frmFGReprocessReports()
         {
             InitializeComponent();
@@ -22,6 +24,8 @@ namespace WFFDR
         private void dtp1_ValueChanged(object sender, EventArgs e)
         {
             data1();
+           
+
         }
 
         void data1()
@@ -36,7 +40,7 @@ namespace WFFDR
           //  string sqlquery = "SELECT DISTINCT a.p_feed_code,a.prod_id,a.bags_int,a.batch_int,a.proddate,a.feed_type,a.total_reprocess_count as PENDING,SUM(case when b.status = 'Reprocess' and b.fg_reprocess_by IS NOT NULL then 1 else 0 end) as DONE,SUM(case when b.status = 'Reprocess' then 1 else 0 end) as TOTAL, b.fg_added_by FROM rdf_production_advance a LEFT JOIN rdf_repackin_finishgoods b ON a.prod_id = b.prod_adv WHERE a.is_selected = '1'  AND NOT a.canceltheapprove IS NOT NULL AND NOT a.total_reprocess_count = '0' and CAST(b.fg_added_by as date) BETWEEN '" + dtp1.Text + "' AND '" + dtp2.Text + "' GROUP BY a.p_feed_code,a.prod_id,a.bags_int,a.batch_int,a.proddate,a.feed_type,a.total_reprocess_count,b.date_added,b.fg_added_by ORDER BY a.prod_id";
 
             //gerald             string sqlquery = "Select emp.prod_id as ID, emp.p_feed_code as Emp_Number, emp.p_bags as Department,emp.p_nobatch as TotalPack,emp.proddate as Production_Date, emp.repacking_status as repack_status from rdf_production_advance emp WHERE emp.proddate ='" + txtdateplusone.Text + "' OR emp.proddate ='"+dtpreceivingdate.Text+"' OR emp.proddate ='"+ txtdateminus1.Text+"' AND emp.is_selected=1 AND emp.repacking_status='ready' AND NOT emp.canceltheapprove IS NOT NULL";
-            string sqlquery = "SELECT b.prod_adv,b.fg_feed_code,b.fg_feed_type,b.fg_proddate,b.fg_bags,b.fg_added_by,a.total_reprocess_count as PENDING,SUM(case when b.status = 'Reprocess' and b.fg_reprocess_by IS NOT NULL then 1 else 0 end) as DONE,a.total_reprocess_count + SUM(case when b.status = 'Reprocess' and b.fg_reprocess_by IS NOT NULL then 1 else 0 end) as TOTAL  FROM rdf_production_advance a LEFT JOIN rdf_repackin_finishgoods b ON a.prod_id = b.prod_adv WHERE a.is_selected = '1'  AND NOT a.canceltheapprove IS NOT NULL and CAST(b.fg_added_by as date) BETWEEN '"+dtp1.Text+"' and '"+dtp2.Text+"' GROUP BY a.total_reprocess_count,b.fg_added_by,b.fg_feed_code,b.prod_adv,b.fg_bags,b.fg_feed_type,b.fg_proddate";
+            string sqlquery = "SELECT b.prod_adv as ProdID,b.fg_feed_code,b.fg_feed_type,b.fg_proddate,b.fg_bags,b.fg_added_by,a.total_reprocess_count as PENDING,SUM(case when b.status = 'Reprocess' and b.fg_reprocess_by IS NOT NULL then 1 else 0 end) as DONE,a.total_reprocess_count + SUM(case when FORMAT(CAST(b.fg_added_by as date),'M/d/yyyy') BETWEEN '" + dtp1.Text + "' and '" + dtp2.Text + "' and b.status = 'Reprocess' and b.fg_reprocess_by IS NOT NULL then 1 else 0 end) as TOTAL  FROM rdf_production_advance a LEFT JOIN rdf_repackin_finishgoods b ON a.prod_id = b.prod_adv WHERE a.is_selected = '1'  AND NOT a.canceltheapprove IS NOT NULL and CAST(b.fg_added_by as date) BETWEEN '" + dtp1.Text+"' and '"+dtp2.Text+"' GROUP BY a.total_reprocess_count,b.fg_added_by,b.fg_feed_code,b.prod_adv,b.fg_bags,b.fg_feed_type,b.fg_proddate";
             
             
             sql_con.Open();
@@ -68,7 +72,7 @@ namespace WFFDR
             //  string sqlquery = "SELECT DISTINCT a.p_feed_code,a.prod_id,a.bags_int,a.batch_int,a.proddate,a.feed_type,a.total_reprocess_count as PENDING,SUM(case when b.status = 'Reprocess' and b.fg_reprocess_by IS NOT NULL then 1 else 0 end) as DONE,SUM(case when b.status = 'Reprocess' then 1 else 0 end) as TOTAL, b.fg_added_by FROM rdf_production_advance a LEFT JOIN rdf_repackin_finishgoods b ON a.prod_id = b.prod_adv WHERE a.is_selected = '1'  AND NOT a.canceltheapprove IS NOT NULL AND NOT a.total_reprocess_count = '0' and CAST(b.fg_added_by as date) BETWEEN '" + dtp1.Text + "' AND '" + dtp2.Text + "' GROUP BY a.p_feed_code,a.prod_id,a.bags_int,a.batch_int,a.proddate,a.feed_type,a.total_reprocess_count,b.date_added,b.fg_added_by ORDER BY a.prod_id";
 
             //gerald             string sqlquery = "Select emp.prod_id as ID, emp.p_feed_code as Emp_Number, emp.p_bags as Department,emp.p_nobatch as TotalPack,emp.proddate as Production_Date, emp.repacking_status as repack_status from rdf_production_advance emp WHERE emp.proddate ='" + txtdateplusone.Text + "' OR emp.proddate ='"+dtpreceivingdate.Text+"' OR emp.proddate ='"+ txtdateminus1.Text+"' AND emp.is_selected=1 AND emp.repacking_status='ready' AND NOT emp.canceltheapprove IS NOT NULL";
-            string sqlquery = "SELECT b.prod_adv,b.fg_feed_code,b.fg_feed_type,b.fg_proddate,b.fg_bags,b.fg_added_by,a.total_reprocess_count as PENDING,SUM(case when b.status = 'Reprocess' and b.fg_reprocess_by IS NOT NULL then 1 else 0 end) as DONE,a.total_reprocess_count + SUM(case when b.status = 'Reprocess' and b.fg_reprocess_by IS NOT NULL then 1 else 0 end) as TOTAL  FROM rdf_production_advance a LEFT JOIN rdf_repackin_finishgoods b ON a.prod_id = b.prod_adv WHERE a.is_selected = '1'  AND NOT a.canceltheapprove IS NOT NULL and CAST(b.fg_added_by as date) BETWEEN '" + dtp1.Text + "' and '" + dtp2.Text + "' and b.prod_adv = '" + txtProductionId.Text + "' GROUP BY a.total_reprocess_count,b.fg_added_by,b.fg_feed_code,b.prod_adv,b.fg_bags,b.fg_feed_type,b.fg_proddate";
+            string sqlquery = "SELECT b.prod_adv as ProdID,b.fg_feed_code,b.fg_feed_type,b.fg_proddate,b.fg_bags,b.fg_added_by,a.total_reprocess_count as PENDING,SUM(case when b.status = 'Reprocess' and b.fg_reprocess_by IS NOT NULL then 1 else 0 end) as DONE,a.total_reprocess_count + SUM(case when FORMAT(CAST(b.fg_added_by as date),'M/d/yyyy') BETWEEN '"+dtp1.Text+"' and '"+dtp2.Text+"' and b.status = 'Reprocess' and b.fg_reprocess_by IS NOT NULL then 1 else 0 end) as TOTAL  FROM rdf_production_advance a LEFT JOIN rdf_repackin_finishgoods b ON a.prod_id = b.prod_adv WHERE a.is_selected = '1'  AND NOT a.canceltheapprove IS NOT NULL and CAST(b.fg_added_by as date) BETWEEN '" + dtp1.Text + "' and '" + dtp2.Text + "' and b.prod_adv = '" + txtProductionId.Text + "' GROUP BY a.total_reprocess_count,b.fg_added_by,b.fg_feed_code,b.prod_adv,b.fg_bags,b.fg_feed_type,b.fg_proddate";
 
 
             sql_con.Open();
@@ -117,11 +121,20 @@ namespace WFFDR
 
         private void frmFGReprocessReports_Load(object sender, EventArgs e)
         {
-          
+            dtp1.Text = (DateTime.Now.ToString("M/d/yyyy"));
+            dtp2.Text = (DateTime.Now.ToString("M/d/yyyy"));
             data1();
+            Load_prodhisledger();
         }
 
-        private void dtp2_ValueChanged(object sender, EventArgs e)
+        public void Load_prodhisledger()
+        {
+            string mcolumns = "test,ProdID,ProdPlan,Feedcode,Feedtype,Bags,TIMESTAMP,ReprocessBy,DumpDate";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
+            pointer_module.populateModuleMoveOrder(dsetHeader, dgvprodhis, mcolumns, "prodhisledger", lblprod.Text.ToString(), 0, dtp1.Text.ToString(), dtp2.Text.ToString());
+            lblrecordhis.Text = dgvprodhis.Rows.Count.ToString();
+        }
+
+            private void dtp2_ValueChanged(object sender, EventArgs e)
         {
             if (txtProductionId.Text.Trim() == string.Empty)
             {
@@ -284,6 +297,39 @@ namespace WFFDR
                 data2prod_id();
             }
 
+        }
+
+        private void dgvApproved_CurrentCellChanged(object sender, EventArgs e)
+        {
+            if (dgvApproved.RowCount > 0)
+            {
+                if (dgvApproved.CurrentRow != null)
+                {
+                    if (dgvApproved.CurrentRow.Cells["ProdID"].Value != null)
+                    {
+
+                        lblprod.Text = dgvApproved.CurrentRow.Cells["ProdID"].Value.ToString();
+                        Load_prodhisledger();
+                    }
+
+                }
+            }
+        }
+
+        private void dgvprodhis_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
+        {
+            var grid = sender as DataGridView;
+            var rowIdx = (e.RowIndex + 1).ToString();
+
+            var centerFormat = new StringFormat()
+            {
+                // right alignment might actually make more sense for numbers
+                Alignment = StringAlignment.Center,
+                LineAlignment = StringAlignment.Center
+            };
+
+            var headerBounds = new Rectangle(e.RowBounds.Left, e.RowBounds.Top, grid.RowHeadersWidth, e.RowBounds.Height);
+            e.Graphics.DrawString(rowIdx, this.Font, SystemBrushes.ControlText, headerBounds, centerFormat);
         }
     }
 }

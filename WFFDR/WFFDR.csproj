@@ -49,8 +49,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>
-    </ApplicationIcon>
+    <ApplicationIcon>fedora-icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>false</SignManifests>
@@ -1658,6 +1657,7 @@
     <Content Include="bin\Release\WFFDR.pdb" />
     <Content Include="bin\Release\Z.Dapper.Plus.dll" />
     <Content Include="bin\Release\Z.Dapper.Plus.xml" />
+    <Content Include="fedora-icon.ico" />
     <Content Include="Resources\678078-light-bulb-256.ico" />
     <None Include="Resources\cancel_24px.png" />
     <None Include="Resources\cancel_24px2.png" />

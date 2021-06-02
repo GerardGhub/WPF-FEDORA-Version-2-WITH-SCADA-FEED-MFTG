@@ -168,7 +168,7 @@ namespace WFFDR
             try
             {
                 dset.Clear();
-                dset = objStorProc.sp_GetCategory(eTableName,cid,feed_code,category,null);
+                dset = objStorProc.sp_GetCategory(eTableName,cid,feed_code,category,fgdate);
 
 
 

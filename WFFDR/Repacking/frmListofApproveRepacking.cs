@@ -1,21 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using CrystalDecisions.CrystalReports.Engine;
+using System;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Threading;
-using CrystalDecisions.CrystalReports.Engine;
+using System.Windows.Forms;
 using Tulpep.NotificationWindow;
-using System.Drawing.Printing;
-using System.IO;
-using MetroFramework;
-using MetroFramework.Forms;
-using CrystalDecisions.Shared;
 
 namespace WFFDR
 {
@@ -65,15 +55,6 @@ namespace WFFDR
 
 
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
 
         //etc123 qwe = new etc123();
 
@@ -83,15 +64,6 @@ namespace WFFDR
             InitializeComponent();
         }
 
-        private void btnstartrepacking_Click(object sender, EventArgs e)
-        {
-            //dgvMaster.Enabled = false;
-        }
-
-        private void btncancelrepacking_Click(object sender, EventArgs e)
-        {
-            //dgvMaster.Enabled = true;
-        }
 
         private void txtsearchitems_TextChanged(object sender, EventArgs e)
         {
@@ -2920,10 +2892,9 @@ txtdatenowstamp.Text = DateTime.Now.ToString();
 
                 if (txtneededqty.Text.Trim() == string.Empty)
                 {
-                    //MessageBox.Show("select ok in notifier");removed 4/12/2020
-                    //metroButton2_Click(new object(), new System.EventArgs());
+                   
                     ByPassStockoutofReceiving();
-                    //return;
+
                 }
             }
 

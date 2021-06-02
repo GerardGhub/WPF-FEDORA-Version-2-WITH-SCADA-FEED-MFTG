@@ -110,6 +110,7 @@
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtreport = new System.Windows.Forms.TextBox();
             this.lblid = new System.Windows.Forms.Label();
+            this.btncheckupdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvApproved)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -139,7 +140,7 @@
             this.txtusername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtusername.Location = new System.Drawing.Point(140, 89);
-            this.txtusername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtusername.Margin = new System.Windows.Forms.Padding(4);
             this.txtusername.Name = "txtusername";
             this.txtusername.Size = new System.Drawing.Size(233, 23);
             this.txtusername.TabIndex = 9;
@@ -152,7 +153,7 @@
             this.txtpassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpassword.Location = new System.Drawing.Point(140, 154);
-            this.txtpassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtpassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.PasswordChar = '*';
             this.txtpassword.Size = new System.Drawing.Size(233, 23);
@@ -168,7 +169,7 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(198, 81);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -230,7 +231,7 @@
             this.dgvApproved.EnableHeadersVisualStyles = false;
             this.dgvApproved.GridColor = System.Drawing.SystemColors.Control;
             this.dgvApproved.Location = new System.Drawing.Point(586, 205);
-            this.dgvApproved.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvApproved.Margin = new System.Windows.Forms.Padding(4);
             this.dgvApproved.MultiSelect = false;
             this.dgvApproved.Name = "dgvApproved";
             this.dgvApproved.ReadOnly = true;
@@ -365,7 +366,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(438, 231);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(80, 66);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -375,7 +376,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(714, 34);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(249, 22);
             this.dateTimePicker1.TabIndex = 412;
@@ -430,7 +431,7 @@
             this.btneye.FlatAppearance.BorderSize = 0;
             this.btneye.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btneye.Location = new System.Drawing.Point(382, 129);
-            this.btneye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btneye.Margin = new System.Windows.Forms.Padding(4);
             this.btneye.Name = "btneye";
             this.btneye.Size = new System.Drawing.Size(94, 41);
             this.btneye.TabIndex = 415;
@@ -445,7 +446,7 @@
             this.btneyeclose.FlatAppearance.BorderSize = 0;
             this.btneyeclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btneyeclose.Location = new System.Drawing.Point(385, 128);
-            this.btneyeclose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btneyeclose.Margin = new System.Windows.Forms.Padding(4);
             this.btneyeclose.Name = "btneyeclose";
             this.btneyeclose.Size = new System.Drawing.Size(94, 42);
             this.btneyeclose.TabIndex = 416;
@@ -477,7 +478,7 @@
             this.dgvuserrecommend.EnableHeadersVisualStyles = false;
             this.dgvuserrecommend.GridColor = System.Drawing.SystemColors.Control;
             this.dgvuserrecommend.Location = new System.Drawing.Point(15, 382);
-            this.dgvuserrecommend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvuserrecommend.Margin = new System.Windows.Forms.Padding(4);
             this.dgvuserrecommend.MultiSelect = false;
             this.dgvuserrecommend.Name = "dgvuserrecommend";
             this.dgvuserrecommend.ReadOnly = true;
@@ -495,7 +496,7 @@
             this.btnuserclick.FlatAppearance.BorderSize = 0;
             this.btnuserclick.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnuserclick.Location = new System.Drawing.Point(145, 116);
-            this.btnuserclick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnuserclick.Margin = new System.Windows.Forms.Padding(4);
             this.btnuserclick.Name = "btnuserclick";
             this.btnuserclick.Size = new System.Drawing.Size(230, 31);
             this.btnuserclick.TabIndex = 418;
@@ -551,7 +552,7 @@
             this.btnExits.Image = ((System.Drawing.Image)(resources.GetObject("btnExits.Image")));
             this.btnExits.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExits.Location = new System.Drawing.Point(308, 261);
-            this.btnExits.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExits.Margin = new System.Windows.Forms.Padding(4);
             this.btnExits.Name = "btnExits";
             this.btnExits.Size = new System.Drawing.Size(94, 35);
             this.btnExits.TabIndex = 423;
@@ -568,7 +569,7 @@
             this.btnLogin.Image = ((System.Drawing.Image)(resources.GetObject("btnLogin.Image")));
             this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogin.Location = new System.Drawing.Point(190, 261);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(94, 35);
             this.btnLogin.TabIndex = 422;
@@ -579,6 +580,7 @@
             // 
             // GroupBox3
             // 
+            this.GroupBox3.Controls.Add(this.btncheckupdate);
             this.GroupBox3.Controls.Add(this.lblrecordcount);
             this.GroupBox3.Controls.Add(this.label2);
             this.GroupBox3.Controls.Add(this.txtusername);
@@ -589,9 +591,9 @@
             this.GroupBox3.Controls.Add(this.pictureBox1);
             this.GroupBox3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupBox3.Location = new System.Drawing.Point(1, -5);
-            this.GroupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.GroupBox3.Name = "GroupBox3";
-            this.GroupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.GroupBox3.Size = new System.Drawing.Size(528, 229);
             this.GroupBox3.TabIndex = 467;
             this.GroupBox3.TabStop = false;
@@ -628,7 +630,7 @@
             this.txtdateyesterday.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtdateyesterday.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtdateyesterday.Location = new System.Drawing.Point(15, 336);
-            this.txtdateyesterday.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtdateyesterday.Margin = new System.Windows.Forms.Padding(4);
             this.txtdateyesterday.Name = "txtdateyesterday";
             this.txtdateyesterday.Size = new System.Drawing.Size(211, 23);
             this.txtdateyesterday.TabIndex = 417;
@@ -667,7 +669,7 @@
             this.txtserveripaddress.Enabled = false;
             this.txtserveripaddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtserveripaddress.Location = new System.Drawing.Point(219, 231);
-            this.txtserveripaddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtserveripaddress.Margin = new System.Windows.Forms.Padding(4);
             this.txtserveripaddress.Name = "txtserveripaddress";
             this.txtserveripaddress.Size = new System.Drawing.Size(211, 23);
             this.txtserveripaddress.TabIndex = 470;
@@ -681,7 +683,7 @@
             this.txtipmessage.Enabled = false;
             this.txtipmessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtipmessage.Location = new System.Drawing.Point(89, 242);
-            this.txtipmessage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtipmessage.Margin = new System.Windows.Forms.Padding(4);
             this.txtipmessage.Name = "txtipmessage";
             this.txtipmessage.Size = new System.Drawing.Size(93, 23);
             this.txtipmessage.TabIndex = 471;
@@ -743,7 +745,7 @@
             // panel2
             // 
             this.panel2.Location = new System.Drawing.Point(605, 15);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(32, 126);
             this.panel2.TabIndex = 421;
@@ -779,7 +781,7 @@
             this.btnlog.ForeColor = System.Drawing.Color.Black;
             this.btnlog.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnlog.Location = new System.Drawing.Point(182, -6);
-            this.btnlog.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnlog.Margin = new System.Windows.Forms.Padding(4);
             this.btnlog.Name = "btnlog";
             this.btnlog.Size = new System.Drawing.Size(124, 40);
             this.btnlog.TabIndex = 14;
@@ -806,7 +808,7 @@
             this.btnExit.ForeColor = System.Drawing.Color.Black;
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExit.Location = new System.Drawing.Point(299, 4);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(119, 40);
             this.btnExit.TabIndex = 15;
@@ -857,7 +859,7 @@
             this.panel1.Controls.Add(this.metroButton1);
             this.panel1.Controls.Add(this.txtdatenow);
             this.panel1.Location = new System.Drawing.Point(566, 88);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(12, 139);
             this.panel1.TabIndex = 8;
@@ -869,7 +871,7 @@
             this.txtItemCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtItemCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtItemCode.Location = new System.Drawing.Point(164, 711);
-            this.txtItemCode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtItemCode.Margin = new System.Windows.Forms.Padding(4);
             this.txtItemCode.Name = "txtItemCode";
             this.txtItemCode.Size = new System.Drawing.Size(211, 23);
             this.txtItemCode.TabIndex = 473;
@@ -937,7 +939,7 @@
             this.dgvMaterials.EnableHeadersVisualStyles = false;
             this.dgvMaterials.GridColor = System.Drawing.SystemColors.Control;
             this.dgvMaterials.Location = new System.Drawing.Point(581, 306);
-            this.dgvMaterials.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvMaterials.Margin = new System.Windows.Forms.Padding(4);
             this.dgvMaterials.MultiSelect = false;
             this.dgvMaterials.Name = "dgvMaterials";
             this.dgvMaterials.ReadOnly = true;
@@ -996,7 +998,7 @@
             this.dgvRecipeInsert.EnableHeadersVisualStyles = false;
             this.dgvRecipeInsert.GridColor = System.Drawing.SystemColors.Control;
             this.dgvRecipeInsert.Location = new System.Drawing.Point(21, 606);
-            this.dgvRecipeInsert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvRecipeInsert.Margin = new System.Windows.Forms.Padding(4);
             this.dgvRecipeInsert.MultiSelect = false;
             this.dgvRecipeInsert.Name = "dgvRecipeInsert";
             this.dgvRecipeInsert.ReadOnly = true;
@@ -1066,7 +1068,7 @@
             this.dgvUpdateRawMats.EnableHeadersVisualStyles = false;
             this.dgvUpdateRawMats.GridColor = System.Drawing.SystemColors.Control;
             this.dgvUpdateRawMats.Location = new System.Drawing.Point(486, 606);
-            this.dgvUpdateRawMats.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvUpdateRawMats.Margin = new System.Windows.Forms.Padding(4);
             this.dgvUpdateRawMats.MultiSelect = false;
             this.dgvUpdateRawMats.Name = "dgvUpdateRawMats";
             this.dgvUpdateRawMats.ReadOnly = true;
@@ -1083,7 +1085,7 @@
             this.txtLastUsed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLastUsed.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLastUsed.Location = new System.Drawing.Point(382, 711);
-            this.txtLastUsed.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLastUsed.Margin = new System.Windows.Forms.Padding(4);
             this.txtLastUsed.Name = "txtLastUsed";
             this.txtLastUsed.Size = new System.Drawing.Size(211, 23);
             this.txtLastUsed.TabIndex = 650;
@@ -1094,7 +1096,7 @@
             this.txtMovingtesting.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMovingtesting.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMovingtesting.Location = new System.Drawing.Point(285, 322);
-            this.txtMovingtesting.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMovingtesting.Margin = new System.Windows.Forms.Padding(4);
             this.txtMovingtesting.Name = "txtMovingtesting";
             this.txtMovingtesting.Size = new System.Drawing.Size(144, 23);
             this.txtMovingtesting.TabIndex = 651;
@@ -1132,7 +1134,7 @@
             this.txtreport.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtreport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtreport.Location = new System.Drawing.Point(422, 370);
-            this.txtreport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtreport.Margin = new System.Windows.Forms.Padding(4);
             this.txtreport.Name = "txtreport";
             this.txtreport.Size = new System.Drawing.Size(144, 23);
             this.txtreport.TabIndex = 653;
@@ -1150,6 +1152,17 @@
             this.lblid.Size = new System.Drawing.Size(64, 17);
             this.lblid.TabIndex = 654;
             this.lblid.Text = "Version :";
+            // 
+            // btncheckupdate
+            // 
+            this.btncheckupdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncheckupdate.Location = new System.Drawing.Point(421, 17);
+            this.btncheckupdate.Name = "btncheckupdate";
+            this.btncheckupdate.Size = new System.Drawing.Size(96, 64);
+            this.btncheckupdate.TabIndex = 656;
+            this.btncheckupdate.Text = "Check For Update";
+            this.btncheckupdate.UseVisualStyleBackColor = true;
+            this.btncheckupdate.Click += new System.EventHandler(this.btncheckupdate_Click);
             // 
             // Form1
             // 
@@ -1288,6 +1301,7 @@
         private System.Windows.Forms.Label lblid;
         private System.Windows.Forms.Label lblrecordcount;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btncheckupdate;
     }
 }
 

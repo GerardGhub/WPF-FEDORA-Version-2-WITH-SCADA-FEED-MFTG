@@ -2,9 +2,11 @@
 using System.Net;
 using System.Xml;
 
-namespace WFFDR
+
+namespace SharpUpdate
 {
-   public class SharpUpdateXml
+    public class SharpUpdateXml
+ 
     {
         private Version version;
         private Uri uri;
@@ -80,7 +82,7 @@ namespace WFFDR
                 XmlDocument doc = new XmlDocument();
                 doc.Load(location.AbsoluteUri);
 
-                XmlNode node = doc.DocumentElement.SelectSingleNode("//update[@appID='" + appID+"']");
+                XmlNode node = doc.DocumentElement.SelectSingleNode("//update[@appID='" + appID +"']");
                 if (node == null)
                     return null;
 
