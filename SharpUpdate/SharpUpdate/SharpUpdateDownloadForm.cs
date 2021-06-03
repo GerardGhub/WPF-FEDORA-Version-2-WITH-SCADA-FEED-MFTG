@@ -1,10 +1,9 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Drawing;
-using System.Linq;
-using System.Windows.Forms;
 using System.IO;
 using System.Net;
+using System.Windows.Forms;
 
 
 namespace SharpUpdate
@@ -23,6 +22,7 @@ namespace SharpUpdate
         internal SharpUpdateDownloadForm(Uri location, string md5, Icon programIcon)
         {
             InitializeComponent();
+
             if (programIcon != null)
                 this.Icon = programIcon;
             tempFile = Path.GetTempFileName();
@@ -36,6 +36,7 @@ namespace SharpUpdate
             bgWorker = new BackgroundWorker();
             bgWorker.DoWork += new DoWorkEventHandler(bgWorker_DoWork);
             bgWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(bgWorker_RunWorkerCompleted);
+
             try { webClient.DownloadFileAsync(location, this.tempFile); }
             catch { this.DialogResult =  DialogResult.No; this.Close(); }
         }

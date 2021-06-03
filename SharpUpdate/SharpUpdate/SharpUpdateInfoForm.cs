@@ -1,17 +1,11 @@
 ﻿using System;
 using System.Windows.Forms;
-using System.Drawing;
-using System.Text;
-using System.Linq;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Data;
 
 namespace SharpUpdate
 {
-    public partial class SharpUpdateInfoForm : Form
+    internal partial class SharpUpdateInfoForm : Form
     {
-        public SharpUpdateInfoForm(ISharpUpdatable applicationInfo, SharpUpdateXml updateInfo)
+        internal SharpUpdateInfoForm(ISharpUpdatable applicationInfo, SharpUpdateXml updateInfo)
         {
             InitializeComponent();
 

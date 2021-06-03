@@ -1,5 +1,4 @@
-﻿using System;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
@@ -22,18 +21,40 @@ namespace SharpUpdate
 
 
         }
+
         public void DoUpdate()
         {
             if (!this.bgWorker.IsBusy)
             {
                 this.bgWorker.RunWorkerAsync(this.applicationInfo);
-                MessageBox.Show($"Do update { applicationInfo.ToString()  }");
+                //    //MessageBox.Show($"Do update { applicationInfo.ToString()  }");
             }
-                
-            
+
+
         }
 
+        private void bgWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
 
+            ISharpUpdatable application = (ISharpUpdatable)e.Argument;
+
+            if (!SharpUpdateXml.ExistsOnServer(application.UpdateXmlLocation))
+            {
+                e.Cancel = true;
+            }
+
+            else
+            {
+                e.Result = SharpUpdateXml.Parse(application.UpdateXmlLocation, application.ApplicationID);
+            }
+
+
+
+
+        }
+       
+
+     
         private void bgWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             if(!e.Cancelled)
@@ -51,24 +72,7 @@ namespace SharpUpdate
 
         }
 
-        private void bgWorker_DoWork(object sender, DoWorkEventArgs e)
-        {
-          
-            ISharpUpdatable application = (ISharpUpdatable)e.Argument;
-            if (!SharpUpdateXml.ExistsOnServer(application.UpdateXmlLocation))
-            {
-                e.Cancel = true;
-            }
-
-            else
-            {
-                e.Result = SharpUpdateXml.Parse(application.UpdateXmlLocation, application.ApplicationID);
-            }
-               
-
-
-
-        }
+     
 
         private void DownloadUpdate(SharpUpdateXml update)
         {

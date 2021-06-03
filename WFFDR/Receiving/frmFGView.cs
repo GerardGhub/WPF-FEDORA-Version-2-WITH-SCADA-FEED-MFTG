@@ -11,9 +11,12 @@ using System.Windows.Forms;
 using Tulpep.NotificationWindow;
 
 
+
+
+
 namespace WFFDR
 {
-    public partial class frmFGView : Form
+    public partial class frmFGView : Form 
     {
         myclasses myClass = new myclasses();
         IStoredProcedures g_objStoredProcCollection = null;
@@ -225,7 +228,10 @@ namespace WFFDR
 
             if (lblbase.Text == "epimanyaman")
             {
+             
                 textBox1.Text = "clearexit";
+                
+
             }
 
 
@@ -233,7 +239,7 @@ namespace WFFDR
             {
                 fgreceivedresetview();
                 textBox1.Text = "viewexit";
-               
+              
 
             }
             else

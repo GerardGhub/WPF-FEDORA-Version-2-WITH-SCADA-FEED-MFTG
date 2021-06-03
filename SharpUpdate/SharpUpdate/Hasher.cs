@@ -24,7 +24,7 @@ namespace SharpUpdate
                 case MashType.SHA1:
                     return MakeHashString(SHA1.Create().ComputeHash(new FileStream(filePath, FileMode.Open)));
                 case MashType.SHA512:
-                    return MakeHashString(SHA1.Create().ComputeHash(new FileStream(filePath, FileMode.Open)));
+                    return MakeHashString(SHA512.Create().ComputeHash(new FileStream(filePath, FileMode.Open)));
 
                 default:
                     return "";

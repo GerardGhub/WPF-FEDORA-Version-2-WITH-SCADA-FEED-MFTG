@@ -42,8 +42,9 @@ namespace WFFDR
         {
             InitializeComponent();
             this.lbl1.Text = this.ApplicationAssembly.GetName().Version.ToString();
-            updater = new SharpUpdater(this);
+         
             //this.xmlLocation = new Uri("http://fedora:8068/Debug/update.xml");
+            updater = new SharpUpdater(this);
         }
 
         private void Button2_Click(object sender, EventArgs e)
@@ -106,7 +107,7 @@ namespace WFFDR
             //updater.DoUpdate();
             load_materials();
 
-            this.lbl1.Text = this.ApplicationAssembly.GetName().Version.ToString();
+            //this.lbl1.Text = this.ApplicationAssembly.GetName().Version.ToString();
 
 
 
@@ -143,29 +144,29 @@ namespace WFFDR
         {
          get { return "WFFDR"; }
         }
-
-        public Assembly ApplicationAssembly
+        public Uri UpdateXmlLocation
         {
+            get { return new Uri("http://fedora:8068/Debug/update.xml"); }
 
-            get { return Assembly.GetExecutingAssembly(); }
         }
+      
 
+        public Form Context
+        {
+            get { return this; }
+
+        }
         public Icon ApplicationIcon
         {
 
             get { return this.Icon; }
         }
 
-        public Uri UpdateXmlLocation
+  
+        public Assembly ApplicationAssembly
         {
-            get { return new Uri("http://fedora:8068/Debug/update.xml"); }
 
-        }
-
-        public Form Context
-        {
-            get { return this; }
-
+            get { return Assembly.GetExecutingAssembly(); }
         }
         #endregion
 

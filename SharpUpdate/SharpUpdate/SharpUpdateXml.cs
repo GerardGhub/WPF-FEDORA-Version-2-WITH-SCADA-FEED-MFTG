@@ -5,11 +5,11 @@ using System.Xml;
 
 namespace SharpUpdate
 {
-    public class SharpUpdateXml
+    internal class SharpUpdateXml
  
     {
         private Version version;
-        private Uri uri;
+        private Uri url;
         private string filename;
         private string md5;
         private string description;
@@ -18,11 +18,11 @@ namespace SharpUpdate
 
         internal Version Version
         {
-            get { return this.Version; }
+            get { return this.version; }
         }
         internal Uri Uri
         {
-            get { return this.uri; }
+            get { return this.url; }
         }
         internal string Filename
         {
@@ -40,10 +40,10 @@ namespace SharpUpdate
         {
             get { return this.launchArgs; }
         }
-        internal SharpUpdateXml(Version version, Uri uri, string filename, string md5, string description, string launchArgs)
+        internal SharpUpdateXml(Version version, Uri url, string filename, string md5, string description, string launchArgs)
         {
             this.version = version;
-            this.uri = uri;
+            this.url = url;
             this.filename = filename;
             this.md5 = md5;
             this.description = description;
@@ -82,16 +82,17 @@ namespace SharpUpdate
                 XmlDocument doc = new XmlDocument();
                 doc.Load(location.AbsoluteUri);
 
-                XmlNode node = doc.DocumentElement.SelectSingleNode("//update[@appID='" + appID +"']");
-                if (node == null)
+                XmlNode updateNode = doc.DocumentElement.SelectSingleNode("//update[@appId='"+ appID +"']");
+                if (updateNode == null)
                     return null;
 
 
-                version = Version.Parse(node["version"].InnerText);
-                url = node["url"].InnerText;
-                filename = node["md5"].InnerText;
-                description = node["description"].InnerText;
-                launchArgs = node["launchArgs"].InnerText;
+                version = Version.Parse(updateNode["version"].InnerText);
+                url = updateNode["url"].InnerText;
+                filename = updateNode["filename"].InnerText;
+                md5 = updateNode["md5"].InnerText;
+                description = updateNode["description"].InnerText;
+                launchArgs = updateNode["launchArgs"].InnerText;
 
 
                 return new SharpUpdateXml(version, new Uri(url), filename, md5, description, launchArgs);

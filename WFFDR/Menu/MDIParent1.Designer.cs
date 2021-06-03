@@ -1854,7 +1854,7 @@
             this.toolProdPlanning1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolProdPlanning1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolProdPlanning1.Name = "toolProdPlanning1";
-            this.toolProdPlanning1.Size = new System.Drawing.Size(219, 21);
+            this.toolProdPlanning1.Size = new System.Drawing.Size(219, 33);
             this.toolProdPlanning1.Text = "PRODUCTION PLANNING";
             this.toolProdPlanning1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolProdPlanning1.ToolTipText = "Receiving";
@@ -1864,7 +1864,7 @@
             // 
             this.toolStripProductionSchedule1.Enabled = false;
             this.toolStripProductionSchedule1.Name = "toolStripProductionSchedule1";
-            this.toolStripProductionSchedule1.Size = new System.Drawing.Size(224, 26);
+            this.toolStripProductionSchedule1.Size = new System.Drawing.Size(221, 26);
             this.toolStripProductionSchedule1.Text = "Production Schedule";
             this.toolStripProductionSchedule1.Click += new System.EventHandler(this.toolStripProductionSchedule1_Click);
             // 
@@ -1872,7 +1872,7 @@
             // 
             this.toolStripProductionApproval1.Enabled = false;
             this.toolStripProductionApproval1.Name = "toolStripProductionApproval1";
-            this.toolStripProductionApproval1.Size = new System.Drawing.Size(224, 26);
+            this.toolStripProductionApproval1.Size = new System.Drawing.Size(221, 26);
             this.toolStripProductionApproval1.Text = "Production Approval";
             this.toolStripProductionApproval1.Click += new System.EventHandler(this.toolStripProductionApproval1_Click);
             // 
@@ -1887,7 +1887,7 @@
             this.toolStripSplitButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripSplitButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSplitButton5.Name = "toolStripSplitButton5";
-            this.toolStripSplitButton5.Size = new System.Drawing.Size(132, 21);
+            this.toolStripSplitButton5.Size = new System.Drawing.Size(132, 33);
             this.toolStripSplitButton5.Text = "REPACKING";
             this.toolStripSplitButton5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolStripSplitButton5.ToolTipText = "Receiving";
@@ -1926,7 +1926,7 @@
             this.toolStripSplitButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripSplitButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSplitButton4.Name = "toolStripSplitButton4";
-            this.toolStripSplitButton4.Size = new System.Drawing.Size(151, 21);
+            this.toolStripSplitButton4.Size = new System.Drawing.Size(151, 33);
             this.toolStripSplitButton4.Text = "PREPARATION";
             this.toolStripSplitButton4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolStripSplitButton4.ToolTipText = "Receiving";
@@ -1959,7 +1959,7 @@
             this.toolRepacking1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolRepacking1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolRepacking1.Name = "toolRepacking1";
-            this.toolRepacking1.Size = new System.Drawing.Size(132, 21);
+            this.toolRepacking1.Size = new System.Drawing.Size(132, 33);
             this.toolRepacking1.Text = "REPACKING";
             this.toolRepacking1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolRepacking1.ToolTipText = "Receiving";
@@ -1998,7 +1998,7 @@
             this.toolStripPreparation1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripPreparation1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripPreparation1.Name = "toolStripPreparation1";
-            this.toolStripPreparation1.Size = new System.Drawing.Size(151, 21);
+            this.toolStripPreparation1.Size = new System.Drawing.Size(151, 33);
             this.toolStripPreparation1.Text = "PREPARATION";
             this.toolStripPreparation1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolStripPreparation1.ToolTipText = "Receiving";
@@ -2029,7 +2029,7 @@
             this.toolStripMicroMixing1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripMicroMixing1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripMicroMixing1.Name = "toolStripMicroMixing1";
-            this.toolStripMicroMixing1.Size = new System.Drawing.Size(148, 21);
+            this.toolStripMicroMixing1.Size = new System.Drawing.Size(148, 33);
             this.toolStripMicroMixing1.Text = "MICRO MIXING";
             this.toolStripMicroMixing1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolStripMicroMixing1.ToolTipText = "Receiving";
@@ -2039,7 +2039,7 @@
             // 
             this.ToolMicroMixing1.Enabled = false;
             this.ToolMicroMixing1.Name = "ToolMicroMixing1";
-            this.ToolMicroMixing1.Size = new System.Drawing.Size(224, 26);
+            this.ToolMicroMixing1.Size = new System.Drawing.Size(214, 26);
             this.ToolMicroMixing1.Text = "Raw Material Mixing";
             this.ToolMicroMixing1.Click += new System.EventHandler(this.ToolMicroMixing1_Click);
             // 
@@ -2054,7 +2054,7 @@
             this.toolStripProduction1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripProduction1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripProduction1.Name = "toolStripProduction1";
-            this.toolStripProduction1.Size = new System.Drawing.Size(145, 21);
+            this.toolStripProduction1.Size = new System.Drawing.Size(145, 33);
             this.toolStripProduction1.Text = "PRODUCTION";
             this.toolStripProduction1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolStripProduction1.ToolTipText = "Receiving";
@@ -2094,7 +2094,7 @@
             this.toolStripFinishGoods1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripFinishGoods1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripFinishGoods1.Name = "toolStripFinishGoods1";
-            this.toolStripFinishGoods1.Size = new System.Drawing.Size(162, 21);
+            this.toolStripFinishGoods1.Size = new System.Drawing.Size(162, 33);
             this.toolStripFinishGoods1.Text = "FINISHED GOOD";
             this.toolStripFinishGoods1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolStripFinishGoods1.ToolTipText = "Receiving";
@@ -2131,7 +2131,7 @@
             this.toolReports1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolReports1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolReports1.Name = "toolReports1";
-            this.toolReports1.Size = new System.Drawing.Size(120, 21);
+            this.toolReports1.Size = new System.Drawing.Size(120, 33);
             this.toolReports1.Text = "REPORTS";
             this.toolReports1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolReports1.ToolTipText = "Receiving";
@@ -2145,7 +2145,7 @@
             this.toolStripMenuItem38});
             this.tootStripExceltoFedora1.Enabled = false;
             this.tootStripExceltoFedora1.Name = "tootStripExceltoFedora1";
-            this.tootStripExceltoFedora1.Size = new System.Drawing.Size(224, 26);
+            this.tootStripExceltoFedora1.Size = new System.Drawing.Size(195, 26);
             this.tootStripExceltoFedora1.Text = "Import to Fedora";
             this.tootStripExceltoFedora1.Visible = false;
             // 
@@ -2170,7 +2170,7 @@
             this.toolMacroRepacking1});
             this.reportinToolStrip1.Enabled = false;
             this.reportinToolStrip1.Name = "reportinToolStrip1";
-            this.reportinToolStrip1.Size = new System.Drawing.Size(224, 26);
+            this.reportinToolStrip1.Size = new System.Drawing.Size(195, 26);
             this.reportinToolStrip1.Text = "Repacking";
             this.reportinToolStrip1.Visible = false;
             // 
@@ -2196,7 +2196,7 @@
             this.itemCategoryToolStripMenuItem1});
             this.inventoryToolStripMenuItem1.Enabled = false;
             this.inventoryToolStripMenuItem1.Name = "inventoryToolStripMenuItem1";
-            this.inventoryToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.inventoryToolStripMenuItem1.Size = new System.Drawing.Size(195, 26);
             this.inventoryToolStripMenuItem1.Text = "Inventory";
             this.inventoryToolStripMenuItem1.Visible = false;
             this.inventoryToolStripMenuItem1.Click += new System.EventHandler(this.inventoryToolStripMenuItem1_Click);
@@ -2244,7 +2244,7 @@
             this.fGInventoryReportsToolStripMenuItem});
             this.internalReportsToolStripMenuItem.Enabled = false;
             this.internalReportsToolStripMenuItem.Name = "internalReportsToolStripMenuItem";
-            this.internalReportsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.internalReportsToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
             this.internalReportsToolStripMenuItem.Text = "Internal Reports";
             this.internalReportsToolStripMenuItem.Click += new System.EventHandler(this.internalReportsToolStripMenuItem_Click);
             // 
@@ -2686,7 +2686,7 @@
             this.dashboardToolStripMenuItem});
             this.externalReportsToolStripMenuItem.Enabled = false;
             this.externalReportsToolStripMenuItem.Name = "externalReportsToolStripMenuItem";
-            this.externalReportsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.externalReportsToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
             this.externalReportsToolStripMenuItem.Text = "External Reports";
             this.externalReportsToolStripMenuItem.Click += new System.EventHandler(this.externalReportsToolStripMenuItem_Click);
             // 
@@ -2952,7 +2952,7 @@
             this.toolStripSplitButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSplitButton1.Name = "toolStripSplitButton1";
-            this.toolStripSplitButton1.Size = new System.Drawing.Size(106, 21);
+            this.toolStripSplitButton1.Size = new System.Drawing.Size(106, 33);
             this.toolStripSplitButton1.Text = "IMPORT";
             this.toolStripSplitButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolStripSplitButton1.ToolTipText = "Receiving";
@@ -3008,7 +3008,7 @@
             this.Userights1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Userights1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Userights1.Name = "Userights1";
-            this.Userights1.Size = new System.Drawing.Size(147, 21);
+            this.Userights1.Size = new System.Drawing.Size(147, 33);
             this.Userights1.Text = "USER RIGHTS";
             this.Userights1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Userights1.ToolTipText = "Receiving";
@@ -3112,7 +3112,7 @@
             this.tsPSetup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.tsPSetup.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsPSetup.Name = "tsPSetup";
-            this.tsPSetup.Size = new System.Drawing.Size(99, 21);
+            this.tsPSetup.Size = new System.Drawing.Size(99, 33);
             this.tsPSetup.Text = "SETUP";
             this.tsPSetup.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tsPSetup.ToolTipText = "Receiving";
@@ -3592,8 +3592,9 @@
             this.arrangeIconsToolStripMenuItem});
             this.windowsMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.windowsMenu.Name = "windowsMenu";
-            this.windowsMenu.Size = new System.Drawing.Size(78, 26);
+            this.windowsMenu.Size = new System.Drawing.Size(78, 25);
             this.windowsMenu.Text = "&Windows";
+            this.windowsMenu.Visible = false;
             // 
             // newWindowToolStripMenuItem
             // 

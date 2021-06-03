@@ -203,8 +203,9 @@ namespace WFFDR
 
 
                 frmFGView fgview = new frmFGView(this, lblprodid.Text, txtPrintingDate.Text, txtProdPlan.Text);
-
+               
                 fgview.Show();
+              
                 
 
             }
