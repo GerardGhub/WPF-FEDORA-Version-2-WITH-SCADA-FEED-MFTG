@@ -43,6 +43,7 @@ namespace WFFDR
             lblid.Text = userinfo.user_rights_id.ToString();
             gbMain.Visible = false;
             loadCode();
+        
         }
 
 
@@ -89,10 +90,10 @@ namespace WFFDR
 
 
 
-            dset_emp = objStorProc.sp_getMajorTables("FGBarcoding");
+            dset_emp = objStorProc.sp_GetCategory("FGBarcoding",0,txtMainInput.Text,"","");
 
             doSearch();
-
+        
 
         }
 
@@ -500,7 +501,33 @@ namespace WFFDR
 
 
         }
+        private void LoadFeedtypeData()
+        {
 
+            dset_emp.Clear();
+
+
+
+            dset_emp = objStorProc.sp_GetCategory("LoadFeedtypeData", 0, txtfeedtype.Text, txtproductionid.Text, "");
+           
+            try
+            {
+
+                if (dset_emp.Tables.Count > 0)
+                {
+                    DataView dv = new DataView(dset_emp.Tables[0]);
+                    dgvduplicatedata.DataSource = dv;
+                    lblrecordforreprocess.Text = dgvduplicatedata.RowCount.ToString();
+                }
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Invalid character found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //txtmainfeedcode.Focus();
+                return;
+            }
+        }
         void LoadData()
         {
 
@@ -546,20 +573,20 @@ namespace WFFDR
                 if (dset_emp.Tables.Count > 0)
                 {
                     DataView dv = new DataView(dset_emp.Tables[0]);
-                    if (myglobal.global_module == "EMPLOYEE")
-                    {
-                        //dv.RowFilter = "firstname like '%" + txtmainsearch.Text + "%' or lastname like '%" + txtsearch.Text + "%' or employee_number like '%" + txtsearch.Text + "%' or employment_status_name like '%" + txtsearch.Text + "%'";
-                    }
-                    else if (myglobal.global_module == "Active")
-                    {
+                    //if (myglobal.global_module == "EMPLOYEE")
+                    //{
+                    //    //dv.RowFilter = "firstname like '%" + txtmainsearch.Text + "%' or lastname like '%" + txtsearch.Text + "%' or employee_number like '%" + txtsearch.Text + "%' or employment_status_name like '%" + txtsearch.Text + "%'";
+                    //}
+                    //else if (myglobal.global_module == "Active")
+                    //{
 
-                        dv.RowFilter = "fg_id = '" + txtMainInput.Text + "'";
+                    //    dv.RowFilter = "fg_id = '" + txtMainInput.Text + "'";
 
-                    }
-                    else if (myglobal.global_module == "VISITORS")
-                    {
-                        //dv.RowFilter = "visitors_lastname like '%" + txtsearch.Text + "%' or visitors_firstname like '%" + txtsearch.Text + "%'";
-                    }
+                    //}
+                    //else if (myglobal.global_module == "VISITORS")
+                    //{
+                    //    //dv.RowFilter = "visitors_lastname like '%" + txtsearch.Text + "%' or visitors_firstname like '%" + txtsearch.Text + "%'";
+                    //}
                     dataGridView1.DataSource = dv;
                     lblrecords.Text = dataGridView1.RowCount.ToString();
 
@@ -598,7 +625,8 @@ namespace WFFDR
                         ValidatedSuccess();//gerard
                         if (lblstatus.Text == "Reprocess")
                         {
-                            LoadData();
+                            //LoadData();
+                            LoadFeedtypeData();
                             if (lblrecordforreprocess.Text == "0")
                             {
                                 NoMatchedFeedCode();
@@ -744,6 +772,7 @@ namespace WFFDR
                 //{
 
                     btnBarcode_Click(sender, e);
+              
                 //}
             }
         }
@@ -823,9 +852,11 @@ namespace WFFDR
 
             if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to Reprocess  feedcode " + txtfeedcode.Text + ", ? ", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
-                checkdata();
-                txtreprocessdata.Text = dgvCheckdata.RowCount.ToString();
+               
+                Checkdata();
+              
                 //txtreprocessdata.Text = dgvCheckdata.CurrentRow.Cells["total_reprocess_count"].Value.ToString();
+
                 dgvCheckdata_CurrentCellChanged(sender, e);
 
 
@@ -859,29 +890,37 @@ namespace WFFDR
 
         }
 
-        void checkdata()
+        private void Checkdata()
         {
-
-            String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
-            SqlConnection sql_con = new SqlConnection(connetionString);
-
-
-
-
-            string sqlquery = "SELECT * FROM [dbo].[rdf_repackin_finishgoods] WHERE prod_adv ='" + txtproductionid.Text +"' AND status='Reprocess' AND fg_added_by IS NULL";
-
-
-
-
-            sql_con.Open();
-            SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
-            SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
-            DataTable dt = new DataTable();
-            sdr.Fill(dt);
-    dgvCheckdata.DataSource = dt;
-           //txtreprocessdata.Text = dgvCheckdata.RowCount.ToString();
+   string mcolumns = "test,fg_id,prod_adv,fg_feed_code,fg_feed_type,fg_options,actual_weight,added_by";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
+   pointer_module.populateModuleMoveOrder(dsetHeader, dgvCheckdata, mcolumns, "checkdatareprocess", txtproductionid.Text.ToString(), 0, "", "");
+   txtreprocessdata.Text = dgvCheckdata.RowCount.ToString();
 
         }
+
+        //void checkdata()
+        //{
+
+        //    String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
+        //    SqlConnection sql_con = new SqlConnection(connetionString);
+
+
+
+
+        //    string sqlquery = "SELECT * FROM [dbo].[rdf_repackin_finishgoods] WHERE prod_adv ='" + txtproductionid.Text +"' AND status='Reprocess' AND fg_added_by IS NULL";
+
+
+
+
+        //    sql_con.Open();
+        //    SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
+        //    SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
+        //    DataTable dt = new DataTable();
+        //    sdr.Fill(dt);
+        //    dgvCheckdata.DataSource = dt;
+        //   //txtreprocessdata.Text = dgvCheckdata.RowCount.ToString();
+
+        //}
 
         private void dgvduplicatedata_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
@@ -955,10 +994,10 @@ namespace WFFDR
             {
                 if (dgvCheckdata.CurrentRow != null)
                 {
-                    if (dgvCheckdata.CurrentRow.Cells["prod_id"].Value != null)
+                    if (dgvCheckdata.CurrentRow.Cells["prod_adv"].Value != null)
                     {
                         //p_id = Convert.ToInt32(dataView.CurrentRow.Cells["prod_id"].Value);
-               txtreprocessdata.Text = dgvCheckdata.CurrentRow.Cells["total_reprocess_count"].Value.ToString();
+                        txtreprocessdata.Text = dgvCheckdata.RowCount.ToString();
 
                     }
 
@@ -1205,5 +1244,7 @@ namespace WFFDR
 
 
         }
+
+      
     }
 }
