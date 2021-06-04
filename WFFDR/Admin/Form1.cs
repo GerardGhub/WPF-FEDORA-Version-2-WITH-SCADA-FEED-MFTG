@@ -466,8 +466,18 @@ namespace WFFDR
             if (txtusername.Text.Trim() == string.Empty)
             {
                 btnuserclick.Text = "";
+                txtpassword.Text = "";
             }
 
+            if (txtpassword.Text.Trim() == string.Empty)
+            {
+
+            }
+            else
+            {
+                btnuserclick.Text = "";
+
+            }
 
         }
 
@@ -531,7 +541,7 @@ namespace WFFDR
             player.SoundLocation = @"C:\Reports\Fedora_Voice\Mag-la-logout-ka-na-po-ba-tala1608971918.wav";
             player.Play();
 
-            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to Exit " + txtusername.Text + "?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to exit " + txtusername.Text + "?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -591,17 +601,19 @@ namespace WFFDR
         private void btneye_Click(object sender, EventArgs e)
         {
 
-            txtpassword.PasswordChar = '\0';
+            txtpassword.PasswordChar = '*';
             btneye.Visible = false;
             btneyeclose.Visible = true;
-
+            txtpassword.Focus();
         }
 
         private void btneyeclose_Click(object sender, EventArgs e)
         {
-            txtpassword.PasswordChar = '*';
+          
+            txtpassword.PasswordChar = '\0';
             btneyeclose.Visible = false;
             btneye.Visible = true;
+            txtpassword.Focus();
         }
 
         private void dgvuserrecommend_CurrentCellChanged(object sender, EventArgs e)
@@ -669,6 +681,13 @@ namespace WFFDR
 
         private void txtpassword_TextChanged(object sender, EventArgs e)
         {
+           
+
+
+
+
+
+
             if (txtpassword.Text.Trim() == string.Empty)
             {
 
@@ -676,6 +695,7 @@ namespace WFFDR
             else
             {
                 btnuserclick.Text = "";
+                
             }
         }
 
@@ -1027,6 +1047,11 @@ namespace WFFDR
         }
 
         private void btncheckupdate_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void lblupdate_Click(object sender, EventArgs e)
         {
             updater.DoUpdate();
         }

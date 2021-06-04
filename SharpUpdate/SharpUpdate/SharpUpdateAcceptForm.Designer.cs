@@ -28,47 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SharpUpdateAcceptForm));
             this.lblUpdateAvail = new System.Windows.Forms.Label();
             this.lblNewVersion = new System.Windows.Forms.Label();
             this.btnYes = new System.Windows.Forms.Button();
             this.btnDetails = new System.Windows.Forms.Button();
             this.btnNo = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox
-            // 
-            this.pictureBox.Location = new System.Drawing.Point(24, 12);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox.TabIndex = 0;
-            this.pictureBox.TabStop = false;
             // 
             // lblUpdateAvail
             // 
             this.lblUpdateAvail.AutoSize = true;
             this.lblUpdateAvail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUpdateAvail.Location = new System.Drawing.Point(12, 83);
+            this.lblUpdateAvail.Location = new System.Drawing.Point(16, 102);
+            this.lblUpdateAvail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUpdateAvail.Name = "lblUpdateAvail";
-            this.lblUpdateAvail.Size = new System.Drawing.Size(339, 20);
+            this.lblUpdateAvail.Size = new System.Drawing.Size(441, 25);
             this.lblUpdateAvail.TabIndex = 1;
-            this.lblUpdateAvail.Text = "\"An update is available would you like update?\"";
+            this.lblUpdateAvail.Text = "\"An update is available would you like to update?\"";
             // 
             // lblNewVersion
             // 
             this.lblNewVersion.AutoSize = true;
-            this.lblNewVersion.Location = new System.Drawing.Point(13, 120);
+            this.lblNewVersion.Location = new System.Drawing.Point(17, 148);
+            this.lblNewVersion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNewVersion.Name = "lblNewVersion";
-            this.lblNewVersion.Size = new System.Drawing.Size(35, 13);
+            this.lblNewVersion.Size = new System.Drawing.Size(46, 17);
             this.lblNewVersion.TabIndex = 2;
             this.lblNewVersion.Text = "label1";
             // 
             // btnYes
             // 
-            this.btnYes.Location = new System.Drawing.Point(104, 190);
+            this.btnYes.Location = new System.Drawing.Point(139, 234);
+            this.btnYes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnYes.Name = "btnYes";
-            this.btnYes.Size = new System.Drawing.Size(75, 23);
+            this.btnYes.Size = new System.Drawing.Size(100, 28);
             this.btnYes.TabIndex = 3;
             this.btnYes.Text = "Yes";
             this.btnYes.UseVisualStyleBackColor = true;
@@ -76,9 +72,10 @@
             // 
             // btnDetails
             // 
-            this.btnDetails.Location = new System.Drawing.Point(266, 190);
+            this.btnDetails.Location = new System.Drawing.Point(355, 234);
+            this.btnDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDetails.Name = "btnDetails";
-            this.btnDetails.Size = new System.Drawing.Size(75, 23);
+            this.btnDetails.Size = new System.Drawing.Size(100, 28);
             this.btnDetails.TabIndex = 4;
             this.btnDetails.Text = "Details";
             this.btnDetails.UseVisualStyleBackColor = true;
@@ -86,43 +83,58 @@
             // 
             // btnNo
             // 
-            this.btnNo.Location = new System.Drawing.Point(185, 190);
+            this.btnNo.Location = new System.Drawing.Point(247, 234);
+            this.btnNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNo.Name = "btnNo";
-            this.btnNo.Size = new System.Drawing.Size(75, 23);
+            this.btnNo.Size = new System.Drawing.Size(100, 28);
             this.btnNo.TabIndex = 5;
             this.btnNo.Text = "No";
             this.btnNo.UseVisualStyleBackColor = true;
             this.btnNo.Click += new System.EventHandler(this.btnNo_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SharpUpdate.Properties.Resources.Untitled_design;
+            this.pictureBox1.Location = new System.Drawing.Point(21, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // SharpUpdateAcceptForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(360, 225);
+            this.ClientSize = new System.Drawing.Size(480, 277);
+            this.ControlBox = false;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnNo);
             this.Controls.Add(this.btnDetails);
             this.Controls.Add(this.btnYes);
             this.Controls.Add(this.lblNewVersion);
             this.Controls.Add(this.lblUpdateAvail);
-            this.Controls.Add(this.pictureBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "SharpUpdateAcceptForm";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SharpUpdateAcceptForm";
             this.Load += new System.EventHandler(this.SharpUpdateAcceptForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.Label lblUpdateAvail;
         private System.Windows.Forms.Label lblNewVersion;
         private System.Windows.Forms.Button btnYes;
         private System.Windows.Forms.Button btnDetails;
         private System.Windows.Forms.Button btnNo;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
