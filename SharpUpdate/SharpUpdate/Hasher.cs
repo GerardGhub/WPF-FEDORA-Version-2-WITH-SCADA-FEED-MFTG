@@ -36,6 +36,7 @@ namespace SharpUpdate
         private static string MakeHashString(byte[] hash)
         {
             StringBuilder s = new StringBuilder(hash.Length * 2);
+
             foreach (byte b in hash)
                 s.Append(b.ToString("X2").ToLower());
             return s.ToString();

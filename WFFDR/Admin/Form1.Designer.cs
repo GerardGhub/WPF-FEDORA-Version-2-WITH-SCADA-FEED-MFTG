@@ -47,7 +47,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtusername = new System.Windows.Forms.TextBox();
             this.txtpassword = new System.Windows.Forms.TextBox();
-            this.cachedMacroBook1 = new WFFDR.CachedMacroBook();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.lblrecords = new System.Windows.Forms.Label();
@@ -75,6 +74,7 @@
             this.btnExits = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.GroupBox3 = new System.Windows.Forms.GroupBox();
+            this.btncheckupdate = new System.Windows.Forms.Button();
             this.lblrecordcount = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtdateyesterday = new System.Windows.Forms.TextBox();
@@ -110,7 +110,7 @@
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtreport = new System.Windows.Forms.TextBox();
             this.lblid = new System.Windows.Forms.Label();
-            this.btncheckupdate = new System.Windows.Forms.Button();
+            this.cachedMacroBook1 = new WFFDR.CachedMacroBook();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvApproved)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -598,6 +598,17 @@
             this.GroupBox3.TabIndex = 467;
             this.GroupBox3.TabStop = false;
             this.GroupBox3.Enter += new System.EventHandler(this.GroupBox3_Enter);
+            // 
+            // btncheckupdate
+            // 
+            this.btncheckupdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncheckupdate.Location = new System.Drawing.Point(421, 17);
+            this.btncheckupdate.Name = "btncheckupdate";
+            this.btncheckupdate.Size = new System.Drawing.Size(96, 64);
+            this.btncheckupdate.TabIndex = 656;
+            this.btncheckupdate.Text = "Check For Update";
+            this.btncheckupdate.UseVisualStyleBackColor = true;
+            this.btncheckupdate.Click += new System.EventHandler(this.btncheckupdate_Click);
             // 
             // lblrecordcount
             // 
@@ -1152,17 +1163,6 @@
             this.lblid.Size = new System.Drawing.Size(64, 17);
             this.lblid.TabIndex = 654;
             this.lblid.Text = "Version :";
-            // 
-            // btncheckupdate
-            // 
-            this.btncheckupdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncheckupdate.Location = new System.Drawing.Point(421, 17);
-            this.btncheckupdate.Name = "btncheckupdate";
-            this.btncheckupdate.Size = new System.Drawing.Size(96, 64);
-            this.btncheckupdate.TabIndex = 656;
-            this.btncheckupdate.Text = "Check For Update";
-            this.btncheckupdate.UseVisualStyleBackColor = true;
-            this.btncheckupdate.Click += new System.EventHandler(this.btncheckupdate_Click);
             // 
             // Form1
             // 

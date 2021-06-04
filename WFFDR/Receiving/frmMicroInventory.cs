@@ -225,7 +225,7 @@ namespace WFFDR
             }
             else
             {
-                string mcolumns = "test,item_code,item_description,Category,item_group,RESERVED,ONHAND,buffer_of_stocks,price,REPACK,RECEIVING,OUTING,REPACK,ISSUE,LAST_USED,report,classification_buffer,ordering_buffer,QA_RECEIVING";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
+                string mcolumns = "test,item_code,item_description,Category,item_group,RESERVED,ONHAND,buffer_of_stocks,price,MACREPACK,RECEIVING,OUTING,REPACK,ISSUE,LAST_USED,report,classification_buffer,ordering_buffer,QA_RECEIVING";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
                 pointer_module.populateModule(dsetHeader, dgv_table, mcolumns, "micro_raw_materialsnew");
                 lblrecords.Text = dgv_table.RowCount.ToString();
                 lbltotalrecords.Text = dgv_table.RowCount.ToString();

@@ -81,7 +81,7 @@ namespace SharpUpdate
             if(result == DialogResult.OK)
             {
                 string currentPath = this.applicationInfo.ApplicationAssembly.Location;
-                string newPath = Path.GetDirectoryName(currentPath) + "\\" + update.Filename;
+                string newPath = Path.GetDirectoryName(currentPath) + "\\" + update.FileName;
 
                 UpdateApplication(form.TempFilePath, currentPath, newPath, update.LaunchArgs);
                 Application.Exit();
@@ -102,7 +102,7 @@ namespace SharpUpdate
 
         private void UpdateApplication(string tempFilePath, string currentPath, string newPath, string launchArgs)
         {
-            string argument = "/C Choice /C Y /N /D Y /T 4 & Del /F /Q \"{0}\" & Choice /C Y /N /D Y /T 2 & Move /Y \"{1}\"\"{2}\"& Start \"\" /D \"{3}\" \"{4}\" {5}";
+            string argument = "/C Choice /C Y /N /D Y /T 4 & Del /F /Q \"{0}\" & Choice /C Y /N /D Y /T 2 & Move /Y \"{1}\" \"{2}\" & Start \"\" /D \"{3}\" \"{4}\" {5}";
             ProcessStartInfo info = new ProcessStartInfo();
             info.Arguments = string.Format(argument, currentPath, tempFilePath, newPath, Path.GetDirectoryName(newPath), Path.GetFileName(newPath), launchArgs);
             info.WindowStyle = ProcessWindowStyle.Hidden;

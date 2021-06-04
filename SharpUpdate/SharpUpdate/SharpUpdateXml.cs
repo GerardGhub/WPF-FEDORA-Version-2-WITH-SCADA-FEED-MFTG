@@ -9,8 +9,8 @@ namespace SharpUpdate
  
     {
         private Version version;
-        private Uri url;
-        private string filename;
+        private Uri uri;
+        private string fileName;
         private string md5;
         private string description;
         private string launchArgs;
@@ -22,11 +22,11 @@ namespace SharpUpdate
         }
         internal Uri Uri
         {
-            get { return this.url; }
+            get { return this.uri; }
         }
-        internal string Filename
+        internal string FileName
         {
-            get { return this.filename; }
+            get { return this.fileName; }
         }
         internal string MD5
         {
@@ -40,11 +40,11 @@ namespace SharpUpdate
         {
             get { return this.launchArgs; }
         }
-        internal SharpUpdateXml(Version version, Uri url, string filename, string md5, string description, string launchArgs)
+        internal SharpUpdateXml(Version version, Uri uri, string fileName, string md5, string description, string launchArgs)
         {
             this.version = version;
-            this.url = url;
-            this.filename = filename;
+            this.uri = uri;
+            this.fileName = fileName;
             this.md5 = md5;
             this.description = description;
             this.launchArgs = launchArgs;
@@ -74,28 +74,31 @@ namespace SharpUpdate
 
         internal static SharpUpdateXml Parse(Uri location, string appID)
         {
-            Version version = null;
-            string url = "", filename = "", md5 = "", description = "", launchArgs = "";
+       
 
             try
             {
+                Version version = null;
+                string url = "", fileName = "", md5 = "", description = "", launchArgs = "";
+
                 XmlDocument doc = new XmlDocument();
                 doc.Load(location.AbsoluteUri);
 
                 XmlNode updateNode = doc.DocumentElement.SelectSingleNode("//update[@appId='"+ appID +"']");
+
                 if (updateNode == null)
                     return null;
 
 
                 version = Version.Parse(updateNode["version"].InnerText);
                 url = updateNode["url"].InnerText;
-                filename = updateNode["filename"].InnerText;
+                fileName = updateNode["fileName"].InnerText;
                 md5 = updateNode["md5"].InnerText;
                 description = updateNode["description"].InnerText;
                 launchArgs = updateNode["launchArgs"].InnerText;
 
 
-                return new SharpUpdateXml(version, new Uri(url), filename, md5, description, launchArgs);
+                return new SharpUpdateXml(version, new Uri(url), fileName, md5, description, launchArgs);
             }
             catch { return null; }
         }

@@ -21,9 +21,9 @@ namespace WFFDR
 {
     public partial class Form1 : Form, ISharpUpdatable
     {
-        private SharpUpdater updater;
+        public SharpUpdater updater;
 
-        public Uri xmlLocation;
+        //public Uri xmlLocation;
 
         System.Media.SoundPlayer player = new System.Media.SoundPlayer();
         readonly myclasses xClass = new myclasses();
@@ -42,8 +42,6 @@ namespace WFFDR
         {
             InitializeComponent();
             this.lbl1.Text = this.ApplicationAssembly.GetName().Version.ToString();
-         
-            //this.xmlLocation = new Uri("http://fedora:8068/Debug/update.xml");
             updater = new SharpUpdater(this);
         }
 
