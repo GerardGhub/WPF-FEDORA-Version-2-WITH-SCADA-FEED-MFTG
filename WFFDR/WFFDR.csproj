@@ -1673,6 +1673,7 @@
     <Content Include="Resources\discrepancy_16px.png" />
     <None Include="Resources\enter 24px.png" />
     <None Include="Resources\exit_24px.png" />
+    <None Include="Resources\exit_100px 1.png" />
     <Content Include="Resources\fedora-icon.ico" />
     <Content Include="Resources\fedora-logo.png" />
     <Content Include="Resources\future_64px.png" />
@@ -1688,7 +1689,9 @@
     <Content Include="Resources\icons8_cancel_16px.png" />
     <None Include="Resources\invisible_24px.png" />
     <None Include="Resources\invisible_32px.png" />
+    <None Include="Resources\lock_100px.png" />
     <Content Include="Resources\messagebox.png" />
+    <None Include="Resources\minimize_window_100px.png" />
     <Content Include="Resources\open_16px.png" />
     <None Include="Resources\password_24px.png" />
     <Content Include="Resources\receive_cash_100px.png" />

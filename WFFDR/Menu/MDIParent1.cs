@@ -194,7 +194,8 @@ namespace WFFDR
            
             statusStrip.Visible = false;
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
-            
+         
+
             //FormBorderStyle = FormBorderStyle.None;
             //TopMost = true;
             //WindowState = FormWindowState.Maximized;
@@ -240,7 +241,7 @@ namespace WFFDR
 
 
 
-
+           
      lbluserrightsid.Text = userinfo.user_rights_id.ToString();
             //txtActive.Text = userinfo.emp_name.ToUpper();
 
@@ -1971,7 +1972,7 @@ namespace WFFDR
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure that you want to Logout " + lblTip.Text + "", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure that you want to Logout " + lblTip.Text + " ?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 this.Close();
 

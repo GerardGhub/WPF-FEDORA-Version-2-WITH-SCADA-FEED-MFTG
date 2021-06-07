@@ -455,6 +455,16 @@ namespace WFFDR.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exit_100px_1 {
+            get {
+                object obj = ResourceManager.GetObject("exit_100px 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap exit_100px1 {
             get {
                 object obj = ResourceManager.GetObject("exit_100px1", resourceCulture);
@@ -795,6 +805,16 @@ namespace WFFDR.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lock_100px {
+            get {
+                object obj = ResourceManager.GetObject("lock_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lock_512 {
             get {
                 object obj = ResourceManager.GetObject("lock-512", resourceCulture);
@@ -918,6 +938,16 @@ namespace WFFDR.Properties {
         internal static System.Drawing.Bitmap microsoft_excel_2019_48px1 {
             get {
                 object obj = ResourceManager.GetObject("microsoft_excel_2019_48px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimize_window_100px {
+            get {
+                object obj = ResourceManager.GetObject("minimize_window_100px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

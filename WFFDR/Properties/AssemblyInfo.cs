@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("WFFDR")]
 [assembly: AssemblyDescription("FEDORA Version 2")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("RDF Feeds And LiveStocks")]
+[assembly: AssemblyCompany("RDF Feed, Livestock & Foods Inc.")]
 [assembly: AssemblyProduct("WFFDR")]
-[assembly: AssemblyCopyright("Copyright ©  2019 Gerard Singian Vincent Canda EpiFanio Tigno Jilo Viray")]
+[assembly: AssemblyCopyright("Copyright © 2019 Gerard Singian, Vincent Canda, EpiFanio Tigno & Jilo Viray.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("3.0.0.7")]
-[assembly: AssemblyFileVersion("3.0.0.7")]
+[assembly: AssemblyVersion("3.0.0.8")]
+[assembly: AssemblyFileVersion("3.0.0.8")]

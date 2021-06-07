@@ -234,6 +234,24 @@ namespace WFFDR
 
             g_objStoredProcFill = null;
         }
+        public void fillComboBoxDays(ComboBox eComboBox, string eTablename, string feed_code, string category, string fgdate, DataSet dSet)
+        {
+            g_objStoredProcFill = g_objStoredProc.GetCollections();
+
+            dSet.Clear();
+            dSet = g_objStoredProcFill.sp_GetCategory(eTablename, null, feed_code, null, null);
+            DataView dv = new DataView(dSet.Tables[0]);
+          
+
+
+
+            eComboBox.DataSource = dv;/*RowFilter = "Qty > 0";*/
+            eComboBox.DisplayMember = dSet.Tables[0].Columns[0].ToString();
+            eComboBox.ValueMember = dSet.Tables[0].Columns[0].ToString();
+
+
+            g_objStoredProcFill = null;
+        }
 
         public void fillComboBoxCategory(ComboBox eComboBox, string eTablename,string feed_code,string category,string fgdate, DataSet dSet)
         {

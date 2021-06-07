@@ -83,52 +83,6 @@ namespace WFFDR
         void checkingGrandtotal()
         {
 
-
-          //  for (int n = 0; n < (dgv_table.Rows.Count); n++)
-          //  {
-          //      //9
-
-          //      double s1 = Convert.ToDouble(dgv_table.Rows[n].Cells[9].Value);
-
-          //      double s2 = Convert.ToDouble(dgv_table.Rows[n].Cells[21].Value);
-          //      double s7 = Convert.ToDouble(dgv_table.Rows[n].Cells[9].Value);
-          //      //double s70 = Convert.ToDouble(dgvImport2.Rows[n].Cells[14].Value);
-          //      //int s1 = Convert.ToInt32(dgv1stView.Rows[n].Cells[1].Value);
-          //      //double s13 = s * 2;
-          //      double s15 = s1 * s7;
-          //      double s18 = s7 * 2;
-
-          //      //dgvImport.Rows[n].Cells[7].Value = s15.ToString("#,0.000");
-          //      //dgvImport2.Rows[n].Cells[14].Value = s18.ToString();
-
-          //      //dgvImport2.Rows[n].Cells[13].Value = s15.ToString();
-          //      ////dgvAllFeedCode.Rows[n].Cells[7].Value = s15.ToString("#,0.000");
-
-          //      double s180 = s1 * s2;
-
-          //dgv_table.Rows[n].Cells[19].Value = s180.ToString();
-
-          //  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             decimal tot = 0;
 
             for (int i = 0; i < dgv_table.RowCount - 0; i++)
@@ -216,8 +170,8 @@ namespace WFFDR
             { 
 
 
-                string mcolumns = "test,item_code,item_description,item_group,buffer_of_stocks,price,MACRESERVED,MACREPACK,RECEIVING,ISSUE,OUTING,TOTAL_RECEIVED,RESERVED,ONHAND,LAST_USED,MOVEMENT,report,classification_buffer,ordering_buffer,QA_RECEIVING";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
-                pointer_module.populateModule(dsetHeader, dgv_table, mcolumns, "micro_raw_materialsnew");
+                string mcolumns = "test,item_code,item_description,item_group,buffer_of_stocks,PRICE,TOTALPRICE,AVERAGEISSUANCE,DAYSLEVEL,MACRESERVED,MACREPACK,RECEIVING,ISSUE,OUTING,TOTAL_RECEIVED,RESERVED,ONHAND,LAST_USED,MOVEMENT,report,classification_buffer,ordering_buffer,QA_RECEIVING";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
+                pointer_module.populateModule(dsetHeader, dgv_table, mcolumns, "micro_raw_materialsbago");
                 lblrecords.Text = dgv_table.RowCount.ToString();
                 lbltotalrecords.Text = dgv_table.RowCount.ToString();
 
@@ -225,8 +179,8 @@ namespace WFFDR
             }
             else
             {
-                string mcolumns = "test,item_code,item_description,Category,item_group,RESERVED,ONHAND,buffer_of_stocks,price,MACREPACK,RECEIVING,OUTING,REPACK,ISSUE,LAST_USED,report,classification_buffer,ordering_buffer,QA_RECEIVING";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
-                pointer_module.populateModule(dsetHeader, dgv_table, mcolumns, "micro_raw_materialsnew");
+                string mcolumns = "test,item_code,item_description,Category,item_group,RESERVED,ONHAND,buffer_of_stocks,PRICE,TOTALPRICE,AVERAGEISSUANCE,DAYSLEVEL,MACREPACK,RECEIVING,OUTING,REPACK,ISSUE,LAST_USED,report,classification_buffer,ordering_buffer,QA_RECEIVING";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
+                pointer_module.populateModule(dsetHeader, dgv_table, mcolumns, "micro_raw_materialsbago");
                 lblrecords.Text = dgv_table.RowCount.ToString();
                 lbltotalrecords.Text = dgv_table.RowCount.ToString();
             }
@@ -269,7 +223,7 @@ namespace WFFDR
                         txtqtyrepack.Text = dgv_table.CurrentRow.Cells["MACREPACK"].Value.ToString();
                         txtrepackavailable.Text = dgv_table.CurrentRow.Cells["ONHAND"].Value.ToString();
 
-                        txtPrice.Text = dgv_table.CurrentRow.Cells["price"].Value.ToString();
+                        txtPrice.Text = dgv_table.CurrentRow.Cells["PRICE"].Value.ToString();
 
 
                         txtBufferStocks.Text = dgv_table.CurrentRow.Cells["buffer_of_stocks"].Value.ToString();
@@ -321,7 +275,7 @@ namespace WFFDR
             if (myglobal.global_module == "EMPLOYEE")
             { dset_emp = objStorProc.sp_getMajorTables("employee"); }
             else if (myglobal.global_module == "MICRO")
-            { dset_emp = objStorProc.sp_getMajorTables("micro_raw_materialsnew"); }
+            { dset_emp = objStorProc.sp_getMajorTables("micro_raw_materialsbago"); }
             else if (myglobal.global_module == "MACRO")
             { dset_emp = objStorProc.sp_getMajorTables("macro_raw_materialsnew"); }
             else if (myglobal.global_module == "RESIGNED EMPLOYEE")

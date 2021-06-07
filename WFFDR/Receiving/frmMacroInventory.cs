@@ -98,15 +98,15 @@ namespace WFFDR
 
             if (lblid.Text == "2")
             {
-                string mcolumns = "test,item_code,item_description,item_group,buffer_of_stocks,price,SCADA,MACRESERVED,MACREPACK,RECEIVING,ISSUE,OUTING,TOTAL_RECEIVED,RESERVED,ONHAND,LAST_USED,MOVEMENT,report,QA_RECEIVING";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
-                pointer_module.populateModule(dsetHeader, dgv_table, mcolumns, "macro_raw_materials");
+                string mcolumns = "test,item_code,item_description,item_group,buffer_of_stocks,PRICE,TOTALPRICE,AVERAGEISSUANCE,DAYSLEVEL,SCADA,MACRESERVED,MACREPACK,RECEIVING,ISSUE,OUTING,TOTAL_RECEIVED,RESERVED,ONHAND,LAST_USED,MOVEMENT,report,QA_RECEIVING";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
+                pointer_module.populateModule(dsetHeader, dgv_table, mcolumns, "macro_raw_materialsbago");
                 lblrecords.Text = dgv_table.RowCount.ToString();
                 lbltotalrecords.Text = dgv_table.RowCount.ToString();
             }
             else
             {
-                string mcolumns = "test,item_code,item_description,Category,item_group,RESERVED,ONHAND,buffer_of_stocks,price,REPACK,RECEIVING,SCADA,ISSUE,OUTING,LAST_USED,report,QA_RECEIVING";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
-            pointer_module.populateModule(dsetHeader, dgv_table, mcolumns, "macro_raw_materials");
+                string mcolumns = "test,item_code,item_description,Category,item_group,RESERVED,ONHAND,buffer_of_stocks,PRICE,TOTALPRICE,AVERAGEISSUANCE,DAYSLEVEL,REPACK,RECEIVING,SCADA,ISSUE,OUTING,LAST_USED,report,QA_RECEIVING";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
+            pointer_module.populateModule(dsetHeader, dgv_table, mcolumns, "macro_raw_materialsbago");
             lblrecords.Text = dgv_table.RowCount.ToString();
             lbltotalrecords.Text = dgv_table.RowCount.ToString();
             }
@@ -300,7 +300,7 @@ namespace WFFDR
 
 
                         txtBufferStocks.Text = dgv_table.CurrentRow.Cells["buffer_of_stocks"].Value.ToString();
-                        txtPrice.Text = dgv_table.CurrentRow.Cells["price"].Value.ToString();
+                        txtPrice.Text = dgv_table.CurrentRow.Cells["PRICE"].Value.ToString();
 
                         txtabc.Text = dgv_table.CurrentRow.Cells["classification_buffer"].Value.ToString();
                         txtordering.Text = dgv_table.CurrentRow.Cells["ordering_buffer"].Value.ToString();
@@ -338,7 +338,7 @@ namespace WFFDR
             else if (myglobal.global_module == "MICRO")
             { dset_emp = objStorProc.sp_getMajorTables("micro_raw_materialsnew"); }
             else if (myglobal.global_module == "MACRO")
-            { dset_emp = objStorProc.sp_getMajorTables("macro_raw_materials"); }
+            { dset_emp = objStorProc.sp_getMajorTables("macro_raw_materialsbago"); }
             else if (myglobal.global_module == "RESIGNED EMPLOYEE")
             { dset_emp = objStorProc.sp_getMajorTables("employee_B"); }
             else if (myglobal.global_module == "PHONEBOOK")

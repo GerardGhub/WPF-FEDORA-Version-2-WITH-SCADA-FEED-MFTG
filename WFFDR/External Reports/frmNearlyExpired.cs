@@ -35,15 +35,33 @@ namespace WFFDR
         private void frmNearlyExpired_Load(object sender, EventArgs e)
         {
             objStorProc = xClass.g_objStoredProc.GetCollections();
+            //load_nearly_expired();
+            Load_days();
             load_nearly_expired();
         }
 
         public void load_nearly_expired()
         {
-            string mcolumns = "test,r_item_code,r_item_description,actual_count_good,r_item_category,uniquedate,r_expiry_date,r_supplier,r_quantity,transaction_type,r_receiving_by,DAYSEXPIRED";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
-            pointer_module.populateModule(dsetHeader, dgv_all, mcolumns, "nearly_expired");
-            lblrecords3.Text = dgv_all.RowCount.ToString();
+            if(Cbdays.SelectedIndex==-1)
+            {
+                return;
+            }
+            else
+            { 
+            int days = Convert.ToInt32(Cbdays.Text);
 
+            string mcolumns = "test,r_item_code,r_item_description,actual_count_good,r_item_category,uniquedate,r_expiry_date,r_supplier,r_quantity,transaction_type,r_receiving_by,DAYSEXPIRED";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
+            pointer_module.populateModuleMoveOrder(dsetHeader, dgv_all, mcolumns, "nearly_expired", "", days,"","");
+            lblrecords3.Text = dgv_all.RowCount.ToString();
+            }
+        }
+
+        public void Load_days()
+        {
+            
+            xClass.fillComboBoxDays(Cbdays, "rmnearlyexpireddays", "", "", "", dSet);
+            Cbdays.SelectedValue = "90";
+        
         }
 
         private void dgv_all_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
@@ -75,6 +93,11 @@ namespace WFFDR
 
             fr.WindowState = FormWindowState.Maximized;
             fr.Show();
+        }
+
+        private void Cbdays_DropDownClosed(object sender, EventArgs e)
+        {
+            load_nearly_expired();
         }
     }
 }
