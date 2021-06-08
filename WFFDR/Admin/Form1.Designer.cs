@@ -93,7 +93,6 @@
             this.lblid = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnExits = new System.Windows.Forms.Button();
-            this.cachedMacroBook1 = new WFFDR.CachedMacroBook();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblrecordcount = new System.Windows.Forms.Label();
@@ -114,6 +113,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lblupdate = new System.Windows.Forms.Label();
+            this.systemupdatecount = new System.Windows.Forms.Label();
+            this.cachedMacroBook1 = new WFFDR.CachedMacroBook();
             ((System.ComponentModel.ISupportInitialize)(this.dgvApproved)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvuserrecommend)).BeginInit();
             this.panel1.SuspendLayout();
@@ -1195,6 +1196,20 @@
             this.lblupdate.Text = "Check for Updates";
             this.lblupdate.Click += new System.EventHandler(this.lblupdate_Click);
             // 
+            // systemupdatecount
+            // 
+            this.systemupdatecount.AutoSize = true;
+            this.systemupdatecount.BackColor = System.Drawing.Color.Transparent;
+            this.systemupdatecount.Font = new System.Drawing.Font("Rockwell", 6.8F);
+            this.systemupdatecount.ForeColor = System.Drawing.Color.Black;
+            this.systemupdatecount.Location = new System.Drawing.Point(13, 560);
+            this.systemupdatecount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.systemupdatecount.Name = "systemupdatecount";
+            this.systemupdatecount.Size = new System.Drawing.Size(14, 14);
+            this.systemupdatecount.TabIndex = 664;
+            this.systemupdatecount.Text = "0";
+            this.systemupdatecount.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -1202,6 +1217,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(378, 593);
             this.ControlBox = false;
+            this.Controls.Add(this.systemupdatecount);
             this.Controls.Add(this.lblupdate);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -1348,6 +1364,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label lblupdate;
+        private System.Windows.Forms.Label systemupdatecount;
     }
 }
 

@@ -60,6 +60,7 @@
             this.txtobjective = new System.Windows.Forms.TextBox();
             this.txtremarks = new System.Windows.Forms.TextBox();
             this.btnAdd = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUnread)).BeginInit();
@@ -72,11 +73,11 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.FontSize = MetroFramework.MetroTabControlSize.Small;
             this.metroTabControl1.FontWeight = MetroFramework.MetroTabControlWeight.Bold;
-            this.metroTabControl1.Location = new System.Drawing.Point(4, 5);
+            this.metroTabControl1.Location = new System.Drawing.Point(5, 6);
             this.metroTabControl1.Margin = new System.Windows.Forms.Padding(1);
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 0;
-            this.metroTabControl1.Size = new System.Drawing.Size(802, 257);
+            this.metroTabControl1.Size = new System.Drawing.Size(1069, 316);
             this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Black;
             this.metroTabControl1.TabIndex = 0;
             this.metroTabControl1.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -88,16 +89,16 @@
             this.metroTabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.HorizontalScrollbarSize = 4;
+            this.metroTabPage1.HorizontalScrollbarSize = 5;
             this.metroTabPage1.Location = new System.Drawing.Point(4, 34);
             this.metroTabPage1.Margin = new System.Windows.Forms.Padding(1);
             this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(794, 219);
+            this.metroTabPage1.Size = new System.Drawing.Size(1061, 278);
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "SYSTEM UPDATE FOR TODAY                        ";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.VerticalScrollbarSize = 4;
+            this.metroTabPage1.VerticalScrollbarSize = 5;
             // 
             // dgvUnread
             // 
@@ -135,6 +136,7 @@
             this.dgvUnread.EnableHeadersVisualStyles = false;
             this.dgvUnread.GridColor = System.Drawing.SystemColors.Control;
             this.dgvUnread.Location = new System.Drawing.Point(0, 0);
+            this.dgvUnread.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvUnread.Name = "dgvUnread";
             this.dgvUnread.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -148,8 +150,9 @@
             this.dgvUnread.RowHeadersWidth = 50;
             this.dgvUnread.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvUnread.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUnread.Size = new System.Drawing.Size(794, 219);
+            this.dgvUnread.Size = new System.Drawing.Size(1061, 278);
             this.dgvUnread.TabIndex = 428;
+            this.dgvUnread.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUnread_CellClick);
             this.dgvUnread.CurrentCellChanged += new System.EventHandler(this.dgvUnread_CurrentCellChanged);
             this.dgvUnread.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvUnread_RowPostPaint);
             // 
@@ -212,19 +215,20 @@
             this.metroTabPage2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.HorizontalScrollbarSize = 4;
+            this.metroTabPage2.HorizontalScrollbarSize = 5;
             this.metroTabPage2.Location = new System.Drawing.Point(4, 34);
             this.metroTabPage2.Margin = new System.Windows.Forms.Padding(1);
             this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(687, 219);
+            this.metroTabPage2.Size = new System.Drawing.Size(1061, 278);
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "          LIST OF SYSTEM UPDATE                     ";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 4;
+            this.metroTabPage2.VerticalScrollbarSize = 5;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.bunifuThinButton23);
             this.groupBox1.Controls.Add(this.btnCancel);
             this.groupBox1.Controls.Add(this.btnNew);
             this.groupBox1.Controls.Add(this.txtuseridproc);
@@ -241,11 +245,11 @@
             this.groupBox1.Controls.Add(this.txtobjective);
             this.groupBox1.Controls.Add(this.txtremarks);
             this.groupBox1.Controls.Add(this.btnAdd);
-            this.groupBox1.Location = new System.Drawing.Point(6, 276);
+            this.groupBox1.Location = new System.Drawing.Point(8, 340);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(1);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(1);
-            this.groupBox1.Size = new System.Drawing.Size(808, 120);
+            this.groupBox1.Size = new System.Drawing.Size(1077, 148);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "System Update Information Field";
@@ -268,10 +272,10 @@
             this.btnCancel.IdleFillColor = System.Drawing.Color.Orange;
             this.btnCancel.IdleForecolor = System.Drawing.SystemColors.Window;
             this.btnCancel.IdleLineColor = System.Drawing.SystemColors.Window;
-            this.btnCancel.Location = new System.Drawing.Point(427, 82);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCancel.Location = new System.Drawing.Point(750, 100);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(88, 33);
+            this.btnCancel.Size = new System.Drawing.Size(117, 41);
             this.btnCancel.TabIndex = 439;
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnCancel.Visible = false;
@@ -295,10 +299,10 @@
             this.btnNew.IdleFillColor = System.Drawing.Color.CornflowerBlue;
             this.btnNew.IdleForecolor = System.Drawing.SystemColors.Window;
             this.btnNew.IdleLineColor = System.Drawing.SystemColors.Window;
-            this.btnNew.Location = new System.Drawing.Point(4, 81);
-            this.btnNew.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnNew.Location = new System.Drawing.Point(5, 100);
+            this.btnNew.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(88, 33);
+            this.btnNew.Size = new System.Drawing.Size(117, 41);
             this.btnNew.TabIndex = 438;
             this.btnNew.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
@@ -306,31 +310,33 @@
             // txtuseridproc
             // 
             this.txtuseridproc.Enabled = false;
-            this.txtuseridproc.Location = new System.Drawing.Point(566, 82);
+            this.txtuseridproc.Location = new System.Drawing.Point(755, 101);
             this.txtuseridproc.Margin = new System.Windows.Forms.Padding(1);
             this.txtuseridproc.Name = "txtuseridproc";
-            this.txtuseridproc.Size = new System.Drawing.Size(85, 20);
+            this.txtuseridproc.Size = new System.Drawing.Size(112, 22);
             this.txtuseridproc.TabIndex = 437;
             this.txtuseridproc.TextChanged += new System.EventHandler(this.txtuseridproc_TextChanged);
             // 
             // txtid
             // 
             this.txtid.Enabled = false;
-            this.txtid.Location = new System.Drawing.Point(532, 71);
+            this.txtid.Location = new System.Drawing.Point(709, 87);
             this.txtid.Margin = new System.Windows.Forms.Padding(1);
             this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(85, 20);
+            this.txtid.Size = new System.Drawing.Size(112, 22);
             this.txtid.TabIndex = 436;
             this.txtid.Visible = false;
             // 
             // txtmodule
             // 
             this.txtmodule.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtmodule.Enabled = false;
             this.txtmodule.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmodule.FormattingEnabled = true;
-            this.txtmodule.Location = new System.Drawing.Point(115, 21);
+            this.txtmodule.Location = new System.Drawing.Point(153, 26);
+            this.txtmodule.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtmodule.Name = "txtmodule";
-            this.txtmodule.Size = new System.Drawing.Size(254, 21);
+            this.txtmodule.Size = new System.Drawing.Size(337, 27);
             this.txtmodule.TabIndex = 435;
             // 
             // bunifuThinButton22
@@ -342,7 +348,7 @@
             this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.MediumSeaGreen;
             this.bunifuThinButton22.BackColor = System.Drawing.SystemColors.Window;
             this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "DELETE";
+            this.bunifuThinButton22.ButtonText = "IN-ACTIVE";
             this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuThinButton22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton22.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -351,12 +357,13 @@
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.CornflowerBlue;
             this.bunifuThinButton22.IdleForecolor = System.Drawing.SystemColors.Window;
             this.bunifuThinButton22.IdleLineColor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(321, 82);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bunifuThinButton22.Location = new System.Drawing.Point(596, 100);
+            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(88, 33);
+            this.bunifuThinButton22.Size = new System.Drawing.Size(117, 41);
             this.bunifuThinButton22.TabIndex = 434;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton22.Visible = false;
             this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
             // bunifuThinButton21
@@ -368,7 +375,7 @@
             this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.MediumSeaGreen;
             this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.Window;
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "EDIT";
+            this.bunifuThinButton21.ButtonText = "UPDATE";
             this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuThinButton21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -377,51 +384,52 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.CornflowerBlue;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.SystemColors.Window;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(216, 82);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(446, 100);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(88, 33);
+            this.bunifuThinButton21.Size = new System.Drawing.Size(117, 41);
             this.bunifuThinButton21.TabIndex = 433;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Visible = false;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 53);
+            this.label4.Location = new System.Drawing.Point(16, 65);
             this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 13);
+            this.label4.Size = new System.Drawing.Size(133, 17);
             this.label4.TabIndex = 432;
             this.label4.Text = "Development Date :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(397, 55);
+            this.label3.Location = new System.Drawing.Point(529, 68);
             this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 13);
+            this.label3.Size = new System.Drawing.Size(67, 17);
             this.label3.TabIndex = 431;
             this.label3.Text = "Objective";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(397, 28);
+            this.label2.Location = new System.Drawing.Point(529, 34);
             this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 13);
+            this.label2.Size = new System.Drawing.Size(64, 17);
             this.label2.TabIndex = 430;
             this.label2.Text = "Remarks";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 27);
+            this.label1.Location = new System.Drawing.Point(16, 33);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 13);
+            this.label1.Size = new System.Drawing.Size(103, 17);
             this.label1.TabIndex = 429;
             this.label1.Text = "Module Name :";
             // 
@@ -429,37 +437,38 @@
             // 
             this.txtupdatedate.Enabled = false;
             this.txtupdatedate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txtupdatedate.Location = new System.Drawing.Point(115, 52);
+            this.txtupdatedate.Location = new System.Drawing.Point(153, 64);
+            this.txtupdatedate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtupdatedate.Name = "txtupdatedate";
-            this.txtupdatedate.Size = new System.Drawing.Size(254, 20);
+            this.txtupdatedate.Size = new System.Drawing.Size(337, 22);
             this.txtupdatedate.TabIndex = 428;
             this.txtupdatedate.Value = new System.DateTime(2020, 3, 28, 0, 0, 0, 0);
             // 
             // txtaddedby
             // 
             this.txtaddedby.Enabled = false;
-            this.txtaddedby.Location = new System.Drawing.Point(554, 89);
+            this.txtaddedby.Location = new System.Drawing.Point(739, 110);
             this.txtaddedby.Margin = new System.Windows.Forms.Padding(1);
             this.txtaddedby.Name = "txtaddedby";
-            this.txtaddedby.Size = new System.Drawing.Size(85, 20);
+            this.txtaddedby.Size = new System.Drawing.Size(112, 22);
             this.txtaddedby.TabIndex = 427;
             // 
             // txtobjective
             // 
             this.txtobjective.Enabled = false;
-            this.txtobjective.Location = new System.Drawing.Point(454, 52);
+            this.txtobjective.Location = new System.Drawing.Point(605, 64);
             this.txtobjective.Margin = new System.Windows.Forms.Padding(1);
             this.txtobjective.Name = "txtobjective";
-            this.txtobjective.Size = new System.Drawing.Size(333, 20);
+            this.txtobjective.Size = new System.Drawing.Size(443, 22);
             this.txtobjective.TabIndex = 425;
             // 
             // txtremarks
             // 
             this.txtremarks.Enabled = false;
-            this.txtremarks.Location = new System.Drawing.Point(454, 25);
+            this.txtremarks.Location = new System.Drawing.Point(605, 31);
             this.txtremarks.Margin = new System.Windows.Forms.Padding(1);
             this.txtremarks.Name = "txtremarks";
-            this.txtremarks.Size = new System.Drawing.Size(333, 20);
+            this.txtremarks.Size = new System.Drawing.Size(443, 22);
             this.txtremarks.TabIndex = 424;
             // 
             // btnAdd
@@ -480,20 +489,48 @@
             this.btnAdd.IdleFillColor = System.Drawing.Color.CornflowerBlue;
             this.btnAdd.IdleForecolor = System.Drawing.SystemColors.Window;
             this.btnAdd.IdleLineColor = System.Drawing.SystemColors.Window;
-            this.btnAdd.Location = new System.Drawing.Point(109, 81);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnAdd.Location = new System.Drawing.Point(152, 100);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(88, 33);
+            this.btnAdd.Size = new System.Drawing.Size(117, 41);
             this.btnAdd.TabIndex = 423;
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAdd.Visible = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // bunifuThinButton23
+            // 
+            this.bunifuThinButton23.ActiveBorderThickness = 1;
+            this.bunifuThinButton23.ActiveCornerRadius = 20;
+            this.bunifuThinButton23.ActiveFillColor = System.Drawing.Color.MediumSeaGreen;
+            this.bunifuThinButton23.ActiveForecolor = System.Drawing.SystemColors.Window;
+            this.bunifuThinButton23.ActiveLineColor = System.Drawing.Color.MediumSeaGreen;
+            this.bunifuThinButton23.BackColor = System.Drawing.SystemColors.Window;
+            this.bunifuThinButton23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton23.BackgroundImage")));
+            this.bunifuThinButton23.ButtonText = "EDIT";
+            this.bunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton23.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bunifuThinButton23.IdleBorderThickness = 1;
+            this.bunifuThinButton23.IdleCornerRadius = 20;
+            this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.CornflowerBlue;
+            this.bunifuThinButton23.IdleForecolor = System.Drawing.SystemColors.Window;
+            this.bunifuThinButton23.IdleLineColor = System.Drawing.SystemColors.Window;
+            this.bunifuThinButton23.Location = new System.Drawing.Point(299, 100);
+            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuThinButton23.Name = "bunifuThinButton23";
+            this.bunifuThinButton23.Size = new System.Drawing.Size(117, 41);
+            this.bunifuThinButton23.TabIndex = 440;
+            this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton23.Visible = false;
+            this.bunifuThinButton23.Click += new System.EventHandler(this.bunifuThinButton23_Click);
             // 
             // frmsystemupdate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(824, 397);
+            this.ClientSize = new System.Drawing.Size(1099, 489);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.metroTabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -542,5 +579,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn update_objective;
         private System.Windows.Forms.DataGridViewTextBoxColumn update_date;
         private System.Windows.Forms.DataGridViewTextBoxColumn added_by;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
     }
 }

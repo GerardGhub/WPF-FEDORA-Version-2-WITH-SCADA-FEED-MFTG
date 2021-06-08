@@ -111,12 +111,6 @@ namespace WFFDR
             lbltotalrecords.Text = dgv_table.RowCount.ToString();
             }
 
-
-
-
-
-
-
         }
 
         private void bunifuSearch_Click(object sender, EventArgs e)

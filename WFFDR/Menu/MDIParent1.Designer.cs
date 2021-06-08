@@ -29,35 +29,35 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle66 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle67 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle68 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle69 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle70 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle71 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle72 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle73 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle74 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle75 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle76 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle77 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle78 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle79 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle80 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle81 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle82 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle83 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle84 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MDIParent1));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
@@ -151,11 +151,23 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.lblnew = new System.Windows.Forms.Label();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton9 = new System.Windows.Forms.ToolStripButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
+            this.SlowMovingICon = new System.Windows.Forms.ToolStripButton();
+            this.SlowMovingIConCount = new System.Windows.Forms.ToolStripButton();
+            this.NearlyExpired = new System.Windows.Forms.ToolStripButton();
+            this.MyBelovedLight = new System.Windows.Forms.ToolStripButton();
             this.toolStripInventory1 = new System.Windows.Forms.ToolStripSplitButton();
             this.toolStripMacroInventory1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMicroInventory1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -341,14 +353,26 @@
             this.added_by = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblupdates = new System.Windows.Forms.Label();
             this.fileMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printPreviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.toolBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsMenu = new System.Windows.Forms.ToolStripMenuItem();
@@ -373,10 +397,17 @@
             this.standardWeightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem31 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem34 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem39 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem40 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem41 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem45 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem46 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem47 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem48 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem50 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem51 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem52 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
@@ -445,37 +476,6 @@
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.pBFedora = new System.Windows.Forms.PictureBox();
             this.pictureBoxnotif = new System.Windows.Forms.PictureBox();
-            this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
-            this.SlowMovingICon = new System.Windows.Forms.ToolStripButton();
-            this.SlowMovingIConCount = new System.Windows.Forms.ToolStripButton();
-            this.NearlyExpired = new System.Windows.Forms.ToolStripButton();
-            this.MyBelovedLight = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
-            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.printPreviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem39 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem40 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem46 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem47 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem48 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem50 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem51 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_po_approve)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.toolStrip.SuspendLayout();
@@ -1198,19 +1198,19 @@
             this.dgv_po_approve.AllowUserToDeleteRows = false;
             this.dgv_po_approve.AllowUserToResizeColumns = false;
             this.dgv_po_approve.AllowUserToResizeRows = false;
-            dataGridViewCellStyle57.BackColor = System.Drawing.Color.LightGray;
-            this.dgv_po_approve.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle57;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.LightGray;
+            this.dgv_po_approve.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle29;
             this.dgv_po_approve.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_po_approve.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgv_po_approve.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle58.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle58.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle58.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle58.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle58.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle58.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_po_approve.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle58;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_po_approve.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
             this.dgv_po_approve.ColumnHeadersHeight = 50;
             this.dgv_po_approve.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgv_po_approve.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1220,14 +1220,14 @@
             this.qty_ordered,
             this.Password});
             this.dgv_po_approve.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle59.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle59.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle59.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle59.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle59.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle59.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_po_approve.DefaultCellStyle = dataGridViewCellStyle59;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_po_approve.DefaultCellStyle = dataGridViewCellStyle31;
             this.dgv_po_approve.EnableHeadersVisualStyles = false;
             this.dgv_po_approve.GridColor = System.Drawing.Color.DarkGray;
             this.dgv_po_approve.Location = new System.Drawing.Point(684, 326);
@@ -1238,8 +1238,8 @@
             this.dgv_po_approve.RowHeadersVisible = false;
             this.dgv_po_approve.RowHeadersWidth = 102;
             this.dgv_po_approve.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle60.SelectionBackColor = System.Drawing.Color.Teal;
-            this.dgv_po_approve.RowsDefaultCellStyle = dataGridViewCellStyle60;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.Teal;
+            this.dgv_po_approve.RowsDefaultCellStyle = dataGridViewCellStyle32;
             this.dgv_po_approve.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_po_approve.Size = new System.Drawing.Size(301, 288);
             this.dgv_po_approve.TabIndex = 278;
@@ -1291,19 +1291,19 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle61.BackColor = System.Drawing.Color.LightGray;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle61;
+            dataGridViewCellStyle33.BackColor = System.Drawing.Color.LightGray;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle33;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle62.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle62.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle62.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle62.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle62.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle62.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle62.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle62;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle34.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
             this.dataGridView1.ColumnHeadersHeight = 50;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1313,14 +1313,14 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle63.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle63.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle63.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle63.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle63.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle63.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle63.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle63;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle35.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle35;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.DarkGray;
             this.dataGridView1.Location = new System.Drawing.Point(1217, 278);
@@ -1331,8 +1331,8 @@
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 102;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle64.SelectionBackColor = System.Drawing.Color.Teal;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle64;
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.Teal;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle36;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(525, 575);
             this.dataGridView1.TabIndex = 279;
@@ -1423,15 +1423,78 @@
             this.toolStrip.Text = "ToolStrip";
             this.toolStrip.Visible = false;
             // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Black;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(44, 44);
+            this.toolStripButton2.Text = "New";
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Black;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(44, 44);
+            this.toolStripButton3.Text = "Open";
+            // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Black;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(44, 44);
+            this.toolStripButton4.Text = "Save";
+            // 
             // toolStripSeparator9
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
             this.toolStripSeparator9.Size = new System.Drawing.Size(6, 47);
             // 
+            // toolStripButton5
+            // 
+            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
+            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Black;
+            this.toolStripButton5.Name = "toolStripButton5";
+            this.toolStripButton5.Size = new System.Drawing.Size(44, 44);
+            this.toolStripButton5.Text = "Print";
+            // 
+            // toolStripButton6
+            // 
+            this.toolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
+            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Black;
+            this.toolStripButton6.Name = "toolStripButton6";
+            this.toolStripButton6.Size = new System.Drawing.Size(44, 44);
+            this.toolStripButton6.Text = "Print Preview";
+            // 
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
             this.toolStripSeparator10.Size = new System.Drawing.Size(6, 47);
+            // 
+            // toolStripButton7
+            // 
+            this.toolStripButton7.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton7.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton7.Image")));
+            this.toolStripButton7.ImageTransparentColor = System.Drawing.Color.Black;
+            this.toolStripButton7.Name = "toolStripButton7";
+            this.toolStripButton7.Size = new System.Drawing.Size(44, 44);
+            this.toolStripButton7.Text = "Help";
+            // 
+            // toolStripButton8
+            // 
+            this.toolStripButton8.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton8.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton8.Image")));
+            this.toolStripButton8.ImageTransparentColor = System.Drawing.Color.Black;
+            this.toolStripButton8.Name = "toolStripButton8";
+            this.toolStripButton8.Size = new System.Drawing.Size(44, 44);
+            this.toolStripButton8.Text = "New";
             // 
             // toolStripButton9
             // 
@@ -1488,6 +1551,63 @@
             this.toolStrip1.TabIndex = 11;
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
+            // 
+            // toolStripButton10
+            // 
+            this.toolStripButton10.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton10.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton10.Image")));
+            this.toolStripButton10.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton10.Name = "toolStripButton10";
+            this.toolStripButton10.Size = new System.Drawing.Size(44, 33);
+            this.toolStripButton10.Text = "Fedora Logo";
+            this.toolStripButton10.Click += new System.EventHandler(this.toolStripButton10_Click);
+            // 
+            // SlowMovingICon
+            // 
+            this.SlowMovingICon.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.SlowMovingICon.Image = ((System.Drawing.Image)(resources.GetObject("SlowMovingICon.Image")));
+            this.SlowMovingICon.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.SlowMovingICon.Name = "SlowMovingICon";
+            this.SlowMovingICon.Size = new System.Drawing.Size(44, 33);
+            this.SlowMovingICon.Text = "Show Raw Materials Low Inventory";
+            this.SlowMovingICon.Visible = false;
+            this.SlowMovingICon.Click += new System.EventHandler(this.SlowMovingICon_Click_1);
+            // 
+            // SlowMovingIConCount
+            // 
+            this.SlowMovingIConCount.BackColor = System.Drawing.Color.Red;
+            this.SlowMovingIConCount.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.SlowMovingIConCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SlowMovingIConCount.ForeColor = System.Drawing.SystemColors.Window;
+            this.SlowMovingIConCount.Image = ((System.Drawing.Image)(resources.GetObject("SlowMovingIConCount.Image")));
+            this.SlowMovingIConCount.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.SlowMovingIConCount.Name = "SlowMovingIConCount";
+            this.SlowMovingIConCount.Size = new System.Drawing.Size(29, 33);
+            this.SlowMovingIConCount.Text = "0";
+            this.SlowMovingIConCount.Visible = false;
+            this.SlowMovingIConCount.Click += new System.EventHandler(this.SlowMovingICon_Click);
+            // 
+            // NearlyExpired
+            // 
+            this.NearlyExpired.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.NearlyExpired.Image = ((System.Drawing.Image)(resources.GetObject("NearlyExpired.Image")));
+            this.NearlyExpired.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.NearlyExpired.Name = "NearlyExpired";
+            this.NearlyExpired.Size = new System.Drawing.Size(44, 33);
+            this.NearlyExpired.Text = "Read Fedora System Update";
+            this.NearlyExpired.Visible = false;
+            this.NearlyExpired.Click += new System.EventHandler(this.NearlyExpired_Click);
+            // 
+            // MyBelovedLight
+            // 
+            this.MyBelovedLight.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.MyBelovedLight.Image = ((System.Drawing.Image)(resources.GetObject("MyBelovedLight.Image")));
+            this.MyBelovedLight.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.MyBelovedLight.Name = "MyBelovedLight";
+            this.MyBelovedLight.Size = new System.Drawing.Size(44, 33);
+            this.MyBelovedLight.Text = "Read Fedora System Update";
+            this.MyBelovedLight.Visible = false;
+            this.MyBelovedLight.Click += new System.EventHandler(this.MyBelovedLight_Click);
             // 
             // toolStripInventory1
             // 
@@ -1732,7 +1852,7 @@
             // fGReceivingEntryToolStripMenuItem
             // 
             this.fGReceivingEntryToolStripMenuItem.Name = "fGReceivingEntryToolStripMenuItem";
-            this.fGReceivingEntryToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fGReceivingEntryToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
             this.fGReceivingEntryToolStripMenuItem.Text = "FG Receiving Entry";
             this.fGReceivingEntryToolStripMenuItem.Click += new System.EventHandler(this.fGReceivingEntryToolStripMenuItem_Click);
             // 
@@ -1758,7 +1878,7 @@
             this.toolStripProductionSchedule1.BackColor = System.Drawing.Color.White;
             this.toolStripProductionSchedule1.Enabled = false;
             this.toolStripProductionSchedule1.Name = "toolStripProductionSchedule1";
-            this.toolStripProductionSchedule1.Size = new System.Drawing.Size(224, 26);
+            this.toolStripProductionSchedule1.Size = new System.Drawing.Size(216, 26);
             this.toolStripProductionSchedule1.Text = "Production Schedule";
             this.toolStripProductionSchedule1.Click += new System.EventHandler(this.toolStripProductionSchedule1_Click);
             // 
@@ -1767,7 +1887,7 @@
             this.toolStripProductionApproval1.BackColor = System.Drawing.Color.White;
             this.toolStripProductionApproval1.Enabled = false;
             this.toolStripProductionApproval1.Name = "toolStripProductionApproval1";
-            this.toolStripProductionApproval1.Size = new System.Drawing.Size(224, 26);
+            this.toolStripProductionApproval1.Size = new System.Drawing.Size(216, 26);
             this.toolStripProductionApproval1.Text = "Production Approval";
             this.toolStripProductionApproval1.Click += new System.EventHandler(this.toolStripProductionApproval1_Click);
             // 
@@ -1835,7 +1955,7 @@
             this.toolStripMenuItem36.BackColor = System.Drawing.Color.White;
             this.toolStripMenuItem36.Enabled = false;
             this.toolStripMenuItem36.Name = "toolStripMenuItem36";
-            this.toolStripMenuItem36.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem36.Size = new System.Drawing.Size(203, 26);
             this.toolStripMenuItem36.Text = "Micro Preparation";
             this.toolStripMenuItem36.Click += new System.EventHandler(this.toolStripMicroPreparation1_Click);
             // 
@@ -1844,7 +1964,7 @@
             this.toolStripMenuItem42.BackColor = System.Drawing.Color.White;
             this.toolStripMenuItem42.Enabled = false;
             this.toolStripMenuItem42.Name = "toolStripMenuItem42";
-            this.toolStripMenuItem42.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem42.Size = new System.Drawing.Size(203, 26);
             this.toolStripMenuItem42.Text = "Macro Preparation";
             this.toolStripMenuItem42.Click += new System.EventHandler(this.toolStripMacroPreparation1_Click);
             // 
@@ -1911,7 +2031,7 @@
             // 
             this.toolStripMicroPreparation1.Enabled = false;
             this.toolStripMicroPreparation1.Name = "toolStripMicroPreparation1";
-            this.toolStripMicroPreparation1.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMicroPreparation1.Size = new System.Drawing.Size(203, 26);
             this.toolStripMicroPreparation1.Text = "Micro Preparation";
             this.toolStripMicroPreparation1.Click += new System.EventHandler(this.toolStripMicroPreparation1_Click);
             // 
@@ -1919,7 +2039,7 @@
             // 
             this.toolStripMacroPreparation1.Enabled = false;
             this.toolStripMacroPreparation1.Name = "toolStripMacroPreparation1";
-            this.toolStripMacroPreparation1.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMacroPreparation1.Size = new System.Drawing.Size(203, 26);
             this.toolStripMacroPreparation1.Text = "Macro Preparation";
             this.toolStripMacroPreparation1.Click += new System.EventHandler(this.toolStripMacroPreparation1_Click);
             // 
@@ -2049,21 +2169,21 @@
             this.toolStripMenuItem38});
             this.tootStripExceltoFedora1.Enabled = false;
             this.tootStripExceltoFedora1.Name = "tootStripExceltoFedora1";
-            this.tootStripExceltoFedora1.Size = new System.Drawing.Size(224, 26);
+            this.tootStripExceltoFedora1.Size = new System.Drawing.Size(193, 26);
             this.tootStripExceltoFedora1.Text = "Import to Fedora";
             this.tootStripExceltoFedora1.Visible = false;
             // 
             // toolStripMenuItem37
             // 
             this.toolStripMenuItem37.Name = "toolStripMenuItem37";
-            this.toolStripMenuItem37.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem37.Size = new System.Drawing.Size(171, 26);
             this.toolStripMenuItem37.Text = "Raw Material";
             this.toolStripMenuItem37.Click += new System.EventHandler(this.toolStripMenuItem37_Click);
             // 
             // toolStripMenuItem38
             // 
             this.toolStripMenuItem38.Name = "toolStripMenuItem38";
-            this.toolStripMenuItem38.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem38.Size = new System.Drawing.Size(171, 26);
             this.toolStripMenuItem38.Text = "Supplier";
             this.toolStripMenuItem38.Click += new System.EventHandler(this.toolStripMenuItem38_Click);
             // 
@@ -2075,7 +2195,7 @@
             this.toolMacroRepacking1});
             this.reportinToolStrip1.Enabled = false;
             this.reportinToolStrip1.Name = "reportinToolStrip1";
-            this.reportinToolStrip1.Size = new System.Drawing.Size(224, 26);
+            this.reportinToolStrip1.Size = new System.Drawing.Size(193, 26);
             this.reportinToolStrip1.Text = "Repacking";
             this.reportinToolStrip1.Visible = false;
             // 
@@ -2102,7 +2222,7 @@
             this.itemCategoryToolStripMenuItem1});
             this.inventoryToolStripMenuItem1.Enabled = false;
             this.inventoryToolStripMenuItem1.Name = "inventoryToolStripMenuItem1";
-            this.inventoryToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.inventoryToolStripMenuItem1.Size = new System.Drawing.Size(193, 26);
             this.inventoryToolStripMenuItem1.Text = "Inventory";
             this.inventoryToolStripMenuItem1.Visible = false;
             this.inventoryToolStripMenuItem1.Click += new System.EventHandler(this.inventoryToolStripMenuItem1_Click);
@@ -2111,7 +2231,7 @@
             // 
             this.itemCategoryToolStripMenuItem1.Enabled = false;
             this.itemCategoryToolStripMenuItem1.Name = "itemCategoryToolStripMenuItem1";
-            this.itemCategoryToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.itemCategoryToolStripMenuItem1.Size = new System.Drawing.Size(176, 26);
             this.itemCategoryToolStripMenuItem1.Text = "Item Category";
             this.itemCategoryToolStripMenuItem1.Click += new System.EventHandler(this.itemCategoryToolStripMenuItem1_Click);
             // 
@@ -2151,7 +2271,7 @@
             this.fGInventoryReportsToolStripMenuItem});
             this.internalReportsToolStripMenuItem.Enabled = false;
             this.internalReportsToolStripMenuItem.Name = "internalReportsToolStripMenuItem";
-            this.internalReportsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.internalReportsToolStripMenuItem.Size = new System.Drawing.Size(193, 26);
             this.internalReportsToolStripMenuItem.Text = "Internal Reports";
             this.internalReportsToolStripMenuItem.Click += new System.EventHandler(this.internalReportsToolStripMenuItem_Click);
             // 
@@ -2594,7 +2714,7 @@
             this.dashboardToolStripMenuItem});
             this.externalReportsToolStripMenuItem.Enabled = false;
             this.externalReportsToolStripMenuItem.Name = "externalReportsToolStripMenuItem";
-            this.externalReportsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.externalReportsToolStripMenuItem.Size = new System.Drawing.Size(193, 26);
             this.externalReportsToolStripMenuItem.Text = "External Reports";
             this.externalReportsToolStripMenuItem.Click += new System.EventHandler(this.externalReportsToolStripMenuItem_Click);
             // 
@@ -3152,18 +3272,18 @@
             // 
             this.dgvUnread.AllowUserToAddRows = false;
             this.dgvUnread.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle65.BackColor = System.Drawing.SystemColors.Window;
-            this.dgvUnread.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle65;
+            dataGridViewCellStyle37.BackColor = System.Drawing.SystemColors.Window;
+            this.dgvUnread.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle37;
             this.dgvUnread.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvUnread.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle66.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle66.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle66.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle66.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle66.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle66.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle66.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUnread.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle66;
+            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle38.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUnread.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle38;
             this.dgvUnread.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUnread.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.update_id,
@@ -3172,27 +3292,27 @@
             this.update_objective,
             this.update_date,
             this.added_by});
-            dataGridViewCellStyle67.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle67.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle67.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle67.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle67.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle67.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle67.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvUnread.DefaultCellStyle = dataGridViewCellStyle67;
+            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle39.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle39.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvUnread.DefaultCellStyle = dataGridViewCellStyle39;
             this.dgvUnread.EnableHeadersVisualStyles = false;
             this.dgvUnread.GridColor = System.Drawing.SystemColors.Control;
             this.dgvUnread.Location = new System.Drawing.Point(1760, 186);
             this.dgvUnread.Margin = new System.Windows.Forms.Padding(4);
             this.dgvUnread.Name = "dgvUnread";
-            dataGridViewCellStyle68.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle68.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle68.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle68.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle68.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle68.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle68.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUnread.RowHeadersDefaultCellStyle = dataGridViewCellStyle68;
+            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle40.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle40.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle40.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUnread.RowHeadersDefaultCellStyle = dataGridViewCellStyle40;
             this.dgvUnread.RowHeadersWidth = 102;
             this.dgvUnread.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvUnread.Size = new System.Drawing.Size(136, 268);
@@ -3274,24 +3394,91 @@
             this.fileMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fileMenu.ImageTransparentColor = System.Drawing.SystemColors.ActiveBorder;
             this.fileMenu.Name = "fileMenu";
-            this.fileMenu.Size = new System.Drawing.Size(44, 25);
+            this.fileMenu.Size = new System.Drawing.Size(44, 26);
             this.fileMenu.Text = "&File";
             this.fileMenu.Click += new System.EventHandler(this.fileMenu_Click);
+            // 
+            // newToolStripMenuItem
+            // 
+            this.newToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem.Image")));
+            this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
+            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
+            this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.newToolStripMenuItem.Text = "&New";
+            this.newToolStripMenuItem.Visible = false;
+            this.newToolStripMenuItem.Click += new System.EventHandler(this.ShowNewForm);
+            // 
+            // openToolStripMenuItem
+            // 
+            this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
+            this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.openToolStripMenuItem.Text = "&Open";
+            this.openToolStripMenuItem.Visible = false;
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.OpenFile);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(241, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(170, 6);
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Image = global::WFFDR.Properties.Resources.lock_100px;
+            this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.saveToolStripMenuItem.Text = "&Lock";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
+            // 
+            // saveAsToolStripMenuItem
+            // 
+            this.saveAsToolStripMenuItem.Image = global::WFFDR.Properties.Resources.minimize_window_100px;
+            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.saveAsToolStripMenuItem.Text = "M&inimize";
+            this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.SaveAsToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(241, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(170, 6);
+            // 
+            // printToolStripMenuItem
+            // 
+            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
+            this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
+            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
+            this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.printToolStripMenuItem.Text = "&Print";
+            this.printToolStripMenuItem.Visible = false;
+            // 
+            // printPreviewToolStripMenuItem
+            // 
+            this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
+            this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
+            this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
+            this.printPreviewToolStripMenuItem.Visible = false;
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(241, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(170, 6);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Image = global::WFFDR.Properties.Resources.exit_100px_1;
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.exitToolStripMenuItem.Text = "L&ogout";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolsStripMenuItem_Click);
             // 
             // viewMenu
             // 
@@ -3342,10 +3529,58 @@
             this.editMenu.Visible = false;
             this.editMenu.Click += new System.EventHandler(this.editMenu_Click);
             // 
+            // undoToolStripMenuItem
+            // 
+            this.undoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("undoToolStripMenuItem.Image")));
+            this.undoToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
+            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
+            this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
+            this.undoToolStripMenuItem.Text = "&Undo";
+            // 
+            // redoToolStripMenuItem
+            // 
+            this.redoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("redoToolStripMenuItem.Image")));
+            this.redoToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
+            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
+            this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
+            this.redoToolStripMenuItem.Text = "&Redo";
+            // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
             this.toolStripSeparator6.Size = new System.Drawing.Size(191, 6);
+            // 
+            // cutToolStripMenuItem
+            // 
+            this.cutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripMenuItem.Image")));
+            this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
+            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
+            this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
+            this.cutToolStripMenuItem.Text = "Cu&t";
+            this.cutToolStripMenuItem.Click += new System.EventHandler(this.CutToolStripMenuItem_Click);
+            // 
+            // copyToolStripMenuItem
+            // 
+            this.copyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripMenuItem.Image")));
+            this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
+            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
+            this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
+            this.copyToolStripMenuItem.Text = "&Copy";
+            this.copyToolStripMenuItem.Click += new System.EventHandler(this.CopyToolStripMenuItem_Click);
+            // 
+            // pasteToolStripMenuItem
+            // 
+            this.pasteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripMenuItem.Image")));
+            this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
+            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
+            this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
+            this.pasteToolStripMenuItem.Text = "&Paste";
+            this.pasteToolStripMenuItem.Click += new System.EventHandler(this.PasteToolStripMenuItem_Click);
             // 
             // toolStripSeparator7
             // 
@@ -3365,13 +3600,13 @@
             this.optionsToolStripMenuItem});
             this.toolsMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.toolsMenu.Name = "toolsMenu";
-            this.toolsMenu.Size = new System.Drawing.Size(57, 25);
+            this.toolsMenu.Size = new System.Drawing.Size(57, 26);
             this.toolsMenu.Text = "&Tools";
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(139, 26);
             this.optionsToolStripMenuItem.Text = "&Options";
             // 
             // windowsMenu
@@ -3392,42 +3627,42 @@
             // newWindowToolStripMenuItem
             // 
             this.newWindowToolStripMenuItem.Name = "newWindowToolStripMenuItem";
-            this.newWindowToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.newWindowToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.newWindowToolStripMenuItem.Text = "&New Window";
             this.newWindowToolStripMenuItem.Click += new System.EventHandler(this.ShowNewForm);
             // 
             // cascadeToolStripMenuItem
             // 
             this.cascadeToolStripMenuItem.Name = "cascadeToolStripMenuItem";
-            this.cascadeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.cascadeToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.cascadeToolStripMenuItem.Text = "&Cascade";
             this.cascadeToolStripMenuItem.Click += new System.EventHandler(this.CascadeToolStripMenuItem_Click);
             // 
             // tileVerticalToolStripMenuItem
             // 
             this.tileVerticalToolStripMenuItem.Name = "tileVerticalToolStripMenuItem";
-            this.tileVerticalToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.tileVerticalToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.tileVerticalToolStripMenuItem.Text = "Tile &Vertical";
             this.tileVerticalToolStripMenuItem.Click += new System.EventHandler(this.TileVerticalToolStripMenuItem_Click);
             // 
             // tileHorizontalToolStripMenuItem
             // 
             this.tileHorizontalToolStripMenuItem.Name = "tileHorizontalToolStripMenuItem";
-            this.tileHorizontalToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.tileHorizontalToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.tileHorizontalToolStripMenuItem.Text = "Tile &Horizontal";
             this.tileHorizontalToolStripMenuItem.Click += new System.EventHandler(this.TileHorizontalToolStripMenuItem_Click);
             // 
             // closeAllToolStripMenuItem
             // 
             this.closeAllToolStripMenuItem.Name = "closeAllToolStripMenuItem";
-            this.closeAllToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.closeAllToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.closeAllToolStripMenuItem.Text = "C&lose All";
             this.closeAllToolStripMenuItem.Click += new System.EventHandler(this.CloseAllToolStripMenuItem_Click);
             // 
             // arrangeIconsToolStripMenuItem
             // 
             this.arrangeIconsToolStripMenuItem.Name = "arrangeIconsToolStripMenuItem";
-            this.arrangeIconsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.arrangeIconsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.arrangeIconsToolStripMenuItem.Text = "&Arrange Icons";
             this.arrangeIconsToolStripMenuItem.Click += new System.EventHandler(this.ArrangeIconsToolStripMenuItem_Click);
             // 
@@ -3456,7 +3691,7 @@
             // 
             this.toolStripMenuDepartment.Font = new System.Drawing.Font("Segoe UI", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuDepartment.Name = "toolStripMenuDepartment";
-            this.toolStripMenuDepartment.Size = new System.Drawing.Size(224, 28);
+            this.toolStripMenuDepartment.Size = new System.Drawing.Size(219, 28);
             this.toolStripMenuDepartment.Text = "Department";
             this.toolStripMenuDepartment.Click += new System.EventHandler(this.toolStripMenuDepartment_Click);
             // 
@@ -3464,7 +3699,7 @@
             // 
             this.toolStripMenuItem10.Font = new System.Drawing.Font("Segoe UI", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(224, 28);
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(219, 28);
             this.toolStripMenuItem10.Text = "Sections";
             this.toolStripMenuItem10.Click += new System.EventHandler(this.toolStripMenuItem10_Click);
             // 
@@ -3472,7 +3707,7 @@
             // 
             this.toolStripMenuItem11.Font = new System.Drawing.Font("Segoe UI", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(224, 28);
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(219, 28);
             this.toolStripMenuItem11.Text = "Positions";
             this.toolStripMenuItem11.Click += new System.EventHandler(this.toolStripMenuItem11_Click);
             // 
@@ -3480,7 +3715,7 @@
             // 
             this.toolStripMenuItem6.Font = new System.Drawing.Font("Segoe UI", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(224, 28);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(219, 28);
             this.toolStripMenuItem6.Text = "Feed Code";
             this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
             // 
@@ -3488,7 +3723,7 @@
             // 
             this.categoryToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.categoryToolStripMenuItem.Name = "categoryToolStripMenuItem";
-            this.categoryToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.categoryToolStripMenuItem.Size = new System.Drawing.Size(219, 28);
             this.categoryToolStripMenuItem.Text = "Category";
             this.categoryToolStripMenuItem.Click += new System.EventHandler(this.categoryToolStripMenuItem_Click);
             // 
@@ -3496,7 +3731,7 @@
             // 
             this.supplierToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.supplierToolStripMenuItem.Name = "supplierToolStripMenuItem";
-            this.supplierToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.supplierToolStripMenuItem.Size = new System.Drawing.Size(219, 28);
             this.supplierToolStripMenuItem.Text = "Supplier";
             this.supplierToolStripMenuItem.Click += new System.EventHandler(this.supplierToolStripMenuItem_Click);
             // 
@@ -3504,7 +3739,7 @@
             // 
             this.classificationToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.classificationToolStripMenuItem.Name = "classificationToolStripMenuItem";
-            this.classificationToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.classificationToolStripMenuItem.Size = new System.Drawing.Size(219, 28);
             this.classificationToolStripMenuItem.Text = "Classification";
             this.classificationToolStripMenuItem.Click += new System.EventHandler(this.classificationToolStripMenuItem_Click);
             // 
@@ -3512,7 +3747,7 @@
             // 
             this.groupToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupToolStripMenuItem.Name = "groupToolStripMenuItem";
-            this.groupToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.groupToolStripMenuItem.Size = new System.Drawing.Size(219, 28);
             this.groupToolStripMenuItem.Text = "Group";
             this.groupToolStripMenuItem.Click += new System.EventHandler(this.groupToolStripMenuItem_Click);
             // 
@@ -3520,7 +3755,7 @@
             // 
             this.productionTypeToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productionTypeToolStripMenuItem.Name = "productionTypeToolStripMenuItem";
-            this.productionTypeToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.productionTypeToolStripMenuItem.Size = new System.Drawing.Size(219, 28);
             this.productionTypeToolStripMenuItem.Text = "Production Type";
             this.productionTypeToolStripMenuItem.Click += new System.EventHandler(this.productionTypeToolStripMenuItem_Click);
             // 
@@ -3528,7 +3763,7 @@
             // 
             this.standardWeightToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.standardWeightToolStripMenuItem.Name = "standardWeightToolStripMenuItem";
-            this.standardWeightToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.standardWeightToolStripMenuItem.Size = new System.Drawing.Size(219, 28);
             this.standardWeightToolStripMenuItem.Text = "Standard Weight";
             this.standardWeightToolStripMenuItem.Click += new System.EventHandler(this.standardWeightToolStripMenuItem_Click);
             // 
@@ -3543,25 +3778,41 @@
             this.toolStripMenuItem45});
             this.toolStripMenuItem31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.toolStripMenuItem31.Name = "toolStripMenuItem31";
-            this.toolStripMenuItem31.Size = new System.Drawing.Size(291, 25);
+            this.toolStripMenuItem31.Size = new System.Drawing.Size(291, 26);
             this.toolStripMenuItem31.Text = "&Help                                                            ";
             // 
             // toolStripMenuItem34
             // 
             this.toolStripMenuItem34.Name = "toolStripMenuItem34";
             this.toolStripMenuItem34.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F1)));
-            this.toolStripMenuItem34.Size = new System.Drawing.Size(244, 46);
+            this.toolStripMenuItem34.Size = new System.Drawing.Size(199, 26);
             this.toolStripMenuItem34.Text = "&Contents";
+            // 
+            // toolStripMenuItem39
+            // 
+            this.toolStripMenuItem39.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem39.Image")));
+            this.toolStripMenuItem39.ImageTransparentColor = System.Drawing.Color.Black;
+            this.toolStripMenuItem39.Name = "toolStripMenuItem39";
+            this.toolStripMenuItem39.Size = new System.Drawing.Size(199, 26);
+            this.toolStripMenuItem39.Text = "&Index";
+            // 
+            // toolStripMenuItem40
+            // 
+            this.toolStripMenuItem40.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem40.Image")));
+            this.toolStripMenuItem40.ImageTransparentColor = System.Drawing.Color.Black;
+            this.toolStripMenuItem40.Name = "toolStripMenuItem40";
+            this.toolStripMenuItem40.Size = new System.Drawing.Size(199, 26);
+            this.toolStripMenuItem40.Text = "&Search";
             // 
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(241, 6);
+            this.toolStripSeparator12.Size = new System.Drawing.Size(196, 6);
             // 
             // toolStripMenuItem41
             // 
             this.toolStripMenuItem41.Name = "toolStripMenuItem41";
-            this.toolStripMenuItem41.Size = new System.Drawing.Size(244, 46);
+            this.toolStripMenuItem41.Size = new System.Drawing.Size(199, 26);
             this.toolStripMenuItem41.Text = "&About ... ...";
             // 
             // toolStripMenuItem45
@@ -3577,14 +3828,59 @@
             this.toolStripMenuItem52});
             this.toolStripMenuItem45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.toolStripMenuItem45.Name = "toolStripMenuItem45";
-            this.toolStripMenuItem45.Size = new System.Drawing.Size(244, 46);
+            this.toolStripMenuItem45.Size = new System.Drawing.Size(199, 26);
             this.toolStripMenuItem45.Text = "&Edit";
             this.toolStripMenuItem45.Visible = false;
+            // 
+            // toolStripMenuItem46
+            // 
+            this.toolStripMenuItem46.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem46.Image")));
+            this.toolStripMenuItem46.ImageTransparentColor = System.Drawing.Color.Black;
+            this.toolStripMenuItem46.Name = "toolStripMenuItem46";
+            this.toolStripMenuItem46.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
+            this.toolStripMenuItem46.Size = new System.Drawing.Size(194, 26);
+            this.toolStripMenuItem46.Text = "&Undo";
+            // 
+            // toolStripMenuItem47
+            // 
+            this.toolStripMenuItem47.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem47.Image")));
+            this.toolStripMenuItem47.ImageTransparentColor = System.Drawing.Color.Black;
+            this.toolStripMenuItem47.Name = "toolStripMenuItem47";
+            this.toolStripMenuItem47.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
+            this.toolStripMenuItem47.Size = new System.Drawing.Size(194, 26);
+            this.toolStripMenuItem47.Text = "&Redo";
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
             this.toolStripSeparator8.Size = new System.Drawing.Size(191, 6);
+            // 
+            // toolStripMenuItem48
+            // 
+            this.toolStripMenuItem48.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem48.Image")));
+            this.toolStripMenuItem48.ImageTransparentColor = System.Drawing.Color.Black;
+            this.toolStripMenuItem48.Name = "toolStripMenuItem48";
+            this.toolStripMenuItem48.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+            this.toolStripMenuItem48.Size = new System.Drawing.Size(194, 26);
+            this.toolStripMenuItem48.Text = "Cu&t";
+            // 
+            // toolStripMenuItem50
+            // 
+            this.toolStripMenuItem50.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem50.Image")));
+            this.toolStripMenuItem50.ImageTransparentColor = System.Drawing.Color.Black;
+            this.toolStripMenuItem50.Name = "toolStripMenuItem50";
+            this.toolStripMenuItem50.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
+            this.toolStripMenuItem50.Size = new System.Drawing.Size(194, 26);
+            this.toolStripMenuItem50.Text = "&Copy";
+            // 
+            // toolStripMenuItem51
+            // 
+            this.toolStripMenuItem51.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem51.Image")));
+            this.toolStripMenuItem51.ImageTransparentColor = System.Drawing.Color.Black;
+            this.toolStripMenuItem51.Name = "toolStripMenuItem51";
+            this.toolStripMenuItem51.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
+            this.toolStripMenuItem51.Size = new System.Drawing.Size(194, 26);
+            this.toolStripMenuItem51.Text = "&Paste";
             // 
             // toolStripSeparator13
             // 
@@ -3617,34 +3913,34 @@
             // 
             this.toolStripMenuItem14.Font = new System.Drawing.Font("Segoe UI", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem14.Name = "toolStripMenuItem14";
-            this.toolStripMenuItem14.Size = new System.Drawing.Size(224, 28);
+            this.toolStripMenuItem14.Size = new System.Drawing.Size(212, 28);
             this.toolStripMenuItem14.Text = "User Rigths";
             // 
             // toolStripMenuItem15
             // 
             this.toolStripMenuItem15.Font = new System.Drawing.Font("Segoe UI", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem15.Name = "toolStripMenuItem15";
-            this.toolStripMenuItem15.Size = new System.Drawing.Size(224, 28);
+            this.toolStripMenuItem15.Size = new System.Drawing.Size(212, 28);
             this.toolStripMenuItem15.Text = "Users";
             // 
             // prodToolStripMenuItem
             // 
             this.prodToolStripMenuItem.Name = "prodToolStripMenuItem";
-            this.prodToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.prodToolStripMenuItem.Size = new System.Drawing.Size(212, 28);
             this.prodToolStripMenuItem.Text = "Prod Monitoring";
             this.prodToolStripMenuItem.Click += new System.EventHandler(this.prodToolStripMenuItem_Click);
             // 
             // supplierEvaluationToolStripMenuItem
             // 
             this.supplierEvaluationToolStripMenuItem.Name = "supplierEvaluationToolStripMenuItem";
-            this.supplierEvaluationToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.supplierEvaluationToolStripMenuItem.Size = new System.Drawing.Size(212, 28);
             this.supplierEvaluationToolStripMenuItem.Text = "Supplier Evaluation";
             this.supplierEvaluationToolStripMenuItem.Click += new System.EventHandler(this.supplierEvaluationToolStripMenuItem_Click);
             // 
             // qAWebsiteToolStripMenuItem
             // 
             this.qAWebsiteToolStripMenuItem.Name = "qAWebsiteToolStripMenuItem";
-            this.qAWebsiteToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.qAWebsiteToolStripMenuItem.Size = new System.Drawing.Size(212, 28);
             this.qAWebsiteToolStripMenuItem.Text = "QA Website";
             this.qAWebsiteToolStripMenuItem.Click += new System.EventHandler(this.qAWebsiteToolStripMenuItem_Click);
             // 
@@ -3670,7 +3966,7 @@
             this.macroToolStripMenuItem,
             this.microToolStripMenuItem});
             this.printToolStripMenuItem1.Name = "printToolStripMenuItem1";
-            this.printToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.printToolStripMenuItem1.Size = new System.Drawing.Size(201, 26);
             this.printToolStripMenuItem1.Text = "Print";
             // 
             // macroToolStripMenuItem
@@ -3689,28 +3985,28 @@
             // fgfToolStripMenuItem
             // 
             this.fgfToolStripMenuItem.Name = "fgfToolStripMenuItem";
-            this.fgfToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fgfToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
             this.fgfToolStripMenuItem.Text = "fgf";
             this.fgfToolStripMenuItem.Click += new System.EventHandler(this.fgfToolStripMenuItem_Click);
             // 
             // keyboardToolStripMenuItem
             // 
             this.keyboardToolStripMenuItem.Name = "keyboardToolStripMenuItem";
-            this.keyboardToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.keyboardToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
             this.keyboardToolStripMenuItem.Text = "Keyboard";
             this.keyboardToolStripMenuItem.Click += new System.EventHandler(this.keyboardToolStripMenuItem_Click);
             // 
             // microPreparationToolStripMenuItem
             // 
             this.microPreparationToolStripMenuItem.Name = "microPreparationToolStripMenuItem";
-            this.microPreparationToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.microPreparationToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
             this.microPreparationToolStripMenuItem.Text = "micro preparation";
             this.microPreparationToolStripMenuItem.Click += new System.EventHandler(this.microPreparationToolStripMenuItem_Click);
             // 
             // frmapprovalToolStripMenuItem
             // 
             this.frmapprovalToolStripMenuItem.Name = "frmapprovalToolStripMenuItem";
-            this.frmapprovalToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.frmapprovalToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
             this.frmapprovalToolStripMenuItem.Text = "frmapproval";
             this.frmapprovalToolStripMenuItem.Click += new System.EventHandler(this.frmapprovalToolStripMenuItem_Click);
             // 
@@ -3723,7 +4019,7 @@
             this.toolStripMenuItem20,
             this.toolStripMenuItem21});
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(201, 26);
             this.toolStripMenuItem2.Text = "sd";
             this.toolStripMenuItem2.Visible = false;
             // 
@@ -3782,7 +4078,7 @@
             this.toolStripMenuItem59,
             this.toolStripMenuItem60});
             this.toolStripMenuItem22.Name = "toolStripMenuItem22";
-            this.toolStripMenuItem22.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem22.Size = new System.Drawing.Size(201, 26);
             this.toolStripMenuItem22.Text = "sd";
             this.toolStripMenuItem22.Visible = false;
             // 
@@ -3893,28 +4189,28 @@
             // 
             this.toolStripStatusLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.toolStripStatusLabel8.Name = "toolStripStatusLabel8";
-            this.toolStripStatusLabel8.Size = new System.Drawing.Size(96, 19);
+            this.toolStripStatusLabel8.Size = new System.Drawing.Size(96, 20);
             this.toolStripStatusLabel8.Text = "  Active User :";
             // 
             // lblTip2
             // 
             this.lblTip2.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTip2.Name = "lblTip2";
-            this.lblTip2.Size = new System.Drawing.Size(33, 19);
+            this.lblTip2.Size = new System.Drawing.Size(33, 20);
             this.lblTip2.Text = "......";
             // 
             // lblTime2
             // 
             this.lblTime2.Font = new System.Drawing.Font("Bookman Old Style", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime2.Name = "lblTime2";
-            this.lblTime2.Size = new System.Drawing.Size(49, 19);
+            this.lblTime2.Size = new System.Drawing.Size(49, 20);
             this.lblTime2.Text = "Date :";
             // 
             // toolStripStatusLabel9
             // 
             this.toolStripStatusLabel9.Font = new System.Drawing.Font("Segoe UI Semibold", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripStatusLabel9.Name = "toolStripStatusLabel9";
-            this.toolStripStatusLabel9.Size = new System.Drawing.Size(49, 19);
+            this.toolStripStatusLabel9.Size = new System.Drawing.Size(49, 20);
             this.toolStripStatusLabel9.Text = "Date : ";
             // 
             // menuStrip
@@ -3950,19 +4246,19 @@
             this.dgv_po_approve2.AllowUserToDeleteRows = false;
             this.dgv_po_approve2.AllowUserToResizeColumns = false;
             this.dgv_po_approve2.AllowUserToResizeRows = false;
-            dataGridViewCellStyle69.BackColor = System.Drawing.Color.LightGray;
-            this.dgv_po_approve2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle69;
+            dataGridViewCellStyle41.BackColor = System.Drawing.Color.LightGray;
+            this.dgv_po_approve2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle41;
             this.dgv_po_approve2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_po_approve2.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgv_po_approve2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle70.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle70.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle70.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle70.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle70.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle70.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle70.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_po_approve2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle70;
+            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle42.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle42.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle42.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_po_approve2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle42;
             this.dgv_po_approve2.ColumnHeadersHeight = 50;
             this.dgv_po_approve2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgv_po_approve2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3972,14 +4268,14 @@
             this.dataGridViewTextBoxColumn9,
             this.dataGridViewTextBoxColumn10});
             this.dgv_po_approve2.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle71.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle71.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle71.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle71.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle71.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle71.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle71.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_po_approve2.DefaultCellStyle = dataGridViewCellStyle71;
+            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle43.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle43.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle43.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_po_approve2.DefaultCellStyle = dataGridViewCellStyle43;
             this.dgv_po_approve2.EnableHeadersVisualStyles = false;
             this.dgv_po_approve2.GridColor = System.Drawing.Color.DarkGray;
             this.dgv_po_approve2.Location = new System.Drawing.Point(661, 278);
@@ -3990,8 +4286,8 @@
             this.dgv_po_approve2.RowHeadersVisible = false;
             this.dgv_po_approve2.RowHeadersWidth = 102;
             this.dgv_po_approve2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle72.SelectionBackColor = System.Drawing.Color.Teal;
-            this.dgv_po_approve2.RowsDefaultCellStyle = dataGridViewCellStyle72;
+            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.Color.Teal;
+            this.dgv_po_approve2.RowsDefaultCellStyle = dataGridViewCellStyle44;
             this.dgv_po_approve2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_po_approve2.Size = new System.Drawing.Size(289, 231);
             this.dgv_po_approve2.TabIndex = 432;
@@ -4072,30 +4368,30 @@
             this.dgvBufferNotifier.AllowUserToDeleteRows = false;
             this.dgvBufferNotifier.AllowUserToResizeColumns = false;
             this.dgvBufferNotifier.AllowUserToResizeRows = false;
-            dataGridViewCellStyle73.BackColor = System.Drawing.Color.LightGray;
-            this.dgvBufferNotifier.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle73;
+            dataGridViewCellStyle45.BackColor = System.Drawing.Color.LightGray;
+            this.dgvBufferNotifier.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle45;
             this.dgvBufferNotifier.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBufferNotifier.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvBufferNotifier.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle74.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle74.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle74.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle74.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle74.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle74.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle74.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBufferNotifier.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle74;
+            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle46.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle46.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle46.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBufferNotifier.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle46;
             this.dgvBufferNotifier.ColumnHeadersHeight = 50;
             this.dgvBufferNotifier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvBufferNotifier.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle75.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle75.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle75.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle75.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle75.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle75.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle75.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvBufferNotifier.DefaultCellStyle = dataGridViewCellStyle75;
+            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle47.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle47.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle47.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvBufferNotifier.DefaultCellStyle = dataGridViewCellStyle47;
             this.dgvBufferNotifier.EnableHeadersVisualStyles = false;
             this.dgvBufferNotifier.GridColor = System.Drawing.Color.DarkGray;
             this.dgvBufferNotifier.Location = new System.Drawing.Point(372, 529);
@@ -4106,8 +4402,8 @@
             this.dgvBufferNotifier.RowHeadersVisible = false;
             this.dgvBufferNotifier.RowHeadersWidth = 102;
             this.dgvBufferNotifier.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle76.SelectionBackColor = System.Drawing.Color.Teal;
-            this.dgvBufferNotifier.RowsDefaultCellStyle = dataGridViewCellStyle76;
+            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.Color.Teal;
+            this.dgvBufferNotifier.RowsDefaultCellStyle = dataGridViewCellStyle48;
             this.dgvBufferNotifier.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBufferNotifier.Size = new System.Drawing.Size(289, 140);
             this.dgvBufferNotifier.TabIndex = 440;
@@ -4130,19 +4426,19 @@
             this.dgvmacroreceiving.AllowUserToDeleteRows = false;
             this.dgvmacroreceiving.AllowUserToResizeColumns = false;
             this.dgvmacroreceiving.AllowUserToResizeRows = false;
-            dataGridViewCellStyle77.BackColor = System.Drawing.Color.LightGray;
-            this.dgvmacroreceiving.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle77;
+            dataGridViewCellStyle49.BackColor = System.Drawing.Color.LightGray;
+            this.dgvmacroreceiving.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle49;
             this.dgvmacroreceiving.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvmacroreceiving.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvmacroreceiving.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle78.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle78.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle78.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle78.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle78.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle78.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle78.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvmacroreceiving.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle78;
+            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle50.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle50.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle50.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle50.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle50.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle50.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvmacroreceiving.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle50;
             this.dgvmacroreceiving.ColumnHeadersHeight = 50;
             this.dgvmacroreceiving.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvmacroreceiving.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -4152,14 +4448,14 @@
             this.dataGridViewTextBoxColumn14,
             this.dataGridViewTextBoxColumn15});
             this.dgvmacroreceiving.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle79.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle79.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle79.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle79.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle79.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle79.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle79.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvmacroreceiving.DefaultCellStyle = dataGridViewCellStyle79;
+            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle51.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle51.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle51.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle51.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle51.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle51.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvmacroreceiving.DefaultCellStyle = dataGridViewCellStyle51;
             this.dgvmacroreceiving.EnableHeadersVisualStyles = false;
             this.dgvmacroreceiving.GridColor = System.Drawing.Color.DarkGray;
             this.dgvmacroreceiving.Location = new System.Drawing.Point(661, 278);
@@ -4170,8 +4466,8 @@
             this.dgvmacroreceiving.RowHeadersVisible = false;
             this.dgvmacroreceiving.RowHeadersWidth = 102;
             this.dgvmacroreceiving.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle80.SelectionBackColor = System.Drawing.Color.Teal;
-            this.dgvmacroreceiving.RowsDefaultCellStyle = dataGridViewCellStyle80;
+            dataGridViewCellStyle52.SelectionBackColor = System.Drawing.Color.Teal;
+            this.dgvmacroreceiving.RowsDefaultCellStyle = dataGridViewCellStyle52;
             this.dgvmacroreceiving.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvmacroreceiving.Size = new System.Drawing.Size(289, 231);
             this.dgvmacroreceiving.TabIndex = 447;
@@ -4234,30 +4530,30 @@
             this.dgvfgreceiving.AllowUserToDeleteRows = false;
             this.dgvfgreceiving.AllowUserToResizeColumns = false;
             this.dgvfgreceiving.AllowUserToResizeRows = false;
-            dataGridViewCellStyle81.BackColor = System.Drawing.Color.LightGray;
-            this.dgvfgreceiving.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle81;
+            dataGridViewCellStyle53.BackColor = System.Drawing.Color.LightGray;
+            this.dgvfgreceiving.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle53;
             this.dgvfgreceiving.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvfgreceiving.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvfgreceiving.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle82.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle82.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle82.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle82.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle82.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle82.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle82.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvfgreceiving.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle82;
+            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle54.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle54.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle54.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle54.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle54.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle54.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvfgreceiving.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle54;
             this.dgvfgreceiving.ColumnHeadersHeight = 50;
             this.dgvfgreceiving.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvfgreceiving.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle83.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle83.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle83.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle83.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle83.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle83.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle83.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvfgreceiving.DefaultCellStyle = dataGridViewCellStyle83;
+            dataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle55.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle55.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle55.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle55.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle55.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle55.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvfgreceiving.DefaultCellStyle = dataGridViewCellStyle55;
             this.dgvfgreceiving.EnableHeadersVisualStyles = false;
             this.dgvfgreceiving.GridColor = System.Drawing.Color.DarkGray;
             this.dgvfgreceiving.Location = new System.Drawing.Point(669, 298);
@@ -4268,8 +4564,8 @@
             this.dgvfgreceiving.RowHeadersVisible = false;
             this.dgvfgreceiving.RowHeadersWidth = 102;
             this.dgvfgreceiving.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle84.SelectionBackColor = System.Drawing.Color.Teal;
-            this.dgvfgreceiving.RowsDefaultCellStyle = dataGridViewCellStyle84;
+            dataGridViewCellStyle56.SelectionBackColor = System.Drawing.Color.Teal;
+            this.dgvfgreceiving.RowsDefaultCellStyle = dataGridViewCellStyle56;
             this.dgvfgreceiving.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvfgreceiving.Size = new System.Drawing.Size(289, 231);
             this.dgvfgreceiving.TabIndex = 449;
@@ -4322,302 +4618,6 @@
             this.pictureBoxnotif.TabStop = false;
             this.pictureBoxnotif.Visible = false;
             this.pictureBoxnotif.Click += new System.EventHandler(this.pictureBoxnotif_Click);
-            // 
-            // toolStripButton10
-            // 
-            this.toolStripButton10.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton10.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton10.Image")));
-            this.toolStripButton10.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton10.Name = "toolStripButton10";
-            this.toolStripButton10.Size = new System.Drawing.Size(44, 33);
-            this.toolStripButton10.Text = "Fedora Logo";
-            this.toolStripButton10.Click += new System.EventHandler(this.toolStripButton10_Click);
-            // 
-            // SlowMovingICon
-            // 
-            this.SlowMovingICon.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.SlowMovingICon.Image = ((System.Drawing.Image)(resources.GetObject("SlowMovingICon.Image")));
-            this.SlowMovingICon.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.SlowMovingICon.Name = "SlowMovingICon";
-            this.SlowMovingICon.Size = new System.Drawing.Size(44, 33);
-            this.SlowMovingICon.Text = "Show Raw Materials Low Inventory";
-            this.SlowMovingICon.Visible = false;
-            this.SlowMovingICon.Click += new System.EventHandler(this.SlowMovingICon_Click_1);
-            // 
-            // SlowMovingIConCount
-            // 
-            this.SlowMovingIConCount.BackColor = System.Drawing.Color.Red;
-            this.SlowMovingIConCount.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.SlowMovingIConCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SlowMovingIConCount.ForeColor = System.Drawing.SystemColors.Window;
-            this.SlowMovingIConCount.Image = ((System.Drawing.Image)(resources.GetObject("SlowMovingIConCount.Image")));
-            this.SlowMovingIConCount.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.SlowMovingIConCount.Name = "SlowMovingIConCount";
-            this.SlowMovingIConCount.Size = new System.Drawing.Size(29, 33);
-            this.SlowMovingIConCount.Text = "0";
-            this.SlowMovingIConCount.Visible = false;
-            this.SlowMovingIConCount.Click += new System.EventHandler(this.SlowMovingICon_Click);
-            // 
-            // NearlyExpired
-            // 
-            this.NearlyExpired.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.NearlyExpired.Image = ((System.Drawing.Image)(resources.GetObject("NearlyExpired.Image")));
-            this.NearlyExpired.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.NearlyExpired.Name = "NearlyExpired";
-            this.NearlyExpired.Size = new System.Drawing.Size(44, 33);
-            this.NearlyExpired.Text = "Read Fedora System Update";
-            this.NearlyExpired.Visible = false;
-            this.NearlyExpired.Click += new System.EventHandler(this.NearlyExpired_Click);
-            // 
-            // MyBelovedLight
-            // 
-            this.MyBelovedLight.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.MyBelovedLight.Image = ((System.Drawing.Image)(resources.GetObject("MyBelovedLight.Image")));
-            this.MyBelovedLight.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.MyBelovedLight.Name = "MyBelovedLight";
-            this.MyBelovedLight.Size = new System.Drawing.Size(44, 33);
-            this.MyBelovedLight.Text = "Read Fedora System Update";
-            this.MyBelovedLight.Visible = false;
-            this.MyBelovedLight.Click += new System.EventHandler(this.MyBelovedLight_Click);
-            // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Black;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(44, 44);
-            this.toolStripButton2.Text = "New";
-            // 
-            // toolStripButton3
-            // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Black;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(44, 44);
-            this.toolStripButton3.Text = "Open";
-            // 
-            // toolStripButton4
-            // 
-            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Black;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(44, 44);
-            this.toolStripButton4.Text = "Save";
-            // 
-            // toolStripButton5
-            // 
-            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
-            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Black;
-            this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(44, 44);
-            this.toolStripButton5.Text = "Print";
-            // 
-            // toolStripButton6
-            // 
-            this.toolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
-            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Black;
-            this.toolStripButton6.Name = "toolStripButton6";
-            this.toolStripButton6.Size = new System.Drawing.Size(44, 44);
-            this.toolStripButton6.Text = "Print Preview";
-            // 
-            // toolStripButton7
-            // 
-            this.toolStripButton7.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton7.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton7.Image")));
-            this.toolStripButton7.ImageTransparentColor = System.Drawing.Color.Black;
-            this.toolStripButton7.Name = "toolStripButton7";
-            this.toolStripButton7.Size = new System.Drawing.Size(44, 44);
-            this.toolStripButton7.Text = "Help";
-            // 
-            // toolStripButton8
-            // 
-            this.toolStripButton8.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton8.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton8.Image")));
-            this.toolStripButton8.ImageTransparentColor = System.Drawing.Color.Black;
-            this.toolStripButton8.Name = "toolStripButton8";
-            this.toolStripButton8.Size = new System.Drawing.Size(44, 44);
-            this.toolStripButton8.Text = "New";
-            // 
-            // newToolStripMenuItem
-            // 
-            this.newToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem.Image")));
-            this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
-            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(244, 46);
-            this.newToolStripMenuItem.Text = "&New";
-            this.newToolStripMenuItem.Visible = false;
-            this.newToolStripMenuItem.Click += new System.EventHandler(this.ShowNewForm);
-            // 
-            // openToolStripMenuItem
-            // 
-            this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
-            this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(244, 46);
-            this.openToolStripMenuItem.Text = "&Open";
-            this.openToolStripMenuItem.Visible = false;
-            this.openToolStripMenuItem.Click += new System.EventHandler(this.OpenFile);
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Image = global::WFFDR.Properties.Resources.lock_100px;
-            this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(244, 46);
-            this.saveToolStripMenuItem.Text = "&Lock";
-            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
-            // 
-            // saveAsToolStripMenuItem
-            // 
-            this.saveAsToolStripMenuItem.Image = global::WFFDR.Properties.Resources.minimize_window_100px;
-            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(244, 46);
-            this.saveAsToolStripMenuItem.Text = "M&inimize";
-            this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.SaveAsToolStripMenuItem_Click);
-            // 
-            // printToolStripMenuItem
-            // 
-            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
-            this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
-            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(244, 46);
-            this.printToolStripMenuItem.Text = "&Print";
-            this.printToolStripMenuItem.Visible = false;
-            // 
-            // printPreviewToolStripMenuItem
-            // 
-            this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
-            this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
-            this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(244, 46);
-            this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
-            this.printPreviewToolStripMenuItem.Visible = false;
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Image = global::WFFDR.Properties.Resources.exit_100px_1;
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(244, 46);
-            this.exitToolStripMenuItem.Text = "L&ogout";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolsStripMenuItem_Click);
-            // 
-            // undoToolStripMenuItem
-            // 
-            this.undoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("undoToolStripMenuItem.Image")));
-            this.undoToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
-            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
-            this.undoToolStripMenuItem.Text = "&Undo";
-            // 
-            // redoToolStripMenuItem
-            // 
-            this.redoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("redoToolStripMenuItem.Image")));
-            this.redoToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
-            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
-            this.redoToolStripMenuItem.Text = "&Redo";
-            // 
-            // cutToolStripMenuItem
-            // 
-            this.cutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripMenuItem.Image")));
-            this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
-            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
-            this.cutToolStripMenuItem.Text = "Cu&t";
-            this.cutToolStripMenuItem.Click += new System.EventHandler(this.CutToolStripMenuItem_Click);
-            // 
-            // copyToolStripMenuItem
-            // 
-            this.copyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripMenuItem.Image")));
-            this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
-            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
-            this.copyToolStripMenuItem.Text = "&Copy";
-            this.copyToolStripMenuItem.Click += new System.EventHandler(this.CopyToolStripMenuItem_Click);
-            // 
-            // pasteToolStripMenuItem
-            // 
-            this.pasteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripMenuItem.Image")));
-            this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
-            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
-            this.pasteToolStripMenuItem.Text = "&Paste";
-            this.pasteToolStripMenuItem.Click += new System.EventHandler(this.PasteToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem39
-            // 
-            this.toolStripMenuItem39.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem39.Image")));
-            this.toolStripMenuItem39.ImageTransparentColor = System.Drawing.Color.Black;
-            this.toolStripMenuItem39.Name = "toolStripMenuItem39";
-            this.toolStripMenuItem39.Size = new System.Drawing.Size(244, 46);
-            this.toolStripMenuItem39.Text = "&Index";
-            // 
-            // toolStripMenuItem40
-            // 
-            this.toolStripMenuItem40.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem40.Image")));
-            this.toolStripMenuItem40.ImageTransparentColor = System.Drawing.Color.Black;
-            this.toolStripMenuItem40.Name = "toolStripMenuItem40";
-            this.toolStripMenuItem40.Size = new System.Drawing.Size(244, 46);
-            this.toolStripMenuItem40.Text = "&Search";
-            // 
-            // toolStripMenuItem46
-            // 
-            this.toolStripMenuItem46.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem46.Image")));
-            this.toolStripMenuItem46.ImageTransparentColor = System.Drawing.Color.Black;
-            this.toolStripMenuItem46.Name = "toolStripMenuItem46";
-            this.toolStripMenuItem46.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.toolStripMenuItem46.Size = new System.Drawing.Size(194, 26);
-            this.toolStripMenuItem46.Text = "&Undo";
-            // 
-            // toolStripMenuItem47
-            // 
-            this.toolStripMenuItem47.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem47.Image")));
-            this.toolStripMenuItem47.ImageTransparentColor = System.Drawing.Color.Black;
-            this.toolStripMenuItem47.Name = "toolStripMenuItem47";
-            this.toolStripMenuItem47.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.toolStripMenuItem47.Size = new System.Drawing.Size(194, 26);
-            this.toolStripMenuItem47.Text = "&Redo";
-            // 
-            // toolStripMenuItem48
-            // 
-            this.toolStripMenuItem48.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem48.Image")));
-            this.toolStripMenuItem48.ImageTransparentColor = System.Drawing.Color.Black;
-            this.toolStripMenuItem48.Name = "toolStripMenuItem48";
-            this.toolStripMenuItem48.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.toolStripMenuItem48.Size = new System.Drawing.Size(194, 26);
-            this.toolStripMenuItem48.Text = "Cu&t";
-            // 
-            // toolStripMenuItem50
-            // 
-            this.toolStripMenuItem50.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem50.Image")));
-            this.toolStripMenuItem50.ImageTransparentColor = System.Drawing.Color.Black;
-            this.toolStripMenuItem50.Name = "toolStripMenuItem50";
-            this.toolStripMenuItem50.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.toolStripMenuItem50.Size = new System.Drawing.Size(194, 26);
-            this.toolStripMenuItem50.Text = "&Copy";
-            // 
-            // toolStripMenuItem51
-            // 
-            this.toolStripMenuItem51.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem51.Image")));
-            this.toolStripMenuItem51.ImageTransparentColor = System.Drawing.Color.Black;
-            this.toolStripMenuItem51.Name = "toolStripMenuItem51";
-            this.toolStripMenuItem51.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.toolStripMenuItem51.Size = new System.Drawing.Size(194, 26);
-            this.toolStripMenuItem51.Text = "&Paste";
             // 
             // MDIParent1
             // 

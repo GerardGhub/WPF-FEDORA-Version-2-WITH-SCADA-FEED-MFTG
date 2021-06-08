@@ -30,6 +30,7 @@ namespace WFFDR
         IStoredProcedures objStorProc = null;
         // StoredProcedures trys = new StoredProcedures ();
         DataSet dSet = new DataSet();
+        DataSet DsetsystemUpdate = new DataSet();
         new frmMenu Menu;
       MDIParent1 mdiparent;
         //int p_id = 0;
@@ -45,6 +46,7 @@ namespace WFFDR
             updater = new SharpUpdater(this);
         }
 
+      
         private void Button2_Click(object sender, EventArgs e)
         {
 
@@ -104,12 +106,31 @@ namespace WFFDR
 
             //updater.DoUpdate();
             load_materials();
+            LoadSystemUpdate();
+
+            if(systemupdatecount.Text=="0")
+            {
+
+            }
+
+            else
+            {
+                lblupdate_Click(sender, e);
+            }
 
             //this.lbl1.Text = this.ApplicationAssembly.GetName().Version.ToString();
 
 
 
         }
+        private void LoadSystemUpdate()
+        {
+            DsetsystemUpdate.Clear();
+            DsetsystemUpdate = objStorProc.sp_getMajorTables("distinctupdatefedora");
+            systemupdatecount.Text = DsetsystemUpdate.Tables[0].Rows.Count.ToString();
+
+        }
+
 
         protected override CreateParams CreateParams
         {
@@ -467,6 +488,12 @@ namespace WFFDR
             {
                 btnuserclick.Text = "";
                 txtpassword.Text = "";
+                btnuserclick.Visible = false;
+            }
+            else
+            {
+                btnuserclick.Visible = true;
+
             }
 
             if (txtpassword.Text.Trim() == string.Empty)

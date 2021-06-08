@@ -48,6 +48,8 @@ namespace WFFDR
             txtupdatedate.Enabled = false;
             txtobjective.Enabled = false;
             txtremarks.Enabled = false;
+            txtmodule.Enabled = false;
+
         }
 
         void loadModule_type()
@@ -79,8 +81,34 @@ namespace WFFDR
         private void btnAdd_Click(object sender, EventArgs e)
         {
 
-            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you save the update of project Fedora ?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+
+            if (txtremarks.Text.Trim() == string.Empty)
             {
+                EmptyFieldNotify();
+                txtremarks.Focus();
+                return;
+            }
+            if (txtobjective.Text.Trim() == string.Empty)
+            {
+                EmptyFieldNotify();
+                txtobjective.Focus();
+                return;
+            }
+
+
+            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to add this project update ?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            {
+               
+
+                dSet.Clear();
+
+                dSet = objStorProc.rdf_sp_new_preparation(0, txtmodule.Text, txtremarks.Text, txtobjective.Text, txtupdatedate.Text, txtaddedby.Text, "", "", "", "", "", "", "", "", "", "", "", "", "addupdate");
+                load_updates();
+
+
+                DisableTextBoxes();
+                Shownewbutton();
+                Success();
 
             }
             else
@@ -91,27 +119,108 @@ namespace WFFDR
 
 
 
-            if (txtremarks.Text.Trim() == string.Empty)
-            {
-                EmptyFieldNotify();
-                return;
-            }
-            if (txtobjective.Text.Trim() == string.Empty)
-            {
-                EmptyFieldNotify();
-                return;
-            }
-
-
-            dSet.Clear();
-
-            dSet = objStorProc.rdf_sp_new_preparation(0, txtmodule.Text, txtremarks.Text, txtobjective.Text, txtupdatedate.Text, txtaddedby.Text, "", "", "", "", "", "", "", "", "", "", "", "", "addupdate");
-            load_updates();
-
-
-            DisableTextBoxes();
+          
         }
 
+        public void Success()
+        {
+            PopupNotifier popup = new PopupNotifier();
+            popup.Image = Properties.Resources.info;
+            popup.TitleText = "Fedora Notifications";
+            popup.TitleColor = Color.White;
+            popup.TitlePadding = new Padding(95, 7, 0, 0);
+            popup.TitleFont = new Font("Tahoma", 10);
+
+            popup.ContentText = "Successfully Add!";
+
+            popup.ContentColor = System.Drawing.Color.FromArgb(255, 255, 255);
+            popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
+
+            popup.ContentHoverColor = System.Drawing.Color.FromArgb(255, 255, 255);
+            popup.ContentPadding = new Padding(0);
+            popup.Size = new Size(350, 100);
+            popup.ImageSize = new Size(70, 80);
+            popup.BodyColor = Color.Green;
+            popup.Popup();
+
+            popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
+
+            popup.Delay = 500;
+            popup.AnimationInterval = 10;
+            popup.AnimationDuration = 1000;
+
+
+            popup.ShowOptionsButton = true;
+
+
+        }
+
+        public void Updated()
+        {
+            PopupNotifier popup = new PopupNotifier();
+            popup.Image = Properties.Resources.info;
+            popup.TitleText = "Fedora Notifications";
+            popup.TitleColor = Color.White;
+            popup.TitlePadding = new Padding(95, 7, 0, 0);
+            popup.TitleFont = new Font("Tahoma", 10);
+
+            popup.ContentText = "Successfully Update!";
+
+            popup.ContentColor = System.Drawing.Color.FromArgb(255, 255, 255);
+            popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
+
+            popup.ContentHoverColor = System.Drawing.Color.FromArgb(255, 255, 255);
+            popup.ContentPadding = new Padding(0);
+            popup.Size = new Size(350, 100);
+            popup.ImageSize = new Size(70, 80);
+            popup.BodyColor = Color.Green;
+            popup.Popup();
+
+            popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
+
+            popup.Delay = 500;
+            popup.AnimationInterval = 10;
+            popup.AnimationDuration = 1000;
+
+
+            popup.ShowOptionsButton = true;
+
+
+        }
+
+
+        public void Inactive()
+        {
+            PopupNotifier popup = new PopupNotifier();
+            popup.Image = Properties.Resources.info;
+            popup.TitleText = "Fedora Notifications";
+            popup.TitleColor = Color.White;
+            popup.TitlePadding = new Padding(95, 7, 0, 0);
+            popup.TitleFont = new Font("Tahoma", 10);
+
+            popup.ContentText = "Successfully In-Active!";
+
+            popup.ContentColor = System.Drawing.Color.FromArgb(255, 255, 255);
+            popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
+
+            popup.ContentHoverColor = System.Drawing.Color.FromArgb(255, 255, 255);
+            popup.ContentPadding = new Padding(0);
+            popup.Size = new Size(350, 100);
+            popup.ImageSize = new Size(70, 80);
+            popup.BodyColor = Color.Green;
+            popup.Popup();
+
+            popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
+
+            popup.Delay = 500;
+            popup.AnimationInterval = 10;
+            popup.AnimationDuration = 1000;
+
+
+            popup.ShowOptionsButton = true;
+
+
+        }
         private void dgvUnread_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
         {
             var grid = sender as DataGridView;
@@ -130,31 +239,65 @@ namespace WFFDR
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
-            dSet.Clear();
 
-            dSet = objStorProc.rdf_sp_new_preparation(0, txtid.Text, txtremarks.Text, txtobjective.Text, txtupdatedate.Text, txtaddedby.Text, "", "", "", "", "", "", "", "", "", "", "", "", "deleteupdate");
-            load_updates();
+
+            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to in-active this '"+txtmodule.Text+"' update?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            {
+                dSet.Clear();
+
+                dSet = objStorProc.rdf_sp_new_preparation(0, txtid.Text, txtremarks.Text, txtobjective.Text, txtupdatedate.Text, txtaddedby.Text, "", "", "", "", "", "", "", "", "", "", "", "", "inactiveupdate");
+                load_updates();
+                Inactive();
+            }
+            else
+            {
+                return;
+            }
+
+
+           
         }
 
         private void dgvUnread_CurrentCellChanged(object sender, EventArgs e)
         {
-            if (dgvUnread.RowCount > 0)
-            {
-                if (dgvUnread.CurrentRow != null)
-                {
-                    if (dgvUnread.CurrentRow.Cells["update_id"].Value != null)
-                    {
-                        //p_id = Convert.ToInt32(dgv1stView.CurrentRow.Cells["prod"].Value);
+            
+                        if (dgvUnread.RowCount > 0)
+                        {
+                            if (dgvUnread.CurrentRow != null)
+                            {
+                                if (dgvUnread.CurrentRow.Cells["update_id"].Value != null)
+                                {
+                                    //p_id = Convert.ToInt32(dgv1stView.CurrentRow.Cells["prod"].Value);
 
-                        txtid.Text = dgvUnread.CurrentRow.Cells["update_id"].Value.ToString();
+                                    txtid.Text = dgvUnread.CurrentRow.Cells["update_id"].Value.ToString();
+                                    txtmodule.Text = dgvUnread.CurrentRow.Cells["module"].Value.ToString();
+                                    txtremarks.Text = dgvUnread.CurrentRow.Cells["update_remarks"].Value.ToString();
+                                    txtobjective.Text = dgvUnread.CurrentRow.Cells["update_objective"].Value.ToString();
 
-
+                        txtupdatedate.Text = dgvUnread.CurrentRow.Cells["update_date"].Value.ToString();
                     }
 
-                }
-            }
-        }
+                            }
+                        }
 
+                    
+
+                
+            
+        }
+        public void ShowcancelButton()
+        {
+            btnNew.Visible = false;
+            //bunifuThinButton22.Visible = true;
+            btnAdd.Visible = true;
+            //bunifuThinButton23.Visible = true;
+            //bunifuThinButton21.Visible = true;
+            btnCancel.Visible = true;
+            txtmodule.Enabled = true;
+            txtupdatedate.Enabled = true;
+            txtremarks.Enabled = true;
+            txtobjective.Enabled = true;
+        }
         private void txtuseridproc_TextChanged(object sender, EventArgs e)
         {
 
@@ -164,8 +307,7 @@ namespace WFFDR
         {
             ClearTextBoxes();
             Enable();
-            btnCancel.Visible = true;
-            btnNew.Visible = false;
+            ShowcancelButton();
         }
         void Enable()
         {
@@ -215,15 +357,82 @@ namespace WFFDR
 
         }
 
+        public void Shownewbutton()
+        {
+            btnNew.Visible = true;
+            bunifuThinButton22.Visible = false;
+            btnAdd.Visible = false;
+            bunifuThinButton23.Visible = false;
+            bunifuThinButton21.Visible = false;
+            btnCancel.Visible = false;
+            txtmodule.Enabled = false;
+            txtupdatedate.Enabled = false;
+            txtremarks.Enabled = false;
+            txtobjective.Enabled = false;
+        }
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            btnCancel.Visible = false;
-            btnNew.Visible = true;
+            Shownewbutton();
+            ClearTextBoxes();
+
         }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
+            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to update this '" + txtmodule.Text + "' update?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            {
+                dSet.Clear();
 
+                dSet = objStorProc.rdf_sp_new_preparation(0, txtid.Text, txtremarks.Text, txtobjective.Text, txtmodule.Text, txtaddedby.Text, "", "", "", "", "", "", "", "", "", "", "", "", "editupdate");
+                load_updates();
+                Shownewbutton();
+                Updated();
+            }
+            else
+            {
+                return;
+            }
+
+        }
+
+        private void bunifuThinButton23_Click(object sender, EventArgs e)
+        {
+            btnCancel.Visible = true;
+            btnNew.Visible = false;
+            bunifuThinButton22.Visible = false;
+            btnAdd.Visible = false;
+            bunifuThinButton23.Visible = false;
+            bunifuThinButton21.Visible = true;
+            Enable();
+            //ClearTextBoxes();
+        }
+
+        private void dgvUnread_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
+            bunifuThinButton23.Visible = true;
+            btnCancel.Visible = true;
+            bunifuThinButton22.Visible = true;
+            btnNew.Visible = false;
+            btnAdd.Visible = false;
+
+            if (dgvUnread.RowCount > 0)
+            {
+                if (dgvUnread.CurrentRow != null)
+                {
+                    if (dgvUnread.CurrentRow.Cells["update_id"].Value != null)
+                    {
+                        //p_id = Convert.ToInt32(dgv1stView.CurrentRow.Cells["prod"].Value);
+
+                        txtid.Text = dgvUnread.CurrentRow.Cells["update_id"].Value.ToString();
+                        txtmodule.Text = dgvUnread.CurrentRow.Cells["module"].Value.ToString();
+                        txtremarks.Text = dgvUnread.CurrentRow.Cells["update_remarks"].Value.ToString();
+                        txtobjective.Text = dgvUnread.CurrentRow.Cells["update_objective"].Value.ToString();
+                        txtupdatedate.Text = dgvUnread.CurrentRow.Cells["update_date"].Value.ToString();
+                    }
+
+                }
+            }
         }
     }
 }
