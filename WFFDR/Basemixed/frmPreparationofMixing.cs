@@ -5125,7 +5125,7 @@ namespace WFFDR
             popup.TitleColor = Color.White;
             popup.TitlePadding = new Padding(95, 7, 0, 0);
             popup.TitleFont = new Font("Tahoma", 10);
-            popup.ContentText = "RAW MATERIALS VALIDATED SUCCESSFULLY !";
+            popup.ContentText = "RAW MATERIALS VALIDATED SUCCESSFULLY takla!";
             popup.ContentColor = Color.White;
             popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
             popup.Size = new Size(350, 100);
@@ -5145,12 +5145,20 @@ namespace WFFDR
             txtBarcode.Enabled = false;
 
             //keni
-            dSet.Clear();
-            dSet = objStorProc.rdf_sp_new_micro_bmx(0, txtmainfeedcode.Text, "", "", "", "", "", "", "", "", "", "", "", "", "", "startbasemixed");
+            startbmx();
+            //dSet.Clear();
+            //dSet = objStorProc.rdf_sp_new_micro_bmx(0, txtmainfeedcode.Text, "", "", "", "", "", "", "", "", "", "", "", "", "", "startbasemixed");
 
 
 
             actualTextboxColorYellow();
+
+        }
+
+        public void startbmx()
+        {
+            dSet.Clear();
+            dSet = objStorProc.rdf_sp_new_micro_bmx(0, txtmainfeedcode.Text, "", "", "", "", "", "", "", "", "", "", "", "", "", "startbasemixed");
 
         }
 
