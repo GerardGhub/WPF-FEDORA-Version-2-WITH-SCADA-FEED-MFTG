@@ -79,7 +79,7 @@ namespace WFFDR
 
             }
             load_search();
-            //doSearch();
+            
         }
 
         DataSet dset_emp = new DataSet();
@@ -298,20 +298,13 @@ namespace WFFDR
 
             String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
             SqlConnection sql_con = new SqlConnection(connetionString);
-
-
-
             string sqlquery = "UPDATE [dbo].[rdf_repackin_finishgoods] SET reproccess_prod_id='" + lblprod_id.Text + "',fg_reprocess_by='" + lbladdedby.Text + "',proc_time_stamp='" + lbltimestamp.Text + "',fg_added_by='" + txtdate.Text + "'  WHERE  bmx_id_string='" + txtfg_id.Text + "'";
-
             sql_con.Open();
             SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
             SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
             DataTable dt = new DataTable();
             sdr.Fill(dt);
-
             dgvUpdatefg.DataSource = dt;
-
-
         }
 
         void UpdateProdSchedule()
@@ -337,6 +330,7 @@ namespace WFFDR
             dgvProdSched.DataSource = dt;
 
         }
+
         void Alreadyreprocess()
         {
 
@@ -368,39 +362,6 @@ namespace WFFDR
 
 
         }
-
-        void FifoMethod()
-        {
-
-            PopupNotifier popup = new PopupNotifier();
-            popup.Image = Properties.Resources.info;
-            popup.TitleText = "Fedora Notifications";
-            popup.TitleColor = Color.White;
-            popup.TitlePadding = new Padding(95, 7, 0, 0);
-            popup.TitleFont = new Font("Tahoma", 10);
-            popup.ContentText = "Invalid Reprocess FIFO Method, Recommended for Reprocess is the Production ID  " + lblprod_id.Text + "!";
-            popup.ContentColor = Color.White;
-            popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
-            popup.Size = new Size(350, 100);
-            popup.ImageSize = new Size(70, 80);
-
-            popup.BodyColor = Color.Red;
-            popup.Popup();
-            popup.AnimationDuration = 200;
-            popup.ShowOptionsButton.ToString();
-            popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            //txtMainInput.Focus();
-            //txtMainInput.Select();
-            popup.Delay = 500;
-            popup.AnimationInterval = 10;
-            popup.AnimationDuration = 1000;
-
-
-            popup.ShowOptionsButton = true;
-
-
-        }
-
 
 
         void NoMatchedFeedCode()
@@ -505,9 +466,6 @@ namespace WFFDR
         {
 
             dset_emp.Clear();
-
-
-
             dset_emp = objStorProc.sp_GetCategory("LoadFeedtypeData", 0, txtfeedtype.Text, txtproductionid.Text, "");
            
             try
@@ -573,20 +531,7 @@ namespace WFFDR
                 if (dset_emp.Tables.Count > 0)
                 {
                     DataView dv = new DataView(dset_emp.Tables[0]);
-                    //if (myglobal.global_module == "EMPLOYEE")
-                    //{
-                    //    //dv.RowFilter = "firstname like '%" + txtmainsearch.Text + "%' or lastname like '%" + txtsearch.Text + "%' or employee_number like '%" + txtsearch.Text + "%' or employment_status_name like '%" + txtsearch.Text + "%'";
-                    //}
-                    //else if (myglobal.global_module == "Active")
-                    //{
-
-                    //    dv.RowFilter = "fg_id = '" + txtMainInput.Text + "'";
-
-                    //}
-                    //else if (myglobal.global_module == "VISITORS")
-                    //{
-                    //    //dv.RowFilter = "visitors_lastname like '%" + txtsearch.Text + "%' or visitors_firstname like '%" + txtsearch.Text + "%'";
-                    //}
+                 
                     dataGridView1.DataSource = dv;
                     lblrecords.Text = dataGridView1.RowCount.ToString();
 
@@ -595,7 +540,7 @@ namespace WFFDR
                     txtMainInput.Focus();
                     if (lblrecords.Text == "0")
                     {
-                        //MessageBox.Show("FG Barcode Not Found!");
+                     
                         NotExists();
                         panel1.Visible = false;
                         panel2.Visible = false;
@@ -622,7 +567,7 @@ namespace WFFDR
 
 
 
-                        ValidatedSuccess();//gerard
+                        ValidatedSuccess();//takla
                         if (lblstatus.Text == "Reprocess")
                         {
                             //LoadData();
@@ -752,28 +697,7 @@ namespace WFFDR
         {
             if (e.KeyCode == Keys.Enter)
             {
-                //if (lblid.Text == "61")
-                //{
-                //    MessageBox.Show("Lovely Github!");
-                //    if (txtMainInput.Text.Trim() == string.Empty)
-                //    {
-                //        FillUpRequiredFields();
-                //        txtMainInput.Focus();
-                //        return;
-
-                //    }
-                 
-                //        load_search();
-                //        doSearch();
-                  
-         
-                //}
-                //else
-                //{
-
                     btnBarcode_Click(sender, e);
-              
-                //}
             }
         }
 
@@ -832,7 +756,7 @@ namespace WFFDR
 
 
 
-            string sqlquery = "SELECT * FROM [dbo].[rdf_production_advance] WHERE prod_id ='" + txtproductionid.Text + "'";
+            string sqlquery = "SELECT * FROM [dbo].[rdf_production_advance] WHERE prod_id ='" + txtproductionid.Text + "' and ra_feed_selection='1'";
 
 
 
@@ -854,9 +778,6 @@ namespace WFFDR
             {
                
                 Checkdata();
-              
-                //txtreprocessdata.Text = dgvCheckdata.CurrentRow.Cells["total_reprocess_count"].Value.ToString();
-
                 dgvCheckdata_CurrentCellChanged(sender, e);
 
 
@@ -898,29 +819,7 @@ namespace WFFDR
 
         }
 
-        //void checkdata()
-        //{
-
-        //    String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
-        //    SqlConnection sql_con = new SqlConnection(connetionString);
-
-
-
-
-        //    string sqlquery = "SELECT * FROM [dbo].[rdf_repackin_finishgoods] WHERE prod_adv ='" + txtproductionid.Text +"' AND status='Reprocess' AND fg_added_by IS NULL";
-
-
-
-
-        //    sql_con.Open();
-        //    SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
-        //    SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
-        //    DataTable dt = new DataTable();
-        //    sdr.Fill(dt);
-        //    dgvCheckdata.DataSource = dt;
-        //   //txtreprocessdata.Text = dgvCheckdata.RowCount.ToString();
-
-        //}
+    
 
         private void dgvduplicatedata_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
@@ -1005,26 +904,7 @@ namespace WFFDR
             }
 
 
-
-
-
-
-
-
-
-
-
-
         }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label18_Click(object sender, EventArgs e)
-        {
-                    }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {

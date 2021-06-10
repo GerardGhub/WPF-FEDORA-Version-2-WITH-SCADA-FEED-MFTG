@@ -1035,6 +1035,56 @@ namespace WFFDR.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap price_tag_16px {
+            get {
+                object obj = ResourceManager.GetObject("price_tag_16px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap price_tag_filled_16px {
+            get {
+                object obj = ResourceManager.GetObject("price_tag_filled_16px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap price_tag_filled_24px {
+            get {
+                object obj = ResourceManager.GetObject("price_tag_filled_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap private2_24px {
+            get {
+                object obj = ResourceManager.GetObject("private2_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap private2_26px {
+            get {
+                object obj = ResourceManager.GetObject("private2_26px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap RDF_Logo {
             get {
                 object obj = ResourceManager.GetObject("RDF Logo", resourceCulture);

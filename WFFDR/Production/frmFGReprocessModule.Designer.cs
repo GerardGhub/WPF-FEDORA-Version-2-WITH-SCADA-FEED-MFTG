@@ -32,7 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFGReprocessModule));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -53,6 +52,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFGReprocessModule));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -72,12 +72,10 @@
             this.AGING = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtMainInput = new System.Windows.Forms.TextBox();
             this.label56 = new System.Windows.Forms.Label();
-            this.btnBarcode = new Bunifu.Framework.UI.BunifuThinButton2();
             this.lbltimestamp = new System.Windows.Forms.Label();
             this.lbladdedby = new System.Windows.Forms.Label();
             this.lblprod_id = new System.Windows.Forms.Label();
             this.lblrecordforreprocess = new System.Windows.Forms.Label();
-            this.btnReprocessclick = new Bunifu.Framework.UI.BunifuThinButton2();
             this.dgvduplicatedata = new System.Windows.Forms.DataGridView();
             this.lblrecords = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -109,18 +107,12 @@
             this.txtdate4 = new System.Windows.Forms.TextBox();
             this.txtfgoptions = new System.Windows.Forms.Label();
             this.txtdate3 = new System.Windows.Forms.TextBox();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtdate2 = new System.Windows.Forms.TextBox();
-            this.bunifuThinButton211 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtdate1 = new System.Windows.Forms.TextBox();
-            this.bunifuThinButton210 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.lblfglabel = new System.Windows.Forms.Label();
-            this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.bunifuThinButton28 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton29 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtprocessBy = new System.Windows.Forms.TextBox();
             this.lblstatus = new System.Windows.Forms.Label();
             this.txtdate = new System.Windows.Forms.Label();
@@ -149,9 +141,7 @@
             this.lblreject = new System.Windows.Forms.Label();
             this.lblreprocess = new System.Windows.Forms.Label();
             this.lblgood = new System.Windows.Forms.Label();
-            this.btnPrint = new System.Windows.Forms.Button();
             this.lblid = new System.Windows.Forms.Label();
-            this.btnTransForm = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.txtremarks = new System.Windows.Forms.TextBox();
             this.cboStatus = new System.Windows.Forms.ComboBox();
@@ -159,8 +149,18 @@
             this.gbMain = new System.Windows.Forms.GroupBox();
             this.cboMixingCombination = new System.Windows.Forms.ComboBox();
             this.lblmixing = new System.Windows.Forms.Label();
+            this.btnTransForm = new System.Windows.Forms.Button();
             this.dgvProdPlan = new System.Windows.Forms.DataGridView();
             this.lblbarcode = new System.Windows.Forms.Label();
+            this.btnPrint = new System.Windows.Forms.Button();
+            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton211 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnReprocessclick = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton210 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnBarcode = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton29 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton28 = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvduplicatedata)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -218,7 +218,7 @@
             this.dataView.EnableHeadersVisualStyles = false;
             this.dataView.GridColor = System.Drawing.SystemColors.Control;
             this.dataView.Location = new System.Drawing.Point(8, 25);
-            this.dataView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataView.Margin = new System.Windows.Forms.Padding(4);
             this.dataView.MultiSelect = false;
             this.dataView.Name = "dataView";
             this.dataView.ReadOnly = true;
@@ -357,8 +357,8 @@
             this.txtMainInput.BackColor = System.Drawing.SystemColors.Window;
             this.txtMainInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMainInput.Font = new System.Drawing.Font("Segoe UI", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMainInput.Location = new System.Drawing.Point(40, 39);
-            this.txtMainInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMainInput.Location = new System.Drawing.Point(40, 43);
+            this.txtMainInput.Margin = new System.Windows.Forms.Padding(4);
             this.txtMainInput.MaxLength = 100;
             this.txtMainInput.Name = "txtMainInput";
             this.txtMainInput.Size = new System.Drawing.Size(262, 29);
@@ -373,7 +373,7 @@
             this.label56.BackColor = System.Drawing.Color.Transparent;
             this.label56.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label56.ForeColor = System.Drawing.Color.Black;
-            this.label56.Location = new System.Drawing.Point(9, 4);
+            this.label56.Location = new System.Drawing.Point(9, 8);
             this.label56.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(299, 34);
@@ -381,33 +381,6 @@
             this.label56.Text = "SCAN THE BARCODE HERE ...";
             this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label56.UseCompatibleTextRendering = true;
-            // 
-            // btnBarcode
-            // 
-            this.btnBarcode.ActiveBorderThickness = 1;
-            this.btnBarcode.ActiveCornerRadius = 20;
-            this.btnBarcode.ActiveFillColor = System.Drawing.Color.Crimson;
-            this.btnBarcode.ActiveForecolor = System.Drawing.SystemColors.Control;
-            this.btnBarcode.ActiveLineColor = System.Drawing.Color.Crimson;
-            this.btnBarcode.BackColor = System.Drawing.SystemColors.Window;
-            this.btnBarcode.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBarcode.BackgroundImage")));
-            this.btnBarcode.ButtonText = "STOP IMPORTING";
-            this.btnBarcode.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBarcode.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBarcode.ForeColor = System.Drawing.Color.PaleVioletRed;
-            this.btnBarcode.IdleBorderThickness = 1;
-            this.btnBarcode.IdleCornerRadius = 20;
-            this.btnBarcode.IdleFillColor = System.Drawing.Color.White;
-            this.btnBarcode.IdleForecolor = System.Drawing.Color.PaleVioletRed;
-            this.btnBarcode.IdleLineColor = System.Drawing.Color.PaleVioletRed;
-            this.btnBarcode.Location = new System.Drawing.Point(511, 377);
-            this.btnBarcode.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnBarcode.Name = "btnBarcode";
-            this.btnBarcode.Size = new System.Drawing.Size(139, 41);
-            this.btnBarcode.TabIndex = 554;
-            this.btnBarcode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnBarcode.Visible = false;
-            this.btnBarcode.Click += new System.EventHandler(this.btnBarcode_Click);
             // 
             // lbltimestamp
             // 
@@ -454,33 +427,6 @@
             this.lblrecordforreprocess.Text = "label1";
             this.lblrecordforreprocess.Visible = false;
             // 
-            // btnReprocessclick
-            // 
-            this.btnReprocessclick.ActiveBorderThickness = 1;
-            this.btnReprocessclick.ActiveCornerRadius = 20;
-            this.btnReprocessclick.ActiveFillColor = System.Drawing.Color.Crimson;
-            this.btnReprocessclick.ActiveForecolor = System.Drawing.SystemColors.Control;
-            this.btnReprocessclick.ActiveLineColor = System.Drawing.Color.Crimson;
-            this.btnReprocessclick.BackColor = System.Drawing.SystemColors.Window;
-            this.btnReprocessclick.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnReprocessclick.BackgroundImage")));
-            this.btnReprocessclick.ButtonText = "REPROCESS";
-            this.btnReprocessclick.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReprocessclick.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReprocessclick.ForeColor = System.Drawing.Color.PaleVioletRed;
-            this.btnReprocessclick.IdleBorderThickness = 1;
-            this.btnReprocessclick.IdleCornerRadius = 15;
-            this.btnReprocessclick.IdleFillColor = System.Drawing.Color.CornflowerBlue;
-            this.btnReprocessclick.IdleForecolor = System.Drawing.SystemColors.Window;
-            this.btnReprocessclick.IdleLineColor = System.Drawing.SystemColors.Window;
-            this.btnReprocessclick.Location = new System.Drawing.Point(19, 745);
-            this.btnReprocessclick.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnReprocessclick.Name = "btnReprocessclick";
-            this.btnReprocessclick.Size = new System.Drawing.Size(128, 50);
-            this.btnReprocessclick.TabIndex = 660;
-            this.btnReprocessclick.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnReprocessclick.Visible = false;
-            this.btnReprocessclick.Click += new System.EventHandler(this.btnReprocessclick_Click);
-            // 
             // dgvduplicatedata
             // 
             this.dgvduplicatedata.AllowUserToAddRows = false;
@@ -509,8 +455,8 @@
             this.dgvduplicatedata.DefaultCellStyle = dataGridViewCellStyle35;
             this.dgvduplicatedata.EnableHeadersVisualStyles = false;
             this.dgvduplicatedata.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvduplicatedata.Location = new System.Drawing.Point(47, 825);
-            this.dgvduplicatedata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvduplicatedata.Location = new System.Drawing.Point(527, 877);
+            this.dgvduplicatedata.Margin = new System.Windows.Forms.Padding(4);
             this.dgvduplicatedata.Name = "dgvduplicatedata";
             this.dgvduplicatedata.ReadOnly = true;
             dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -567,7 +513,7 @@
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.Location = new System.Drawing.Point(1278, 48);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -612,9 +558,9 @@
             this.GroupBox3.Controls.Add(this.dateTimePicker1);
             this.GroupBox3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupBox3.Location = new System.Drawing.Point(15, 7);
-            this.GroupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.GroupBox3.Name = "GroupBox3";
-            this.GroupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.GroupBox3.Size = new System.Drawing.Size(1116, 110);
             this.GroupBox3.TabIndex = 675;
             this.GroupBox3.TabStop = false;
@@ -636,7 +582,7 @@
             this.txtbatch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbatch.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbatch.Location = new System.Drawing.Point(885, 69);
-            this.txtbatch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbatch.Margin = new System.Windows.Forms.Padding(4);
             this.txtbatch.Name = "txtbatch";
             this.txtbatch.ReadOnly = true;
             this.txtbatch.Size = new System.Drawing.Size(207, 25);
@@ -658,7 +604,7 @@
             this.txtbags.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtbags.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbags.Location = new System.Drawing.Point(885, 31);
-            this.txtbags.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbags.Margin = new System.Windows.Forms.Padding(4);
             this.txtbags.Name = "txtbags";
             this.txtbags.ReadOnly = true;
             this.txtbags.Size = new System.Drawing.Size(209, 26);
@@ -680,7 +626,7 @@
             this.txtfg_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtfg_id.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtfg_id.Location = new System.Drawing.Point(575, 68);
-            this.txtfg_id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtfg_id.Margin = new System.Windows.Forms.Padding(4);
             this.txtfg_id.Name = "txtfg_id";
             this.txtfg_id.ReadOnly = true;
             this.txtfg_id.Size = new System.Drawing.Size(165, 25);
@@ -722,7 +668,7 @@
             this.txtproductionid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtproductionid.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtproductionid.Location = new System.Drawing.Point(147, 30);
-            this.txtproductionid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtproductionid.Margin = new System.Windows.Forms.Padding(4);
             this.txtproductionid.Name = "txtproductionid";
             this.txtproductionid.ReadOnly = true;
             this.txtproductionid.Size = new System.Drawing.Size(209, 26);
@@ -734,7 +680,7 @@
             this.txtfeedcode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtfeedcode.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtfeedcode.Location = new System.Drawing.Point(147, 66);
-            this.txtfeedcode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtfeedcode.Margin = new System.Windows.Forms.Padding(4);
             this.txtfeedcode.Name = "txtfeedcode";
             this.txtfeedcode.ReadOnly = true;
             this.txtfeedcode.Size = new System.Drawing.Size(209, 26);
@@ -747,7 +693,7 @@
             this.dateTimePicker1.Enabled = false;
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(575, 30);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(164, 24);
             this.dateTimePicker1.TabIndex = 423;
@@ -781,7 +727,7 @@
             this.dgvUpdatefg.EnableHeadersVisualStyles = false;
             this.dgvUpdatefg.GridColor = System.Drawing.SystemColors.Control;
             this.dgvUpdatefg.Location = new System.Drawing.Point(685, 421);
-            this.dgvUpdatefg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvUpdatefg.Margin = new System.Windows.Forms.Padding(4);
             this.dgvUpdatefg.Name = "dgvUpdatefg";
             this.dgvUpdatefg.ReadOnly = true;
             dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -950,32 +896,6 @@
             this.txtdate3.Size = new System.Drawing.Size(216, 15);
             this.txtdate3.TabIndex = 484;
             // 
-            // bunifuThinButton22
-            // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton22.BackColor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Enabled = false;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 10;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.PaleVioletRed;
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(1740, 641);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(247, 46);
-            this.bunifuThinButton22.TabIndex = 481;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // txtdate2
             // 
             this.txtdate2.BackColor = System.Drawing.SystemColors.Window;
@@ -986,32 +906,6 @@
             this.txtdate2.ReadOnly = true;
             this.txtdate2.Size = new System.Drawing.Size(213, 15);
             this.txtdate2.TabIndex = 483;
-            // 
-            // bunifuThinButton211
-            // 
-            this.bunifuThinButton211.ActiveBorderThickness = 1;
-            this.bunifuThinButton211.ActiveCornerRadius = 20;
-            this.bunifuThinButton211.ActiveFillColor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton211.ActiveForecolor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton211.ActiveLineColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton211.BackColor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton211.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton211.BackgroundImage")));
-            this.bunifuThinButton211.ButtonText = "";
-            this.bunifuThinButton211.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton211.Enabled = false;
-            this.bunifuThinButton211.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton211.ForeColor = System.Drawing.Color.PaleVioletRed;
-            this.bunifuThinButton211.IdleBorderThickness = 1;
-            this.bunifuThinButton211.IdleCornerRadius = 10;
-            this.bunifuThinButton211.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton211.IdleForecolor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuThinButton211.IdleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuThinButton211.Location = new System.Drawing.Point(1739, 591);
-            this.bunifuThinButton211.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuThinButton211.Name = "bunifuThinButton211";
-            this.bunifuThinButton211.Size = new System.Drawing.Size(247, 46);
-            this.bunifuThinButton211.TabIndex = 480;
-            this.bunifuThinButton211.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtdate1
             // 
@@ -1024,32 +918,6 @@
             this.txtdate1.Size = new System.Drawing.Size(200, 15);
             this.txtdate1.TabIndex = 482;
             // 
-            // bunifuThinButton210
-            // 
-            this.bunifuThinButton210.ActiveBorderThickness = 1;
-            this.bunifuThinButton210.ActiveCornerRadius = 20;
-            this.bunifuThinButton210.ActiveFillColor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton210.ActiveForecolor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton210.ActiveLineColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton210.BackColor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton210.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton210.BackgroundImage")));
-            this.bunifuThinButton210.ButtonText = "";
-            this.bunifuThinButton210.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton210.Enabled = false;
-            this.bunifuThinButton210.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton210.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuThinButton210.IdleBorderThickness = 1;
-            this.bunifuThinButton210.IdleCornerRadius = 10;
-            this.bunifuThinButton210.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton210.IdleForecolor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuThinButton210.IdleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuThinButton210.Location = new System.Drawing.Point(1317, 593);
-            this.bunifuThinButton210.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuThinButton210.Name = "bunifuThinButton210";
-            this.bunifuThinButton210.Size = new System.Drawing.Size(228, 46);
-            this.bunifuThinButton210.TabIndex = 478;
-            this.bunifuThinButton210.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // lblfglabel
             // 
             this.lblfglabel.AutoSize = true;
@@ -1061,32 +929,6 @@
             this.lblfglabel.TabIndex = 476;
             this.lblfglabel.Text = "FINISHED GOODS :";
             this.lblfglabel.Visible = false;
-            // 
-            // bunifuThinButton24
-            // 
-            this.bunifuThinButton24.ActiveBorderThickness = 1;
-            this.bunifuThinButton24.ActiveCornerRadius = 20;
-            this.bunifuThinButton24.ActiveFillColor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton24.ActiveForecolor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton24.ActiveLineColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton24.BackColor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
-            this.bunifuThinButton24.ButtonText = "";
-            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton24.Enabled = false;
-            this.bunifuThinButton24.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton24.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuThinButton24.IdleBorderThickness = 1;
-            this.bunifuThinButton24.IdleCornerRadius = 10;
-            this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.PaleVioletRed;
-            this.bunifuThinButton24.IdleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuThinButton24.Location = new System.Drawing.Point(1317, 640);
-            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuThinButton24.Name = "bunifuThinButton24";
-            this.bunifuThinButton24.Size = new System.Drawing.Size(228, 46);
-            this.bunifuThinButton24.TabIndex = 479;
-            this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -1121,65 +963,13 @@
             this.label5.TabIndex = 477;
             this.label5.Text = "MACRO PREPA :";
             // 
-            // bunifuThinButton28
-            // 
-            this.bunifuThinButton28.ActiveBorderThickness = 1;
-            this.bunifuThinButton28.ActiveCornerRadius = 20;
-            this.bunifuThinButton28.ActiveFillColor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton28.ActiveForecolor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton28.ActiveLineColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton28.BackColor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton28.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton28.BackgroundImage")));
-            this.bunifuThinButton28.ButtonText = "";
-            this.bunifuThinButton28.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton28.Enabled = false;
-            this.bunifuThinButton28.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton28.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuThinButton28.IdleBorderThickness = 1;
-            this.bunifuThinButton28.IdleCornerRadius = 10;
-            this.bunifuThinButton28.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton28.IdleForecolor = System.Drawing.Color.PaleVioletRed;
-            this.bunifuThinButton28.IdleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuThinButton28.Location = new System.Drawing.Point(1739, 681);
-            this.bunifuThinButton28.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuThinButton28.Name = "bunifuThinButton28";
-            this.bunifuThinButton28.Size = new System.Drawing.Size(247, 46);
-            this.bunifuThinButton28.TabIndex = 498;
-            this.bunifuThinButton28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bunifuThinButton29
-            // 
-            this.bunifuThinButton29.ActiveBorderThickness = 1;
-            this.bunifuThinButton29.ActiveCornerRadius = 20;
-            this.bunifuThinButton29.ActiveFillColor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton29.ActiveForecolor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton29.ActiveLineColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton29.BackColor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton29.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton29.BackgroundImage")));
-            this.bunifuThinButton29.ButtonText = "";
-            this.bunifuThinButton29.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton29.Enabled = false;
-            this.bunifuThinButton29.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton29.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuThinButton29.IdleBorderThickness = 1;
-            this.bunifuThinButton29.IdleCornerRadius = 10;
-            this.bunifuThinButton29.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton29.IdleForecolor = System.Drawing.Color.PaleVioletRed;
-            this.bunifuThinButton29.IdleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuThinButton29.Location = new System.Drawing.Point(1316, 681);
-            this.bunifuThinButton29.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuThinButton29.Name = "bunifuThinButton29";
-            this.bunifuThinButton29.Size = new System.Drawing.Size(228, 46);
-            this.bunifuThinButton29.TabIndex = 497;
-            this.bunifuThinButton29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // txtprocessBy
             // 
             this.txtprocessBy.BackColor = System.Drawing.Color.White;
             this.txtprocessBy.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtprocessBy.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtprocessBy.Location = new System.Drawing.Point(380, 833);
-            this.txtprocessBy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtprocessBy.Margin = new System.Windows.Forms.Padding(4);
             this.txtprocessBy.Name = "txtprocessBy";
             this.txtprocessBy.ReadOnly = true;
             this.txtprocessBy.Size = new System.Drawing.Size(208, 18);
@@ -1236,7 +1026,7 @@
             this.dgvProdSched.EnableHeadersVisualStyles = false;
             this.dgvProdSched.GridColor = System.Drawing.SystemColors.Control;
             this.dgvProdSched.Location = new System.Drawing.Point(19, 815);
-            this.dgvProdSched.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvProdSched.Margin = new System.Windows.Forms.Padding(4);
             this.dgvProdSched.Name = "dgvProdSched";
             this.dgvProdSched.ReadOnly = true;
             dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -1258,7 +1048,7 @@
             this.txtreprocessdata.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtreprocessdata.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtreprocessdata.Location = new System.Drawing.Point(511, 798);
-            this.txtreprocessdata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtreprocessdata.Margin = new System.Windows.Forms.Padding(4);
             this.txtreprocessdata.Name = "txtreprocessdata";
             this.txtreprocessdata.ReadOnly = true;
             this.txtreprocessdata.Size = new System.Drawing.Size(208, 18);
@@ -1270,7 +1060,7 @@
             this.txtactualprocess.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtactualprocess.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtactualprocess.Location = new System.Drawing.Point(511, 801);
-            this.txtactualprocess.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtactualprocess.Margin = new System.Windows.Forms.Padding(4);
             this.txtactualprocess.Name = "txtactualprocess";
             this.txtactualprocess.ReadOnly = true;
             this.txtactualprocess.Size = new System.Drawing.Size(208, 18);
@@ -1284,7 +1074,7 @@
             this.panel2.Controls.Add(this.txtfgoptions);
             this.panel2.Controls.Add(this.lblstatus);
             this.panel2.Location = new System.Drawing.Point(251, 42);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(701, 106);
             this.panel2.TabIndex = 673;
@@ -1342,7 +1132,7 @@
             this.dgvCheckdata.EnableHeadersVisualStyles = false;
             this.dgvCheckdata.GridColor = System.Drawing.SystemColors.Control;
             this.dgvCheckdata.Location = new System.Drawing.Point(83, 804);
-            this.dgvCheckdata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvCheckdata.Margin = new System.Windows.Forms.Padding(4);
             this.dgvCheckdata.Name = "dgvCheckdata";
             this.dgvCheckdata.ReadOnly = true;
             dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -1470,9 +1260,9 @@
             this.groupBox1.Controls.Add(this.lbltotaldata);
             this.groupBox1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(16, 300);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1219, 423);
             this.groupBox1.TabIndex = 675;
             this.groupBox1.TabStop = false;
@@ -1568,22 +1358,6 @@
             this.lblgood.Text = "Good";
             this.lblgood.Visible = false;
             // 
-            // btnPrint
-            // 
-            this.btnPrint.BackColor = System.Drawing.SystemColors.Window;
-            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
-            this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPrint.Location = new System.Drawing.Point(1125, 750);
-            this.btnPrint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(109, 34);
-            this.btnPrint.TabIndex = 691;
-            this.btnPrint.Text = "&Print";
-            this.btnPrint.UseVisualStyleBackColor = false;
-            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
-            // 
             // lblid
             // 
             this.lblid.AutoSize = true;
@@ -1594,23 +1368,6 @@
             this.lblid.TabIndex = 692;
             this.lblid.Text = "Production ID :";
             this.lblid.Visible = false;
-            // 
-            // btnTransForm
-            // 
-            this.btnTransForm.BackColor = System.Drawing.SystemColors.Window;
-            this.btnTransForm.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTransForm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnTransForm.Image = ((System.Drawing.Image)(resources.GetObject("btnTransForm.Image")));
-            this.btnTransForm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTransForm.Location = new System.Drawing.Point(832, 16);
-            this.btnTransForm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnTransForm.Name = "btnTransForm";
-            this.btnTransForm.Size = new System.Drawing.Size(124, 34);
-            this.btnTransForm.TabIndex = 693;
-            this.btnTransForm.Text = "&Transform";
-            this.btnTransForm.UseVisualStyleBackColor = false;
-            this.btnTransForm.Visible = false;
-            this.btnTransForm.Click += new System.EventHandler(this.btnTransForm_Click);
             // 
             // label6
             // 
@@ -1628,7 +1385,7 @@
             this.txtremarks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtremarks.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtremarks.Location = new System.Drawing.Point(469, 15);
-            this.txtremarks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtremarks.Margin = new System.Windows.Forms.Padding(4);
             this.txtremarks.Multiline = true;
             this.txtremarks.Name = "txtremarks";
             this.txtremarks.Size = new System.Drawing.Size(345, 35);
@@ -1645,7 +1402,7 @@
             "Rejected",
             "Outright"});
             this.cboStatus.Location = new System.Drawing.Point(75, 23);
-            this.cboStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboStatus.Margin = new System.Windows.Forms.Padding(4);
             this.cboStatus.Name = "cboStatus";
             this.cboStatus.Size = new System.Drawing.Size(149, 24);
             this.cboStatus.TabIndex = 694;
@@ -1672,9 +1429,9 @@
             this.gbMain.Controls.Add(this.label17);
             this.gbMain.Controls.Add(this.cboStatus);
             this.gbMain.Location = new System.Drawing.Point(155, 734);
-            this.gbMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbMain.Margin = new System.Windows.Forms.Padding(4);
             this.gbMain.Name = "gbMain";
-            this.gbMain.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbMain.Padding = new System.Windows.Forms.Padding(4);
             this.gbMain.Size = new System.Drawing.Size(963, 59);
             this.gbMain.TabIndex = 657;
             this.gbMain.TabStop = false;
@@ -1692,7 +1449,7 @@
             "Rejected",
             "Outright"});
             this.cboMixingCombination.Location = new System.Drawing.Point(233, 23);
-            this.cboMixingCombination.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboMixingCombination.Margin = new System.Windows.Forms.Padding(4);
             this.cboMixingCombination.Name = "cboMixingCombination";
             this.cboMixingCombination.Size = new System.Drawing.Size(149, 24);
             this.cboMixingCombination.TabIndex = 697;
@@ -1708,6 +1465,23 @@
             this.lblmixing.TabIndex = 696;
             this.lblmixing.Text = "Mixing Combination";
             this.lblmixing.Visible = false;
+            // 
+            // btnTransForm
+            // 
+            this.btnTransForm.BackColor = System.Drawing.SystemColors.Window;
+            this.btnTransForm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTransForm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnTransForm.Image = ((System.Drawing.Image)(resources.GetObject("btnTransForm.Image")));
+            this.btnTransForm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTransForm.Location = new System.Drawing.Point(832, 16);
+            this.btnTransForm.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTransForm.Name = "btnTransForm";
+            this.btnTransForm.Size = new System.Drawing.Size(124, 34);
+            this.btnTransForm.TabIndex = 693;
+            this.btnTransForm.Text = "&Transform";
+            this.btnTransForm.UseVisualStyleBackColor = false;
+            this.btnTransForm.Visible = false;
+            this.btnTransForm.Click += new System.EventHandler(this.btnTransForm_Click);
             // 
             // dgvProdPlan
             // 
@@ -1738,7 +1512,7 @@
             this.dgvProdPlan.EnableHeadersVisualStyles = false;
             this.dgvProdPlan.GridColor = System.Drawing.SystemColors.Control;
             this.dgvProdPlan.Location = new System.Drawing.Point(1278, 264);
-            this.dgvProdPlan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvProdPlan.Margin = new System.Windows.Forms.Padding(4);
             this.dgvProdPlan.Name = "dgvProdPlan";
             this.dgvProdPlan.ReadOnly = true;
             dataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -1766,12 +1540,238 @@
             this.lblbarcode.Text = "Production ID :";
             this.lblbarcode.Visible = false;
             // 
+            // btnPrint
+            // 
+            this.btnPrint.BackColor = System.Drawing.SystemColors.Window;
+            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
+            this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrint.Location = new System.Drawing.Point(1125, 750);
+            this.btnPrint.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(109, 34);
+            this.btnPrint.TabIndex = 691;
+            this.btnPrint.Text = "&Print";
+            this.btnPrint.UseVisualStyleBackColor = false;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
+            // bunifuThinButton22
+            // 
+            this.bunifuThinButton22.ActiveBorderThickness = 1;
+            this.bunifuThinButton22.ActiveCornerRadius = 20;
+            this.bunifuThinButton22.ActiveFillColor = System.Drawing.SystemColors.Window;
+            this.bunifuThinButton22.ActiveForecolor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton22.ActiveLineColor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton22.BackColor = System.Drawing.SystemColors.Window;
+            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
+            this.bunifuThinButton22.ButtonText = "";
+            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton22.Enabled = false;
+            this.bunifuThinButton22.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton22.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bunifuThinButton22.IdleBorderThickness = 1;
+            this.bunifuThinButton22.IdleCornerRadius = 10;
+            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.PaleVioletRed;
+            this.bunifuThinButton22.IdleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bunifuThinButton22.Location = new System.Drawing.Point(1740, 641);
+            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuThinButton22.Name = "bunifuThinButton22";
+            this.bunifuThinButton22.Size = new System.Drawing.Size(247, 46);
+            this.bunifuThinButton22.TabIndex = 481;
+            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bunifuThinButton211
+            // 
+            this.bunifuThinButton211.ActiveBorderThickness = 1;
+            this.bunifuThinButton211.ActiveCornerRadius = 20;
+            this.bunifuThinButton211.ActiveFillColor = System.Drawing.SystemColors.Window;
+            this.bunifuThinButton211.ActiveForecolor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton211.ActiveLineColor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton211.BackColor = System.Drawing.SystemColors.Window;
+            this.bunifuThinButton211.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton211.BackgroundImage")));
+            this.bunifuThinButton211.ButtonText = "";
+            this.bunifuThinButton211.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton211.Enabled = false;
+            this.bunifuThinButton211.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton211.ForeColor = System.Drawing.Color.PaleVioletRed;
+            this.bunifuThinButton211.IdleBorderThickness = 1;
+            this.bunifuThinButton211.IdleCornerRadius = 10;
+            this.bunifuThinButton211.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton211.IdleForecolor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bunifuThinButton211.IdleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bunifuThinButton211.Location = new System.Drawing.Point(1739, 591);
+            this.bunifuThinButton211.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuThinButton211.Name = "bunifuThinButton211";
+            this.bunifuThinButton211.Size = new System.Drawing.Size(247, 46);
+            this.bunifuThinButton211.TabIndex = 480;
+            this.bunifuThinButton211.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnReprocessclick
+            // 
+            this.btnReprocessclick.ActiveBorderThickness = 1;
+            this.btnReprocessclick.ActiveCornerRadius = 20;
+            this.btnReprocessclick.ActiveFillColor = System.Drawing.Color.Crimson;
+            this.btnReprocessclick.ActiveForecolor = System.Drawing.SystemColors.Control;
+            this.btnReprocessclick.ActiveLineColor = System.Drawing.Color.Crimson;
+            this.btnReprocessclick.BackColor = System.Drawing.SystemColors.Window;
+            this.btnReprocessclick.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnReprocessclick.BackgroundImage")));
+            this.btnReprocessclick.ButtonText = "REPROCESS";
+            this.btnReprocessclick.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReprocessclick.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReprocessclick.ForeColor = System.Drawing.Color.PaleVioletRed;
+            this.btnReprocessclick.IdleBorderThickness = 1;
+            this.btnReprocessclick.IdleCornerRadius = 15;
+            this.btnReprocessclick.IdleFillColor = System.Drawing.Color.CornflowerBlue;
+            this.btnReprocessclick.IdleForecolor = System.Drawing.SystemColors.Window;
+            this.btnReprocessclick.IdleLineColor = System.Drawing.SystemColors.Window;
+            this.btnReprocessclick.Location = new System.Drawing.Point(19, 745);
+            this.btnReprocessclick.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnReprocessclick.Name = "btnReprocessclick";
+            this.btnReprocessclick.Size = new System.Drawing.Size(128, 50);
+            this.btnReprocessclick.TabIndex = 660;
+            this.btnReprocessclick.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnReprocessclick.Visible = false;
+            this.btnReprocessclick.Click += new System.EventHandler(this.btnReprocessclick_Click);
+            // 
+            // bunifuThinButton210
+            // 
+            this.bunifuThinButton210.ActiveBorderThickness = 1;
+            this.bunifuThinButton210.ActiveCornerRadius = 20;
+            this.bunifuThinButton210.ActiveFillColor = System.Drawing.SystemColors.Window;
+            this.bunifuThinButton210.ActiveForecolor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton210.ActiveLineColor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton210.BackColor = System.Drawing.SystemColors.Window;
+            this.bunifuThinButton210.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton210.BackgroundImage")));
+            this.bunifuThinButton210.ButtonText = "";
+            this.bunifuThinButton210.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton210.Enabled = false;
+            this.bunifuThinButton210.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton210.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bunifuThinButton210.IdleBorderThickness = 1;
+            this.bunifuThinButton210.IdleCornerRadius = 10;
+            this.bunifuThinButton210.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton210.IdleForecolor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bunifuThinButton210.IdleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bunifuThinButton210.Location = new System.Drawing.Point(1317, 593);
+            this.bunifuThinButton210.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuThinButton210.Name = "bunifuThinButton210";
+            this.bunifuThinButton210.Size = new System.Drawing.Size(228, 46);
+            this.bunifuThinButton210.TabIndex = 478;
+            this.bunifuThinButton210.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bunifuThinButton24
+            // 
+            this.bunifuThinButton24.ActiveBorderThickness = 1;
+            this.bunifuThinButton24.ActiveCornerRadius = 20;
+            this.bunifuThinButton24.ActiveFillColor = System.Drawing.SystemColors.Window;
+            this.bunifuThinButton24.ActiveForecolor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton24.ActiveLineColor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton24.BackColor = System.Drawing.SystemColors.Window;
+            this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
+            this.bunifuThinButton24.ButtonText = "";
+            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton24.Enabled = false;
+            this.bunifuThinButton24.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton24.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bunifuThinButton24.IdleBorderThickness = 1;
+            this.bunifuThinButton24.IdleCornerRadius = 10;
+            this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.PaleVioletRed;
+            this.bunifuThinButton24.IdleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bunifuThinButton24.Location = new System.Drawing.Point(1317, 640);
+            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuThinButton24.Name = "bunifuThinButton24";
+            this.bunifuThinButton24.Size = new System.Drawing.Size(228, 46);
+            this.bunifuThinButton24.TabIndex = 479;
+            this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnBarcode
+            // 
+            this.btnBarcode.ActiveBorderThickness = 1;
+            this.btnBarcode.ActiveCornerRadius = 20;
+            this.btnBarcode.ActiveFillColor = System.Drawing.Color.Crimson;
+            this.btnBarcode.ActiveForecolor = System.Drawing.SystemColors.Control;
+            this.btnBarcode.ActiveLineColor = System.Drawing.Color.Crimson;
+            this.btnBarcode.BackColor = System.Drawing.SystemColors.Window;
+            this.btnBarcode.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBarcode.BackgroundImage")));
+            this.btnBarcode.ButtonText = "STOP IMPORTING";
+            this.btnBarcode.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBarcode.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBarcode.ForeColor = System.Drawing.Color.PaleVioletRed;
+            this.btnBarcode.IdleBorderThickness = 1;
+            this.btnBarcode.IdleCornerRadius = 20;
+            this.btnBarcode.IdleFillColor = System.Drawing.Color.White;
+            this.btnBarcode.IdleForecolor = System.Drawing.Color.PaleVioletRed;
+            this.btnBarcode.IdleLineColor = System.Drawing.Color.PaleVioletRed;
+            this.btnBarcode.Location = new System.Drawing.Point(511, 377);
+            this.btnBarcode.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnBarcode.Name = "btnBarcode";
+            this.btnBarcode.Size = new System.Drawing.Size(139, 41);
+            this.btnBarcode.TabIndex = 554;
+            this.btnBarcode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnBarcode.Visible = false;
+            this.btnBarcode.Click += new System.EventHandler(this.btnBarcode_Click);
+            // 
+            // bunifuThinButton29
+            // 
+            this.bunifuThinButton29.ActiveBorderThickness = 1;
+            this.bunifuThinButton29.ActiveCornerRadius = 20;
+            this.bunifuThinButton29.ActiveFillColor = System.Drawing.SystemColors.Window;
+            this.bunifuThinButton29.ActiveForecolor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton29.ActiveLineColor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton29.BackColor = System.Drawing.SystemColors.Window;
+            this.bunifuThinButton29.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton29.BackgroundImage")));
+            this.bunifuThinButton29.ButtonText = "";
+            this.bunifuThinButton29.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton29.Enabled = false;
+            this.bunifuThinButton29.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton29.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bunifuThinButton29.IdleBorderThickness = 1;
+            this.bunifuThinButton29.IdleCornerRadius = 10;
+            this.bunifuThinButton29.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton29.IdleForecolor = System.Drawing.Color.PaleVioletRed;
+            this.bunifuThinButton29.IdleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bunifuThinButton29.Location = new System.Drawing.Point(1316, 681);
+            this.bunifuThinButton29.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuThinButton29.Name = "bunifuThinButton29";
+            this.bunifuThinButton29.Size = new System.Drawing.Size(228, 46);
+            this.bunifuThinButton29.TabIndex = 497;
+            this.bunifuThinButton29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bunifuThinButton28
+            // 
+            this.bunifuThinButton28.ActiveBorderThickness = 1;
+            this.bunifuThinButton28.ActiveCornerRadius = 20;
+            this.bunifuThinButton28.ActiveFillColor = System.Drawing.SystemColors.Window;
+            this.bunifuThinButton28.ActiveForecolor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton28.ActiveLineColor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton28.BackColor = System.Drawing.SystemColors.Window;
+            this.bunifuThinButton28.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton28.BackgroundImage")));
+            this.bunifuThinButton28.ButtonText = "";
+            this.bunifuThinButton28.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton28.Enabled = false;
+            this.bunifuThinButton28.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton28.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bunifuThinButton28.IdleBorderThickness = 1;
+            this.bunifuThinButton28.IdleCornerRadius = 10;
+            this.bunifuThinButton28.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton28.IdleForecolor = System.Drawing.Color.PaleVioletRed;
+            this.bunifuThinButton28.IdleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bunifuThinButton28.Location = new System.Drawing.Point(1739, 681);
+            this.bunifuThinButton28.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuThinButton28.Name = "bunifuThinButton28";
+            this.bunifuThinButton28.Size = new System.Drawing.Size(247, 46);
+            this.bunifuThinButton28.TabIndex = 498;
+            this.bunifuThinButton28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmFGReprocessModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(1245, 799);
+            this.ClientSize = new System.Drawing.Size(1248, 795);
             this.Controls.Add(this.dgvProdPlan);
             this.Controls.Add(this.gbMain);
             this.Controls.Add(this.lblid);
@@ -1821,8 +1821,9 @@
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmFGReprocessModule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Finished Goods Reprocess Module";

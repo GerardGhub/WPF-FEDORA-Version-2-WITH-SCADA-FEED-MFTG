@@ -319,7 +319,7 @@ namespace WFFDR
             //myglobal.DATE_REPORT2 = f2.Text;
             //myglobal.DATE_REPORT3 = lblmyfeedcode.Text;
             //myglobal.REPORT_NAME = "DailyProductionSchedule";
-            myglobal.REPORT_NAME = "FGMoveOrder";
+            myglobal.REPORT_NAME = "FGMoveOrderReprint";
 
 
 

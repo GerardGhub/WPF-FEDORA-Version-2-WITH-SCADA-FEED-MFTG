@@ -16,6 +16,7 @@ using WFFDR.Reports;
 using WFFDR.Finished_Goods;
 using WFFDR.Set_UP;
 using WFFDR.Admin;
+using WFFDR.Production;
 
 namespace WFFDR
 {
@@ -848,6 +849,12 @@ namespace WFFDR
                     {
                         plateNumberManagementToolStripMenuItem.Enabled = true;
                     }
+                    else if (form_name == "finishedGoodsReprocessUniversalModuleToolStripMenu")
+                    {
+                        finishedGoodsReprocessUniversalModuleToolStripMenu.Enabled = true;
+                    }
+                   
+
                 }
 
             }
@@ -3075,11 +3082,6 @@ namespace WFFDR
             prep.Show();
         }
 
-        private void menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
         private void repackingPieChartToolStripMenuItem_Click(object sender, EventArgs e)
         {
            frmproductionrepackchart prep = new frmproductionrepackchart();
@@ -4436,6 +4438,20 @@ namespace WFFDR
             repacking.MdiParent = this;
             repacking.Show();
             
+        }
+
+        private void finishedGoodsReprocessUniversalModuleToolStripMenu_Click(object sender, EventArgs e)
+        {
+            frmFGReprocessUniversalModule reprocessuniversal = new frmFGReprocessUniversalModule();
+            reprocessuniversal.MdiParent = this;
+            reprocessuniversal.Show();
+        }
+
+        private void taggingOfFeedTypeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTaggingofFeedtype tag = new frmTaggingofFeedtype();
+            tag.MdiParent = this;
+            tag.Show();
         }
     }
     

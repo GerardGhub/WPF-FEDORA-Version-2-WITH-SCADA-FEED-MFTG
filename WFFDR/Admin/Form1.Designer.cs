@@ -34,7 +34,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -44,6 +43,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.txtusername = new System.Windows.Forms.TextBox();
             this.txtpassword = new System.Windows.Forms.TextBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
@@ -75,8 +75,6 @@
             this.txtdateofout = new System.Windows.Forms.TextBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.txtItemCode = new System.Windows.Forms.TextBox();
             this.dgvMaterials = new System.Windows.Forms.DataGridView();
             this.item_code = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -97,6 +95,11 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblrecordcount = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblupdate = new System.Windows.Forms.Label();
+            this.systemupdatecount = new System.Windows.Forms.Label();
+            this.cachedMacroBook1 = new WFFDR.CachedMacroBook();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btneyeclose = new System.Windows.Forms.Button();
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btneye = new System.Windows.Forms.Button();
@@ -107,24 +110,21 @@
             this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton25 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.bunifuThinButton217 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.lblupdate = new System.Windows.Forms.Label();
-            this.systemupdatecount = new System.Windows.Forms.Label();
-            this.cachedMacroBook1 = new WFFDR.CachedMacroBook();
             ((System.ComponentModel.ISupportInitialize)(this.dgvApproved)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvuserrecommend)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMaterials)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRecipeInsert)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUpdateRawMats)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // txtusername
@@ -306,7 +306,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Rockwell", 6.8F);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(2, 579);
+            this.label5.Location = new System.Drawing.Point(2, 577);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 14);
@@ -373,12 +373,12 @@
             this.lbl1.BackColor = System.Drawing.Color.Transparent;
             this.lbl1.Font = new System.Drawing.Font("Rockwell", 6.8F);
             this.lbl1.ForeColor = System.Drawing.Color.Black;
-            this.lbl1.Location = new System.Drawing.Point(62, 579);
+            this.lbl1.Location = new System.Drawing.Point(55, 577);
             this.lbl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(93, 14);
+            this.lbl1.Size = new System.Drawing.Size(14, 14);
             this.lbl1.TabIndex = 420;
-            this.lbl1.Text = "Version : Alpha";
+            this.lbl1.Text = "0";
             this.lbl1.Click += new System.EventHandler(this.lbl1_Click);
             // 
             // btncheckupdate
@@ -549,37 +549,6 @@
             this.panel1.TabIndex = 8;
             this.panel1.Visible = false;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(525, 20);
-            this.button3.Margin = new System.Windows.Forms.Padding(1);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(52, 31);
-            this.button3.TabIndex = 409;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Visible = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.LightSlateGray;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(521, 20);
-            this.button1.Margin = new System.Windows.Forms.Padding(1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(52, 31);
-            this.button1.TabIndex = 408;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // txtItemCode
             // 
@@ -811,6 +780,7 @@
             // 
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
@@ -879,6 +849,57 @@
             this.label1.Size = new System.Drawing.Size(281, 33);
             this.label1.TabIndex = 660;
             this.label1.Text = "Fedora Automation";
+            // 
+            // lblupdate
+            // 
+            this.lblupdate.AutoSize = true;
+            this.lblupdate.BackColor = System.Drawing.Color.Transparent;
+            this.lblupdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblupdate.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblupdate.ForeColor = System.Drawing.Color.Black;
+            this.lblupdate.Location = new System.Drawing.Point(121, 546);
+            this.lblupdate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblupdate.Name = "lblupdate";
+            this.lblupdate.Size = new System.Drawing.Size(128, 17);
+            this.lblupdate.TabIndex = 663;
+            this.lblupdate.Text = "Check for Updates";
+            this.lblupdate.Click += new System.EventHandler(this.lblupdate_Click);
+            // 
+            // systemupdatecount
+            // 
+            this.systemupdatecount.AutoSize = true;
+            this.systemupdatecount.BackColor = System.Drawing.Color.Transparent;
+            this.systemupdatecount.Font = new System.Drawing.Font("Rockwell", 6.8F);
+            this.systemupdatecount.ForeColor = System.Drawing.Color.Black;
+            this.systemupdatecount.Location = new System.Drawing.Point(13, 560);
+            this.systemupdatecount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.systemupdatecount.Name = "systemupdatecount";
+            this.systemupdatecount.Size = new System.Drawing.Size(14, 14);
+            this.systemupdatecount.TabIndex = 664;
+            this.systemupdatecount.Text = "0";
+            this.systemupdatecount.Visible = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.BackgroundImage = global::WFFDR.Properties.Resources.private2_24px;
+            this.pictureBox4.ErrorImage = null;
+            this.pictureBox4.Location = new System.Drawing.Point(45, 327);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox4.TabIndex = 662;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImage = global::WFFDR.Properties.Resources.user_24px;
+            this.pictureBox3.ErrorImage = null;
+            this.pictureBox3.Location = new System.Drawing.Point(46, 254);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox3.TabIndex = 661;
+            this.pictureBox3.TabStop = false;
             // 
             // btneyeclose
             // 
@@ -1079,6 +1100,37 @@
             this.bunifuThinButton25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton25.Click += new System.EventHandler(this.bunifuThinButton25_Click);
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(525, 20);
+            this.button3.Margin = new System.Windows.Forms.Padding(1);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(52, 31);
+            this.button3.TabIndex = 409;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Visible = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightSlateGray;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(521, 20);
+            this.button1.Margin = new System.Windows.Forms.Padding(1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(52, 31);
+            this.button1.TabIndex = 408;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
+            // 
             // bunifuThinButton217
             // 
             this.bunifuThinButton217.ActiveBorderThickness = 1;
@@ -1159,57 +1211,6 @@
             this.bunifuThinButton22.Visible = false;
             this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = global::WFFDR.Properties.Resources.user_24px;
-            this.pictureBox3.ErrorImage = null;
-            this.pictureBox3.Location = new System.Drawing.Point(46, 254);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox3.TabIndex = 661;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = global::WFFDR.Properties.Resources.password_24px;
-            this.pictureBox4.ErrorImage = null;
-            this.pictureBox4.Location = new System.Drawing.Point(45, 327);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox4.TabIndex = 662;
-            this.pictureBox4.TabStop = false;
-            // 
-            // lblupdate
-            // 
-            this.lblupdate.AutoSize = true;
-            this.lblupdate.BackColor = System.Drawing.Color.Transparent;
-            this.lblupdate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblupdate.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblupdate.ForeColor = System.Drawing.Color.Black;
-            this.lblupdate.Location = new System.Drawing.Point(121, 546);
-            this.lblupdate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblupdate.Name = "lblupdate";
-            this.lblupdate.Size = new System.Drawing.Size(128, 17);
-            this.lblupdate.TabIndex = 663;
-            this.lblupdate.Text = "Check for Updates";
-            this.lblupdate.Click += new System.EventHandler(this.lblupdate_Click);
-            // 
-            // systemupdatecount
-            // 
-            this.systemupdatecount.AutoSize = true;
-            this.systemupdatecount.BackColor = System.Drawing.Color.Transparent;
-            this.systemupdatecount.Font = new System.Drawing.Font("Rockwell", 6.8F);
-            this.systemupdatecount.ForeColor = System.Drawing.Color.Black;
-            this.systemupdatecount.Location = new System.Drawing.Point(13, 560);
-            this.systemupdatecount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.systemupdatecount.Name = "systemupdatecount";
-            this.systemupdatecount.Size = new System.Drawing.Size(14, 14);
-            this.systemupdatecount.TabIndex = 664;
-            this.systemupdatecount.Text = "0";
-            this.systemupdatecount.Visible = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -1284,10 +1285,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvMaterials)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRecipeInsert)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUpdateRawMats)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -482,7 +482,7 @@ namespace WFFDR.Finished_Goods
             myglobal.DATE_REPORT2 = txtorder.Text;
             //myglobal.DATE_REPORT3 = lblmyfeedcode.Text;
             //myglobal.REPORT_NAME = "DailyProductionSchedule";
-            myglobal.REPORT_NAME = "FGMoveOrderPickSlipwithcustomersurveyPrint";
+            myglobal.REPORT_NAME = "FGMoveOrderPickSlipwithcustomersurveyRePrint";
 
 
 

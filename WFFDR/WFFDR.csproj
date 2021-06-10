@@ -331,6 +331,18 @@
     <Compile Include="Production Planner\frmScadaMonitoringPerProdPlan.Designer.cs">
       <DependentUpon>frmScadaMonitoringPerProdPlan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Production\frmFGReprocessUniversalModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production\frmFGReprocessUniversalModule.Designer.cs">
+      <DependentUpon>frmFGReprocessUniversalModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production\frmTaggingofFeedtype.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production\frmTaggingofFeedtype.Designer.cs">
+      <DependentUpon>frmTaggingofFeedtype.cs</DependentUpon>
+    </Compile>
     <Compile Include="Receiving\fmApproveQAMacro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1152,6 +1164,12 @@
     <EmbeddedResource Include="Production Planner\frmScadaMonitoringPerProdPlan.resx">
       <DependentUpon>frmScadaMonitoringPerProdPlan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Production\frmFGReprocessUniversalModule.resx">
+      <DependentUpon>frmFGReprocessUniversalModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production\frmTaggingofFeedtype.resx">
+      <DependentUpon>frmTaggingofFeedtype.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Receiving\fmApproveQAMacro.resx">
       <DependentUpon>fmApproveQAMacro.cs</DependentUpon>
     </EmbeddedResource>
@@ -1694,6 +1712,11 @@
     <None Include="Resources\minimize_window_100px.png" />
     <Content Include="Resources\open_16px.png" />
     <None Include="Resources\password_24px.png" />
+    <None Include="Resources\private2_26px.png" />
+    <None Include="Resources\private2_24px.png" />
+    <None Include="Resources\price_tag_16px.png" />
+    <None Include="Resources\price_tag_filled_16px.png" />
+    <None Include="Resources\price_tag_filled_24px.png" />
     <Content Include="Resources\receive_cash_100px.png" />
     <Content Include="Resources\receive_cash_16px.png" />
     <Content Include="Resources\receive_cash_16px2.png" />
