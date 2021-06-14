@@ -348,25 +348,25 @@ namespace WFFDR
                             if (hw_on && TimeSpan.Parse(now.ToString("HH:mm:ss")) >= TimeSpan.Parse("07:00:00"))
                             {
 
-                                /////hw_mode();
+                              
 
-                                if_sched();
+                                //if_sched();
 
-                                if (!sw)
-                                {
-                                    //alis muna buje  normal_dtr();
-                                }
+                                //if (!sw)
+                                //{
+                                //    //alis muna buje  normal_dtr();
+                                //}
 
 
                             }
                             else
                             {
 
-                                if (check_flexi() || check_ds())
-                                {
-                                    con.Close();
-                                    ////    hw_mode2();
-                                }
+                                //if (check_flexi() || check_ds())
+                                //{
+                                //    con.Close();
+                                //    ////    hw_mode2();
+                                //}
 
                                 Thread.Sleep(50);
                                 normal_dtr();
@@ -2516,13 +2516,7 @@ namespace WFFDR
 
 
 
-            ////if (txtgood.Text.Trim() == string.Empty)
-            ////{
-            ////    MessageBox.Show("Please Input your Actual Count", "Quantity Good", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            ////    txtgood.Focus();
-            ////    txtgood.Select();
-            ////    return;
-            ////}
+
 
 
 
@@ -2553,13 +2547,7 @@ namespace WFFDR
                 return;
             }
 
-            //if (txtFinalQty.Text.Trim() == string.Empty)
-            //{
-            //    MessageBox.Show("Please enter Quantity", "Item Quantity", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //    txtFinalQty.Focus();
-            //    txtFinalQty.Select();
-            //    return;
-            //}
+  
 
             if (xpired.Text.Trim() == string.Empty)
             {
@@ -2605,9 +2593,7 @@ namespace WFFDR
 
 
 
-                    //MessageBox.Show("Raw Materials Received SuccesFully.", "Raw Material Received", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-
+              
                     //btnnotexist_Click(sender, e); 3/30/2020
 
                     RawMatsSuccess();

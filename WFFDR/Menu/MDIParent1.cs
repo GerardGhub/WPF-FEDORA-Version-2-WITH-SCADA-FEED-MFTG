@@ -4449,6 +4449,11 @@ namespace WFFDR
 
         private void taggingOfFeedTypeToolStripMenuItem_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void taggingOfFeedTypeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
             frmTaggingofFeedtype tag = new frmTaggingofFeedtype();
             tag.MdiParent = this;
             tag.Show();

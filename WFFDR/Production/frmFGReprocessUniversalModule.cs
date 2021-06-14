@@ -543,6 +543,7 @@ namespace WFFDR.Production
 
             popup.ShowOptionsButton = true;
             txtMainInput.Focus();
+            btnReprocessclick.Visible = false;
 
         }
 

@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMacroReceivingEntry));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtfinalproductionplanner = new System.Windows.Forms.TextBox();
             this.txtqtyproduction = new System.Windows.Forms.TextBox();
             this.lblrecords = new System.Windows.Forms.Label();
@@ -309,7 +309,7 @@
             this.txtfinalproductionplanner.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtfinalproductionplanner.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtfinalproductionplanner.Location = new System.Drawing.Point(381, 759);
-            this.txtfinalproductionplanner.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtfinalproductionplanner.Margin = new System.Windows.Forms.Padding(4);
             this.txtfinalproductionplanner.MaxLength = 100;
             this.txtfinalproductionplanner.Name = "txtfinalproductionplanner";
             this.txtfinalproductionplanner.Size = new System.Drawing.Size(136, 19);
@@ -322,7 +322,7 @@
             this.txtqtyproduction.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtqtyproduction.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtqtyproduction.Location = new System.Drawing.Point(381, 737);
-            this.txtqtyproduction.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtqtyproduction.Margin = new System.Windows.Forms.Padding(4);
             this.txtqtyproduction.MaxLength = 100;
             this.txtqtyproduction.Name = "txtqtyproduction";
             this.txtqtyproduction.Size = new System.Drawing.Size(136, 19);
@@ -350,43 +350,43 @@
             this.dgvProduceBy.AllowUserToDeleteRows = false;
             this.dgvProduceBy.AllowUserToResizeColumns = false;
             this.dgvProduceBy.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            this.dgvProduceBy.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            this.dgvProduceBy.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvProduceBy.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvProduceBy.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvProduceBy.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProduceBy.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProduceBy.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvProduceBy.ColumnHeadersHeight = 45;
             this.dgvProduceBy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvProduceBy.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvProduceBy.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvProduceBy.DefaultCellStyle = dataGridViewCellStyle10;
             this.dgvProduceBy.EnableHeadersVisualStyles = false;
             this.dgvProduceBy.GridColor = System.Drawing.SystemColors.Control;
             this.dgvProduceBy.Location = new System.Drawing.Point(12, 796);
-            this.dgvProduceBy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvProduceBy.Margin = new System.Windows.Forms.Padding(4);
             this.dgvProduceBy.MultiSelect = false;
             this.dgvProduceBy.Name = "dgvProduceBy";
             this.dgvProduceBy.ReadOnly = true;
             this.dgvProduceBy.RowHeadersVisible = false;
             this.dgvProduceBy.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.dgvProduceBy.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.dgvProduceBy.RowsDefaultCellStyle = dataGridViewCellStyle11;
             this.dgvProduceBy.RowTemplate.Height = 52;
             this.dgvProduceBy.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dgvProduceBy.Size = new System.Drawing.Size(660, 105);
@@ -401,7 +401,7 @@
             this.txtPoNumber.Enabled = false;
             this.txtPoNumber.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPoNumber.Location = new System.Drawing.Point(587, 561);
-            this.txtPoNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPoNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txtPoNumber.MaxLength = 100;
             this.txtPoNumber.Name = "txtPoNumber";
             this.txtPoNumber.ReadOnly = true;
@@ -416,7 +416,7 @@
             this.txtqa3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtqa3.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtqa3.Location = new System.Drawing.Point(1148, 832);
-            this.txtqa3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtqa3.Margin = new System.Windows.Forms.Padding(4);
             this.txtqa3.MaxLength = 100;
             this.txtqa3.Name = "txtqa3";
             this.txtqa3.Size = new System.Drawing.Size(69, 19);
@@ -429,7 +429,7 @@
             this.txtqa2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtqa2.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtqa2.Location = new System.Drawing.Point(1148, 806);
-            this.txtqa2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtqa2.Margin = new System.Windows.Forms.Padding(4);
             this.txtqa2.MaxLength = 100;
             this.txtqa2.Name = "txtqa2";
             this.txtqa2.Size = new System.Drawing.Size(69, 19);
@@ -442,7 +442,7 @@
             this.txtqa1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtqa1.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtqa1.Location = new System.Drawing.Point(1141, 778);
-            this.txtqa1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtqa1.Margin = new System.Windows.Forms.Padding(4);
             this.txtqa1.MaxLength = 100;
             this.txtqa1.Name = "txtqa1";
             this.txtqa1.Size = new System.Drawing.Size(69, 19);
@@ -455,7 +455,7 @@
             this.txtqtyremarksqa.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtqtyremarksqa.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtqtyremarksqa.Location = new System.Drawing.Point(944, 826);
-            this.txtqtyremarksqa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtqtyremarksqa.Margin = new System.Windows.Forms.Padding(4);
             this.txtqtyremarksqa.MaxLength = 100;
             this.txtqtyremarksqa.Name = "txtqtyremarksqa";
             this.txtqtyremarksqa.Size = new System.Drawing.Size(69, 19);
@@ -468,7 +468,7 @@
             this.txtqtyvoidqa.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtqtyvoidqa.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtqtyvoidqa.Location = new System.Drawing.Point(947, 800);
-            this.txtqtyvoidqa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtqtyvoidqa.Margin = new System.Windows.Forms.Padding(4);
             this.txtqtyvoidqa.MaxLength = 100;
             this.txtqtyvoidqa.Name = "txtqtyvoidqa";
             this.txtqtyvoidqa.Size = new System.Drawing.Size(69, 19);
@@ -481,7 +481,7 @@
             this.txtqtygoodqa.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtqtygoodqa.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtqtygoodqa.Location = new System.Drawing.Point(949, 774);
-            this.txtqtygoodqa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtqtygoodqa.Margin = new System.Windows.Forms.Padding(4);
             this.txtqtygoodqa.MaxLength = 100;
             this.txtqtygoodqa.Name = "txtqtygoodqa";
             this.txtqtygoodqa.Size = new System.Drawing.Size(69, 19);
@@ -507,7 +507,7 @@
             this.txttotaldel.BackColor = System.Drawing.Color.White;
             this.txttotaldel.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txttotaldel.Location = new System.Drawing.Point(172, 39);
-            this.txttotaldel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txttotaldel.Margin = new System.Windows.Forms.Padding(4);
             this.txttotaldel.Name = "txttotaldel";
             this.txttotaldel.Size = new System.Drawing.Size(223, 27);
             this.txttotaldel.TabIndex = 246;
@@ -517,7 +517,7 @@
             this.textBox10.BackColor = System.Drawing.Color.White;
             this.textBox10.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBox10.Location = new System.Drawing.Point(173, 111);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(4);
             this.textBox10.Name = "textBox10";
             this.textBox10.ReadOnly = true;
             this.textBox10.Size = new System.Drawing.Size(223, 27);
@@ -528,7 +528,7 @@
             this.textBox11.BackColor = System.Drawing.Color.White;
             this.textBox11.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBox11.Location = new System.Drawing.Point(603, 144);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(4);
             this.textBox11.Name = "textBox11";
             this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(219, 27);
@@ -549,7 +549,7 @@
             this.textBox3.BackColor = System.Drawing.SystemColors.Control;
             this.textBox3.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(95, 10);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.MaxLength = 100;
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
@@ -588,7 +588,7 @@
             this.txtrepackupdated.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtrepackupdated.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtrepackupdated.Location = new System.Drawing.Point(139, 756);
-            this.txtrepackupdated.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtrepackupdated.Margin = new System.Windows.Forms.Padding(4);
             this.txtrepackupdated.MaxLength = 100;
             this.txtrepackupdated.Name = "txtrepackupdated";
             this.txtrepackupdated.Size = new System.Drawing.Size(200, 19);
@@ -601,7 +601,7 @@
             this.textBox12.BackColor = System.Drawing.Color.White;
             this.textBox12.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBox12.Location = new System.Drawing.Point(603, 74);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox12.Margin = new System.Windows.Forms.Padding(4);
             this.textBox12.Name = "textBox12";
             this.textBox12.ReadOnly = true;
             this.textBox12.Size = new System.Drawing.Size(217, 27);
@@ -613,7 +613,7 @@
             this.txtrepackavailable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtrepackavailable.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtrepackavailable.Location = new System.Drawing.Point(163, 620);
-            this.txtrepackavailable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtrepackavailable.Margin = new System.Windows.Forms.Padding(4);
             this.txtrepackavailable.MaxLength = 100;
             this.txtrepackavailable.Name = "txtrepackavailable";
             this.txtrepackavailable.Size = new System.Drawing.Size(200, 19);
@@ -636,7 +636,7 @@
             this.txtposumid.BackColor = System.Drawing.SystemColors.Window;
             this.txtposumid.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtposumid.Location = new System.Drawing.Point(477, 490);
-            this.txtposumid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtposumid.Margin = new System.Windows.Forms.Padding(4);
             this.txtposumid.MaxLength = 100;
             this.txtposumid.Multiline = true;
             this.txtposumid.Name = "txtposumid";
@@ -652,7 +652,7 @@
             this.txtqtygood.Enabled = false;
             this.txtqtygood.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtqtygood.Location = new System.Drawing.Point(587, 414);
-            this.txtqtygood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtqtygood.Margin = new System.Windows.Forms.Padding(4);
             this.txtqtygood.Name = "txtqtygood";
             this.txtqtygood.ReadOnly = true;
             this.txtqtygood.Size = new System.Drawing.Size(205, 19);
@@ -665,7 +665,7 @@
             this.txtqtydelivered.Enabled = false;
             this.txtqtydelivered.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtqtydelivered.Location = new System.Drawing.Point(159, 416);
-            this.txtqtydelivered.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtqtydelivered.Margin = new System.Windows.Forms.Padding(4);
             this.txtqtydelivered.Name = "txtqtydelivered";
             this.txtqtydelivered.ReadOnly = true;
             this.txtqtydelivered.Size = new System.Drawing.Size(209, 19);
@@ -736,7 +736,7 @@
             this.txtPrimaryKey.Enabled = false;
             this.txtPrimaryKey.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrimaryKey.Location = new System.Drawing.Point(949, 558);
-            this.txtPrimaryKey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrimaryKey.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrimaryKey.MaxLength = 100;
             this.txtPrimaryKey.Name = "txtPrimaryKey";
             this.txtPrimaryKey.Size = new System.Drawing.Size(205, 19);
@@ -762,7 +762,7 @@
             this.txtUpdatedStock.Enabled = false;
             this.txtUpdatedStock.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUpdatedStock.Location = new System.Drawing.Point(877, 668);
-            this.txtUpdatedStock.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUpdatedStock.Margin = new System.Windows.Forms.Padding(4);
             this.txtUpdatedStock.MaxLength = 100;
             this.txtUpdatedStock.Name = "txtUpdatedStock";
             this.txtUpdatedStock.ReadOnly = true;
@@ -842,7 +842,7 @@
             this.txtgood.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtgood.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtgood.Location = new System.Drawing.Point(163, 670);
-            this.txtgood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtgood.Margin = new System.Windows.Forms.Padding(4);
             this.txtgood.MaxLength = 100;
             this.txtgood.Name = "txtgood";
             this.txtgood.Size = new System.Drawing.Size(200, 19);
@@ -870,7 +870,7 @@
             this.txtreject.Enabled = false;
             this.txtreject.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtreject.Location = new System.Drawing.Point(587, 668);
-            this.txtreject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtreject.Margin = new System.Windows.Forms.Padding(4);
             this.txtreject.MaxLength = 100;
             this.txtreject.Name = "txtreject";
             this.txtreject.ReadOnly = true;
@@ -953,7 +953,7 @@
             this.txtoracleuom.BackColor = System.Drawing.SystemColors.Window;
             this.txtoracleuom.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtoracleuom.Location = new System.Drawing.Point(968, 146);
-            this.txtoracleuom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtoracleuom.Margin = new System.Windows.Forms.Padding(4);
             this.txtoracleuom.MaxLength = 100;
             this.txtoracleuom.Multiline = true;
             this.txtoracleuom.Name = "txtoracleuom";
@@ -979,7 +979,7 @@
             this.txtqtyreject.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtqtyreject.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtqtyreject.Location = new System.Drawing.Point(1031, 514);
-            this.txtqtyreject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtqtyreject.Margin = new System.Windows.Forms.Padding(4);
             this.txtqtyreject.Name = "txtqtyreject";
             this.txtqtyreject.ReadOnly = true;
             this.txtqtyreject.Size = new System.Drawing.Size(223, 26);
@@ -992,7 +992,7 @@
             this.txtActualStocks.Enabled = false;
             this.txtActualStocks.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtActualStocks.Location = new System.Drawing.Point(904, 473);
-            this.txtActualStocks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtActualStocks.Margin = new System.Windows.Forms.Padding(4);
             this.txtActualStocks.MaxLength = 100;
             this.txtActualStocks.Multiline = true;
             this.txtActualStocks.Name = "txtActualStocks";
@@ -1006,7 +1006,7 @@
             this.txtFinalQty.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtFinalQty.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFinalQty.Location = new System.Drawing.Point(1024, 892);
-            this.txtFinalQty.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFinalQty.Margin = new System.Windows.Forms.Padding(4);
             this.txtFinalQty.MaxLength = 100;
             this.txtFinalQty.Name = "txtFinalQty";
             this.txtFinalQty.ReadOnly = true;
@@ -1031,7 +1031,7 @@
             this.txtreject2.BackColor = System.Drawing.SystemColors.Window;
             this.txtreject2.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtreject2.Location = new System.Drawing.Point(381, 489);
-            this.txtreject2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtreject2.Margin = new System.Windows.Forms.Padding(4);
             this.txtreject2.MaxLength = 100;
             this.txtreject2.Multiline = true;
             this.txtreject2.Name = "txtreject2";
@@ -1046,7 +1046,7 @@
             this.txtQABy.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtQABy.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQABy.Location = new System.Drawing.Point(1471, 746);
-            this.txtQABy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtQABy.Margin = new System.Windows.Forms.Padding(4);
             this.txtQABy.Name = "txtQABy";
             this.txtQABy.ReadOnly = true;
             this.txtQABy.Size = new System.Drawing.Size(219, 26);
@@ -1091,7 +1091,7 @@
             this.txtactual_receiving.BackColor = System.Drawing.Color.White;
             this.txtactual_receiving.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtactual_receiving.Location = new System.Drawing.Point(1471, 640);
-            this.txtactual_receiving.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtactual_receiving.Margin = new System.Windows.Forms.Padding(4);
             this.txtactual_receiving.Name = "txtactual_receiving";
             this.txtactual_receiving.Size = new System.Drawing.Size(219, 26);
             this.txtactual_receiving.TabIndex = 489;
@@ -1114,7 +1114,7 @@
             this.txtexpected.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtexpected.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtexpected.Location = new System.Drawing.Point(1061, 539);
-            this.txtexpected.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtexpected.Margin = new System.Windows.Forms.Padding(4);
             this.txtexpected.Name = "txtexpected";
             this.txtexpected.ReadOnly = true;
             this.txtexpected.Size = new System.Drawing.Size(223, 26);
@@ -1148,7 +1148,7 @@
             this.txtqtywaiting.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtqtywaiting.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtqtywaiting.Location = new System.Drawing.Point(1043, 748);
-            this.txtqtywaiting.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtqtywaiting.Margin = new System.Windows.Forms.Padding(4);
             this.txtqtywaiting.Name = "txtqtywaiting";
             this.txtqtywaiting.ReadOnly = true;
             this.txtqtywaiting.Size = new System.Drawing.Size(219, 26);
@@ -1180,10 +1180,10 @@
             // 
             // 
             this.metroTextBox1.CustomButton.Image = null;
-            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(131, 2);
+            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(98, 2);
             this.metroTextBox1.CustomButton.Margin = new System.Windows.Forms.Padding(1);
             this.metroTextBox1.CustomButton.Name = "";
-            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(9, 9);
+            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(7, 7);
             this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBox1.CustomButton.TabIndex = 1;
             this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -1213,7 +1213,7 @@
             this.txtx1.BackColor = System.Drawing.SystemColors.Window;
             this.txtx1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtx1.Location = new System.Drawing.Point(907, 52);
-            this.txtx1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtx1.Margin = new System.Windows.Forms.Padding(4);
             this.txtx1.MaxLength = 100;
             this.txtx1.Multiline = true;
             this.txtx1.Name = "txtx1";
@@ -1303,9 +1303,9 @@
             this.groupBox8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox8.ForeColor = System.Drawing.SystemColors.Desktop;
             this.groupBox8.Location = new System.Drawing.Point(881, 220);
-            this.groupBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox8.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox8.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox8.Size = new System.Drawing.Size(843, 57);
             this.groupBox8.TabIndex = 494;
             this.groupBox8.TabStop = false;
@@ -1338,7 +1338,7 @@
             // 
             this.textBox13.BackColor = System.Drawing.Color.White;
             this.textBox13.Location = new System.Drawing.Point(603, 111);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox13.Margin = new System.Windows.Forms.Padding(4);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(219, 27);
             this.textBox13.TabIndex = 195;
@@ -1380,7 +1380,7 @@
             // 
             this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker3.Location = new System.Drawing.Point(604, 34);
-            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(219, 27);
             this.dateTimePicker3.TabIndex = 192;
@@ -1390,7 +1390,7 @@
             // 
             this.textBox15.BackColor = System.Drawing.Color.White;
             this.textBox15.Location = new System.Drawing.Point(173, 143);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox15.Margin = new System.Windows.Forms.Padding(4);
             this.textBox15.Name = "textBox15";
             this.textBox15.ReadOnly = true;
             this.textBox15.Size = new System.Drawing.Size(223, 27);
@@ -1412,7 +1412,7 @@
             this.textBox16.BackColor = System.Drawing.Color.White;
             this.textBox16.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBox16.Location = new System.Drawing.Point(173, 76);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox16.Margin = new System.Windows.Forms.Padding(4);
             this.textBox16.Name = "textBox16";
             this.textBox16.ReadOnly = true;
             this.textBox16.Size = new System.Drawing.Size(223, 27);
@@ -1445,7 +1445,7 @@
             this.txtreceivedby.BackColor = System.Drawing.SystemColors.Window;
             this.txtreceivedby.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtreceivedby.Location = new System.Drawing.Point(1332, 844);
-            this.txtreceivedby.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtreceivedby.Margin = new System.Windows.Forms.Padding(4);
             this.txtreceivedby.MaxLength = 100;
             this.txtreceivedby.Multiline = true;
             this.txtreceivedby.Name = "txtreceivedby";
@@ -1483,7 +1483,7 @@
             this.txtPerBag.BackColor = System.Drawing.SystemColors.Window;
             this.txtPerBag.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPerBag.Location = new System.Drawing.Point(1220, 26);
-            this.txtPerBag.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPerBag.Margin = new System.Windows.Forms.Padding(4);
             this.txtPerBag.MaxLength = 100;
             this.txtPerBag.Multiline = true;
             this.txtPerBag.Name = "txtPerBag";
@@ -1520,7 +1520,7 @@
             // 
             this.txtcheckedby.BackColor = System.Drawing.Color.White;
             this.txtcheckedby.Location = new System.Drawing.Point(1040, 645);
-            this.txtcheckedby.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtcheckedby.Margin = new System.Windows.Forms.Padding(4);
             this.txtcheckedby.Name = "txtcheckedby";
             this.txtcheckedby.Size = new System.Drawing.Size(219, 22);
             this.txtcheckedby.TabIndex = 485;
@@ -1530,7 +1530,7 @@
             this.txtPerBag2.BackColor = System.Drawing.SystemColors.Window;
             this.txtPerBag2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPerBag2.Location = new System.Drawing.Point(1064, 769);
-            this.txtPerBag2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPerBag2.Margin = new System.Windows.Forms.Padding(4);
             this.txtPerBag2.MaxLength = 100;
             this.txtPerBag2.Multiline = true;
             this.txtPerBag2.Name = "txtPerBag2";
@@ -1543,7 +1543,7 @@
             this.txtQuantity2.BackColor = System.Drawing.Color.Lavender;
             this.txtQuantity2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQuantity2.Location = new System.Drawing.Point(1161, 790);
-            this.txtQuantity2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtQuantity2.Margin = new System.Windows.Forms.Padding(4);
             this.txtQuantity2.MaxLength = 100;
             this.txtQuantity2.Name = "txtQuantity2";
             this.txtQuantity2.Size = new System.Drawing.Size(212, 23);
@@ -1554,7 +1554,7 @@
             this.dateTimePicker1.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(940, 849);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(219, 26);
             this.dateTimePicker1.TabIndex = 433;
@@ -1565,7 +1565,7 @@
             // 
             this.txtmissing.BackColor = System.Drawing.Color.White;
             this.txtmissing.Location = new System.Drawing.Point(1079, 385);
-            this.txtmissing.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtmissing.Margin = new System.Windows.Forms.Padding(4);
             this.txtmissing.Name = "txtmissing";
             this.txtmissing.ReadOnly = true;
             this.txtmissing.Size = new System.Drawing.Size(223, 22);
@@ -1624,7 +1624,7 @@
             // 
             this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker4.Location = new System.Drawing.Point(1283, 416);
-            this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker4.Name = "dateTimePicker4";
             this.dateTimePicker4.Size = new System.Drawing.Size(219, 22);
             this.dateTimePicker4.TabIndex = 434;
@@ -1663,9 +1663,9 @@
             this.groupBoxinfo.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxinfo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBoxinfo.Location = new System.Drawing.Point(13, 78);
-            this.groupBoxinfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxinfo.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxinfo.Name = "groupBoxinfo";
-            this.groupBoxinfo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxinfo.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxinfo.Size = new System.Drawing.Size(843, 262);
             this.groupBoxinfo.TabIndex = 478;
             this.groupBoxinfo.TabStop = false;
@@ -1677,7 +1677,7 @@
             this.txtItemDescription.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtItemDescription.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtItemDescription.Location = new System.Drawing.Point(148, 87);
-            this.txtItemDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtItemDescription.Margin = new System.Windows.Forms.Padding(4);
             this.txtItemDescription.Name = "txtItemDescription";
             this.txtItemDescription.ReadOnly = true;
             this.txtItemDescription.Size = new System.Drawing.Size(632, 19);
@@ -1701,7 +1701,7 @@
             this.mfg_datePicker.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mfg_datePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.mfg_datePicker.Location = new System.Drawing.Point(145, 213);
-            this.mfg_datePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mfg_datePicker.Margin = new System.Windows.Forms.Padding(4);
             this.mfg_datePicker.Name = "mfg_datePicker";
             this.mfg_datePicker.Size = new System.Drawing.Size(203, 26);
             this.mfg_datePicker.TabIndex = 209;
@@ -1773,7 +1773,7 @@
             this.xpired.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xpired.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.xpired.Location = new System.Drawing.Point(573, 212);
-            this.xpired.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.xpired.Margin = new System.Windows.Forms.Padding(4);
             this.xpired.Name = "xpired";
             this.xpired.Size = new System.Drawing.Size(208, 26);
             this.xpired.TabIndex = 191;
@@ -1785,7 +1785,7 @@
             this.dateTimePicker2.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker2.Location = new System.Drawing.Point(569, 36);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(209, 26);
             this.dateTimePicker2.TabIndex = 192;
@@ -1798,7 +1798,7 @@
             this.txtItemCode.Enabled = false;
             this.txtItemCode.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtItemCode.Location = new System.Drawing.Point(145, 43);
-            this.txtItemCode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtItemCode.Margin = new System.Windows.Forms.Padding(4);
             this.txtItemCode.Name = "txtItemCode";
             this.txtItemCode.ReadOnly = true;
             this.txtItemCode.Size = new System.Drawing.Size(209, 19);
@@ -1834,7 +1834,7 @@
             this.cboCategory.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCategory.FormattingEnabled = true;
             this.cboCategory.Location = new System.Drawing.Point(145, 171);
-            this.cboCategory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboCategory.Margin = new System.Windows.Forms.Padding(4);
             this.cboCategory.Name = "cboCategory";
             this.cboCategory.Size = new System.Drawing.Size(211, 27);
             this.cboCategory.TabIndex = 8;
@@ -1845,7 +1845,7 @@
             this.cboSupplier.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboSupplier.FormattingEnabled = true;
             this.cboSupplier.Location = new System.Drawing.Point(144, 127);
-            this.cboSupplier.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboSupplier.Margin = new System.Windows.Forms.Padding(4);
             this.cboSupplier.Name = "cboSupplier";
             this.cboSupplier.Size = new System.Drawing.Size(629, 27);
             this.cboSupplier.TabIndex = 159;
@@ -1882,7 +1882,7 @@
             this.txtxp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtxp.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtxp.Location = new System.Drawing.Point(572, 172);
-            this.txtxp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtxp.Margin = new System.Windows.Forms.Padding(4);
             this.txtxp.Name = "txtxp";
             this.txtxp.ReadOnly = true;
             this.txtxp.Size = new System.Drawing.Size(208, 18);
@@ -2101,7 +2101,7 @@
             this.textBox7.BackColor = System.Drawing.SystemColors.Window;
             this.textBox7.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox7.Location = new System.Drawing.Point(1669, 604);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
             this.textBox7.MaxLength = 100;
             this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
@@ -2127,7 +2127,7 @@
             // 
             this.txtAddedBy.BackColor = System.Drawing.Color.White;
             this.txtAddedBy.Location = new System.Drawing.Point(1533, 768);
-            this.txtAddedBy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAddedBy.Margin = new System.Windows.Forms.Padding(4);
             this.txtAddedBy.Name = "txtAddedBy";
             this.txtAddedBy.Size = new System.Drawing.Size(219, 22);
             this.txtAddedBy.TabIndex = 423;
@@ -2172,7 +2172,7 @@
             this.txtMainInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMainInput.Font = new System.Drawing.Font("Segoe UI", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMainInput.Location = new System.Drawing.Point(277, 10);
-            this.txtMainInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMainInput.Margin = new System.Windows.Forms.Padding(4);
             this.txtMainInput.MaxLength = 100;
             this.txtMainInput.Name = "txtMainInput";
             this.txtMainInput.ShortcutsEnabled = false;
@@ -2200,7 +2200,7 @@
             this.lstvEmployee.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lstvEmployee.HideSelection = false;
             this.lstvEmployee.Location = new System.Drawing.Point(907, 914);
-            this.lstvEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstvEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.lstvEmployee.MultiSelect = false;
             this.lstvEmployee.Name = "lstvEmployee";
             this.lstvEmployee.Size = new System.Drawing.Size(848, 58);
@@ -2274,7 +2274,7 @@
             this.textBox6.BackColor = System.Drawing.SystemColors.Window;
             this.textBox6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.Location = new System.Drawing.Point(1571, 507);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.MaxLength = 100;
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
@@ -2321,7 +2321,7 @@
             this.textBox5.BackColor = System.Drawing.SystemColors.Window;
             this.textBox5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.Location = new System.Drawing.Point(1523, 810);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.MaxLength = 100;
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
@@ -2340,7 +2340,7 @@
             this.btncomputedays.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncomputedays.ForeColor = System.Drawing.Color.White;
             this.btncomputedays.Location = new System.Drawing.Point(916, 703);
-            this.btncomputedays.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btncomputedays.Margin = new System.Windows.Forms.Padding(4);
             this.btncomputedays.Name = "btncomputedays";
             this.btncomputedays.Size = new System.Drawing.Size(76, 28);
             this.btncomputedays.TabIndex = 441;
@@ -2370,34 +2370,34 @@
             this.dgv_macro_count.AllowUserToDeleteRows = false;
             this.dgv_macro_count.AllowUserToResizeColumns = false;
             this.dgv_macro_count.AllowUserToResizeRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.LightGray;
-            this.dgv_macro_count.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.LightGray;
+            this.dgv_macro_count.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle12;
             this.dgv_macro_count.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_macro_count.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgv_macro_count.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_macro_count.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_macro_count.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dgv_macro_count.ColumnHeadersHeight = 50;
             this.dgv_macro_count.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgv_macro_count.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgv_macro_count.EnableHeadersVisualStyles = false;
             this.dgv_macro_count.GridColor = System.Drawing.Color.DarkGray;
             this.dgv_macro_count.Location = new System.Drawing.Point(1565, 710);
-            this.dgv_macro_count.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_macro_count.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_macro_count.MultiSelect = false;
             this.dgv_macro_count.Name = "dgv_macro_count";
             this.dgv_macro_count.ReadOnly = true;
             this.dgv_macro_count.RowHeadersVisible = false;
             this.dgv_macro_count.RowHeadersWidth = 102;
             this.dgv_macro_count.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Teal;
-            this.dgv_macro_count.RowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.Teal;
+            this.dgv_macro_count.RowsDefaultCellStyle = dataGridViewCellStyle14;
             this.dgv_macro_count.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_macro_count.Size = new System.Drawing.Size(249, 39);
             this.dgv_macro_count.TabIndex = 468;
@@ -2413,7 +2413,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(1619, 598);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(5, 57);
             this.button1.TabIndex = 453;
@@ -2424,7 +2424,7 @@
             // 
             this.cboclassification.FormattingEnabled = true;
             this.cboclassification.Location = new System.Drawing.Point(1533, 726);
-            this.cboclassification.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboclassification.Margin = new System.Windows.Forms.Padding(4);
             this.cboclassification.Name = "cboclassification";
             this.cboclassification.Size = new System.Drawing.Size(219, 24);
             this.cboclassification.TabIndex = 427;
@@ -2445,7 +2445,7 @@
             this.txtQuantity.BackColor = System.Drawing.SystemColors.Window;
             this.txtQuantity.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQuantity.Location = new System.Drawing.Point(1161, 718);
-            this.txtQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.txtQuantity.MaxLength = 100;
             this.txtQuantity.Multiline = true;
             this.txtQuantity.Name = "txtQuantity";
@@ -2457,7 +2457,7 @@
             this.txtuno.BackColor = System.Drawing.SystemColors.Window;
             this.txtuno.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtuno.Location = new System.Drawing.Point(1235, 625);
-            this.txtuno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtuno.Margin = new System.Windows.Forms.Padding(4);
             this.txtuno.MaxLength = 100;
             this.txtuno.Multiline = true;
             this.txtuno.Name = "txtuno";
@@ -2470,7 +2470,7 @@
             this.txtactual.BackColor = System.Drawing.SystemColors.Window;
             this.txtactual.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtactual.Location = new System.Drawing.Point(1699, 522);
-            this.txtactual.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtactual.Margin = new System.Windows.Forms.Padding(4);
             this.txtactual.MaxLength = 100;
             this.txtactual.Multiline = true;
             this.txtactual.Name = "txtactual";
@@ -2506,7 +2506,7 @@
             this.txtbagrenew.BackColor = System.Drawing.SystemColors.Window;
             this.txtbagrenew.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbagrenew.Location = new System.Drawing.Point(1371, 651);
-            this.txtbagrenew.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbagrenew.Margin = new System.Windows.Forms.Padding(4);
             this.txtbagrenew.MaxLength = 100;
             this.txtbagrenew.Multiline = true;
             this.txtbagrenew.Name = "txtbagrenew";
@@ -2561,7 +2561,7 @@
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.Color.White;
             this.btnEdit.Location = new System.Drawing.Point(797, 130);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(100, 28);
             this.btnEdit.TabIndex = 153;
@@ -2599,7 +2599,7 @@
             this.txtSupplierNumber.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtSupplierNumber.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSupplierNumber.Location = new System.Drawing.Point(459, 46);
-            this.txtSupplierNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSupplierNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txtSupplierNumber.MaxLength = 100;
             this.txtSupplierNumber.Name = "txtSupplierNumber";
             this.txtSupplierNumber.Size = new System.Drawing.Size(295, 23);
@@ -2636,7 +2636,7 @@
             this.txtSupplierName.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtSupplierName.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSupplierName.Location = new System.Drawing.Point(61, 46);
-            this.txtSupplierName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSupplierName.Margin = new System.Windows.Forms.Padding(4);
             this.txtSupplierName.MaxLength = 100;
             this.txtSupplierName.Name = "txtSupplierName";
             this.txtSupplierName.Size = new System.Drawing.Size(317, 23);
@@ -2647,7 +2647,7 @@
             this.txtAddressfinal.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtAddressfinal.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddressfinal.Location = new System.Drawing.Point(64, 116);
-            this.txtAddressfinal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAddressfinal.Margin = new System.Windows.Forms.Padding(4);
             this.txtAddressfinal.MaxLength = 100;
             this.txtAddressfinal.Name = "txtAddressfinal";
             this.txtAddressfinal.Size = new System.Drawing.Size(316, 23);
@@ -2658,7 +2658,7 @@
             this.txtEmail_Address.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtEmail_Address.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail_Address.Location = new System.Drawing.Point(459, 116);
-            this.txtEmail_Address.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail_Address.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail_Address.MaxLength = 100;
             this.txtEmail_Address.Name = "txtEmail_Address";
             this.txtEmail_Address.Size = new System.Drawing.Size(295, 23);
@@ -2676,9 +2676,9 @@
             this.groupBox4.Controls.Add(this.date_added);
             this.groupBox4.Controls.Add(this.txtexpiration_details);
             this.groupBox4.Location = new System.Drawing.Point(564, 38);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox4.Size = new System.Drawing.Size(349, 330);
             this.groupBox4.TabIndex = 197;
             this.groupBox4.TabStop = false;
@@ -2700,7 +2700,7 @@
             // 
             this.dtpExpireddate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpExpireddate.Location = new System.Drawing.Point(201, 86);
-            this.dtpExpireddate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpExpireddate.Margin = new System.Windows.Forms.Padding(4);
             this.dtpExpireddate.Name = "dtpExpireddate";
             this.dtpExpireddate.Size = new System.Drawing.Size(133, 22);
             this.dtpExpireddate.TabIndex = 171;
@@ -2711,7 +2711,7 @@
             this.txtDeliveryDetails.BackColor = System.Drawing.Color.White;
             this.txtDeliveryDetails.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDeliveryDetails.Location = new System.Drawing.Point(199, 57);
-            this.txtDeliveryDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDeliveryDetails.Margin = new System.Windows.Forms.Padding(4);
             this.txtDeliveryDetails.MaxLength = 100;
             this.txtDeliveryDetails.Name = "txtDeliveryDetails";
             this.txtDeliveryDetails.Size = new System.Drawing.Size(136, 23);
@@ -2760,7 +2760,7 @@
             // 
             this.date_added.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.date_added.Location = new System.Drawing.Point(201, 26);
-            this.date_added.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.date_added.Margin = new System.Windows.Forms.Padding(4);
             this.date_added.Name = "date_added";
             this.date_added.Size = new System.Drawing.Size(133, 22);
             this.date_added.TabIndex = 13;
@@ -2771,7 +2771,7 @@
             this.txtexpiration_details.BackColor = System.Drawing.Color.White;
             this.txtexpiration_details.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtexpiration_details.Location = new System.Drawing.Point(199, 118);
-            this.txtexpiration_details.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtexpiration_details.Margin = new System.Windows.Forms.Padding(4);
             this.txtexpiration_details.MaxLength = 100;
             this.txtexpiration_details.Name = "txtexpiration_details";
             this.txtexpiration_details.Size = new System.Drawing.Size(136, 23);
@@ -2801,9 +2801,9 @@
             this.groupBox5.Controls.Add(this.label23);
             this.groupBox5.ForeColor = System.Drawing.Color.DarkOrange;
             this.groupBox5.Location = new System.Drawing.Point(4, 38);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox5.Size = new System.Drawing.Size(557, 336);
             this.groupBox5.TabIndex = 195;
             this.groupBox5.TabStop = false;
@@ -2813,7 +2813,7 @@
             this.txtTotalS.BackColor = System.Drawing.Color.White;
             this.txtTotalS.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotalS.Location = new System.Drawing.Point(113, 86);
-            this.txtTotalS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTotalS.Margin = new System.Windows.Forms.Padding(4);
             this.txtTotalS.MaxLength = 100;
             this.txtTotalS.Name = "txtTotalS";
             this.txtTotalS.Size = new System.Drawing.Size(231, 23);
@@ -2824,7 +2824,7 @@
             this.pbImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbImage.Image = global::WFFDR.Properties.Resources.Buddy;
             this.pbImage.Location = new System.Drawing.Point(363, 28);
-            this.pbImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbImage.Margin = new System.Windows.Forms.Padding(4);
             this.pbImage.Name = "pbImage";
             this.pbImage.Size = new System.Drawing.Size(179, 144);
             this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2849,7 +2849,7 @@
             this.txtreorderlevel.BackColor = System.Drawing.Color.White;
             this.txtreorderlevel.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtreorderlevel.Location = new System.Drawing.Point(111, 114);
-            this.txtreorderlevel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtreorderlevel.Margin = new System.Windows.Forms.Padding(4);
             this.txtreorderlevel.MaxLength = 100;
             this.txtreorderlevel.Name = "txtreorderlevel";
             this.txtreorderlevel.Size = new System.Drawing.Size(233, 23);
@@ -2859,7 +2859,7 @@
             // 
             this.cborcategory.FormattingEnabled = true;
             this.cborcategory.Location = new System.Drawing.Point(111, 146);
-            this.cborcategory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cborcategory.Margin = new System.Windows.Forms.Padding(4);
             this.cborcategory.Name = "cborcategory";
             this.cborcategory.Size = new System.Drawing.Size(233, 24);
             this.cborcategory.TabIndex = 4;
@@ -2869,7 +2869,7 @@
             this.txtritemcode.BackColor = System.Drawing.Color.White;
             this.txtritemcode.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtritemcode.Location = new System.Drawing.Point(111, 53);
-            this.txtritemcode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtritemcode.Margin = new System.Windows.Forms.Padding(4);
             this.txtritemcode.MaxLength = 100;
             this.txtritemcode.Name = "txtritemcode";
             this.txtritemcode.Size = new System.Drawing.Size(233, 23);
@@ -2880,7 +2880,7 @@
             this.txtrdescription.BackColor = System.Drawing.Color.White;
             this.txtrdescription.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtrdescription.Location = new System.Drawing.Point(113, 182);
-            this.txtrdescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtrdescription.Margin = new System.Windows.Forms.Padding(4);
             this.txtrdescription.MaxLength = 100;
             this.txtrdescription.Name = "txtrdescription";
             this.txtrdescription.Size = new System.Drawing.Size(431, 23);
@@ -2917,7 +2917,7 @@
             this.txtrreceivedid.BackColor = System.Drawing.Color.White;
             this.txtrreceivedid.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtrreceivedid.Location = new System.Drawing.Point(111, 22);
-            this.txtrreceivedid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtrreceivedid.Margin = new System.Windows.Forms.Padding(4);
             this.txtrreceivedid.MaxLength = 100;
             this.txtrreceivedid.Name = "txtrreceivedid";
             this.txtrreceivedid.Size = new System.Drawing.Size(179, 23);
@@ -2929,7 +2929,7 @@
             this.cboClass.Items.AddRange(new object[] {
             "Good"});
             this.cboClass.Location = new System.Drawing.Point(192, 287);
-            this.cboClass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboClass.Margin = new System.Windows.Forms.Padding(4);
             this.cboClass.Name = "cboClass";
             this.cboClass.Size = new System.Drawing.Size(351, 24);
             this.cboClass.TabIndex = 8;
@@ -2965,7 +2965,7 @@
             this.txtraddedby.BackColor = System.Drawing.Color.White;
             this.txtraddedby.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtraddedby.Location = new System.Drawing.Point(192, 245);
-            this.txtraddedby.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtraddedby.Margin = new System.Windows.Forms.Padding(4);
             this.txtraddedby.MaxLength = 100;
             this.txtraddedby.Name = "txtraddedby";
             this.txtraddedby.Size = new System.Drawing.Size(351, 23);
@@ -2989,7 +2989,7 @@
             this.txtLocation.BackColor = System.Drawing.Color.White;
             this.txtLocation.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLocation.Location = new System.Drawing.Point(113, 212);
-            this.txtLocation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLocation.Margin = new System.Windows.Forms.Padding(4);
             this.txtLocation.MaxLength = 100;
             this.txtLocation.Name = "txtLocation";
             this.txtLocation.Size = new System.Drawing.Size(429, 23);
@@ -3039,7 +3039,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(202)))), ((int)(((byte)(249)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(1, 16);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(3, 15);
             this.panel1.TabIndex = 194;
@@ -3132,7 +3132,7 @@
             this.lstvPrevious.GridLines = true;
             this.lstvPrevious.HideSelection = false;
             this.lstvPrevious.Location = new System.Drawing.Point(64, 41);
-            this.lstvPrevious.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstvPrevious.Margin = new System.Windows.Forms.Padding(4);
             this.lstvPrevious.MultiSelect = false;
             this.lstvPrevious.Name = "lstvPrevious";
             this.lstvPrevious.Size = new System.Drawing.Size(87, 64);
@@ -3173,7 +3173,7 @@
             // 
             this.pctboxPrevious.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pctboxPrevious.Location = new System.Drawing.Point(96, 139);
-            this.pctboxPrevious.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pctboxPrevious.Margin = new System.Windows.Forms.Padding(4);
             this.pctboxPrevious.Name = "pctboxPrevious";
             this.pctboxPrevious.Size = new System.Drawing.Size(125, 33);
             this.pctboxPrevious.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -3236,7 +3236,7 @@
             this.lstmenu.FormattingEnabled = true;
             this.lstmenu.ItemHeight = 19;
             this.lstmenu.Location = new System.Drawing.Point(201, 176);
-            this.lstmenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstmenu.Margin = new System.Windows.Forms.Padding(4);
             this.lstmenu.Name = "lstmenu";
             this.lstmenu.Size = new System.Drawing.Size(34, 21);
             this.lstmenu.TabIndex = 194;
@@ -3285,7 +3285,7 @@
             this.txtMultiply.BackColor = System.Drawing.SystemColors.Window;
             this.txtMultiply.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMultiply.Location = new System.Drawing.Point(-88, -7);
-            this.txtMultiply.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMultiply.Margin = new System.Windows.Forms.Padding(4);
             this.txtMultiply.MaxLength = 100;
             this.txtMultiply.Multiline = true;
             this.txtMultiply.Name = "txtMultiply";
@@ -3315,7 +3315,7 @@
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.ForeColor = System.Drawing.Color.Black;
             this.btnSubmit.Location = new System.Drawing.Point(1075, 580);
-            this.btnSubmit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(4);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(76, 28);
             this.btnSubmit.TabIndex = 430;
@@ -3598,7 +3598,7 @@
             this.pctboxImage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pctboxImage.Image = global::WFFDR.Properties.Resources.viber_image_2019_12_06_15_18_33;
             this.pctboxImage.Location = new System.Drawing.Point(1511, 607);
-            this.pctboxImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pctboxImage.Margin = new System.Windows.Forms.Padding(4);
             this.pctboxImage.Name = "pctboxImage";
             this.pctboxImage.Size = new System.Drawing.Size(151, 110);
             this.pctboxImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -3744,7 +3744,7 @@
             this.txtUpdatedStock2.Enabled = false;
             this.txtUpdatedStock2.Font = new System.Drawing.Font("Arial Unicode MS", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUpdatedStock2.Location = new System.Drawing.Point(580, 619);
-            this.txtUpdatedStock2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUpdatedStock2.Margin = new System.Windows.Forms.Padding(4);
             this.txtUpdatedStock2.MaxLength = 100;
             this.txtUpdatedStock2.Name = "txtUpdatedStock2";
             this.txtUpdatedStock2.ReadOnly = true;

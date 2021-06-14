@@ -5125,7 +5125,7 @@ namespace WFFDR
             popup.TitleColor = Color.White;
             popup.TitlePadding = new Padding(95, 7, 0, 0);
             popup.TitleFont = new Font("Tahoma", 10);
-            popup.ContentText = "RAW MATERIALS VALIDATED SUCCESSFULLY takla!";
+            popup.ContentText = "RAW MATERIALS VALIDATED SUCCESSFULLY!";
             popup.ContentColor = Color.White;
             popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
             popup.Size = new Size(350, 100);
@@ -5145,7 +5145,7 @@ namespace WFFDR
             txtBarcode.Enabled = false;
 
             //keni
-            startbmx();
+           
             //dSet.Clear();
             //dSet = objStorProc.rdf_sp_new_micro_bmx(0, txtmainfeedcode.Text, "", "", "", "", "", "", "", "", "", "", "", "", "", "startbasemixed");
 
@@ -18869,6 +18869,11 @@ namespace WFFDR
             if (e.KeyCode == Keys.Enter)
             {
                 btnScan_Click(sender, e);
+                if (lbltotalread.Text=="1")
+                {
+                    startbmx();
+
+                }
             }
         }
 
