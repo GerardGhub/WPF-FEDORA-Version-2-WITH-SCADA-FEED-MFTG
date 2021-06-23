@@ -4458,6 +4458,27 @@ namespace WFFDR
             tag.MdiParent = this;
             tag.Show();
         }
+
+        private void rECEIPTToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            //keni
+
+            FrmMiscellaneousReceiptSlip receiptslip = new FrmMiscellaneousReceiptSlip();
+            receiptslip.MdiParent = this;
+            receiptslip.Show();
+        }
+
+        private void iSSUEToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+
+            FrmMiscellaneousIssueSlip Issueslip = new FrmMiscellaneousIssueSlip();
+            Issueslip.MdiParent = this;
+            Issueslip.Show();
+        }
+
     }
-    
+
 }
+    
+

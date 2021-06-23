@@ -584,6 +584,7 @@ namespace WFFDR.Finished_Goods
             tsaddlinebtn.Enabled = true;
             txtremarks.Enabled = true;
             Cbfgdate.Enabled = true;
+            txtmoveorderno.Enabled = true;
 
 
 
@@ -669,6 +670,24 @@ namespace WFFDR.Finished_Goods
 
         }
 
+        private void Loadprintout()
+        {
+
+            myglobal.DATE_REPORT = txtorder.Text;
+            myglobal.DATE_REPORT2 = txtorder.Text;
+            //myglobal.DATE_REPORT2 = f2.Text;
+            //myglobal.DATE_REPORT3 = lblmyfeedcode.Text;
+            //myglobal.REPORT_NAME = "DailyProductionSchedule";
+            myglobal.REPORT_NAME = "FGMiscellaneousIssue";
+
+
+
+            frmReport fr = new frmReport();
+
+            fr.WindowState = FormWindowState.Maximized;
+            fr.Show();
+
+        }
         private void tsconfirmorderbtn_Click(object sender, EventArgs e)
         {
             this.Dgvmain.CurrentCell = this.Dgvmain.Rows[0].Cells[this.Dgvmain.CurrentCell.ColumnIndex];
@@ -685,6 +704,13 @@ namespace WFFDR.Finished_Goods
 
             }
 
+            if(txtmoveorderno.Text == String.Empty)
+            {
+                EmptyFieldNotify();
+                txtmoveorderno.Focus();
+                return;
+
+            }
 
 
             else if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want save this Transaction ? ", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
@@ -744,6 +770,7 @@ namespace WFFDR.Finished_Goods
 
 
                 //  button1_Click(sender, e);
+                Loadprintout();
                 FrmFGMiscellaneousFinanceIssue_Load(sender, e);
                 timer1.Enabled = true;
                 Txtbxquantity.Enabled = false;
@@ -2109,7 +2136,7 @@ namespace WFFDR.Finished_Goods
         {
             dSet.Clear(); 
              dSet = objStorProc.rdf_sp_new_finish_goods(0, txtorder.Text.Trim(), feedcodemain.Text.Trim(), feedtypemain.Text.Trim(), quantity.Text.Trim(), txtbatch.Text.Trim(),
-                dateonly.Text.Trim(), fgdate.Text.Trim(), fgdate.Text.Trim(), fgdate.Text.Trim(), fgdate.Text.Trim(), "0", lblsasa.Text.Trim(), txtkg.Text.Trim(), "NO BARCODE",
+                dateonly.Text.Trim(), fgdate.Text.Trim(), fgdate.Text.Trim(), fgdate.Text.Trim(), fgdate.Text.Trim(), "0", lblsasa.Text.Trim(), txtkg.Text.Trim(), txtmoveorderno.Text,
                 quantity.Text.Trim(), ordermain.Text.Trim(), txtbatch.Text.Trim(), quantity.Text.Trim(), bagbulkmain.Text.Trim(), txtremarks.Text, fgdate.Text.Trim(), "0", "addbulk_issue_hollow");
         }
 

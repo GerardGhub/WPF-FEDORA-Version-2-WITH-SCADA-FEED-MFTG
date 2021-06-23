@@ -499,6 +499,18 @@
     <Compile Include="Reports\FrmfGTransactReceivedReport.Designer.cs">
       <DependentUpon>FrmfGTransactReceivedReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\FrmMiscellaneousIssueSlip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FrmMiscellaneousIssueSlip.Designer.cs">
+      <DependentUpon>FrmMiscellaneousIssueSlip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FrmMiscellaneousReceiptSlip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FrmMiscellaneousReceiptSlip.Designer.cs">
+      <DependentUpon>FrmMiscellaneousReceiptSlip.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\frmQAReports.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1247,6 +1259,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\FrmfGTransactReceivedReport.resx">
       <DependentUpon>FrmfGTransactReceivedReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FrmMiscellaneousIssueSlip.resx">
+      <DependentUpon>FrmMiscellaneousIssueSlip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FrmMiscellaneousReceiptSlip.resx">
+      <DependentUpon>FrmMiscellaneousReceiptSlip.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\frmQAReports.resx">
       <DependentUpon>frmQAReports.cs</DependentUpon>

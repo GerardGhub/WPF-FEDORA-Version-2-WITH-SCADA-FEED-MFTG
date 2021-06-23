@@ -63,7 +63,9 @@ namespace WFFDR
             load_search();
             load_Pendingremark();
             load_Receivingremark();
-          
+            Load_Varianceremark();
+
+
 
             if (lblfound.Text == "0")
 
@@ -364,7 +366,7 @@ namespace WFFDR
 
         public void Variance()
         {
-            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to transact as a Variance?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            if (MetroFramework.MetroMessageBox.Show(this, "Please click ok to transact as a Variance.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
             {
                 Clickok();
                 Disable();
@@ -385,7 +387,7 @@ namespace WFFDR
                             this.dataView.CurrentCell = this.dataView.Rows[i].Cells[this.dataView.CurrentCell.ColumnIndex];
 
                             dset.Clear();
-                            dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["ID"].Value.ToString()), "variance", "", txtaddedby.Text.Trim(), 2);
+                            dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["ID"].Value.ToString()), "variance", cbvariance.Text, txtaddedby.Text.Trim(), 2);
 
                         }
                         else
@@ -446,16 +448,24 @@ namespace WFFDR
 
         public void load_Pendingremark()
         {
-
+            dSet.Clear();
             xClass.fillComboBoxremark(CBpendingremark, "pendingremark", "", "","" ,dSet);
             
         }
 
         public void load_Receivingremark()
         {
-
+            dSet.Clear();
             xClass.fillComboBoxremark(txtremarks, "receivingremark", "", "","", dSet);
            
+
+        }
+
+
+        public void Load_Varianceremark()
+        {
+            dSet.Clear();
+            xClass.fillComboBoxremark(cbvariance, "varianceremark", "", "", "", dSet);
 
         }
 
@@ -754,8 +764,11 @@ namespace WFFDR
         {
 
             Selectedrowtotalwithremarks();
+
+            
             if (dataView.CurrentRow != null)
             {
+              
                 if (Convert.ToInt32(lblremarks.Text) > 0)
                 {
                     btnvariance.Visible = true;
@@ -777,6 +790,10 @@ namespace WFFDR
 
 
             }
+
+
+            //Disablered();
+
 
 
 
@@ -804,8 +821,100 @@ namespace WFFDR
 
             }
 
+          
+
         }
 
+        public void Disablered()
+        {
+
+            if (dataView.CurrentRow != null)
+            {
+                if (lblhelp.Text == "helpme")
+                { 
+                if (Convert.ToInt32(lblremarks.Text) > 0 && dataView.CurrentRow.Cells["Remark"].Value == null)
+                {
+
+                    btnpending.Visible = false;
+                    btnvariance.Visible = false;
+                    btnsave.Visible = false;
+                        MessageBox.Show("help nawawala");
+                  
+                   
+                }
+                else if(Convert.ToInt32(lblremarks.Text) == 0 && dataView.CurrentRow.Cells["Remark"].Value != null)
+                {
+                    //btnpending.Visible = true;
+                        btnvariance.Visible = true;
+                        btnsave.Visible = true;
+                        MessageBox.Show("help babalik");
+
+
+                }
+
+                }
+
+
+
+            }
+
+        }
+
+
+        //public void Disablered()
+        //{
+
+        //    if (dataView.CurrentRow != null)
+        //    {
+        //        if (btnvariance.Visible == true)
+        //        {
+
+        //            if (Convert.ToInt32(lblremarks.Text) > 0 && dataView.CurrentRow.Cells["Remark"].Value != null)
+        //            {
+        //                dataView.Columns["selected"].ReadOnly = false;
+        //                dataView.CurrentRow.Cells["selected"].Value = true;
+        //                MessageBox.Show("RED");
+
+        //            }
+        //            else if (Convert.ToInt32(lblremarks.Text) > 0 && dataView.CurrentRow.Cells["Remark"].Value == null)
+        //            {
+
+
+        //                dataView.Columns["selected"].ReadOnly = true;
+        //                dataView.CurrentRow.Cells["selected"].Value = false;
+        //                MessageBox.Show("white");
+        //                //return;
+        //            }
+        //        }
+        //      if (btnpending.Visible == true)
+        //        {
+        //            if (Convert.ToInt32(lblremarks.Text) > 0 && dataView.CurrentRow.Cells["Remark"].Value != null)
+        //            {
+        //                dataView.Columns["selected"].ReadOnly = true;
+        //                dataView.CurrentRow.Cells["selected"].Value = false;
+        //                MessageBox.Show("yellowred");
+
+
+        //            }
+        //            else if (Convert.ToInt32(lblremarks.Text) > 0 && dataView.CurrentRow.Cells["Remark"].Value == null)
+        //            {
+
+
+        //                dataView.Columns["selected"].ReadOnly = false;
+        //                dataView.CurrentRow.Cells["selected"].Value = true;
+        //                MessageBox.Show("yellowwhite");
+        //                //return;
+        //            }
+
+        //        }
+        //        //{
+        //        //    dataView.Columns["selected"].ReadOnly = false;
+        //        //    dataView.CurrentRow.Cells["selected"].Value = true;
+        //        //}
+
+        //    }
+
+        //}
 
         private void Selectedrowtotalwithremarks()
         {
@@ -1166,6 +1275,7 @@ namespace WFFDR
                 btnpending.Enabled = true;
                 btnvariance.Visible = false;
                 textBox2.Text = "sarapyow";
+                lblhelp.Text = "helpme";
                 return;
            
         }
@@ -1216,8 +1326,11 @@ namespace WFFDR
         {
            
             this.dataView.CurrentCell = this.dataView.Rows[0].Cells[this.dataView.CurrentCell.ColumnIndex];
-            Variance();
-           
+            grpvariance.Visible = true;
+            cbvariance.Visible = true;
+            cbvariance.SelectedIndex = -1;
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -1239,7 +1352,44 @@ namespace WFFDR
             load_Receivingremark();
             txtremarks.SelectedIndex = -1;
         }
-     
+
+        private void confirmvariance_Click(object sender, EventArgs e)
+        {
+           
+            if(cbvariance.SelectedIndex == -1)
+            {
+                EmptyFieldNotify();
+                cbvariance.Focus();
+                cbvariance.Select();
+               
+                return;
+            }
+            if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to transact as a Variance?", "WARNING", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                Variance();
+                grpvariance.Visible = false;
+                cbvariance.SelectedIndex = -1;
+
+            }
+            else
+            {
+                return;
+
+            }
+        }
+
+        private void cancelvariance_Click(object sender, EventArgs e)
+        {
+            grpvariance.Visible = false;
+            cbvariance.SelectedIndex = -1;
+                
+        }
+
+        private void cbvariance_Click(object sender, EventArgs e)
+        {
+            Load_Varianceremark();
+            cbvariance.SelectedIndex = -1;
+        }
     }
 
 

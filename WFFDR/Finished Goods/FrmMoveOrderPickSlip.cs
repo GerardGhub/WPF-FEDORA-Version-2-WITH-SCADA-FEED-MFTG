@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tulpep.NotificationWindow;
 
@@ -15,32 +11,17 @@ namespace WFFDR.Finished_Goods
     {
         myclasses xClass = new myclasses();
         IStoredProcedures objStorProc = null;
-        //DataSet dSets = new DataSet();
+    
 
         myglobal pointer_module = new myglobal();
         DataSet dsetHeader = new DataSet();
-        //DataSet dSet_temp = new DataSet();
-        //DataSet dset_delete = new DataSet();
-
-        //DataSet dSet = new DataSet();
-        //DataSet dset_rights = new DataSet();
-
-
-        //private const int BaudRate = 9600;
-
-        //DataSet dset_section = new DataSet();
-        //Boolean ready = false;
-
-
-        //weighing
+    
 
         public myclasses classes = new myclasses();
-        //myclasses myClass = new myclasses();
-
+      
 
         public DataSet dset = new DataSet();
-        //DataSet dset2 = new DataSet();
-        //DataSet dset3 = new DataSet();
+      
         public FrmMoveOrderPickSlip()
         {
             InitializeComponent();
@@ -186,27 +167,7 @@ namespace WFFDR.Finished_Goods
             dtp1.MaxDate = DateTime.Now;
             dtp2.MaxDate = DateTime.Now;
 
-            //if (lblrecords.Text == "0")
-
-            //{
-            //    NoRecords();
-
-            //    btnPrint.Visible = false;
-
-            //    button1_Click(sender, e);
-
-
-            //}
-
-            //else
-            //{
-
-
-            //}
-
-
-            //textBox1.Text = "";
-            //this.BringToFront();
+           
             myglobal.global_module = "FGINVENTORY";
 
 
@@ -241,19 +202,7 @@ namespace WFFDR.Finished_Goods
         private void bntPrint_Click(object sender, EventArgs e)
         {
 
-            //myglobal.DATE_REPORT = txtorder.Text;
-            ////myglobal.DATE_REPORT2 = f2.Text;
-            ////myglobal.DATE_REPORT3 = lblmyfeedcode.Text;
-            ////myglobal.REPORT_NAME = "DailyProductionSchedule";
-            //myglobal.REPORT_NAME = "FGMoveOrder";
-
-
-
-            //frmReport fr = new frmReport();
-
-            //fr.WindowState = FormWindowState.Maximized;
-            //fr.Show();
-
+         
 
         }
 

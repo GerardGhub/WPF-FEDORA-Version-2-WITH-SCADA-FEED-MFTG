@@ -454,6 +454,48 @@ namespace WFFDR
             }
 
 
+            else if (myglobal.REPORT_NAME == "FGMiscellaneousIssue")
+            {
+                rpt.Load(Rpt_Path + "\\FGMiscellaneousIssuePickSlip.rpt");
+
+                rpt.SetDatabaseLogon("sa", "FMf3dor@2o20");
+                //rpt.SetDatabaseLogon("sa", "Nescafe3in1");
+                rpt.Refresh();
+                string ddate = myglobal.DATE_REPORT;
+                string ddate2 = myglobal.DATE_REPORT2;
+
+                //string ddate2 = myglobal.DATE_REPORT2;
+                //string ddate3 = myglobal.DATE_REPORT3;
+                rpt.SetParameterValue("@ddate", ddate);
+                rpt.SetParameterValue("@ddate2", ddate2);
+                //rpt.SetParameterValue("@feed_code", ddate3);
+                crV1.ReportSource = rpt;
+                crV1.Refresh();
+
+            }
+
+            else if (myglobal.REPORT_NAME == "FGMiscellaneousReceipt")
+            {
+                rpt.Load(Rpt_Path + "\\FGMiscellaneousReceiptPickSlip.rpt");
+
+                rpt.SetDatabaseLogon("sa", "FMf3dor@2o20");
+                //rpt.SetDatabaseLogon("sa", "Nescafe3in1");
+                rpt.Refresh();
+                string ddate = myglobal.DATE_REPORT;
+                string ddate2 = myglobal.DATE_REPORT2;
+
+                //string ddate2 = myglobal.DATE_REPORT2;
+                //string ddate3 = myglobal.DATE_REPORT3;
+                rpt.SetParameterValue("@ddate", ddate);
+                rpt.SetParameterValue("@ddate2", ddate2);
+                //rpt.SetParameterValue("@feed_code", ddate3);
+                crV1.ReportSource = rpt;
+                crV1.Refresh();
+
+            }
+
+
+
             else if (myglobal.REPORT_NAME == "FGMoveOrderReprint")
             {
                 rpt.Load(Rpt_Path + "\\FGMoveOrderPickSlipwithcustomersurveyReprint.rpt");

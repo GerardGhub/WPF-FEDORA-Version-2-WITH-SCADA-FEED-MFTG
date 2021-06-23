@@ -479,11 +479,12 @@ namespace WFFDR
             txtFeedType.Text = "";
             txtbags.Text = "";
             cboOptions.Text = "";
+           
             //txtorderno.Text = "";
-           // txtaddedby.Text = "";
+            // txtaddedby.Text = "";
 
-         //   txtremarks.Enabled = true;
-         //  txtbags.Enabled = true;
+            //   txtremarks.Enabled = true;
+            //  txtbags.Enabled = true;
 
         }
 
@@ -499,8 +500,11 @@ namespace WFFDR
             cboOptions.Text = "";
             txtremarks.Enabled = true;
             txtbags.Enabled = true;
+            txtmoveorder.Enabled = true;
+            txtmoveorder.Text = "";
 
-         
+
+
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -728,6 +732,24 @@ namespace WFFDR
             dSet = objStorProc.rdf_sp_new_finish_goods(0, onmain.Text.Trim(), fcmain.Text.Trim(), ftmain.Text.Trim(), qbmain.Text.Trim(), bnmain.Text.Trim(), pmain.Text.Trim(), pmain.Text.Trim(), pmain.Text.Trim(), pmain.Text.Trim(), pmain.Text, "1", abmain.Text.Trim(), qkmain.Text.Trim(), "NO BARCODE", qbmain.Text.Trim(), onmain.Text.Trim(), bnmain.Text.Trim(), qbmain.Text.Trim(), cmain.Text.Trim(), "Good", pmain.Text.Trim(), "0", "addbulk_receipt_hollow_clear");
 
         }
+        private void Loadprintout()
+        {
+
+            myglobal.DATE_REPORT = txtorderno.Text;
+            myglobal.DATE_REPORT2 = txtorderno.Text;
+            //myglobal.DATE_REPORT2 = f2.Text;
+            //myglobal.DATE_REPORT3 = lblmyfeedcode.Text;
+            //myglobal.REPORT_NAME = "DailyProductionSchedule";
+            myglobal.REPORT_NAME = "FGMiscellaneousReceipt";
+
+
+
+            frmReport fr = new frmReport();
+
+            fr.WindowState = FormWindowState.Maximized;
+            fr.Show();
+
+        }
 
         private void btnTransact_Click(object sender, EventArgs e)
         {
@@ -736,14 +758,14 @@ namespace WFFDR
             dgvFG_CurrentCellChanged( sender, e);
 
 
-            //if (txtremarks.Text=="")
+            if (txtmoveorder.Text == String.Empty)
 
-            //{
+            {
 
-            //    EmptyFieldNotify();
-            //    txtremarks.Focus();
-            //    return;
-            //}
+                EmptyFieldNotify();
+                txtmoveorder.Focus();
+                return;
+            }
 
 
             if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to save all the Transaction " + txtaddedby.Text + " ?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
@@ -774,12 +796,15 @@ namespace WFFDR
 
              
                 dSet.Clear();
-                dSet = objStorProc.rdf_sp_new_finish_goods(0, txtorderno.Text, onmain.Text, ftmain.Text.Trim(), qbmain.Text.Trim(), bnmain.Text.Trim(), pmain.Text.Trim(), pmain.Text.Trim(), pmain.Text.Trim(), pmain.Text.Trim(), pmain.Text, "1", txtaddedby.Text, qkmain.Text.Trim(), "NO BARCODE", qbmain.Text.Trim(), onmain.Text.Trim(), bnmain.Text.Trim(), qbmain.Text.Trim(), cmain.Text.Trim(), "Good", pmain.Text.Trim(), "0", "addbulk_receipt_hollow_all");
+                dSet = objStorProc.rdf_sp_new_finish_goods(0, txtorderno.Text, onmain.Text, ftmain.Text.Trim(), qbmain.Text.Trim(), bnmain.Text.Trim(), pmain.Text.Trim(), pmain.Text.Trim(), pmain.Text.Trim(), pmain.Text.Trim(), pmain.Text, "1", txtaddedby.Text, qkmain.Text.Trim(), txtmoveorder.Text, qbmain.Text.Trim(), onmain.Text.Trim(), bnmain.Text.Trim(), qbmain.Text.Trim(), cmain.Text.Trim(), "Good", pmain.Text.Trim(), "0", "addbulk_receipt_hollow_all");
 
 
                 SuccessFullyTransactAllitems();
+                Loadprintout();
+
                 frmFGReceipt_Load(sender, e);
                 Clear();
+                txtmoveorder.Text = "";
             }
             else
             {
