@@ -22,6 +22,9 @@ namespace WFFDR
         //DataSet dSet_temp = new DataSet();
         //DataSet dset_rights = new DataSet();
         DataSet dSet = new DataSet();
+        DataSet dsetttt = new DataSet();
+        DataSet dsetopen1  = new DataSet();
+        DataSet dsetopen2 = new DataSet();
         //Boolean ready = false;
         myclasses xClass = new myclasses();
         IStoredProcedures objStorProc = null;
@@ -67,14 +70,9 @@ namespace WFFDR
             alarm.BackColor =  Color.FromArgb(255, 255, 0, 0);
             crtitical.BackColor =  Color.FromArgb(255, 255, 59, 59);
             alert2.BackColor =  Color.FromArgb(255, 255, 98, 98);
-            alert1.BackColor = Color.FromArgb(255, 255, 118, 118);
-            warning.BackColor = Color.FromArgb(255, 255, 172, 20);
+            alertone.BackColor = Color.FromArgb(255, 255, 118, 118);
+            warningone.BackColor = Color.FromArgb(255, 255, 172, 20);
             good.BackColor = Color.FromArgb(255, 10, 255, 10);
-
-
-
-
-
 
         }
         void Loadform()
@@ -98,7 +96,7 @@ namespace WFFDR
             string mcolumns = "test,ProdID,ProdDate,PrintingDate,FeedCode,FeedType,BagsCount,BulkCount,GrandTotal,AGING,STATUS,PENDING";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
             pointer_module.populateModule(dsetHeader, dgv_table, mcolumns, "fg_receiving2");
             lblrecords.Text = dgv_table.RowCount.ToString();
-            //textBox1.Text = "wow";
+            textBox1.Text = "wow";
 
             //this.dgv_table.Columns["ACTUAL"].Visible = false;
 
@@ -140,19 +138,40 @@ namespace WFFDR
 
         }
 
+        //public void openfgpending()
+        //{
+        //    dsetttt.Clear();
+
+        //    dsetttt = objStorProc.sp_rdf_fg_feedcodetransaction(0, lblprodid.Text, lblfeedcode.Text, lblcategory.Text, "", "", txtPrintingDate.Text, "", "", "", "", "", "openfgpending");
+
+
+        //}
+
         public void blockfgreceived()
         {
 
-            dset_emp1.Clear();
-            dset_emp1 = objStorProc.sp_getMajorTables("searchblockreceived");
+            dsetopen1.Clear();
+            //dsetopen1 = objStorProc.sp_getMajorTables("searchblockreceived");
 
 
             string mcolumns = "test,FeedCode,FeedType,ProdID,PrintingDate,fgstatus";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
-            pointer_module.populateModule(dsetHeader, dgvblocking, mcolumns, "searchblockreceived");
+            pointer_module.populateModule(dsetopen1, dgvblocking, mcolumns, "searchblockreceived");
            
 
         }
 
+        public void blockfgpending()
+        {
+
+            dsetopen2.Clear();
+            dsetopen2 = objStorProc.sp_getMajorTables("searchblockpending");
+
+
+            string mcolumns = "test,FeedCode2,FeedType2,ProdID2,PrintingDate2,fgstatus2";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
+            pointer_module.populateModule(dsetopen2, dgvblocking2, mcolumns, "searchblockpending");
+
+
+        }
 
         private void btnReceived_Click(object sender, EventArgs e)
         {
@@ -164,11 +183,18 @@ namespace WFFDR
             {
                 //UseWaitCursor = true;
 
+
                 blockfgreceived();
 
-                if(blockprodid.Text == lblprodid.Text && blockstatus.Text== "3" && blockfgdate.Text == txtPrintingDate.Text)
+                //blockfgpending();
+
+                //dgvblocking_CurrentCellChanged(sender, e);
+                //dgvblocking2_CurrentCellChanged(sender, e);
+
+                if (lblprodid.Text == blockprodid.Text && blockstatus.Text == "3" && blockfgdate.Text == txtPrintingDate.Text)
 
                 {
+
                     AlreadyOpen();
                     dgv_table.Enabled = true;
                     btnReceived.Enabled = true;
@@ -176,46 +202,48 @@ namespace WFFDR
                     txtFeedCode.Enabled = true;
                     dtpTo.Enabled = true;
                     txtProductionDate.Enabled = true;
-                    textBox1.Text = "refreshlangawa";
+                    textBox1.Text = "refresh";
                     load_fg_inventory();
-                    
 
                     return;
+
+
 
                 }
                 else
                 {
 
 
+
+
                 }
 
-
-
+                //MessageBox.Show("luse");
                 openfgreceived();
+                //openfgpending();
+                frmFGView fgview = new frmFGView(this, lblprodid.Text, txtPrintingDate.Text, txtProdPlan.Text);
+                fgview.Show();
+                //openfgpending();
                 dgv_table.Enabled = false;
                 txtProductionDate.Enabled = false;
                 txtFeedCode.Enabled = false;
                 dtpTo.Enabled = false;
                 btnReceived.Visible = false;
-                //btnReceived.BackColor = Color.White;
-                //btnReceived.ForeColor = Color.Black;
 
-
-
-                frmFGView fgview = new frmFGView(this, lblprodid.Text, txtPrintingDate.Text, txtProdPlan.Text);
                
-                fgview.Show();
-              
-                
+
+
+
+
+
+
 
             }
             else
             {
-                //btnReceived.BackColor = Color.White;
-                //btnReceived.ForeColor = Color.Black;
+
                 return;
             }
-
         }
 
         private void dgv_table_CurrentCellChanged(object sender, EventArgs e)
@@ -541,19 +569,19 @@ namespace WFFDR
 
         private void dgv_table_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBox1.Text = String.Empty;
-            if (dgv_table.CurrentRow != null)
-            {
-                if (dgv_table.CurrentRow.Cells["ProdID"].Value != null)
-                {
-                    lblprodid.Text = dgv_table.CurrentRow.Cells["ProdID"].Value.ToString();
-                    txtPrintingDate.Text = dgv_table.CurrentRow.Cells["PrintingDate"].Value.ToString();
-                    txtProdPlan.Text = dgv_table.CurrentRow.Cells["ProdDate"].Value.ToString();
-                    lblfeedcode.Text = dgv_table.CurrentRow.Cells["FeedCode"].Value.ToString();
-                    lblcategory.Text = dgv_table.CurrentRow.Cells["FeedType"].Value.ToString();
-                    lblprod.Text = dgv_table.CurrentRow.Cells["ProdID"].Value.ToString();
-                }
-            }
+            //textBox1.Text = String.Empty;
+            //if (dgv_table.CurrentRow != null)
+            //{
+            //    if (dgv_table.CurrentRow.Cells["ProdID"].Value != null)
+            //    {
+            //        lblprodid.Text = dgv_table.CurrentRow.Cells["ProdID"].Value.ToString();
+            //        txtPrintingDate.Text = dgv_table.CurrentRow.Cells["PrintingDate"].Value.ToString();
+            //        txtProdPlan.Text = dgv_table.CurrentRow.Cells["ProdDate"].Value.ToString();
+            //        lblfeedcode.Text = dgv_table.CurrentRow.Cells["FeedCode"].Value.ToString();
+            //        lblcategory.Text = dgv_table.CurrentRow.Cells["FeedType"].Value.ToString();
+            //        lblprod.Text = dgv_table.CurrentRow.Cells["ProdID"].Value.ToString();
+            //    }
+            //}
         }
 
         private void dgv_table_Scroll(object sender, ScrollEventArgs e)
@@ -586,16 +614,19 @@ namespace WFFDR
         private void txtProductionDate_Validated(object sender, EventArgs e)
         {
             textBox1.Text = String.Empty;
+          
         }
 
         private void dtpTo_Validated(object sender, EventArgs e)
         {
             textBox1.Text = String.Empty;
+           
         }
 
         private void txtFeedCode_Validated(object sender, EventArgs e)
         {
-            textBox1.Text = String.Empty; 
+            textBox1.Text = String.Empty;
+          
         }
 
         private void txtProductionDate_Validating(object sender, CancelEventArgs e)
@@ -624,7 +655,7 @@ namespace WFFDR
             }
 
         }
-        void AlreadyOpen()
+      private  void AlreadyOpen()
         {
 
             PopupNotifier popup = new PopupNotifier();
@@ -652,6 +683,22 @@ namespace WFFDR
             popup.ShowOptionsButton = true;
 
 
+        }
+
+        private void dgvblocking2_CurrentCellChanged(object sender, EventArgs e)
+        {
+            if (dgvblocking2.CurrentRow != null)
+            {
+
+                blockprodid2.Text = dgvblocking2.CurrentRow.Cells["ProdID2"].Value.ToString();
+                blockstatus2.Text = dgvblocking2.CurrentRow.Cells["fgstatus2"].Value.ToString();
+                blockfgdate2.Text = dgvblocking2.CurrentRow.Cells["PrintingDate2"].Value.ToString();
+            }
+        }
+
+        private void dgv_table_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            textBox1.Text = String.Empty;
         }
     }
 }

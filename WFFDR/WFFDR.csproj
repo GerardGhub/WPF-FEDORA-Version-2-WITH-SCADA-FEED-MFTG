@@ -1701,6 +1701,10 @@
     <None Include="Resources\add_list_24px.png" />
     <None Include="Resources\add_24px.png" />
     <None Include="Resources\addline_24px.png" />
+    <None Include="Resources\bell_20px.png" />
+    <None Include="Resources\alarm_filled_14px.png" />
+    <None Include="Resources\alarm_filled_14px1.png" />
+    <None Include="Resources\alarm_18px.png" />
     <Content Include="Resources\checked.png" />
     <Content Include="Resources\conflict_16px.png" />
     <Content Include="Resources\conflict_48px.png" />

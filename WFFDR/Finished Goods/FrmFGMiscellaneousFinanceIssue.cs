@@ -77,7 +77,7 @@ namespace WFFDR.Finished_Goods
             cboCustomer_SelectedIndexChanged(sender, e);
             Cbbagbulk_SelectionChangeCommitted(sender, e);
             Cbfeedcode_SelectionChangeCommitted(sender, e);
-            txtremarks.Text = String.Empty;
+            //txtremarks.Text = String.Empty;
             int sum = 0;
             for (int i = 0; i < Dgvmain.Rows.Count; ++i)
             {
@@ -751,7 +751,7 @@ namespace WFFDR.Finished_Goods
                 btnnextmain_Click(sender, e);
 
                 Resetbutton();
-
+                txtremarks.Text = String.Empty;
                 SaveSuccess();
 
                 if (Lblrecordss.Text == "0")
@@ -1427,15 +1427,15 @@ namespace WFFDR.Finished_Goods
 
         private void tsaddlinebtn_Click(object sender, EventArgs e)
         {
-            if (txtremarks.Text == String.Empty)
+            //if (txtremarks.Text == String.Empty)
 
-            {
-                EmptyFieldNotify();
-                txtremarks.Focus();
-                return;
+            //{
+            //    EmptyFieldNotify();
+            //    txtremarks.Focus();
+            //    return;
 
 
-            }
+            //}
 
             if (Cbfeedcode.SelectedIndex == -1)
             {
@@ -2126,7 +2126,7 @@ namespace WFFDR.Finished_Goods
         {
 
             dSet.Clear();
-            dSet = objStorProc.sp_rdf_fg_feedcodetransaction(0, productionmain.Text.Trim(), feedcodemain.Text.Trim(), feedtypemain.Text.Trim(), bagbulkmain.Text.Trim(), txtkg.Text.Trim().ToString(), "", fgdate.Text.Trim().ToString(), dateonly.Text.Trim(), "ISSUE", txtremarks.Text, lblsasa.Text.Trim(), "add");
+            dSet = objStorProc.sp_rdf_fg_feedcodetransaction(0, productionmain.Text.Trim(), feedcodemain.Text.Trim(), feedtypemain.Text.Trim(), bagbulkmain.Text.Trim(), txtkg.Text.Trim().ToString(), txtorder.Text, fgdate.Text.Trim().ToString(), dateonly.Text.Trim(), "ISSUE", txtremarks.Text, lblsasa.Text.Trim(), "add");
 
 
         }

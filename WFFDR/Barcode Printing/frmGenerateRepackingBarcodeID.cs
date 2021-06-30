@@ -145,7 +145,7 @@ namespace WFFDR
                     else if (myglobal.global_module == "Active")
                     {
 
-                        dv.RowFilter = "uniquedate = '" + dateTimePicker12.Text + "' AND ProdID like'%" + txtprod_id.Text+"%' AND rp_feed_code like '%" +txtFeedCode.Text+ "%' AND Emp_Number like '%"+txtItemCode.Text+"%'";
+                        dv.RowFilter = "uniquedate = '" + dateTimePicker12.Text + "' AND ProdID like'%" + txtprod_id.Text + "%' AND rp_feed_code like '%" + txtFeedCode.Text + "%' AND Emp_Number like '%" + txtItemCode.Text + "%'";
 
                     }
                     else if (myglobal.global_module == "VISITORS")
@@ -365,7 +365,7 @@ namespace WFFDR
 
 
 
-            string sqlquery = "select repack_id as ID,rp_item_code,rp_item_description,rp_mfg_date,rp_expiry_date,days_to_expired,total_repack,repack_by from [dbo].[rdf_repackin_entry] WHERE repack_id like '%" + txtsearchcode.Text + "%'";
+            string sqlquery = "select repack_id as string_id,rp_item_code,rp_item_description,rp_mfg_date,rp_expiry_date,days_to_expired,total_repack,repack_by from [dbo].[rdf_repackin_entry] WHERE repack_id like '%" + txtsearchcode.Text + "%'";
             sql_con.Open();
             SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
             SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
@@ -386,34 +386,37 @@ namespace WFFDR
             {
                 try
                 {
-                    if (Convert.ToBoolean(dataView.Rows[i].Cells["selected"].Value.ToString()) == true)
+                    if(dataView.CurrentRow != null)
+                    { 
+
+                    if (Convert.ToBoolean(dataView.Rows[i].Cells["selected"].Value) == true)
                     {
-                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["ID"].Value.ToString()), "updaterepacking", "", "", 1);
+                            this.dataView.CurrentCell = this.dataView.Rows[i].Cells[this.dataView.CurrentCell.ColumnIndex];
+                            dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["string_id"].Value.ToString()), "updaterepacking", "", "", 1);
 
+                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["string_id"].Value.ToString()), "updaterepackcount10", "", "", 10);
+                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["string_id"].Value.ToString()), "updaterepackcount9", "", "", 9);
 
-
-                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["ID"].Value.ToString()), "updaterepackcount10", "", "", 10);
-                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["ID"].Value.ToString()), "updaterepackcount9", "", "", 9);
-
-                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["ID"].Value.ToString()), "updaterepackcount8", "", "", 8);
-                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["ID"].Value.ToString()), "updaterepackcount7", "", "", 7);
-                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["ID"].Value.ToString()), "updaterepackcount6", "", "", 6);
-                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["ID"].Value.ToString()), "updaterepackcount5", "", "", 5);
-                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["ID"].Value.ToString()), "updaterepackcount4", "", "", 4);
-                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["ID"].Value.ToString()), "updaterepackcount3", "", "", 3);
-                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["ID"].Value.ToString()), "updaterepackcount2", "", "", 2);
-                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["ID"].Value.ToString()), "updaterepackcount", "", "", 1);
+                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["string_id"].Value.ToString()), "updaterepackcount8", "", "", 8);
+                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["string_id"].Value.ToString()), "updaterepackcount7", "", "", 7);
+                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["string_id"].Value.ToString()), "updaterepackcount6", "", "", 6);
+                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["string_id"].Value.ToString()), "updaterepackcount5", "", "", 5);
+                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["string_id"].Value.ToString()), "updaterepackcount4", "", "", 4);
+                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["string_id"].Value.ToString()), "updaterepackcount3", "", "", 3);
+                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["string_id"].Value.ToString()), "updaterepackcount2", "", "", 2);
+                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["string_id"].Value.ToString()), "updaterepackcount", "", "", 1);
                     }
                     else
                     {
-                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["ID"].Value.ToString()), "updaterepacking", "", "", 1);
+                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["string_id"].Value.ToString()), "updaterepacking", "", "", 1);
 
+                    }
                     }
                 }
                 catch (Exception ex)
                 {
 
-                    dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["ID"].Value.ToString()), "updaterepacking", "", "", 0);
+                    dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["string_id"].Value.ToString()), "updaterepacking", "", "", 0);
                     MessageBox.Show(ex.Message);
                 }
 
@@ -482,17 +485,17 @@ namespace WFFDR
                 {
                     if (Convert.ToBoolean(dataView.Rows[i].Cells["selected"].Value.ToString()) == true)
                     {
-                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["ID"].Value.ToString()), "updaterepacking", "", "", 1);
+                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["string_id"].Value.ToString()), "updaterepacking", "", "", 1);
                     }
                     else
                     {
-                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["ID"].Value.ToString()), "updaterepacking", "", "", 0);
+                        dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["string_id"].Value.ToString()), "updaterepacking", "", "", 0);
                     }
                 }
                 catch
                 {
 
-                    dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["ID"].Value.ToString()), "updaterepacking", "", "", 0);
+                    dset = g_objStoredProcCollection.sp_IDGenerator(int.Parse(dataView.Rows[i].Cells["string_id"].Value.ToString()), "updaterepacking", "", "", 0);
                 }
 
             }

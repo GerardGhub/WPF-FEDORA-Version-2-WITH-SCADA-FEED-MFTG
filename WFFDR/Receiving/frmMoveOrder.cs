@@ -123,7 +123,19 @@ namespace WFFDR
 
             dgvfgdate.ClearSelection();
             dgvprodd.ClearSelection();
-          
+
+
+            
+
+            //string screenx = Screen.PrimaryScreen.Bounds.Width.ToString();
+            //string screeny = Screen.PrimaryScreen.Bounds.Height.ToString();
+
+
+            //MessageBox.Show(screenx, screeny);
+
+         
+            //this.Size = new Size(Convert.ToInt32(screenx), Convert.ToInt32(screeny));
+
         }
 
 

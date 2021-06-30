@@ -36,19 +36,6 @@
             this.chkAll = new System.Windows.Forms.CheckBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.dataView = new System.Windows.Forms.DataGridView();
-            this.selected = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.string_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Emp_Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Emp_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rp_feed_code = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Position = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TotalPack = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PrintCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uniquedate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Packby = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnclose = new System.Windows.Forms.Button();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -88,6 +75,19 @@
             this.txtFeedCode = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtItemCode = new System.Windows.Forms.TextBox();
+            this.selected = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.string_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Emp_Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Emp_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rp_feed_code = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Position = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TotalPack = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PrintCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.uniquedate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Packby = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -173,113 +173,9 @@
             this.dataView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataView.Size = new System.Drawing.Size(934, 305);
             this.dataView.TabIndex = 46;
-            this.dataView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataView_CellContentClick);
             this.dataView.CurrentCellChanged += new System.EventHandler(this.dataView_CurrentCellChanged);
             this.dataView.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dataView_RowPostPaint);
             this.dataView.DoubleClick += new System.EventHandler(this.dataView_DoubleClick);
-            // 
-            // selected
-            // 
-            this.selected.FalseValue = "FALSE";
-            this.selected.HeaderText = "SELECTED";
-            this.selected.MinimumWidth = 12;
-            this.selected.Name = "selected";
-            this.selected.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.selected.TrueValue = "TRUE";
-            this.selected.Width = 50;
-            // 
-            // string_id
-            // 
-            this.string_id.DataPropertyName = "string_id";
-            this.string_id.HeaderText = "BARCODE ID";
-            this.string_id.Name = "string_id";
-            // 
-            // Emp_Number
-            // 
-            this.Emp_Number.DataPropertyName = "Emp_Number";
-            this.Emp_Number.HeaderText = "ITEM CODE";
-            this.Emp_Number.MinimumWidth = 12;
-            this.Emp_Number.Name = "Emp_Number";
-            this.Emp_Number.Width = 130;
-            // 
-            // Emp_Name
-            // 
-            this.Emp_Name.DataPropertyName = "Name";
-            this.Emp_Name.HeaderText = "DESCRIPTION";
-            this.Emp_Name.MinimumWidth = 12;
-            this.Emp_Name.Name = "Emp_Name";
-            this.Emp_Name.Width = 170;
-            // 
-            // rp_feed_code
-            // 
-            this.rp_feed_code.DataPropertyName = "rp_feed_code";
-            this.rp_feed_code.HeaderText = "FEED CODE";
-            this.rp_feed_code.Name = "rp_feed_code";
-            // 
-            // Department
-            // 
-            this.Department.DataPropertyName = "Department";
-            this.Department.HeaderText = "MFG DATE";
-            this.Department.MinimumWidth = 12;
-            this.Department.Name = "Department";
-            this.Department.Width = 250;
-            // 
-            // Position
-            // 
-            this.Position.DataPropertyName = "Position";
-            this.Position.HeaderText = "EXPIRY DATE";
-            this.Position.MinimumWidth = 12;
-            this.Position.Name = "Position";
-            this.Position.Width = 250;
-            // 
-            // Status
-            // 
-            this.Status.DataPropertyName = "Status";
-            this.Status.HeaderText = "DAYS";
-            this.Status.MinimumWidth = 12;
-            this.Status.Name = "Status";
-            this.Status.Visible = false;
-            this.Status.Width = 50;
-            // 
-            // TotalPack
-            // 
-            this.TotalPack.DataPropertyName = "TotalPack";
-            this.TotalPack.HeaderText = "TOTALPACK";
-            this.TotalPack.MinimumWidth = 12;
-            this.TotalPack.Name = "TotalPack";
-            this.TotalPack.Width = 70;
-            // 
-            // PrintCount
-            // 
-            this.PrintCount.DataPropertyName = "PrintCount";
-            this.PrintCount.HeaderText = "PRINT COUNT";
-            this.PrintCount.MinimumWidth = 12;
-            this.PrintCount.Name = "PrintCount";
-            this.PrintCount.Width = 50;
-            // 
-            // ID
-            // 
-            this.ID.DataPropertyName = "ID";
-            this.ID.HeaderText = "PRIMARYKEY";
-            this.ID.MinimumWidth = 12;
-            this.ID.Name = "ID";
-            this.ID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ID.Width = 50;
-            // 
-            // uniquedate
-            // 
-            this.uniquedate.DataPropertyName = "uniquedate";
-            this.uniquedate.HeaderText = "RepackDate";
-            this.uniquedate.Name = "uniquedate";
-            this.uniquedate.Visible = false;
-            // 
-            // Packby
-            // 
-            this.Packby.DataPropertyName = "Packby";
-            this.Packby.HeaderText = "REPACKBY";
-            this.Packby.MinimumWidth = 12;
-            this.Packby.Name = "Packby";
-            this.Packby.Width = 170;
             // 
             // groupBox1
             // 
@@ -808,6 +704,110 @@
             this.txtItemCode.TabIndex = 553;
             this.txtItemCode.Visible = false;
             this.txtItemCode.TextChanged += new System.EventHandler(this.txtItemCode_TextChanged);
+            // 
+            // selected
+            // 
+            this.selected.DataPropertyName = "selected";
+            this.selected.FalseValue = "FALSE";
+            this.selected.HeaderText = "SELECTED";
+            this.selected.MinimumWidth = 12;
+            this.selected.Name = "selected";
+            this.selected.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.selected.TrueValue = "TRUE";
+            this.selected.Width = 50;
+            // 
+            // string_id
+            // 
+            this.string_id.DataPropertyName = "string_id";
+            this.string_id.HeaderText = "BARCODE ID";
+            this.string_id.Name = "string_id";
+            // 
+            // Emp_Number
+            // 
+            this.Emp_Number.DataPropertyName = "Emp_Number";
+            this.Emp_Number.HeaderText = "ITEM CODE";
+            this.Emp_Number.MinimumWidth = 12;
+            this.Emp_Number.Name = "Emp_Number";
+            this.Emp_Number.Width = 130;
+            // 
+            // Emp_Name
+            // 
+            this.Emp_Name.DataPropertyName = "Name";
+            this.Emp_Name.HeaderText = "DESCRIPTION";
+            this.Emp_Name.MinimumWidth = 12;
+            this.Emp_Name.Name = "Emp_Name";
+            this.Emp_Name.Width = 170;
+            // 
+            // rp_feed_code
+            // 
+            this.rp_feed_code.DataPropertyName = "rp_feed_code";
+            this.rp_feed_code.HeaderText = "FEED CODE";
+            this.rp_feed_code.Name = "rp_feed_code";
+            // 
+            // Department
+            // 
+            this.Department.DataPropertyName = "Department";
+            this.Department.HeaderText = "MFG DATE";
+            this.Department.MinimumWidth = 12;
+            this.Department.Name = "Department";
+            this.Department.Width = 250;
+            // 
+            // Position
+            // 
+            this.Position.DataPropertyName = "Position";
+            this.Position.HeaderText = "EXPIRY DATE";
+            this.Position.MinimumWidth = 12;
+            this.Position.Name = "Position";
+            this.Position.Width = 250;
+            // 
+            // Status
+            // 
+            this.Status.DataPropertyName = "Status";
+            this.Status.HeaderText = "DAYS";
+            this.Status.MinimumWidth = 12;
+            this.Status.Name = "Status";
+            this.Status.Visible = false;
+            this.Status.Width = 50;
+            // 
+            // TotalPack
+            // 
+            this.TotalPack.DataPropertyName = "TotalPack";
+            this.TotalPack.HeaderText = "TOTALPACK";
+            this.TotalPack.MinimumWidth = 12;
+            this.TotalPack.Name = "TotalPack";
+            this.TotalPack.Width = 70;
+            // 
+            // PrintCount
+            // 
+            this.PrintCount.DataPropertyName = "PrintCount";
+            this.PrintCount.HeaderText = "PRINT COUNT";
+            this.PrintCount.MinimumWidth = 12;
+            this.PrintCount.Name = "PrintCount";
+            this.PrintCount.Width = 50;
+            // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "ID";
+            this.ID.HeaderText = "PRIMARYKEY";
+            this.ID.MinimumWidth = 12;
+            this.ID.Name = "ID";
+            this.ID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ID.Width = 50;
+            // 
+            // uniquedate
+            // 
+            this.uniquedate.DataPropertyName = "uniquedate";
+            this.uniquedate.HeaderText = "RepackDate";
+            this.uniquedate.Name = "uniquedate";
+            this.uniquedate.Visible = false;
+            // 
+            // Packby
+            // 
+            this.Packby.DataPropertyName = "Packby";
+            this.Packby.HeaderText = "REPACKBY";
+            this.Packby.MinimumWidth = 12;
+            this.Packby.Name = "Packby";
+            this.Packby.Width = 170;
             // 
             // frmGenerateRepackingBarcodeID
             // 

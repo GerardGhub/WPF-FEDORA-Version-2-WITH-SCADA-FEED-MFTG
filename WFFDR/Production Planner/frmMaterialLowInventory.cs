@@ -345,25 +345,53 @@ namespace WFFDR
             //String connetionString = @"Server=FM-MMERCADO-L;Initial Catalog=Fedoramain;Integrated Security=SSPI";
 
             //deploy
-            String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
-            //        String connetionString = @"Data Source=192.168.2.9\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=Nescafe3in1;MultipleActiveResultSets=true"
-            SqlConnection sql_con = new SqlConnection(connetionString);
+            //String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
+            ////        String connetionString = @"Data Source=192.168.2.9\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=Nescafe3in1;MultipleActiveResultSets=true"
+            //SqlConnection sql_con = new SqlConnection(connetionString);
 
 
 
-            string sqlquery = "select distinct rec.recipe_id,rec.rp_type,rec.feed_code,rec.item_code,rec.rp_description,rec.rp_category,rec.rp_group,rec.quantity,rec.quantity,a.qty_production as saas,ISNULL(t5.RECEIVING,0) + ISNULL(t6.ISSUE,0) - ISNULL(t2.MACRESERVED,0)- ISNULL(t7.OUTING,0) as qty_production from [dbo].[rdf_recipe] rec LEFT JOIN [dbo].[rdf_raw_materials] a ON rec.item_code=a.item_code  LEFT JOIN ( select BC.r_item_code, sum(CAST(REPLACE(BC.r_quantity,',','') as float))  as ISSUE from rdf_microreceiving_entry BC where BC.is_active='1' and BC.transaction_type='Miscellaneous Receipt' group by BC.r_item_code) t6 on a.item_code = t6.r_item_code LEFT JOIN ( select BC.item_code, sum(CAST(BC.quantity as float)* 2)  as MACRESERVED from rdf_recipe_to_production BC where CAST(BC.proddate as date) BETWEEN '2021-01-12' and GETDATE()+30 and status_of_person IS NULL group by BC.item_code) t2 on a.item_code = t2.item_code LEFT JOIN ( select BC.r_item_code, sum(CAST(REPLACE(BC.r_quantity,',','') as float))  as RECEIVING from rdf_microreceiving_entry BC where is_active='1' and BC.transaction_type='PO' group by BC.r_item_code) t5 on a.item_code = t5.r_item_code   LEFT JOIN ( select BC.item_code, sum(CAST(REPLACE(BC.qty,',','') as float))  as OUTING from rdf_transaction_out_progress BC where BC.is_active='1' group by BC.item_code) t7 on a.item_code = t7.item_code WHERE rec.feed_code = '"+txtFeedCode.Text+"' AND rec.is_active=1 AND rec.rp_category='MACRO' AND (ISNULL(t5.RECEIVING,0) + ISNULL(t6.ISSUE,0) - ISNULL(t2.MACRESERVED,0)- ISNULL(t7.OUTING,0)) < (CAST(rec.quantity as float)*2*"+txtnobatch.Text+") ORDER BY rec.rp_category DESC";
+            //string sqlquery = "select distinct rec.recipe_id,rec.rp_type,rec.feed_code,rec.item_code,rec.rp_description,rec.rp_category,rec.rp_group,rec.quantity,rec.quantity,a.qty_production as saas,ISNULL(t5.RECEIVING,0) + ISNULL(t6.ISSUE,0) - ISNULL(t2.MACRESERVED,0)- ISNULL(t7.OUTING,0) as qty_production from [dbo].[rdf_recipe] rec LEFT JOIN [dbo].[rdf_raw_materials] a ON rec.item_code=a.item_code  LEFT JOIN ( select BC.r_item_code, sum(CAST(REPLACE(BC.r_quantity,',','') as float))  as ISSUE from rdf_microreceiving_entry BC where BC.is_active='1' and BC.transaction_type='Miscellaneous Receipt' group by BC.r_item_code) t6 on a.item_code = t6.r_item_code LEFT JOIN ( select BC.item_code, sum(CAST(BC.quantity as float)* 2)  as MACRESERVED from rdf_recipe_to_production BC where CAST(BC.proddate as date) BETWEEN '2021-01-12' and GETDATE()+30 and status_of_person IS NULL group by BC.item_code) t2 on a.item_code = t2.item_code LEFT JOIN ( select BC.r_item_code, sum(CAST(REPLACE(BC.r_quantity,',','') as float))  as RECEIVING from rdf_microreceiving_entry BC where is_active='1' and BC.transaction_type='PO' group by BC.r_item_code) t5 on a.item_code = t5.r_item_code   LEFT JOIN ( select BC.item_code, sum(CAST(REPLACE(BC.qty,',','') as float))  as OUTING from rdf_transaction_out_progress BC where BC.is_active='1' group by BC.item_code) t7 on a.item_code = t7.item_code WHERE rec.feed_code = '"+txtFeedCode.Text+"' AND rec.is_active=1 AND rec.rp_category='MACRO' AND (ISNULL(t5.RECEIVING,0) + ISNULL(t6.ISSUE,0) - ISNULL(t2.MACRESERVED,0)- ISNULL(t7.OUTING,0)) < (CAST(rec.quantity as float)*2*"+txtnobatch.Text+") ORDER BY rec.rp_category DESC";
 
  
-            sql_con.Open();
-            SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
-            SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
-            DataTable dt = new DataTable();
-            sdr.Fill(dt);
-            dgvImport.DataSource = dt;
+            //sql_con.Open();
+            //SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
+            //SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
+            //DataTable dt = new DataTable();
+            //sdr.Fill(dt);
+            //dgvImport.DataSource = dt;
 
 
 
-            sql_con.Close();
+            //sql_con.Close();
+
+
+            dset.Clear();
+            dset = objStorProc.sp_GetCategory("Calldatablockingoflowinventory", Convert.ToInt32(txtnobatch.Text), txtFeedCode.Text, "", "");
+
+            try
+            {
+                if (dset.Tables.Count > 0)
+                {
+                    DataView dv = new DataView(dset.Tables[0]);
+
+                    dgvImport.DataSource = dv;
+
+                }
+            }
+            catch (SyntaxErrorException)
+            {
+                MessageBox.Show("Invalid character found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                return;
+            }
+            catch (EvaluateException)
+            {
+                MessageBox.Show("Invalid character found 2 Gerard.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                return;
+            }
+
             //if (ready == true)
             //valentine
             btnsum_Click(new object(), new System.EventArgs());

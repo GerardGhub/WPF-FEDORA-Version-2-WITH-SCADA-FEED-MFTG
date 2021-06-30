@@ -1527,8 +1527,7 @@ namespace WFFDR
 
         public void SaveProduction()
         {
-            //MessageBox.Show("Mabulok Ka Gerard! Hhahahhaha!");
-            //return;
+        
 
             dSet.Clear();
             dSet = objStorProc.rdf_sp_prod_schedules(0, cboFeedCode.Text.Trim(), txtbags.Text.Trim(), txtnobatch.Text.Trim(), mfg_datePicker.Text.Trim(), txtdatenow.Text.Trim(), txtreason.Text.Trim(), textBox1.Text.Trim(), txtseries.Text.Trim(), cmbBagandBin.Text.Trim(), txtretailbin.Text.Trim(), txtcorntype.Text.Trim(), txtaddedby.Text.Trim(), "add");
@@ -2088,6 +2087,8 @@ namespace WFFDR
             //String connetionString = @"Server=FM-MMERCADO-L;Initial Catalog=Fedoramain;Integrated Security=SSPI";
 
             //deploy
+
+            //eto
             String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
             //        String connetionString = @"Data Source=192.168.2.9\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=Nescafe3in1;MultipleActiveResultSets=true"
             SqlConnection sql_con = new SqlConnection(connetionString);
@@ -2230,35 +2231,35 @@ namespace WFFDR
 
         }
 
-        void FirstLine()
-        {
+        //void FirstLine()
+        //{
 
-            PopupNotifier popup = new PopupNotifier();
-            popup.Image = Properties.Resources.info;
-            popup.TitleText = "Fedora Notifications";
-            popup.ContentText = "You are already in the First Line";
-            popup.Size = new Size(350, 100);
-            popup.ImageSize = new Size(70, 80);
-            popup.BodyColor = Color.LightBlue;
-            popup.Popup();
+        //    PopupNotifier popup = new PopupNotifier();
+        //    popup.Image = Properties.Resources.info;
+        //    popup.TitleText = "Fedora Notifications";
+        //    popup.ContentText = "You are already in the First Line";
+        //    popup.Size = new Size(350, 100);
+        //    popup.ImageSize = new Size(70, 80);
+        //    popup.BodyColor = Color.LightBlue;
+        //    popup.Popup();
 
-            popup.ContentColor = Color.Black;
-            popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
-            popup.TitleColor = Color.Black;
-            popup.TitlePadding = new Padding(95, 7, 0, 0);
-            popup.AnimationDuration = 1000;
-            popup.ShowOptionsButton.ToString();
-            popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
+        //    popup.ContentColor = Color.Black;
+        //    popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
+        //    popup.TitleColor = Color.Black;
+        //    popup.TitlePadding = new Padding(95, 7, 0, 0);
+        //    popup.AnimationDuration = 1000;
+        //    popup.ShowOptionsButton.ToString();
+        //    popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
 
-            popup.Delay = 500;
-            popup.AnimationInterval = 10;
-            popup.AnimationDuration = 1000;
-
-
-            popup.ShowOptionsButton = true;
+        //    popup.Delay = 500;
+        //    popup.AnimationInterval = 10;
+        //    popup.AnimationDuration = 1000;
 
 
-        }
+        //    popup.ShowOptionsButton = true;
+
+
+        //}
 
         private void dgvImport_CurrentCellChanged(object sender, EventArgs e)
         {
@@ -2314,25 +2315,81 @@ namespace WFFDR
                 sdr.Fill(dt);
                 dgvMaster2.DataSource = dt;
                 sql_con.Close();
+
+
+                //dset.Clear();
+                //dset = objStorProc.sp_GetCategory("Calldatareserveinventoryalone", 0, txtItemCode.Text, "", "");
+
+                //try
+                //{
+                //    if (dset.Tables.Count > 0)
+                //    {
+                //        DataView dv = new DataView(dset.Tables[0]);
+
+                //        dgvMaster2.DataSource = dv;
+
+                //    }
+                //}
+                //catch (SyntaxErrorException)
+                //{
+                //    MessageBox.Show("Invalid character found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //    return;
+                //}
+                //catch (EvaluateException)
+                //{
+                //    MessageBox.Show("Invalid character found 2 Gerard.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //    return;
+                //}
+
+
+
             }
 
             else
             {
 
+                dset.Clear();
+                dset = objStorProc.sp_GetCategory("Calldatareserveinventoryalone", 0, txtItemCode.Text, "", "");
 
-                String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
+                try
+                {
+                    if (dset.Tables.Count > 0)
+                    {
+                        DataView dv = new DataView(dset.Tables[0]);
+
+                        dgvMaster2.DataSource = dv;
+
+                    }
+                }
+                catch (SyntaxErrorException)
+                {
+                    MessageBox.Show("Invalid character found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    return;
+                }
+                catch (EvaluateException)
+                {
+                    MessageBox.Show("Invalid character found 2 Gerard.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    return;
+                }
 
 
-                SqlConnection sql_con = new SqlConnection(connetionString);
+                //String connetionString = @"Data Source=10.10.2.16,1433\SQLEXPRESS;Initial Catalog=Fedoramain;User ID=sa;Password=FMf3dor@2o20;MultipleActiveResultSets=true";
 
-                string sqlquery = "select a.item_id,a.item_code,a.item_description,a.total_quantity_raw,a.qty_repack_available,a.qty_repack,a.qty_production,ISNULL(t5.RECEIVING,0) + ISNULL(t6.ISSUE,0) - ISNULL(t2.MACRESERVED,0) - ISNULL(t7.OUTING,0) as RESERVED from [dbo].[rdf_raw_materials] a LEFT JOIN ( select BC.r_item_code, sum(CAST(REPLACE(BC.r_quantity,',','') as float))  as RECEIVING from rdf_microreceiving_entry BC where BC.transaction_type='PO' group by BC.r_item_code) t5 on a.item_code = t5.r_item_code LEFT JOIN ( select BC.r_item_code, sum(CAST(REPLACE(BC.r_quantity,',','') as float))  as ISSUE from rdf_microreceiving_entry BC where BC.transaction_type='Miscellaneous Receipt' group by BC.r_item_code) t6 on a.item_code = t6.r_item_code LEFT JOIN ( select BC.item_code, sum(CAST(BC.quantity as float)*2)  as MACRESERVED from rdf_recipe_to_production BC where CAST(BC.proddate as date) BETWEEN '2021-01-12' and GETDATE()+30 and status_of_person IS NULL group by BC.item_code) t2 on a.item_code = t2.item_code LEFT JOIN ( select BC.item_code, sum(CAST(REPLACE(BC.qty,',','') as float))  as OUTING from rdf_transaction_out_progress BC where BC.is_active='1' group by BC.item_code) t7 on a.item_code = t7.item_code WHERE a.item_code = '" + txtItemCode.Text + "'";
-                sql_con.Open();
-                SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
-                SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
-                DataTable dt = new DataTable();
-                sdr.Fill(dt);
-                dgvMaster2.DataSource = dt;
-                sql_con.Close();
+
+                //SqlConnection sql_con = new SqlConnection(connetionString);
+
+                //string sqlquery = "select a.item_id,a.item_code,a.item_description,a.total_quantity_raw,a.qty_repack_available,a.qty_repack,a.qty_production,ISNULL(t5.RECEIVING,0) + ISNULL(t6.ISSUE,0) - ISNULL(t2.MACRESERVED,0) - ISNULL(t7.OUTING,0) as RESERVED from [dbo].[rdf_raw_materials] a LEFT JOIN ( select BC.r_item_code, sum(CAST(REPLACE(BC.r_quantity,',','') as float))  as RECEIVING from rdf_microreceiving_entry BC where BC.transaction_type='PO' group by BC.r_item_code) t5 on a.item_code = t5.r_item_code LEFT JOIN ( select BC.r_item_code, sum(CAST(REPLACE(BC.r_quantity,',','') as float))  as ISSUE from rdf_microreceiving_entry BC where BC.transaction_type='Miscellaneous Receipt' group by BC.r_item_code) t6 on a.item_code = t6.r_item_code LEFT JOIN ( select BC.item_code, sum(CAST(BC.quantity as float)*2)  as MACRESERVED from rdf_recipe_to_production BC where CAST(BC.proddate as date) BETWEEN '2021-01-12' and GETDATE()+30 and status_of_person IS NULL group by BC.item_code) t2 on a.item_code = t2.item_code LEFT JOIN ( select BC.item_code, sum(CAST(REPLACE(BC.qty,',','') as float))  as OUTING from rdf_transaction_out_progress BC where BC.is_active='1' group by BC.item_code) t7 on a.item_code = t7.item_code WHERE a.item_code = '" + txtItemCode.Text + "'";
+                //sql_con.Open();
+                //SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
+                //SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
+                //DataTable dt = new DataTable();
+                //sdr.Fill(dt);
+                //dgvMaster2.DataSource = dt;
+                //sql_con.Close();
 
 
 
@@ -4248,6 +4305,7 @@ namespace WFFDR
 
         private void btnsave_Click(object sender, EventArgs e)
         {
+            //add to
             //this.cboFeedCode.Text = this.cboFeedCode.Text.ToUpper();
             btnStartingValidation_Click(sender, e);
 
