@@ -862,6 +862,7 @@ namespace WFFDR
             //load_posummary_reportmacro();
             load_posummary_report_macro();
             load_fgreceiving();
+            Load_fgpending();
             myglobal.global_module = "Active";
             load_search();
 
@@ -974,6 +975,28 @@ namespace WFFDR
 
                 Buffer();
                 if (lblfgreceiving.Text == "0")
+                {
+                    //timer2.Stop();
+                    //return;
+                }
+                else
+                {
+
+                    timer3.Enabled = true;
+                    timer3.Start();
+                    timer3_Tick(sender, e);
+
+                }
+
+            }
+
+
+            if (txtReceivingStatus.Text == "FGPENDING On")
+            {
+
+
+                Buffer();
+                if (lblfgpending.Text == "0")
                 {
                     //timer2.Stop();
                     //return;
@@ -1172,6 +1195,17 @@ namespace WFFDR
             //poreceived_header();
         }
 
+
+        public void Load_fgpending()
+        {
+            string mcolumns = "test,PID,Pdate,printdate,fc,ft,remarks";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
+            pointer_module.populateModule(dsetHeader, dgvfgpending, mcolumns, "fg_pendingnotif");
+
+            lblfgpending.Text = dgvfgpending.RowCount.ToString();
+
+
+        }
+
         //public void load_posummary_reportmacro()
         //{
         //    string mcolumns = "test,po_number,item_code,item_description,qty_ordered,Password";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
@@ -1261,6 +1295,38 @@ namespace WFFDR
             popup.TitlePadding = new Padding(95, 7, 0, 0);
             popup.TitleFont = new Font("Tahoma", 10);
             popup.ContentText = "YOU HAVE " + lblfgreceiving.Text + " FINISHED GOOD FOR RECEIVING!";
+            popup.ContentColor = Color.White;
+            popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
+            popup.Size = new Size(350, 100);
+            popup.ImageSize = new Size(70, 80);
+            popup.BodyColor = Color.Gray;
+            popup.Popup();
+            //popup.AnimationDuration = 1000;
+            //popup.ShowOptionsButton.ToString();
+            popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
+            //txtMainInput.Focus();
+            //txtMainInput.Select();
+            popup.Delay = 500;
+            popup.AnimationInterval = 10;
+            popup.AnimationDuration = 1000;
+
+
+            popup.ShowOptionsButton = true;
+            //popup.ContentText = "TOTAL QUANTITY OF RAW MATERIALS TO BE RECEIVED IS " + lblallmaterials.Text + " AND THE NEW ITEM " + lblnew.Text + " " + lblTip.Text + " ";
+
+            Buffer();
+        }
+
+        void NotifyFGPending()
+        {
+
+            PopupNotifier popup = new PopupNotifier();
+            popup.Image = Properties.Resources.info;
+            popup.TitleText = "Fedora Notifications";
+            popup.TitleColor = Color.White;
+            popup.TitlePadding = new Padding(95, 7, 0, 0);
+            popup.TitleFont = new Font("Tahoma", 10);
+            popup.ContentText = "YOU HAVE " + lblfgpending.Text + " FINISHED GOOD PENDING FOR RECEIVING!";
             popup.ContentColor = Color.White;
             popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
             popup.Size = new Size(350, 100);
@@ -4397,6 +4463,7 @@ namespace WFFDR
         {
             timer3.Start();
             load_fgreceiving();
+            Load_fgpending();
             load_Final_Buffer();
             if (SlowMovingIConCount.Text == "0")
             {
@@ -4421,6 +4488,18 @@ namespace WFFDR
             else
             {
                 NotifyFGReceiving();
+
+            }
+
+            if (lblfgpending.Text == "0")
+            {
+
+
+            }
+
+            else
+            {
+                NotifyFGPending();
 
             }
         }
@@ -4476,7 +4555,6 @@ namespace WFFDR
             Issueslip.MdiParent = this;
             Issueslip.Show();
         }
-
     }
 
 }
