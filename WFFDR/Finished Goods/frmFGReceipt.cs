@@ -228,12 +228,12 @@ namespace WFFDR
             //    //txtbags.Focus();
             //    //return;
             //}
-            if (txtremarks.Text == String.Empty)
-            {
-                EmptyFieldNotify();
-                txtremarks.Focus();
-                return;
-            }
+            //if (txtremarks.Text == String.Empty)
+            //{
+            //    EmptyFieldNotify();
+            //    txtremarks.Focus();
+            //    return;
+            //}
             if (txtFeedType.Text.Trim() == String.Empty)
             {
 
@@ -368,30 +368,76 @@ namespace WFFDR
 
         }
 
+        private static bool IsNameValid(string name)
+        {
+            if (string.IsNullOrEmpty(name))
+                return true;
+            else if (name.Any(c => c < '0' || c > '9'))
+
+            {
+                PopupNotifier popup = new PopupNotifier();
+                popup.Image = Properties.Resources.info;
+                popup.TitleText = "Fedora Notifications";
+                popup.TitleColor = Color.White;
+                popup.TitlePadding = new Padding(95, 7, 0, 0);
+                popup.TitleFont = new Font("Tahoma", 10);
+                popup.ContentText = "Sorry your Quantity must contain digits only!";
+                popup.ContentColor = System.Drawing.Color.FromArgb(255, 255, 255);
+                popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
+                popup.ContentHoverColor = System.Drawing.Color.FromArgb(255, 255, 255);
+                popup.ContentPadding = new Padding(0);
+                popup.Size = new Size(350, 100);
+                popup.ImageSize = new Size(70, 80);
+                popup.BodyColor = Color.Red;
+                popup.Popup();
+                popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
+                popup.Delay = 500;
+                popup.AnimationInterval = 10;
+                popup.AnimationDuration = 1000;
+                popup.ShowOptionsButton = true;
+
+
+                return false;
+            }
+            else if (name.StartsWith("0"))
+            {
+                PopupNotifier popup = new PopupNotifier();
+                popup.Image = Properties.Resources.info;
+                popup.TitleText = "Fedora Notifications";
+                popup.TitleColor = Color.White;
+                popup.TitlePadding = new Padding(95, 7, 0, 0);
+                popup.TitleFont = new Font("Tahoma", 10);
+                popup.ContentText = "Sorry the quantity must not start from 0! ";
+                popup.ContentColor = System.Drawing.Color.FromArgb(255, 255, 255);
+                popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
+                popup.ContentHoverColor = System.Drawing.Color.FromArgb(255, 255, 255);
+                popup.ContentPadding = new Padding(0);
+                popup.Size = new Size(350, 100);
+                popup.ImageSize = new Size(70, 80);
+                popup.BodyColor = Color.Red;
+                popup.Popup();
+                popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
+                popup.Delay = 500;
+                popup.AnimationInterval = 10;
+                popup.AnimationDuration = 1000;
+                popup.ShowOptionsButton = true;
+
+                return false;
+            }
+
+            return true;
+        }
+
         private void txtbags_TextChanged(object sender, EventArgs e)
         {
-            //if (txtbags.Text.Trim() == string.Empty)
-            //{
-            //    txttimes50.Text = "";
-            //    txtbacthno.Text = "";
 
-
-            //if (cboOptions.Text=="BULK ENTRY")
-            //{ 
-
-
-
-            //    txttimes50.Text = (float.Parse(txtbags.Text) * 50).ToString();
-            //    txtbacthno.Text = (float.Parse(txtbags.Text) / 40).ToString();
-            //}
-            //}
-
-            //else
-            //{
-            //    txttimes50.Text = "50".ToString();
-            //    txtbacthno.Text = (float.Parse(txtbags.Text) / 40).ToString();
-
-            //}
+            if (!IsNameValid(txtbags.Text))
+            {
+                txtbags.Text = string.Concat(txtbags
+                .Text
+                .Where(c => c >= '0' && c <= '9')
+                .SkipWhile(c => c == '0'));
+            }
 
 
             if (txtbags.Text.Trim() == string.Empty)
@@ -913,16 +959,7 @@ namespace WFFDR
         {
 
 
-            if (!char.IsControl(e.KeyChar)
-    && !char.IsDigit(e.KeyChar)
-    && e.KeyChar != '.')
-            {
-                e.Handled = true;
-            }
-
-            // only allow one decimal point
-            if (e.KeyChar == '.'
-                && (sender as TextBox).Text.IndexOf('.') > -1)
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
                 e.Handled = true;
             }

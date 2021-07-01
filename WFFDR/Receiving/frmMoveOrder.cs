@@ -841,7 +841,7 @@ namespace WFFDR
                 if (bagbulkmain.Text == "BULK ENTRY")
                 {
                     dSet.Clear();
-                    dSet = objStorProc.rdf_sp_move_order(0, ordermain.Text.Trim(),"", "", "", "", "", feedcodemain.Text.Trim(), "", bagbulkmain.Text.Trim(), fgdate.Text.Trim(), "", "", "", "", "", productionmain.Text.Trim().ToString(), lblsasa.Text, "", 0, "", "", myfgidbulk.Text.Trim().ToString(), "cancelmoveorderbulk");
+                    dSet = objStorProc.rdf_sp_move_order(0, ordermain.Text.Trim(), binnomain.Text, "", "", "", "", feedcodemain.Text.Trim(), "", bagbulkmain.Text.Trim(), fgdate.Text.Trim(), "", "", "", "", "", productionmain.Text.Trim().ToString(), lblsasa.Text, "", 0, "", "", myfgidbulk.Text.Trim().ToString(), "cancelmoveorderbulk");
                    
                     Querycancelmoveorder();
 
@@ -2097,7 +2097,7 @@ namespace WFFDR
 
         {
             dSet.Clear();
-            dSet = objStorProc.rdf_sp_move_order(0, "", "", "", "", "", "", feedcodemain.Text.Trim(), "", bagbulkmain.Text.Trim(), fgdate.Text.Trim(), "", "", "", "", "", productionmain.Text.Trim(), lblsasa.Text, "", 0, "", "", "", "cancelmoveorder");
+            dSet = objStorProc.rdf_sp_move_order(0, "", binnomain.Text, "", "", "", "", feedcodemain.Text.Trim(), "", bagbulkmain.Text.Trim(), fgdate.Text.Trim(), "", "", "", "", "", productionmain.Text.Trim(), lblsasa.Text, "", 0, "", "", "", "cancelmoveorder");
         }
 
         private void Querycancelmoveordebagging()
@@ -2465,7 +2465,7 @@ namespace WFFDR
                                 {
                                     //MessageBox.Show("takla");
                                     dSet.Clear();
-                                    dSet = objStorProc.rdf_sp_move_order(0, fgidbulk.Text.Trim(), "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", lblsasa.Text, "", 0, "", "", "", "showaddlinebulk");
+                                    dSet = objStorProc.rdf_sp_move_order(0, fgidbulk.Text.Trim(), Cbbin.Text, "", "", "", "", "", "", "", "", "", "", "", "", "", "", lblsasa.Text, "", 0, "", "", "", "showaddlinebulk");
 
                                 }
 
