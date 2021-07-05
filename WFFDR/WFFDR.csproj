@@ -144,8 +144,8 @@
     <Reference Include="UIAutomationProvider" />
     <Reference Include="WindowsBase" />
     <Reference Include="WindowsFormsIntegration" />
-    <Reference Include="Z.Dapper.Plus, Version=4.0.5.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Z.Dapper.Plus.4.0.5\lib\net45\Z.Dapper.Plus.dll</HintPath>
+    <Reference Include="Z.Dapper.Plus, Version=4.0.7.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Z.Dapper.Plus.4.0.7\lib\net45\Z.Dapper.Plus.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -54,7 +54,7 @@ namespace WFFDR
             else if (myglobal.global_module == "MICRO")
             { dset_emp = objStorProc.sp_getMajorTables("micro_raw_materialsnew"); }
             else if (myglobal.global_module == "FGINVENTORY")
-            { dset_emp = objStorProc.sp_getMajorTables("fg_inventory"); }
+            { dset_emp = objStorProc.sp_getMajorTables("fg_inventory_overall"); }
             else if (myglobal.global_module == "RESIGNED EMPLOYEE")
             { dset_emp = objStorProc.sp_getMajorTables("employee_B"); }
             else if (myglobal.global_module == "PHONEBOOK")
@@ -171,7 +171,7 @@ namespace WFFDR
 
         public void load_fg_inventory()
         {
-            string mcolumns = "test,FeedCode,FeedType,BAGS_COUNT,BULK_COUNT,TOTAL_COUNT,BAG_RECEIPT,BULK_RECEIPT,TOTAL_RECEIPT,BAG_ISSUE,BULK_ISSUE,TOTAL_ISSUE,BAG_MOVEORDER,BULK_MOVEORDER,TOTAL_MOVEORDER,GRAND_TOTAL,TotalIssueMoveorder,TOTAL_INVENTORY,BAG_INVENTORY,BULK_INVENTORY";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
+            string mcolumns = "test,FeedCode,FeedType,BAGS_COUNT,BULK_COUNT,TOTAL_COUNT,BAG_RECEIPT,BULK_RECEIPT,TOTAL_RECEIPT,BAG_ISSUE,BULK_ISSUE,TOTAL_ISSUE,BAG_MOVEORDER,BULK_MOVEORDER,TOTAL_MOVEORDER,GRAND_TOTAL,TotalIssueMoveorder,BAGRESERVE,BULKRESERVE,TOTAL_INVENTORY,BAG_INVENTORY,BULK_INVENTORY";     /* ,InitialMemoReleased,ResolutionMemoReleased*/
             pointer_module.populateModule(dsetHeader, dgv_table, mcolumns, "fg_inventory_overall");
             lblrecords.Text = dgv_table.RowCount.ToString();
             lbltotalrecords.Text = dgv_table.RowCount.ToString();
@@ -295,6 +295,15 @@ namespace WFFDR
 
                         lblmyfeedcode.Text = dgv_table.CurrentRow.Cells["FeedCode"].Value.ToString();
                         lblfcode.Text = dgv_table.CurrentRow.Cells["FeedCode"].Value.ToString();
+
+                        infofeedcode.Text = dgv_table.CurrentRow.Cells["FeedCode"].Value.ToString();
+                        infofeedtype.Text = dgv_table.CurrentRow.Cells["FeedType"].Value.ToString();
+                        infobagreserve.Text = dgv_table.CurrentRow.Cells["BAGRESERVE"].Value.ToString();
+                        infobulkreserve.Text = dgv_table.CurrentRow.Cells["BULKRESERVE"].Value.ToString();
+                        infobagsoh.Text = dgv_table.CurrentRow.Cells["BAG_INVENTORY"].Value.ToString();
+                        infobulksoh.Text = dgv_table.CurrentRow.Cells["BULK_INVENTORY"].Value.ToString();
+
+
 
                     }
                 }
@@ -437,7 +446,7 @@ namespace WFFDR
         private void txtsearchs_TextChanged(object sender, EventArgs e)
         {
             load_search();
-            doSearch();
+          
             GrandTotal();
         }
 

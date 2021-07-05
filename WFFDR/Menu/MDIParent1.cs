@@ -1326,12 +1326,12 @@ namespace WFFDR
             popup.TitleColor = Color.White;
             popup.TitlePadding = new Padding(95, 7, 0, 0);
             popup.TitleFont = new Font("Tahoma", 10);
-            popup.ContentText = "YOU HAVE " + lblfgpending.Text + " FINISHED GOOD PENDING FOR RECEIVING!";
+            popup.ContentText = "YOU HAVE " + lblfgpending.Text + " FINISHED GOOD PENDING IN RECEIVING!";
             popup.ContentColor = Color.White;
             popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
             popup.Size = new Size(350, 100);
             popup.ImageSize = new Size(70, 80);
-            popup.BodyColor = Color.Gray;
+            popup.BodyColor = Color.Red;
             popup.Popup();
             //popup.AnimationDuration = 1000;
             //popup.ShowOptionsButton.ToString();
@@ -4478,28 +4478,38 @@ namespace WFFDR
                 NearlyExpired.Visible = true;
             }
 
-
-            if (lblfgreceiving.Text == "0")
-            {
+            //notif for fg receiving
+            if (txtReceivingStatus.Text == "FG On")
+            { 
+                if (lblfgreceiving.Text == "0")
+                {
                 
 
-            }
+                }
 
-            else
-            {
+                else
+                {
                 NotifyFGReceiving();
 
+                }
             }
 
-            if (lblfgpending.Text == "0")
-            {
+            //notif for fg pending
+
+            if (txtReceivingStatus.Text == "FGPENDING On")
+            { 
+
+                if (lblfgpending.Text == "0")
+                {
 
 
-            }
+                }
 
-            else
-            {
+                else
+                {
                 NotifyFGPending();
+
+                }
 
             }
         }

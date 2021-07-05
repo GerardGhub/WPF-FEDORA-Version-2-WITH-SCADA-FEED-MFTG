@@ -59,6 +59,8 @@ namespace WFFDR
             // Calling the Stored PROC 
             objStorProc = xClass.g_objStoredProc.GetCollections();
             load_Schedules();
+            dtp1.MaxDate = DateTime.Now;
+            dtp2.MaxDate = DateTime.Now;
             if (lblrecords.Text == "0")
 
             {
@@ -230,8 +232,8 @@ namespace WFFDR
 
         private void txtusername_TextChanged(object sender, EventArgs e)
         {
-            load_search();
-            doSearch();
+          
+          
             //GrandTotal();
         }
 
@@ -281,7 +283,8 @@ namespace WFFDR
                     {
                         //  dv.RowFilter = "item_id like '%" + txtsearch.Text + "%' or item_code like '%" + txtsearch.Text + "%' or item_description like '%" + txtsearch.Text + "%'";
                         //dv.RowFilter = "item_id like '%" + txtsearch.Text + "%' or item_code like '%" + txtsearch.Text + "%'";
-                        dv.RowFilter = "order_no like '%" + txtsearchs.Text + "%'";
+                        //dv.RowFilter = "order_no like '%" + txtsearchs.Text + "%'";
+                        dv.RowFilter = "date_added >= '" + dtp1.Text + "' AND date_added <='" + dtp2.Text + "'";
                     }
 
                     else if (myglobal.global_module == "VISITORS")
@@ -347,6 +350,17 @@ namespace WFFDR
         private void button1_Click(object sender, EventArgs e)
         {  
          this.BeginInvoke(new MethodInvoker(Close));
+        }
+
+        private void dtp1_ValueChanged(object sender, EventArgs e)
+        {
+            
+            load_search();
+        }
+
+        private void dtp2_ValueChanged(object sender, EventArgs e)
+        {
+            load_search();
         }
     }
 }
