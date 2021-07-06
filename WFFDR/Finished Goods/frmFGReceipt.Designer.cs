@@ -30,15 +30,15 @@ namespace WFFDR
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFGReceipt));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.txtmoveorder = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -70,14 +70,6 @@ namespace WFFDR
             this.transdatenow = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvFG = new System.Windows.Forms.DataGridView();
-            this.prod_adv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fg_feed_code = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fg_feed_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fg_bags = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.actual_weight = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fg_options = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fg_proddate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fg_batch = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dgvCountISSUE = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
@@ -117,6 +109,15 @@ namespace WFFDR
             this.btnTransact = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.prod_adv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fg_feed_code = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fg_feed_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fg_bags = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.actual_weight = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fg_options = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fg_proddate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fg_batch = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GroupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFG)).BeginInit();
@@ -128,9 +129,6 @@ namespace WFFDR
             // 
             // GroupBox1
             // 
-            this.GroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.GroupBox1.Controls.Add(this.txtmoveorder);
             this.GroupBox1.Controls.Add(this.label18);
             this.GroupBox1.Controls.Add(this.bagweight);
@@ -156,50 +154,41 @@ namespace WFFDR
             this.GroupBox1.Controls.Add(this.txtbags);
             this.GroupBox1.Controls.Add(this.txtaddedby);
             this.GroupBox1.Controls.Add(this.txtremarks);
-            this.GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GroupBox1.Location = new System.Drawing.Point(9, 11);
+            this.GroupBox1.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GroupBox1.Location = new System.Drawing.Point(9, 34);
             this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Size = new System.Drawing.Size(917, 199);
+            this.GroupBox1.Size = new System.Drawing.Size(917, 181);
             this.GroupBox1.TabIndex = 556;
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "FG Information";
             // 
             // txtmoveorder
             // 
-            this.txtmoveorder.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtmoveorder.BackColor = System.Drawing.Color.Yellow;
             this.txtmoveorder.Enabled = false;
-            this.txtmoveorder.Location = new System.Drawing.Point(715, 96);
+            this.txtmoveorder.Location = new System.Drawing.Point(745, 78);
             this.txtmoveorder.Name = "txtmoveorder";
-            this.txtmoveorder.Size = new System.Drawing.Size(165, 23);
+            this.txtmoveorder.Size = new System.Drawing.Size(165, 20);
             this.txtmoveorder.TabIndex = 650;
             this.txtmoveorder.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label18
             // 
-            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(609, 102);
+            this.label18.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(657, 83);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(102, 13);
+            this.label18.Size = new System.Drawing.Size(81, 12);
             this.label18.TabIndex = 649;
             this.label18.Text = "Move Order No :";
             // 
             // bagweight
             // 
-            this.bagweight.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.bagweight.BackColor = System.Drawing.SystemColors.Window;
             this.bagweight.Enabled = false;
-            this.bagweight.Location = new System.Drawing.Point(662, 162);
+            this.bagweight.Location = new System.Drawing.Point(688, 143);
             this.bagweight.Name = "bagweight";
-            this.bagweight.Size = new System.Drawing.Size(31, 23);
+            this.bagweight.Size = new System.Drawing.Size(31, 20);
             this.bagweight.TabIndex = 648;
             this.bagweight.Text = "50";
             this.bagweight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -207,14 +196,11 @@ namespace WFFDR
             // 
             // bag
             // 
-            this.bag.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.bag.BackColor = System.Drawing.SystemColors.Window;
             this.bag.Enabled = false;
-            this.bag.Location = new System.Drawing.Point(626, 162);
+            this.bag.Location = new System.Drawing.Point(651, 143);
             this.bag.Name = "bag";
-            this.bag.Size = new System.Drawing.Size(31, 23);
+            this.bag.Size = new System.Drawing.Size(31, 20);
             this.bag.TabIndex = 647;
             this.bag.Text = "1";
             this.bag.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -222,68 +208,53 @@ namespace WFFDR
             // 
             // txtid
             // 
-            this.txtid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtid.BackColor = System.Drawing.SystemColors.Window;
             this.txtid.Enabled = false;
-            this.txtid.Location = new System.Drawing.Point(353, 167);
+            this.txtid.Location = new System.Drawing.Point(724, 145);
             this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(165, 23);
+            this.txtid.Size = new System.Drawing.Size(165, 20);
             this.txtid.TabIndex = 646;
             this.txtid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtid.Visible = false;
             // 
             // label5
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(654, 72);
+            this.label5.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(696, 53);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 13);
+            this.label5.Size = new System.Drawing.Size(43, 12);
             this.label5.TabIndex = 362;
             this.label5.Text = "Qty KG :";
             // 
             // txtbacthno
             // 
-            this.txtbacthno.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtbacthno.BackColor = System.Drawing.SystemColors.Window;
             this.txtbacthno.Enabled = false;
-            this.txtbacthno.Location = new System.Drawing.Point(715, 39);
+            this.txtbacthno.Location = new System.Drawing.Point(744, 20);
             this.txtbacthno.Name = "txtbacthno";
-            this.txtbacthno.Size = new System.Drawing.Size(165, 23);
+            this.txtbacthno.Size = new System.Drawing.Size(166, 20);
             this.txtbacthno.TabIndex = 361;
             this.txtbacthno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtbatchnos
             // 
-            this.txtbatchnos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtbatchnos.AutoSize = true;
-            this.txtbatchnos.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbatchnos.Location = new System.Drawing.Point(644, 42);
+            this.txtbatchnos.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbatchnos.Location = new System.Drawing.Point(686, 23);
             this.txtbatchnos.Name = "txtbatchnos";
-            this.txtbatchnos.Size = new System.Drawing.Size(67, 13);
+            this.txtbatchnos.Size = new System.Drawing.Size(52, 12);
             this.txtbatchnos.TabIndex = 360;
             this.txtbatchnos.Text = "Batch No :";
             // 
             // btnInsert
             // 
-            this.btnInsert.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnInsert.BackColor = System.Drawing.SystemColors.Window;
             this.btnInsert.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnInsert.Image = ((System.Drawing.Image)(resources.GetObject("btnInsert.Image")));
             this.btnInsert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInsert.Location = new System.Drawing.Point(9, 164);
+            this.btnInsert.Location = new System.Drawing.Point(9, 145);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(75, 28);
             this.btnInsert.TabIndex = 644;
@@ -294,60 +265,48 @@ namespace WFFDR
             // 
             // txttimes50
             // 
-            this.txttimes50.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txttimes50.BackColor = System.Drawing.SystemColors.Window;
             this.txttimes50.Enabled = false;
-            this.txttimes50.Location = new System.Drawing.Point(715, 67);
+            this.txttimes50.Location = new System.Drawing.Point(745, 47);
             this.txttimes50.Name = "txttimes50";
-            this.txttimes50.Size = new System.Drawing.Size(165, 23);
+            this.txttimes50.Size = new System.Drawing.Size(165, 20);
             this.txttimes50.TabIndex = 358;
             this.txttimes50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txttimes50.TextChanged += new System.EventHandler(this.txttimes50_TextChanged);
             // 
             // mfg_datePicker
             // 
-            this.mfg_datePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.mfg_datePicker.CustomFormat = "M/d/yyyy";
             this.mfg_datePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.mfg_datePicker.Location = new System.Drawing.Point(447, 36);
+            this.mfg_datePicker.Location = new System.Drawing.Point(463, 20);
             this.mfg_datePicker.Name = "mfg_datePicker";
-            this.mfg_datePicker.Size = new System.Drawing.Size(151, 23);
+            this.mfg_datePicker.Size = new System.Drawing.Size(151, 20);
             this.mfg_datePicker.TabIndex = 357;
             this.mfg_datePicker.Value = new System.DateTime(2020, 3, 28, 0, 0, 0, 0);
             // 
             // cboFeedCode
             // 
-            this.cboFeedCode.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.cboFeedCode.BackColor = System.Drawing.Color.Yellow;
             this.cboFeedCode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboFeedCode.Enabled = false;
             this.cboFeedCode.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cboFeedCode.FormattingEnabled = true;
-            this.cboFeedCode.ItemHeight = 15;
-            this.cboFeedCode.Location = new System.Drawing.Point(102, 38);
+            this.cboFeedCode.ItemHeight = 12;
+            this.cboFeedCode.Location = new System.Drawing.Point(84, 20);
             this.cboFeedCode.Name = "cboFeedCode";
-            this.cboFeedCode.Size = new System.Drawing.Size(262, 23);
+            this.cboFeedCode.Size = new System.Drawing.Size(262, 20);
             this.cboFeedCode.TabIndex = 356;
             this.cboFeedCode.SelectedIndexChanged += new System.EventHandler(this.cboFeedCode_SelectedIndexChanged);
             this.cboFeedCode.SelectionChangeCommitted += new System.EventHandler(this.cboFeedCode_SelectionChangeCommitted);
             // 
             // btnsave
             // 
-            this.btnsave.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnsave.BackColor = System.Drawing.SystemColors.Window;
             this.btnsave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnsave.Image = global::WFFDR.Properties.Resources.add_list_24px;
             this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsave.Location = new System.Drawing.Point(9, 164);
+            this.btnsave.Location = new System.Drawing.Point(9, 145);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(75, 28);
             this.btnsave.TabIndex = 322;
@@ -359,136 +318,106 @@ namespace WFFDR
             // 
             // txtFeedType
             // 
-            this.txtFeedType.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFeedType.BackColor = System.Drawing.SystemColors.Window;
             this.txtFeedType.Enabled = false;
-            this.txtFeedType.Location = new System.Drawing.Point(102, 68);
+            this.txtFeedType.Location = new System.Drawing.Point(84, 50);
             this.txtFeedType.Name = "txtFeedType";
-            this.txtFeedType.Size = new System.Drawing.Size(262, 23);
+            this.txtFeedType.Size = new System.Drawing.Size(262, 20);
             this.txtFeedType.TabIndex = 355;
             this.txtFeedType.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(13, 134);
+            this.label8.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(13, 115);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(80, 13);
+            this.label8.Size = new System.Drawing.Size(65, 12);
             this.label8.TabIndex = 349;
             this.label8.Text = "Description :";
             // 
             // label22
             // 
-            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(379, 100);
+            this.label22.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(405, 81);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(68, 13);
+            this.label22.Size = new System.Drawing.Size(51, 12);
             this.label22.TabIndex = 348;
             this.label22.Text = "Qty Bags :";
             // 
             // label20
             // 
-            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(375, 44);
+            this.label20.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(401, 25);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(73, 13);
+            this.label20.Size = new System.Drawing.Size(56, 12);
             this.label20.TabIndex = 346;
             this.label20.Text = "Prod Date :";
             // 
             // Label2
             // 
-            this.Label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Label2.AutoSize = true;
-            this.Label2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label2.Location = new System.Drawing.Point(25, 102);
+            this.Label2.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label2.Location = new System.Drawing.Point(25, 83);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(69, 13);
+            this.Label2.Size = new System.Drawing.Size(52, 12);
             this.Label2.TabIndex = 4;
             this.Label2.Text = "Category :";
             // 
             // Label4
             // 
-            this.Label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Label4.AutoSize = true;
-            this.Label4.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label4.Location = new System.Drawing.Point(377, 72);
+            this.Label4.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label4.Location = new System.Drawing.Point(403, 53);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(70, 13);
+            this.Label4.Size = new System.Drawing.Size(54, 12);
             this.Label4.TabIndex = 4;
             this.Label4.Text = "Added by :";
             // 
             // Label3
             // 
-            this.Label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Label3.AutoSize = true;
-            this.Label3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label3.Location = new System.Drawing.Point(19, 74);
+            this.Label3.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label3.Location = new System.Drawing.Point(19, 55);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(74, 13);
+            this.Label3.Size = new System.Drawing.Size(58, 12);
             this.Label3.TabIndex = 4;
             this.Label3.Text = "Feed Type :";
             // 
             // Label6
             // 
-            this.Label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Label6.AutoSize = true;
-            this.Label6.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label6.Location = new System.Drawing.Point(16, 44);
+            this.Label6.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label6.Location = new System.Drawing.Point(21, 25);
             this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(77, 13);
+            this.Label6.Size = new System.Drawing.Size(57, 12);
             this.Label6.TabIndex = 3;
             this.Label6.Text = "Feed Code :";
             // 
             // cboOptions
             // 
-            this.cboOptions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.cboOptions.BackColor = System.Drawing.Color.Yellow;
             this.cboOptions.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboOptions.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cboOptions.FormattingEnabled = true;
-            this.cboOptions.ItemHeight = 15;
+            this.cboOptions.ItemHeight = 12;
             this.cboOptions.Items.AddRange(new object[] {
             "Bagging",
             "BULK ENTRY"});
-            this.cboOptions.Location = new System.Drawing.Point(102, 97);
+            this.cboOptions.Location = new System.Drawing.Point(84, 80);
             this.cboOptions.Name = "cboOptions";
-            this.cboOptions.Size = new System.Drawing.Size(262, 23);
+            this.cboOptions.Size = new System.Drawing.Size(262, 20);
             this.cboOptions.TabIndex = 346;
             // 
             // txtbags
             // 
-            this.txtbags.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtbags.BackColor = System.Drawing.Color.Yellow;
             this.txtbags.Enabled = false;
-            this.txtbags.Location = new System.Drawing.Point(447, 96);
+            this.txtbags.Location = new System.Drawing.Point(463, 80);
             this.txtbags.Name = "txtbags";
-            this.txtbags.Size = new System.Drawing.Size(151, 23);
+            this.txtbags.Size = new System.Drawing.Size(151, 20);
             this.txtbags.TabIndex = 330;
             this.txtbags.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtbags.TextChanged += new System.EventHandler(this.txtbags_TextChanged);
@@ -496,26 +425,20 @@ namespace WFFDR
             // 
             // txtaddedby
             // 
-            this.txtaddedby.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtaddedby.Enabled = false;
-            this.txtaddedby.Location = new System.Drawing.Point(447, 66);
+            this.txtaddedby.Location = new System.Drawing.Point(463, 50);
             this.txtaddedby.Name = "txtaddedby";
-            this.txtaddedby.Size = new System.Drawing.Size(151, 23);
+            this.txtaddedby.Size = new System.Drawing.Size(151, 20);
             this.txtaddedby.TabIndex = 336;
             this.txtaddedby.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtremarks
             // 
-            this.txtremarks.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtremarks.BackColor = System.Drawing.Color.Yellow;
             this.txtremarks.Enabled = false;
-            this.txtremarks.Location = new System.Drawing.Point(102, 127);
+            this.txtremarks.Location = new System.Drawing.Point(84, 109);
             this.txtremarks.Name = "txtremarks";
-            this.txtremarks.Size = new System.Drawing.Size(778, 23);
+            this.txtremarks.Size = new System.Drawing.Size(826, 20);
             this.txtremarks.TabIndex = 334;
             // 
             // txtorderno
@@ -550,11 +473,8 @@ namespace WFFDR
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.dgvFG);
-            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(9, 220);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(917, 300);
@@ -568,22 +488,20 @@ namespace WFFDR
             this.dgvFG.AllowUserToDeleteRows = false;
             this.dgvFG.AllowUserToResizeColumns = false;
             this.dgvFG.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            this.dgvFG.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvFG.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            dataGridViewCellStyle46.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle46.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvFG.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle46;
             this.dgvFG.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvFG.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvFG.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFG.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle47.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle47.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFG.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle47;
             this.dgvFG.ColumnHeadersHeight = 30;
             this.dgvFG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvFG.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -598,14 +516,14 @@ namespace WFFDR
             this.dgvFG.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgvFG.EnableHeadersVisualStyles = false;
             this.dgvFG.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvFG.Location = new System.Drawing.Point(10, 22);
+            this.dgvFG.Location = new System.Drawing.Point(10, 17);
             this.dgvFG.MultiSelect = false;
             this.dgvFG.Name = "dgvFG";
             this.dgvFG.ReadOnly = true;
             this.dgvFG.RowHeadersWidth = 50;
             this.dgvFG.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Teal;
-            this.dgvFG.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.Color.Teal;
+            this.dgvFG.RowsDefaultCellStyle = dataGridViewCellStyle48;
             this.dgvFG.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvFG.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvFG.Size = new System.Drawing.Size(900, 272);
@@ -613,88 +531,23 @@ namespace WFFDR
             this.dgvFG.CurrentCellChanged += new System.EventHandler(this.dgvFG_CurrentCellChanged);
             this.dgvFG.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvFG_RowPostPaint);
             // 
-            // prod_adv
-            // 
-            this.prod_adv.DataPropertyName = "prod_adv";
-            this.prod_adv.HeaderText = "ORDER NO";
-            this.prod_adv.MinimumWidth = 6;
-            this.prod_adv.Name = "prod_adv";
-            this.prod_adv.ReadOnly = true;
-            // 
-            // fg_feed_code
-            // 
-            this.fg_feed_code.DataPropertyName = "fg_feed_code";
-            this.fg_feed_code.HeaderText = "FEED CODE";
-            this.fg_feed_code.MinimumWidth = 6;
-            this.fg_feed_code.Name = "fg_feed_code";
-            this.fg_feed_code.ReadOnly = true;
-            // 
-            // fg_feed_type
-            // 
-            this.fg_feed_type.DataPropertyName = "fg_feed_type";
-            this.fg_feed_type.HeaderText = "FEED TYPE";
-            this.fg_feed_type.MinimumWidth = 6;
-            this.fg_feed_type.Name = "fg_feed_type";
-            this.fg_feed_type.ReadOnly = true;
-            // 
-            // fg_bags
-            // 
-            this.fg_bags.DataPropertyName = "fg_bags";
-            this.fg_bags.HeaderText = "QTY BAGS";
-            this.fg_bags.MinimumWidth = 6;
-            this.fg_bags.Name = "fg_bags";
-            this.fg_bags.ReadOnly = true;
-            // 
-            // actual_weight
-            // 
-            this.actual_weight.DataPropertyName = "actual_weight";
-            this.actual_weight.HeaderText = "QTY KILO";
-            this.actual_weight.MinimumWidth = 6;
-            this.actual_weight.Name = "actual_weight";
-            this.actual_weight.ReadOnly = true;
-            // 
-            // fg_options
-            // 
-            this.fg_options.DataPropertyName = "fg_options";
-            this.fg_options.HeaderText = "CATEGORY";
-            this.fg_options.MinimumWidth = 6;
-            this.fg_options.Name = "fg_options";
-            this.fg_options.ReadOnly = true;
-            // 
-            // fg_proddate
-            // 
-            this.fg_proddate.DataPropertyName = "fg_proddate";
-            this.fg_proddate.HeaderText = "PROD DATE";
-            this.fg_proddate.MinimumWidth = 6;
-            this.fg_proddate.Name = "fg_proddate";
-            this.fg_proddate.ReadOnly = true;
-            // 
-            // fg_batch
-            // 
-            this.fg_batch.DataPropertyName = "fg_batch";
-            this.fg_batch.HeaderText = "BATCH";
-            this.fg_batch.MinimumWidth = 6;
-            this.fg_batch.Name = "fg_batch";
-            this.fg_batch.ReadOnly = true;
-            this.fg_batch.Visible = false;
-            // 
             // dataGridView2
             // 
             this.dataGridView2.AllowUserToAddRows = false;
             this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.AllowUserToResizeColumns = false;
             this.dataGridView2.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle49.BackColor = System.Drawing.SystemColors.Control;
+            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle49;
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle50.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle50.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle50.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle50.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle50.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle50.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle50;
             this.dataGridView2.ColumnHeadersHeight = 45;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView2.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -706,8 +559,8 @@ namespace WFFDR
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Teal;
-            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle51.SelectionBackColor = System.Drawing.Color.Teal;
+            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle51;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView2.Size = new System.Drawing.Size(48, 259);
             this.dataGridView2.TabIndex = 452;
@@ -719,17 +572,17 @@ namespace WFFDR
             this.dgvCountISSUE.AllowUserToDeleteRows = false;
             this.dgvCountISSUE.AllowUserToResizeColumns = false;
             this.dgvCountISSUE.AllowUserToResizeRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            this.dgvCountISSUE.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle52.BackColor = System.Drawing.SystemColors.Control;
+            this.dgvCountISSUE.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle52;
             this.dgvCountISSUE.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCountISSUE.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle53.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle53.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle53.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle53.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle53.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle53.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCountISSUE.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle53;
             this.dgvCountISSUE.ColumnHeadersHeight = 45;
             this.dgvCountISSUE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvCountISSUE.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -741,8 +594,8 @@ namespace WFFDR
             this.dgvCountISSUE.ReadOnly = true;
             this.dgvCountISSUE.RowHeadersVisible = false;
             this.dgvCountISSUE.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Teal;
-            this.dgvCountISSUE.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle54.SelectionBackColor = System.Drawing.Color.Teal;
+            this.dgvCountISSUE.RowsDefaultCellStyle = dataGridViewCellStyle54;
             this.dgvCountISSUE.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCountISSUE.Size = new System.Drawing.Size(29, 17);
             this.dgvCountISSUE.TabIndex = 641;
@@ -753,12 +606,12 @@ namespace WFFDR
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(5, 16);
+            this.label1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 13);
+            this.label1.Size = new System.Drawing.Size(112, 19);
             this.label1.TabIndex = 643;
-            this.label1.Text = "TOTAL RECORDS :";
+            this.label1.Text = "Total Records :";
             // 
             // lblrecords
             // 
@@ -766,10 +619,10 @@ namespace WFFDR
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblrecords.AutoSize = true;
-            this.lblrecords.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblrecords.Location = new System.Drawing.Point(119, 16);
+            this.lblrecords.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblrecords.Location = new System.Drawing.Point(115, 15);
             this.lblrecords.Name = "lblrecords";
-            this.lblrecords.Size = new System.Drawing.Size(14, 13);
+            this.lblrecords.Size = new System.Drawing.Size(18, 19);
             this.lblrecords.TabIndex = 642;
             this.lblrecords.Text = "0";
             this.lblrecords.Click += new System.EventHandler(this.lblrecords_Click);
@@ -1169,12 +1022,10 @@ namespace WFFDR
             // 
             // btnTransact
             // 
-            this.btnTransact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTransact.BackColor = System.Drawing.Color.Teal;
             this.btnTransact.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTransact.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTransact.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTransact.ForeColor = System.Drawing.Color.White;
             this.btnTransact.Image = ((System.Drawing.Image)(resources.GetObject("btnTransact.Image")));
             this.btnTransact.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1182,7 +1033,7 @@ namespace WFFDR
             this.btnTransact.Name = "btnTransact";
             this.btnTransact.Size = new System.Drawing.Size(82, 28);
             this.btnTransact.TabIndex = 645;
-            this.btnTransact.Text = "&Save";
+            this.btnTransact.Text = "Confirm";
             this.btnTransact.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTransact.UseVisualStyleBackColor = false;
             this.btnTransact.Visible = false;
@@ -1190,12 +1041,10 @@ namespace WFFDR
             // 
             // button1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.SystemColors.Window;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::WFFDR.Properties.Resources.cancel_24px2;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(837, 9);
@@ -1209,14 +1058,11 @@ namespace WFFDR
             // 
             // groupBox4
             // 
-            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox4.Controls.Add(this.label1);
             this.groupBox4.Controls.Add(this.lblrecords);
             this.groupBox4.Controls.Add(this.btnTransact);
             this.groupBox4.Controls.Add(this.button1);
-            this.groupBox4.Location = new System.Drawing.Point(9, 522);
+            this.groupBox4.Location = new System.Drawing.Point(9, 520);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
@@ -1224,12 +1070,93 @@ namespace WFFDR
             this.groupBox4.TabIndex = 651;
             this.groupBox4.TabStop = false;
             // 
+            // label40
+            // 
+            this.label40.BackColor = System.Drawing.Color.Teal;
+            this.label40.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label40.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.White;
+            this.label40.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.label40.Location = new System.Drawing.Point(0, 0);
+            this.label40.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(932, 28);
+            this.label40.TabIndex = 921;
+            this.label40.Text = "FG Miscellaneous Receipt";
+            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // prod_adv
+            // 
+            this.prod_adv.DataPropertyName = "prod_adv";
+            this.prod_adv.HeaderText = "ORDER NO";
+            this.prod_adv.MinimumWidth = 6;
+            this.prod_adv.Name = "prod_adv";
+            this.prod_adv.ReadOnly = true;
+            // 
+            // fg_feed_code
+            // 
+            this.fg_feed_code.DataPropertyName = "fg_feed_code";
+            this.fg_feed_code.HeaderText = "FEED CODE";
+            this.fg_feed_code.MinimumWidth = 6;
+            this.fg_feed_code.Name = "fg_feed_code";
+            this.fg_feed_code.ReadOnly = true;
+            // 
+            // fg_feed_type
+            // 
+            this.fg_feed_type.DataPropertyName = "fg_feed_type";
+            this.fg_feed_type.HeaderText = "FEED TYPE";
+            this.fg_feed_type.MinimumWidth = 6;
+            this.fg_feed_type.Name = "fg_feed_type";
+            this.fg_feed_type.ReadOnly = true;
+            // 
+            // fg_bags
+            // 
+            this.fg_bags.DataPropertyName = "fg_bags";
+            this.fg_bags.HeaderText = "QUANTITY BAGS";
+            this.fg_bags.MinimumWidth = 6;
+            this.fg_bags.Name = "fg_bags";
+            this.fg_bags.ReadOnly = true;
+            // 
+            // actual_weight
+            // 
+            this.actual_weight.DataPropertyName = "actual_weight";
+            this.actual_weight.HeaderText = "QUANTITY KILO";
+            this.actual_weight.MinimumWidth = 6;
+            this.actual_weight.Name = "actual_weight";
+            this.actual_weight.ReadOnly = true;
+            // 
+            // fg_options
+            // 
+            this.fg_options.DataPropertyName = "fg_options";
+            this.fg_options.HeaderText = "CATEGORY";
+            this.fg_options.MinimumWidth = 6;
+            this.fg_options.Name = "fg_options";
+            this.fg_options.ReadOnly = true;
+            // 
+            // fg_proddate
+            // 
+            this.fg_proddate.DataPropertyName = "fg_proddate";
+            this.fg_proddate.HeaderText = "PROD DATE";
+            this.fg_proddate.MinimumWidth = 6;
+            this.fg_proddate.Name = "fg_proddate";
+            this.fg_proddate.ReadOnly = true;
+            // 
+            // fg_batch
+            // 
+            this.fg_batch.DataPropertyName = "fg_batch";
+            this.fg_batch.HeaderText = "BATCH";
+            this.fg_batch.MinimumWidth = 6;
+            this.fg_batch.Name = "fg_batch";
+            this.fg_batch.ReadOnly = true;
+            this.fg_batch.Visible = false;
+            // 
             // frmFGReceipt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(932, 566);
+            this.Controls.Add(this.label40);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.txtorderstable);
             this.Controls.Add(this.txtordervalidation);
@@ -1252,7 +1179,6 @@ namespace WFFDR
             this.MinimizeBox = false;
             this.Name = "frmFGReceipt";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FG Miscellaneous Receipt";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmFGReceipt_FormClosing);
             this.Load += new System.EventHandler(this.frmFGReceipt_Load);
             this.GroupBox1.ResumeLayout(false);
@@ -1337,6 +1263,12 @@ namespace WFFDR
         private System.Windows.Forms.TextBox abmain;
         private System.Windows.Forms.TextBox rmain;
         private System.Windows.Forms.TextBox fcmain;
+        private System.Windows.Forms.TextBox txtorderstable;
+        private System.Windows.Forms.TextBox txtordervalidation;
+        internal System.Windows.Forms.Label label18;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TextBox txtmoveorder;
+        private System.Windows.Forms.Label label40;
         private System.Windows.Forms.DataGridViewTextBoxColumn prod_adv;
         private System.Windows.Forms.DataGridViewTextBoxColumn fg_feed_code;
         private System.Windows.Forms.DataGridViewTextBoxColumn fg_feed_type;
@@ -1345,10 +1277,5 @@ namespace WFFDR
         private System.Windows.Forms.DataGridViewTextBoxColumn fg_options;
         private System.Windows.Forms.DataGridViewTextBoxColumn fg_proddate;
         private System.Windows.Forms.DataGridViewTextBoxColumn fg_batch;
-        private System.Windows.Forms.TextBox txtorderstable;
-        private System.Windows.Forms.TextBox txtordervalidation;
-        internal System.Windows.Forms.Label label18;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox txtmoveorder;
     }
 }
