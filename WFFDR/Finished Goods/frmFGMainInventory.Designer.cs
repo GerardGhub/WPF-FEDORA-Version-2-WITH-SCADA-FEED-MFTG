@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFGMainInventory));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtc = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -699,24 +699,24 @@
             this.dgv_table.AllowUserToDeleteRows = false;
             this.dgv_table.AllowUserToResizeColumns = false;
             this.dgv_table.AllowUserToResizeRows = false;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
-            this.dgv_table.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dgv_table.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgv_table.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgv_table.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
-            this.dgv_table.ColumnHeadersHeight = 25;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_table.ColumnHeadersHeight = 30;
             this.dgv_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgv_table.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.FeedCode,
@@ -741,28 +741,28 @@
             this.BAG_INVENTORY,
             this.BULK_INVENTORY});
             this.dgv_table.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Cambria", 8.25F);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_table.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Cambria", 8.25F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_table.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_table.EnableHeadersVisualStyles = false;
             this.dgv_table.GridColor = System.Drawing.Color.Teal;
-            this.dgv_table.Location = new System.Drawing.Point(0, 28);
+            this.dgv_table.Location = new System.Drawing.Point(0, 29);
             this.dgv_table.MultiSelect = false;
             this.dgv_table.Name = "dgv_table";
             this.dgv_table.ReadOnly = true;
             this.dgv_table.RowHeadersWidth = 60;
             this.dgv_table.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Cambria", 7.8F);
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(50)))));
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.White;
-            this.dgv_table.RowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Cambria", 7.8F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(50)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            this.dgv_table.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_table.Size = new System.Drawing.Size(964, 617);
             this.dgv_table.TabIndex = 36;
@@ -783,7 +783,7 @@
             this.FeedCode.MinimumWidth = 6;
             this.FeedCode.Name = "FeedCode";
             this.FeedCode.ReadOnly = true;
-            this.FeedCode.Width = 77;
+            this.FeedCode.Width = 71;
             // 
             // FeedType
             // 
@@ -793,7 +793,7 @@
             this.FeedType.MinimumWidth = 6;
             this.FeedType.Name = "FeedType";
             this.FeedType.ReadOnly = true;
-            this.FeedType.Width = 78;
+            this.FeedType.Width = 72;
             // 
             // BAGS_COUNT
             // 
@@ -802,7 +802,7 @@
             this.BAGS_COUNT.MinimumWidth = 6;
             this.BAGS_COUNT.Name = "BAGS_COUNT";
             this.BAGS_COUNT.ReadOnly = true;
-            this.BAGS_COUNT.Width = 77;
+            this.BAGS_COUNT.Width = 71;
             // 
             // BULK_COUNT
             // 
@@ -811,7 +811,7 @@
             this.BULK_COUNT.MinimumWidth = 6;
             this.BULK_COUNT.Name = "BULK_COUNT";
             this.BULK_COUNT.ReadOnly = true;
-            this.BULK_COUNT.Width = 82;
+            this.BULK_COUNT.Width = 76;
             // 
             // TOTAL_COUNT
             // 
@@ -820,7 +820,7 @@
             this.TOTAL_COUNT.MinimumWidth = 6;
             this.TOTAL_COUNT.Name = "TOTAL_COUNT";
             this.TOTAL_COUNT.ReadOnly = true;
-            this.TOTAL_COUNT.Width = 84;
+            this.TOTAL_COUNT.Width = 78;
             // 
             // BAG_RECEIPT
             // 
@@ -829,7 +829,7 @@
             this.BAG_RECEIPT.MinimumWidth = 6;
             this.BAG_RECEIPT.Name = "BAG_RECEIPT";
             this.BAG_RECEIPT.ReadOnly = true;
-            this.BAG_RECEIPT.Width = 84;
+            this.BAG_RECEIPT.Width = 78;
             // 
             // BULK_RECEIPT
             // 
@@ -838,7 +838,7 @@
             this.BULK_RECEIPT.MinimumWidth = 6;
             this.BULK_RECEIPT.Name = "BULK_RECEIPT";
             this.BULK_RECEIPT.ReadOnly = true;
-            this.BULK_RECEIPT.Width = 89;
+            this.BULK_RECEIPT.Width = 82;
             // 
             // TOTAL_RECEIPT
             // 
@@ -847,7 +847,7 @@
             this.TOTAL_RECEIPT.MinimumWidth = 6;
             this.TOTAL_RECEIPT.Name = "TOTAL_RECEIPT";
             this.TOTAL_RECEIPT.ReadOnly = true;
-            this.TOTAL_RECEIPT.Width = 91;
+            this.TOTAL_RECEIPT.Width = 84;
             // 
             // BAG_ISSUE
             // 
@@ -856,7 +856,7 @@
             this.BAG_ISSUE.MinimumWidth = 6;
             this.BAG_ISSUE.Name = "BAG_ISSUE";
             this.BAG_ISSUE.ReadOnly = true;
-            this.BAG_ISSUE.Width = 74;
+            this.BAG_ISSUE.Width = 69;
             // 
             // BULK_ISSUE
             // 
@@ -865,7 +865,7 @@
             this.BULK_ISSUE.MinimumWidth = 6;
             this.BULK_ISSUE.Name = "BULK_ISSUE";
             this.BULK_ISSUE.ReadOnly = true;
-            this.BULK_ISSUE.Width = 79;
+            this.BULK_ISSUE.Width = 73;
             // 
             // TOTAL_ISSUE
             // 
@@ -874,7 +874,7 @@
             this.TOTAL_ISSUE.MinimumWidth = 6;
             this.TOTAL_ISSUE.Name = "TOTAL_ISSUE";
             this.TOTAL_ISSUE.ReadOnly = true;
-            this.TOTAL_ISSUE.Width = 81;
+            this.TOTAL_ISSUE.Width = 75;
             // 
             // BAG_MOVEORDER
             // 
@@ -883,7 +883,7 @@
             this.BAG_MOVEORDER.MinimumWidth = 6;
             this.BAG_MOVEORDER.Name = "BAG_MOVEORDER";
             this.BAG_MOVEORDER.ReadOnly = true;
-            this.BAG_MOVEORDER.Width = 102;
+            this.BAG_MOVEORDER.Width = 94;
             // 
             // BULK_MOVEORDER
             // 
@@ -892,7 +892,7 @@
             this.BULK_MOVEORDER.MinimumWidth = 6;
             this.BULK_MOVEORDER.Name = "BULK_MOVEORDER";
             this.BULK_MOVEORDER.ReadOnly = true;
-            this.BULK_MOVEORDER.Width = 107;
+            this.BULK_MOVEORDER.Width = 98;
             // 
             // TOTAL_MOVEORDER
             // 
@@ -901,7 +901,6 @@
             this.TOTAL_MOVEORDER.MinimumWidth = 6;
             this.TOTAL_MOVEORDER.Name = "TOTAL_MOVEORDER";
             this.TOTAL_MOVEORDER.ReadOnly = true;
-            this.TOTAL_MOVEORDER.Width = 109;
             // 
             // GRAND_TOTAL
             // 
@@ -910,7 +909,7 @@
             this.GRAND_TOTAL.MinimumWidth = 6;
             this.GRAND_TOTAL.Name = "GRAND_TOTAL";
             this.GRAND_TOTAL.ReadOnly = true;
-            this.GRAND_TOTAL.Width = 131;
+            this.GRAND_TOTAL.Width = 88;
             // 
             // TotalIssueMoveorder
             // 
@@ -919,7 +918,7 @@
             this.TotalIssueMoveorder.MinimumWidth = 6;
             this.TotalIssueMoveorder.Name = "TotalIssueMoveorder";
             this.TotalIssueMoveorder.ReadOnly = true;
-            this.TotalIssueMoveorder.Width = 146;
+            this.TotalIssueMoveorder.Width = 111;
             // 
             // BAGRESERVE
             // 
@@ -927,7 +926,7 @@
             this.BAGRESERVE.HeaderText = "Bag Reserve";
             this.BAGRESERVE.Name = "BAGRESERVE";
             this.BAGRESERVE.ReadOnly = true;
-            this.BAGRESERVE.Width = 87;
+            this.BAGRESERVE.Width = 80;
             // 
             // BULKRESERVE
             // 
@@ -935,7 +934,7 @@
             this.BULKRESERVE.HeaderText = "Bulk Reserve";
             this.BULKRESERVE.Name = "BULKRESERVE";
             this.BULKRESERVE.ReadOnly = true;
-            this.BULKRESERVE.Width = 92;
+            this.BULKRESERVE.Width = 85;
             // 
             // TOTAL_INVENTORY
             // 
@@ -944,7 +943,7 @@
             this.TOTAL_INVENTORY.MinimumWidth = 6;
             this.TOTAL_INVENTORY.Name = "TOTAL_INVENTORY";
             this.TOTAL_INVENTORY.ReadOnly = true;
-            this.TOTAL_INVENTORY.Width = 97;
+            this.TOTAL_INVENTORY.Width = 89;
             // 
             // BAG_INVENTORY
             // 
@@ -953,7 +952,7 @@
             this.BAG_INVENTORY.MinimumWidth = 6;
             this.BAG_INVENTORY.Name = "BAG_INVENTORY";
             this.BAG_INVENTORY.ReadOnly = true;
-            this.BAG_INVENTORY.Width = 116;
+            this.BAG_INVENTORY.Width = 84;
             // 
             // BULK_INVENTORY
             // 
@@ -962,7 +961,7 @@
             this.BULK_INVENTORY.MinimumWidth = 6;
             this.BULK_INVENTORY.Name = "BULK_INVENTORY";
             this.BULK_INVENTORY.ReadOnly = true;
-            this.BULK_INVENTORY.Width = 121;
+            this.BULK_INVENTORY.Width = 88;
             // 
             // panel1
             // 

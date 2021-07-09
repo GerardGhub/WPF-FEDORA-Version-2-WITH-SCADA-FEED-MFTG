@@ -1550,7 +1550,7 @@ namespace WFFDR
             {
                 rpt.Load(Rpt_Path + "\\MicroInventoryPrint.rpt");
                 rpt.SetDatabaseLogon("sa", "FMf3dor@2o20");
-                ////////rpt.SetDatabaseLogon("sa", "Nescafe3in1");
+                ////////rpt.SetDatabaseLogon("sa", "Nescafe3in1");11
                 rpt.Refresh();
 
                 crV1.ReportSource = rpt;

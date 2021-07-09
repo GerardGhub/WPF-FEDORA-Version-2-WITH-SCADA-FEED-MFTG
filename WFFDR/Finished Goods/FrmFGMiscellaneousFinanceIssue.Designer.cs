@@ -357,7 +357,6 @@ namespace WFFDR.Finished_Goods
             // txtremarks
             // 
             this.txtremarks.BackColor = System.Drawing.Color.Yellow;
-            this.txtremarks.Enabled = false;
             this.txtremarks.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtremarks.Location = new System.Drawing.Point(101, 62);
             this.txtremarks.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);

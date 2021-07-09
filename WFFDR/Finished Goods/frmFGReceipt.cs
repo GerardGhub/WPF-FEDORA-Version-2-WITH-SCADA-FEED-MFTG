@@ -60,9 +60,9 @@ namespace WFFDR
                 btnTransact.Visible = true;
                 button1.Visible = true;
             }
-            
 
-
+            txtremarks.Visible = false;
+            label8.Visible = false;
 
         }
 
@@ -104,7 +104,7 @@ namespace WFFDR
         {
 
             dSet.Clear();
-            dSet = objStorProc.sp_rdf_fg_feedcodetransaction(0, txtorderno.Text.Trim(), fcmain.Text.Trim(), ftmain.Text.Trim(), cmain.Text.Trim(), bagweight.Text.Trim().ToString(), pmain.Text.Trim().ToString(), pmain.Text.Trim().ToString(), transdatenow.Text.Trim(), "RECEIPT", rmain.Text, abmain.Text.Trim(), "add");
+            dSet = objStorProc.sp_rdf_fg_feedcodetransaction(0, txtorderno.Text.Trim(), fcmain.Text.Trim(), ftmain.Text.Trim(), cmain.Text.Trim(), bagweight.Text.Trim().ToString(), pmain.Text.Trim().ToString(), pmain.Text.Trim().ToString(), transdatenow.Text.Trim(), "RECEIPT", txtremarks.Text, abmain.Text.Trim(), "add");
 
 
         }
@@ -113,7 +113,7 @@ namespace WFFDR
         {
 
             dSet.Clear();
-            dSet = objStorProc.sp_rdf_fg_feedcodetransaction(0, txtorderno.Text.Trim(), fcmain.Text.Trim(), ftmain.Text.Trim(), cmain.Text.Trim(), qkmain.Text.Trim().ToString(), pmain.Text.Trim().ToString(), pmain.Text.Trim().ToString(), transdatenow.Text.Trim(), "RECEIPT", rmain.Text, abmain.Text.Trim(), "add");
+            dSet = objStorProc.sp_rdf_fg_feedcodetransaction(0, txtorderno.Text.Trim(), fcmain.Text.Trim(), ftmain.Text.Trim(), cmain.Text.Trim(), qkmain.Text.Trim().ToString(), pmain.Text.Trim().ToString(), pmain.Text.Trim().ToString(), transdatenow.Text.Trim(), "RECEIPT", txtremarks.Text, abmain.Text.Trim(), "add");
 
 
 
@@ -195,6 +195,9 @@ namespace WFFDR
       
         private void btnsave_Click(object sender, EventArgs e)
         {
+
+            txtremarks.Visible = false;
+            label8.Visible = false;
             if (cboFeedCode.SelectedIndex == -1)
             {
                 EmptyFieldNotify();
@@ -331,7 +334,7 @@ namespace WFFDR
 
         }
 
-        void InvalidQuantity ()
+        void InputDescription()
         {
 
             PopupNotifier popup = new PopupNotifier();
@@ -340,12 +343,12 @@ namespace WFFDR
             popup.TitleColor = Color.White;
             popup.TitlePadding = new Padding(95, 7, 0, 0);
             popup.TitleFont = new Font("Tahoma", 10);
-            popup.ContentText = "Invalid Quantity !";
+            popup.ContentText = "Please input the description for this transaction thank you!";
             popup.ContentColor = Color.White;
             popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
             popup.Size = new Size(350, 100);
             popup.ImageSize = new Size(70, 80);
-            popup.BodyColor = Color.Red;
+            popup.BodyColor = Color.FromArgb(57, 179, 215);
             popup.Popup();
             //popup.AnimationDuration = 1000;
             //popup.ShowOptionsButton.ToString();
@@ -544,7 +547,7 @@ namespace WFFDR
             txtFeedType.Text = "";
             txtbags.Text = "";
             cboOptions.Text = "";
-            txtremarks.Enabled = true;
+            //txtremarks.Enabled = true;
             txtbags.Enabled = true;
             txtmoveorder.Enabled = true;
             txtmoveorder.Text = "";
@@ -590,7 +593,7 @@ namespace WFFDR
 
             popup.ShowOptionsButton = true;
 
-            txtremarks.Text = "";
+            //txtremarks.Text = "";
         }
 
 
@@ -723,7 +726,10 @@ namespace WFFDR
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(lblrecords.Text=="0")
+
+            txtremarks.Visible = false;
+            label8.Visible = false;
+            if (lblrecords.Text=="0")
 
             {
                 button1.Visible = false;
@@ -749,6 +755,8 @@ namespace WFFDR
                 SuccessFullyCancel();
                 load_Schedules();
                 Clear();
+
+              
 
                 if (lblrecords.Text=="0")
                 {
@@ -813,6 +821,15 @@ namespace WFFDR
                 return;
             }
 
+            if (txtremarks.Text == String.Empty)
+            {
+                txtremarks.Visible = true;
+                label8.Visible = true;
+
+                InputDescription();
+                txtremarks.Focus();
+                return;
+            }
 
             if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to save all the Transaction " + txtaddedby.Text + " ?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
@@ -847,7 +864,7 @@ namespace WFFDR
 
                 SuccessFullyTransactAllitems();
                 Loadprintout();
-
+                txtremarks.Text = String.Empty;
                 frmFGReceipt_Load(sender, e);
                 Clear();
                 txtmoveorder.Text = "";

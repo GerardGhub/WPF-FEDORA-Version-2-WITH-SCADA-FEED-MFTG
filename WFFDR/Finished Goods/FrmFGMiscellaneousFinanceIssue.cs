@@ -108,9 +108,10 @@ namespace WFFDR.Finished_Goods
             dgvprodd.ClearSelection();
             load_proddate();
             Cbfgdate.SelectedIndex = -1;
-            
 
-           
+            label41.Visible = false;
+            txtremarks.Visible = false;
+
 
         }
 
@@ -214,7 +215,36 @@ namespace WFFDR.Finished_Goods
 
         }
 
+        void InputDescription()
+        {
 
+            PopupNotifier popup = new PopupNotifier();
+            popup.Image = Properties.Resources.info;
+            popup.TitleText = "Fedora Notifications";
+            popup.TitleColor = Color.White;
+            popup.TitlePadding = new Padding(95, 7, 0, 0);
+            popup.TitleFont = new Font("Tahoma", 10);
+            popup.ContentText = "Please input the description for this transaction thank you!";
+            popup.ContentColor = Color.White;
+            popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
+            popup.Size = new Size(350, 100);
+            popup.ImageSize = new Size(70, 80);
+            popup.BodyColor = Color.FromArgb(57, 179, 215);
+            popup.Popup();
+            //popup.AnimationDuration = 1000;
+            //popup.ShowOptionsButton.ToString();
+            popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
+            //txtMainInput.Focus();
+            //txtMainInput.Select();
+            popup.Delay = 500;
+            popup.AnimationInterval = 10;
+            popup.AnimationDuration = 1000;
+
+
+            popup.ShowOptionsButton = true;
+
+
+        }
 
         public void EmptyFieldNotify()
         {
@@ -582,7 +612,7 @@ namespace WFFDR.Finished_Goods
             timer1.Enabled = false;
             tscancelbtn.Enabled = false;
             tsaddlinebtn.Enabled = true;
-            txtremarks.Enabled = true;
+            //txtremarks.Enabled = true;
             Cbfgdate.Enabled = true;
             txtmoveorderno.Enabled = true;
 
@@ -627,7 +657,7 @@ namespace WFFDR.Finished_Goods
             tsconfirmorderbtn.Enabled = false;
             Cbbagbulk.Enabled = false;
             Cbfeedcode.Enabled = false;
-            txtremarks.Enabled = false;
+            //txtremarks.Enabled = false;
 
         }
 
@@ -694,15 +724,7 @@ namespace WFFDR.Finished_Goods
 
 
 
-            if (txtremarks.Text == String.Empty)
-
-            {
-                EmptyFieldNotify();
-                txtremarks.Focus();
-                return;
-
-
-            }
+           
 
             if(txtmoveorderno.Text == String.Empty)
             {
@@ -712,6 +734,18 @@ namespace WFFDR.Finished_Goods
 
             }
 
+
+            if (txtremarks.Text == String.Empty)
+
+            {
+                label41.Visible = true;
+                txtremarks.Visible = true;
+                InputDescription();
+                txtremarks.Focus();
+                return;
+
+
+            }
 
             else if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want save this Transaction ? ", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
@@ -802,13 +836,14 @@ namespace WFFDR.Finished_Goods
         {
 
 
-
+            label41.Visible = false;
+            txtremarks.Visible = false;
 
             if (MetroFramework.MetroMessageBox.Show(this, "Are you sure you want to cancel this Transaction ? ", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
                 //  Cleartxt();
                 Clear();
-
+               
                 //Txtbxfeedtype.Text = String.Empty;
                 //Cbbagbulk.Text = String.Empty;
                 //Cbfeedcode.Text = String.Empty;
@@ -1436,6 +1471,8 @@ namespace WFFDR.Finished_Goods
 
 
             //}
+            label41.Visible = false;
+            txtremarks.Visible = false;
 
             if (Cbfeedcode.SelectedIndex == -1)
             {
@@ -1496,9 +1533,9 @@ namespace WFFDR.Finished_Goods
                 {
                     if (MetroFramework.MetroMessageBox.Show(this, "Are you sure that you want to add this feedcode '" + Cbfeedcode.Text + "' ? ", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                     {
-                        
 
-                            myglobal.global_module = "fg_inventory_bulk";
+                       
+                        myglobal.global_module = "fg_inventory_bulk";
                             load_fgdatebulk();
                             load_fgdatebulkfinance();
                             //load_search2();
@@ -1529,6 +1566,7 @@ namespace WFFDR.Finished_Goods
                             TwoModulesareRunning();
                             Txtbxquantity.Focus();
                             Txtbxquantity.Text = String.Empty;
+                         
                             return; //4/29/2021
                             }
                       
@@ -1582,8 +1620,8 @@ namespace WFFDR.Finished_Goods
 
                 if (MetroFramework.MetroMessageBox.Show(this, "Are you sure that you want to add this feedcode '" + Cbfeedcode.Text + "' ? ", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
-                    
-                        myglobal.global_module = "fg_inventory_bag";
+                   
+                    myglobal.global_module = "fg_inventory_bag";
                         load_fgdate();
                         //load_search2();
 

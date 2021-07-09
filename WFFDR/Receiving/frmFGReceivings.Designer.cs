@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFGReceivings));
             this.dgv_table = new System.Windows.Forms.DataGridView();
             this.ProdID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,6 +81,12 @@
             this.blockstatus = new System.Windows.Forms.TextBox();
             this.blockfgdate = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.alertone = new System.Windows.Forms.Label();
+            this.alert2 = new System.Windows.Forms.Label();
+            this.warningone = new System.Windows.Forms.Label();
+            this.good = new System.Windows.Forms.Label();
+            this.crtitical = new System.Windows.Forms.Label();
+            this.alarm = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.warning = new System.Windows.Forms.TextBox();
@@ -95,12 +101,7 @@
             this.blockstatus2 = new System.Windows.Forms.TextBox();
             this.blockprodid2 = new System.Windows.Forms.TextBox();
             this.blockfgdate2 = new System.Windows.Forms.TextBox();
-            this.alarm = new System.Windows.Forms.Label();
-            this.crtitical = new System.Windows.Forms.Label();
-            this.good = new System.Windows.Forms.Label();
-            this.warningone = new System.Windows.Forms.Label();
-            this.alert2 = new System.Windows.Forms.Label();
-            this.alertone = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_table)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -116,23 +117,23 @@
             this.dgv_table.AllowUserToDeleteRows = false;
             this.dgv_table.AllowUserToResizeColumns = false;
             this.dgv_table.AllowUserToResizeRows = false;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            this.dgv_table.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.Control;
+            this.dgv_table.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle31;
             this.dgv_table.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgv_table.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgv_table.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
             this.dgv_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_table.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ProdID,
@@ -156,13 +157,13 @@
             this.dgv_table.ReadOnly = true;
             this.dgv_table.RowHeadersWidth = 60;
             this.dgv_table.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Cambria", 7.8F);
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(50)))));
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.White;
-            this.dgv_table.RowsDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle40.Font = new System.Drawing.Font("Cambria", 7.8F);
+            dataGridViewCellStyle40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(50)))));
+            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.Color.White;
+            this.dgv_table.RowsDefaultCellStyle = dataGridViewCellStyle40;
             this.dgv_table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_table.Size = new System.Drawing.Size(961, 427);
             this.dgv_table.TabIndex = 37;
@@ -177,8 +178,8 @@
             // ProdID
             // 
             this.ProdID.DataPropertyName = "ProdID";
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ProdID.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ProdID.DefaultCellStyle = dataGridViewCellStyle33;
             this.ProdID.HeaderText = "PROD ID";
             this.ProdID.MinimumWidth = 6;
             this.ProdID.Name = "ProdID";
@@ -209,8 +210,8 @@
             // FeedCode
             // 
             this.FeedCode.DataPropertyName = "FeedCode";
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.FeedCode.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.FeedCode.DefaultCellStyle = dataGridViewCellStyle34;
             this.FeedCode.HeaderText = "FEED CODE";
             this.FeedCode.MinimumWidth = 6;
             this.FeedCode.Name = "FeedCode";
@@ -222,8 +223,8 @@
             // 
             this.FeedType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.FeedType.DataPropertyName = "FeedType";
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.FeedType.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.FeedType.DefaultCellStyle = dataGridViewCellStyle35;
             this.FeedType.HeaderText = "FEED TYPE";
             this.FeedType.MinimumWidth = 6;
             this.FeedType.Name = "FeedType";
@@ -234,10 +235,10 @@
             // BagsCount
             // 
             this.BagsCount.DataPropertyName = "BagsCount";
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle16.Format = "N2";
-            dataGridViewCellStyle16.NullValue = null;
-            this.BagsCount.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle36.Format = "N2";
+            dataGridViewCellStyle36.NullValue = null;
+            this.BagsCount.DefaultCellStyle = dataGridViewCellStyle36;
             this.BagsCount.HeaderText = "BAGS";
             this.BagsCount.MinimumWidth = 6;
             this.BagsCount.Name = "BagsCount";
@@ -248,10 +249,10 @@
             // BulkCount
             // 
             this.BulkCount.DataPropertyName = "BulkCount";
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle17.Format = "N2";
-            dataGridViewCellStyle17.NullValue = null;
-            this.BulkCount.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle37.Format = "N2";
+            dataGridViewCellStyle37.NullValue = null;
+            this.BulkCount.DefaultCellStyle = dataGridViewCellStyle37;
             this.BulkCount.HeaderText = "BULK";
             this.BulkCount.MinimumWidth = 6;
             this.BulkCount.Name = "BulkCount";
@@ -263,10 +264,10 @@
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.Column5.DataPropertyName = "GrandTotal";
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle18.Format = "N2";
-            dataGridViewCellStyle18.NullValue = null;
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle38.Format = "N2";
+            dataGridViewCellStyle38.NullValue = null;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle38;
             this.Column5.HeaderText = "TOTAL COUNT";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
@@ -277,10 +278,10 @@
             // Column2
             // 
             this.Column2.DataPropertyName = "ACTUAL";
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle19.Format = "N2";
-            dataGridViewCellStyle19.NullValue = null;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle39.Format = "N2";
+            dataGridViewCellStyle39.NullValue = null;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle39;
             this.Column2.HeaderText = "REMAINING";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
@@ -324,7 +325,7 @@
             this.groupBox1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBox1.Controls.Add(this.dgv_table);
             this.groupBox1.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(11, 46);
+            this.groupBox1.Location = new System.Drawing.Point(6, 74);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(970, 451);
             this.groupBox1.TabIndex = 38;
@@ -391,7 +392,7 @@
             this.groupBox2.Controls.Add(this.Label5);
             this.groupBox2.Controls.Add(this.txtProdID);
             this.groupBox2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(12, -2);
+            this.groupBox2.Location = new System.Drawing.Point(7, 26);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(966, 45);
             this.groupBox2.TabIndex = 658;
@@ -567,7 +568,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(908, 36);
+            this.label3.Location = new System.Drawing.Point(908, 74);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 455;
@@ -675,7 +676,7 @@
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.btnReceived);
             this.groupBox3.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(122, 499);
+            this.groupBox3.Location = new System.Drawing.Point(117, 527);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
@@ -683,6 +684,90 @@
             this.groupBox3.TabIndex = 665;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Color Legend";
+            // 
+            // alertone
+            // 
+            this.alertone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.alertone.AutoSize = true;
+            this.alertone.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alertone.Location = new System.Drawing.Point(389, 21);
+            this.alertone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.alertone.Name = "alertone";
+            this.alertone.Size = new System.Drawing.Size(82, 12);
+            this.alertone.TabIndex = 650;
+            this.alertone.Text = "ALERT LEVEL 1:";
+            // 
+            // alert2
+            // 
+            this.alert2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.alert2.AutoSize = true;
+            this.alert2.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alert2.Location = new System.Drawing.Point(226, 21);
+            this.alert2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.alert2.Name = "alert2";
+            this.alert2.Size = new System.Drawing.Size(82, 12);
+            this.alert2.TabIndex = 649;
+            this.alert2.Text = "ALERT LEVEL 2:";
+            // 
+            // warningone
+            // 
+            this.warningone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.warningone.AutoSize = true;
+            this.warningone.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.warningone.Location = new System.Drawing.Point(544, 21);
+            this.warningone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.warningone.Name = "warningone";
+            this.warningone.Size = new System.Drawing.Size(56, 12);
+            this.warningone.TabIndex = 648;
+            this.warningone.Text = "WARNING:";
+            // 
+            // good
+            // 
+            this.good.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.good.AutoSize = true;
+            this.good.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.good.Location = new System.Drawing.Point(671, 21);
+            this.good.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.good.Name = "good";
+            this.good.Size = new System.Drawing.Size(36, 12);
+            this.good.TabIndex = 647;
+            this.good.Text = "GOOD:";
+            // 
+            // crtitical
+            // 
+            this.crtitical.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.crtitical.AutoSize = true;
+            this.crtitical.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.crtitical.Location = new System.Drawing.Point(91, 21);
+            this.crtitical.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.crtitical.Name = "crtitical";
+            this.crtitical.Size = new System.Drawing.Size(55, 12);
+            this.crtitical.TabIndex = 646;
+            this.crtitical.Text = "CRITICAL:";
+            // 
+            // alarm
+            // 
+            this.alarm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.alarm.AutoSize = true;
+            this.alarm.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alarm.Location = new System.Drawing.Point(5, 21);
+            this.alarm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.alarm.Name = "alarm";
+            this.alarm.Size = new System.Drawing.Size(44, 12);
+            this.alarm.TabIndex = 645;
+            this.alarm.Text = "ALARM:";
             // 
             // label19
             // 
@@ -820,7 +905,7 @@
             this.groupBox4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Controls.Add(this.lblrecords);
-            this.groupBox4.Location = new System.Drawing.Point(11, 499);
+            this.groupBox4.Location = new System.Drawing.Point(6, 527);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
@@ -874,89 +959,20 @@
             this.blockfgdate2.Size = new System.Drawing.Size(134, 20);
             this.blockfgdate2.TabIndex = 670;
             // 
-            // alarm
+            // label40
             // 
-            this.alarm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.alarm.AutoSize = true;
-            this.alarm.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alarm.Location = new System.Drawing.Point(5, 21);
-            this.alarm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.alarm.Name = "alarm";
-            this.alarm.Size = new System.Drawing.Size(44, 12);
-            this.alarm.TabIndex = 645;
-            this.alarm.Text = "ALARM:";
-            // 
-            // crtitical
-            // 
-            this.crtitical.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.crtitical.AutoSize = true;
-            this.crtitical.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.crtitical.Location = new System.Drawing.Point(91, 21);
-            this.crtitical.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.crtitical.Name = "crtitical";
-            this.crtitical.Size = new System.Drawing.Size(55, 12);
-            this.crtitical.TabIndex = 646;
-            this.crtitical.Text = "CRITICAL:";
-            // 
-            // good
-            // 
-            this.good.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.good.AutoSize = true;
-            this.good.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.good.Location = new System.Drawing.Point(671, 21);
-            this.good.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.good.Name = "good";
-            this.good.Size = new System.Drawing.Size(36, 12);
-            this.good.TabIndex = 647;
-            this.good.Text = "GOOD:";
-            // 
-            // warningone
-            // 
-            this.warningone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.warningone.AutoSize = true;
-            this.warningone.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.warningone.Location = new System.Drawing.Point(544, 21);
-            this.warningone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.warningone.Name = "warningone";
-            this.warningone.Size = new System.Drawing.Size(56, 12);
-            this.warningone.TabIndex = 648;
-            this.warningone.Text = "WARNING:";
-            // 
-            // alert2
-            // 
-            this.alert2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.alert2.AutoSize = true;
-            this.alert2.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alert2.Location = new System.Drawing.Point(226, 21);
-            this.alert2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.alert2.Name = "alert2";
-            this.alert2.Size = new System.Drawing.Size(82, 12);
-            this.alert2.TabIndex = 649;
-            this.alert2.Text = "ALERT LEVEL 2:";
-            // 
-            // alertone
-            // 
-            this.alertone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.alertone.AutoSize = true;
-            this.alertone.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alertone.Location = new System.Drawing.Point(389, 21);
-            this.alertone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.alertone.Name = "alertone";
-            this.alertone.Size = new System.Drawing.Size(82, 12);
-            this.alertone.TabIndex = 650;
-            this.alertone.Text = "ALERT LEVEL 1:";
+            this.label40.BackColor = System.Drawing.Color.Teal;
+            this.label40.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label40.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.White;
+            this.label40.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.label40.Location = new System.Drawing.Point(0, 0);
+            this.label40.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(982, 28);
+            this.label40.TabIndex = 921;
+            this.label40.Text = "Finished Good Receiving";
+            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmFGReceivings
             // 
@@ -964,7 +980,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(988, 552);
+            this.ClientSize = new System.Drawing.Size(982, 581);
+            this.Controls.Add(this.label40);
             this.Controls.Add(this.blockfgdate2);
             this.Controls.Add(this.blockprodid2);
             this.Controls.Add(this.blockstatus2);
@@ -987,7 +1004,6 @@
             this.MinimizeBox = false;
             this.Name = "frmFGReceivings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Finished Good Receiving";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmFGReceivings_FormClosing);
             this.Load += new System.EventHandler(this.frmFGReceivings_Load);
             this.Click += new System.EventHandler(this.frmFGReceivings_Click);
@@ -1070,5 +1086,6 @@
         private System.Windows.Forms.Label alarm;
         private System.Windows.Forms.Label alertone;
         private System.Windows.Forms.Label alert2;
+        private System.Windows.Forms.Label label40;
     }
 }
