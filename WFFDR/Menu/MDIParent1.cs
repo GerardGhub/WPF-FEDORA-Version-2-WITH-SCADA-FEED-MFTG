@@ -190,7 +190,7 @@ namespace WFFDR
 
         }
 
-        private void MDIParent1_Load(object sender, EventArgs e)
+        public void MDIParent1_Load(object sender, EventArgs e)
         {
            
             statusStrip.Visible = false;
@@ -249,6 +249,9 @@ namespace WFFDR
             //rights here
             rights_id = userinfo.user_rights_id;
 
+            //Loaduserrights();
+
+
             dset_rights.Clear();
             dset_rights = objStorProc.sp_getFilterTables("get_accessible_menu", "", rights_id);
 
@@ -258,21 +261,668 @@ namespace WFFDR
                 {
                     string form_name = dset_rights.Tables[0].Rows[x][1].ToString();
 
-                    if (form_name == "frmAttendanceMonitoring")
+
+                    //Start of Inventory Category
+                    if (form_name == "1.0Inventory")
                     {
-                        //p_attendance.Enabled = true;
-                        //mnu_rpt_attendance.Enabled = true;
+                        toolStripInventory1.Visible = true;
                     }
+                    else if (form_name == "1.1MacroInventory")
+                    {
+                        toolStripMacroInventory1.Enabled = true;
+                    }
+                    else if (form_name == "1.2MicroInventory")
+                    {
+                        toolStripMicroInventory1.Enabled = true;
+                    }
+                    else if (form_name == "1.3FGIventory")
+                    {
+                        fGInventoryToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "1.4MoveOrder")
+                    {
+                        moveOrderToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "1.4.1MoveOrder")
+                    {
+                        moverOrderToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "1.4.2TransactMoveOrder")
+                    {
+                        transactMoveOrderToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "1.5FGMiscellaneousTransaction")
+                    {
+                        FGMiscellaneousTransactiontoolStripMenuItem30.Enabled = true;
+                    }
+                    else if (form_name == "1.5.1FGMiscellaneousTransactionReceipt")
+                    {
+                        toolStripMenuItem32.Enabled = true;
+                    }
+                    else if (form_name == "1.5.2FGMiscellaneousTransactionIssue")
+                    {
+                        fGMiscellaneousIssueFinanceToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "1.6RMMiscellaneousTransaction")
+                    {
+                        miscellaneousTransactionToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "1.6.1RMMiscellaneousTransactionReceipt")
+                    {
+                        miscellaneousTransactionReceiptInToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "1.6.2RMMiscellaneousTransactionIssue")
+                    {
+                        miscellaneousTransactionIssueOutToolStripMenuItem.Enabled = true;
+                    }
+                    //End of Inventory Category
+
+
+                    //Start of Receiving Category
+                    else if (form_name == "2.0Receiving")
+                    {
+                        ToolReceiving1.Visible = true;
+                    }
+                    else if (form_name == "2.1MacroRawMaterialReceiving")
+                    {
+                        toolStripMacroReceiving1.Enabled = true;
+                    }
+                    else if (form_name == "2.1.1MacroReceivingEntry")
+                    {
+                        macroReceivingEntryToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "2.1.2ListOfMacroReceiving")
+                    {
+                        toolStripMenuItem9.Enabled = true;
+                    }
+                    else if (form_name == "2.2MicroRawMaterialReceiving")
+                    {
+                        toolStripMicroReceiving1.Enabled = true;
+                    }
+                    else if (form_name == "2.2.1MicroReceivingEntry")
+                    {
+                        toolStripMenuItem16.Enabled = true;
+                    }
+                    else if (form_name == "2.2.2ListOfMicroReceiving")
+                    {
+                        toolStripMenuItem17.Enabled = true;
+                    }
+                    else if (form_name == "2.3FGReceiving")
+                    {
+                        fGReceivingToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "2.3.1FGReceivingEntry")
+                    {
+                        fGReceivingEntryToolStripMenuItem.Enabled = true;
+                    }
+                    //End of Receiving Category
+
+                    //Start of Production Planning Category
+                    else if (form_name == "3.0ProductionPlanning")
+                    {
+                        toolProdPlanning1.Visible = true;
+                    }
+                    else if (form_name == "3.1ProductionSchedule")
+                    {
+                        toolStripProductionSchedule1.Enabled = true;
+                    }
+                    else if (form_name == "3.2ProductionApproval")
+                    {
+                        toolStripProductionApproval1.Enabled = true;
+                    }
+                    //End of Production Planning Category
+
+                    //Start of Repacking Category
+                    else if (form_name == "4.0Repacking")
+                    {
+                        toolRepacking1.Visible = true;
+                    }
+                    else if (form_name == "4.1MicroRawMaterialsRepacking")
+                    {
+                        toolStripRepacking1.Enabled = true;
+                    }
+                    else if (form_name == "4.2MacroRawMaterialsRepacking")
+                    {
+                        toolStripMenuItem111.Enabled = true;
+                    }
+                    else if (form_name == "4.3ProductionScheduleList")
+                    {
+                        productionScheToolStripMenuItem.Enabled = true;
+                    }
+                    //End of Repacking Category
+
+
+                    //Start of Preparation Category
+                    else if (form_name == "5.0Preparation")
+                    {
+                        toolStripPreparation1.Visible = true;
+                    }
+                    else if (form_name == "5.1MicroPreparation")
+                    {
+                        toolStripMicroPreparation1.Enabled = true;
+                    }
+                    else if (form_name == "5.2MacroPrepartion")
+                    {
+                        toolStripMacroPreparation1.Enabled = true;
+                    }
+                    //End of Preparation Category
+
+                    //Start of Micro Mixing Category
+                    else if (form_name == "6.0MicroMixing")
+                    {
+                        toolStripMicroMixing1.Visible = true;
+                    }
+                    else if (form_name == "6.1RawMaterialMixing")
+                    {
+                        ToolMicroMixing1.Enabled = true;
+                    }
+                    //End of Micro Mixing Category
+
+                    //Start of Production Category
+                    else if (form_name == "7.0Production")
+                    {
+                        toolStripProduction1.Visible = true;
+                    }
+                    else if (form_name == "7.1ProductionProcess")
+                    {
+                        toolProdProcesss.Enabled = true;
+                    }
+                    else if (form_name == "7.2FinishedGoodReprocessModule")
+                    {
+                        finishedGoodsReprocessUniversalModuleToolStripMenu.Enabled = true;
+                    }
+                    else if (form_name == "7.3ProductionAutomation")
+                    {
+                        automToolStripMenuItem.Enabled = true;
+                    }
+                    //End of Production Category
+
+                    //Start of Finished Good Category
+                    else if (form_name == "8.0FinishedGood")
+                    {
+                        toolStripFinishGoods1.Visible = true;
+                    }
+                    else if (form_name == "8.1FinishedGoodMonitoring")
+                    {
+                        toolGoodsMonitoring.Enabled = true;
+                    }
+                    //End of Finished Good Category
+
+                    //Start of Reports Category
+
+                    //Start of Internal Reports
+                    else if (form_name == "9.0Reports")
+                    {
+                        toolReports1.Visible = true;
+                    }
+                    else if (form_name == "9.1InternalReports")
+                    {
+                        internalReportsToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.1ReprocessTransactionHistoricalReport")
+                    {
+                        fGReprocessToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "9.1.2MaterialRequirementReportPlanning")
+                    {
+                        microMacroMaterialUsedToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.3MaterialRequirementReportRepacking")
+                    {
+                        microMacroMaterialUsedRepackingDateToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.4PlannedVSActualReport")
+                    {
+                        totalFGProducedToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.5DailyFinishedGoodReport")
+                    {
+                        toolStripMenuItem84.Enabled = true;
+                    }
+                    else if (form_name == "9.1.6DailyProductionReport")
+                    {
+                        dailyProductionReportsToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.7MicroReceivingReport")
+                    {
+                        receivingToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.8MacroReceivingReport")
+                    {
+                        toolStripMenuItem83.Enabled = true;
+                    }
+                    else if (form_name == "9.1.9FinishedGoodTraceabilityReport")
+                    {
+                        toolFGmaterialTracking.Enabled = true;
+                    }
+                    else if (form_name == "9.1.10RawMaterialStatusReport")
+                    {
+                        generateRawMaterialsStatusToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.11MonthlyInventoryWIPReport")
+                    {
+                        monthlyInventoryToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.11.1MACRO")
+                    {
+                        mACROToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "9.1.11.2MICRO")
+                    {
+                        mICROToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "9.1.12RMInventoryMovementReport")
+                    {
+                        inventoryMovementToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.13WorkInProcessProcess")
+                    {
+                        fGReprocessReportsToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.13.1Reprocess")
+                    {
+                        reprocessToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.14MixingCapacity")
+                    {
+                        mixingCapacityCornTypeToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.14.1MixingAndCornTypePrinting")
+                    {
+                        mixingCronTyoeToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.15TheoreticalScadaReport")
+                    {
+                        theoreticalScadaDataToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.15.1ScadaReportBasedOnProdPlan")
+                    {
+                        scadaReportBasedOnProdPlanToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.15.2ScadaReportBasedOnProduction")
+                    {
+                        scadaReportBasedOnProductionToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.16ManhourReport")
+                    {
+                        productionHoursToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.17RMNearlyExpiredReport")
+                    {
+                        rMNearlyExpiredReportToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.18FGTransformationReport")
+                    {
+                        toolFGTransformation.Enabled = true;
+                    }
+                    else if (form_name == "9.1.19BufferedStocksReport")
+                    {
+                        tSBufferedStocks.Enabled = true;
+                    }
+                    else if (form_name == "9.1.20QAChecklistReports")
+                    {
+                        toolStripMenuItem49.Enabled = true;
+                    }
+                    else if (form_name == "9.1.21RMIventoryReports")
+                    {
+                        toolStripMenuItem35.Enabled = true;
+                    }
+                    else if (form_name == "9.1.21.1Micro")
+                    {
+                        microToolStripMenuItem2.Enabled = true;
+                    }
+                    else if (form_name == "9.1.21.2Macro")
+                    {
+                        macroToolStripMenuItem2.Enabled = true;
+                    }
+                    else if (form_name == "9.1.22RMMiscellaneousTransactionReport")
+                    {
+                        miscellaneousTransactionToolStripMenuItem2.Enabled = true;
+                    }
+                    else if (form_name == "9.1.22.1Receipt")
+                    {
+                        IN.Enabled = true;
+                    }
+                    else if (form_name == "9.1.22.2Issue")
+                    {
+                        OUT.Enabled = true;
+                    }
+                    else if (form_name == "9.1.23FGReceivingReport")
+                    {
+                        fGReceivingToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "9.1.23.1FGReceivedReport(TransactionDate)")
+                    {
+                        fGReceivedReportTransactionDateToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.23.2FGReceivedReport")
+                    {
+                        fGReceivedReportToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.23.3FGVarianceReport")
+                    {
+                        fGVarianceReportToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.23.4FGVarianceTransactionReport")
+                    {
+                        fGTransactionVarianceReportToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.24FGMoveOrder")
+                    {
+                        fGInvetToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.24.1FGMoveOrderSlip")
+                    {
+                        fGMoveOrderSlipToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.24.2FGTransactMoveOrder")
+                    {
+                        fGTransactMoveOrderToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.25FGMiscellaneousTransactionSlip")
+                    {
+                        fGMiscellaneousTransactionSlipToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.25.1Receipt")
+                    {
+                        rECEIPTToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "9.1.25.2Issue")
+                    {
+                        iSSUEToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "9.1.26FGMiscellaneousTransactionReport")
+                    {
+                        fMMiscellaneiousTransactionReportToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.26.1Receipt")
+                    {
+                        rECEIPTToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.26.2Issue")
+                    {
+                        iSSUEToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.27FGInventoryReport")
+                    {
+                        fGInventoryReportsToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.271FGInventoryTransactionReport")
+                    {
+                        fGInventoryTransactionReportToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.27.2FGIventoryFeedcodeTransactionReport")
+                    {
+                        fGInventoryFeedcodeTransactionReportToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.27.3FGStockonhandReport")
+                    {
+                        fGStockOnHandReportToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.27.4FGInventoryMovementReport")
+                    {
+                        fGInventoryMovementReportToolStripMenuItem.Enabled = true;
+                    }
+                    //End Internal Report
+
+                    //Start of External Report
+                    else if (form_name == "9.2ExternalReports")
+                    {
+                        externalReportsToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1Printing")
+                    {
+                        pRINTINGToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.1BarcodeReceipt")
+                    {
+                        barcodeReceiptToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.1.1RepackingMacroandMicro")
+                    {
+                        toolStripPrintRepackingEntry1.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.1.2MicroBasemixed")
+                    {
+                        ToolStripBaseMixed1.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.1.3FGBagging")
+                    {
+                        printFinishedGoodsEntryToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.1.4FGBulk")
+                    {
+                        printFGBulkEntryToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2WarehouseBarcodes")
+                    {
+                        toolStripWarehouseBarcodes1.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.1WHMicroMaterials")
+                    {
+                        toolStripMenuItem81.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.1.1AA+Additives")
+                    {
+                        toolStripMenuItem71.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.1.2Acidifier")
+                    {
+                        toolStripMenuItem72.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.1.3Choline")
+                    {
+                        toolStripMenuItem73.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.1.4Medification")
+                    {
+                        toolStripMenuItem74.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.1.5MinPmx")
+                    {
+                        toolStripMenuItem75.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.1.6USSoyaHi-Pro")
+                    {
+                        toolStripMenuItem76.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.1.7Validate")
+                    {
+                        toolStripMenuItem77.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.1.8VitPmx")
+                    {
+                        toolStripMenuItem78.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.1.9AllMicroMaterials")
+                    {
+                        toolStripMenuItem79.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.2WHMacroMaterials")
+                    {
+                        toolStripMenuItem80.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.2.1Validate")
+                    {
+                        toolStripMenuItem53.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.2.2Theoretical1")
+                    {
+                        toolStripMenuItem54.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.2.3Theoretical2")
+                    {
+                        toolStripMenuItem68.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.2.4AllMacroMaterials")
+                    {
+                        toolStripMenuItem69.Enabled = true;
+                    }
+                    else if (form_name == "9.2.2Dashboard")
+                    {
+                        dashboardToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.2.2.1OverallReport")
+                    {
+                        repackingPieChartToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.2.2.2ActiveRepacking")
+                    {
+                        activeRepackingMonitoringToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "9.2.2.3FullDepreciationMaterial")
+                    {
+                        fullDepreciationRepackingToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "9.2.2.4FormulationTable")
+                    {
+                        formulationTableToolStripMenuItem911.Enabled = true;
+                    }
+                    else if (form_name == "9.2.2.5ListOfFormulation")
+                    {
+                        listOfFormulationToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.2.2.6FGMonitoring")
+                    {
+                        fGMonitoringToolStripMenuItem.Enabled = true;
+                    }
+                    //End of External Report
+
+                    //Start of Import Category
+                    else if (form_name == "10.0Import")
+                    {
+                        toolStripSplitButton1.Visible = true;
+                    }
+                    else if (form_name == "10.1POSummaryReport")
+                    {
+                        toolStripMenuItem25.Enabled = true;
+                    }
+                    else if (form_name == "10.2FormulationTable")
+                    {
+                        toolStripMenuItem27.Enabled = true;
+                    }
+                    else if (form_name == "10.3RawMaterials")
+                    {
+                        toolStripMenuItem28.Enabled = true;
+                    }
+                    else if (form_name == "10.4Supplier")
+                    {
+                        toolStripMenuItem29.Enabled = true;
+                    }
+                    //End of Import Category
+
+
+                    //Start User Right Category
+                    else if (form_name == "11.0UserRights")
+                    {
+                        Userights1.Visible = true;
+                    }
+                    else if (form_name == "11.1ManageRights")
+                    {
+                        toolStripManageRights1.Enabled = true;
+                    }
+                    else if (form_name == "11.2FormsAvailable")
+                    {
+                        toolStripFormsAvailable1.Enabled = true;
+                    }
+                    else if (form_name == "11.3UsersManagement")
+                    {
+                        toolStripUserManagement1.Enabled = true;
+                    }
+                    else if (form_name == "11.4UserLogs")
+                    {
+                        distinctRepackingRecordsToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "11.5SystemUpdate")
+                    {
+                        systemUpdateToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "11.6TheoreticalLogs")
+                    {
+                        theoroticalLogsToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "11.7ReprintMonitoring")
+                    {
+                        reprintMonitoringToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "11.8FormulationToProduction")
+                    {
+                        formulationToProductionToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "11.9ReprocessAdjustment")
+                    {
+                        reprocessAdjusmtneToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "11.10RepackingAdjustment")
+                    {
+                        repackingAdjustmentToolStripMenuItem.Enabled = true;
+                    }
+                    //End of User Rights Category
+
+                    //Start of Setup Category
+                    else if (form_name == "12.0Setup")
+                    {
+                        tsPSetup.Visible = true;
+                    }
+                    else if (form_name == "12.1ProductionScheduleLogs")
+                    {
+                        tstProdLogs.Enabled = true;
+                    }
+                    else if (form_name == "12.2MixingCapacity")
+                    {
+                        mixingCapacityToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "12.3FormulationManagement")
+                    {
+                        formulationManagementToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "12.4ProductionLevel")
+                    {
+                        productionLevelToolStripMenuItem.Enabled = true;
+
+                    }
+                    else if (form_name == "12.5MixingCombination")
+                    {
+                        mixingCombinationToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "12.6WarehouseManagement")
+                    {
+                        warehouseManagementToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "12.7CustomerManagement")
+                    {
+                        customerManagementToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "12.8RawMaterialDataRepack")
+                    {
+                        rawMateriaslDataToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "12.9BulkEntryManagement")
+                    {
+                        bulkEntryManagementToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "12.10ProductionPlanController")
+                    {
+                        productionPlanControllerToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "12.11PlateNumberManagement")
+                    {
+                        plateNumberManagementToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "12.12TaggingOfFeedType")
+                    {
+                        taggingOfFeedTypeToolStripMenuItem1.Enabled = true;
+                    }
+                    //End of Setup Category
+
+
+
 
                     else if (form_name == "frmUserRights")
                     {
                         Userights1.Visible = true;
                     }
-                    else if (form_name == "frmLeaveOptions")
-                    {
-                        //mnu_rpt_attendance.Enabled = true;
-                    }
-
+                  
                     else if (form_name == "frmEmployeeList")
                     {
                         //employeeListToolStripMenuItem.Enabled = true;
@@ -565,7 +1215,7 @@ namespace WFFDR
                     }
                     else if (form_name == "totalFGDelayedToolStripMenuItem")
                     {
-                        totalFGDelayedToolStripMenuItem.Enabled = true;
+                        //totalFGDelayedToolStripMenuItem.Enabled = true;
                     }
                     else if (form_name == "dailyProductionReportsToolStripMenuItem")
                     {
@@ -586,7 +1236,7 @@ namespace WFFDR
                     else if (form_name == "CrystalReportFile")
                     {
 
-                        efficiencyScheduleOverActualProducedToolStripMenuItem.Enabled = true; // Efficenvy over actual Prod
+                    /*    efficiencyScheduleOverActualProducedToolStripMenuItem.Enabled = true; */// Efficenvy over actual Prod
 
                     }
                     else if (form_name == "systemUpdateToolStripMenuItem") //Admin System Update
@@ -648,7 +1298,7 @@ namespace WFFDR
                     }
                     else if (form_name == "frmMaterialUsedOverProductionDate")
                     {
-                        tsTProdDateMaterials.Enabled = true;
+                        //tsTProdDateMaterials.Enabled = true;
                     }
 
                     else if (form_name == "frmFGMainInventory")
@@ -1050,6 +1700,678 @@ namespace WFFDR
             }
 
  
+        }
+
+
+        public void Loaduserrights()
+        {
+          
+
+            //rights_id = userinfo.user_rights_id;
+        
+            if (dset_rights.Tables.Count > 0)
+            {
+                for (int x = 0; x < dset_rights.Tables[0].Rows.Count; x++)
+                {
+                    string form_name = dset_rights.Tables[0].Rows[x][1].ToString();
+
+
+                    //Start of Inventory Category
+                    if (form_name == "1.0Inventory")
+                    {
+                        toolStripInventory1.Visible = true;
+                    }
+                    else if (form_name == "1.1MacroInventory")
+                    {
+                        toolStripMacroInventory1.Enabled = true;
+                    }
+                    else if (form_name == "1.2MicroInventory")
+                    {
+                        toolStripMicroInventory1.Enabled = true;
+                    }
+                    else if (form_name == "1.3FGIventory")
+                    {
+                        fGInventoryToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "1.4MoveOrder")
+                    {
+                        moveOrderToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "1.4.1MoveOrder")
+                    {
+                        moverOrderToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "1.4.2TransactMoveOrder")
+                    {
+                        transactMoveOrderToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "1.5FGMiscellaneousTransaction")
+                    {
+                        FGMiscellaneousTransactiontoolStripMenuItem30.Enabled = true;
+                    }
+                    else if (form_name == "1.5.1FGMiscellaneousTransactionReceipt")
+                    {
+                        toolStripMenuItem32.Enabled = true;
+                    }
+                    else if (form_name == "1.5.2FGMiscellaneousTransactionIssue")
+                    {
+                        fGMiscellaneousIssueFinanceToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "1.6RMMiscellaneousTransaction")
+                    {
+                        miscellaneousTransactionToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "1.6.1RMMiscellaneousTransactionReceipt")
+                    {
+                        miscellaneousTransactionReceiptInToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "1.6.2RMMiscellaneousTransactionIssue")
+                    {
+                        miscellaneousTransactionIssueOutToolStripMenuItem.Enabled = true;
+                    }
+                    //End of Inventory Category
+
+
+                    //Start of Receiving Category
+                    else if (form_name == "2.0Receiving")
+                    {
+                        ToolReceiving1.Visible = true;
+                    }
+                    else if (form_name == "2.1MacroRawMaterialReceiving")
+                    {
+                        toolStripMacroReceiving1.Enabled = true;
+                    }
+                    else if (form_name == "2.1.1MacroReceivingEntry")
+                    {
+                        macroReceivingEntryToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "2.1.2ListOfMacroReceiving")
+                    {
+                        toolStripMenuItem9.Enabled = true;
+                    }
+                    else if (form_name == "2.2MicroRawMaterialReceiving")
+                    {
+                        toolStripMicroReceiving1.Enabled = true;
+                    }
+                    else if (form_name == "2.2.1MicroReceivingEntry")
+                    {
+                        toolStripMenuItem16.Enabled = true;
+                    }
+                    else if (form_name == "2.2.2ListOfMicroReceiving")
+                    {
+                        toolStripMenuItem17.Enabled = true;
+                    }
+                    else if (form_name == "2.3FGReceiving")
+                    {
+                        fGReceivingToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "2.3.1FGReceivingEntry")
+                    {
+                        fGReceivingEntryToolStripMenuItem.Enabled = true;
+                    }
+                    //End of Receiving Category
+
+                    //Start of Production Planning Category
+                    else if (form_name == "3.0ProductionPlanning")
+                    {
+                        toolProdPlanning1.Visible = true;
+                    }
+                    else if (form_name == "3.1ProductionSchedule")
+                    {
+                        toolStripProductionSchedule1.Enabled = true;
+                    }
+                    else if (form_name == "3.2ProductionApproval")
+                    {
+                        toolStripProductionApproval1.Enabled = true;
+                    }
+                    //End of Production Planning Category
+
+                    //Start of Repacking Category
+                    else if (form_name == "4.0Repacking")
+                    {
+                        toolRepacking1.Visible = true;
+                    }
+                    else if (form_name == "4.1MicroRawMaterialsRepacking")
+                    {
+                        toolStripRepacking1.Enabled = true;
+                    }
+                    else if (form_name == "4.2MacroRawMaterialsRepacking")
+                    {
+                        toolStripMenuItem111.Enabled = true;
+                    }
+                    else if (form_name == "4.3ProductionScheduleList")
+                    {
+                        productionScheToolStripMenuItem.Enabled = true;
+                    }
+                    //End of Repacking Category
+
+
+                    //Start of Preparation Category
+                    else if (form_name == "5.0Preparation")
+                    {
+                        toolStripPreparation1.Visible = true;
+                    }
+                    else if (form_name == "5.1MicroPreparation")
+                    {
+                        toolStripMicroPreparation1.Enabled = true;
+                    }
+                    else if (form_name == "5.2MacroPrepartion")
+                    {
+                        toolStripMacroPreparation1.Enabled = true;
+                    }
+                    //End of Preparation Category
+
+                    //Start of Micro Mixing Category
+                    else if (form_name == "6.0MicroMixing")
+                    {
+                        toolStripMicroMixing1.Visible = true;
+                    }
+                    else if (form_name == "6.1RawMaterialMixing")
+                    {
+                        ToolMicroMixing1.Enabled = true;
+                    }
+                    //End of Micro Mixing Category
+
+                    //Start of Production Category
+                    else if (form_name == "7.0Production")
+                    {
+                        toolStripProduction1.Visible = false;
+                    }
+                    else if (form_name == "7.1ProductionProcess")
+                    {
+                        toolProdProcesss.Enabled = true;
+                    }
+                    else if (form_name == "7.2FinishedGoodReprocessModule")
+                    {
+                        finishedGoodsReprocessUniversalModuleToolStripMenu.Enabled = true;
+                    }
+                    else if (form_name == "7.3ProductionAutomation")
+                    {
+                        automToolStripMenuItem.Enabled = true;
+                    }
+                    //End of Production Category
+
+                    //Start of Finished Good Category
+                    else if (form_name == "8.0FinishedGood")
+                    {
+                        toolStripFinishGoods1.Visible = true;
+                    }
+                    else if (form_name == "8.1FinishedGoodMonitoring")
+                    {
+                        toolGoodsMonitoring.Enabled = true;
+                    }
+                    //End of Finished Good Category
+
+                    //Start of Reports Category
+
+                    //Start of Internal Reports
+                    else if (form_name == "9.0Reports")
+                    {
+                        toolReports1.Visible = true;
+                    }
+                    else if (form_name == "9.1InternalReports")
+                    {
+                        internalReportsToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.1ReprocessTransactionHistoricalReport")
+                    {
+                        fGReprocessToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "9.1.2MaterialRequirementReportPlanning")
+                    {
+                        microMacroMaterialUsedToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.3MaterialRequirementReportRepacking")
+                    {
+                        microMacroMaterialUsedRepackingDateToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.4PlannedVSActualReport")
+                    {
+                        totalFGProducedToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.5DailyFinishedGoodReport")
+                    {
+                        toolStripMenuItem84.Enabled = true;
+                    }
+                    else if (form_name == "9.1.6DailyProductionReport")
+                    {
+                        dailyProductionReportsToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.7MicroReceivingReport")
+                    {
+                        receivingToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.8MacroReceivingReport")
+                    {
+                        toolStripMenuItem83.Enabled = true;
+                    }
+                    else if (form_name == "9.1.9FinishedGoodTraceabilityReport")
+                    {
+                        toolFGmaterialTracking.Enabled = true;
+                    }
+                    else if (form_name == "9.1.10RawMaterialStatusReport")
+                    {
+                        generateRawMaterialsStatusToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.11MonthlyInventoryWIPReport")
+                    {
+                        monthlyInventoryToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.11.1MACRO")
+                    {
+                        mACROToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "9.1.11.2MICRO")
+                    {
+                        mICROToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "9.1.12RMInventoryMovementReport")
+                    {
+                        inventoryMovementToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.13WorkInProcessProcess")
+                    {
+                        fGReprocessReportsToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.13.1Reprocess")
+                    {
+                        reprocessToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.14MixingCapacity")
+                    {
+                        mixingCapacityCornTypeToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.14.1MixingAndCornTypePrinting")
+                    {
+                        mixingCronTyoeToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.15TheoreticalScadaReport")
+                    {
+                        theoreticalScadaDataToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.15.1ScadaReportBasedOnProdPlan")
+                    {
+                        scadaReportBasedOnProdPlanToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.15.2ScadaReportBasedOnProduction")
+                    {
+                        scadaReportBasedOnProductionToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.16ManhourReport")
+                    {
+                        productionHoursToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.17RMNearlyExpiredReport")
+                    {
+                        rMNearlyExpiredReportToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.18FGTransformationReport")
+                    {
+                        toolFGTransformation.Enabled = true;
+                    }
+                    else if (form_name == "9.1.19BufferedStocksReport")
+                    {
+                        tSBufferedStocks.Enabled = true;
+                    }
+                    else if (form_name == "9.1.20QAChecklistReports")
+                    {
+                        toolStripMenuItem49.Enabled = true;
+                    }
+                    else if (form_name == "9.1.21RMIventoryReports")
+                    {
+                        toolStripMenuItem35.Enabled = true;
+                    }
+                    else if (form_name == "9.1.21.1Micro")
+                    {
+                        microToolStripMenuItem2.Enabled = true;
+                    }
+                    else if (form_name == "9.1.21.2Macro")
+                    {
+                        macroToolStripMenuItem2.Enabled = true;
+                    }
+                    else if (form_name == "9.1.22RMMiscellaneousTransactionReport")
+                    {
+                        miscellaneousTransactionToolStripMenuItem2.Enabled = true;
+                    }
+                    else if (form_name == "9.1.22.1Receipt")
+                    {
+                        IN.Enabled = true;
+                    }
+                    else if (form_name == "9.1.22.2Issue")
+                    {
+                        OUT.Enabled = true;
+                    }
+                    else if (form_name == "9.1.23FGReceivingReport")
+                    {
+                        fGReceivingToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "9.1.23.1FGReceivedReport(TransactionDate)")
+                    {
+                        fGReceivedReportTransactionDateToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.23.2FGReceivedReport")
+                    {
+                        fGReceivedReportToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.23.3FGVarianceReport")
+                    {
+                        fGVarianceReportToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.23.4FGVarianceTransactionReport")
+                    {
+                        fGTransactionVarianceReportToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.24FGMoveOrder")
+                    {
+                        fGInvetToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.24.1FGMoveOrderSlip")
+                    {
+                        fGMoveOrderSlipToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.24.2FGTransactMoveOrder")
+                    {
+                        fGTransactMoveOrderToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.25FGMiscellaneousTransactionSlip")
+                    {
+                        fGMiscellaneousTransactionSlipToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.25.1Receipt")
+                    {
+                        rECEIPTToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "9.1.25.2Issue")
+                    {
+                        iSSUEToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "9.1.26FGMiscellaneousTransactionReport")
+                    {
+                        fMMiscellaneiousTransactionReportToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.26.1Receipt")
+                    {
+                        rECEIPTToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.26.2Issue")
+                    {
+                        iSSUEToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.27FGInventoryReport")
+                    {
+                        fGInventoryReportsToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.271FGInventoryTransactionReport")
+                    {
+                        fGInventoryTransactionReportToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.27.2FGIventoryFeedcodeTransactionReport")
+                    {
+                        fGInventoryFeedcodeTransactionReportToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.27.3FGStockonhandReport")
+                    {
+                        fGStockOnHandReportToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.1.27.4FGInventoryMovementReport")
+                    {
+                        fGInventoryMovementReportToolStripMenuItem.Enabled = true;
+                    }
+                    //End Internal Report
+
+                    //Start of External Report
+                    else if (form_name == "9.2ExternalReports")
+                    {
+                        externalReportsToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1Printing")
+                    {
+                        pRINTINGToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.1BarcodeReceipt")
+                    {
+                        barcodeReceiptToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.1.1RepackingMacroandMicro")
+                    {
+                        toolStripPrintRepackingEntry1.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.1.2MicroBasemixed")
+                    {
+                        ToolStripBaseMixed1.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.1.3FGBagging")
+                    {
+                        printFinishedGoodsEntryToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.1.4FGBulk")
+                    {
+                        printFGBulkEntryToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2WarehouseBarcodes")
+                    {
+                        toolStripWarehouseBarcodes1.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.1WHMicroMaterials")
+                    {
+                        toolStripMenuItem81.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.1.1AA+Additives")
+                    {
+                        toolStripMenuItem71.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.1.2Acidifier")
+                    {
+                        toolStripMenuItem72.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.1.3Choline")
+                    {
+                        toolStripMenuItem73.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.1.4Medification")
+                    {
+                        toolStripMenuItem74.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.1.5MinPmx")
+                    {
+                        toolStripMenuItem75.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.1.6USSoyaHi-Pro")
+                    {
+                        toolStripMenuItem76.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.1.7Validate")
+                    {
+                        toolStripMenuItem77.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.1.8VitPmx")
+                    {
+                        toolStripMenuItem78.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.1.9AllMicroMaterials")
+                    {
+                        toolStripMenuItem79.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.2WHMacroMaterials")
+                    {
+                        toolStripMenuItem80.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.2.1Validate")
+                    {
+                        toolStripMenuItem53.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.2.2Theoretical1")
+                    {
+                        toolStripMenuItem54.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.2.3Theoretical2")
+                    {
+                        toolStripMenuItem68.Enabled = true;
+                    }
+                    else if (form_name == "9.2.1.2.2.4AllMacroMaterials")
+                    {
+                        toolStripMenuItem69.Enabled = true;
+                    }
+                    else if (form_name == "9.2.2Dashboard")
+                    {
+                        dashboardToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.2.2.1OverallReport")
+                    {
+                        repackingPieChartToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.2.2.2ActiveRepacking")
+                    {
+                        activeRepackingMonitoringToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "9.2.2.3FullDepreciationMaterial")
+                    {
+                        fullDepreciationRepackingToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "9.2.2.4FormulationTable")
+                    {
+                        formulationTableToolStripMenuItem911.Enabled = true;
+                    }
+                    else if (form_name == "9.2.2.5ListOfFormulation")
+                    {
+                        listOfFormulationToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "9.2.2.6FGMonitoring")
+                    {
+                        fGMonitoringToolStripMenuItem.Enabled = true;
+                    }
+                    //End of External Report
+
+                    //Start of Import Category
+                    else if (form_name == "10.0Import")
+                    {
+                        toolStripSplitButton1.Visible = true;
+                    }
+                    else if (form_name == "10.1POSummaryReport")
+                    {
+                        toolStripMenuItem25.Enabled = true;
+                    }
+                    else if (form_name == "10.2FormulationTable")
+                    {
+                        toolStripMenuItem27.Enabled = true;
+                    }
+                    else if (form_name == "10.3RawMaterials")
+                    {
+                        toolStripMenuItem28.Enabled = true;
+                    }
+                    else if (form_name == "10.4Supplier")
+                    {
+                        toolStripMenuItem29.Enabled = true;
+                    }
+                    //End of Import Category
+
+
+                    //Start User Right Category
+                    else if (form_name == "11.0UserRights")
+                    {
+                        Userights1.Visible = true;
+                    }
+                    else if (form_name == "11.1ManageRights")
+                    {
+                        toolStripManageRights1.Enabled = true;
+                    }
+                    else if (form_name == "11.2FormsAvailable")
+                    {
+                        toolStripFormsAvailable1.Enabled = true;
+                    }
+                    else if (form_name == "11.3UsersManagement")
+                    {
+                        toolStripUserManagement1.Enabled = true;
+                    }
+                    else if (form_name == "11.4UserLogs")
+                    {
+                        distinctRepackingRecordsToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "11.5SystemUpdate")
+                    {
+                        systemUpdateToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "11.6TheoreticalLogs")
+                    {
+                        theoroticalLogsToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "11.7ReprintMonitoring")
+                    {
+                        reprintMonitoringToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "11.8FormulationToProduction")
+                    {
+                        formulationToProductionToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "11.9ReprocessAdjustment")
+                    {
+                        reprocessAdjusmtneToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "11.10RepackingAdjustment")
+                    {
+                        repackingAdjustmentToolStripMenuItem.Enabled = true;
+                    }
+                    //End of User Rights Category
+
+                    //Start of Setup Category
+                    else if (form_name == "12.0Setup")
+                    {
+                        tsPSetup.Visible = true;
+                    }
+                    else if (form_name == "12.1ProductionScheduleLogs")
+                    {
+                        tstProdLogs.Enabled = true;
+                    }
+                    else if (form_name == "12.2MixingCapacity")
+                    {
+                        mixingCapacityToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "12.3FormulationManagement")
+                    {
+                        formulationManagementToolStripMenuItem1.Enabled = true;
+                    }
+                    else if (form_name == "12.4ProductionLevel")
+                    {
+                        productionLevelToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "12.5MixingCombination")
+                    {
+                        mixingCombinationToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "12.6WarehouseManagement")
+                    {
+                        warehouseManagementToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "12.7CustomerManagement")
+                    {
+                        customerManagementToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "12.8RawMaterialDataRepack")
+                    {
+                        rawMateriaslDataToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "12.9BulkEntryManagement")
+                    {
+                        bulkEntryManagementToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "12.10ProductionPlanController")
+                    {
+                        productionPlanControllerToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "12.11PlateNumberManagement")
+                    {
+                        plateNumberManagementToolStripMenuItem.Enabled = true;
+                    }
+                    else if (form_name == "12.12TaggingOfFeedType")
+                    {
+                        taggingOfFeedTypeToolStripMenuItem1.Enabled = true;
+                    }
+                    //End of Setup Category
+
+
+
+                }
+            }
         }
         protected override CreateParams CreateParams
         {
@@ -2660,13 +3982,15 @@ namespace WFFDR
         private void toolStripManageRights1_Click(object sender, EventArgs e)
         {
             frmuserrights user = new frmuserrights();
-            user.ShowDialog();
+            user.MdiParent = this;
+            user.Show();
         }
 
         private void toolStripFormsAvailable1_Click(object sender, EventArgs e)
         {
             frmFormsAvailable available = new frmFormsAvailable();
-            available.ShowDialog();
+            available.MdiParent = this;
+            available.Show();
         }
 
         private void toolStripUserManagement1_Click(object sender, EventArgs e)
@@ -2805,7 +4129,6 @@ namespace WFFDR
         {
             myglobal.rep_gen = "FG";
             frmDailyProductions prep = new frmDailyProductions();
-
             prep.MdiParent = this;
             prep.Show();
  

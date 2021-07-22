@@ -2177,17 +2177,41 @@ namespace WFFDR
                 double selectquantity;
 
 
-                mainbalance = double.Parse(txtrepackavailable.Text);
-                selectquantity = double.Parse(txttotalQty.Text);
-                if (mainbalance < selectquantity)
+                if (txtrepackavailable.Text.Contains("-"))
                 {
-                    NoBalanceNotify();
+
+                    //Code pag Negative ang reserve
+                    //NoBalanceNotify();
+                    //MessageBox.Show("try");
 
                     //this.dgvImport.CurrentCell = this.dgvImport.Rows[0].Cells[this.dgvImport.CurrentCell.ColumnIndex];
-                    txtbags.BackColor = Color.Yellow;
-                    txtbags.Focus();
+                    //txtbags.BackColor = Color.Yellow;
+                    //txtbags.Focus();
                     ControlBox = true;
+                    NoBalanceNotify();
+
+                    OpenWindowWithParameterIndex();
                     frmProductionSchedule_Load(sender, e);
+                    return;
+
+                }
+
+
+                    mainbalance = double.Parse(txtrepackavailable.Text);
+                selectquantity = double.Parse(txttotalQty.Text);
+                if (mainbalance < selectquantity)
+
+                { 
+                    //this.dgvImport.CurrentCell = this.dgvImport.Rows[0].Cells[this.dgvImport.CurrentCell.ColumnIndex];
+                    //txtbags.BackColor = Color.Yellow;
+                    //txtbags.Focus();
+                    ControlBox = true;
+                
+                    NoBalanceNotify();
+
+                    OpenWindowWithParameterIndex();
+                    frmProductionSchedule_Load(sender, e);
+                    //frmProductionSchedule_Load(sender, e);
                     return;
                 }
                 else
@@ -2317,6 +2341,8 @@ namespace WFFDR
                 sql_con.Close();
 
 
+                //MessageBox.Show("Micro");
+
                 //dset.Clear();
                 //dset = objStorProc.sp_GetCategory("Calldatareserveinventoryalone", 0, txtItemCode.Text, "", "");
 
@@ -2351,24 +2377,29 @@ namespace WFFDR
             {
 
                 dset.Clear();
-                dset = objStorProc.sp_GetCategory("Calldatareserveinventoryalone", 0, txtItemCode.Text, "", "");
+                dset = objStorProc.sp_GetCategory("Calldatareserveinventoryalone", 0, txtItemCode.Text, txtItemCode.Text, "");
+
+
 
                 try
                 {
                     if (dset.Tables.Count > 0)
                     {
-                        DataView dv = new DataView(dset.Tables[0]);
 
+                        //Epi
+                        //Epi
+
+
+                        //DataView dv = new DataView(dset.Tables[0]);
+                        DataView dv = new DataView(dset.Tables[0]);
                         dgvMaster2.DataSource = dv;
 
                     }
-                }
-                catch (SyntaxErrorException)
-                {
-                    MessageBox.Show("Invalid character found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    return;
+
                 }
+
+
                 catch (EvaluateException)
                 {
                     MessageBox.Show("Invalid character found 2 Gerard.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -2382,7 +2413,7 @@ namespace WFFDR
 
                 //SqlConnection sql_con = new SqlConnection(connetionString);
 
-                //string sqlquery = "select a.item_id,a.item_code,a.item_description,a.total_quantity_raw,a.qty_repack_available,a.qty_repack,a.qty_production,ISNULL(t5.RECEIVING,0) + ISNULL(t6.ISSUE,0) - ISNULL(t2.MACRESERVED,0) - ISNULL(t7.OUTING,0) as RESERVED from [dbo].[rdf_raw_materials] a LEFT JOIN ( select BC.r_item_code, sum(CAST(REPLACE(BC.r_quantity,',','') as float))  as RECEIVING from rdf_microreceiving_entry BC where BC.transaction_type='PO' group by BC.r_item_code) t5 on a.item_code = t5.r_item_code LEFT JOIN ( select BC.r_item_code, sum(CAST(REPLACE(BC.r_quantity,',','') as float))  as ISSUE from rdf_microreceiving_entry BC where BC.transaction_type='Miscellaneous Receipt' group by BC.r_item_code) t6 on a.item_code = t6.r_item_code LEFT JOIN ( select BC.item_code, sum(CAST(BC.quantity as float)*2)  as MACRESERVED from rdf_recipe_to_production BC where CAST(BC.proddate as date) BETWEEN '2021-01-12' and GETDATE()+30 and status_of_person IS NULL group by BC.item_code) t2 on a.item_code = t2.item_code LEFT JOIN ( select BC.item_code, sum(CAST(REPLACE(BC.qty,',','') as float))  as OUTING from rdf_transaction_out_progress BC where BC.is_active='1' group by BC.item_code) t7 on a.item_code = t7.item_code WHERE a.item_code = '" + txtItemCode.Text + "'";
+                //string sqlquery = "select a.item_id,a.item_code,a.item_description,ISNULL(t5.RECEIVING,0) + ISNULL(t6.ISSUE,0) - ISNULL(t2.MACRESERVED,0) - ISNULL(t7.OUTING,0) as RESERVED from [dbo].[rdf_raw_materials] a LEFT JOIN ( select BC.r_item_code, sum(CAST(REPLACE(BC.r_quantity,',','') as float))  as RECEIVING from rdf_microreceiving_entry BC where BC.transaction_type='PO' group by BC.r_item_code) t5 on a.item_code = t5.r_item_code LEFT JOIN ( select BC.r_item_code, sum(CAST(REPLACE(BC.r_quantity,',','') as float))  as ISSUE from rdf_microreceiving_entry BC where BC.transaction_type='Miscellaneous Receipt' group by BC.r_item_code) t6 on a.item_code = t6.r_item_code LEFT JOIN ( select BC.item_code, sum(CAST(BC.quantity as float)*2)  as MACRESERVED from rdf_recipe_to_production BC where CAST(BC.proddate as date) BETWEEN '2021-01-12' and GETDATE()+30 and status_of_person IS NULL group by BC.item_code) t2 on a.item_code = t2.item_code LEFT JOIN ( select BC.item_code, sum(CAST(REPLACE(BC.qty,',','') as float))  as OUTING from rdf_transaction_out_progress BC where BC.is_active='1' group by BC.item_code) t7 on a.item_code = t7.item_code WHERE a.item_code = '" + txtItemCode.Text + "'";
                 //sql_con.Open();
                 //SqlCommand sql_cmd = new SqlCommand(sqlquery, sql_con);
                 //SqlDataAdapter sdr = new SqlDataAdapter(sql_cmd);
@@ -2392,6 +2423,8 @@ namespace WFFDR
                 //sql_con.Close();
 
 
+                //MessageBox.Show("" + txtItemCode.Text);
+                //lblepi.Text = dgvMaster2.RowCount.ToString();
 
             }
         }
@@ -2408,9 +2441,9 @@ namespace WFFDR
             //{
                 if (dgvMaster2.CurrentRow != null)
                 {
-                    if (dgvMaster2.CurrentRow.Cells["item_id"].Value != null)
+                    if (dgvMaster2.CurrentRow.Cells["RESERVED"].Value != null)
                     {
-                        p_id = Convert.ToInt32(dgvMaster2.CurrentRow.Cells["item_id"].Value);
+                        //p_id = Convert.ToInt32(dgvMaster2.CurrentRow.Cells["item_id"].Value);
                         txtrepackavailable.Text = dgvMaster2.CurrentRow.Cells["RESERVED"].Value.ToString();
 
 
@@ -2595,14 +2628,14 @@ namespace WFFDR
 
         void NoBalanceNotify()
         {
-
+            //Active Validation 2021 
             PopupNotifier popup = new PopupNotifier();
             popup.Image = Properties.Resources.info;
             popup.TitleText = "Fedora Notifications";
             popup.TitleColor = Color.White;
             popup.TitlePadding = new Padding(95, 7, 0, 0);
             popup.TitleFont = new Font("Tahoma", 10);
-            popup.ContentText = "/NOT ENOUGH STOCK FOR " + txtitemdescription.Text + " CURRENT BALANCE IS " + txtrepackavailable.Text + " AND THE ACTUAL NEEDED FOR PRODUCTION IS " + txttotalQty.Text + "";
+            popup.ContentText = "NOT ENOUGH STOCK FOR " + txtitemdescription.Text + " CURRENT BALANCE IS " + txtrepackavailable.Text + " AND THE ACTUAL NEEDED FOR PRODUCTION IS " + txttotalQty.Text + "";
             popup.ContentColor = Color.White;
             popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
             popup.Size = new Size(350, 100);
@@ -2619,9 +2652,12 @@ namespace WFFDR
 
             popup.ShowOptionsButton = true;
 
+
+        }
+        public void OpenWindowWithParameterIndex()
+        {
             btnLowInventory_Click(new object(), new System.EventArgs());
         }
-
 
         void NoBalanceNotify3()
         {
@@ -6327,6 +6363,11 @@ namespace WFFDR
             dgvRunningRecipe.DataSource = dt;
 
             sql_con.Close();
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            btnLowInventory_Click(new object(), new System.EventArgs());
         }
     }
 }

@@ -219,7 +219,7 @@ namespace WFFDR
         DataSet sp_Sched2(string mode, int ID, string Employee_ID, string Shift_Name, string Date, string Date2);
         DataSet sp_tard(string mode, string filter, string Employee_ID, string Date, string Date2);
 
-        DataSet sp_available_menu(int menu_id, string menu_name, string menu_form_name, string mode);
+        DataSet sp_available_menu(int menu_id, string menu_name, string menu_form_name, string menu_count, string mode);
 
         DataSet sp_user_rights(int user_rights_id, string user_rights_name, string mode);
 

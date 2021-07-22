@@ -37,7 +37,7 @@ namespace WFFDR
         {
             objStorProc = xClass.g_objStoredProc.GetCollections();
             displayRecords();
-           loadAvailableMenu();
+           //loadAvailableMenu();
             lstuser_rights_Click(sender, e);
             FalseButton();
             dataView.Enabled = false;
@@ -58,7 +58,7 @@ namespace WFFDR
         }
         void loadAvailableMenu()
         {
-            xClass.fillDataGridView(dataView, "available_menu", dSet);
+            xClass.fillDataGridView(dataView, cbcategory.Text, dSet);
             dataView.Columns[2].Width = 500;
             dataView.Columns[1].Width = 50;
             dataView.Columns[0].Width = 30;
@@ -75,6 +75,8 @@ namespace WFFDR
 
         private void lstuser_rights_Click(object sender, EventArgs e)
         {
+            btnDelete.Visible = true;
+            btnAddMenu.Visible = true;
             showvalue();
             loadMenu_byUsers();
         }
@@ -194,10 +196,12 @@ namespace WFFDR
             //panel1.Visible = false;
             btnUpdate.Visible = true;
             txtRights.ReadOnly = false;
+            btnDelete.Visible = false;
+            btnAddMenu.Visible = false;
             txtRights.Text = "";
             txtRights.Focus();
             lstuser_rights.Enabled = false;
-            loadAvailableMenu();
+            //loadAvailableMenu();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -214,6 +218,16 @@ namespace WFFDR
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            if (txtRights.Text.Trim() == string.Empty)
+            {
+                SelectUserRights();
+                lstuser_rights.Enabled = true;
+                lstuser_rights.Focus();
+                //txtRights.Focus();
+                return;
+                //MessageBox.Show("Please enter " + lblName.Text + ". ", lblName.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
             metroButton3_Click(sender,e);
             //if (lstuser_rights.Items.Count > 0)
             //{
@@ -244,29 +258,47 @@ namespace WFFDR
             btnEdit.Visible = true;
             txtRights.ReadOnly = true;
             lstuser_rights.Enabled = true;
-      
+            dataView.Visible = false;
+            cbcategory.Visible = false;
+            label3.Visible = false;
+
+
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            if (txtRights.Text.Trim() == string.Empty)
+            {
+                FillUserRights();
+                txtRights.Focus();
+                return;
+                //MessageBox.Show("Please enter " + lblName.Text + ". ", lblName.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             metroButton2_Click(sender,e);
  
         }
 
         private void btnAddMenu_Click(object sender, EventArgs e)
         {
-            btnselect.Visible = true;
-            btndeselect.Visible = true;
+          
             dataView.Visible = true;
             label3.Visible = true;
             btncancel2.Visible = true;
-            loadAvailableMenu();
+            //loadAvailableMenu();
             dataView.Enabled = true;
             lstmenu.Enabled = true;
             lstuser_rights.Enabled = false;
             //panel3.Enabled = true;
             //panel2.Enabled = false;
             //panel1.Enabled = false;
+            cbcategory.Visible = true;
+            label3.Visible = true;
+
+            btnAdd.Visible = false;
+            btnUpdate.Visible = false;
+            btnDelete.Visible = false;
+            btnCancel.Visible = false;
+            btnEdit.Visible = false;
             panel3Enabled();
             UpdateMenu();
         }
@@ -471,6 +503,13 @@ namespace WFFDR
             dataView.Enabled = false;
             lstmenu.Enabled = false;
             lstuser_rights.Enabled = true;
+            cbcategory.Visible = false;
+            label3.Visible = false;
+            btnAdd.Visible = true;
+            btnUpdate.Visible = true;
+            btnDelete.Visible = true;
+            btnCancel.Visible = true;
+            //btnEdit.Visible = true;
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
@@ -506,7 +545,7 @@ namespace WFFDR
         private void btnselect_Click(object sender, EventArgs e)
         {
             selectAll();
-            metroButton1_Click(sender, e);
+            //metroButton1_Click(sender, e);
         }
 
         private void btndeselect_Click(object sender, EventArgs e)
@@ -546,16 +585,12 @@ namespace WFFDR
 
         }
 
-        private void dgv1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-       
-        }
-
         private void metroButton1_Click(object sender, EventArgs e)
         {
             if (MetroFramework.MetroMessageBox.Show(this, "Are you sure that you want to Insert The Policy", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
                 btnMenuUpdate_Click(sender, e);
+                //this.ParentForm.Refresh();
 
             }
             else
@@ -599,6 +634,37 @@ namespace WFFDR
             popup.TitlePadding = new Padding(95, 7, 0, 0);
             popup.TitleFont = new Font("Tahoma", 10);
             popup.ContentText = "WARNING FILL UP THE USER RIGHTS";
+            popup.ContentColor = Color.White;
+            popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
+            popup.Size = new Size(350, 100);
+            popup.ImageSize = new Size(70, 80);
+            popup.BodyColor = Color.Red;
+            popup.Popup();
+            //popup.AnimationDuration = 1000;
+            //popup.ShowOptionsButton.ToString();
+            popup.BorderColor = System.Drawing.Color.FromArgb(0, 0, 0);
+            //txtMainInput.Focus();
+            //txtMainInput.Select();
+            popup.Delay = 500;
+            popup.AnimationInterval = 10;
+            popup.AnimationDuration = 1000;
+
+
+            popup.ShowOptionsButton = true;
+
+
+        }
+
+        void SelectUserRights()
+        {
+
+            PopupNotifier popup = new PopupNotifier();
+            popup.Image = Properties.Resources.info;
+            popup.TitleText = "Fedora Notifications";
+            popup.TitleColor = Color.White;
+            popup.TitlePadding = new Padding(95, 7, 0, 0);
+            popup.TitleFont = new Font("Tahoma", 10);
+            popup.ContentText = "Please Select User Rights";
             popup.ContentColor = Color.White;
             popup.ContentFont = new System.Drawing.Font("Tahoma", 8F);
             popup.Size = new Size(350, 100);
@@ -786,9 +852,20 @@ namespace WFFDR
             this.Close();
         }
 
-        private void dataView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void cbcategory_DropDownClosed(object sender, EventArgs e)
+        {
+            loadAvailableMenu();
+            btnselect.Visible = true;
+            btndeselect.Visible = true;
+        }
+
+        private void frmuserrights_FormClosing(object sender, FormClosingEventArgs e)
         {
 
+            //MDIParent1 takla = new MDIParent1();
+            //takla.MDIParent1_Load(sender, e);
+            //test.Refresh();
+            //test.Show();
         }
     }
 }

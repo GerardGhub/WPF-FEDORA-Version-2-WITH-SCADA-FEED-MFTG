@@ -68,6 +68,7 @@
             this.dataView = new System.Windows.Forms.DataGridView();
             this.chkSelected = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.cbcategory = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllFeedCode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).BeginInit();
             this.SuspendLayout();
@@ -237,7 +238,7 @@
             this.btnDelete.ActiveLineColor = System.Drawing.Color.MediumSeaGreen;
             this.btnDelete.BackColor = System.Drawing.SystemColors.Window;
             this.btnDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.BackgroundImage")));
-            this.btnDelete.ButtonText = "DELETE";
+            this.btnDelete.ButtonText = "IN-ACTIVE";
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -326,9 +327,9 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(410, 14);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 13);
+            this.label3.Size = new System.Drawing.Size(102, 13);
             this.label3.TabIndex = 397;
-            this.label3.Text = "AVAILABLE MENU";
+            this.label3.Text = "AVAILABLE MENU:";
             this.label3.Visible = false;
             // 
             // btnUpdate
@@ -340,7 +341,7 @@
             this.btnUpdate.ActiveLineColor = System.Drawing.Color.MediumSeaGreen;
             this.btnUpdate.BackColor = System.Drawing.SystemColors.Window;
             this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
-            this.btnUpdate.ButtonText = "UPDATE";
+            this.btnUpdate.ButtonText = "SAVE";
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.Window;
@@ -421,7 +422,7 @@
             this.btnRemove.ActiveLineColor = System.Drawing.Color.MediumSeaGreen;
             this.btnRemove.BackColor = System.Drawing.SystemColors.Window;
             this.btnRemove.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRemove.BackgroundImage")));
-            this.btnRemove.ButtonText = "DELETE";
+            this.btnRemove.ButtonText = "IN-ACTIVE";
             this.btnRemove.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRemove.Enabled = false;
             this.btnRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -505,7 +506,7 @@
             this.btndeselect.ActiveLineColor = System.Drawing.Color.MediumSeaGreen;
             this.btndeselect.BackColor = System.Drawing.SystemColors.Window;
             this.btndeselect.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btndeselect.BackgroundImage")));
-            this.btndeselect.ButtonText = "DE-SELECT ALL";
+            this.btndeselect.ButtonText = "UN-SELECT ALL";
             this.btndeselect.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btndeselect.Enabled = false;
             this.btndeselect.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -661,7 +662,7 @@
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.dataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataView.ColumnHeadersVisible = false;
             this.dataView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.chkSelected});
@@ -673,7 +674,7 @@
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataView.DefaultCellStyle = dataGridViewCellStyle7;
-            this.dataView.GridColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataView.GridColor = System.Drawing.Color.Black;
             this.dataView.Location = new System.Drawing.Point(398, 33);
             this.dataView.Name = "dataView";
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -693,8 +694,6 @@
             this.dataView.Size = new System.Drawing.Size(380, 489);
             this.dataView.TabIndex = 407;
             this.dataView.Visible = false;
-            this.dataView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv1_CellClick);
-            this.dataView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataView_CellContentClick);
             this.dataView.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgv1_RowPostPaint);
             this.dataView.DoubleClick += new System.EventHandler(this.dgv1_DoubleClick);
             // 
@@ -732,12 +731,39 @@
             this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton23.Click += new System.EventHandler(this.bunifuThinButton23_Click);
             // 
+            // cbcategory
+            // 
+            this.cbcategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbcategory.FormattingEnabled = true;
+            this.cbcategory.Items.AddRange(new object[] {
+            "1.0 INVENTORY",
+            "2.0 RECEIVING",
+            "3.0 PRODUCTION PLANNING",
+            "4.0 REPACKING",
+            "5.0 PREPARATION",
+            "6.0 MICRO MIXING",
+            "7.0 PRODUCTION",
+            "8.0 FINISHED GOOD",
+            "9.0 REPORTS",
+            "9.1 INTERNAL REPORTS",
+            "9.2 EXTERNAL REPORTS",
+            "10.0 IMPORT",
+            "11.0 USER RIGHTS",
+            "12.0 SETUP"});
+            this.cbcategory.Location = new System.Drawing.Point(514, 7);
+            this.cbcategory.Name = "cbcategory";
+            this.cbcategory.Size = new System.Drawing.Size(162, 21);
+            this.cbcategory.TabIndex = 548;
+            this.cbcategory.Visible = false;
+            this.cbcategory.DropDownClosed += new System.EventHandler(this.cbcategory_DropDownClosed);
+            // 
             // frmuserrights
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(790, 573);
+            this.Controls.Add(this.cbcategory);
             this.Controls.Add(this.bunifuThinButton23);
             this.Controls.Add(this.metroButton4);
             this.Controls.Add(this.metroButton3);
@@ -774,6 +800,7 @@
             this.Name = "frmuserrights";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "User Rights Management";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmuserrights_FormClosing);
             this.Load += new System.EventHandler(this.frmuserrights_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllFeedCode)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).EndInit();
@@ -813,5 +840,6 @@
         private System.Windows.Forms.DataGridView dataView;
         private System.Windows.Forms.DataGridViewCheckBoxColumn chkSelected;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
+        private System.Windows.Forms.ComboBox cbcategory;
     }
 }

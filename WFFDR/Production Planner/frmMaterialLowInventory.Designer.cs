@@ -37,7 +37,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -48,9 +47,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cmbBagandBin = new System.Windows.Forms.ComboBox();
             this.txtseries = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -132,6 +133,17 @@
             this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label18 = new System.Windows.Forms.Label();
             this.dgvMicroImport = new System.Windows.Forms.DataGridView();
+            this.recipe_id2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rp_type2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.feed_code2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.item_code2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rp_description2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rp_category2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rp_group2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantity5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantity10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qty_production2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
@@ -148,17 +160,6 @@
             this.quantity1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.saas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.qty_production = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.recipe_id2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rp_type2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.feed_code2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.item_code2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rp_description2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rp_category2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rp_group2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantity5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantity10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.qty_production2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvImport)).BeginInit();
@@ -704,19 +705,19 @@
             this.dgvImport.MultiSelect = false;
             this.dgvImport.Name = "dgvImport";
             this.dgvImport.ReadOnly = true;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvImport.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.dgvImport.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.LightSalmon;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvImport.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvImport.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.dgvImport.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.LightSalmon;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvImport.RowsDefaultCellStyle = dataGridViewCellStyle11;
             this.dgvImport.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvImport.ShowCellErrors = false;
             this.dgvImport.ShowCellToolTips = false;
@@ -770,19 +771,19 @@
             this.dgvMaster2.AllowUserToDeleteRows = false;
             this.dgvMaster2.AllowUserToResizeColumns = false;
             this.dgvMaster2.AllowUserToResizeRows = false;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            this.dgvMaster2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            this.dgvMaster2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvMaster2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMaster2.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvMaster2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMaster2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMaster2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvMaster2.ColumnHeadersHeight = 45;
             this.dgvMaster2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvMaster2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -801,9 +802,9 @@
             this.dgvMaster2.ReadOnly = true;
             this.dgvMaster2.RowHeadersVisible = false;
             this.dgvMaster2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvMaster2.RowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvMaster2.RowsDefaultCellStyle = dataGridViewCellStyle14;
             this.dgvMaster2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMaster2.Size = new System.Drawing.Size(628, 10);
             this.dgvMaster2.TabIndex = 521;
@@ -1061,19 +1062,19 @@
             this.dgvVariance.AllowUserToDeleteRows = false;
             this.dgvVariance.AllowUserToResizeColumns = false;
             this.dgvVariance.AllowUserToResizeRows = false;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
-            this.dgvVariance.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
+            this.dgvVariance.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle15;
             this.dgvVariance.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvVariance.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvVariance.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvVariance.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvVariance.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.dgvVariance.ColumnHeadersHeight = 25;
             this.dgvVariance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvVariance.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1094,17 +1095,17 @@
             this.dgvVariance.MultiSelect = false;
             this.dgvVariance.Name = "dgvVariance";
             this.dgvVariance.ReadOnly = true;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvVariance.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
-            this.dgvVariance.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.Teal;
-            this.dgvVariance.RowsDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvVariance.RowHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            this.dgvVariance.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.Teal;
+            this.dgvVariance.RowsDefaultCellStyle = dataGridViewCellStyle18;
             this.dgvVariance.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvVariance.ShowCellErrors = false;
             this.dgvVariance.ShowCellToolTips = false;
@@ -1218,20 +1219,20 @@
             this.dgvMicroImport.AllowUserToDeleteRows = false;
             this.dgvMicroImport.AllowUserToResizeColumns = false;
             this.dgvMicroImport.AllowUserToResizeRows = false;
-            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Control;
-            this.dgvMicroImport.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control;
+            this.dgvMicroImport.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
             this.dgvMicroImport.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvMicroImport.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvMicroImport.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvMicroImport.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMicroImport.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMicroImport.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.dgvMicroImport.ColumnHeadersHeight = 25;
             this.dgvMicroImport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvMicroImport.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1253,20 +1254,20 @@
             this.dgvMicroImport.MultiSelect = false;
             this.dgvMicroImport.Name = "dgvMicroImport";
             this.dgvMicroImport.ReadOnly = true;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMicroImport.RowHeadersDefaultCellStyle = dataGridViewCellStyle21;
-            this.dgvMicroImport.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.LightSalmon;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Verdana", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvMicroImport.RowsDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMicroImport.RowHeadersDefaultCellStyle = dataGridViewCellStyle22;
+            this.dgvMicroImport.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.LightSalmon;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvMicroImport.RowsDefaultCellStyle = dataGridViewCellStyle23;
             this.dgvMicroImport.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMicroImport.ShowCellErrors = false;
             this.dgvMicroImport.ShowCellToolTips = false;
@@ -1276,6 +1277,105 @@
             this.dgvMicroImport.TabIndex = 542;
             this.dgvMicroImport.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvMicroImport_CellFormatting);
             this.dgvMicroImport.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvMicroImport_RowPostPaint);
+            // 
+            // recipe_id2
+            // 
+            this.recipe_id2.DataPropertyName = "recipe_id";
+            this.recipe_id2.HeaderText = "ID";
+            this.recipe_id2.MinimumWidth = 12;
+            this.recipe_id2.Name = "recipe_id2";
+            this.recipe_id2.ReadOnly = true;
+            this.recipe_id2.Width = 46;
+            // 
+            // rp_type2
+            // 
+            this.rp_type2.DataPropertyName = "rp_type";
+            this.rp_type2.HeaderText = "TYPE";
+            this.rp_type2.MinimumWidth = 12;
+            this.rp_type2.Name = "rp_type2";
+            this.rp_type2.ReadOnly = true;
+            this.rp_type2.Width = 60;
+            // 
+            // feed_code2
+            // 
+            this.feed_code2.DataPropertyName = "feed_code";
+            this.feed_code2.HeaderText = "FEED CODE";
+            this.feed_code2.MinimumWidth = 12;
+            this.feed_code2.Name = "feed_code2";
+            this.feed_code2.ReadOnly = true;
+            this.feed_code2.Width = 99;
+            // 
+            // item_code2
+            // 
+            this.item_code2.DataPropertyName = "item_code";
+            this.item_code2.HeaderText = "ITEM CODE";
+            this.item_code2.MinimumWidth = 12;
+            this.item_code2.Name = "item_code2";
+            this.item_code2.ReadOnly = true;
+            this.item_code2.Width = 98;
+            // 
+            // rp_description2
+            // 
+            this.rp_description2.DataPropertyName = "rp_description";
+            this.rp_description2.HeaderText = "DESCRIPTION";
+            this.rp_description2.MinimumWidth = 12;
+            this.rp_description2.Name = "rp_description2";
+            this.rp_description2.ReadOnly = true;
+            this.rp_description2.Width = 114;
+            // 
+            // rp_category2
+            // 
+            this.rp_category2.DataPropertyName = "rp_category";
+            this.rp_category2.HeaderText = "CATEGORY";
+            this.rp_category2.MinimumWidth = 12;
+            this.rp_category2.Name = "rp_category2";
+            this.rp_category2.ReadOnly = true;
+            this.rp_category2.Width = 95;
+            // 
+            // rp_group2
+            // 
+            this.rp_group2.DataPropertyName = "rp_group";
+            this.rp_group2.HeaderText = "GROUP";
+            this.rp_group2.MinimumWidth = 12;
+            this.rp_group2.Name = "rp_group2";
+            this.rp_group2.ReadOnly = true;
+            this.rp_group2.Width = 73;
+            // 
+            // quantity5
+            // 
+            this.quantity5.DataPropertyName = "quantity";
+            this.quantity5.HeaderText = "QUANTITY";
+            this.quantity5.MinimumWidth = 12;
+            this.quantity5.Name = "quantity5";
+            this.quantity5.ReadOnly = true;
+            this.quantity5.Width = 91;
+            // 
+            // quantity10
+            // 
+            this.quantity10.DataPropertyName = "quantity1";
+            this.quantity10.HeaderText = "QTY/BATCH";
+            this.quantity10.Name = "quantity10";
+            this.quantity10.ReadOnly = true;
+            this.quantity10.Width = 99;
+            // 
+            // qty_production2
+            // 
+            this.qty_production2.DataPropertyName = "qty_production";
+            dataGridViewCellStyle21.Format = "N2";
+            dataGridViewCellStyle21.NullValue = null;
+            this.qty_production2.DefaultCellStyle = dataGridViewCellStyle21;
+            this.qty_production2.HeaderText = "RESERVED";
+            this.qty_production2.Name = "qty_production2";
+            this.qty_production2.ReadOnly = true;
+            this.qty_production2.Width = 94;
+            // 
+            // dataGridViewTextBoxColumn33
+            // 
+            this.dataGridViewTextBoxColumn33.DataPropertyName = "saas";
+            this.dataGridViewTextBoxColumn33.HeaderText = "RESERVEDs";
+            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
+            this.dataGridViewTextBoxColumn33.ReadOnly = true;
+            this.dataGridViewTextBoxColumn33.Visible = false;
             // 
             // label19
             // 
@@ -1419,113 +1519,18 @@
             this.saas.Name = "saas";
             this.saas.ReadOnly = true;
             this.saas.Visible = false;
+            this.saas.Width = 102;
             // 
             // qty_production
             // 
             this.qty_production.DataPropertyName = "qty_production";
+            dataGridViewCellStyle9.Format = "N2";
+            dataGridViewCellStyle9.NullValue = null;
+            this.qty_production.DefaultCellStyle = dataGridViewCellStyle9;
             this.qty_production.HeaderText = "RESERVED";
             this.qty_production.Name = "qty_production";
             this.qty_production.ReadOnly = true;
             this.qty_production.Width = 94;
-            // 
-            // recipe_id2
-            // 
-            this.recipe_id2.DataPropertyName = "recipe_id";
-            this.recipe_id2.HeaderText = "ID";
-            this.recipe_id2.MinimumWidth = 12;
-            this.recipe_id2.Name = "recipe_id2";
-            this.recipe_id2.ReadOnly = true;
-            this.recipe_id2.Width = 46;
-            // 
-            // rp_type2
-            // 
-            this.rp_type2.DataPropertyName = "rp_type";
-            this.rp_type2.HeaderText = "TYPE";
-            this.rp_type2.MinimumWidth = 12;
-            this.rp_type2.Name = "rp_type2";
-            this.rp_type2.ReadOnly = true;
-            this.rp_type2.Width = 60;
-            // 
-            // feed_code2
-            // 
-            this.feed_code2.DataPropertyName = "feed_code";
-            this.feed_code2.HeaderText = "FEED CODE";
-            this.feed_code2.MinimumWidth = 12;
-            this.feed_code2.Name = "feed_code2";
-            this.feed_code2.ReadOnly = true;
-            this.feed_code2.Width = 99;
-            // 
-            // item_code2
-            // 
-            this.item_code2.DataPropertyName = "item_code";
-            this.item_code2.HeaderText = "ITEM CODE";
-            this.item_code2.MinimumWidth = 12;
-            this.item_code2.Name = "item_code2";
-            this.item_code2.ReadOnly = true;
-            this.item_code2.Width = 98;
-            // 
-            // rp_description2
-            // 
-            this.rp_description2.DataPropertyName = "rp_description";
-            this.rp_description2.HeaderText = "DESCRIPTION";
-            this.rp_description2.MinimumWidth = 12;
-            this.rp_description2.Name = "rp_description2";
-            this.rp_description2.ReadOnly = true;
-            this.rp_description2.Width = 114;
-            // 
-            // rp_category2
-            // 
-            this.rp_category2.DataPropertyName = "rp_category";
-            this.rp_category2.HeaderText = "CATEGORY";
-            this.rp_category2.MinimumWidth = 12;
-            this.rp_category2.Name = "rp_category2";
-            this.rp_category2.ReadOnly = true;
-            this.rp_category2.Width = 95;
-            // 
-            // rp_group2
-            // 
-            this.rp_group2.DataPropertyName = "rp_group";
-            this.rp_group2.HeaderText = "GROUP";
-            this.rp_group2.MinimumWidth = 12;
-            this.rp_group2.Name = "rp_group2";
-            this.rp_group2.ReadOnly = true;
-            this.rp_group2.Width = 73;
-            // 
-            // quantity5
-            // 
-            this.quantity5.DataPropertyName = "quantity";
-            this.quantity5.HeaderText = "QUANTITY";
-            this.quantity5.MinimumWidth = 12;
-            this.quantity5.Name = "quantity5";
-            this.quantity5.ReadOnly = true;
-            this.quantity5.Width = 91;
-            // 
-            // quantity10
-            // 
-            this.quantity10.DataPropertyName = "quantity1";
-            this.quantity10.HeaderText = "QTY/BATCH";
-            this.quantity10.Name = "quantity10";
-            this.quantity10.ReadOnly = true;
-            this.quantity10.Width = 99;
-            // 
-            // qty_production2
-            // 
-            this.qty_production2.DataPropertyName = "qty_production";
-            dataGridViewCellStyle20.Format = "N2";
-            dataGridViewCellStyle20.NullValue = null;
-            this.qty_production2.DefaultCellStyle = dataGridViewCellStyle20;
-            this.qty_production2.HeaderText = "RESERVED";
-            this.qty_production2.Name = "qty_production2";
-            this.qty_production2.ReadOnly = true;
-            this.qty_production2.Width = 94;
-            // 
-            // dataGridViewTextBoxColumn33
-            // 
-            this.dataGridViewTextBoxColumn33.DataPropertyName = "saas";
-            this.dataGridViewTextBoxColumn33.HeaderText = "RESERVEDs";
-            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
-            this.dataGridViewTextBoxColumn33.ReadOnly = true;
-            this.dataGridViewTextBoxColumn33.Visible = false;
             // 
             // frmMaterialLowInventory
             // 
@@ -1697,17 +1702,6 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label lblgrandotal;
         private System.Windows.Forms.Label lbltotalmicro;
-        private System.Windows.Forms.DataGridViewTextBoxColumn recipe_id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn rp_type;
-        private System.Windows.Forms.DataGridViewTextBoxColumn feed_code;
-        private System.Windows.Forms.DataGridViewTextBoxColumn item_code;
-        private System.Windows.Forms.DataGridViewTextBoxColumn rp_description;
-        private System.Windows.Forms.DataGridViewTextBoxColumn rp_category;
-        private System.Windows.Forms.DataGridViewTextBoxColumn rp_group;
-        private System.Windows.Forms.DataGridViewTextBoxColumn quantity2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn quantity1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn saas;
-        private System.Windows.Forms.DataGridViewTextBoxColumn qty_production;
         private System.Windows.Forms.DataGridViewTextBoxColumn recipe_id2;
         private System.Windows.Forms.DataGridViewTextBoxColumn rp_type2;
         private System.Windows.Forms.DataGridViewTextBoxColumn feed_code2;
@@ -1719,5 +1713,16 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn quantity10;
         private System.Windows.Forms.DataGridViewTextBoxColumn qty_production2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn33;
+        private System.Windows.Forms.DataGridViewTextBoxColumn recipe_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rp_type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn feed_code;
+        private System.Windows.Forms.DataGridViewTextBoxColumn item_code;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rp_description;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rp_category;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rp_group;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantity2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantity1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn saas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn qty_production;
     }
 }

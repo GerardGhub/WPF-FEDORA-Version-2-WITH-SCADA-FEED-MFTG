@@ -65,6 +65,7 @@ namespace WFFDR
                         p_id = Convert.ToInt32(dgv1.CurrentRow.Cells["menu_id"].Value);
                         txtfname.Text = dgv1.CurrentRow.Cells["menu_form_name"].Value.ToString();
                         txtmname.Text = dgv1.CurrentRow.Cells["menu_name"].Value.ToString();
+                        txtcount.Text = dgv1.CurrentRow.Cells["count"].Value.ToString();
                     }
                 }
             }
@@ -77,6 +78,7 @@ namespace WFFDR
             txt_read_only(false);
             txtmname.Enabled = true;
             txtfname.Enabled = true;
+            txtcount.Enabled = true;
             txtmname.Select();
             txtmname.Focus();
         }
@@ -95,6 +97,7 @@ namespace WFFDR
         {
             txtfname.ReadOnly = val;
             txtmname.ReadOnly = val;
+            txtcount.ReadOnly = val;
 
             if (val == false)
             {
@@ -102,6 +105,7 @@ namespace WFFDR
                 {
                     txtmname.Text = "";
                     txtfname.Text = "";
+                    txtcount.Text = "";
                     txtmname.Focus();
                 }
                 else
@@ -126,7 +130,7 @@ namespace WFFDR
             if (mode == "add")
             {
                 dSet.Clear();
-                dSet = objStorProc.sp_available_menu(0, txtmname.Text, "", "getbyname");
+                dSet = objStorProc.sp_available_menu(0, txtmname.Text, "","", "getbyname");
 
                 if (dSet.Tables[0].Rows.Count > 0)
                 {
@@ -137,7 +141,7 @@ namespace WFFDR
                 else
                 {
                     dSet.Clear();
-                    dSet = objStorProc.sp_available_menu(0, txtmname.Text, txtfname.Text, "add");
+                    dSet = objStorProc.sp_available_menu(0, txtmname.Text, txtfname.Text, txtcount.Text, "add");
                     //maudit_trails.create_audit_trail("add", dSet_temp, dSet, "positions");
                     return true;
                 }
@@ -145,10 +149,10 @@ namespace WFFDR
             else if (mode == "edit")
             {
                 dSet.Clear();
-                dSet = objStorProc.sp_available_menu(0, txtmname.Text, "", "getbyname");
+                dSet = objStorProc.sp_available_menu(0, txtmname.Text, "","", "getbyname");
 
                 dSet_temp.Clear();
-                dSet_temp = objStorProc.sp_available_menu(p_id, txtmname.Text, "", "getbyid");
+                dSet_temp = objStorProc.sp_available_menu(p_id, txtmname.Text, "","", "getbyid");
 
                 if (dSet.Tables[0].Rows.Count > 0)
                 {
@@ -156,7 +160,7 @@ namespace WFFDR
                     if (tmpID == p_id)
                     {
                         dSet.Clear();
-                        dSet = objStorProc.sp_available_menu(p_id, txtmname.Text, txtfname.Text, "edit");
+                        dSet = objStorProc.sp_available_menu(p_id, txtmname.Text, txtfname.Text, txtcount.Text, "edit");
                         UpdateNotify();
                         //maudit_trails.create_audit_trail("edit", dSet_temp, dSet, "available_menu");
                         return true;
@@ -171,7 +175,7 @@ namespace WFFDR
                 else
                 {
                     dSet.Clear();
-                    dSet = objStorProc.sp_available_menu(p_id, txtmname.Text, txtfname.Text, "edit");
+                    dSet = objStorProc.sp_available_menu(p_id, txtmname.Text, txtfname.Text,txtcount.Text, "edit");
 
                     //maudit_trails.create_audit_trail("edit", dSet_temp, dSet, "available_menu");
                     //return true;
@@ -180,10 +184,10 @@ namespace WFFDR
             else if (mode == "delete")
             {
                 dSet.Clear();
-                dSet = objStorProc.sp_available_menu(p_id, txtmname.Text, "", "delete");
+                dSet = objStorProc.sp_available_menu(p_id, txtmname.Text, "","", "delete");
 
                 dSet_temp.Clear();
-                dSet_temp = objStorProc.sp_available_menu(p_id, txtmname.Text, "", "delete");
+                dSet_temp = objStorProc.sp_available_menu(p_id, txtmname.Text, "","", "delete");
 
                 return true;
             }
@@ -207,6 +211,7 @@ namespace WFFDR
                 temp_hid = dgv1.CurrentRow.Index;
                 txtfname.Enabled = true;
                 txtmname.Enabled = true;
+                txtcount.Enabled = true;
                 mode = "edit";
                 btn_visible(false);
                 txt_read_only(false);
@@ -249,6 +254,14 @@ namespace WFFDR
                 {
                     MessageBox.Show("Please enter " + lblName.Text + ". ", lblName.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+
+                if(txtcount.Text.Trim() == string.Empty)
+                {
+                    
+                    MessageBox.Show("Please enter " + label1.Text + ". ", label1.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    
+                }
+
                 else
                 {
                     if (saveMode())
@@ -405,6 +418,16 @@ namespace WFFDR
 
         private void dgv1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void txtcount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+
 
         }
     }

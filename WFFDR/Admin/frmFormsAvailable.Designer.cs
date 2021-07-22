@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFormsAvailable));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtfname = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
             this.txtmname = new System.Windows.Forms.TextBox();
@@ -49,11 +49,15 @@
             this.metroSample = new MetroFramework.Controls.MetroButton();
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.dgv1 = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtcount = new System.Windows.Forms.TextBox();
+            this.bunifuThinButton25 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.label1 = new System.Windows.Forms.Label();
             this.menu_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menu_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menu_form_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
+            this.count = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -93,7 +97,7 @@
             this.txtmname.MaxLength = 100;
             this.txtmname.Name = "txtmname";
             this.txtmname.ReadOnly = true;
-            this.txtmname.Size = new System.Drawing.Size(310, 13);
+            this.txtmname.Size = new System.Drawing.Size(146, 13);
             this.txtmname.TabIndex = 105;
             // 
             // lblMenu
@@ -130,7 +134,7 @@
             this.bunifuThinButton21.Location = new System.Drawing.Point(102, 54);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(334, 29);
+            this.bunifuThinButton21.Size = new System.Drawing.Size(173, 29);
             this.bunifuThinButton21.TabIndex = 384;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -156,7 +160,7 @@
             this.bunifuThinButton22.Location = new System.Drawing.Point(102, 83);
             this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(334, 29);
+            this.bunifuThinButton22.Size = new System.Drawing.Size(337, 29);
             this.bunifuThinButton22.TabIndex = 385;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -385,44 +389,45 @@
             // 
             this.dgv1.AllowUserToAddRows = false;
             this.dgv1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            this.dgv1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            this.dgv1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgv1.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgv1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.menu_id,
             this.menu_name,
-            this.menu_form_name});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.menu_form_name,
+            this.count});
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv1.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgv1.EnableHeadersVisualStyles = false;
             this.dgv1.GridColor = System.Drawing.SystemColors.Control;
             this.dgv1.Location = new System.Drawing.Point(14, 128);
             this.dgv1.Name = "dgv1";
             this.dgv1.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv1.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgv1.RowHeadersWidth = 50;
             this.dgv1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -431,6 +436,80 @@
             this.dgv1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv1_CellContentClick);
             this.dgv1.CurrentCellChanged += new System.EventHandler(this.dgv1_CurrentCellChanged_1);
             this.dgv1.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgv1_RowPostPaint_1);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.Window;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.btnDelete);
+            this.panel2.Location = new System.Drawing.Point(6, 5);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(450, 44);
+            this.panel2.TabIndex = 547;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Lucida Bright", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(12, 4);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(282, 28);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "List of Forms Available";
+            // 
+            // txtcount
+            // 
+            this.txtcount.BackColor = System.Drawing.Color.White;
+            this.txtcount.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtcount.Enabled = false;
+            this.txtcount.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcount.Location = new System.Drawing.Point(362, 62);
+            this.txtcount.MaxLength = 100;
+            this.txtcount.Name = "txtcount";
+            this.txtcount.ReadOnly = true;
+            this.txtcount.Size = new System.Drawing.Size(66, 13);
+            this.txtcount.TabIndex = 548;
+            this.txtcount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcount_KeyPress);
+            // 
+            // bunifuThinButton25
+            // 
+            this.bunifuThinButton25.ActiveBorderThickness = 1;
+            this.bunifuThinButton25.ActiveCornerRadius = 5;
+            this.bunifuThinButton25.ActiveFillColor = System.Drawing.SystemColors.Window;
+            this.bunifuThinButton25.ActiveForecolor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton25.ActiveLineColor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton25.BackColor = System.Drawing.SystemColors.Window;
+            this.bunifuThinButton25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton25.BackgroundImage")));
+            this.bunifuThinButton25.ButtonText = "";
+            this.bunifuThinButton25.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton25.Enabled = false;
+            this.bunifuThinButton25.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton25.ForeColor = System.Drawing.Color.PaleVioletRed;
+            this.bunifuThinButton25.IdleBorderThickness = 1;
+            this.bunifuThinButton25.IdleCornerRadius = 10;
+            this.bunifuThinButton25.IdleFillColor = System.Drawing.SystemColors.Window;
+            this.bunifuThinButton25.IdleForecolor = System.Drawing.Color.PaleVioletRed;
+            this.bunifuThinButton25.IdleLineColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bunifuThinButton25.Location = new System.Drawing.Point(346, 54);
+            this.bunifuThinButton25.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bunifuThinButton25.Name = "bunifuThinButton25";
+            this.bunifuThinButton25.Size = new System.Drawing.Size(93, 29);
+            this.bunifuThinButton25.TabIndex = 549;
+            this.bunifuThinButton25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(294, 61);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 13);
+            this.label1.TabIndex = 550;
+            this.label1.Text = "COUNT :";
             // 
             // menu_id
             // 
@@ -459,27 +538,12 @@
             this.menu_form_name.ReadOnly = true;
             this.menu_form_name.Width = 420;
             // 
-            // panel2
+            // count
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Window;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.btnDelete);
-            this.panel2.Location = new System.Drawing.Point(6, 5);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(450, 44);
-            this.panel2.TabIndex = 547;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Lucida Bright", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(12, 4);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(282, 28);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "List of Forms Available";
+            this.count.DataPropertyName = "count";
+            this.count.HeaderText = "MENU COUNT";
+            this.count.Name = "count";
+            this.count.ReadOnly = true;
             // 
             // frmFormsAvailable
             // 
@@ -487,6 +551,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(464, 560);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtcount);
+            this.Controls.Add(this.bunifuThinButton25);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dgv1);
             this.Controls.Add(this.bunifuThinButton24);
@@ -538,8 +605,12 @@
         private System.Windows.Forms.DataGridView dgv1;
         internal System.Windows.Forms.Panel panel2;
         internal System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtcount;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton25;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn menu_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn menu_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn menu_form_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn count;
     }
 }
